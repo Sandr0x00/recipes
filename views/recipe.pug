@@ -1,0 +1,23 @@
+extends layout.pug
+
+block content
+  h1.text-center= name
+
+  if images
+    div.row.images
+      each image in images
+        div.col-md-4
+          img(src="/images/" + image).w-100
+  div.row
+    div.col-md-4.justify-content-center
+      h2.text-center Zutaten
+      ul.list-unstyled
+        each ingredient in ingredients
+          li(class="ingredient " + ingredient.id)= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
+
+      h5= portions + " Portionen"
+
+    div.col-md-8
+      h2 Zubereitung
+      each step in preparation
+        p!= step

@@ -1,0 +1,16 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-trailing-spaces": "warn",
+        "spaced-comment": "warn",
+        "no-empty-function": "warn",
+        "no-unused-expressions": "warn",
+        "no-unreachable": "warn",
+        "semi": "warn",
+        "quotes": ["warn", "single"],
+        "no-var": "warn"
+    }
+}

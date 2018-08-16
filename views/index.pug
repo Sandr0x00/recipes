@@ -1,0 +1,22 @@
+extends layout.pug
+
+block content
+  h1 Mains
+  div.row
+    each recipe in mains
+      div.col-md-4
+        a(href='/mains/' + recipe.id)
+          h2.text-center= recipe.name
+          if recipe.image
+            img(src="/images/" + recipe.image[0]).w-100
+
+
+  h1 Deserts
+  div.row
+    each recipe in deserts
+      div.col-md-4
+        a(href='/desert/' + recipe.id)
+          h2.text-center= recipe.name
+          if recipe.image
+            img(src="/images/" + recipe.image[0]).w-100
+

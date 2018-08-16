@@ -1,0 +1,224 @@
+{
+    "mains": [
+        {
+            "id": "schinkennudeln",
+            "name": "Schinkennudeln",
+            "portions": 4,
+            "ingredients": [
+                {
+                    "id": "nudeln",
+                    "amount": "500g",
+                    "name": "Nudeln"
+                },
+                {
+                    "id": "schinken",
+                    "amount": "100g",
+                    "name": "Schinken"
+                },
+                {
+                    "id": "sahne",
+                    "amount": "200ml",
+                    "name": "Sahne"
+                },
+                {
+                    "id": "wasser",
+                    "amount": "400ml",
+                    "name": "Wasser"
+                },
+                {
+                    "id": "kaese",
+                    "name": "Käse"
+                },
+                {
+                    "id": "gewuerz",
+                    "name": "Salz & Pfeffer"
+                }
+            ],
+            "preparation": [
+                "{nudeln} mit 1 Becher {sahne} und {wasser} in Topf, würzen, {schinken} kleinschneiden und dazu.",
+                "Bei mittlerer Hitze ziehen lassen, manchmal umrühren.",
+                "Wenn Nudeln weich sind {kaese} dazu und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
+            ]
+        },
+        {
+            "id": "vegibolognese",
+            "name": "Vegetarische Bolognese-Sauce",
+            "portions": 4,
+            "ingredients": [
+                {
+                    "id": "knoblauch",
+                    "amount": "1",
+                    "name": "Knoblauchzehe"
+                },
+                {
+                    "id": "haferflocken",
+                    "amount": "70g",
+                    "name": "Haferflocken"
+                },
+                {
+                    "id": "tomaten",
+                    "amount": "1 Pkg.",
+                    "name": "Passierte Tomaten"
+                },
+                {
+                    "id": "karotte",
+                    "amount": "1",
+                    "name": "Karotte"
+                },
+                {
+                    "id": "bruehe",
+                    "amount": "2 TL",
+                    "name": "Gemüsebrühpulver"
+                },
+                {
+                    "id": "salz",
+                    "name": "Salz"
+                },
+                {
+                    "id": "oregano",
+                    "name": "Oregano"
+                },
+                {
+                    "id": "chili",
+                    "name": "Chilipulver"
+                },
+                {
+                    "id": "wasser",
+                    "name": "Wasser"
+                }
+            ],
+            "preparation": [
+                "{knoblauch} hacken und in Olivenöl anschwitzen (nur kurz). {tomaten} und {haferflocken} hinzugeben und kurz braten. {karotte} reiben und beimengen. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
+                "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
+            ]
+        }
+    ],
+    "deserts": [
+        {
+            "id": "brownies",
+            "name": "Brownies",
+            "image": [
+                "brownies-ofen.jpg",
+                "brownies-schachtel.jpeg"
+            ],
+            "ingredients": [
+                {
+                    "id": "butter",
+                    "amount": "185g",
+                    "name": "Butter"
+                },
+                {
+                    "id": "schokiz",
+                    "amount": "200g",
+                    "name": "Zartbitter Schokolade"
+                },
+                {
+                    "id": "mehl",
+                    "amount": "85g",
+                    "name": "Mehl"
+                },
+                {
+                    "id": "kakao",
+                    "amount": "40g",
+                    "name": "Kakao"
+                },
+                {
+                    "id": "schokiw",
+                    "amount": "50g",
+                    "name": "Weiße Schokolade"
+                },
+                {
+                    "id": "schoki",
+                    "amount": "50g",
+                    "name": "Milchschokolade"
+                },
+                {
+                    "id": "eier",
+                    "amount": "3",
+                    "name": "Eier"
+                },
+                {   
+                    "id": "zucker",
+                    "amount": "275g",
+                    "name": "Zucker"
+                }
+            ],
+            "preparation": [
+                "{schokiz} in kleine Stücke brechen und mit {butter} in eine Schüssel geben. In Wasserbad schmelzen. Alternativ in der Mikrowelle 2 Minuten erhitzen. Auf Raumtemparatur abkühlen lassen.",
+                "{mehl} und {kakao} zusammmen sieben. {schokiw} und {schoki} klein hacken. {eier} mit {zucker} steif schlagen.",
+                "Gescholzene Schokolade unter Eischnee heben.",
+                "Mehl-Kakao unter die Masse heben.",
+                "Schokoladenstückchen unterheben.",
+                "Masse in Form geben und bei Umluft 160°C für 25 Minuten auf mittlerer Schiene backen. Die Brownies sind fertig, wenn die Masse nicht mehr \"wobbled\". Dann für weitere 5 Minuten backen.",
+                "Abkühlen lassen und Brownies kleinschneiden. Aufbewahrung in luftdichter Verpackung bis zu 2 Wochen, im Kühlschrank ein Monat."
+            ],
+            "link": "http://www.bbcgoodfood.com/recipes/1223/bestever-brownies"
+        },
+        {
+            "id": "kaiserschmarrn",
+            "name": "Kaiserschmarrn",
+            "image": [
+                "kaiserschmarrn-pfanne.jpg",
+                "kaiserschmarrn.jpg"
+            ],
+            "portions": 4,
+            "ingredients": [
+                {
+                    "id": "rosine",
+                    "amount": "100g",
+                    "name": "Rosinen"
+                },
+                {
+                    "id": "rum",
+                    "name":"Rum"
+                },
+                {
+                    "id": "eigelb",
+                    "amount": "6",
+                    "name": "Eigelb"
+                },
+                {
+                    "id": "eiweis",
+                    "amount": "6",
+                    "name": "Eiweiß"
+                },
+                {
+                    "id": "vanille",
+                    "amount": "1 Pkg.",
+                    "name": "Vanillezucker"
+                },
+                {
+                    "id": "zucker",
+                    "amount": "1 gehäufter EL",
+                    "name": "Zucker"
+                },
+                {
+                    "id": "salz",
+                    "amount": "Prise",
+                    "name": "Salz"
+                },
+                {
+                    "id": "mehl",
+                    "amount": "250g",
+                    "name": "Mehl"
+                },
+                {
+                    "id": "milch",
+                    "amount": "500ml",
+                    "name": "Milch"
+                },
+                {
+                    "id": "butter",
+                    "amount": "50g zerlassene",
+                    "name": "Butter"
+                }
+            ],
+            "preparation": [
+                "Die {rosine} mindestens eine halbe Stunde in {rum} einlegen.",
+                "{eigelb} mit {vanille}, {salz} und {zucker} mit dem Handrührgerät schaumig aufschlagen. Nach und nach abwechselnd jeweils {mehl} und {milch} einrühren.",
+                "Anschließend die {butter} einrühren. {eiweis} zu einem festen Eischnee aufschlagen und mit einem Löffel langsam aber gründlich unter die Teigmasse heben. Es sollten keine Eiweißflocken mehr zu sehen sein. Danach die Rosinen ohne den Rum unterrühren.",
+                "In einer Pfanne Butter zerlassen und den Teig ca. 1 cm hoch eingießen. Hitze etwas reduzieren und goldgelb anbacken lassen. Immer mal wieder drunter schauen. Die Masse vierteln, umdrehen und wieder anbacken lassen. In mundgerechte Stücke teilen."
+            ]
+        }
+    ]
+}
