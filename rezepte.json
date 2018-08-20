@@ -91,6 +91,166 @@
                 "{knoblauch} hacken und in Olivenöl anschwitzen (nur kurz). {tomaten} und {haferflocken} hinzugeben und kurz braten. {karotte} reiben und beimengen. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
                 "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
             ]
+        },
+        {
+            "id": "pizzateig",
+            "name": "Pizza Teig",
+            "portions": "4 Pizzas",
+            "ingredients": [
+                {
+                    "id": "wasser",
+                    "amount": "300ml",
+                    "name": "lauwarmes Wasser"
+                },
+                {
+                    "id": "hefe",
+                    "amount": "1 Würfel",
+                    "name": "frische Hefe"
+                },
+                {
+                    "id": "zucker",
+                    "amount": "1 TL",
+                    "name": "Zucker"
+                },
+                {
+                    "id": "mehl",
+                    "amount": "500g",
+                    "name": "Weizenmehl (Type 00 oder 550)"
+                },
+                {
+                    "id": "salz",
+                    "amount": "1 TL",
+                    "name": "Salz"
+                },
+                {
+                    "id": "oel",
+                    "amount": "4 EL",
+                    "name": "Olivenöl"
+                }
+            ],
+            "preparation": [
+                "Die {hefe} für den Pizzateig in {wasser} bröckeln und mit dem {zucker} unter Rühren darin auflösen. Das {mehl} in eine Schüssel geben und in die Mitte eine Mulde drücken. Hefewasser in die Mulde gießen. Mit etwas Mehl vom Rand zu einem Vorteig verrühren. Diesen zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
+                "Wenn der Vorteig gegangen ist, {salz} und das {oel} zum Pizzateig geben und unterrühren. Den Pizzateig mit bemehlten Händen ca. 5 Minuten durchkneten bis er glatt und geschmeidig ist. Ist der Teig zu fest, kannst du zusätzlich etwas lauwarmes Wasser dazu geben. Ist der Pizzateig zu weich und klebrig, noch etwas Mehl unterkneten.",
+                "Den Pizzateig nach dem Kneten zu einer Kugel formen und zugedeckt an einem warmen Ort nochmals ca. 30 Minuten gehen lassen. Dabei sollte der Hefeteig sein Volumen in etwa verdoppeln.",
+                "Den Pizzateig nach dem Gehen noch einmal ca. 10 Minuten kräftig durchkneten. Den Teig für vier kleine Pizzen vierteln, für eine Blechpizza im Ganzen auf einer mit Mehl bestäubten Arbeitsfläche ausrollen. Den Teig mit bemehlten Händen immer weiter auseinanderziehen, bis vier kleine oder ein großer dünner Pizzateig-Fladen entstehen.",
+                "Du kannst Pizzateig ganz bequem am Vortag vorbereiten und für ca. 12 Stunden im Kühlschrank gehen lassen – so wird er sogar besonders feinporig. Wenn’s mal schnell gehen soll, greifsgreifst du einfach zu frischem Pizzateig aus dem Kühlregal - den musst du nur noch belegen und backen.",
+                "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben. Den Teig zunächst mit selbst gemachter Tomatensoße für Pizza bestreichen und nach Belieben belegen. Der simpelste Belag ist der für die Pizza Margherita. Er besteht neben Tomatensugo lediglich aus Mozzarella und Basilikum. Die fertig belegte Pizza im vorgeheizten Backofen (E-Herd: 200 °C/Umluft: 175 °C/Gas: Stufe 3) ca. 20 Minuten backen."
+            ]
+        },
+        {
+            "id": "pizzasosse",
+            "name": "Pizza Soße",
+            "ingredients": [
+                {
+                    "id": "knoblauch",
+                    "amount": "1",
+                    "name": "Knoblauchzehe"
+                },
+                {
+                    "id": "zwiebel",
+                    "amount": "1",
+                    "name": "Zwiebel"
+                },
+                {
+                    "id": "oel",
+                    "name": "Olivenöl"
+                },
+                {
+                    "id": "tomaten",
+                    "name": "Tomaten"
+                },
+                {
+                    "id": "oregano",
+                    "name": "Oregano"
+                },
+                {
+                    "id": "basilikum",
+                    "name": "Basilikum"
+                },
+                {
+                    "id": "gewuerze",
+                    "name": "Salz, Pfeffer und Zucker"
+                }
+            ],
+            "preparation": [
+                "{zwiebel} und {knoblauch} schälen und fein würfeln. Beides in heißem Öl ca. 5 Minuten andünsten. Dann die Tomaten zufügen und mit einem Pfannenwender zerkleinern.",
+                "Aufkochen und 10 Minuten kochen lassen. Für den Geschmack erst dann die Kräuter zugeben und in weiteren 10-20 Minuten leicht dicklich einkochen (Vorsicht - die Tomatensoße spritzt!).",
+                "Die Soße mit {gewuerze} abschmecken und auf dem ausgerollten Pizzateig mit einem Esslöffel oder der Kelle bis zum Rand streichen. Tipp: Die Pizzasoße nicht zu dick auftragen. Lieber Soßenreste einfrieren und für die nächste Pizza oder Tomatensoße verwenden oder kühlen und am nächsten Tag als Pastasoße essen."
+            ]
+        },
+        {
+            "id": "couscoussalat",
+            "name": "Couscous Salat",
+            "portions": 4,
+            "ingredients": [
+                {
+                    "id": "couscous",
+                    "amount": "200g",
+                    "name": "Couscous"
+                },
+                {
+                    "id": "wasser",
+                    "amount": "400ml",
+                    "name": "Wasser"
+                },
+                {
+                    "id": "tomaten",
+                    "amount": "2",
+                    "name": "Tomaten"
+                },
+                {
+                    "id": "mozarella",
+                    "amount": "1 Pkg.",
+                    "name": "Mozarella"
+                },
+                {
+                    "id": "bruehe",
+                    "name": "Gemüsebrühpulver"
+                }
+            ],
+            "preparation": [
+                "{wasser} zum Kochen bringen. {couscous} und {bruehe} in eine Schüssel geben, und mit Wasser übergießen, bedecken und 5 Minuten ziehen lassen.",
+                "Couscous mit Pesto vermengen. {tomaten} und {mozarella} dazu geben."
+            ]
+        },
+        {
+            "id": "guacamole",
+            "name": "Guacamole",
+            "ingredients": [
+                {
+                    "id": "avocados",
+                    "amount": "2",
+                    "name": "Avocados"
+                },
+                {
+                    "id": "tomate",
+                    "amount": "1",
+                    "name": "Tomate"
+                },
+                {
+                    "id": "zwiebel",
+                    "amount": "1/2",
+                    "name": "Zwiebel"
+                },
+                {
+                    "id": "chili",
+                    "amount": "1/2",
+                    "name": "Chili"
+                },
+                {
+                    "id": "zitrone",
+                    "amount": "2 TL",
+                    "name": "Zitronensaft"
+                },
+                {
+                    "id": "salzpfeffer",
+                    "name": "Salz & Pfeffer"
+                }
+            ],
+            "preparation": [
+                "{tomate} und {zwiebel} klein schneiden. {avocados} zerdrücken und alles zusammenfügen.",
+                "Mit {chili}, {zitrone}, {salzpfeffer} würzen."
+            ]
         }
     ],
     "deserts": [

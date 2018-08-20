@@ -9,15 +9,25 @@ block content
         div.col-md-4
           img(src="/images/" + image).w-100
   div.row
-    div.col-md-4.justify-content-center
-      h2.text-center Zutaten
-      ul.list-unstyled
-        each ingredient in ingredients
-          li(class="ingredient " + ingredient.id)= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
+    div.col-md-4.justify-content-center.grow#ingredients
+      a(onclick="fadeOutIngredients()")
+        h2.text-center Zutaten
+      div.h-100.o-hidden#inglist
+        ul.list-unstyled
+          each ingredient in ingredients
+            li.min-w(class="ingredient " + ingredient.id)= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
+        if portions
+          h5= portions + " Portionen"
 
-      h5= portions + " Portionen"
+    div.col-md-1.d-none#ingredients-vert.vert
+      a(onclick="fadeInIngredients()")
+        h2.text-center Zutaten
 
-    div.col-md-8
+    div.col-md-8.shrink#preparation
       h2 Zubereitung
       each step in preparation
+        p!= step
+    div.col-md-11.shrink.d-none#preparation-amounts
+      h2 Zubereitung
+      each step in preparationAmounts
         p!= step
