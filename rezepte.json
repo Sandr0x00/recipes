@@ -96,6 +96,9 @@
             "id": "pizzateig",
             "name": "Pizza Teig",
             "portions": "4 Pizzas",
+            "image": [
+                "pizzateig.jpg"
+            ],
             "ingredients": [
                 {
                     "id": "wasser",
@@ -139,7 +142,12 @@
         },
         {
             "id": "pizzasosse",
-            "name": "Pizza Soße",
+            "name": "Pizza Sauce",
+            "image": [
+                "pizzasosse.jpg",
+                "pizzabelegt.jpg",
+                "pizzafunghi.jpg"
+            ],
             "ingredients": [
                 {
                     "id": "knoblauch",
@@ -173,8 +181,8 @@
                 }
             ],
             "preparation": [
-                "{zwiebel} und {knoblauch} schälen und fein würfeln. Beides in heißem Öl ca. 5 Minuten andünsten. Dann die Tomaten zufügen und mit einem Pfannenwender zerkleinern.",
-                "Aufkochen und 10 Minuten kochen lassen. Für den Geschmack erst dann die Kräuter zugeben und in weiteren 10-20 Minuten leicht dicklich einkochen (Vorsicht - die Tomatensoße spritzt!).",
+                "{zwiebel} und {knoblauch} schälen und fein würfeln. Beides in heißem {oel} ca. 5 Minuten andünsten. Dann die {tomaten} zufügen und mit einem Pfannenwender zerkleinern.",
+                "Aufkochen und 10 Minuten kochen lassen. Für den Geschmack erst dann {oregano} und {basilikum} zugeben und in weiteren 10-20 Minuten leicht dicklich einkochen (Vorsicht - die Tomatensoße spritzt!).",
                 "Die Soße mit {gewuerze} abschmecken und auf dem ausgerollten Pizzateig mit einem Esslöffel oder der Kelle bis zum Rand streichen. Tipp: Die Pizzasoße nicht zu dick auftragen. Lieber Soßenreste einfrieren und für die nächste Pizza oder Tomatensoße verwenden oder kühlen und am nächsten Tag als Pastasoße essen."
             ]
         },
@@ -253,7 +261,7 @@
             ]
         }
     ],
-    "deserts": [
+    "desserts": [
         {
             "id": "brownies",
             "name": "Brownies",

@@ -10,7 +10,7 @@ app.use(express.static('public'));
 app.get('/', (req, res) => {
     res.render('index', {
         mains: recipes['mains'],
-        deserts: recipes['deserts'],
+        desserts: recipes['desserts'],
     });
 });
 
@@ -19,8 +19,8 @@ app.get('/reload-json', (req, res) => {
     res.redirect('/');
 });
 
-app.get('/desert/:recipe', (req,res) => {
-    recipe = findById(recipes.deserts, req.params.recipe);
+app.get('/dessert/:recipe', (req,res) => {
+    recipe = findById(recipes.desserts, req.params.recipe);
     if (recipe) {
         res.render('recipe', recipe);
     } else {

@@ -9,19 +9,14 @@ block content
   h1 Mains
   div.row
     each recipe in mains
-      div.col-md-4
-        a(href='/mains/' + recipe.id)
-          h2.text-center= recipe.name
-          if recipe.image
-            img(src="/images/" + recipe.image[0]).w-100
+      figure.col-md-3.recipeLinkDiv
+        a.lazy.recipeLink(href='/mains/' + recipe.id, style=(recipe.image ? 'background-image: url("/images/'+recipe.image[0]+'");' : ''))
+          figcaption.text-center= recipe.name
 
 
-  h1 Deserts
+  h1 Desserts
   div.row
-    each recipe in deserts
-      div.col-md-4
-        a(href='/desert/' + recipe.id)
-          h2.text-center= recipe.name
-          if recipe.image
-            img(src="/images/" + recipe.image[0]).w-100
-
+    each recipe in desserts
+      figure.col-md-3.recipeLinkDiv
+        a.lazy.recipeLink(href='/dessert/' + recipe.id, style=(recipe.image ? 'background-image: url("/images/'+recipe.image[0]+'");' : ''))
+          figcaption.text-center= recipe.name

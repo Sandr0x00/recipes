@@ -85,3 +85,4 @@ function fadeInIngredients() {
 }
 
 $('img').Lazy();
+$('.lazy').Lazy();
