@@ -15,7 +15,7 @@ block content
       div.h-100.o-hidden#inglist
         ul.list-unstyled
           each ingredient in ingredients
-            li.min-w(class="ingredient " + ingredient.id)= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
+            li(class= ingredient.id + " ingredient min-w")= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
         if portions
           h5= portions + " Portionen"
 

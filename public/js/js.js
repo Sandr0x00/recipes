@@ -7,7 +7,7 @@ $('.ingredient').hover(
 );
 
 function getSecondClass(elem) {
-    return '.' + $(elem).attr('class').split(' ')[1]
+    return '.' + $(elem).attr('class').split(' ')[0]
 }
 
 function isMD() {

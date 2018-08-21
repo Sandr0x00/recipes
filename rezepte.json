@@ -386,5 +386,44 @@
             "Anschließend die {butter} einrühren. {eiweis} zu einem festen Eischnee aufschlagen und mit einem Löffel langsam aber gründlich unter die Teigmasse heben. Es sollten keine Eiweißflocken mehr zu sehen sein. Danach die Rosinen ohne den Rum unterrühren.",
             "In einer Pfanne Butter zerlassen und den Teig ca. 1 cm hoch eingießen. Hitze etwas reduzieren und goldgelb anbacken lassen. Immer mal wieder drunter schauen. Die Masse vierteln, umdrehen und wieder anbacken lassen. In mundgerechte Stücke teilen."
         ]
+    },
+    {
+        "id": "erdbeerlimes",
+        "name": "Erdbeerlimes",
+        "volumen": "4l",
+        "category": "drink",
+        "image": [
+            "erdbeerlimes.jpg"
+        ],
+        "ingredients": [
+            {
+                "id": "erdbeeren",
+                "amount": "2kg",
+                "name": "Erdbeeren"
+            },
+            {
+                "id": "limettensaft",
+                "amount": "700ml",
+                "name": "Limettensaft"
+            },
+            {
+                "id": "zucker",
+                "amount": "500g",
+                "name": "Zucker"
+            },
+            {
+                "id": "wodka",
+                "amount": "1l",
+                "name": "Wodka"
+            },
+            {
+                "id": "wasser",
+                "amount": "600ml",
+                "name": "Wasser"
+            }
+        ],
+        "preparation": [
+            "{wasser} mit {zucker} kurz aufkochen. {erdbeeren} zermusen und zusammen mit {limettensaft} und {wodka} zum Zuckerwasser geben."
+        ]
     }
 ]

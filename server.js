@@ -59,8 +59,8 @@ function formatPreparation(recipe) {
     preparationAmounts = JSON.stringify(recipe.preparation);
     recipe.ingredients.forEach(ingredient => {
         let regex = `\{${ingredient.id}\}`;
-        let replace = '<b class=\'ingredient ' + ingredient.id + '\'>' + ingredient.name + '</b>';
-        let replaceAmounts = '<b class=\'ingredient ' + ingredient.id + '\'>' + (ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name + '</b>';
+        let replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + ingredient.name + '</b>';
+        let replaceAmounts = '<b class=\'' + ingredient.id + ' ingredient\'>' + (ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name + '</b>';
         preparation = preparation.replace(new RegExp(regex, 'g'), replace);
         preparationAmounts = preparationAmounts.replace(new RegExp(regex, 'g'), replaceAmounts);
     });
