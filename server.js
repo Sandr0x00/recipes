@@ -9,8 +9,7 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('index', {
-        mains: recipes['mains'],
-        desserts: recipes['desserts'],
+        recipes: recipes,
     });
 });
 
@@ -19,17 +18,8 @@ app.get('/reload-json', (req, res) => {
     res.redirect('/');
 });
 
-app.get('/dessert/:recipe', (req,res) => {
-    recipe = findById(recipes.desserts, req.params.recipe);
-    if (recipe) {
-        res.render('recipe', recipe);
-    } else {
-        res.render('404');
-    }
-});
-
-app.get('/mains/:recipe', (req,res) => {
-    recipe = findById(recipes.mains, req.params.recipe);
+app.get('/recipe/:recipe', (req,res) => {
+    recipe = findById(recipes, req.params.recipe);
     if (recipe) {
         res.render('recipe', recipe);
     } else {

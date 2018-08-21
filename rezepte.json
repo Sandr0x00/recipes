@@ -1,392 +1,390 @@
-{
-    "mains": [
-        {
-            "id": "schinkennudeln",
-            "name": "Schinkennudeln",
-            "portions": 4,
-            "ingredients": [
-                {
-                    "id": "nudeln",
-                    "amount": "500g",
-                    "name": "Nudeln"
-                },
-                {
-                    "id": "schinken",
-                    "amount": "100g",
-                    "name": "Schinken"
-                },
-                {
-                    "id": "sahne",
-                    "amount": "200ml",
-                    "name": "Sahne"
-                },
-                {
-                    "id": "wasser",
-                    "amount": "400ml",
-                    "name": "Wasser"
-                },
-                {
-                    "id": "kaese",
-                    "name": "Käse"
-                },
-                {
-                    "id": "gewuerz",
-                    "name": "Salz & Pfeffer"
-                }
-            ],
-            "preparation": [
-                "{nudeln} mit 1 Becher {sahne} und {wasser} in Topf, würzen, {schinken} kleinschneiden und dazu.",
-                "Bei mittlerer Hitze ziehen lassen, manchmal umrühren.",
-                "Wenn Nudeln weich sind {kaese} dazu und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
-            ]
-        },
-        {
-            "id": "vegibolognese",
-            "name": "Vegetarische Bolognese-Sauce",
-            "portions": 4,
-            "ingredients": [
-                {
-                    "id": "knoblauch",
-                    "amount": "1",
-                    "name": "Knoblauchzehe"
-                },
-                {
-                    "id": "haferflocken",
-                    "amount": "70g",
-                    "name": "Haferflocken"
-                },
-                {
-                    "id": "tomaten",
-                    "amount": "1 Pkg.",
-                    "name": "Passierte Tomaten"
-                },
-                {
-                    "id": "karotte",
-                    "amount": "1",
-                    "name": "Karotte"
-                },
-                {
-                    "id": "bruehe",
-                    "amount": "2 TL",
-                    "name": "Gemüsebrühpulver"
-                },
-                {
-                    "id": "salz",
-                    "name": "Salz"
-                },
-                {
-                    "id": "oregano",
-                    "name": "Oregano"
-                },
-                {
-                    "id": "chili",
-                    "name": "Chilipulver"
-                },
-                {
-                    "id": "wasser",
-                    "name": "Wasser"
-                }
-            ],
-            "preparation": [
-                "{knoblauch} hacken und in Olivenöl anschwitzen (nur kurz). {tomaten} und {haferflocken} hinzugeben und kurz braten. {karotte} reiben und beimengen. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
-                "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
-            ]
-        },
-        {
-            "id": "pizzateig",
-            "name": "Pizza Teig",
-            "portions": "4 Pizzas",
-            "image": [
-                "pizzateig.jpg"
-            ],
-            "ingredients": [
-                {
-                    "id": "wasser",
-                    "amount": "300ml",
-                    "name": "lauwarmes Wasser"
-                },
-                {
-                    "id": "hefe",
-                    "amount": "1 Würfel",
-                    "name": "frische Hefe"
-                },
-                {
-                    "id": "zucker",
-                    "amount": "1 TL",
-                    "name": "Zucker"
-                },
-                {
-                    "id": "mehl",
-                    "amount": "500g",
-                    "name": "Weizenmehl (Type 00 oder 550)"
-                },
-                {
-                    "id": "salz",
-                    "amount": "1 TL",
-                    "name": "Salz"
-                },
-                {
-                    "id": "oel",
-                    "amount": "4 EL",
-                    "name": "Olivenöl"
-                }
-            ],
-            "preparation": [
-                "Die {hefe} für den Pizzateig in {wasser} bröckeln und mit dem {zucker} unter Rühren darin auflösen. Das {mehl} in eine Schüssel geben und in die Mitte eine Mulde drücken. Hefewasser in die Mulde gießen. Mit etwas Mehl vom Rand zu einem Vorteig verrühren. Diesen zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
-                "Wenn der Vorteig gegangen ist, {salz} und das {oel} zum Pizzateig geben und unterrühren. Den Pizzateig mit bemehlten Händen ca. 5 Minuten durchkneten bis er glatt und geschmeidig ist. Ist der Teig zu fest, kannst du zusätzlich etwas lauwarmes Wasser dazu geben. Ist der Pizzateig zu weich und klebrig, noch etwas Mehl unterkneten.",
-                "Den Pizzateig nach dem Kneten zu einer Kugel formen und zugedeckt an einem warmen Ort nochmals ca. 30 Minuten gehen lassen. Dabei sollte der Hefeteig sein Volumen in etwa verdoppeln.",
-                "Den Pizzateig nach dem Gehen noch einmal ca. 10 Minuten kräftig durchkneten. Den Teig für vier kleine Pizzen vierteln, für eine Blechpizza im Ganzen auf einer mit Mehl bestäubten Arbeitsfläche ausrollen. Den Teig mit bemehlten Händen immer weiter auseinanderziehen, bis vier kleine oder ein großer dünner Pizzateig-Fladen entstehen.",
-                "Du kannst Pizzateig ganz bequem am Vortag vorbereiten und für ca. 12 Stunden im Kühlschrank gehen lassen – so wird er sogar besonders feinporig. Wenn’s mal schnell gehen soll, greifsgreifst du einfach zu frischem Pizzateig aus dem Kühlregal - den musst du nur noch belegen und backen.",
-                "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben. Den Teig zunächst mit selbst gemachter Tomatensoße für Pizza bestreichen und nach Belieben belegen. Der simpelste Belag ist der für die Pizza Margherita. Er besteht neben Tomatensugo lediglich aus Mozzarella und Basilikum. Die fertig belegte Pizza im vorgeheizten Backofen (E-Herd: 200 °C/Umluft: 175 °C/Gas: Stufe 3) ca. 20 Minuten backen."
-            ]
-        },
-        {
-            "id": "pizzasosse",
-            "name": "Pizza Sauce",
-            "image": [
-                "pizzasosse.jpg",
-                "pizzabelegt.jpg",
-                "pizzafunghi.jpg"
-            ],
-            "ingredients": [
-                {
-                    "id": "knoblauch",
-                    "amount": "1",
-                    "name": "Knoblauchzehe"
-                },
-                {
-                    "id": "zwiebel",
-                    "amount": "1",
-                    "name": "Zwiebel"
-                },
-                {
-                    "id": "oel",
-                    "name": "Olivenöl"
-                },
-                {
-                    "id": "tomaten",
-                    "name": "Tomaten"
-                },
-                {
-                    "id": "oregano",
-                    "name": "Oregano"
-                },
-                {
-                    "id": "basilikum",
-                    "name": "Basilikum"
-                },
-                {
-                    "id": "gewuerze",
-                    "name": "Salz, Pfeffer und Zucker"
-                }
-            ],
-            "preparation": [
-                "{zwiebel} und {knoblauch} schälen und fein würfeln. Beides in heißem {oel} ca. 5 Minuten andünsten. Dann die {tomaten} zufügen und mit einem Pfannenwender zerkleinern.",
-                "Aufkochen und 10 Minuten kochen lassen. Für den Geschmack erst dann {oregano} und {basilikum} zugeben und in weiteren 10-20 Minuten leicht dicklich einkochen (Vorsicht - die Tomatensoße spritzt!).",
-                "Die Soße mit {gewuerze} abschmecken und auf dem ausgerollten Pizzateig mit einem Esslöffel oder der Kelle bis zum Rand streichen. Tipp: Die Pizzasoße nicht zu dick auftragen. Lieber Soßenreste einfrieren und für die nächste Pizza oder Tomatensoße verwenden oder kühlen und am nächsten Tag als Pastasoße essen."
-            ]
-        },
-        {
-            "id": "couscoussalat",
-            "name": "Couscous Salat",
-            "portions": 4,
-            "ingredients": [
-                {
-                    "id": "couscous",
-                    "amount": "200g",
-                    "name": "Couscous"
-                },
-                {
-                    "id": "wasser",
-                    "amount": "400ml",
-                    "name": "Wasser"
-                },
-                {
-                    "id": "tomaten",
-                    "amount": "2",
-                    "name": "Tomaten"
-                },
-                {
-                    "id": "mozarella",
-                    "amount": "1 Pkg.",
-                    "name": "Mozarella"
-                },
-                {
-                    "id": "bruehe",
-                    "name": "Gemüsebrühpulver"
-                }
-            ],
-            "preparation": [
-                "{wasser} zum Kochen bringen. {couscous} und {bruehe} in eine Schüssel geben, und mit Wasser übergießen, bedecken und 5 Minuten ziehen lassen.",
-                "Couscous mit Pesto vermengen. {tomaten} und {mozarella} dazu geben."
-            ]
-        },
-        {
-            "id": "guacamole",
-            "name": "Guacamole",
-            "ingredients": [
-                {
-                    "id": "avocados",
-                    "amount": "2",
-                    "name": "Avocados"
-                },
-                {
-                    "id": "tomate",
-                    "amount": "1",
-                    "name": "Tomate"
-                },
-                {
-                    "id": "zwiebel",
-                    "amount": "1/2",
-                    "name": "Zwiebel"
-                },
-                {
-                    "id": "chili",
-                    "amount": "1/2",
-                    "name": "Chili"
-                },
-                {
-                    "id": "zitrone",
-                    "amount": "2 TL",
-                    "name": "Zitronensaft"
-                },
-                {
-                    "id": "salzpfeffer",
-                    "name": "Salz & Pfeffer"
-                }
-            ],
-            "preparation": [
-                "{tomate} und {zwiebel} klein schneiden. {avocados} zerdrücken und alles zusammenfügen.",
-                "Mit {chili}, {zitrone}, {salzpfeffer} würzen."
-            ]
-        }
-    ],
-    "desserts": [
-        {
-            "id": "brownies",
-            "name": "Brownies",
-            "image": [
-                "brownies-ofen.jpg",
-                "brownies-schachtel.jpeg"
-            ],
-            "ingredients": [
-                {
-                    "id": "butter",
-                    "amount": "185g",
-                    "name": "Butter"
-                },
-                {
-                    "id": "schokiz",
-                    "amount": "200g",
-                    "name": "Zartbitter Schokolade"
-                },
-                {
-                    "id": "mehl",
-                    "amount": "85g",
-                    "name": "Mehl"
-                },
-                {
-                    "id": "kakao",
-                    "amount": "40g",
-                    "name": "Kakao"
-                },
-                {
-                    "id": "schokiw",
-                    "amount": "50g",
-                    "name": "Weiße Schokolade"
-                },
-                {
-                    "id": "schoki",
-                    "amount": "50g",
-                    "name": "Milchschokolade"
-                },
-                {
-                    "id": "eier",
-                    "amount": "3",
-                    "name": "Eier"
-                },
-                {   
-                    "id": "zucker",
-                    "amount": "275g",
-                    "name": "Zucker"
-                }
-            ],
-            "preparation": [
-                "{schokiz} in kleine Stücke brechen und mit {butter} in eine Schüssel geben. In Wasserbad schmelzen. Alternativ in der Mikrowelle 2 Minuten erhitzen. Auf Raumtemparatur abkühlen lassen.",
-                "{mehl} und {kakao} zusammmen sieben. {schokiw} und {schoki} klein hacken. {eier} mit {zucker} steif schlagen.",
-                "Gescholzene Schokolade unter Eischnee heben.",
-                "Mehl-Kakao unter die Masse heben.",
-                "Schokoladenstückchen unterheben.",
-                "Masse in Form geben und bei Umluft 160°C für 25 Minuten auf mittlerer Schiene backen. Die Brownies sind fertig, wenn die Masse nicht mehr \"wobbled\". Dann für weitere 5 Minuten backen.",
-                "Abkühlen lassen und Brownies kleinschneiden. Aufbewahrung in luftdichter Verpackung bis zu 2 Wochen, im Kühlschrank ein Monat."
-            ],
-            "link": "http://www.bbcgoodfood.com/recipes/1223/bestever-brownies"
-        },
-        {
-            "id": "kaiserschmarrn",
-            "name": "Kaiserschmarrn",
-            "image": [
-                "kaiserschmarrn-pfanne.jpg",
-                "kaiserschmarrn.jpg"
-            ],
-            "portions": 4,
-            "ingredients": [
-                {
-                    "id": "rosine",
-                    "amount": "100g",
-                    "name": "Rosinen"
-                },
-                {
-                    "id": "rum",
-                    "name":"Rum"
-                },
-                {
-                    "id": "eigelb",
-                    "amount": "6",
-                    "name": "Eigelb"
-                },
-                {
-                    "id": "eiweis",
-                    "amount": "6",
-                    "name": "Eiweiß"
-                },
-                {
-                    "id": "vanille",
-                    "amount": "1 Pkg.",
-                    "name": "Vanillezucker"
-                },
-                {
-                    "id": "zucker",
-                    "amount": "1 gehäufter EL",
-                    "name": "Zucker"
-                },
-                {
-                    "id": "salz",
-                    "amount": "Prise",
-                    "name": "Salz"
-                },
-                {
-                    "id": "mehl",
-                    "amount": "250g",
-                    "name": "Mehl"
-                },
-                {
-                    "id": "milch",
-                    "amount": "500ml",
-                    "name": "Milch"
-                },
-                {
-                    "id": "butter",
-                    "amount": "50g zerlassene",
-                    "name": "Butter"
-                }
-            ],
-            "preparation": [
-                "Die {rosine} mindestens eine halbe Stunde in {rum} einlegen.",
-                "{eigelb} mit {vanille}, {salz} und {zucker} mit dem Handrührgerät schaumig aufschlagen. Nach und nach abwechselnd jeweils {mehl} und {milch} einrühren.",
-                "Anschließend die {butter} einrühren. {eiweis} zu einem festen Eischnee aufschlagen und mit einem Löffel langsam aber gründlich unter die Teigmasse heben. Es sollten keine Eiweißflocken mehr zu sehen sein. Danach die Rosinen ohne den Rum unterrühren.",
-                "In einer Pfanne Butter zerlassen und den Teig ca. 1 cm hoch eingießen. Hitze etwas reduzieren und goldgelb anbacken lassen. Immer mal wieder drunter schauen. Die Masse vierteln, umdrehen und wieder anbacken lassen. In mundgerechte Stücke teilen."
-            ]
-        }
-    ]
-}
+[
+    {
+        "id": "schinkennudeln",
+        "name": "Schinkennudeln",
+        "category": "main",
+        "portions": 4,
+        "ingredients": [
+            {
+                "id": "nudeln",
+                "amount": "500g",
+                "name": "Nudeln"
+            },
+            {
+                "id": "schinken",
+                "amount": "100g",
+                "name": "Schinken"
+            },
+            {
+                "id": "sahne",
+                "amount": "200ml",
+                "name": "Sahne"
+            },
+            {
+                "id": "wasser",
+                "amount": "400ml",
+                "name": "Wasser"
+            },
+            {
+                "id": "kaese",
+                "name": "Käse"
+            },
+            {
+                "id": "gewuerz",
+                "name": "Salz & Pfeffer"
+            }
+        ],
+        "preparation": [
+            "{nudeln} mit 1 Becher {sahne} und {wasser} in Topf, würzen, {schinken} kleinschneiden und dazu.",
+            "Bei mittlerer Hitze ziehen lassen, manchmal umrühren.",
+            "Wenn Nudeln weich sind {kaese} dazu und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
+        ]
+    },
+    {
+        "id": "vegibolognese",
+        "name": "Vegetarische Bolognese-Sauce",
+        "portions": 4,
+        "ingredients": [
+            {
+                "id": "knoblauch",
+                "amount": "1",
+                "name": "Knoblauchzehe"
+            },
+            {
+                "id": "haferflocken",
+                "amount": "70g",
+                "name": "Haferflocken"
+            },
+            {
+                "id": "tomaten",
+                "amount": "1 Pkg.",
+                "name": "Passierte Tomaten"
+            },
+            {
+                "id": "karotte",
+                "amount": "1",
+                "name": "Karotte"
+            },
+            {
+                "id": "bruehe",
+                "amount": "2 TL",
+                "name": "Gemüsebrühpulver"
+            },
+            {
+                "id": "salz",
+                "name": "Salz"
+            },
+            {
+                "id": "oregano",
+                "name": "Oregano"
+            },
+            {
+                "id": "chili",
+                "name": "Chilipulver"
+            },
+            {
+                "id": "wasser",
+                "name": "Wasser"
+            }
+        ],
+        "preparation": [
+            "{knoblauch} hacken und in Olivenöl anschwitzen (nur kurz). {tomaten} und {haferflocken} hinzugeben und kurz braten. {karotte} reiben und beimengen. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
+            "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
+        ]
+    },
+    {
+        "id": "pizzateig",
+        "name": "Pizza Teig",
+        "portions": "4 Pizzas",
+        "image": [
+            "pizzateig.jpg"
+        ],
+        "ingredients": [
+            {
+                "id": "wasser",
+                "amount": "300ml",
+                "name": "lauwarmes Wasser"
+            },
+            {
+                "id": "hefe",
+                "amount": "1 Würfel",
+                "name": "frische Hefe"
+            },
+            {
+                "id": "zucker",
+                "amount": "1 TL",
+                "name": "Zucker"
+            },
+            {
+                "id": "mehl",
+                "amount": "500g",
+                "name": "Weizenmehl (Type 00 oder 550)"
+            },
+            {
+                "id": "salz",
+                "amount": "1 TL",
+                "name": "Salz"
+            },
+            {
+                "id": "oel",
+                "amount": "4 EL",
+                "name": "Olivenöl"
+            }
+        ],
+        "preparation": [
+            "Die {hefe} für den Pizzateig in {wasser} bröckeln und mit dem {zucker} unter Rühren darin auflösen. Das {mehl} in eine Schüssel geben und in die Mitte eine Mulde drücken. Hefewasser in die Mulde gießen. Mit etwas Mehl vom Rand zu einem Vorteig verrühren. Diesen zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
+            "Wenn der Vorteig gegangen ist, {salz} und das {oel} zum Pizzateig geben und unterrühren. Den Pizzateig mit bemehlten Händen ca. 5 Minuten durchkneten bis er glatt und geschmeidig ist. Ist der Teig zu fest, kannst du zusätzlich etwas lauwarmes Wasser dazu geben. Ist der Pizzateig zu weich und klebrig, noch etwas Mehl unterkneten.",
+            "Den Pizzateig nach dem Kneten zu einer Kugel formen und zugedeckt an einem warmen Ort nochmals ca. 30 Minuten gehen lassen. Dabei sollte der Hefeteig sein Volumen in etwa verdoppeln.",
+            "Den Pizzateig nach dem Gehen noch einmal ca. 10 Minuten kräftig durchkneten. Den Teig für vier kleine Pizzen vierteln, für eine Blechpizza im Ganzen auf einer mit Mehl bestäubten Arbeitsfläche ausrollen. Den Teig mit bemehlten Händen immer weiter auseinanderziehen, bis vier kleine oder ein großer dünner Pizzateig-Fladen entstehen.",
+            "Du kannst Pizzateig ganz bequem am Vortag vorbereiten und für ca. 12 Stunden im Kühlschrank gehen lassen – so wird er sogar besonders feinporig. Wenn’s mal schnell gehen soll, greifsgreifst du einfach zu frischem Pizzateig aus dem Kühlregal - den musst du nur noch belegen und backen.",
+            "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben. Den Teig zunächst mit selbst gemachter Tomatensoße für Pizza bestreichen und nach Belieben belegen. Der simpelste Belag ist der für die Pizza Margherita. Er besteht neben Tomatensugo lediglich aus Mozzarella und Basilikum. Die fertig belegte Pizza im vorgeheizten Backofen (E-Herd: 200 °C/Umluft: 175 °C/Gas: Stufe 3) ca. 20 Minuten backen."
+        ]
+    },
+    {
+        "id": "pizzasosse",
+        "name": "Pizza Sauce",
+        "image": [
+            "pizzasosse.jpg",
+            "pizzabelegt.jpg",
+            "pizzafunghi.jpg"
+        ],
+        "ingredients": [
+            {
+                "id": "knoblauch",
+                "amount": "1",
+                "name": "Knoblauchzehe"
+            },
+            {
+                "id": "zwiebel",
+                "amount": "1",
+                "name": "Zwiebel"
+            },
+            {
+                "id": "oel",
+                "name": "Olivenöl"
+            },
+            {
+                "id": "tomaten",
+                "name": "Tomaten"
+            },
+            {
+                "id": "oregano",
+                "name": "Oregano"
+            },
+            {
+                "id": "basilikum",
+                "name": "Basilikum"
+            },
+            {
+                "id": "gewuerze",
+                "name": "Salz, Pfeffer und Zucker"
+            }
+        ],
+        "preparation": [
+            "{zwiebel} und {knoblauch} schälen und fein würfeln. Beides in heißem {oel} ca. 5 Minuten andünsten. Dann die {tomaten} zufügen und mit einem Pfannenwender zerkleinern.",
+            "Aufkochen und 10 Minuten kochen lassen. Für den Geschmack erst dann {oregano} und {basilikum} zugeben und in weiteren 10-20 Minuten leicht dicklich einkochen (Vorsicht - die Tomatensoße spritzt!).",
+            "Die Soße mit {gewuerze} abschmecken und auf dem ausgerollten Pizzateig mit einem Esslöffel oder der Kelle bis zum Rand streichen. Tipp: Die Pizzasoße nicht zu dick auftragen. Lieber Soßenreste einfrieren und für die nächste Pizza oder Tomatensoße verwenden oder kühlen und am nächsten Tag als Pastasoße essen."
+        ]
+    },
+    {
+        "id": "couscoussalat",
+        "name": "Couscous Salat",
+        "portions": 4,
+        "ingredients": [
+            {
+                "id": "couscous",
+                "amount": "200g",
+                "name": "Couscous"
+            },
+            {
+                "id": "wasser",
+                "amount": "400ml",
+                "name": "Wasser"
+            },
+            {
+                "id": "tomaten",
+                "amount": "2",
+                "name": "Tomaten"
+            },
+            {
+                "id": "mozarella",
+                "amount": "1 Pkg.",
+                "name": "Mozarella"
+            },
+            {
+                "id": "bruehe",
+                "name": "Gemüsebrühpulver"
+            }
+        ],
+        "preparation": [
+            "{wasser} zum Kochen bringen. {couscous} und {bruehe} in eine Schüssel geben, und mit Wasser übergießen, bedecken und 5 Minuten ziehen lassen.",
+            "Couscous mit Pesto vermengen. {tomaten} und {mozarella} dazu geben."
+        ]
+    },
+    {
+        "id": "guacamole",
+        "name": "Guacamole",
+        "ingredients": [
+            {
+                "id": "avocados",
+                "amount": "2",
+                "name": "Avocados"
+            },
+            {
+                "id": "tomate",
+                "amount": "1",
+                "name": "Tomate"
+            },
+            {
+                "id": "zwiebel",
+                "amount": "1/2",
+                "name": "Zwiebel"
+            },
+            {
+                "id": "chili",
+                "amount": "1/2",
+                "name": "Chili"
+            },
+            {
+                "id": "zitrone",
+                "amount": "2 TL",
+                "name": "Zitronensaft"
+            },
+            {
+                "id": "salzpfeffer",
+                "name": "Salz & Pfeffer"
+            }
+        ],
+        "preparation": [
+            "{tomate} und {zwiebel} klein schneiden. {avocados} zerdrücken und alles zusammenfügen.",
+            "Mit {chili}, {zitrone}, {salzpfeffer} würzen."
+        ]
+    },
+    {
+        "id": "brownies",
+        "name": "Brownies",
+        "category": "dessert",
+        "image": [
+            "brownies-ofen.jpg",
+            "brownies-schachtel.jpeg"
+        ],
+        "ingredients": [
+            {
+                "id": "butter",
+                "amount": "185g",
+                "name": "Butter"
+            },
+            {
+                "id": "schokiz",
+                "amount": "200g",
+                "name": "Zartbitter Schokolade"
+            },
+            {
+                "id": "mehl",
+                "amount": "85g",
+                "name": "Mehl"
+            },
+            {
+                "id": "kakao",
+                "amount": "40g",
+                "name": "Kakao"
+            },
+            {
+                "id": "schokiw",
+                "amount": "50g",
+                "name": "Weiße Schokolade"
+            },
+            {
+                "id": "schoki",
+                "amount": "50g",
+                "name": "Milchschokolade"
+            },
+            {
+                "id": "eier",
+                "amount": "3",
+                "name": "Eier"
+            },
+            {   
+                "id": "zucker",
+                "amount": "275g",
+                "name": "Zucker"
+            }
+        ],
+        "preparation": [
+            "{schokiz} in kleine Stücke brechen und mit {butter} in eine Schüssel geben. In Wasserbad schmelzen. Alternativ in der Mikrowelle 2 Minuten erhitzen. Auf Raumtemparatur abkühlen lassen.",
+            "{mehl} und {kakao} zusammmen sieben. {schokiw} und {schoki} klein hacken. {eier} mit {zucker} steif schlagen.",
+            "Gescholzene Schokolade unter Eischnee heben.",
+            "Mehl-Kakao unter die Masse heben.",
+            "Schokoladenstückchen unterheben.",
+            "Masse in Form geben und bei Umluft 160°C für 25 Minuten auf mittlerer Schiene backen. Die Brownies sind fertig, wenn die Masse nicht mehr \"wobbled\". Dann für weitere 5 Minuten backen.",
+            "Abkühlen lassen und Brownies kleinschneiden. Aufbewahrung in luftdichter Verpackung bis zu 2 Wochen, im Kühlschrank ein Monat."
+        ],
+        "link": "http://www.bbcgoodfood.com/recipes/1223/bestever-brownies"
+    },
+    {
+        "id": "kaiserschmarrn",
+        "name": "Kaiserschmarrn",
+        "image": [
+            "kaiserschmarrn-pfanne.jpg",
+            "kaiserschmarrn.jpg"
+        ],
+        "portions": 4,
+        "ingredients": [
+            {
+                "id": "rosine",
+                "amount": "100g",
+                "name": "Rosinen"
+            },
+            {
+                "id": "rum",
+                "name":"Rum"
+            },
+            {
+                "id": "eigelb",
+                "amount": "6",
+                "name": "Eigelb"
+            },
+            {
+                "id": "eiweis",
+                "amount": "6",
+                "name": "Eiweiß"
+            },
+            {
+                "id": "vanille",
+                "amount": "1 Pkg.",
+                "name": "Vanillezucker"
+            },
+            {
+                "id": "zucker",
+                "amount": "1 gehäufter EL",
+                "name": "Zucker"
+            },
+            {
+                "id": "salz",
+                "amount": "Prise",
+                "name": "Salz"
+            },
+            {
+                "id": "mehl",
+                "amount": "250g",
+                "name": "Mehl"
+            },
+            {
+                "id": "milch",
+                "amount": "500ml",
+                "name": "Milch"
+            },
+            {
+                "id": "butter",
+                "amount": "50g zerlassene",
+                "name": "Butter"
+            }
+        ],
+        "preparation": [
+            "Die {rosine} mindestens eine halbe Stunde in {rum} einlegen.",
+            "{eigelb} mit {vanille}, {salz} und {zucker} mit dem Handrührgerät schaumig aufschlagen. Nach und nach abwechselnd jeweils {mehl} und {milch} einrühren.",
+            "Anschließend die {butter} einrühren. {eiweis} zu einem festen Eischnee aufschlagen und mit einem Löffel langsam aber gründlich unter die Teigmasse heben. Es sollten keine Eiweißflocken mehr zu sehen sein. Danach die Rosinen ohne den Rum unterrühren.",
+            "In einer Pfanne Butter zerlassen und den Teig ca. 1 cm hoch eingießen. Hitze etwas reduzieren und goldgelb anbacken lassen. Immer mal wieder drunter schauen. Die Masse vierteln, umdrehen und wieder anbacken lassen. In mundgerechte Stücke teilen."
+        ]
+    }
+]

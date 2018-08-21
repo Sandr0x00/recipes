@@ -6,17 +6,9 @@ block content
       a.float-right(href='/reload-json')
         i.fas.fa-sync-alt(style='font-size:3em; color:#333;')
 
-  h1 Mains
+  h1 Recipes
   div.row
-    each recipe in mains
+    each recipe in recipes
       figure.col-md-3.recipeLinkDiv
-        a.lazy.recipeLink(href='/mains/' + recipe.id, style=(recipe.image ? 'background-image: url("/images/'+recipe.image[0]+'");' : ''))
-          figcaption.text-center= recipe.name
-
-
-  h1 Desserts
-  div.row
-    each recipe in desserts
-      figure.col-md-3.recipeLinkDiv
-        a.lazy.recipeLink(href='/dessert/' + recipe.id, style=(recipe.image ? 'background-image: url("/images/'+recipe.image[0]+'");' : ''))
+        a.lazy.recipeLink(href='/recipe/' + recipe.id, style=(recipe.image ? 'background-image: url("/images/'+recipe.image[0]+'");' : ''))
           figcaption.text-center= recipe.name
