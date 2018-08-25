@@ -1,9 +1,9 @@
-[
-    {
+{
+    "schinkennudeln": {
         "id": "schinkennudeln",
         "name": "Schinkennudeln",
         "category": "main",
-        "portions": 4,
+        "portions": "4 Portionen",
         "ingredients": [
             {
                 "id": "nudeln",
@@ -40,10 +40,10 @@
             "Wenn Nudeln weich sind {kaese} dazu und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
         ]
     },
-    {
+    "vegibolognese": {
         "id": "vegibolognese",
         "name": "Vegetarische Bolognese-Sauce",
-        "portions": 4,
+        "portions": "4 Portionen",
         "ingredients": [
             {
                 "id": "knoblauch",
@@ -92,12 +92,14 @@
             "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
         ]
     },
-    {
+    "pizzateig": {
         "id": "pizzateig",
         "name": "Pizza Teig",
         "portions": "4 Pizzas",
         "image": [
-            "pizzateig.jpg"
+            "pizzateig-2.jpg",
+            "pizzateig.jpg",
+            "pizzateig-3.jpg"
         ],
         "ingredients": [
             {
@@ -132,22 +134,22 @@
             }
         ],
         "preparation": [
-            "Die {hefe} für den Pizzateig in {wasser} bröckeln und mit dem {zucker} unter Rühren darin auflösen. Das {mehl} in eine Schüssel geben und in die Mitte eine Mulde drücken. Hefewasser in die Mulde gießen. Mit etwas Mehl vom Rand zu einem Vorteig verrühren. Diesen zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
-            "Wenn der Vorteig gegangen ist, {salz} und das {oel} zum Pizzateig geben und unterrühren. Den Pizzateig mit bemehlten Händen ca. 5 Minuten durchkneten bis er glatt und geschmeidig ist. Ist der Teig zu fest, kannst du zusätzlich etwas lauwarmes Wasser dazu geben. Ist der Pizzateig zu weich und klebrig, noch etwas Mehl unterkneten.",
-            "Den Pizzateig nach dem Kneten zu einer Kugel formen und zugedeckt an einem warmen Ort nochmals ca. 30 Minuten gehen lassen. Dabei sollte der Hefeteig sein Volumen in etwa verdoppeln.",
-            "Den Pizzateig nach dem Gehen noch einmal ca. 10 Minuten kräftig durchkneten. Den Teig für vier kleine Pizzen vierteln, für eine Blechpizza im Ganzen auf einer mit Mehl bestäubten Arbeitsfläche ausrollen. Den Teig mit bemehlten Händen immer weiter auseinanderziehen, bis vier kleine oder ein großer dünner Pizzateig-Fladen entstehen.",
-            "Du kannst Pizzateig ganz bequem am Vortag vorbereiten und für ca. 12 Stunden im Kühlschrank gehen lassen – so wird er sogar besonders feinporig. Wenn’s mal schnell gehen soll, greifsgreifst du einfach zu frischem Pizzateig aus dem Kühlregal - den musst du nur noch belegen und backen.",
-            "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben. Den Teig zunächst mit selbst gemachter Tomatensoße für Pizza bestreichen und nach Belieben belegen. Der simpelste Belag ist der für die Pizza Margherita. Er besteht neben Tomatensugo lediglich aus Mozzarella und Basilikum. Die fertig belegte Pizza im vorgeheizten Backofen (E-Herd: 200 °C/Umluft: 175 °C/Gas: Stufe 3) ca. 20 Minuten backen."
+            "{hefe} und {zucker} in {wasser} unter Rühren auflösen. {mehl} in eine Schüssel geben und in die Mitte eine Mulde drücken. Hefewasser in die Mulde gießen. Zu einem Vorteig verrühren. Diesen zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
+            "Danach {salz} und {oel} zum Teig geben und unterrühren. Den Pizzateig mit bemehlten Händen ca. 5 Minuten durchkneten bis er glatt und geschmeidig ist. Ist der Teig zu fest, etwas lauwarmes Wasser dazu geben. Ist der Pizzateig zu weich und klebrig, noch etwas Mehl unterkneten. Nach dem Kneten zu einer Kugel formen und zugedeckt an einem warmen Ort nochmal ca. 30 Minuten gehen lassen. Dabei sollte der Hefeteig sein Volumen in etwa verdoppeln.",
+            "Danach noch einmal ca. 10 Minuten kräftig durchkneten. Den Teig vierteln und auf einer mit Mehl bestäubten Arbeitsfläche ausrollen.",
+            "Kann einen Tag im Kühlschrank aufbewahrt werden.",
+            "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben. Den Teig mit Tomatensoße für bestreichen und nach Belieben belegen. Die fertig belegte Pizza im vorgeheizten Backofen (Umluft: 250 °C / MAX) ca. 5-10 Minuten backen."
         ]
     },
-    {
-        "id": "pizzasosse",
+    "pizzasauce": {
+        "id": "pizzasauce",
         "name": "Pizza Sauce",
         "image": [
             "pizzasosse.jpg",
-            "pizzabelegt.jpg",
-            "pizzafunghi.jpg"
+            "pizzasauce.jpg",
+            "pizzabelegt.jpg"
         ],
+        "portions": "1 Pizza",
         "ingredients": [
             {
                 "id": "knoblauch",
@@ -155,17 +157,13 @@
                 "name": "Knoblauchzehe"
             },
             {
-                "id": "zwiebel",
+                "id": "tomaten",
                 "amount": "1",
-                "name": "Zwiebel"
+                "name": "Tomate"
             },
             {
                 "id": "oel",
                 "name": "Olivenöl"
-            },
-            {
-                "id": "tomaten",
-                "name": "Tomaten"
             },
             {
                 "id": "oregano",
@@ -181,15 +179,17 @@
             }
         ],
         "preparation": [
-            "{zwiebel} und {knoblauch} schälen und fein würfeln. Beides in heißem {oel} ca. 5 Minuten andünsten. Dann die {tomaten} zufügen und mit einem Pfannenwender zerkleinern.",
-            "Aufkochen und 10 Minuten kochen lassen. Für den Geschmack erst dann {oregano} und {basilikum} zugeben und in weiteren 10-20 Minuten leicht dicklich einkochen (Vorsicht - die Tomatensoße spritzt!).",
-            "Die Soße mit {gewuerze} abschmecken und auf dem ausgerollten Pizzateig mit einem Esslöffel oder der Kelle bis zum Rand streichen. Tipp: Die Pizzasoße nicht zu dick auftragen. Lieber Soßenreste einfrieren und für die nächste Pizza oder Tomatensoße verwenden oder kühlen und am nächsten Tag als Pastasoße essen."
+            "{knoblauch} und {tomaten} fein würfeln. {basilikum} kleinschneiden und mit {oel}, {oregano}, {gewuerze} vermischen.",
+            "Auf dem ausgerollten Pizzateig verteilen."
         ]
     },
-    {
+    "couscoussalat": {
         "id": "couscoussalat",
         "name": "Couscous Salat",
-        "portions": 4,
+        "portions": "4 Portionen",
+        "image": [
+            "couscous.jpg"
+        ],
         "ingredients": [
             {
                 "id": "couscous",
@@ -221,7 +221,7 @@
             "Couscous mit Pesto vermengen. {tomaten} und {mozarella} dazu geben."
         ]
     },
-    {
+    "guacamole": {
         "id": "guacamole",
         "name": "Guacamole",
         "ingredients": [
@@ -260,7 +260,7 @@
             "Mit {chili}, {zitrone}, {salzpfeffer} würzen."
         ]
     },
-    {
+    "brownies": {
         "id": "brownies",
         "name": "Brownies",
         "category": "dessert",
@@ -321,14 +321,14 @@
         ],
         "link": "http://www.bbcgoodfood.com/recipes/1223/bestever-brownies"
     },
-    {
+    "kaiserschmarrn": {
         "id": "kaiserschmarrn",
         "name": "Kaiserschmarrn",
         "image": [
             "kaiserschmarrn-pfanne.jpg",
             "kaiserschmarrn.jpg"
         ],
-        "portions": 4,
+        "portions": "4 Pfannen",
         "ingredients": [
             {
                 "id": "rosine",
@@ -387,10 +387,10 @@
             "In einer Pfanne Butter zerlassen und den Teig ca. 1 cm hoch eingießen. Hitze etwas reduzieren und goldgelb anbacken lassen. Immer mal wieder drunter schauen. Die Masse vierteln, umdrehen und wieder anbacken lassen. In mundgerechte Stücke teilen."
         ]
     },
-    {
+    "erdbeerlimes": {
         "id": "erdbeerlimes",
         "name": "Erdbeerlimes",
-        "volumen": "4l",
+        "portions": "4 Liter",
         "category": "drink",
         "image": [
             "erdbeerlimes.jpg"
@@ -426,4 +426,4 @@
             "{wasser} mit {zucker} kurz aufkochen. {erdbeeren} zermusen und zusammen mit {limettensaft} und {wodka} zum Zuckerwasser geben."
         ]
     }
-]
+}

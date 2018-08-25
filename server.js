@@ -35,9 +35,9 @@ app.listen(port, (err) => {
 });
 
 
-function findById(arr, id) {
-    for (let i = 0; i < arr.length; i++) {
-        recipe = arr[i];
+function findById(recipes, id) {
+    for (let key in recipes) {
+        let recipe = recipes[key];
         if (recipe.id == id) {
             prep = formatPreparation(recipe);
             return {
