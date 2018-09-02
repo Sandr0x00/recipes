@@ -7,21 +7,16 @@ block content
     div.row.images
 
       mixin img(file)
-        div.lazy.recipeLink(style=('background-image: url("/images/' + file + '");'))
+        div.lazy.recipeLink(data-src=('/images/' + file))
 
-      case images.length
-        when 1
-          div.col-md-6.offset-md-3.recipeLinkDiv(style=('max-height: 450px;'))
-            +img(images[0])
-        when 2
-          div.col-md-4.offset-md-2.recipeLinkDiv(style=('max-height: 350px;'))
-            +img(images[0])
-          div.col-md-4.recipeLinkDiv(style=('max-height: 350px;'))
-            +img(images[1])
-        when 3
-          each image in images
-            div.col-md-4.recipeLinkDiv(style=('max-height: 350px;'))
-              +img(image)
+      if images.length == 1
+        div.recipeImage.col-12.col-sm-10.offset-sm-1.col-lg-6.offset-lg-3.recipeLinkDiv
+          +img(images[0])
+      else
+        div.recipeImage.col-6.recipeLinkDiv
+          +img(images[0])
+        div.recipeImage.col-6.recipeLinkDiv
+          +img(images[1])
 
   div.row
     div.col-md-4.justify-content-center.grow.animate#ingredients

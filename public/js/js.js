@@ -7,7 +7,7 @@ $('.ingredient').hover(
 );
 
 function getSecondClass(elem) {
-    return '.' + $(elem).attr('class').split(' ')[0]
+    return '.' + $(elem).attr('class').split(' ')[0];
 }
 
 function isMD() {
@@ -84,5 +84,5 @@ function fadeInIngredients() {
     }
 }
 
-$('img').Lazy();
 $('.lazy').Lazy();
+$('figcaption').fitText(0.9);

@@ -64,7 +64,7 @@ function formatPreparation(recipe) {
         preparation = preparation.replace(new RegExp(regex, 'g'), replace);
         preparationAmounts = preparationAmounts.replace(new RegExp(regex, 'g'), replaceAmounts);
     });
-    return [ 
+    return [
         JSON.parse(preparation),
         JSON.parse(preparationAmounts)
     ];

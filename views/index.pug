@@ -9,6 +9,6 @@ block content
   h1 Recipes
   div.row
     each recipe in recipes
-      figure.col-md-3.recipeLinkDiv
-        a.lazy.recipeLink(href='/recipe/' + recipe.id, style=(recipe.image ? 'background-image: url("/images/'+recipe.image[0]+'");' : ''))
+      figure.col-6.col-sm-4.col-md-3.recipeLinkDiv
+        a.lazy.recipeLink(href='/recipe/' + recipe.id, data-src=(recipe.image ? '/images/'+recipe.image[0] : ''))
           figcaption.text-center= recipe.name

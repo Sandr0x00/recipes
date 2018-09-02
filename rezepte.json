@@ -97,7 +97,6 @@
         "name": "Pizza Teig",
         "portions": "4 Pizzas",
         "image": [
-            "pizzateig-2.jpg",
             "pizzateig.jpg",
             "pizzateig-3.jpg"
         ],
@@ -146,11 +145,15 @@
         "name": "Pizza Sauce",
         "image": [
             "pizzasosse.jpg",
-            "pizzasauce.jpg",
-            "pizzabelegt.jpg"
+            "pizzabelegt.jpg",
+            "pizzasauce.jpg"
         ],
         "portions": "1 Pizza",
         "ingredients": [
+            {
+                "id": "passiertetomaten",
+                "name": "Passierte Tomaten"
+            },
             {
                 "id": "knoblauch",
                 "amount": "1",
@@ -179,7 +182,7 @@
             }
         ],
         "preparation": [
-            "{knoblauch} und {tomaten} fein würfeln. {basilikum} kleinschneiden und mit {oel}, {oregano}, {gewuerze} vermischen.",
+            "{knoblauch} und {tomaten} fein würfeln. {basilikum} kleinschneiden und mit {passiertetomaten}, {oel}, {oregano}, {gewuerze} vermischen.",
             "Auf dem ausgerollten Pizzateig verteilen."
         ]
     },
@@ -208,8 +211,13 @@
             },
             {
                 "id": "mozarella",
-                "amount": "1 Pkg.",
+                "amount": "2 Pkg.",
                 "name": "Mozarella"
+            },
+            {
+                "id": "pesto",
+                "amount": "200g",
+                "name": "Pesto"
             },
             {
                 "id": "bruehe",
@@ -218,7 +226,7 @@
         ],
         "preparation": [
             "{wasser} zum Kochen bringen. {couscous} und {bruehe} in eine Schüssel geben, und mit Wasser übergießen, bedecken und 5 Minuten ziehen lassen.",
-            "Couscous mit Pesto vermengen. {tomaten} und {mozarella} dazu geben."
+            "Couscous mit {pesto} vermengen. {tomaten} und {mozarella} dazu geben."
         ]
     },
     "guacamole": {
