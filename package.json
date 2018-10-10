@@ -1,4 +1,9 @@
 {
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Sandr00/recipes.git"
+    },
     "scripts": {
         "pretest": "eslint --ignore-path .gitignore ."
     },
