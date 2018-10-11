@@ -21,9 +21,12 @@ app.get('/reload-json', (req, res) => {
 });
 
 app.get('/recipe/:recipe', (req,res) => {
-    recipe = findById(recipes, req.params.recipe);
+    let now = Date.now();
+    let recipe = findById(recipes, req.params.recipe);
     if (recipe) {
+        console.log('PreRender: ' + (Date.now() - now))
         res.render('recipe', recipe);
+        console.log('AfterRender: ' + (Date.now() - now))
     } else {
         res.render('404');
     }
