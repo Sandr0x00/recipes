@@ -7,6 +7,8 @@ const port = 3000;
 let fs = require('fs');
 let recipes = loadJSON();
 app.set('view engine', 'pug');
+app.locals.compileDebug = false;
+app.locals.cache = true;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
