@@ -186,6 +186,49 @@
             "Auf dem ausgerollten Pizzateig verteilen."
         ]
     },
+    "rahmspinat": {
+        "id": "rahmspinat",
+        "name": "Rahmspinat",
+        "image": [
+        ],
+        "portions": "2 Portionen",
+        "ingredients": [
+            {
+                "id": "spinat",
+                "amount": "500g",
+                "name": "Blattspinat"
+            },
+            {
+                "id": "zwiebel",
+                "amount": "1/2",
+                "name": "Zwiebel"
+            },
+            {
+                "id": "knoblauch",
+                "amount": "1",
+                "name": "Knoblauchzehe"
+            },
+            {
+                "id": "sahne",
+                "amount": "100 ml",
+                "name": "Sahne"
+            },
+            {
+                "id": "butter",
+                "name": "Butter"
+            },
+            {
+                "id": "gewuerze",
+                "name": "Salz, Pfeffer und Muskatnuss"
+            }
+        ],
+        "preparation": [
+            "{spinat} waschen und blanchieren, abtropfen lassen und leicht ausdrücken.",
+            "{zwiebel} und {knoblauch} schälen und fein würfeln. In einem Topf {butter} zerlassen und Zwiebeln und Knoblauch darin andünsten.",
+            "{sahne} dazugeben und 5 Minuten köcheln lassen. Mit {gewuerze}abschmecken.",
+            "Blanchierten Spinat zur Sahnemischung geben, 5 Minuten kochen lassen und servieren."
+        ]
+    },
     "couscoussalat": {
         "id": "couscoussalat",
         "name": "Couscous Salat",
@@ -312,7 +355,7 @@
                 "amount": "3",
                 "name": "Eier"
             },
-            {   
+            {
                 "id": "zucker",
                 "amount": "275g",
                 "name": "Zucker"
@@ -328,6 +371,40 @@
             "Abkühlen lassen und Brownies kleinschneiden. Aufbewahrung in luftdichter Verpackung bis zu 2 Wochen, im Kühlschrank ein Monat."
         ],
         "link": "http://www.bbcgoodfood.com/recipes/1223/bestever-brownies"
+    },
+    "schokomousse": {
+        "id": "schokomousse",
+        "name": "Schokomousse",
+        "category": "dessert",
+        "image": [
+        ],
+        "ingredients": [
+            {
+                "id": "schoki",
+                "amount": "100g",
+                "name": "Kufertüre"
+            },
+            {
+                "id": "sahne",
+                "amount": "200g",
+                "name": "Sahne"
+            },
+            {
+                "id": "ei",
+                "amount": "2",
+                "name": "Eier"
+            },
+            {
+                "id": "rum",
+                "amount": "1 TL",
+                "name": "Rum"
+            }
+        ],
+        "preparation": [
+            "Die grob gehackte {schoki} im heißen Wasserbad schmelzen, beiseite stellen.",
+            "{ei} in einer Metallschüssel im heißen Wasserbad schaumig schlagen. Kuvertüre und {rum} unterrühren.",
+            "Lauwarm abkühlen lassen. In der Zwischenzeit die {sahne} halb steif schlagen und unterheben. Die Mousse in eine Schüssel füllen und vor dem Servieren zugedeckt kühl stellen."
+        ]
     },
     "kaiserschmarrn": {
         "id": "kaiserschmarrn",
