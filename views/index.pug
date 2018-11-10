@@ -10,5 +10,9 @@ block content
   div.row
     each recipe in recipes
       figure.col-6.col-sm-4.col-md-3.recipeLinkDiv
-        a.lazy.recipeLink(href='/recipe/' + recipe.id, data-src=(recipe.image ? '/images/'+recipe.image[0] : ''))
-          figcaption.text-center= recipe.name
+        if recipe.category == "sandwich"
+          a.lazy.recipeLink(href='/sandwich/' + recipe.id, data-src=(recipe.image ? '/images/'+recipe.image[0] : ''))
+            figcaption.text-center= recipe.name
+        else
+          a.lazy.recipeLink(href='/recipe/' + recipe.id, data-src=(recipe.image ? '/images/'+recipe.image[0] : ''))
+            figcaption.text-center= recipe.name

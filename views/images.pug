@@ -1,0 +1,14 @@
+if images && images.length != 0
+  div.row.images
+
+    mixin img(file)
+      div.lazy.recipeLink(data-src=('/images/' + file))
+
+    if images.length == 1
+      div.recipeImage.col-12.col-sm-10.offset-sm-1.col-lg-6.offset-lg-3.recipeLinkDiv
+        +img(images[0])
+    else
+      div.recipeImage.col-6.recipeLinkDiv
+        +img(images[0])
+      div.recipeImage.col-6.recipeLinkDiv
+        +img(images[1])

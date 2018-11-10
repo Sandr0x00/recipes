@@ -1,0 +1,17 @@
+extends layout.pug
+
+block content
+  h1.text-center= name
+
+  include images.pug
+
+  mixin icon(file)
+    img.lazy.icon(data-src=('/icons/' + file + ".svg"))
+  each ingredient in order
+    div.row
+      div.col-4.col-sm-2
+        if ingredient.icon
+          +icon(ingredient.icon)
+
+      div.col-8.col-sm-10.v-align
+        div!= ingredient.text

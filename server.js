@@ -7,14 +7,17 @@ const port = 3000;
 let fs = require('fs');
 let recipes = loadJSON();
 app.set('view engine', 'pug');
-app.locals.compileDebug = false;
-app.locals.cache = true;
+// app.locals.compileDebug = false;
+// app.locals.cache = true;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('index', {
         recipes: recipes,
     });
+});
+app.get('/credits', (req, res) => {
+    res.render('credits');
 });
 
 app.get('/reload-json', (req, res) => {
@@ -34,6 +37,19 @@ app.get('/recipe/:recipe', (req,res) => {
     }
 });
 
+app.get('/sandwich/:recipe', (req,res) => {
+    // let now = Date.now();
+    let recipe = findById(recipes, req.params.recipe);
+    if (recipe) {
+        // console.log('PreRender: ' + (Date.now() - now))
+        res.render('sandwich', recipe);
+        // console.log('AfterRender: ' + (Date.now() - now))
+    } else {
+        res.render('404');
+    }
+});
+
+
 app.listen(port, (err) => {
     if (err) {
         return console.log('something bad happened', err);
@@ -45,7 +61,16 @@ app.listen(port, (err) => {
 function findById(recipes, id) {
     for (let key in recipes) {
         let recipe = recipes[key];
-        if (recipe.id == id) {
+        if (id != key) {
+            continue;
+        }
+        if (recipe.category == 'sandwich') {
+            return {
+                images: recipe.image,
+                name: recipe.name,
+                order: recipe.order
+            };
+        } else {
             prep = formatPreparation(recipe);
             return {
                 ingredients: recipe.ingredients,
@@ -78,5 +103,9 @@ function formatPreparation(recipe) {
 }
 
 function loadJSON() {
-    return JSON.parse(fs.readFileSync('rezepte.json', 'utf8'));
+    let rs = JSON.parse(fs.readFileSync('rezepte.json', 'utf8'));
+    for (let key in rs) {
+        rs[key].id = key;
+    }
+    return rs;
 }

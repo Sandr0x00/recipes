@@ -52,6 +52,19 @@ a {
     background-position-x: center;
     background-position-y: center;
 }
+.icon {
+    width: 100%;
+    height: auto;
+}
+.v-align:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+}
+.v-align {
+    padding: 0;
+    margin: 0;
+}
 figcaption {
     padding-top: 20%;
     padding-bottom: 10px;

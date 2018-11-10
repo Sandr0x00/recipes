@@ -1,6 +1,5 @@
 {
     "schinkennudeln": {
-        "id": "schinkennudeln",
         "name": "Schinkennudeln",
         "category": "main",
         "portions": "4 Portionen",
@@ -41,7 +40,6 @@
         ]
     },
     "vegibolognese": {
-        "id": "vegibolognese",
         "name": "Vegetarische Bolognese-Sauce",
         "portions": "4 Portionen",
         "ingredients": [
@@ -93,7 +91,6 @@
         ]
     },
     "pizzateig": {
-        "id": "pizzateig",
         "name": "Pizza Teig",
         "portions": "4 Pizzas",
         "image": [
@@ -141,7 +138,6 @@
         ]
     },
     "pizzasauce": {
-        "id": "pizzasauce",
         "name": "Pizza Sauce",
         "image": [
             "pizzasosse.jpg",
@@ -187,7 +183,6 @@
         ]
     },
     "rahmspinat": {
-        "id": "rahmspinat",
         "name": "Rahmspinat",
         "image": [
         ],
@@ -230,7 +225,6 @@
         ]
     },
     "couscoussalat": {
-        "id": "couscoussalat",
         "name": "Couscous Salat",
         "portions": "4 Portionen",
         "image": [
@@ -270,6 +264,52 @@
         "preparation": [
             "{wasser} zum Kochen bringen. {couscous} und {bruehe} in eine Schüssel geben, und mit Wasser übergießen, bedecken und 5 Minuten ziehen lassen.",
             "Couscous mit {pesto} vermengen. {tomaten} und {mozarella} dazu geben."
+        ]
+    },
+    "leberkaesburger": {
+        "name": "Leberkäsburger",
+        "category": "sandwich",
+        "image": [
+        ],
+        "order": [
+            {
+                "id": "semmel",
+                "icon": "toast",
+                "text": "Laugensemmel"
+            },
+            {
+                "id": "rettich",
+                "icon": "horseradish",
+                "text": "Rettich"
+            },
+            {
+                "id": "ei",
+                "icon": "fried-egg",
+                "text": "Spiegelei"
+            },
+            {
+                "id": "leberkas",
+                "icon": "leberkas",
+                "text": "Leberkäs"
+            },
+            {
+                "id": "salat",
+                "icon": "salad",
+                "text": "Salat"
+            },
+            {
+                "id": "schmand",
+                "text": "Schmand"
+            },
+            {
+                "id": "senf",
+                "text": "Süßer Senf"
+            },
+            {
+                "id": "semmel",
+                "icon": "toast",
+                "text": "Laugensemmel"
+            }
         ]
     },
     "guacamole": {
