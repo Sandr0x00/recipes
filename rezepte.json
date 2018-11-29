@@ -313,7 +313,6 @@
         ]
     },
     "guacamole": {
-        "id": "guacamole",
         "name": "Guacamole",
         "ingredients": [
             {
@@ -352,7 +351,6 @@
         ]
     },
     "brownies": {
-        "id": "brownies",
         "name": "Brownies",
         "category": "dessert",
         "image": [
@@ -413,7 +411,6 @@
         "link": "http://www.bbcgoodfood.com/recipes/1223/bestever-brownies"
     },
     "schokomousse": {
-        "id": "schokomousse",
         "name": "Schokomousse",
         "category": "dessert",
         "image": [
@@ -447,7 +444,6 @@
         ]
     },
     "kaiserschmarrn": {
-        "id": "kaiserschmarrn",
         "name": "Kaiserschmarrn",
         "image": [
             "kaiserschmarrn-pfanne.jpg",
@@ -513,7 +509,6 @@
         ]
     },
     "pfannkuchen": {
-        "id": "pfannkuchen",
         "name": "Pfannkuchen",
         "category": "dessert",
         "portions": "ca. 9 Pfannkuchen",
@@ -557,7 +552,6 @@
         ]
     },
     "erdbeerlimes": {
-        "id": "erdbeerlimes",
         "name": "Erdbeerlimes",
         "portions": "4 Liter",
         "category": "drink",
@@ -594,5 +588,59 @@
         "preparation": [
             "{wasser} mit {zucker} kurz aufkochen. {erdbeeren} zermusen und zusammen mit {limettensaft} und {wodka} zum Zuckerwasser geben."
         ]
+    },
+    "rotwein-plaetzchen": {
+        "name": "Rotwein Plätzchen",
+        "category": "cookies",
+        "image": [
+        ],
+        "ingredients": [
+            {
+                "id": "mehl",
+                "amount": "500g",
+                "name": "Mehl"
+            },
+            {
+                "id": "backpulver",
+                "amount": "1 Pkg.",
+                "name": "Backpulver"
+            },
+            {
+                "id": "zucker",
+                "amount": "250g",
+                "name": "Zucker"
+            },
+            {
+                "id": "butter",
+                "amount": "250g",
+                "name": "Butter"
+            },
+            {
+                "id": "ei",
+                "amount": "1",
+                "name": "Ei"
+            },
+            {
+                "id": "kakao",
+                "amount": "2 EL",
+                "name": "Kakao"
+            },
+            {
+                "id": "zimt",
+                "amount": "2 TL",
+                "name": "Zimt"
+            },
+            {
+                "id": "wein",
+                "amount": "6 EL",
+                "name": "Rotwein"
+            }
+        ],
+        "preparation": [
+            "{mehl} mit {backpulver}, {zucker}, {butter}, {ei}, {kakao}, {zimt} und {wein} vermengen und zu einem Teig kneten.",
+            "Den Teig ausrollen und Plätzchen ausstechen.",
+            "Die Plätzchen bei 150 Grad backen bis sie hart sind."
+        ]
     }
+
 }
