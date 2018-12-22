@@ -6,12 +6,19 @@ block content
       a.float-right(href='/reload-json')
         i.fas.fa-sync-alt(style='font-size:3em; color:#333;')
 
-  h1 Recipes
+  if categories
+    h1 Kategorien
+    div.row
+      each category in categories
+        span.col-md-3
+          a(href='/' + category)= category
+
+  h1 Rezepte
   div.row
     each recipe in recipes
       figure.col-6.col-sm-4.col-md-3.recipeLinkDiv
-        if recipe.category == "sandwich"
-          a.lazy.recipeLink(href='/sandwich/' + recipe.id, data-src=(recipe.image ? '/images/'+recipe.image[0] : ''))
+        if recipe.category
+          a.lazy.recipeLink(href='/' + recipe.category + '/' + recipe.id, data-src=(recipe.image ? '/images/' + recipe.image[0] : ''))
             figcaption.text-center= recipe.name
         else
           a.lazy.recipeLink(href='/recipe/' + recipe.id, data-src=(recipe.image ? '/images/'+recipe.image[0] : ''))

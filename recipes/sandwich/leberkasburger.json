@@ -1,0 +1,47 @@
+{
+    "name": "Leberkäsburger",
+    "image": [
+        "leberkasburger-1.jpg",
+        "leberkasburger-2.jpg"
+    ],
+    "order": [
+        {
+            "id": "semmel",
+            "icon": "toast",
+            "text": "Laugensemmel"
+        },
+        {
+            "id": "rettich",
+            "icon": "horseradish",
+            "text": "Rettich"
+        },
+        {
+            "id": "ei",
+            "icon": "fried-egg",
+            "text": "Spiegelei"
+        },
+        {
+            "id": "leberkas",
+            "icon": "leberkas",
+            "text": "Leberkäs"
+        },
+        {
+            "id": "salat",
+            "icon": "salad",
+            "text": "Salat"
+        },
+        {
+            "id": "schmand",
+            "text": "Schmand"
+        },
+        {
+            "id": "senf",
+            "text": "Süßer Senf"
+        },
+        {
+            "id": "semmel",
+            "icon": "toast",
+            "text": "Laugensemmel"
+        }
+    ]
+}

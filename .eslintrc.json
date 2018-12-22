@@ -11,6 +11,7 @@
         "no-unreachable": "warn",
         "semi": "warn",
         "quotes": ["warn", "single"],
-        "no-var": "warn"
+        "no-var": "warn",
+        "no-undef": "error"
     }
 }

@@ -6,7 +6,16 @@ html
     link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ", crossorigin="anonymous")
     link(rel="stylesheet", href="/css/recipe.css")
   body(class="")
-    div(class='container')
+    if breadcrumbs
+      div.container
+        - var first = true;
+        each crumb in breadcrumbs
+          if !first
+            span= ' > '
+          a(href=crumb.link)= crumb.text
+          - first = false;
+
+    div.container
       block content
 
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js", integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN", crossorigin="anonymous")

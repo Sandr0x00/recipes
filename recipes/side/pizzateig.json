@@ -1,0 +1,47 @@
+{
+    "name": "Pizza Teig",
+    "portions": "4 Pizzas",
+    "image": [
+        "pizzateig.jpg",
+        "pizzateig-3.jpg"
+    ],
+    "ingredients": [
+        {
+            "id": "wasser",
+            "amount": "300ml",
+            "name": "lauwarmes Wasser"
+        },
+        {
+            "id": "hefe",
+            "amount": "1 Würfel",
+            "name": "frische Hefe"
+        },
+        {
+            "id": "zucker",
+            "amount": "1 TL",
+            "name": "Zucker"
+        },
+        {
+            "id": "mehl",
+            "amount": "500g",
+            "name": "Weizenmehl (Type 00 oder 550)"
+        },
+        {
+            "id": "salz",
+            "amount": "1 TL",
+            "name": "Salz"
+        },
+        {
+            "id": "oel",
+            "amount": "4 EL",
+            "name": "Olivenöl"
+        }
+    ],
+    "preparation": [
+        "{hefe} und {zucker} in {wasser} unter Rühren auflösen. {mehl} in eine Schüssel geben und in die Mitte eine Mulde drücken. Hefewasser in die Mulde gießen. Zu einem Vorteig verrühren. Diesen zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
+        "Danach {salz} und {oel} zum Teig geben und unterrühren. Den Pizzateig mit bemehlten Händen ca. 5 Minuten durchkneten bis er glatt und geschmeidig ist. Ist der Teig zu fest, etwas lauwarmes Wasser dazu geben. Ist der Pizzateig zu weich und klebrig, noch etwas Mehl unterkneten. Nach dem Kneten zu einer Kugel formen und zugedeckt an einem warmen Ort nochmal ca. 30 Minuten gehen lassen. Dabei sollte der Hefeteig sein Volumen in etwa verdoppeln.",
+        "Danach noch einmal ca. 10 Minuten kräftig durchkneten. Den Teig vierteln und auf einer mit Mehl bestäubten Arbeitsfläche ausrollen.",
+        "Kann einen Tag im Kühlschrank aufbewahrt werden.",
+        "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben. Den Teig mit Tomatensoße für bestreichen und nach Belieben belegen. Die fertig belegte Pizza im vorgeheizten Backofen (Umluft: 250 °C / MAX) ca. 5-10 Minuten backen."
+    ]
+}

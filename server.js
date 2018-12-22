@@ -1,49 +1,88 @@
 #!/usr/bin/env node
 
+/* global __dirname, require, console */
+
 const express = require('express');
 const app = express();
 const port = 3000;
 
 let fs = require('fs');
-let recipes = loadJSON();
+let path = require('path');
+
+Object.filter = (obj, predicate) => {
+    return Object.keys(obj)
+          .filter(key => predicate(obj[key]))
+          .reduce((res, key) => (res[key] = obj[key], res), {});
+};
+
+// let recipes = temp[0];
+// let categories = temp[1];
+let recipes = {};
+let categories = [];
+loadJSON();
+
 app.set('view engine', 'pug');
-// app.locals.compileDebug = false;
-// app.locals.cache = true;
+app.locals.compileDebug = false;
+app.locals.cache = true;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('index', {
         recipes: recipes,
+        categories: categories,
+        title: 'Rezepte',
+        breadcrumbs: [
+            {
+                link: '/',
+                text: 'Rezepte'
+            },
+        ]
     });
 });
-app.get('/credits', (req, res) => {
-    res.render('credits');
-});
 
-app.get('/reload-json', (req, res) => {
-    recipes = loadJSON();
-    res.redirect('/');
-});
-
-app.get('/recipe/:recipe', (req,res) => {
-    // let now = Date.now();
-    let recipe = findById(recipes, req.params.recipe);
-    if (recipe) {
-        // console.log('PreRender: ' + (Date.now() - now))
-        res.render('recipe', recipe);
-        // console.log('AfterRender: ' + (Date.now() - now))
+app.get('/:cat', (req, res) => {
+    let cat = req.params.cat;
+    if (cat === 'credits') {
+        res.render('credits', {title: 'Credits'});
+    } else if (cat === 'reload-json') {
+        loadJSON();
+        res.redirect('/');
+    } else if (categories.indexOf(cat) >= 0) {
+        res.render('index', {
+            recipes: Object.filter(recipes, r => r.category === cat),
+            title: 'Rezepte',
+            breadcrumbs: [
+                {
+                    link: '/',
+                    text: 'Rezepte'
+                },
+                {
+                    link: '/' + cat,
+                    text: cat
+                }
+            ]
+        });
     } else {
         res.render('404');
     }
 });
 
-app.get('/sandwich/:recipe', (req,res) => {
+app.get('/:category/:recipe', (req,res) => {
     // let now = Date.now();
     let recipe = findById(recipes, req.params.recipe);
     if (recipe) {
-        // console.log('PreRender: ' + (Date.now() - now))
-        res.render('sandwich', recipe);
-        // console.log('AfterRender: ' + (Date.now() - now))
+        if (recipe.category != req.params.category && req.params.category != 'recipe') {
+            console.log(recipe.category);
+            console.log(req.params.category);
+
+            res.render('404');
+            return;
+        }
+        if (recipe.category === 'sandwich') {
+            res.render('sandwich', recipe);
+        } else {
+            res.render('recipe', recipe);
+        }
     } else {
         res.render('404');
     }
@@ -64,31 +103,49 @@ function findById(recipes, id) {
         if (id != key) {
             continue;
         }
+        let ret = {
+            category: recipe.category,
+            images: recipe.image,
+            name: recipe.name,
+            title: recipe.name,
+            breadcrumbs: [
+                {
+                    link: '/',
+                    text: 'Rezepte'
+                },
+                {
+                    link: '/' + recipe.category,
+                    text: recipe.category
+                },
+                {
+                    link: '/' + recipe.category + '/' + id,
+                    text: recipe.name
+                }
+            ]
+
+        };
         if (recipe.category == 'sandwich') {
-            return {
-                images: recipe.image,
-                name: recipe.name,
-                order: recipe.order
-            };
+            Object.assign(ret, {
+                order: recipe.order,
+            });
         } else {
-            prep = formatPreparation(recipe);
-            return {
+            let prep = formatPreparation(recipe);
+            Object.assign(ret, {
                 ingredients: recipe.ingredients,
                 preparation: prep[0],
                 preparationAmounts: prep[1],
-                images: recipe.image,
-                name: recipe.name,
                 portions: recipe.portions
-            };
+            });
         }
+        return ret;
     }
     return null;
 }
 
 function formatPreparation(recipe) {
     // replace preparations
-    preparation = JSON.stringify(recipe.preparation);
-    preparationAmounts = JSON.stringify(recipe.preparation);
+    let preparation = JSON.stringify(recipe.preparation);
+    let preparationAmounts = JSON.stringify(recipe.preparation);
     recipe.ingredients.forEach(ingredient => {
         let regex = `\{${ingredient.id}\}`;
         let replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + ingredient.name + '</b>';
@@ -103,9 +160,35 @@ function formatPreparation(recipe) {
 }
 
 function loadJSON() {
-    let rs = JSON.parse(fs.readFileSync('rezepte.json', 'utf8'));
-    for (let key in rs) {
-        rs[key].id = key;
-    }
-    return rs;
+    recipes = {};
+    categories = [];
+    let dirPath = path.join(__dirname, 'recipes');
+    fs.readdirSync(dirPath).forEach(dirname => {
+        categories.push(dirname);
+        let filePath = path.join(dirPath, dirname);
+        let stats = fs.statSync(filePath);
+        if (stats.isDirectory()) {
+            Object.assign(recipes, readFilesInFolder(dirname));
+        } else if (stats.isFile()) {
+            console.log('There should be no file here!');
+        }
+    });
+}
+
+function readFilesInFolder(folder) {
+    let recipes = {};
+    let dirPath = path.join(__dirname, 'recipes', folder);
+    fs.readdirSync(dirPath).forEach(dirname => {
+        let filePath = path.join(dirPath, dirname);
+        let stats = fs.statSync(filePath);
+        if (stats.isDirectory()) {
+            console.log('There should be no directory here!');
+        } else if (stats.isFile()) {
+            let key = path.parse(dirname).name;
+            recipes[key] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+            recipes[key].id = key;
+            recipes[key].category = folder;
+        }
+    });
+    return recipes;
 }
