@@ -1,13 +1,12 @@
 #!/usr/bin/env node
 
-/* global __dirname, require, console */
+/* global __dirname, require, console, module */
 
 const express = require('express');
 const app = express();
 const port = 3000;
 
-let fs = require('fs');
-let path = require('path');
+let helper = require('./helper');
 
 Object.filter = (obj, predicate) => {
     return Object.keys(obj)
@@ -15,11 +14,9 @@ Object.filter = (obj, predicate) => {
           .reduce((res, key) => (res[key] = obj[key], res), {});
 };
 
-// let recipes = temp[0];
-// let categories = temp[1];
-let recipes = {};
-let categories = [];
-loadJSON();
+let json = helper.loadJSON();
+let recipes = json['recipes'];
+let categories = json['categories'];
 
 app.set('view engine', 'pug');
 app.locals.compileDebug = false;
@@ -45,7 +42,9 @@ app.get('/:cat', (req, res) => {
     if (cat === 'credits') {
         res.render('credits', {title: 'Credits'});
     } else if (cat === 'reload-json') {
-        loadJSON();
+        json = helper.loadJSON();
+        recipes = json['recipes'];
+        categories = json['categories'];
         res.redirect('/');
     } else if (categories.indexOf(cat) >= 0) {
         res.render('index', {
@@ -129,7 +128,7 @@ function findById(recipes, id) {
                 order: recipe.order,
             });
         } else {
-            let prep = formatPreparation(recipe);
+            let prep = helper.formatPreparation(recipe);
             Object.assign(ret, {
                 ingredients: recipe.ingredients,
                 preparation: prep[0],
@@ -140,55 +139,4 @@ function findById(recipes, id) {
         return ret;
     }
     return null;
-}
-
-function formatPreparation(recipe) {
-    // replace preparations
-    let preparation = JSON.stringify(recipe.preparation);
-    let preparationAmounts = JSON.stringify(recipe.preparation);
-    recipe.ingredients.forEach(ingredient => {
-        let regex = `\{${ingredient.id}\}`;
-        let replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + ingredient.name + '</b>';
-        let replaceAmounts = '<b class=\'' + ingredient.id + ' ingredient\'>' + (ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name + '</b>';
-        preparation = preparation.replace(new RegExp(regex, 'g'), replace);
-        preparationAmounts = preparationAmounts.replace(new RegExp(regex, 'g'), replaceAmounts);
-    });
-    return [
-        JSON.parse(preparation),
-        JSON.parse(preparationAmounts)
-    ];
-}
-
-function loadJSON() {
-    recipes = {};
-    categories = [];
-    let dirPath = path.join(__dirname, 'recipes');
-    fs.readdirSync(dirPath).forEach(dirname => {
-        categories.push(dirname);
-        let filePath = path.join(dirPath, dirname);
-        let stats = fs.statSync(filePath);
-        if (stats.isDirectory()) {
-            Object.assign(recipes, readFilesInFolder(dirname));
-        } else if (stats.isFile()) {
-            console.log('There should be no file here!');
-        }
-    });
-}
-
-function readFilesInFolder(folder) {
-    let recipes = {};
-    let dirPath = path.join(__dirname, 'recipes', folder);
-    fs.readdirSync(dirPath).forEach(dirname => {
-        let filePath = path.join(dirPath, dirname);
-        let stats = fs.statSync(filePath);
-        if (stats.isDirectory()) {
-            console.log('There should be no directory here!');
-        } else if (stats.isFile()) {
-            let key = path.parse(dirname).name;
-            recipes[key] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-            recipes[key].id = key;
-            recipes[key].category = folder;
-        }
-    });
-    return recipes;
 }

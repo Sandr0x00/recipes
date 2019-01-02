@@ -47,10 +47,8 @@ describe('Recipes', function() {
     });
 });
 
-let Validator = require('jsonschema').Validator;
-
-
 describe('JSON file contents', () => {
+    let validate = require('jsonschema').validate;
     let recipePath = path.join(__dirname, '../recipes');
     fs.readdirSync(recipePath).forEach(dirName => {
         if (dirName == 'sandwich') {
@@ -63,7 +61,7 @@ describe('JSON file contents', () => {
             let stats = fs.statSync(filePath);
             if (stats.isFile()) {
                 it(fileName + ' should be valid', () => {
-                    let result = new Validator().validate(JSON.parse(fs.readFileSync(filePath, 'utf8')), getSchema());
+                    let result = validate(JSON.parse(fs.readFileSync(filePath, 'utf8')), getSchema());
                     if (!result.valid) {
                         console.log(result.errors);
                     }
@@ -76,54 +74,77 @@ describe('JSON file contents', () => {
 
 function getSchema() {
     return {
-        'id': '/All',
-        'type': 'object',
-        'properties': {
-            'name': {
-                'type': 'string',
-                'required': true,
-                'minLength': 2
+        id: '/All',
+        type: 'object',
+        properties: {
+            name: {
+                type: 'string',
+                required: true,
+                minLength: 3
             },
-            'image': {
-                'type': 'array'
+            image: {
+                type: 'array',
+                items: {
+                    type: 'string',
+                    minItems: 0,
+                    maxItems: 2
+                }
             },
-            'portions': {
-                'type': 'string'
+            portions: {
+                type: 'string'
             },
-            'ingredients': {
-                'type': 'array',
-                'required': true,
-                'uniqueItems': true,
-                'minItems': 1,
-                'items': {
-                    'type': 'object',
-                    'properties': {
-                        'id': {
-                            'type': 'string',
-                            'pattern': /^[a-z]+$/,
-                            'required': true,
-                            'minLength': 2
+            ingredients: {
+                type: 'array',
+                required: true,
+                uniqueItems: true,
+                minItems: 1,
+                items: {
+                    type: 'object',
+                    properties: {
+                        id: {
+                            type: 'string',
+                            pattern: /^[a-z]+$/,
+                            required: true,
+                            minLength: 2
                         },
-                        'amount': {
-                            'type': 'string',
+                        amount: {
+                            type: 'string',
+                            pattern: /^[0-9]+(g|ml| TL| EL| Pkg.)?/
                         },
-                        'name': {
-                            'type': 'string',
-                            'required': true
+                        name: {
+                            type: 'string',
+                            required: true
                         }
                     }
                 }
             },
-            'preparation': {
-                'type': 'array',
-                'required': true,
-                'uniqueItems': true,
-                'minItems': 1,
-                'items': {
-                    'type': 'string',
-                    'minLength': 2
+            preparation: {
+                type: 'array',
+                required: true,
+                uniqueItems: true,
+                minItems: 1,
+                items: {
+                    type: 'string',
+                    minLength: 2
                 }
             }
         }
     };
 }
+
+describe('Preparation is valid', () => {
+    let h = require('../helper.js');
+    let recipes = h.loadJSON()['recipes'];
+    console.log(recipes);
+    for (let key in recipes) {
+        let recipe = recipes[key];
+        if (recipe.category != 'sandwich') {
+            it(key + ' preparation should be valid', () => {
+                let prep = h.formatPreparation(recipe)[0];
+                prep.forEach(step => {
+                    assert.notMatch(step, /(\{|\})/);
+                });
+            });
+        }
+    }
+});
