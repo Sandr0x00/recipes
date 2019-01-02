@@ -1,0 +1,39 @@
+{
+    "name": "Chili Salsa",
+    "ingredients": [
+        {
+            "id": "chili",
+            "amount": "2",
+            "name": "Chilischoten"
+        },
+        {
+            "id": "tomate",
+            "amount": "4",
+            "name": "Tomaten"
+        },
+        {
+            "id": "oel",
+            "amount": "1 EL",
+            "name": "Olivenöl"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "limette",
+            "amount": "1 TL",
+            "name": "Limettensaft"
+        },
+        {
+            "id": "gewuerze",
+            "amount": "jeweils 1/2 TL",
+            "name": "Salz und Oregano"
+        }
+    ],
+    "preparation": [
+        "{chili} mit {tomate}, {oel}, {knoblauch}, {limette} und {gewuerze} im Mixer klein machen.",
+        "Evtl. ein bisschen einkochen."
+    ]
+}

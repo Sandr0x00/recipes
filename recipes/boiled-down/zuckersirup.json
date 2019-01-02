@@ -1,0 +1,19 @@
+{
+    "name": "Zuckersirup",
+    "ingredients": [
+        {
+            "id": "zucker",
+            "amount": "500g",
+            "name": "Zucker"
+        },
+        {
+            "id": "wasser",
+            "amount": "400ml",
+            "name": "Wasser"
+        }
+    ],
+    "preparation": [
+        "{wasser} und {zucker} unter ständigem Rühren solange erhitzen, bis sich der Zucker aufgelöst hat und der Sirup klar ist. Darf nicht kochen.",
+        "In eine Flasche füllen. Der Sirup ist lange haltbar."
+    ]
+}
