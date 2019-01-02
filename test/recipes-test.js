@@ -8,14 +8,14 @@ let fs = require('fs');
 let path = require('path');
 let assert = require('chai').assert;
 
-describe('Categories', function() {
+describe('Categoriy folder names', function() {
     let recipePath = path.join(__dirname, '../recipes');
-    it('recipes should not contain any special characters', () => {
+    it('directories in recipes/ should not contain any special characters', () => {
         fs.readdirSync(recipePath).forEach(fileName => {
             assert.match(fileName, /^[a-z-]+$/gm);
         });
     });
-    it('recipes should only contain directories', () => {
+    it('directories in recipes/ should only contain directories', () => {
         fs.readdirSync(recipePath).forEach(dirName => {
             let dirPath = path.join(recipePath, dirName);
             let stats = fs.statSync(dirPath);
@@ -24,7 +24,7 @@ describe('Categories', function() {
     });
 });
 
-describe('Recipes', function() {
+describe('Recipe file names', function() {
     let recipePath = path.join(__dirname, '../recipes');
     fs.readdirSync(recipePath).forEach(dirName => {
         let dirPath = path.join(recipePath, dirName);
@@ -32,12 +32,12 @@ describe('Recipes', function() {
         if (stats.isFile()) {
             return;
         }
-        it('recipes/' + dirName + ' should not contain any special characters', () => {
+        it('files in recipes/' + dirName + '/ should not contain any special characters', () => {
             fs.readdirSync(dirPath).forEach(fileName => {
                 assert.match(fileName, /^[a-z-]+\.json$/gm);
             });
         });
-        it('recipes/' + dirName + ' should only contain files', () => {
+        it('files in recipes/' + dirName + '/ should only contain files', () => {
             fs.readdirSync(dirPath).forEach(fileName => {
                 let filePath = path.join(dirPath, fileName);
                 let stats = fs.statSync(filePath);
@@ -47,7 +47,7 @@ describe('Recipes', function() {
     });
 });
 
-describe('JSON file contents', () => {
+describe('Recipe file contents', () => {
     let validate = require('jsonschema').validate;
     let recipePath = path.join(__dirname, '../recipes');
     fs.readdirSync(recipePath).forEach(dirName => {
@@ -60,7 +60,7 @@ describe('JSON file contents', () => {
             let filePath = path.join(dirPath, fileName);
             let stats = fs.statSync(filePath);
             if (stats.isFile()) {
-                it(fileName + ' should be valid', () => {
+                it('recipes/' + dirName + '/' + fileName + ' should be valid', () => {
                     let result = validate(JSON.parse(fs.readFileSync(filePath, 'utf8')), getSchema());
                     if (!result.valid) {
                         console.log(result.errors);
@@ -132,10 +132,9 @@ function getSchema() {
     };
 }
 
-describe('Preparation is valid', () => {
+describe('Recipe preparation format', () => {
     let h = require('../helper.js');
     let recipes = h.loadJSON()['recipes'];
-    console.log(recipes);
     for (let key in recipes) {
         let recipe = recipes[key];
         if (recipe.category != 'sandwich') {
