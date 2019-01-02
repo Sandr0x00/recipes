@@ -1,3 +1,5 @@
+/* global $, window, document, setTimeout */
+
 $('.ingredient').hover(
     function() {
       $(getSecondClass(this)).addClass('highlight');
