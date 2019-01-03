@@ -1,6 +1,8 @@
 {
     "name": "Schinkennudeln",
     "portions": "4 Portionen",
+    "image": [
+    ],
     "ingredients": [
         {
             "id": "nudeln",

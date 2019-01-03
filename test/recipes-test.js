@@ -84,10 +84,12 @@ function getSchema() {
             },
             image: {
                 type: 'array',
+                required: true,
+                uniqueItems: true,
+                minItems: 0,
+                maxItems: 2,
                 items: {
-                    type: 'string',
-                    minItems: 0,
-                    maxItems: 2
+                    type: 'string'
                 }
             },
             portions: {
@@ -145,5 +147,27 @@ describe('Recipe preparation format', () => {
                 });
             });
         }
+    }
+});
+
+describe('Recipe images', () => {
+    let h = require('../helper.js');
+    let recipes = h.loadJSON()['recipes'];
+    let imagesPath = path.join(__dirname, '..', 'public', 'images');
+    for (let key in recipes) {
+        let recipe = recipes[key];
+        let images = recipe.image;
+        it('images in ' + key + ' should exist', () => {
+            if (images) { // checked in 'Recipe file contents'
+                if (images.length == 1) {
+                    console.log('    \x1B[33m' + key + ' has only 1 image.\x1B[0m');
+                } else if (images.length == 0) {
+                    console.log('    \x1B[33m' + key + ' has no images.\x1B[0m');
+                }
+                images.forEach(image => {
+                    assert(fs.existsSync(path.join(imagesPath, image)));
+                });
+            }
+        });
     }
 });

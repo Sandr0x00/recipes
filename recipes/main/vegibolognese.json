@@ -1,6 +1,8 @@
 {
     "name": "Vegetarische Bolognese-Sauce",
     "portions": "4 Portionen",
+    "image": [
+    ],
     "ingredients": [
         {
             "id": "knoblauch",

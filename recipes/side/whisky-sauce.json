@@ -1,5 +1,7 @@
 {
     "name": "Whisky Sauce",
+    "image": [
+    ],
     "ingredients": [
         {
             "id": "butter",

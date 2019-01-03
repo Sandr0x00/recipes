@@ -2,8 +2,7 @@
     "name": "Pizza Sauce",
     "image": [
         "pizzasosse.jpg",
-        "pizzabelegt.jpg",
-        "pizzasauce.jpg"
+        "pizzabelegt.jpg"
     ],
     "portions": "1 Pizza",
     "ingredients": [
