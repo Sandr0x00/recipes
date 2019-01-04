@@ -89,11 +89,13 @@ function getSchema() {
                 minItems: 0,
                 maxItems: 2,
                 items: {
-                    type: 'string'
+                    type: 'string',
+                    pattern: /^[a-z-0-9]+\.(jpe?g|png)$/
                 }
             },
             portions: {
-                type: 'string'
+                type: 'string',
+                pattern: /^[0-9].*/
             },
             ingredients: {
                 type: 'array',
@@ -115,7 +117,8 @@ function getSchema() {
                         },
                         name: {
                             type: 'string',
-                            required: true
+                            required: true,
+                            minLength: 2
                         }
                     }
                 }
@@ -127,6 +130,7 @@ function getSchema() {
                 minItems: 1,
                 items: {
                     type: 'string',
+                    required: true,
                     minLength: 2
                 }
             }
