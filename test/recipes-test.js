@@ -34,7 +34,7 @@ describe('Recipe file names', function() {
         }
         it('files in recipes/' + dirName + '/ should not contain any special characters', () => {
             fs.readdirSync(dirPath).forEach(fileName => {
-                assert.match(fileName, /^[a-z-]+\.json$/gm);
+                assert.match(fileName, /^([a-z-]+|_meta)\.json$/gm);
             });
         });
         it('files in recipes/' + dirName + '/ should only contain files', () => {
@@ -57,6 +57,9 @@ describe('Recipe file contents', () => {
         }
         let dirPath = path.join(recipePath, dirName);
         fs.readdirSync(dirPath).forEach(fileName => {
+            if (fileName == '_meta.json') {
+                return;
+            }
             let filePath = path.join(dirPath, fileName);
             let stats = fs.statSync(filePath);
             if (stats.isFile()) {
@@ -175,3 +178,39 @@ describe('Recipe images', () => {
         });
     }
 });
+
+describe('Category meta data', () => {
+    let validate = require('jsonschema').validate;
+    let recipePath = path.join(__dirname, '../recipes');
+    fs.readdirSync(recipePath).forEach(dirName => {
+        it('recipes/' + dirName + '/_meta.json should exist and be valid', () => {
+            let metaPath = path.join(recipePath, dirName, '_meta.json');
+            if (fs.existsSync(metaPath)) {
+                let result = validate(JSON.parse(fs.readFileSync(metaPath, 'utf8')), getMetaSchema());
+                if (!result.valid) {
+                    console.log(result.errors);
+                }
+                assert(result.valid);
+            } else {
+                assert.fail(metaPath + ' does not exist');
+            }
+        });
+    });
+});
+
+function getMetaSchema() {
+    return {
+        id: '/All',
+        type: 'object',
+        properties: {
+            name: {
+                type: 'string',
+                required: true
+            },
+            image: {
+                type: 'string',
+                required: false
+            }
+        }
+    };
+};

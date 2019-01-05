@@ -11,7 +11,7 @@ block content
     div.row
       each category in categories
         span.col-md-3
-          a(href='/' + category)= category
+          a(href='/' + category.id)= category.name
 
   h1 Rezepte
   div.row

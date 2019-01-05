@@ -22,10 +22,17 @@ exports.formatPreparation = function(recipe) {
 
 exports.loadJSON = function() {
     let recipes = {};
-    let categories = [];
+    let categories = {};
     let dirPath = path.join(__dirname, 'recipes');
     fs.readdirSync(dirPath).forEach(dirname => {
-        categories.push(dirname);
+        // set categories
+        let category = {};
+        let metaPath = path.join(dirPath, dirname, '_meta.json');
+        category[dirname] = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
+        category[dirname].id = dirname;
+        Object.assign(categories, category);
+
+        // set recipes
         let filePath = path.join(dirPath, dirname);
         let stats = fs.statSync(filePath);
         if (stats.isDirectory()) {
@@ -40,13 +47,16 @@ exports.loadJSON = function() {
 function readFilesInFolder(folder) {
     let recipes = {};
     let dirPath = path.join(__dirname, 'recipes', folder);
-    fs.readdirSync(dirPath).forEach(dirname => {
-        let filePath = path.join(dirPath, dirname);
+    fs.readdirSync(dirPath).forEach(fileName => {
+        if (fileName == '_meta.json') {
+            return;
+        }
+        let filePath = path.join(dirPath, fileName);
         let stats = fs.statSync(filePath);
         if (stats.isDirectory()) {
             console.log('There should be no directory here!');
         } else if (stats.isFile()) {
-            let key = path.parse(dirname).name;
+            let key = path.parse(fileName).name;
             recipes[key] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
             recipes[key].id = key;
             recipes[key].category = folder;

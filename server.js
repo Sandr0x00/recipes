@@ -40,13 +40,15 @@ app.get('/', (req, res) => {
 app.get('/:cat', (req, res) => {
     let cat = req.params.cat;
     if (cat === 'credits') {
-        res.render('credits', {title: 'Credits'});
+        res.render('credits', {
+            title: 'Credits'
+        });
     } else if (cat === 'reload-json') {
         json = helper.loadJSON();
         recipes = json['recipes'];
         categories = json['categories'];
         res.redirect('/');
-    } else if (categories.indexOf(cat) >= 0) {
+    } else if (categories[cat]) {
         res.render('index', {
             recipes: Object.filter(recipes, r => r.category === cat),
             title: 'Rezepte',
@@ -57,7 +59,7 @@ app.get('/:cat', (req, res) => {
                 },
                 {
                     link: '/' + cat,
-                    text: cat
+                    text: categories[cat].name
                 }
             ]
         });
@@ -114,7 +116,7 @@ function findById(recipes, id) {
                 },
                 {
                     link: '/' + recipe.category,
-                    text: recipe.category
+                    text: categories[recipe.category].name
                 },
                 {
                     link: '/' + recipe.category + '/' + id,
