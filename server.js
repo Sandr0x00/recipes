@@ -24,6 +24,7 @@ app.locals.cache = true;
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
+    setHeaders(res);
     res.render('index', {
         recipes: recipes,
         categories: categories,
@@ -38,6 +39,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/:cat', (req, res) => {
+    setHeaders(res);
     let cat = req.params.cat;
     if (cat === 'credits') {
         res.render('credits', {
@@ -69,6 +71,7 @@ app.get('/:cat', (req, res) => {
 });
 
 app.get('/:category/:recipe', (req,res) => {
+    setHeaders(res);
     // let now = Date.now();
     let recipe = findById(recipes, req.params.recipe);
     if (recipe) {
@@ -141,4 +144,16 @@ function findById(recipes, id) {
         return ret;
     }
     return null;
+}
+
+
+function setHeaders(res) {
+    res.set('X-XSS-ProtectionType', '"1; mode=block"');
+    res.set('X-Frame-Options', 'SAMEORIGIN');
+    res.set('X-Content-Type-Options', 'nosniff');
+    res.set('Strict-Transport-Security', '"max-age=31536000; includeSubDomains; preload"');
+    res.set('Content-Security-Policy', 'default-src \'none\'; img-src \'self\'; style-src \'self\' stackpath.bootstrapcdn.com use.fontawesome.com; script-src \'self\' maxcdn.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com; font-src use.fontawesome.com');
+    res.set('X-Permitted-Cross-Domain-Policies', '"none"');
+    res.set('Referrer-Policy', 'no-referrer');
+    res.set('Feature-Policy', 'accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'; sync-xhr \'none\'');
 }

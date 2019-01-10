@@ -88,3 +88,8 @@ function fadeInIngredients() {
 
 $('.lazy').Lazy();
 $('figcaption').fitText(0.9);
+
+$( document ).ready(function() {
+    $('.fadeOut').on('click', fadeOutIngredients);
+    $('.fadeIn').on('click', fadeInIngredients);
+});

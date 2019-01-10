@@ -87,3 +87,7 @@ figcaption {
 .recipeImage {
     max-height: 350px;
 }
+.fa-sync-alt {
+    font-size:3em;
+    color:#333;
+}

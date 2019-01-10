@@ -7,7 +7,7 @@ block content
 
   div.row
     div.col-md-4.justify-content-center.grow.animate#ingredients
-      a(onclick="fadeOutIngredients()")
+      a.fadeOut
         h2.text-center Zutaten
       div.h-100.o-hidden#inglist
         ul.list-unstyled
@@ -17,7 +17,7 @@ block content
           h5= portions
 
     div.col-sm-12.col-md-1.d-none.animate#ingredients-vert.vert
-      a(onclick="fadeInIngredients()")
+      a.fadeIn
         h2.text-center Zutaten
 
     div.col-sm-12.col-md-8.shrink.animate#preparation
