@@ -1,0 +1,32 @@
+{
+    "name": "Hackbrateb",
+    "portions": "3 Portionen",
+    "image": [
+    ],
+    "ingredients": [
+        {
+            "id": "hackfleisch",
+            "amount": "400g",
+            "name": "Hackfleisch"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "semmel",
+            "amount": "1",
+            "name": "Semmel"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Paprikapulver"
+        }
+    ],
+    "preparation": [
+        "{zwiebel} klein schneiden. {semmel} in Wasser einlegen und aufquellen lassen.",
+        "{semmel} ausdrücken und mit hackfleisch}, {zwiebel}, {gewuerze} vermischen.",
+        "Braten bei 180°C Umluft im Backofenfür 30 Minuten backen. Hin und wieder mit flüssiger Butter bestreichen."
+    ]
+}

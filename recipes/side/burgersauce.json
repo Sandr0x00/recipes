@@ -1,0 +1,30 @@
+{
+    "name": "Burgersauce",
+    "portions": "1 Burger",
+    "image": [
+        "bun2.jpg"
+    ],
+    "ingredients": [
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "mayo",
+            "name": "Mayonese"
+        },
+        {
+            "id": "ketchup",
+            "name": "Ketchup"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Paprikapulver, Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{knoblauch} hacken und zerdrücken.",
+        "{knoblauch}, {mayo}, {ketchup} mit {gewuerze} vermischen."
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "name": "Kartoffelpüree",
+    "image": [
+    ],
+    "ingredients": [
+        {
+            "id": "kartoffel",
+            "amount": "400g",
+            "name": "Kartoffeln"
+        },
+        {
+            "id": "milch",
+            "amount": "125ml",
+            "name": "Milch"
+        },
+        {
+            "id": "butter",
+            "amount": "50g",
+            "name": "Butter"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Muskatnuss"
+        }
+    ],
+    "preparation": [
+        "Mehlig kochende {kartoffel} 25 Minuten lang in Salzwasser kochen.",
+        "{milch} und {butter} erwärmen.",
+        "Alles zusammenfügen und Kartoffeln zerdrücken."
+    ]
+}

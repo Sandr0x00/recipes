@@ -1,0 +1,37 @@
+{
+    "name": "Pizzaleberkäse",
+    "image": [
+    ],
+    "ingredients": [
+        {
+            "id": "braet",
+            "amount": "500g",
+            "name": "Leberkäsbrät"
+        },
+        {
+            "id": "salami",
+            "name": "Salami"
+        },
+        {
+            "id": "kaese",
+            "name": "Käse"
+        },
+        {
+            "id": "paprika",
+            "amount": "1/2",
+            "name": "Paprika"
+        },
+        {
+            "id": "oregano",
+            "name": "Oregano"
+        },
+        {
+            "id": "chili",
+            "name": "Chilipulver"
+        }
+    ],
+    "preparation": [
+        "{salami}, {kaese} und {paprika} würfeln und mit dem {braet} vermengen. Mit {oregano} und {chili} mischen.",
+        "80min bei 180°C backen."
+    ]
+}
