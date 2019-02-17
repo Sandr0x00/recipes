@@ -1,5 +1,9 @@
 {
+    "name": "price-logger",
+    "author": "Sandro Bauer <sandro.bauer.93@gmail.com> (https://github.com/Sandr0x00)",
+    "description": "A visualisation for data collected in logs.",
     "license": "MIT",
+    "private": true,
     "repository": {
         "type": "git",
         "url": "https://github.com/Sandr00/recipes.git"

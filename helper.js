@@ -41,7 +41,24 @@ exports.loadJSON = function() {
             console.log('There should be no file here!');
         }
     });
+    linkIngredients(recipes);
     return {recipes: recipes, categories: categories};
+};
+
+function linkIngredients(recipes) {
+    let ids = Object.keys(recipes);
+    for (let key in recipes) {
+        let recipe = recipes[key];
+        if (recipe.category == 'sandwich') {
+            continue;
+        }
+        recipe.ingredients.forEach(ingredient => {
+            if (ids.includes(ingredient.id)) {
+                let linkedRecipe = recipes[ingredient.id];
+                ingredient['link'] = '/' + linkedRecipe.category + '/' + linkedRecipe.id;
+            }
+        });
+    }
 };
 
 function readFilesInFolder(folder) {

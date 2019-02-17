@@ -12,7 +12,10 @@ block content
       div.h-100.o-hidden#inglist
         ul.list-unstyled
           each ingredient in ingredients
-            li(class= ingredient.id + " ingredient min-w")= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
+            if ingredient.link
+              li(class= ingredient.id + " ingredient min-w")!= "<a href=\"" + ingredient.link + "\">" +(ingredient.amount ? ingredient.amount + " " : "") + ingredient.name + "</a>"
+            else
+              li(class= ingredient.id + " ingredient min-w")= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
         if portions
           h5= portions
 

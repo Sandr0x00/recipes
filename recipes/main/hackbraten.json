@@ -1,7 +1,9 @@
 {
-    "name": "Hackbrateb",
+    "name": "Hackbraten",
     "portions": "3 Portionen",
     "image": [
+        "hackbraten-2.jpg",
+        "hackbraten.jpg"
     ],
     "ingredients": [
         {
@@ -25,8 +27,8 @@
         }
     ],
     "preparation": [
-        "{zwiebel} klein schneiden. {semmel} in Wasser einlegen und aufquellen lassen.",
-        "{semmel} ausdrücken und mit hackfleisch}, {zwiebel}, {gewuerze} vermischen.",
+        "{zwiebel} klein schneiden. {semmel} in Scheiben schneiden, in Wasser einlegen und aufquellen lassen.",
+        "{semmel} ausdrücken und mit {hackfleisch}, {zwiebel}, {gewuerze} vermischen.",
         "Braten bei 180°C Umluft im Backofenfür 30 Minuten backen. Hin und wieder mit flüssiger Butter bestreichen."
     ]
 }
