@@ -1,5 +1,6 @@
 {
     "name": "price-logger",
+    "version": "0.1",
     "author": "Sandro Bauer <sandro.bauer.93@gmail.com> (https://github.com/Sandr0x00)",
     "description": "A visualisation for data collected in logs.",
     "license": "MIT",
@@ -19,7 +20,7 @@
     },
     "devDependencies": {
         "chai": "^4.2.0",
-        "eslint": "^5.9.0",
-        "mocha": "^5.2.0"
+        "eslint": "^5.14.1",
+        "mocha": "^6.0.0"
     }
 }
