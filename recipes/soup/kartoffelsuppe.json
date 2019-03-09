@@ -1,0 +1,67 @@
+{
+    "name": "Kartoffelsuppe",
+    "portions": "4 Portionen",
+    "image": [
+    ],
+    "ingredients": [
+        {
+            "id": "karotte",
+            "amount": "1",
+            "name": "Karotte"
+        },
+        {
+            "id": "kartoffel",
+            "amount": "300g",
+            "name": "Kartoffeln"
+        },
+        {
+            "id": "sellerie",
+            "amount": "150g",
+            "name": "Sellerie"
+        },
+        {
+            "id": "paprika",
+            "amount": "1/2",
+            "name": "Paprika"
+        },
+        {
+            "id": "lauchzwiebel",
+            "amount": "1 Bund",
+            "name": "Lauchzwiebel"
+        },
+        {
+            "id": "wasser",
+            "amount": "500ml",
+            "name": "Wasser"
+        },
+        {
+            "id": "butter",
+            "name": "Butter"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "bruehe",
+            "name": "Brühe"
+        },
+        {
+            "id": "cremefraiche",
+            "amount": "75g",
+            "name": "Crème fraîche"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Pfeffer und Muskatnuss"
+        }
+    ],
+    "preparation": [
+        "{kartoffel:100g}, {sellerie} schälen und wie {paprika} und {karotte} würfeln. Die grüne Seite der {lauchzwiebel} in Ringe schneiden.",
+        "In {wasser} mit Salz garen. Das Gemüse abgießen und dabei das Kochwasser auffangen. Die Zwiebel und den weißen Teil der Lauchzwiebel fein schneiden.",
+        "In dem Topf {butter} schmelzen und die {zwiebel} glasig dünsten. Die restlichen {kartoffel:200g} schälen und in Stücke schneiden. Zusammen mit dem aufgefangenen Kochwasser und der {bruehe} in den Topf geben. Bei geschlossenem Deckel die Kartoffeln gar kochen.",
+        "{cremefraiche}, {gewuerze} hinzugeben und pürieren.",
+        "Mit den gegarten Gemüsewürfeln und Kräutern servieren. "
+    ]
+}

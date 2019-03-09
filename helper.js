@@ -3,16 +3,39 @@
 let fs = require('fs');
 let path = require('path');
 
+function replace(regex, regexAmount, ingredient, preparation, preparationAmounts) {
+    let replace;
+    let replaceAmounts;
+    if (preparation.match(regexAmount)) {
+        let amount = preparation.match(regexAmount)[1];
+        regex = `\{${ingredient.id}\:${amount}\}`;
+        replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + amount + ' ' + ingredient.name + '</b>';
+        replaceAmounts = replace;
+    } else {
+        replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + ingredient.name + '</b>';
+        replaceAmounts = '<b class=\'' + ingredient.id + ' ingredient\'>' + (ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name + '</b>';
+    }
+    preparation = preparation.replace(new RegExp(regex, 'g'), replace);
+    preparationAmounts = preparationAmounts.replace(new RegExp(regex, 'g'), replaceAmounts);
+    return [
+        preparation,
+        preparationAmounts
+    ];
+}
+
 exports.formatPreparation = function(recipe) {
     // replace preparations
     let preparation = JSON.stringify(recipe.preparation);
     let preparationAmounts = JSON.stringify(recipe.preparation);
     recipe.ingredients.forEach(ingredient => {
-        let regex = `\{${ingredient.id}\}`;
-        let replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + ingredient.name + '</b>';
-        let replaceAmounts = '<b class=\'' + ingredient.id + ' ingredient\'>' + (ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name + '</b>';
-        preparation = preparation.replace(new RegExp(regex, 'g'), replace);
-        preparationAmounts = preparationAmounts.replace(new RegExp(regex, 'g'), replaceAmounts);
+        while (preparation.match(`\{${ingredient.id}(\:.+?)*\}`)) {
+            // first, replace ingredients with specific amounts, if there are any
+            let regex = `\{${ingredient.id}\}`;
+            let regex_amount = `\{${ingredient.id}\:(.+?)\}`;
+            let replaced = replace(regex, regex_amount, ingredient, preparation, preparationAmounts);
+            preparation = replaced[0];
+            preparationAmounts = replaced[1];
+        }
     });
     return [
         JSON.parse(preparation),

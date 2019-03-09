@@ -1,3 +1,11 @@
+@mixin transition($property) {
+  transition: $property;
+  -webkit-transition: $property;
+  -moz-transition: $property;
+  -o-transition: $property;
+  -ms-transition: $property;
+}
+
 html {
     overflow-y:scroll;
 }
@@ -10,7 +18,7 @@ html {
 }
 
 .animate, #inglist {
-    transition: all 1s ease, padding 0s;
+  @include transition("all 1s ease, padding 0s");
 }
 .vert {
     writing-mode: vertical-rl;

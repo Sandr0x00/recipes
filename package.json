@@ -1,26 +1,35 @@
 {
     "name": "price-logger",
-    "version": "0.1",
-    "author": "Sandro Bauer <sandro.bauer.93@gmail.com> (https://github.com/Sandr0x00)",
+    "author": "Sandro Bauer (https://github.com/Sandr0x00)",
     "description": "A visualisation for data collected in logs.",
     "license": "MIT",
     "private": true,
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Sandr00/recipes.git"
-    },
+    "repository": "github:Sandr0x00/recipes",
     "scripts": {
-        "pretest": "eslint --ignore-path .gitignore .",
-        "test": "mocha"
+        "build": "node-sass sass -o public/css && ./copy.py && npm run test",
+        "pretest": "eslint .",
+        "test": "mocha",
+        "zip": "tar -czf recipes.tar.gz public recipes views package.json server.js LICENSE",
+        "prod": "npm install --production"
     },
     "dependencies": {
+        "compression": "^1.7.3",
         "express": "^4.16.4",
         "jsonschema": "^1.2.4",
         "pug": "^2.0.3"
     },
     "devDependencies": {
+        "bootstrap": "^4.3.1",
         "chai": "^4.2.0",
         "eslint": "^5.14.1",
-        "mocha": "^6.0.0"
+        "jquery": "^3.3.1",
+        "jquery-lazy": "^1.7.10",
+        "mocha": "^6.0.0",
+        "node-sass": "^4.11.0",
+        "popper.js": "^1.14.7",
+        "sharp": "^0.21.3"
+    },
+    "bugs": {
+        "url": "https://github.com/Sandr0x00/recipes/issues"
     }
 }

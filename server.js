@@ -3,6 +3,7 @@
 /* global __dirname, require, console, module */
 
 const express = require('express');
+const compression = require('compression');
 const app = express();
 const port = 3000;
 
@@ -22,6 +23,7 @@ app.set('view engine', 'pug');
 app.locals.compileDebug = false;
 app.locals.cache = true;
 app.use(express.static('public'));
+app.use(compression());
 
 app.get('/', (req, res) => {
     setHeaders(res);
