@@ -18,8 +18,8 @@ block content
     each recipe in recipes
       figure.col-6.col-sm-4.col-md-3.recipeLinkDiv
         if recipe.category
-          a.lazy.recipeLink(href='/' + recipe.category + '/' + recipe.id, data-src=(recipe.image ? '/images/' + recipe.image[0] : ''))
+          a.lazy.recipeLink(href='/' + recipe.category + '/' + recipe.id, data-src=(recipe.image ? '/images/thumbnail_' + recipe.image[0] : ''))
             figcaption.text-center= recipe.name
         else
-          a.lazy.recipeLink(href='/recipe/' + recipe.id, data-src=(recipe.image ? '/images/'+recipe.image[0] : ''))
+          a.lazy.recipeLink(href='/recipe/' + recipe.id, data-src=(recipe.image ? '/images/thumbnail_' + recipe.image[0] : ''))
             figcaption.text-center= recipe.name
