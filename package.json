@@ -6,7 +6,8 @@
     "private": true,
     "repository": "github:Sandr0x00/recipes",
     "scripts": {
-        "build": "node-sass sass -o public/css && ./copy.py && npm run resize && npm run test && npm run zip",
+        "compile:scss": "node-sass sass -o public/css",
+        "build": "npm run compile:scss && ./copy.py && npm run resize && npm run test && npm run zip",
         "resize": "node resize.js",
         "pretest": "eslint .",
         "test": "mocha",

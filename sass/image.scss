@@ -1,0 +1,21 @@
+@import 'helper';
+
+.placeholderWrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.placeholder {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  height: 350px;
+  @include transition(all 1s linear);
+}
+
+.blur {
+  filter: blur(30px);
+  /* this is needed so Safari keeps sharp edges */
+  transform: scale(1);
+}

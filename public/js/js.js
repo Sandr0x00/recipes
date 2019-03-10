@@ -1,4 +1,6 @@
-/* global $, window, document, setTimeout */
+/* global $, window, document, setTimeout, loadImages */
+'use strict';
+
 
 $('.ingredient').hover(
     function() {
@@ -92,4 +94,5 @@ $('figcaption').fitText(0.9);
 $( document ).ready(function() {
     $('.fadeOut').on('click', fadeOutIngredients);
     $('.fadeIn').on('click', fadeInIngredients);
+    loadImages();
 });

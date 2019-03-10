@@ -1,10 +1,5 @@
-@mixin transition($property) {
-  transition: $property;
-  -webkit-transition: $property;
-  -moz-transition: $property;
-  -o-transition: $property;
-  -ms-transition: $property;
-}
+@import 'helper';
+
 
 html {
     overflow-y:scroll;
@@ -91,9 +86,6 @@ figcaption {
     content: "";
     display: block;
     padding-top: 165%;
-}
-.recipeImage {
-    max-height: 350px;
 }
 .fa-sync-alt {
     font-size:3em;

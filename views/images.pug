@@ -2,13 +2,14 @@ if images && images.length != 0
   div.row.images
 
     mixin img(file)
-      div.lazy.recipeLink(data-src=('/images/' + file))
+      div.placeholderWrapper
+        div.placeholder.blur(data-large='/images/' + file, style="background-image: url('/images/placeholder_" + file + "');")
 
     if images.length == 1
-      div.recipeImage.col-12.col-sm-10.offset-sm-1.col-lg-6.offset-lg-3.recipeLinkDiv
+      div.recipeImage.col-12.col-sm-10.offset-sm-1.col-lg-6.offset-lg-3
         +img(images[0])
     else
-      div.recipeImage.col-6.recipeLinkDiv
+      div.recipeImage.col-6
         +img(images[0])
-      div.recipeImage.col-6.recipeLinkDiv
+      div.recipeImage.col-6
         +img(images[1])

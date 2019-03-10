@@ -154,7 +154,12 @@ function setHeaders(res) {
     res.set('X-Frame-Options', 'SAMEORIGIN');
     res.set('X-Content-Type-Options', 'nosniff');
     res.set('Strict-Transport-Security', '"max-age=31536000; includeSubDomains; preload"');
-    res.set('Content-Security-Policy', 'default-src \'none\'; img-src \'self\'; style-src \'self\' stackpath.bootstrapcdn.com use.fontawesome.com; script-src \'self\' maxcdn.bootstrapcdn.com cdnjs.cloudflare.com code.jquery.com; font-src use.fontawesome.com');
+    res.set('Content-Security-Policy',
+        'default-src \'none\';'
+        + 'img-src \'self\';'
+        + 'style-src \'self\' \'unsafe-inline\' use.fontawesome.com;'
+        + 'script-src \'self\';'
+        + 'font-src use.fontawesome.com');
     res.set('X-Permitted-Cross-Domain-Policies', '"none"');
     res.set('Referrer-Policy', 'no-referrer');
     res.set('Feature-Policy', 'accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'; sync-xhr \'none\'');
