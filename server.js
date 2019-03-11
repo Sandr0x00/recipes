@@ -25,6 +25,14 @@ app.locals.cache = true;
 app.use(express.static('public'));
 app.use(compression());
 
+app.get('/api/:id', (req, res) => {
+    let id = req.params.id;
+    let recipe = findById(recipes, id);
+    if (recipe) {
+        res.send(recipe);
+    }
+});
+
 app.get('/', (req, res) => {
     setHeaders(res);
     res.render('index', {
@@ -155,7 +163,7 @@ function setHeaders(res) {
     res.set('X-Content-Type-Options', 'nosniff');
     res.set('Strict-Transport-Security', '"max-age=31536000; includeSubDomains; preload"');
     res.set('Content-Security-Policy',
-        'default-src \'none\';'
+        'default-src \'self\';'
         + 'img-src \'self\';'
         + 'style-src \'self\' \'unsafe-inline\' use.fontawesome.com;'
         + 'script-src \'self\';'

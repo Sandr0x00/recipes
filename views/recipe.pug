@@ -5,15 +5,21 @@ block content
 
   include images.pug
 
-  div.row
+  div.row#recipe
     div.col-md-4.justify-content-center.grow.animate#ingredients
       a.fadeOut
-        h2.text-center Zutaten
+        h2.text-center
+          i.fas.fa-bars
+          = " Zutaten"
       div.h-100.o-hidden#inglist
         ul.list-unstyled
           each ingredient in ingredients
             if ingredient.link
-              li(class= ingredient.id + " ingredient min-w")!= "<a href=\"" + ingredient.link + "\">" +(ingredient.amount ? ingredient.amount + " " : "") + ingredient.name + "</a>"
+              li(class= ingredient.id + " ingredient min-w")
+                a.lnk(href="#", data-link=ingredient.id)= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
+                span= " "
+                a(href=ingredient.link)
+                  i.fas.fa-external-link-alt
             else
               li(class= ingredient.id + " ingredient min-w")= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
         if portions

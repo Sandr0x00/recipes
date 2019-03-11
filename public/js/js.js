@@ -1,4 +1,4 @@
-/* global $, window, document, setTimeout, loadImages */
+/* global $, window, document, setTimeout, loadImages, loadRecipe */
 'use strict';
 
 
@@ -66,10 +66,10 @@ function fadeOutIngredients() {
             }
         }, 100);
     }
-    setTimeout(() => {
-        $('#preparation').addClass('d-none');
-        $('#preparation-amounts').removeClass('d-none');
-    }, 1200);
+    // setTimeout(() => {
+    //     $('#preparation').addClass('d-none');
+    //     $('#preparation-amounts').removeClass('d-none');
+    // }, 1200);
 }
 
 function fadeInIngredients() {
@@ -95,4 +95,9 @@ $( document ).ready(function() {
     $('.fadeOut').on('click', fadeOutIngredients);
     $('.fadeIn').on('click', fadeInIngredients);
     loadImages();
+    $('.lnk').on('click', function(){
+        loadRecipe($(this).data('link'), $(this));
+        $(this).off('click');
+        $(this).removeAttr('href');
+    } );
 });

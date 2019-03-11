@@ -23,7 +23,7 @@
             "name": "Ketchup"
         },
         {
-            "id": "zucker",
+            "id": "zuckersirup",
             "amount": "5 EL",
             "name": "Zuckersirup"
         },
@@ -41,6 +41,6 @@
     "preparation": [
         "{butter} in einem Topf bei mittlerer Hitze zerlassen.",
         "{zwiebel} unter rühren goldbraun braten. {knoblauch} hinzufügen und mitbraten.",
-        "{ketchup}, {zucker}, {whisky}, {balsamico} hinzufügen. 10 - 15min köcheln lassen."
+        "{ketchup}, {zuckersirup}, {whisky}, {balsamico} hinzufügen. 10 - 15min köcheln lassen."
     ]
 }

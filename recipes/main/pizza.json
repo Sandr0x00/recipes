@@ -1,0 +1,27 @@
+{
+    "name": "Pizza",
+    "portions": "",
+    "image": [
+    ],
+    "ingredients": [
+        {
+            "id": "pizzateig",
+            "amount": "1",
+            "name": "Pizzateig"
+        },
+        {
+            "id": "pizzasauce",
+            "amount": "1",
+            "name": "Pizzasauce"
+        },
+        {
+            "id": "mozarella",
+            "amount": "1",
+            "name": "Mozarella"
+        }
+    ],
+    "preparation": [
+        "{pizzateig} mit {pizzasauce} bestreichen und mit {mozarella} belegen.",
+        ""
+    ]
+}
