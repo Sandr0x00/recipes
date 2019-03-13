@@ -1,7 +1,8 @@
 {
     "name": "Pizza",
-    "portions": "",
     "image": [
+        "pizza.jpg",
+        "pizza-funghi.jpg"
     ],
     "ingredients": [
         {
@@ -18,10 +19,25 @@
             "id": "mozarella",
             "amount": "1",
             "name": "Mozarella"
+        },
+        {
+            "id": "schinken",
+            "name": "Schinken",
+            "optional": true
+        },
+        {
+            "id": "champignons",
+            "name": "Champignons",
+            "optional": true
+        },
+        {
+            "id": "salami",
+            "name": "Salami",
+            "optional": true
         }
     ],
     "preparation": [
         "{pizzateig} mit {pizzasauce} bestreichen und mit {mozarella} belegen.",
-        ""
+        "Pizza belegen."
     ]
 }

@@ -12,7 +12,8 @@
         "pretest": "eslint .",
         "test": "mocha",
         "zip": "tar -czf recipes.tar.gz public recipes views package.json server.js LICENSE",
-        "prod": "npm install --production"
+        "install:prod": "npm install --production",
+        "serve": "./server.js"
     },
     "dependencies": {
         "compression": "^1.7.3",
