@@ -1,10 +1,6 @@
 {
     "name": "Pizzateig",
     "portions": "4 Pizzas",
-    "image": [
-        "pizzateig.jpg",
-        "pizzateig-3.jpg"
-    ],
     "ingredients": [
         {
             "id": "wasser",

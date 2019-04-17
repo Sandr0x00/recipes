@@ -20,8 +20,13 @@ block content
                 span= " "
                 a(href=ingredient.link)
                   i.fas.fa-external-link-alt
+                if ingredient.optional
+                  span.optional  - optional
+
             else
               li(class= ingredient.id + " ingredient min-w")= (ingredient.amount ? ingredient.amount + " " : "") + ingredient.name
+                if ingredient.optional
+                  span.optional  - optional
         if portions
           h5= portions
 

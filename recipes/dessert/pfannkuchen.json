@@ -1,10 +1,6 @@
 {
     "name": "Pfannkuchen",
     "portions": "9 Pfannkuchen",
-    "image": [
-        "pfannkuchen-pfanne.jpg",
-        "pfannkuchen-rolls.jpg"
-    ],
     "ingredients": [
         {
             "id": "milch",

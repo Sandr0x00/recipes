@@ -158,17 +158,17 @@ function findById(recipes, id) {
 
 
 function setHeaders(res) {
-    res.set('X-XSS-ProtectionType', '"1; mode=block"');
-    res.set('X-Frame-Options', 'SAMEORIGIN');
-    res.set('X-Content-Type-Options', 'nosniff');
-    res.set('Strict-Transport-Security', '"max-age=31536000; includeSubDomains; preload"');
-    res.set('Content-Security-Policy',
+    res.setHeader('X-XSS-ProtectionType', '"1; mode=block"');
+    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('Strict-Transport-Security', '"max-age=31536000; includeSubDomains; preload"');
+    res.setHeader('Content-Security-Policy',
         'default-src \'self\';'
         + 'img-src \'self\';'
         + 'style-src \'self\' \'unsafe-inline\' use.fontawesome.com;'
         + 'script-src \'self\';'
         + 'font-src use.fontawesome.com');
-    res.set('X-Permitted-Cross-Domain-Policies', '"none"');
-    res.set('Referrer-Policy', 'no-referrer');
-    res.set('Feature-Policy', 'accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'; sync-xhr \'none\'');
+    res.setHeader('X-Permitted-Cross-Domain-Policies', '"none"');
+    res.setHeader('Referrer-Policy', 'no-referrer');
+    res.setHeader('Feature-Policy', 'accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'; sync-xhr \'none\'');
 }

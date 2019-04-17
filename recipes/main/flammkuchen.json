@@ -1,10 +1,6 @@
 {
     "name": "Sauerkraut Flammkuchen",
     "portions": "3 mittelgroße Flammkuchen",
-    "image": [
-        "flammkuchen.jpg",
-        "flammkuchen-belag.jpg"
-    ],
     "ingredients": [
         {
             "id": "flammkuchenteig",

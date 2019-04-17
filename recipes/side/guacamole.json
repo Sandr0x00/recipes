@@ -1,8 +1,5 @@
 {
     "name": "Guacamole",
-    "image": [
-        "guacamole.jpg"
-    ],
     "ingredients": [
         {
             "id": "avocados",

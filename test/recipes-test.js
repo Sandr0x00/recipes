@@ -79,22 +79,12 @@ function getSchema() {
     return {
         id: '/All',
         type: 'object',
+        additionalProperties: false,
         properties: {
             name: {
                 type: 'string',
                 required: true,
                 minLength: 3
-            },
-            image: {
-                type: 'array',
-                required: true,
-                uniqueItems: true,
-                minItems: 0,
-                maxItems: 2,
-                items: {
-                    type: 'string',
-                    pattern: /^[a-z-0-9]+\.(jpe?g|png)$/
-                }
             },
             portions: {
                 type: 'string',
@@ -122,6 +112,9 @@ function getSchema() {
                             type: 'string',
                             required: true,
                             minLength: 2
+                        },
+                        optional: {
+                            type: 'boolean'
                         }
                     }
                 }

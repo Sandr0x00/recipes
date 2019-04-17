@@ -1,10 +1,6 @@
 {
     "name": "Kartoffelgratin",
     "portions": "4 Portionen",
-    "image": [
-        "kartoffelgratin.jpg",
-        "kartoffelgratin-2.jpg"
-    ],
     "ingredients": [
         {
             "id": "milch",

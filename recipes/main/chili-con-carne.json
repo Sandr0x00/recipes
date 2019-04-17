@@ -1,0 +1,54 @@
+{
+    "name": "Chili con carne",
+    "portions": "3 Portionen",
+    "ingredients": [
+        {
+            "id": "hackfleisch",
+            "amount": "600g",
+            "name": "Hackfleisch"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "2",
+            "name": "Zwiebeln"
+        },
+        {
+            "id": "tomate",
+            "amount": "1 Pkg.",
+            "name": "passierte Tomaten"
+        },
+        {
+            "id": "chili",
+            "amount": "6",
+            "name": "Chilis"
+        },
+        {
+            "id": "bohnen",
+            "amount": "1 Dose",
+            "name": "Kidney Bohnen"
+        },
+        {
+            "id": "mais",
+            "amount": "1 Dose",
+            "name": "Mais"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Kümmel"
+        },
+        {
+            "id": "baguette",
+            "amount": "1",
+            "name": "Baguette"
+        },
+        {
+            "id": "cremefraiche",
+            "name": "Crème fraîche"
+        }
+    ],
+    "preparation": [
+        "{zwiebel} glasig braten. {hackfleisch} und {gewuerze} hinzufügen.",
+        "{chili}, {tomate}, {bohnen} und {mais} hinzufügen und einkochen.",
+        "Mit {baguette} und {cremefraiche} servieren."
+    ]
+}

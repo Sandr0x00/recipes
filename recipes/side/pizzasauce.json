@@ -1,9 +1,5 @@
 {
     "name": "Pizzasauce",
-    "image": [
-        "pizzasosse.jpg",
-        "pizzabelegt.jpg"
-    ],
     "portions": "1 Pizza",
     "ingredients": [
         {

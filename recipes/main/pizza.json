@@ -1,9 +1,5 @@
 {
     "name": "Pizza",
-    "image": [
-        "pizza.jpg",
-        "pizza-funghi.jpg"
-    ],
     "ingredients": [
         {
             "id": "pizzateig",

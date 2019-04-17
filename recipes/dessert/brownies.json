@@ -1,9 +1,5 @@
 {
     "name": "Brownies",
-    "image": [
-        "brownies-ofen.jpg",
-        "brownies-schachtel.jpeg"
-    ],
     "ingredients": [
         {
             "id": "butter",

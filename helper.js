@@ -100,7 +100,21 @@ function readFilesInFolder(folder) {
             recipes[key] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
             recipes[key].id = key;
             recipes[key].category = folder;
+            recipes[key].image = addImages(key);
         }
     });
     return recipes;
+}
+
+function addImages(key) {
+    let images = [];
+    let image1 = path.join(__dirname, 'public', 'images', `${key}.jpg`);
+    let image2 = path.join(__dirname, 'public', 'images', `${key}-2.jpg`);
+    if (fs.existsSync(image1)) {
+        images.push(`${key}.jpg`);
+    }
+    if (fs.existsSync(image2)) {
+        images.push(`${key}-2.jpg`);
+    }
+    return images;
 }

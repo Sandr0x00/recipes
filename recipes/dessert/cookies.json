@@ -1,8 +1,5 @@
 {
     "name": "Cookies",
-    "image": [
-        "cookies.jpeg"
-    ],
     "ingredients": [
         {
             "id": "butter",

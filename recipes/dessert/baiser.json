@@ -1,8 +1,5 @@
 {
     "name": "Baiser",
-    "image": [
-        "baiser.jpg"
-    ],
     "ingredients": [
         {
             "id": "eiweis",

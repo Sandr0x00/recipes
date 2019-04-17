@@ -1,9 +1,6 @@
 {
     "name": "Couscous Salat",
     "portions": "4 Portionen",
-    "image": [
-        "couscous.jpg"
-    ],
     "ingredients": [
         {
             "id": "couscous",

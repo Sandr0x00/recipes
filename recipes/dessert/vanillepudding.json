@@ -1,10 +1,6 @@
 {
     "name": "Vanillepudding",
     "portions": "2 Gläser",
-    "image": [
-        "vanillepudding.jpg",
-        "vanillepudding-2.jpg"
-    ],
     "ingredients": [
         {
             "id": "vollmilch",

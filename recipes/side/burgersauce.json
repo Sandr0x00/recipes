@@ -1,9 +1,6 @@
 {
     "name": "Burgersauce",
     "portions": "1 Burger",
-    "image": [
-        "bun2.jpg"
-    ],
     "ingredients": [
         {
             "id": "knoblauch",

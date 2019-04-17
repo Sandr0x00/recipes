@@ -7,13 +7,14 @@
     "repository": "github:Sandr0x00/recipes",
     "scripts": {
         "compile:scss": "node-sass sass -o public/css",
-        "build": "npm run compile:scss && ./copy.py && npm run resize && npm run test && npm run zip",
+        "build:dev": "npm run compile:scss && ./copy.py && npm run resize && npm run test",
+        "build:prod": "npm run build:dev && tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
         "resize": "node resize.js",
-        "pretest": "eslint .",
-        "test": "mocha",
-        "zip": "tar -czf recipes.tar.gz public recipes views package.json server.js LICENSE",
-        "install:prod": "npm install --production",
-        "serve": "./server.js"
+        "test": "eslint . && mocha",
+        "serve": "./server.js",
+        "deploy:copy": "scp recipes.tar.gz recipes.service pi@raspberrypi.fritz.box:~",
+        "deploy:install": "ssh pi@raspberrypi.fritz.box 'bash -s' < deploy.sh",
+        "deploy:update": "ssh pi@raspberrypi.fritz.box \"tar -zxvf recipes.tar.gz -C ~/recipes && sudo systemctl restart recipes.service\""
     },
     "dependencies": {
         "compression": "^1.7.3",

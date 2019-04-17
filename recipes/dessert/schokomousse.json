@@ -1,8 +1,5 @@
 {
     "name": "Schokomousse",
-    "image": [
-        "mousse.jpg"
-    ],
     "ingredients": [
         {
             "id": "schoki",

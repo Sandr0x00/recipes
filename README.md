@@ -11,7 +11,7 @@ Clone/fork this rep.
 
 ```bash
 npm install
-npm run build
+npm run build:prod
 ```
 
 Copy `recipes.tar.gz` to your server and extract it there. Run `npm run install:prod` on your server.
@@ -25,7 +25,6 @@ Recipe
 ```json
 {
     "name": "", // The name of your recipe
-    "image": ["", ""], // Maximum 2 are shown, leave empty if none
     "portions": "", // Optional
     "ingredients": [ //
         {

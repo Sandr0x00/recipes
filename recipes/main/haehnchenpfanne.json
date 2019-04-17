@@ -1,10 +1,6 @@
 {
     "name": "Hähnchen-Gemüse-Pfanne",
     "portions": "2 Portionen",
-    "image": [
-        "haehnchen-gemuese.jpg",
-        "haehnchen-gemuese-2.jpg"
-    ],
     "ingredients": [
         {
             "id": "haehnchen",

@@ -1,9 +1,5 @@
 {
     "name": "Leberkäsburger",
-    "image": [
-        "leberkasburger-1.jpg",
-        "leberkasburger-2.jpg"
-    ],
     "order": [
         {
             "id": "semmel",

@@ -1,10 +1,6 @@
 {
     "name": "Burger",
     "portions": "1 Burger",
-    "image": [
-        "burger.jpg",
-        "bun2.jpg"
-    ],
     "ingredients": [
         {
             "id": "hackfleisch",

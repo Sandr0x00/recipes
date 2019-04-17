@@ -1,9 +1,6 @@
 {
     "name": "Erdbeerlimes",
     "portions": "4 Liter",
-    "image": [
-        "erdbeerlimes.jpg"
-    ],
     "ingredients": [
         {
             "id": "erdbeeren",

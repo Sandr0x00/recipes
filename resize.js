@@ -17,9 +17,11 @@ fs.readdirSync(dirPath).forEach(fileName => {
     }
 });
 
-// module.exports =
 function resize(prefix, file, width, height, fit) {
-    let to = `public/images/${prefix}${file}`;
+    let fileName = path.parse(file);
+    let name = fileName.name;
+
+    let to = `public/images/${prefix}${name}.jpg`;
     sharp(`images/${file}`)
         .resize({
             width: width,

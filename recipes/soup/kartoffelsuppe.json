@@ -1,10 +1,6 @@
 {
     "name": "Kartoffelsuppe",
     "portions": "4 Portionen",
-    "image": [
-        "kartoffelsuppe.jpg",
-        "kartoffelsuppe-gemuese.jpg"
-    ],
     "ingredients": [
         {
             "id": "karotte",
