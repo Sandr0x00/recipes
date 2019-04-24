@@ -24,5 +24,5 @@ block content
           a.lazy.recipeLink(href='/recipe/' + recipe.id, data-src=(recipe.image ? '/images/thumbnail_' + recipe.image[0] : ''))
             figcaption.text-center= recipe.name
         if recipe.type
-          span.type(style='background-image: radial-gradient(35px, #fff, #0000);')
+          span.type
           span.type(style='background-image: url("/icons/' + recipe.type + '.svg"); background-size: 35px;')

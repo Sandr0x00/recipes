@@ -1,0 +1,22 @@
+.light-mode {
+    color: #333;
+    background-color: #ddd;
+}
+
+.light-mode {
+    span.type {
+        background-image: radial-gradient(25px, #fff, #0000);
+    }
+
+}
+
+.dark-mode {
+    color: #ddd;
+    background-color: #333;
+}
+
+.dark-mode {
+    span.type {
+        background-image: radial-gradient(25px, #fff, #0000);
+    }
+}
