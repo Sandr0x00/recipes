@@ -1,6 +1,7 @@
 {
     "name": "Kartoffelsuppe",
     "portions": "4 Portionen",
+    "type": "pot",
     "ingredients": [
         {
             "id": "karotte",

@@ -1,5 +1,6 @@
 {
     "name": "Pizza",
+    "type": "oven",
     "ingredients": [
         {
             "id": "pizzateig",

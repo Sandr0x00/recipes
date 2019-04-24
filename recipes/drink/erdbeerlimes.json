@@ -1,6 +1,7 @@
 {
     "name": "Erdbeerlimes",
     "portions": "4 Liter",
+    "type": "pot",
     "ingredients": [
         {
             "id": "erdbeeren",

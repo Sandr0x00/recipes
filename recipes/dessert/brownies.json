@@ -1,5 +1,6 @@
 {
     "name": "Brownies",
+    "type": "oven",
     "ingredients": [
         {
             "id": "butter",

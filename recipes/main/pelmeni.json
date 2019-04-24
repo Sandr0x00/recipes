@@ -1,6 +1,7 @@
 {
     "name": "Pelmeni",
     "portions": "6 Portionen",
+    "type": "pot",
     "ingredients": [
         {
             "id": "mehl",

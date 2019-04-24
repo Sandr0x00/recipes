@@ -90,6 +90,10 @@ function getSchema() {
                 type: 'string',
                 pattern: /^[0-9].*/
             },
+            type: {
+                type: 'string',
+                pattern: /^(wok|pan|pot|oven|bbq)$/
+            },
             ingredients: {
                 type: 'array',
                 required: true,
@@ -100,7 +104,7 @@ function getSchema() {
                     properties: {
                         id: {
                             type: 'string',
-                            pattern: /^[a-z]+$/,
+                            pattern: /^[a-z-]+$/,
                             required: true,
                             minLength: 2
                         },

@@ -1,6 +1,7 @@
 {
     "name": "Burger",
     "portions": "1 Burger",
+    "type": "pan",
     "ingredients": [
         {
             "id": "hackfleisch",

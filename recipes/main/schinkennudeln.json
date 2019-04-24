@@ -1,6 +1,7 @@
 {
     "name": "Schinkennudeln",
     "portions": "4 Portionen",
+    "type": "pot",
     "ingredients": [
         {
             "id": "nudeln",

@@ -1,0 +1,47 @@
+{
+    "name": "Persische Hähnchenspieße",
+    "portions": "10 Spieße",
+    "type": "bbq",
+    "ingredients": [
+        {
+            "id": "haehnchen",
+            "amount": "10",
+            "name": "Hähnchenschenkel"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "zitrone",
+            "amount": "125 ml",
+            "name": "Zitronensaft"
+        },
+        {
+            "id": "oregano",
+            "amount": "2 EL",
+            "name": "Oregano"
+        },
+        {
+            "id": "paprikapulver",
+            "amount": "2 TL",
+            "name": "Paprikapulver"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauch"
+        },
+        {
+            "id": "olivenoel",
+            "amount": "250ml",
+            "name": "Olivenöl"
+        }
+    ],
+    "preparation": [
+        "{zwiebel}, {zitrone}, {oregano}, {paprikapulver} und {knoblauch} pürieren. {olivenoel} hinzufügen.",
+        "{haehnchen} in einen wiederverschließbaren Plastikbeutel geben und die Marinade darüber gießen und 30 Minuten bei Zimmertemperatur ziehen lassen.",
+        "Auf feuchte Holzspieße stecken und bei direkter mittlerer Hitze (175 - 230 °C) bei geschlossenem Deckel 8 - 10 Minuten grillen."
+    ]
+}

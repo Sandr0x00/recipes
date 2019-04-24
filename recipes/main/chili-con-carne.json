@@ -1,6 +1,7 @@
 {
     "name": "Chili con carne",
     "portions": "3 Portionen",
+    "type": "pot",
     "ingredients": [
         {
             "id": "hackfleisch",

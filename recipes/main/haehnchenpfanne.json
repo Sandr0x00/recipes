@@ -1,6 +1,7 @@
 {
     "name": "Hähnchen-Gemüse-Pfanne",
     "portions": "2 Portionen",
+    "type": "wok",
     "ingredients": [
         {
             "id": "haehnchen",

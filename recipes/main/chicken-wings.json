@@ -1,0 +1,62 @@
+{
+    "name": "Chicken Wings",
+    "portions": "12 Wings",
+    "type": "bbq",
+    "ingredients": [
+        {
+            "id": "chickenwings",
+            "amount": "12",
+            "name": "Hähnchenflügel"
+        },
+        {
+            "id": "himbeerkonfituere",
+            "amount": "350g",
+            "name": "Himbeerkonfitüre ohne Kerne"
+        },
+        {
+            "id": "balsamico",
+            "amount": "4 EL",
+            "name": "Balsamico Essig"
+        },
+        {
+            "id": "zitrone",
+            "amount": "2 TL",
+            "name": "Zitronensaft / Zitronenschale"
+        },
+        {
+            "id": "chili",
+            "name": "Chiliflocken"
+        },
+        {
+            "id": "fenchel",
+            "amount": "1 TL",
+            "name": "Fenchelsamen"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1 TL",
+            "name": "Knoblauch"
+        },
+        {
+            "id": "basilikum",
+            "amount": "1 TL",
+            "name": "Basilikum"
+        },
+        {
+            "id": "salz",
+            "amount": "1 TL",
+            "name": "grobes Meersalz"
+        },
+        {
+            "id": "pfeffer",
+            "amount": "1/2 TL",
+            "name": "gemahlener Pfeffer"
+        }
+    ],
+    "preparation": [
+        "Grill vorwärmen.",
+        "{himbeerkonfituere}, {balsamico}, {zitrone} und {chili} verrühren.",
+        "{fenchel}, {knoblauch}, {basilikum}, {salz} und {pfeffer} mahlen und zusammenfügen. Die {chickenwings} in der Würzmischung wenden.",
+        "Über direkter mittlerer (175°C - 230°C) Hitze bei geschlossenem Deckel 10 - 15 Minuten goldbraun braten. Danach über indirekte mittlere Hitze 10 Minuten weitergrillen. Wings mit Glasur bestreichen und 5 Minuten weitergrillen."
+    ]
+}

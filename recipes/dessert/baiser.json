@@ -1,5 +1,6 @@
 {
     "name": "Baiser",
+    "type": "oven",
     "ingredients": [
         {
             "id": "eiweis",

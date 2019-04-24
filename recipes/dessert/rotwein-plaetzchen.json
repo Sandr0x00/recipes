@@ -1,5 +1,6 @@
 {
     "name": "Rotwein Plätzchen",
+    "type": "oven",
     "ingredients": [
         {
             "id": "mehl",

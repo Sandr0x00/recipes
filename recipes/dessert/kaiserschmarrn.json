@@ -1,6 +1,7 @@
 {
     "name": "Kaiserschmarrn",
     "portions": "4 Pfannen",
+    "type": "pan",
     "ingredients": [
         {
             "id": "rosine",

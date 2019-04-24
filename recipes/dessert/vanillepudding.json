@@ -1,6 +1,7 @@
 {
     "name": "Vanillepudding",
     "portions": "2 Gläser",
+    "type": "pot",
     "ingredients": [
         {
             "id": "vollmilch",

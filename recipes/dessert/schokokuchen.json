@@ -1,6 +1,7 @@
 {
     "name": "Schokokuchen",
     "portions": "1 Kuchen",
+    "type": "oven",
     "ingredients": [
         {
             "id": "milch",

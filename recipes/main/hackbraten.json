@@ -1,6 +1,7 @@
 {
     "name": "Hackbraten",
     "portions": "3 Portionen",
+    "type": "oven",
     "ingredients": [
         {
             "id": "hackfleisch",

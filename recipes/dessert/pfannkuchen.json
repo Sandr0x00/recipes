@@ -1,6 +1,7 @@
 {
     "name": "Pfannkuchen",
     "portions": "9 Pfannkuchen",
+    "type": "pan",
     "ingredients": [
         {
             "id": "milch",
