@@ -1,7 +1,7 @@
 {
-    "name": "price-logger",
+    "name": "recipes",
     "author": "Sandro Bauer (https://github.com/Sandr0x00)",
-    "description": "A visualisation for data collected in logs.",
+    "description": "A small recipe collection.",
     "license": "MIT",
     "private": true,
     "repository": "github:Sandr0x00/recipes",
@@ -20,9 +20,7 @@
         "compression": "^1.7.3",
         "express": "^4.16.4",
         "jsonschema": "^1.2.4",
-        "pug": "^2.0.3"
-    },
-    "devDependencies": {
+        "pug": "^2.0.3",
         "bootstrap": "^4.3.1",
         "chai": "^4.2.0",
         "eslint": "^5.15.1",
