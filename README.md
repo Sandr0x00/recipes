@@ -37,7 +37,7 @@ Recipe
     "preparation": ["", "", ...] // Steps to make your recipe
 }
 ```
-- It is possible to link ingredients in your preparation by using `{id}` in preparation. Example: You have an ingredient with `"id": "salt"`. Now you can use `{salt}` in preparation.
+- It is possible to link ingredients in your preparation by using `{id}` or `{id:amount}` in preparation. Example: You have an ingredient with `"id": "salt"`. Now you can use `{salt}` in preparation.
 
 # Contribution
 

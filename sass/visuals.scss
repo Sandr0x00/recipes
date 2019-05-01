@@ -7,7 +7,13 @@
     span.type {
         background-image: radial-gradient(25px, #fff, #0000);
     }
-
+    .highlight{
+        background:#ddd;
+    }
+    .fa-sync-alt {
+        font-size:3em;
+        color:#ddd;
+    }
 }
 
 .dark-mode {
@@ -18,5 +24,12 @@
 .dark-mode {
     span.type {
         background-image: radial-gradient(25px, #fff, #0000);
+    }
+    .highlight{
+        background:#555;
+    }
+    .fa-sync-alt {
+        font-size:3em;
+        color:#555;
     }
 }

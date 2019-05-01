@@ -1,5 +1,6 @@
 {
     "name": "Whisky Sauce",
+    "type": "pot",
     "ingredients": [
         {
             "id": "butter",

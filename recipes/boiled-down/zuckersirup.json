@@ -1,5 +1,6 @@
 {
     "name": "Zuckersirup",
+    "type": "pot",
     "ingredients": [
         {
             "id": "zucker",
