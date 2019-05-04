@@ -15,10 +15,17 @@
     #   script:
     #     - npm run build
 
-dist: xenial
 language: node_js
-node_js: "11"
-python: "3.7"
+node_js:
+  - "11"
+python:
+  - "3.7"
+dist: xenial
+
+cache:
+  directories:
+    - node_modules
+
 install:
   - npm install
 script:
