@@ -1,0 +1,20 @@
+
+matrix:
+  include:
+    - language: python
+      python: 2.7
+      # before_script:
+      #   - cd backend/tests
+      # script:
+      #   - python -m unittest discover
+
+    - language: node_js
+      node_js: "11"
+      before_script:
+        - npm install
+      script:
+        - node run build
+
+notifications:
+  email:
+    - sandro.bauer.93@gmail.com

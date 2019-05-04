@@ -7,7 +7,7 @@
     "repository": "github:Sandr0x00/recipes",
     "scripts": {
         "compile:scss": "node-sass sass -o public/css",
-        "build:dev": "npm run compile:scss && ./copy.py && npm run resize && npm run test",
+        "build": "npm run compile:scss && ./copy.py && npm run resize && npm run test",
         "build:prod": "npm run build:dev && tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
         "resize": "node resize.js",
         "test": "eslint . && mocha",
