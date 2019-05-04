@@ -1,12 +1,12 @@
 #!/usr/bin/env node
 
-/* global __dirname, require, console, module */
+/* global __dirname, require, console, module, process */
 
 const express = require('express');
 const compression = require('compression');
 const app = express();
 const port = process.env.PORT;
-if (port == null || port == "") {
+if (port == null || port == '') {
     port = 8080;
 }
 
