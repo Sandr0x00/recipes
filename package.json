@@ -11,7 +11,7 @@
         "zip": "tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
         "resize": "node resize.js",
         "test": "eslint . && mocha",
-        "serve": "./server.js",
+        "start": "node server.js",
         "deploy:copy": "scp recipes.tar.gz recipes.service pi@raspberrypi.fritz.box:~",
         "deploy:install": "ssh pi@raspberrypi.fritz.box 'bash -s' < deploy.sh",
         "deploy:update": "ssh pi@raspberrypi.fritz.box \"tar -zxvf recipes.tar.gz -C ~/recipes && sudo systemctl restart recipes.service\""

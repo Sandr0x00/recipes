@@ -4,9 +4,7 @@
 Just a small website based recipe collection for me.
 
 # How does it look?
-Kategorie | Rezept
----|---
-![](readme-1.png) | ![](readme-2.png)
+Check out the live version at [https://sandr0-recipes.herokuapp.com/](https://sandr0-recipes.herokuapp.com/)
 
 # How can I use it?
 Clone/fork this rep.
@@ -14,11 +12,10 @@ Clone/fork this rep.
 ```bash
 npm install
 npm run build
+npm start
 ```
 
 Run `npm run zip` and copy `recipes.tar.gz` to your server and extract it there. Run `npm install` on your server.
-
-To start the server, you can use `npm run serve`.
 
 # How can I add recipes?
 Recipe

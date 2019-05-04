@@ -5,7 +5,7 @@
 const express = require('express');
 const compression = require('compression');
 const app = express();
-const port = process.env.PORT;
+let port = process.env.PORT;
 if (port == null || port == '') {
     port = 8080;
 }
