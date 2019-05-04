@@ -30,7 +30,3 @@ install:
   - npm install
 script:
   - npm run build
-
-notifications:
-  email:
-    - sandro.bauer.93@gmail.com

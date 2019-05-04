@@ -8,7 +8,7 @@
     "scripts": {
         "compile:scss": "node-sass sass -o public/css",
         "build": "npm run compile:scss && ./copy.py && npm run resize && npm run test",
-        "build:prod": "npm run build:dev && tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
+        "zip": "tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
         "resize": "node resize.js",
         "test": "eslint . && mocha",
         "serve": "./server.js",

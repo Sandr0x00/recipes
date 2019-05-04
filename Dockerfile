@@ -11,19 +11,16 @@ COPY package*.json ./
 
 RUN apk add python3
 
-USER node
-
 RUN npm install
-
-COPY --chown=node:node . .
-
-RUN npm rebuild node-sass
-RUN npm run build:dev
-# If you are building your code for production
-# RUN npm ci --only=production
 
 # Bundle app source
 COPY . .
+
+RUN npm rebuild node-sass
+RUN npm run build
+# If you are building your code for production
+# RUN npm ci --only=production
+
 
 EXPOSE 8080
 CMD [ "npm", "run", "start" ]

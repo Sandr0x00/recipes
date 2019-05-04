@@ -1,5 +1,7 @@
+[![Build Status](https://travis-ci.com/Sandr0x00/recipes.svg?branch=master)](https://travis-ci.com/Sandr0x00/recipes)
+
 # What is this?
-Just a small website based recipe collection for me and my girlfriend.
+Just a small website based recipe collection for me.
 
 # How does it look?
 Kategorie | Rezept
@@ -11,10 +13,10 @@ Clone/fork this rep.
 
 ```bash
 npm install
-npm run build:prod
+npm run build
 ```
 
-Copy `recipes.tar.gz` to your server and extract it there. Run `npm run install:prod` on your server.
+Run `npm run zip` and copy `recipes.tar.gz` to your server and extract it there. Run `npm install` on your server.
 
 To start the server, you can use `npm run serve`.
 
@@ -24,17 +26,18 @@ Recipe
 - It has to contain the following fields:
 ```json
 {
-    "name": "", // The name of your recipe
-    "portions": "", // Optional
-    "ingredients": [ //
+    "name": "<The name of your recipe>",
+    "portions": "<optional>", 
+    "ingredients": [
         {
-            "id": "", // Used for preparation. If a recipe with that id exists, it will automatically get linked
-            "amount": "", // Optional
-            "name": "" // Name of your ingredient
+            "id": "<id, Used for preparation. If a recipe with that id exists, it will automatically get linked>", 
+            "amount": "<optional>",
+            "name": "<name which is displayed>"
         },
-        ...
+        {
+        }
     ],
-    "preparation": ["", "", ...] // Steps to make your recipe
+    "preparation": ["<first step>", "<second step>", "", ]
 }
 ```
 - It is possible to link ingredients in your preparation by using `{id}` or `{id:amount}` in preparation. Example: You have an ingredient with `"id": "salt"`. Now you can use `{salt}` in preparation.
