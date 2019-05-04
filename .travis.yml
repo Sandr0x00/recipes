@@ -1,32 +1,17 @@
-
-# matrix:
-  # include:
-    # - language: python
-      # python: 2.7
-      # before_script:
-      #   - cd backend/tests
-      # script:
-      #   - python -m unittest discover
-
-    # - language: node_js
-    #   node_js: "11"
-    #   before_script:
-    #     - npm install
-    #   script:
-    #     - npm run build
-
 language: python
 dist: xenial
 node_js:
-  - "11"
+- '11'
 python:
-  - "3.7"
-
+- '3.7'
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 install:
-  - npm install
+- npm install
 script:
-  - npm run build
+- npm run build
+deploy:
+  provider: heroku
+  api_key:
+    secure: i2LdDJsTMDKkz7tOBgE9GAVQiGDZhmTfATetA2WYdZ3oiFYo89YYzHDPB+QwEBgYOGmCo5bHcHxKTNjhF7vc9A09mv33kZe8inDzFJW5Lvx660gkhWfrIzaYkeK/YhjtPReCPNJ1Rl/Qk1PZfFFoLIr/F3NQliSzw58KJ00MP9a+htpnZbHvJx2TBA6ba/68foGMA5SipOLeNfakSied61SOPz2jACJbesDBHgzO2h4nR3vuKJ1vuK/AkU9tAanO6A+ZbTlbiLesJKgl7dAF33PPr8cdnal/zuhe+7tbrRBePEC9HvbmKsZn0dFUaIRaTzQKgliakqsEIh31D04tppadga14WBs5IElc2POo0YL+Xj9+jFlg/jRGNVfuQCaU3i8z60my1Ke8QQoJPxol66mbYneP4vHSO36KkNfaFZ2ld4rlNJ/QnCtUOoQflAml65FKqmGV+RsNFvTis9uflD6p3jJQ2MVoiHDGQvoPvG69A1vfWvxmKxX5a+6Ir5iq42GbnuhUveoXIuCTNKmDa+HwVEBNHSNanRjZ2LRVrtzC1hnt+c87E6COxHUiAkBXKRF/MWwVzoDoD97PDms5JWKDkBhgLWQ1rumpJsBmzV0PBUFnXtf99ulGzqrJte+zK6gB3/nBDFezvjV4LpxeOB8FrLLw65AlG5x85v/08uo=
