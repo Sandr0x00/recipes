@@ -1,4 +1,4 @@
-/* global require, module, __dirname, console */
+/* global require, module, __dirname, console, Promise */
 const fs = require('fs');
 const sharp = require('sharp');
 const path = require('path');
@@ -58,7 +58,7 @@ function resize(prefix, file, width, height, fit) {
 
 function saveFile(to, jpg) {
     if (fs.existsSync(to)) {
-        var s = fs.ReadStream(to);
+        let s = fs.ReadStream(to);
         let a = new Promise((resolve, reject) => {
             let sha = crypto.createHash('sha256');
             s.on('data', d => sha.update(d));
