@@ -57,29 +57,34 @@ function resize(prefix, file, width, height, fit) {
 };
 
 function saveFile(to, jpg) {
-    var s = fs.ReadStream(to);
-    let a = new Promise((resolve, reject) => {
-        let sha = crypto.createHash('sha256');
-        s.on('data', d => sha.update(d));
-        s.on('end', () => resolve(sha.digest('hex')));
-    });
-    let b = new Promise((resolve, reject) => {
-        jpg.toBuffer().then(data => resolve(crypto.createHash('sha256').update(data).digest('hex')));
-    });
-    Promise.all([a,b])
-        .then(values => {
-            // only write, if file has changed
-            if (values[0] !== values[1]) {
-                console.log(`Write ${to}`)
-                jpg.toBuffer().then(data => {
-                    fs.writeFile(to, data, (err) => {
-                        if (err) throw err;
-                    });
-                }).catch(err => {
-                    console.log(err);
-                });
-            }
-        }).catch(err => {
-            console.log(err)
+    if (fs.existsSync(to)) {
+        var s = fs.ReadStream(to);
+        let a = new Promise((resolve, reject) => {
+            let sha = crypto.createHash('sha256');
+            s.on('data', d => sha.update(d));
+            s.on('end', () => resolve(sha.digest('hex')));
         });
+        let b = new Promise((resolve, reject) => {
+            jpg.toBuffer().then(data => resolve(crypto.createHash('sha256').update(data).digest('hex')));
+        });
+        Promise.all([a,b])
+            .then(values => {
+                // only write, if file has changed
+                if (values[0] !== values[1]) {
+                    console.log(`Write ${to}`)
+                    jpg.toBuffer().then(data => {
+                        fs.writeFile(to, data, (err) => {
+                            if (err) throw err;
+                        });
+                    }).catch(err => {
+                        console.log(err);
+                    });
+                }
+            }).catch(err => {
+                console.log(err)
+            });
+    } else {
+        console.log(`Write ${to}`)
+        jpg.toFile(to);
+    }
 }
