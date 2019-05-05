@@ -12,7 +12,7 @@ fs.readdirSync(dirPath).forEach(fileName => {
     if (stats.isDirectory()) {
         console.log('There should be no directory here!');
     } else if (stats.isFile()) {
-        resizeOriginal(fileName, 1920, 1920, sharp.fit.inside)
+        resizeOriginal(fileName, 1920, 1920, sharp.fit.inside);
         resize('', fileName, 600, 600, sharp.fit.inside);
         resize('thumbnail_', fileName, 280, 430, sharp.fit.cover);
         resize('placeholder_', fileName, 32, 32, sharp.fit.inside);
@@ -33,7 +33,7 @@ function resizeOriginal(file, width, height, fit) {
             .jpeg({
                 quality: 95,
             });
-            saveFile(to, jpg)
+            saveFile(to, jpg);
         }
     });
 }
@@ -53,7 +53,7 @@ function resize(prefix, file, width, height, fit) {
         .jpeg({
             quality: 90,
         });
-    saveFile(to, jpg)
+    saveFile(to, jpg);
 };
 
 function saveFile(to, jpg) {
@@ -71,7 +71,7 @@ function saveFile(to, jpg) {
             .then(values => {
                 // only write, if file has changed
                 if (values[0] !== values[1]) {
-                    console.log(`Write ${to}`)
+                    console.log(`Write ${to}`);
                     jpg.toBuffer().then(data => {
                         fs.writeFile(to, data, (err) => {
                             if (err) throw err;
@@ -81,10 +81,10 @@ function saveFile(to, jpg) {
                     });
                 }
             }).catch(err => {
-                console.log(err)
+                console.log(err);
             });
     } else {
-        console.log(`Write ${to}`)
+        console.log(`Write ${to}`);
         jpg.toFile(to);
     }
 }
