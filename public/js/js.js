@@ -100,4 +100,17 @@ $( document ).ready(function() {
         $(this).off('click');
         $(this).removeAttr('href');
     } );
+    $('#moon').on('click', function() {
+        if ($(this).hasClass('far')) {
+            $(this).removeClass('far');
+            $(this).addClass('fas');
+            $('body').removeClass('dark-mode');
+            $('body').addClass('light-mode');
+        } else {
+            $(this).removeClass('fas');
+            $(this).addClass('far');
+            $('body').removeClass('light-mode');
+            $('body').addClass('dark-mode');
+        }
+    });
 });

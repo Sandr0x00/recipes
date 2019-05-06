@@ -11,6 +11,7 @@
         "zip": "tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
         "resize": "node resize.js",
         "test": "eslint . && mocha",
+        "dist": "./make_dist.py",
         "start": "node server.js"
     },
     "dependencies": {

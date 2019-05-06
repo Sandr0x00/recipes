@@ -4,3 +4,4 @@ __pycache__
 recipes.tar.gz
 public/lib/*
 !public/lib/integrity.json
+dist/

@@ -1,16 +1,20 @@
 language: python
 dist: xenial
 node_js:
-- '11'
+  - '11'
 python:
-- '3.7'
+  - '3.7'
 cache:
   directories:
-  - node_modules
+    - node_modules
 install:
-- npm install
+  - npm install
 script:
-- npm run build
+  - npm run build
+after_success:
+  - npm run dist
+before_deploy:
+  - cd dist
 deploy:
   provider: heroku
   app: sandr0-recipes
