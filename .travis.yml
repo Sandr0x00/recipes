@@ -11,11 +11,11 @@ jobs:
   include:
     - stage: unit test
       script:
-        - npm run build
+        - npm run compile
         - npm run test
     - stage: deploy
       script:
-        - npm run build
+        - npm run compile
       after_success:
         - npm run dist
       before_deploy:
