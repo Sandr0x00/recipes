@@ -14,8 +14,7 @@ jobs:
     - stage: unit test
       script:
         - npm run build
-    - stage: create dist
-      script:
+      after_success:
         - npm run dist
     - stage: deploy
       script: skip
