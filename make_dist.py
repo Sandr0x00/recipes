@@ -18,5 +18,4 @@ if __name__ == "__main__":
     shutil.copytree('public', 'dist/public')
     shutil.copytree('views', 'dist/views')
     shutil.copytree('recipes', 'dist/recipes')
-    shutil.copytree('node_modules', 'dist/node_modules')
     
