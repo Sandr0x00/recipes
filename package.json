@@ -7,13 +7,14 @@
     "repository": "github:Sandr0x00/recipes",
     "scripts": {
         "compile:scss": "node-sass sass -o public/css",
-        "build": "npm run compile:scss && ./copy.py && npm run resize && npm run test",
+        "build": "npm run compile:scss && ./copy.py && npm run resize",
         "zip": "tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
         "resize": "node resize.js",
         "test": "eslint . && mocha",
         "dist": "./make_dist.py",
         "start": "node server.js"
     },
+    "heroku-run-build-script": false,
     "dependencies": {
         "compression": "^1.7.3",
         "express": "^4.16.4",
