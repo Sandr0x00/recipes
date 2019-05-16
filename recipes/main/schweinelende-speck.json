@@ -1,16 +1,16 @@
 {
-    "name": "Schweinelende im Speckmantel",
-    "portions": "4 Steaks",
+    "name": "Schweinelachs im Speckmantel",
+    "portions": "8 Steaks",
     "type": "bbq",
     "ingredients": [
         {
-            "id": "schweinelende",
-            "amount": "4",
-            "name": "Schweinelendensteaks"
+            "id": "schweinelachs",
+            "amount": "1.2 kg",
+            "name": "Schweinelachs"
         },
         {
             "id": "speck",
-            "amount": "4",
+            "amount": "8",
             "name": "Speck"
         },
         {
@@ -19,12 +19,10 @@
         },
         {
             "id": "salz",
-            "amount": "1/2 TL",
             "name": "grobes Meersalz"
         },
         {
             "id": "pfeffer",
-            "amount": "1/2 TL",
             "name": "gemahlener Pfeffer"
         },
         {
@@ -33,8 +31,8 @@
         }
     ],
     "preparation": [
-        "{chili}, {salz} und {pfeffer} vermengen. Die {schweinelende} mit Öl bestreichen und mit der Würzmischung einreiben. 15 - 30 Minuten bei Raumtemperatur ruhen lassen.",
-        "Den {speck} um die {schweinelende} legen und mit Zahnstochern fixieren.",
-        "Die Steaks über direkter mittlerer (175 - 230°C) Hitze bei geschlossenem Deckel 8 - 10 Minuten grillen, bis der Speck kross ist und die Steaks noch rosa sind. In den letzten 5 Minuten mit {whisky-sauce} bestreichen."
+        "{chili}, {salz} und {pfeffer} vermengen. {schweinelachs} mit der Würzmischung einreiben. 15 - 30 Minuten bei Raumtemperatur ruhen lassen.",
+        "Den {speck} um den {schweinelachs} legen und mit Zahnstochern fixieren.",
+        "Die Steaks über direkter mittlerer (175 - 230°C) Hitze bei geschlossenem Deckel 8 - 10 Minuten grillen, bis der Speck kross ist und die Steaks noch rosa sind."
     ]
 }

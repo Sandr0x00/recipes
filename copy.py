@@ -54,4 +54,4 @@ if __name__ == "__main__":
         'jquery.lazy.min.js': copy('jquery-lazy/jquery.lazy.min.js', 'jquery.lazy.min.js', False)
     }
     with open('public/lib/integrity.json', 'w+') as f:
-        f.write(json.dumps(obj))
+        f.write(json.dumps(obj, indent=4))

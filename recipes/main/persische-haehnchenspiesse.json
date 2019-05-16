@@ -5,8 +5,8 @@
     "ingredients": [
         {
             "id": "haehnchen",
-            "amount": "10",
-            "name": "Hähnchenschenkel"
+            "amount": "5",
+            "name": "Hähnchenbrustfilets"
         },
         {
             "id": "zwiebel",

@@ -1,1 +1,7 @@
-{"jquery.min.js": "sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT", "bootstrap.min.js": "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM", "bootstrap.min.css": "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T", "popper.min.js": "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", "jquery.lazy.min.js": "sha384-ofEjIauuEbdfqgENSahKdggvRJ32jH4bdig4lhQcZDNwWe5KzJ0RVmqEWnpbpLWV"}
+{
+    "jquery.min.js": "sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh",
+    "bootstrap.min.js": "sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM",
+    "bootstrap.min.css": "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",
+    "popper.min.js": "sha384-L2pyEeut/H3mtgCBaUNw7KWzp5n9+4pDQiExs933/5QfaTh8YStYFFkOzSoXjlTb",
+    "jquery.lazy.min.js": "sha384-ofEjIauuEbdfqgENSahKdggvRJ32jH4bdig4lhQcZDNwWe5KzJ0RVmqEWnpbpLWV"
+}
