@@ -92,7 +92,7 @@ function getSchema() {
             },
             type: {
                 type: 'string',
-                pattern: /^(wok|pan|pot|oven|bbq)$/
+                pattern: /^(wok|pan|pot|oven|bbq|hurricane|old-fashioned)$/
             },
             ingredients: {
                 type: 'array',

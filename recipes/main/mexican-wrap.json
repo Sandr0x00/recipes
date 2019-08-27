@@ -1,0 +1,57 @@
+{
+    "name": "Mexican Wrap",
+    "portions": "3 Wraps",
+    "type": "pot",
+    "ingredients": [
+        {
+            "id": "haehnchen",
+            "amount": "1",
+            "name": "Haehnchenbrustfilet"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "reis",
+            "name": "Reis"
+        },
+        {
+            "id": "salsa",
+            "name": "Salsa Sauce"
+        },
+        {
+            "id": "sahne",
+            "name": "Sahne"
+        },
+        {
+            "id": "cheddar",
+            "name": "Cheddar"
+        },
+        {
+            "id": "salat",
+            "name": "Salat"
+        },
+        {
+            "id": "chili",
+            "name": "Chili"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{haehnchen} mit {zwiebel} anbraten. {knoblauch} hinzufügen.",
+        "{reis} und Wasser hinzufügen und weiterkochen.",
+        "{salsa}, {sahne}, {chili}, {gewuerze} hinzufügen.",
+        "{salat} und {cheddar} schneiden.",
+        "Alles in einer Tortilla zusammenfügen."
+    ]
+}

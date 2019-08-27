@@ -5,27 +5,27 @@
     "ingredients": [
         {
             "id": "erdbeeren",
-            "amount": "2kg",
+            "amount": "1kg",
             "name": "Erdbeeren"
         },
         {
             "id": "limettensaft",
-            "amount": "700ml",
+            "amount": "350ml",
             "name": "Limettensaft"
         },
         {
             "id": "zucker",
-            "amount": "500g",
+            "amount": "200g",
             "name": "Zucker"
         },
         {
             "id": "wodka",
-            "amount": "1l",
+            "amount": "500ml",
             "name": "Wodka"
         },
         {
             "id": "wasser",
-            "amount": "600ml",
+            "amount": "200ml",
             "name": "Wasser"
         }
     ],
