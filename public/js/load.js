@@ -1,6 +1,4 @@
-/* global $, XMLHttpRequest, console */
-/* export  */
-
+// eslint-disable-next-line
 function loadRecipe(id, parent) {
     let xhr = new XMLHttpRequest();
     console.log(id);
@@ -9,7 +7,7 @@ function loadRecipe(id, parent) {
     xhr.onload = () => {
         let status = xhr.status;
         if (status == 200) {
-            appendRecipe(xhr.response, parent);
+            appendRecipe(xhr.response);
         } else {
             console.log('Something went wrong: ' + xhr.statusText);
         }
@@ -17,7 +15,7 @@ function loadRecipe(id, parent) {
     xhr.send();
 }
 
-function appendRecipe(recipeJson, parent) {
+function appendRecipe(recipeJson) {
     let preparation = recipeJson['preparationAmounts'];
 
     let prepDiv = $('<div/>', {

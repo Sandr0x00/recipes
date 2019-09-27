@@ -1,0 +1,36 @@
+{
+    "name": "Erdbeerlimes",
+    "portions": "4 Liter",
+    "type": "pot",
+    "tags": ["drink", "fruity", "vodka"],
+    "ingredients": [
+        {
+            "id": "erdbeeren",
+            "amount": "1kg",
+            "name": "Erdbeeren"
+        },
+        {
+            "id": "limettensaft",
+            "amount": "350ml",
+            "name": "Limettensaft"
+        },
+        {
+            "id": "zucker",
+            "amount": "200g",
+            "name": "Zucker"
+        },
+        {
+            "id": "wodka",
+            "amount": "500ml",
+            "name": "Wodka"
+        },
+        {
+            "id": "wasser",
+            "amount": "200ml",
+            "name": "Wasser"
+        }
+    ],
+    "preparation": [
+        "{wasser} mit {zucker} kurz aufkochen. {erdbeeren} zermusen und zusammen mit {limettensaft} und {wodka} zum Zuckerwasser geben."
+    ]
+}

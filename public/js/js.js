@@ -1,4 +1,4 @@
-/* global $, window, document, setTimeout, loadImages, loadRecipe */
+/* global loadImages, loadRecipe */
 'use strict';
 
 
@@ -15,13 +15,13 @@ function getSecondClass(elem) {
 }
 
 function isMD() {
-    let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
-    let sm = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sm');
+    // let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
+    // let sm = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sm');
     let md = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-md');
     let lg = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-lg');
     let xl = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xl');
-    let is_xs = window.matchMedia('(min-width: '+xs+')').matches;
-    let is_sm = window.matchMedia('(min-width: '+sm+')').matches;
+    // let is_xs = window.matchMedia('(min-width: '+xs+')').matches;
+    // let is_sm = window.matchMedia('(min-width: '+sm+')').matches;
     let is_md = window.matchMedia('(min-width: '+md+')').matches;
     let is_lg = window.matchMedia('(min-width: '+lg+')').matches;
     let is_xl = window.matchMedia('(min-width: '+xl+')').matches;

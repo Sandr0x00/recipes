@@ -1,0 +1,43 @@
+{
+    "name": "Vanillepudding",
+    "portions": "2 Gläser",
+    "type": "pot",
+    "tags": ["dessert", "pudding"],
+    "ingredients": [
+        {
+            "id": "vollmilch",
+            "amount": "500ml",
+            "name": "Vollmilch"
+        },
+        {
+            "id": "eigelb",
+            "amount": "2",
+            "name": "Eigelb"
+        },
+        {
+            "id": "vanille",
+            "amount": "1",
+            "name": "Vanilleschote"
+        },
+        {
+            "id": "vanillezucker",
+            "amount": "1 Pkg.",
+            "name": "Vanillezucker"
+        },
+        {
+            "id": "zucker",
+            "amount": "30g",
+            "name": "Zucker"
+        },
+        {
+            "id": "staerke",
+            "amount": "30g",
+            "name": "Speisestärke"
+        }
+    ],
+    "preparation": [
+        "{vollmilch:400ml} langsam zum Kochen bringen, {vanille} auskratzen, das Mark und die Schote zur Milch geben.",
+        "{vollmilch:100ml} mit {vanillezucker}, {zucker}, {eigelb} und {staerke} glatt rühren.",
+        "Wenn die Milch kocht, die glattgerührte Milch langsam unter ständigem Rühren einfließen lassen, kurz aufkochen."
+    ]
+}

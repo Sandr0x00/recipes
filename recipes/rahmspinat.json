@@ -1,0 +1,42 @@
+{
+    "name": "Rahmspinat",
+    "type": "pot",
+    "portions": "2 Portionen",
+    "tags": ["spinach", "side"],
+    "ingredients": [
+        {
+            "id": "spinat",
+            "amount": "500g",
+            "name": "Blattspinat"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "sahne",
+            "amount": "100 ml",
+            "name": "Sahne"
+        },
+        {
+            "id": "butter",
+            "name": "Butter"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Muskatnuss"
+        }
+    ],
+    "preparation": [
+        "{spinat} waschen und blanchieren, abtropfen lassen und leicht ausdrücken.",
+        "{zwiebel} und {knoblauch} schälen und fein würfeln. In einem Topf {butter} zerlassen und Zwiebeln und Knoblauch darin andünsten.",
+        "{sahne} dazugeben und 5 Minuten köcheln lassen. Mit {gewuerze} abschmecken.",
+        "Blanchierten Spinat zur Sahnemischung geben, 5 Minuten kochen lassen und servieren."
+    ]
+}

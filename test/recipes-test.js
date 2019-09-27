@@ -1,4 +1,4 @@
-/* global require, describe, it, __dirname, console */
+/* global require, describe, it, __dirname */
 
 /**
  * Tests if the recipes folder is valid.
@@ -8,21 +8,21 @@ let fs = require('fs');
 let path = require('path');
 let assert = require('chai').assert;
 
-describe('Categoriy folder names', function() {
-    let recipePath = path.join(__dirname, '../recipes');
-    it('directories in recipes/ should not contain any special characters', () => {
-        fs.readdirSync(recipePath).forEach(fileName => {
-            assert.match(fileName, /^[a-z-]+$/gm);
-        });
-    });
-    it('directories in recipes/ should only contain directories', () => {
-        fs.readdirSync(recipePath).forEach(dirName => {
-            let dirPath = path.join(recipePath, dirName);
-            let stats = fs.statSync(dirPath);
-            assert.isTrue(stats.isDirectory(), dirPath + ' is not a directory.');
-        });
-    });
-});
+// describe('Categoriy folder names', function() {
+//     let recipePath = path.join(__dirname, '../recipes');
+//     it('directories in recipes/ should not contain any special characters', () => {
+//         fs.readdirSync(recipePath).forEach(fileName => {
+//             assert.match(fileName, /^[a-z-]+$/gm);
+//         });
+//     });
+//     it('directories in recipes/ should only contain directories', () => {
+//         fs.readdirSync(recipePath).forEach(dirName => {
+//             let dirPath = path.join(recipePath, dirName);
+//             let stats = fs.statSync(dirPath);
+//             assert.isTrue(stats.isDirectory(), dirPath + ' is not a directory.');
+//         });
+//     });
+// });
 
 describe('Recipe file names', function() {
     let recipePath = path.join(__dirname, '../recipes');
@@ -49,13 +49,13 @@ describe('Recipe file names', function() {
 
 describe('Recipe file contents', () => {
     let validate = require('jsonschema').validate;
-    let recipePath = path.join(__dirname, '../recipes');
-    fs.readdirSync(recipePath).forEach(dirName => {
-        if (dirName == 'sandwich') {
-            // TODO: Do not skip sandwiches.
-            return;
-        }
-        let dirPath = path.join(recipePath, dirName);
+    let dirPath = path.join(__dirname, '../recipes');
+    // fs.readdirSync(recipePath).forEach(dirName => {
+        // if (dirName == 'sandwich') {
+        //     // TODO: Do not skip sandwiches.
+        //     return;
+        // }
+        // let dirPath = path.join(recipePath, dirName);
         fs.readdirSync(dirPath).forEach(fileName => {
             if (fileName == '_meta.json') {
                 return;
@@ -63,7 +63,7 @@ describe('Recipe file contents', () => {
             let filePath = path.join(dirPath, fileName);
             let stats = fs.statSync(filePath);
             if (stats.isFile()) {
-                it('recipes/' + dirName + '/' + fileName + ' should be valid', () => {
+                it('recipes/' + fileName + ' should be valid', () => {
                     let result = validate(JSON.parse(fs.readFileSync(filePath, 'utf8')), getSchema());
                     if (!result.valid) {
                         console.log(result.errors);
@@ -72,7 +72,7 @@ describe('Recipe file contents', () => {
                 });
             }
         });
-    });
+    // });
 });
 
 function getSchema() {
@@ -93,6 +93,18 @@ function getSchema() {
             type: {
                 type: 'string',
                 pattern: /^(wok|pan|pot|oven|bbq|hurricane|old-fashioned)$/
+            },
+            tags: {
+                type: 'array',
+                required: true,
+                uniqueItems: true,
+                minItems: 1,
+                items: {
+                    type: 'string',
+                    pattern: /^[a-z]+$/,
+                    required: true,
+                    minLength: 2
+                }
             },
             ingredients: {
                 type: 'array',
@@ -176,38 +188,38 @@ describe('Recipe images', () => {
     }
 });
 
-describe('Category meta data', () => {
-    let validate = require('jsonschema').validate;
-    let recipePath = path.join(__dirname, '../recipes');
-    fs.readdirSync(recipePath).forEach(dirName => {
-        it('recipes/' + dirName + '/_meta.json should exist and be valid', () => {
-            let metaPath = path.join(recipePath, dirName, '_meta.json');
-            if (fs.existsSync(metaPath)) {
-                let result = validate(JSON.parse(fs.readFileSync(metaPath, 'utf8')), getMetaSchema());
-                if (!result.valid) {
-                    console.log(result.errors);
-                }
-                assert(result.valid);
-            } else {
-                assert.fail(metaPath + ' does not exist');
-            }
-        });
-    });
-});
+// describe('Category meta data', () => {
+//     let validate = require('jsonschema').validate;
+//     let recipePath = path.join(__dirname, '../recipes');
+//     fs.readdirSync(recipePath).forEach(dirName => {
+//         it('recipes/' + dirName + '/_meta.json should exist and be valid', () => {
+//             let metaPath = path.join(recipePath, dirName, '_meta.json');
+//             if (fs.existsSync(metaPath)) {
+//                 let result = validate(JSON.parse(fs.readFileSync(metaPath, 'utf8')), getMetaSchema());
+//                 if (!result.valid) {
+//                     console.log(result.errors);
+//                 }
+//                 assert(result.valid);
+//             } else {
+//                 assert.fail(metaPath + ' does not exist');
+//             }
+//         });
+//     });
+// });
 
-function getMetaSchema() {
-    return {
-        id: '/All',
-        type: 'object',
-        properties: {
-            name: {
-                type: 'string',
-                required: true
-            },
-            image: {
-                type: 'string',
-                required: false
-            }
-        }
-    };
-};
+// function getMetaSchema() {
+//     return {
+//         id: '/All',
+//         type: 'object',
+//         properties: {
+//             name: {
+//                 type: 'string',
+//                 required: true
+//             },
+//             image: {
+//                 type: 'string',
+//                 required: false
+//             }
+//         }
+//     };
+// };

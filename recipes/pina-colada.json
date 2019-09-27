@@ -1,0 +1,32 @@
+{
+    "name": "Pina Colada",
+    "portions": "1 Glass",
+    "type": "hurricane",
+    "tags": ["drink", "cream", "rum"],
+    "ingredients": [
+        {
+            "id": "rum",
+            "amount": "6cl",
+            "name": "Weißer Rum"
+        },
+        {
+            "id": "ananassaft",
+            "amount": "10cl",
+            "name": "Ananassaft"
+        },
+        {
+            "id": "kokosmilch",
+            "amount": "4cl",
+            "name": "Kokosmilch"
+        },
+        {
+            "id": "sahne",
+            "amount": "2cl",
+            "name": "Sahne"
+        }
+    ],
+    "preparation": [
+        "{rum}, {ananassaft}, {kokosmilch} und {sahne} mit 3 bis 4 Eiswürfeln shaken.",
+        "Ins Glas geben und mit einer Ananasscheibe verzieren."
+    ]
+}

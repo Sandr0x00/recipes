@@ -1,0 +1,46 @@
+{
+    "name": "Tortilla",
+    "portions": "4",
+    "type": "pan",
+    "tags": ["spanish", "potato", "egg", "main"],
+    "ingredients": [
+        {
+            "id": "kartoffel",
+            "amount": "2",
+            "name": "Kartoffeln"
+        },
+        {
+            "id": "ei",
+            "amount": "5",
+            "name": "Eier"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "oel",
+            "name": "Olivenöl"
+        },
+        {
+            "id": "spinat",
+            "amount": "100g",
+            "name": "Spinat"
+        },
+        {
+            "id": "salz",
+            "name": "Salz"
+        }
+    ],
+    "preparation": [
+        "{zwiebel}, {kartoffel} und {knoblauch} schälen und in Würfel schneiden. {zwiebel} und {knoblauch} in {oel} und {salz} anbraten bis sie glasig sind. Anschließend {kartoffel} in die Pfanne geben und anbraten bis sie fast gar sind. Kurz bevor die Kartoffeln gar sind den frischen Spinat dazugeben und ca. 1 Minuten anbraten lassen. Nochmals etwas Salz hinein streuen.",
+        "{ei} verquirlen. Die angebratenen Kartoffeln zu den eiern geben und ca. 5 Minuten ziehen lassen.",
+        "In die Pfanne nochmals {oel} geben, und auf kleiner Flamme die Eier - Kartoffelmasse, abgedeckt braten lassen. Nach ca. 5 Minuten an den Seiten etwas eindrücken um zu sehen, ob die Unterseite schon braun ist. Wenn ja, einen großen flachen Teller auf die Tortilla legen und mit der Pfanne vorsichtig drehen. Die Tortilla dann vorsichtig vom Teller wieder in die Pfanne gleiten lassen und weiter braten lassen bis auch diese Seite braun ist."
+    ]
+}

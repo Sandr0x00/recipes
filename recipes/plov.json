@@ -1,0 +1,47 @@
+{
+    "name": "Plov",
+    "portions": "4 Portionen",
+    "type": "pot",
+    "tags": ["meat", "rice", "stew", "russian"],
+    "ingredients": [
+        {
+            "id": "fleisch",
+            "amount": "500g",
+            "name": "Fleisch"
+        },
+        {
+            "id": "reis",
+            "amount": "250g",
+            "name": "Reis"
+        },
+        {
+            "id": "moehre",
+            "amount": "3",
+            "name": "Möhren"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "3",
+            "name": "Knoblauchzehen"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "2",
+            "name": "Zwiebeln"
+        },
+        {
+            "id": "oel",
+            "name": "Öl"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{fleisch} in Würfel schneiden. In einem Topf {oel} erhitzen und das {fleisch} anbraten. Mit {gewuerze} würzen.",
+        "{zwiebel} in Streifen schneiden, {knoblauch} klein hacken und mit andünsten. Mit Wasser ablöschen.",
+        "{moehre} in grobe Stifte schneiden. Auf das {fleisch} ohne umrühren schichten. Ungekochten {reis} auf die {moehre} schichten. Wasser auffüllen, so dass der Reis ca. 2 cm mit Wasser überdeckt ist. Deckel rauf und bei kleiner Hitze ca. 30-45 min köcheln lassen.",
+        "Endlich umrühren und anrichten."
+    ]
+}

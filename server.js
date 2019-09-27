@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-/* global __dirname, require, console, module, process */
+/* global require, process */
 
 const express = require('express');
 const compression = require('compression');
@@ -20,7 +20,8 @@ Object.filter = (obj, predicate) => {
 
 let json = helper.loadJSON();
 let recipes = json['recipes'];
-let categories = json['categories'];
+// console.log(recipes);
+// let categories = json['categories'];
 
 app.set('view engine', 'pug');
 app.locals.compileDebug = false;
@@ -28,82 +29,110 @@ app.locals.cache = true;
 app.use(express.static('public'));
 app.use(compression());
 
-app.get('/api/:id', (req, res) => {
+app.get('/api/all', (req, res) => {
+    setHeaders(res);
+    // console.log(recipes);
+    res.json(recipes);
+    // res.render('index', {
+    //     recipes: recipes,
+    //     // categories: categories,
+    //     title: 'Rezepte',
+    //     breadcrumbs: [
+    //         {
+    //             link: '/',
+    //             text: 'Rezepte'
+    //         },
+    //     ]
+    // });
+});
+
+app.get('/api/recipe/:id', (req, res) => {
     let id = req.params.id;
-    let recipe = findById(recipes, id);
+    let recipe = findById(id);
+    // console.log(recipe);
     if (recipe) {
-        res.send(recipe);
+        res.json(recipe);
     }
 });
 
-app.get('/', (req, res) => {
-    setHeaders(res);
-    res.render('index', {
-        recipes: recipes,
-        categories: categories,
-        title: 'Rezepte',
-        breadcrumbs: [
-            {
-                link: '/',
-                text: 'Rezepte'
-            },
-        ]
-    });
-});
-
-app.get('/:cat', (req, res) => {
-    setHeaders(res);
-    let cat = req.params.cat;
-    if (cat === 'credits') {
-        res.render('credits', {
-            title: 'Credits'
-        });
-    } else if (cat === 'reload-json') {
-        json = helper.loadJSON();
-        recipes = json['recipes'];
-        categories = json['categories'];
-        res.redirect('/');
-    } else if (categories[cat]) {
-        res.render('index', {
-            recipes: Object.filter(recipes, r => r.category === cat),
-            title: 'Rezepte',
-            breadcrumbs: [
-                {
-                    link: '/',
-                    text: 'Rezepte'
-                },
-                {
-                    link: '/' + cat,
-                    text: categories[cat].name
-                }
-            ]
-        });
-    } else {
-        res.render('404');
+app.get('/api/tag/:tag', (req, res) => {
+    let tag = req.params.tag;
+    let r = findByTag(tag);
+    if (r) {
+        res.json(r);
     }
 });
 
-app.get('/:category/:recipe', (req,res) => {
-    setHeaders(res);
-    // let now = Date.now();
-    let recipe = findById(recipes, req.params.recipe);
-    if (recipe) {
-        if (recipe.category != req.params.category && req.params.category != 'recipe') {
-            console.log(recipe.category);
-            console.log(req.params.category);
+// app.get('/*', (req, res) => {
+//     setHeaders(res);
+//     console.log(path.join(__dirname + '/public/index.html'));
+//     res.sendFile(path.join(__dirname + '/public/index.html'))
+//     // res.render('index', {
+//     //     recipes: recipes,
+//     //     // categories: categories,
+//     //     title: 'Rezepte',
+//     //     breadcrumbs: [
+//     //         {
+//     //             link: '/',
+//     //             text: 'Rezepte'
+//     //         },
+//     //     ]
+//     // });
+// });
 
-            res.render('404');
-            return;
-        }
-        if (recipe.category === 'sandwich') {
-            res.render('sandwich', recipe);
-        } else {
-            res.render('recipe', recipe);
-        }
-    } else {
-        res.render('404');
-    }
-});
+// app.get('/:cat', (req, res) => {
+//     setHeaders(res);
+//     let cat = req.params.cat;
+//     if (cat === 'credits') {
+//         res.render('credits', {
+//             title: 'Credits'
+//         });
+//     } else if (cat === 'reload-json') {
+//         json = helper.loadJSON();
+//         recipes = json['recipes'];
+//         // categories = json['categories'];
+//         res.redirect('/');
+//     // } else if (categories[cat]) {
+//     //     res.render('index', {
+//     //         recipes: Object.filter(recipes, r => r.category === cat),
+//     //         title: 'Rezepte',
+//     //         breadcrumbs: [
+//     //             {
+//     //                 link: '/',
+//     //                 text: 'Rezepte'
+//     //             },
+//     //             {
+//     //                 link: '/' + cat,
+//     //                 text: categories[cat].name
+//     //             }
+//     //         ]
+//     //     });
+//     } else {
+//         res.render('404');
+//     }
+// });
+
+// app.get('/:category/:recipe', (req,res) => {
+//     setHeaders(res);
+//     // let now = Date.now();
+//     let recipe = findById(recipes, req.params.recipe);
+//     if (recipe) {
+//         if (recipe.category != req.params.category && req.params.category != 'recipe') {
+//             console.log(recipe.category);
+//             console.log(req.params.category);
+
+//             res.render('404');
+//             return;
+//         }
+//         if (recipe.category === 'sandwich') {
+//             res.render('sandwich', recipe);
+//         } else {
+//             res.render('recipe', recipe);
+//         }
+//     } else {
+//         res.render('404');
+//     }
+// });
 
 
 app.listen(port, (err) => {
@@ -113,47 +142,56 @@ app.listen(port, (err) => {
     console.log(`server is listening on ${port}`);
 });
 
-
-function findById(recipes, id) {
+// TODO: make smaller, fuck the manual shit.
+function findByTag(tag) {
+    let r = {};
     for (let key in recipes) {
         let recipe = recipes[key];
+        if (!recipe.tags.includes(tag)) {
+            continue;
+        }
+        // let ret = {
+        //     category: recipe.category,
+        //     images: recipe.image,
+        //     name: recipe.name,
+        //     title: recipe.name,
+        //     tags: recipe.tags,
+        //     id: recipe.id
+        // };
+        // let prep = helper.formatPreparation(recipe);
+        // Object.assign(ret, {
+        //     ingredients: recipe.ingredients,
+        //     preparation: prep[0],
+        //     preparationAmounts: prep[1],
+        //     portions: recipe.portions
+        // });
+        r[recipe.id] = recipe;
+    }
+    return r;
+}
+
+
+// TODO: make smaller, fuck the manual shit.
+function findById(id) {
+    for (let key in recipes) {
         if (id != key) {
             continue;
         }
+        let recipe = recipes[key];
         let ret = {
             category: recipe.category,
             images: recipe.image,
             name: recipe.name,
             title: recipe.name,
-            breadcrumbs: [
-                {
-                    link: '/',
-                    text: 'Rezepte'
-                },
-                {
-                    link: '/' + recipe.category,
-                    text: categories[recipe.category].name
-                },
-                {
-                    link: '/' + recipe.category + '/' + id,
-                    text: recipe.name
-                }
-            ]
-
+            tags: recipe.tags,
         };
-        if (recipe.category == 'sandwich') {
-            Object.assign(ret, {
-                order: recipe.order,
-            });
-        } else {
-            let prep = helper.formatPreparation(recipe);
-            Object.assign(ret, {
-                ingredients: recipe.ingredients,
-                preparation: prep[0],
-                preparationAmounts: prep[1],
-                portions: recipe.portions
-            });
-        }
+        let prep = helper.formatPreparation(recipe);
+        Object.assign(ret, {
+            ingredients: recipe.ingredients,
+            preparation: prep[0],
+            preparationAmounts: prep[1],
+            portions: recipe.portions
+        });
         return ret;
     }
     return null;
@@ -169,7 +207,7 @@ function setHeaders(res) {
         'default-src \'self\';'
         + 'img-src \'self\';'
         + 'style-src \'self\' \'unsafe-inline\' use.fontawesome.com;'
-        + 'script-src \'self\';'
+        + 'script-src \'self\' \'unsafe-inline\' unpkg.com;'
         + 'font-src use.fontawesome.com');
     res.setHeader('X-Permitted-Cross-Domain-Policies', '"none"');
     res.setHeader('Referrer-Policy', 'no-referrer');

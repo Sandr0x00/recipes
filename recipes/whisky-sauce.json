@@ -1,0 +1,46 @@
+{
+    "name": "Whisky Sauce",
+    "type": "pot",
+    "tags": ["sauce"],
+    "ingredients": [
+        {
+            "id": "butter",
+            "name": "Butter"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "ketchup",
+            "amount": "5 EL",
+            "name": "Ketchup"
+        },
+        {
+            "id": "zuckersirup",
+            "amount": "5 EL",
+            "name": "Zuckersirup"
+        },
+        {
+            "id": "whisky",
+            "amount": "4 EL",
+            "name": "Whisky"
+        },
+        {
+            "id": "balsamico",
+            "amount": "1 EL",
+            "name": "Balsamico"
+        }
+    ],
+    "preparation": [
+        "{butter} in einem Topf bei mittlerer Hitze zerlassen.",
+        "{zwiebel} unter rühren goldbraun braten. {knoblauch} hinzufügen und mitbraten.",
+        "{ketchup}, {zuckersirup}, {whisky}, {balsamico} hinzufügen. 10 - 15min köcheln lassen."
+    ]
+}
