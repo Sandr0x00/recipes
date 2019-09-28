@@ -2,7 +2,7 @@
     "name": "Schinkennudeln",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["nudeln", "main"],
+    "tags": ["pasta", "main"],
     "ingredients": [
         {
             "id": "nudeln",

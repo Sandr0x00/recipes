@@ -44,10 +44,11 @@ exports.formatPreparation = function(recipe) {
 };
 
 exports.loadJSON = function() {
-    let recipes = {};
+    // let recipes = {};
     // let categories = {};
     let dirPath = path.join(__dirname, 'recipes');
-    Object.assign(recipes, readFilesInFolder(dirPath));
+    let stuff = readFilesInFolder(dirPath);
+    // Object.assign(recipes, readFilesInFolder(dirPath));
     // fs.readdirSync(dirPath).forEach(dirname => {
     //     // // set categories
     //     // let category = {};
@@ -64,8 +65,8 @@ exports.loadJSON = function() {
     //         console.log('There should be no file here!');
     //     }
     // });
-    linkIngredients(recipes);
-    return {recipes: recipes};// , categories: categories};
+    linkIngredients(stuff.recipes);
+    return {recipes: stuff.recipes, tags: stuff.tags};// , categories: categories};
 };
 
 function linkIngredients(recipes) {
@@ -86,6 +87,7 @@ function linkIngredients(recipes) {
 
 function readFilesInFolder(folder) {
     let recipes = {};
+    let tags = [];
     // let dirPath = path.join(__dirname, 'recipes', folder);
     fs.readdirSync(folder).forEach(fileName => {
         let filePath = path.join(folder, fileName);
@@ -98,9 +100,14 @@ function readFilesInFolder(folder) {
             recipes[key].id = key;
             recipes[key].category = folder;
             recipes[key].image = addImages(key);
+            recipes[key].tags.forEach(tag => {
+                if (!tags.includes(tag)) {
+                    tags.push(tag);
+                }
+            });
         }
     });
-    return recipes;
+    return {recipes: recipes, tags: tags};
 }
 
 function addImages(key) {

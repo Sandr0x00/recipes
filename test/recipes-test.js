@@ -188,6 +188,19 @@ describe('Recipe images', () => {
     }
 });
 
+describe('Tag translation', () => {
+    let translate = require('../public/tags.js').tagTranslator;
+    let h = require('../helper.js');
+    let tags = h.loadJSON()['tags'];
+
+    tags.forEach((tag) => {
+        it('tag ' + tag + ' should be translated', () => {
+            assert(tag in translate);
+        });
+    });
+});
+
+
 // describe('Category meta data', () => {
 //     let validate = require('jsonschema').validate;
 //     let recipePath = path.join(__dirname, '../recipes');

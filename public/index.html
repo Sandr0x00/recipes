@@ -5,24 +5,16 @@
 		<meta http-equiv="content-type" content="text/html;"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Recipes</title>
-		<link type="text/css" rel="stylesheet" href="lib/bootstrap.min.css">
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-		<link type="text/css" rel="stylesheet" href="css/main.css">
-		<link type="text/css" rel="stylesheet" href="css/image.css">
-		<link type="text/css" rel="stylesheet" href="css/visuals.css">
+		<link type="text/css" rel="stylesheet" href="/lib/bootstrap.min.css">
+		<link type="text/css" rel="stylesheet" href="/css/main.css">
+		<link type="text/css" rel="stylesheet" href="/css/image.css">
+		<link type="text/css" rel="stylesheet" href="/css/visuals.css">
 	</head>
 	<body class="dark-mode">
+
 		<loading-dialog id="loadingComp"></loading-dialog>
-		<script type="module" src="comp/loading.js"></script>
-				<!-- if breadcrumbs
-			div.container
-				- var first = true;
-				each crumb in breadcrumbs
-					if !first
-						span= ' > '
-					a(href=crumb.link)= crumb.text
-					- first = false;
-				i#moon.fas.fa-moon.float-right -->
+		<script type="module" src="/comp/loading.js"></script>
+
 
 		<div class="container">
 		<!--	<div class="row">
@@ -46,26 +38,33 @@
 			<recipe-comp id="recipeComp"></recipe-comp> -->
 		</div>
 
-		<script type="text/javascript" src="lib/jquery.min.js"></script>
-		<script type="text/javascript" src="lib/bootstrap.min.js"></script>
-		<script type="text/javascript" src="lib/popper.min.js"></script>
-		<script type="text/javascript" src="lib/jquery.lazy.min.js"></script>
-		<script type="text/javascript" src="js/jquery.fittext.js"></script>
-		<script type="text/javascript" src="js/load.js"></script>
-		<script type="text/javascript" src="js/js.js"></script>
+		<dialog-comp id="dialogComp"></dialog-comp>
+
+		<script type="text/javascript" src="/lib/jquery.min.js"></script>
+		<script type="text/javascript" src="/lib/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/lib/popper.min.js"></script>
+		<script type="text/javascript" src="/lib/jquery.lazy.min.js"></script>
+		<script type="text/javascript" src="/js/jquery.fittext.js"></script>
+		<script type="text/javascript" src="/js/js.js"></script>
 
 		<script>
 			// const headerComp = document.getElementById("headerComp");
-			// const dialogComp = document.getElementById("dialogComp");
+			const dialogComp = document.getElementById("dialogComp");
 			// const recipesComp = document.getElementById("recipesComp");
 			const loadingComp = document.getElementById("loadingComp");
 			// const recipesComp = document.getElementById("recipesComp");
 			// const recipeComp = document.getElementById("recipeComp");
 		</script>
 
-		<script type="module" src="comp/main.js"></script>
-		<script type="module" src="comp/recipe.js"></script>
-		<script type="module" src="comp/recipes.js"></script>
+		<script type="text/javascript" src="/tags.js"></script>
+
+		<script type="module" src="/comp/main.js"></script>
+		<script type="module" src="/comp/dialog.js"></script>
+		<script type="module" src="/comp/recipe.js"></script>
+		<script type="module" src="/comp/recipes.js"></script>
+
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+
 
 		<!-- <div class="col-1 offset-11">
 			<a class="float-right" href="/credits">Credits</a>

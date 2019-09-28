@@ -1,4 +1,4 @@
-/* global loadingComp */
+/* global loadingComp, dialogComp */
 
 import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
 import { unsafeHTML } from 'https://unpkg.com/lit-html/directives/unsafe-html.js?module';
@@ -99,6 +99,7 @@ ${ingredients}
     ${stepsAmount}
 </div>`;
 
+        loadingComp.close();
         return html`
 <div class="col-12">
 <h1>${this.data.name}</h1>
@@ -122,26 +123,20 @@ ${images}
 </div>`;
     }
 
-    firstUpdated() {
-        this.recipe = window.recipe;
-        this.loadStuff();
-    }
-
     updated(changedProperties) {
-        console.log(changedProperties);
-        if (changedProperties.has('data')) {
+        if (changedProperties.has('data') && this.data) {
+            console.log(this.data);
             this.lazyLoadImg();
             this.data.tags.forEach(tag => {
                 $('#' + tag).click(() => {
-                    window.router.navigate('tag/' + tag);
+                    window.router.navigate('/tag/' + tag);
                 });
             });
-
         }
-        // if (changedProperties.has('recipe')) {
-        //     this.recipe = window.recipe;
-        //     this.loadStuff();
-        // }
+        if (changedProperties.has('recipe') && this.recipe) {
+            console.log(this.recipe);
+            this.loadStuff();
+        }
     }
 
     async lazyLoadImg(){
@@ -161,7 +156,8 @@ ${images}
     single(r) {
         let type = '';
         if (r.type) {
-            type = html`<span class="type" style='background-image: url("/icons/${r.type}.svg"); background-size: 35px;'></span>`;
+            type = html`
+<span class="type" style='background-image: url("/icons/${r.type}.svg"); background-size: 35px;'></span>`;
         }
         return html`
 <figure class="col-6 col-sm-4 col-md-3 col-lg-2 recipeLinkDiv">
@@ -173,26 +169,20 @@ ${images}
     }
 
     loadStuff() {
-        console.log(this.recipe);
         if (!this.recipe) {
             return;
         }
-        fetch('/api/recipe/' + window.recipe).then(response => {
-            if (response.status === 401) {
-                // dialogComp.close(true);
-                // dialogComp.showLogin();
-                return Promise.reject(null);
+        fetch('/api/recipe/' + this.recipe).then(response => {
+            if (response.status === 404) {
+                return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
             }
             return response;
         }).then(response => response.json()
         ).then(data => {
-            loadingComp.close();
             this.data = data;
         }).catch(err => {
             if (err) {
-                loadingComp.close();
-                console.log(err);
-                // dialogComp.showError(err);
+                dialogComp.show(err);
             }
         });
     }

@@ -1,6 +1,7 @@
-/* global loadingComp */
+/* global loadingComp, dialogComp, tagTranslator */
 
 import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
+import { unsafeHTML } from 'https://unpkg.com/lit-html/directives/unsafe-html.js?module';
 import {BaseComp} from './base.js';
 
 class Recipes extends BaseComp {
@@ -8,7 +9,8 @@ class Recipes extends BaseComp {
     static get properties() {
         return {
             load: String,
-            data: Array
+            data: Array,
+            tags: Array
         };
     }
 
@@ -16,33 +18,48 @@ class Recipes extends BaseComp {
         super();
         loadingComp.open();
         this.data = [];
+        this.tags = [];
+        this.loadTags();
     }
 
     render() {
+        let title = '<a href="/">Rezepte</a>';
+        if (this.load.startsWith('tag/')) {
+            let translated = tagTranslator[this.load.split('/')[1]];
+            if (translated) {
+                title += ' - ' + translated;
+            } else {
+                title += ' ! ' + translated;
+            }
+        }
+        loadingComp.close();
         return html`
-<div class="col-12"><h1>Recipes</h1></div>
-${Object.values(this.data).map(i => html`${this.single(i)}`)}`;
+<div class="col-12"><h1>${unsafeHTML(title)}</h1></div>
+<div class="col-12">${this.tags.map(t => this.singleTag(t))}</div>
+${Object.values(this.data).map(i => this.single(i))}`;
     }
 
     updated(changedProperties) {
+        console.log(changedProperties);
+        if (changedProperties.has('tags')) {
+            console.log(this.tags);
+            for (const elem of this.tags.values()) {
+                $('#tag_' + elem).click(function() {
+                    window.router.navigate('/tag/' + elem);
+                });
+            }
+        }
         if (changedProperties.has('data')) {
             this.lazyLoadImg();
             for (const elem in this.data) {
                 $('#' + elem).click(() => {
-                    window.router.navigate(elem);
+                    window.router.navigate('/' + elem);
                 });
             }
         }
-    }
-
-    firstUpdated() {
-        console.log(window.tag)
-        if (window.tag) {
-            this.load = 'tag/' + window.tag;
-        } else {
-            this.load = 'all';
+        if (changedProperties.has('load')) {
+            this.loadStuff();
         }
-        this.loadStuff();
     }
 
     async lazyLoadImg(){
@@ -52,7 +69,7 @@ ${Object.values(this.data).map(i => html`${this.single(i)}`)}`;
                 $('#' + elem).css('background-image', 'url("/images/thumbnail_' + this.data[elem].image[0] + '")');
             };
             bgImg.onerror = () => {
-                $('#' + elem).css('background-image', 'url("/images/thumbnail_baiser.jpg")');
+                $('#' + elem).css('background-image', 'url("/icons/unknown.svg")');
             };
             bgImg.src = '/images/thumbnail_' + this.data[elem].image[0];
         }
@@ -61,7 +78,7 @@ ${Object.values(this.data).map(i => html`${this.single(i)}`)}`;
     single(r) {
         let type = '';
         if (r.type) {
-            type = html`<span class="type" style='background-image: url("/icons/${r.type}.svg"); background-size: 35px;'></span>`;
+            type = html`<span class="type"></span><span class="type" style='background-image: url("/icons/${r.type}.svg"); background-size: 35px;'></span>`;
         }
         return html`
 <figure class="col-6 col-sm-4 col-md-3 col-lg-2 recipeLinkDiv">
@@ -72,24 +89,43 @@ ${Object.values(this.data).map(i => html`${this.single(i)}`)}`;
 </figure>`;
     }
 
+    singleTag(tag) {
+        let translated = tagTranslator[tag];
+        return html`<a class="tags" href="/#!/tag/${tag}" id="tag_${tag}">${translated}</div>`;
+    }
+
+    // TODO: merge promises
     loadStuff() {
-        console.log(this.load);
         fetch('/api/' + this.load).then(response => {
-            if (response.status === 401) {
-                // dialogComp.close(true);
-                // dialogComp.showLogin();
+            console.log(response);
+            if (response.status === 404) {
+                return Promise.reject(`Tag "${this.load}" does not exist, choose a tag from above.`);
+            }
+            return response;
+        }).then(response => response.json()
+        ).then(data => {
+            this.data = data;
+        }).catch(err => {
+            if (err) {
+                dialogComp.show(err);
+            }
+        });
+    }
+
+    loadTags() {
+        fetch('/api/tags').then(response => {
+            if (response.status === 404) {
                 return Promise.reject(null);
             }
             return response;
         }).then(response => response.json()
         ).then(data => {
-            loadingComp.close();
-            this.data = data;
+            console.log(data);
+            this.tags = data;
+            console.log(this.tags);
         }).catch(err => {
             if (err) {
-                loadingComp.close();
-                console.log(err);
-                // dialogComp.showError(err);
+                dialogComp.show(err);
             }
         });
     }

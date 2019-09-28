@@ -1,9 +1,10 @@
 #!/usr/bin/env node
 
-/* global require, process */
+/* global require, process, __dirname */
 
 const express = require('express');
 const compression = require('compression');
+const path = require('path');
 const app = express();
 let port = process.env.PORT;
 if (port == null || port == '') {
@@ -20,6 +21,7 @@ Object.filter = (obj, predicate) => {
 
 let json = helper.loadJSON();
 let recipes = json['recipes'];
+let tags = json.tags;
 // console.log(recipes);
 // let categories = json['categories'];
 
@@ -31,42 +33,44 @@ app.use(compression());
 
 app.get('/api/all', (req, res) => {
     setHeaders(res);
-    // console.log(recipes);
     res.json(recipes);
-    // res.render('index', {
-    //     recipes: recipes,
-    //     // categories: categories,
-    //     title: 'Rezepte',
-    //     breadcrumbs: [
-    //         {
-    //             link: '/',
-    //             text: 'Rezepte'
-    //         },
-    //     ]
-    // });
+});
+
+app.get('/api/tags', (req, res) => {
+    setHeaders(res);
+    res.json(tags);
 });
 
 app.get('/api/recipe/:id', (req, res) => {
     let id = req.params.id;
     let recipe = findById(id);
-    // console.log(recipe);
     if (recipe) {
         res.json(recipe);
+    } else {
+        res.status(404);
+        res.send();
     }
 });
 
 app.get('/api/tag/:tag', (req, res) => {
     let tag = req.params.tag;
     let r = findByTag(tag);
-    if (r) {
+    if (r || r.length === 0) {
         res.json(r);
+    } else {
+        res.status(404);
+        res.send();
     }
 });
+
+// app.get('*', (req, res) => {
+//     setHeaders(res);
+//     res.sendFile(path.join(__dirname + '/public/index.html'));
+// });
 
 // app.get('/*', (req, res) => {
 //     setHeaders(res);
 //     console.log(path.join(__dirname + '/public/index.html'));
-//     res.sendFile(path.join(__dirname + '/public/index.html'))
 //     // res.render('index', {
 //     //     recipes: recipes,
 //     //     // categories: categories,

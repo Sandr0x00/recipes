@@ -11,21 +11,18 @@ class Router extends BaseComp {
     }
     constructor() {
         super(); // Must call super in constructor
-        window.router = new Navigo(null, false);
-        window.router.on('tag/:tag', (params) => {
-            window.tag = params.tag;
-            this.route = html`<recipes-comp class="row"></recipes-comp>`;
-        }).on(':recipe', (params) => {
-            window.recipe = params.recipe;
-            this.route = html`<recipe-comp></recipe-comp>`;
+        window.router = new Navigo(null, true, '#!');
+        window.router.on('/tag/:tag', (params) => {
+            this.route = html`<recipes-comp class="row" id="recipesComp" load="tag/${params.tag}"></recipes-comp>`;
+        }).on('/:recipe', (params) => {
+            this.route = html`<recipe-comp recipe="${params.recipe}"></recipe-comp>`;
         }).on('*', () => {
-            window.tag = null;
-            this.route = html`<recipes-comp class="row"></recipes-comp>`;
-        });
-        window.router.resolve();
+            this.route = html`<recipes-comp class="row" id="recipesComp" load="all"></recipes-comp>`;
+        }).resolve();
     }
 
     render() {
+        console.log(this.route);
         return this.route;
     }
 }

@@ -6,7 +6,7 @@
     "private": true,
     "repository": "github:Sandr0x00/recipes",
     "scripts": {
-        "compile:scss": "node-sass sass -o public/css",
+        "compile:scss": "node-sass sass -o public/css --output-style compressed",
         "compile": "npm run compile:scss && ./copy.py && npm run resize",
         "build": "",
         "zip": "tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",

@@ -1,4 +1,4 @@
-/* global loadImages, loadRecipe */
+/* global loadRecipe */
 'use strict';
 
 
@@ -94,7 +94,6 @@ $('figcaption').fitText(0.9);
 $( document ).ready(function() {
     $('.fadeOut').on('click', fadeOutIngredients);
     $('.fadeIn').on('click', fadeInIngredients);
-    loadImages();
     $('.lnk').on('click', function(){
         loadRecipe($(this).data('link'), $(this));
         $(this).off('click');
