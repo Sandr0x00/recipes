@@ -22,8 +22,8 @@ Object.filter = (obj, predicate) => {
 let json = helper.loadJSON();
 let recipes = json['recipes'];
 let tags = json.tags;
+let general = helper.extractGeneralInfo(recipes);
 // console.log(recipes);
-// let categories = json['categories'];
 
 app.set('view engine', 'pug');
 app.locals.compileDebug = false;
@@ -33,7 +33,7 @@ app.use(compression());
 
 app.get('/api/all', (req, res) => {
     setHeaders(res);
-    res.json(recipes);
+    res.json(general);
 });
 
 app.get('/api/tags', (req, res) => {
@@ -55,7 +55,8 @@ app.get('/api/recipe/:id', (req, res) => {
 app.get('/api/tag/:tag', (req, res) => {
     let tag = req.params.tag;
     let r = findByTag(tag);
-    if (r || r.length === 0) {
+    r = helper.extractGeneralInfo(r);
+    if (r && Object.keys(r).length !== 0) {
         res.json(r);
     } else {
         res.status(404);

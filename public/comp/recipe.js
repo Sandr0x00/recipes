@@ -1,4 +1,4 @@
-/* global loadingComp, dialogComp */
+/* global loadingComp, dialogComp, tagTranslator */
 
 import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
 import { unsafeHTML } from 'https://unpkg.com/lit-html/directives/unsafe-html.js?module';
@@ -73,9 +73,9 @@ ${ingredients}
         });
 
         // Tags
-        let tags = html``;
-        this.data.tags.forEach(tag => {
-            tags = html`${tags}<a class="tags" id="${tag}">${tag}</div>`;
+        let tags = this.data.tags.map(tag => {
+            let translated = tagTranslator[tag];
+            return html`<a class="tags" href="/#!/tag/${tag}" id="tag_${tag}">${translated}</div>`;
         });
         tags = html`<div class="col-12">${tags}</div>`;
 
@@ -99,10 +99,12 @@ ${ingredients}
     ${stepsAmount}
 </div>`;
 
+        dialogComp.close();
         loadingComp.close();
         return html`
 <div class="col-12">
-<h1>${this.data.name}</h1>
+
+<h1><a href="/">Recipe</a> - ${this.data.name}</h1>
 </div>
 ${images}
 <div class="row" id="recipe">
@@ -129,6 +131,7 @@ ${images}
             this.lazyLoadImg();
             this.data.tags.forEach(tag => {
                 $('#' + tag).click(() => {
+                    loadingComp.open();
                     window.router.navigate('/tag/' + tag);
                 });
             });

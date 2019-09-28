@@ -1,31 +1,47 @@
-$highlight : #db6;
+$highlight-dark: #db6;
+$highlight-light: #d72;
+$background-dark: #333;
+$background-light: #ddd;
+$color-light: #333;
+$color-dark: #ddd;
 
 .light-mode {
-    color: #333;
-    background-color: #ddd;
+    color: $color-light;
+    background-color: $background-light;
 }
 
 .light-mode {
+    a {
+        color: $highlight-light;
+    }
     span.type {
         background-image: radial-gradient(25px, #fff, #0000);
     }
     .highlight{
-        background:#ddd;
+        background:$background-light;
     }
     .fa-sync-alt {
         font-size:3em;
-        color:#ddd;
+        color:$background-light;
+    }
+    .tags:hover {
+        background: $background-light;
+    }
+    .tags {
+        background: #ccc;
+        color: $highlight-light;
+        border: 2px solid #bbb;
     }
 }
 
 .dark-mode {
-    color: #ddd;
-    background-color: #333;
+    color: $color-dark;
+    background-color: $background-dark;
 }
 
 .dark-mode {
     a {
-        color: $highlight;
+        color: $highlight-dark;
     }
     span.type {
         background-image: radial-gradient(25px, #fff, #0000);
@@ -37,20 +53,24 @@ $highlight : #db6;
         font-size:3em;
         color:#555;
     }
+    .tags:hover {
+        background: $background-dark;
+    }
+    .tags {
+        background: #444;
+        color: $highlight-dark;
+        border: 2px solid #555;
+    }
 }
 
 .tags {
     display: inline-block;
     padding: 2px 10px;
-    background: #444;
-    color: $highlight;
-    border: 2px solid #555;
     margin: 2px;
     border-radius: 5px;
 }
 .tags:hover {
     text-decoration: none;
-    background: #333;
 }
 
 .bg {

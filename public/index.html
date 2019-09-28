@@ -17,6 +17,11 @@
 
 
 		<div class="container">
+			<div class="row">
+				<div class="col">
+					<i id="moon" class="far fa-moon float-right"></i>
+				</div>
+			</div>
 		<!--	<div class="row">
 				<div class="col-1 offset-11">
 					<a class="float-right" href='/reload-json'>
@@ -25,17 +30,13 @@
 				</div>
 			</div> -->
 
-			<!-- if categories
-				h1 Kategorien
-				div.row
-					each category in categories
-						span.col-md-3
-							a(href='/' + category.id)= category.name -->
-
 			<recipes-router></recipes-router>
 			<!-- <recipes-comp class="row" id="recipesComp"></recipes-comp> -->
 			<!-- <recipes-comp id="recipesComp" class="row"></recipes-comp>
 			<recipe-comp id="recipeComp"></recipe-comp> -->
+			<div class="col-1 offset-11">
+				<a class="float-right" id="credits">Credits</a>
+			</div>
 		</div>
 
 		<dialog-comp id="dialogComp"></dialog-comp>
@@ -48,12 +49,8 @@
 		<script type="text/javascript" src="/js/js.js"></script>
 
 		<script>
-			// const headerComp = document.getElementById("headerComp");
 			const dialogComp = document.getElementById("dialogComp");
-			// const recipesComp = document.getElementById("recipesComp");
 			const loadingComp = document.getElementById("loadingComp");
-			// const recipesComp = document.getElementById("recipesComp");
-			// const recipeComp = document.getElementById("recipeComp");
 		</script>
 
 		<script type="text/javascript" src="/tags.js"></script>
@@ -64,10 +61,5 @@
 		<script type="module" src="/comp/recipes.js"></script>
 
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
-
-
-		<!-- <div class="col-1 offset-11">
-			<a class="float-right" href="/credits">Credits</a>
-		</div> -->
 	</body>
 </html>

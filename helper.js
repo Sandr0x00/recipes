@@ -69,6 +69,23 @@ exports.loadJSON = function() {
     return {recipes: stuff.recipes, tags: stuff.tags};// , categories: categories};
 };
 
+/**
+ * Extracts id, type, name, images
+ * @param {Object} recipes
+ */
+exports.extractGeneralInfo = (recipes) => {
+    let info = {};
+    for (const key in recipes) {
+        info[key] = {
+            id: recipes[key].id,
+            name: recipes[key].name,
+            type: recipes[key].type,
+            image: recipes[key].image
+        };
+    }
+    return info;
+}
+
 function linkIngredients(recipes) {
     let ids = Object.keys(recipes);
     for (let key in recipes) {

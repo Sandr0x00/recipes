@@ -99,6 +99,8 @@ span.type {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
+    margin-top: -50px;
+    margin-left: -50px;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 4000ms;
     -webkit-animation-iteration-count: infinite;

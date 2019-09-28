@@ -32,6 +32,7 @@ class Recipes extends BaseComp {
                 title += ' ! ' + translated;
             }
         }
+        dialogComp.close();
         loadingComp.close();
         return html`
 <div class="col-12"><h1>${unsafeHTML(title)}</h1></div>
@@ -53,6 +54,7 @@ ${Object.values(this.data).map(i => this.single(i))}`;
             this.lazyLoadImg();
             for (const elem in this.data) {
                 $('#' + elem).click(() => {
+                    loadingComp.open();
                     window.router.navigate('/' + elem);
                 });
             }
