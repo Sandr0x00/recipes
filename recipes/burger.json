@@ -1,0 +1,56 @@
+{
+    "name": "Burger",
+    "portions": "1 Burger",
+    "type": "pan",
+    "tags": ["burger", "main", "meat"],
+    "ingredients": [
+        {
+            "id": "hackfleisch",
+            "amount": "100g",
+            "name": "Hackfleisch"
+        },
+        {
+            "id": "bun",
+            "amount": "1",
+            "name": "Burgerbrötchen"
+        },
+        {
+            "id": "tomate",
+            "amount": "1 Scheibe",
+            "name": "Tomate"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1 Scheibe",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "salat",
+            "name": "Salat"
+        },
+        {
+            "id": "chili",
+            "name": "Chilis"
+        },
+        {
+            "id": "cheddar",
+            "amount": "1 Scheibe",
+            "name": "Cheddar"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        },
+        {
+            "id": "sauce",
+            "name": "Burgersauce"
+        }
+    ],
+    "preparation": [
+        "{hackfleisch} mit {gewuerze} vermischen und ein Patty formen.",
+        "{hackfleisch} in der Pfanne anbraten.",
+        "{bun} toasten und mit {sauce} bestreichen. Mit {salat} und {zwiebel} oder {chili} belegen.",
+        "{cheddar} auf Patty legen und kurz mitbraten.",
+        "Patty und {tomate} auf Brötchen legen."
+    ]
+}

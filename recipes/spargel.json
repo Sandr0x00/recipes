@@ -1,0 +1,51 @@
+{
+    "name": "Spargel",
+    "portions": "2 Portionen",
+    "type": "oven",
+    "tags": ["main", "asparagus", "potato"],
+    "ingredients": [
+        {
+            "id": "spargel",
+            "amount": "6",
+            "name": "Spargel"
+        },
+        {
+            "id": "kartoffel",
+            "amount": "10",
+            "name": "Kartoffeln"
+        },
+        {
+            "id": "schinken",
+            "amount": "6 Scheiben",
+            "name": "Schinken"
+        },
+        {
+            "id": "eigelb",
+            "amount": "3",
+            "name": "Eigelb"
+        },
+        {
+            "id": "weisswein",
+            "amount": "3 EL",
+            "name": "Weißwein"
+        },
+        {
+            "id": "butter",
+            "amount": "200g",
+            "name": "Butter"
+        },
+        {
+            "id": "kaese",
+            "name": "Käse"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{spargel} schälen. Enden abschneiden. {kartoffel} schälen und mit {spargel} in Salzwasser kochen. Ein bisschen Butter hinzufügen.",
+        "{eigelb} mit {weisswein} in einer Schüssel im Wasserbad. cremig aufschlagen. {butter} hinzugeben. Mit {gewuerze} würzen.",
+        "Sauce, Spargel und Kartoffeln in eine Auflaufform geben und mit {kaese} überbacken."
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "name": "White Russian",
+    "portions": "1 Glass",
+    "type": "old-fashioned",
+    "tags": ["drink", "vodka", "cream"],
+    "ingredients": [
+        {
+            "id": "wodka",
+            "amount": "4cl",
+            "name": "Wodka"
+        },
+        {
+            "id": "kahlua",
+            "amount": "2cl",
+            "name": "Kahlúa"
+        },
+        {
+            "id": "sahne",
+            "amount": "2cl",
+            "name": "Sahne"
+        }
+    ],
+    "preparation": [
+        "Eiswürfel ins Glas geben.",
+        "{wodka} und {kahlua} shaken und ins Glas geben.",
+        "{sahne} cremig shaken und über einen Löffel ins Glas geben."
+    ]
+}

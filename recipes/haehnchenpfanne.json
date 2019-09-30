@@ -1,0 +1,60 @@
+{
+    "name": "Hähnchen-Gemüse-Pfanne",
+    "portions": "2 Portionen",
+    "type": "wok",
+    "tags": ["chicken", "asian", "main"],
+    "ingredients": [
+        {
+            "id": "haehnchen",
+            "amount": "1",
+            "name": "Hähnchenbrustfilet"
+        },
+        {
+            "id": "paprika",
+            "amount": "1",
+            "name": "Paprika"
+        },
+        {
+            "id": "karotte",
+            "amount": "1",
+            "name": "Karotte"
+        },
+        {
+            "id": "brokkoli",
+            "name": "Brokkoli"
+        },
+        {
+            "id": "erdnuss",
+            "name": "Erdnüsse"
+        },
+        {
+            "id": "knoblauch",
+            "name": "Knoblauch"
+        },
+        {
+            "id": "kokosmilch",
+            "name": "Kokosmilch"
+        },
+        {
+            "id": "sojasosse",
+            "name": "Sojasoße"
+        },
+        {
+            "id": "nudeln",
+            "name": "Nudeln"
+        },
+        {
+            "id": "reis",
+            "name": "Reis"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Gemüsebrühe"
+        }
+    ],
+    "preparation": [
+        "{nudeln} oder {reis} kochen.",
+        "Das {haehnchen} in einer Pfanne goldbraun braten und {karotte}, {brokkoli}, {paprika} und {knoblauch} hinzufügen, mit {gewuerze} würzen.",
+        "Anschließend {kokosmilch} und {erdnuss} hinzufügen {sojasosse} abschmecken. Zuletzt die Nudeln in die Pfanne geben und alles gut vermischen."
+    ]
+}

@@ -1,164 +1,85 @@
 #!/usr/bin/env node
 
-/* global __dirname, require, console, module, process */
+/* global require, process, __dirname */
 
 const express = require('express');
 const compression = require('compression');
+const path = require('path');
 const app = express();
 let port = process.env.PORT;
 if (port == null || port == '') {
-    port = 8080;
+    port = 8082;
 }
 
 let helper = require('./helper');
 
-Object.filter = (obj, predicate) => {
-    return Object.keys(obj)
-          .filter(key => predicate(obj[key]))
-          .reduce((res, key) => (res[key] = obj[key], res), {});
-};
-
 let json = helper.loadJSON();
-let recipes = json['recipes'];
-let categories = json['categories'];
+let recipes = json.recipes;
+let tags = json.tags;
+let general = Object.values(helper.extractGeneralInfo(recipes));
 
-app.set('view engine', 'pug');
-app.locals.compileDebug = false;
-app.locals.cache = true;
-app.use(express.static('public'));
-app.use(compression());
+app.locals.compileDebug = true;
+app.locals.cache = false;
+app.use((req, res, next) => {
+    setHeaders(res);
+    next();
+});
 
-app.get('/api/:id', (req, res) => {
+app.use(express.static('public', {
+    setHeaders: function(res, path) {
+        setHeaders(res);
+    }
+}));
+// app.use(compression());
+
+app.get('/api/all', (req, res) => {
+    setHeaders(res);
+    res.json(general);
+});
+
+app.get('/api/tags', (req, res) => {
+    setHeaders(res);
+    res.json(tags);
+});
+
+app.get('/api/recipe/:id', (req, res) => {
+    setHeaders(res);
     let id = req.params.id;
-    let recipe = findById(recipes, id);
-    if (recipe) {
-        res.send(recipe);
-    }
-});
-
-app.get('/', (req, res) => {
-    setHeaders(res);
-    res.render('index', {
-        recipes: recipes,
-        categories: categories,
-        title: 'Rezepte',
-        breadcrumbs: [
-            {
-                link: '/',
-                text: 'Rezepte'
-            },
-        ]
-    });
-});
-
-app.get('/:cat', (req, res) => {
-    setHeaders(res);
-    let cat = req.params.cat;
-    if (cat === 'credits') {
-        res.render('credits', {
-            title: 'Credits'
-        });
-    } else if (cat === 'reload-json') {
-        json = helper.loadJSON();
-        recipes = json['recipes'];
-        categories = json['categories'];
-        res.redirect('/');
-    } else if (categories[cat]) {
-        res.render('index', {
-            recipes: Object.filter(recipes, r => r.category === cat),
-            title: 'Rezepte',
-            breadcrumbs: [
-                {
-                    link: '/',
-                    text: 'Rezepte'
-                },
-                {
-                    link: '/' + cat,
-                    text: categories[cat].name
-                }
-            ]
-        });
+    if (id in recipes) {
+        res.json(recipes[id]);
     } else {
-        res.render('404');
+        res.status(404);
+        res.send();
     }
 });
 
-app.get('/:category/:recipe', (req,res) => {
+app.get('/api/tag/:tag', (req, res) => {
     setHeaders(res);
-    // let now = Date.now();
-    let recipe = findById(recipes, req.params.recipe);
-    if (recipe) {
-        if (recipe.category != req.params.category && req.params.category != 'recipe') {
-            console.log(recipe.category);
-            console.log(req.params.category);
+    let r = general.filter((item) => item.tags.includes(req.params.tag));
 
-            res.render('404');
-            return;
-        }
-        if (recipe.category === 'sandwich') {
-            res.render('sandwich', recipe);
-        } else {
-            res.render('recipe', recipe);
-        }
+    if (r && r.length !== 0) {
+        res.json(r);
     } else {
-        res.render('404');
+        res.status(404);
+        res.send();
     }
 });
 
+app.get('*', (req, res) => {
+    setHeaders(res);
+    console.log(req.params['0']);
+    res.status(404);
+    res.send();
+    // setHeaders(res);
+    // res.sendFile(path.join(__dirname + '/public/index.html'));
+});
 
-app.listen(port, (err) => {
+app.listen(port, '0.0.0.0', (err) => {
     if (err) {
         return console.log('something bad happened', err);
     }
-    console.log(`server is listening on ${port}`);
+    console.log(`Server is listening on ${port}`);
 });
-
-
-function findById(recipes, id) {
-    for (let key in recipes) {
-        let recipe = recipes[key];
-        if (id != key) {
-            continue;
-        }
-        let ret = {
-            category: recipe.category,
-            images: recipe.image,
-            name: recipe.name,
-            title: recipe.name,
-            breadcrumbs: [
-                {
-                    link: '/',
-                    text: 'Rezepte'
-                },
-                {
-                    link: '/' + recipe.category,
-                    text: categories[recipe.category].name
-                },
-                {
-                    link: '/' + recipe.category + '/' + id,
-                    text: recipe.name
-                }
-            ]
-
-        };
-        if (recipe.category == 'sandwich') {
-            Object.assign(ret, {
-                order: recipe.order,
-            });
-        } else {
-            let prep = helper.formatPreparation(recipe);
-            Object.assign(ret, {
-                ingredients: recipe.ingredients,
-                preparation: prep[0],
-                preparationAmounts: prep[1],
-                portions: recipe.portions
-            });
-        }
-        return ret;
-    }
-    return null;
-}
-
 
 function setHeaders(res) {
     res.setHeader('X-XSS-ProtectionType', '"1; mode=block"');
@@ -169,8 +90,8 @@ function setHeaders(res) {
         'default-src \'self\';'
         + 'img-src \'self\';'
         + 'style-src \'self\' \'unsafe-inline\' use.fontawesome.com;'
-        + 'script-src \'self\';'
-        + 'font-src use.fontawesome.com');
+        + 'script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' unpkg.com;'
+        + 'font-src use.fontawesome.com;');
     res.setHeader('X-Permitted-Cross-Domain-Policies', '"none"');
     res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader('Feature-Policy', 'accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'; sync-xhr \'none\'');

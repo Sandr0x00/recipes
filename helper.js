@@ -1,4 +1,4 @@
-/* global exports, require, __dirname, console */
+/* global exports, require, __dirname */
 
 let fs = require('fs');
 let path = require('path');
@@ -8,7 +8,7 @@ function replace(regex, regexAmount, ingredient, preparation, preparationAmounts
     let replaceAmounts;
     if (preparation.match(regexAmount)) {
         let amount = preparation.match(regexAmount)[1];
-        regex = `\{${ingredient.id}\:${amount}\}`;
+        regex = `{${ingredient.id}:${amount}}`;
         replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + amount + ' ' + ingredient.name + '</b>';
         replaceAmounts = replace;
     } else {
@@ -28,10 +28,10 @@ exports.formatPreparation = function(recipe) {
     let preparation = JSON.stringify(recipe.preparation);
     let preparationAmounts = JSON.stringify(recipe.preparation);
     recipe.ingredients.forEach(ingredient => {
-        while (preparation.match(`\{${ingredient.id}(\:.+?)*\}`)) {
+        while (preparation.match(`{${ingredient.id}(:.+?)*}`)) {
             // first, replace ingredients with specific amounts, if there are any
-            let regex = `\{${ingredient.id}\}`;
-            let regex_amount = `\{${ingredient.id}\:(.+?)\}`;
+            let regex = `{${ingredient.id}}`;
+            let regex_amount = `{${ingredient.id}:(.+?)}`;
             let replaced = replace(regex, regex_amount, ingredient, preparation, preparationAmounts);
             preparation = replaced[0];
             preparationAmounts = replaced[1];
@@ -44,54 +44,58 @@ exports.formatPreparation = function(recipe) {
 };
 
 exports.loadJSON = function() {
-    let recipes = {};
-    let categories = {};
     let dirPath = path.join(__dirname, 'recipes');
-    fs.readdirSync(dirPath).forEach(dirname => {
-        // set categories
-        let category = {};
-        let metaPath = path.join(dirPath, dirname, '_meta.json');
-        category[dirname] = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
-        category[dirname].id = dirname;
-        Object.assign(categories, category);
+    let stuff = readFilesInFolder(dirPath);
+    linkIngredients(stuff.recipes);
 
-        // set recipes
-        let filePath = path.join(dirPath, dirname);
-        let stats = fs.statSync(filePath);
-        if (stats.isDirectory()) {
-            Object.assign(recipes, readFilesInFolder(dirname));
-        } else if (stats.isFile()) {
-            console.log('There should be no file here!');
-        }
-    });
-    linkIngredients(recipes);
-    return {recipes: recipes, categories: categories};
+    for (const key in stuff.recipes) {
+        let recipe = stuff.recipes[key];
+        let prep = this.formatPreparation(recipe);
+        Object.assign(recipe, {
+            preparation: prep[0],
+            preparationAmounts: prep[1],
+        });
+    }
+
+    return {recipes: stuff.recipes, tags: stuff.tags};
+};
+
+/**
+ * Extracts id, type, name, images
+ * @param {Object} recipes
+ */
+exports.extractGeneralInfo = (recipes) => {
+    let info = {};
+    for (const key in recipes) {
+        info[key] = {
+            id: recipes[key].id,
+            name: recipes[key].name,
+            type: recipes[key].type,
+            images: recipes[key].images,
+            tags: recipes[key].tags,
+        };
+    }
+    return info;
 };
 
 function linkIngredients(recipes) {
     let ids = Object.keys(recipes);
     for (let key in recipes) {
         let recipe = recipes[key];
-        if (recipe.category == 'sandwich') {
-            continue;
-        }
         recipe.ingredients.forEach(ingredient => {
             if (ids.includes(ingredient.id)) {
                 let linkedRecipe = recipes[ingredient.id];
-                ingredient['link'] = '/' + linkedRecipe.category + '/' + linkedRecipe.id;
+                ingredient['link'] = '/' + linkedRecipe.id;
             }
         });
     }
-};
+}
 
 function readFilesInFolder(folder) {
     let recipes = {};
-    let dirPath = path.join(__dirname, 'recipes', folder);
-    fs.readdirSync(dirPath).forEach(fileName => {
-        if (fileName == '_meta.json') {
-            return;
-        }
-        let filePath = path.join(dirPath, fileName);
+    let tags = [];
+    fs.readdirSync(folder).forEach(fileName => {
+        let filePath = path.join(folder, fileName);
         let stats = fs.statSync(filePath);
         if (stats.isDirectory()) {
             console.log('There should be no directory here!');
@@ -100,10 +104,20 @@ function readFilesInFolder(folder) {
             recipes[key] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
             recipes[key].id = key;
             recipes[key].category = folder;
-            recipes[key].image = addImages(key);
+            recipes[key].images = addImages(key);
+            recipes[key].tags.forEach(tag => {
+                if (!tags.some(e => e.tag === tag)) {
+                    tags.push({tag:tag, cnt:1});
+                } else {
+                    tags.find(e => e.tag === tag).cnt++;
+                }
+            });
         }
     });
-    return recipes;
+    // sort based on occurence
+    tags = tags.sort((a, b) => (a.cnt < b.cnt) ? 1 : -1);
+    tags = tags.map(e => e.tag);
+    return {recipes: recipes, tags: tags};
 }
 
 function addImages(key) {

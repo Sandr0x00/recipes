@@ -1,27 +1,14 @@
-/* global $, window, document, setTimeout, loadImages, loadRecipe */
+/* global loadRecipe, dialogComp */
 'use strict';
 
-
-$('.ingredient').hover(
-    function() {
-      $(getSecondClass(this)).addClass('highlight');
-    }, function() {
-        $(getSecondClass(this)).removeClass('highlight');
-    }
-);
-
-function getSecondClass(elem) {
-    return '.' + $(elem).attr('class').split(' ')[0];
-}
-
 function isMD() {
-    let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
-    let sm = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sm');
+    // let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
+    // let sm = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sm');
     let md = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-md');
     let lg = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-lg');
     let xl = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xl');
-    let is_xs = window.matchMedia('(min-width: '+xs+')').matches;
-    let is_sm = window.matchMedia('(min-width: '+sm+')').matches;
+    // let is_xs = window.matchMedia('(min-width: '+xs+')').matches;
+    // let is_sm = window.matchMedia('(min-width: '+sm+')').matches;
     let is_md = window.matchMedia('(min-width: '+md+')').matches;
     let is_lg = window.matchMedia('(min-width: '+lg+')').matches;
     let is_xl = window.matchMedia('(min-width: '+xl+')').matches;
@@ -94,7 +81,6 @@ $('figcaption').fitText(0.9);
 $( document ).ready(function() {
     $('.fadeOut').on('click', fadeOutIngredients);
     $('.fadeIn').on('click', fadeInIngredients);
-    loadImages();
     $('.lnk').on('click', function(){
         loadRecipe($(this).data('link'), $(this));
         $(this).off('click');
@@ -113,4 +99,16 @@ $( document ).ready(function() {
             $('body').addClass('dark-mode');
         }
     });
+
+    let credits = '<p>Icons made by <a href="https://flaticon.com/authors/smashicons">Smashicons</a> from <a href="https://flaticon.com">flaticon.com</a></p>\
+    <p>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>\
+    <p>Icons made by <a href="https://www.flaticon.com/authors/chanut" title="Chanut">Chanut</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>\
+    <p>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>\
+    <p>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>\
+    <p>Glass Icons made by <a href="http://www.jeffportaro.com/">http://www.jeffportaro.com/</a></div></p>';
+    $('#credits').click(() => {
+        dialogComp.show(credits);
+    });
 });
+
+

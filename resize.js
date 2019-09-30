@@ -1,4 +1,4 @@
-/* global require, module, __dirname, console, Promise */
+/* global require, __dirname */
 const fs = require('fs');
 const sharp = require('sharp');
 const path = require('path');
@@ -54,17 +54,17 @@ function resize(prefix, file, width, height, fit) {
             quality: 90,
         });
     saveFile(to, jpg);
-};
+}
 
 function saveFile(to, jpg) {
     if (fs.existsSync(to)) {
         let s = fs.ReadStream(to);
-        let a = new Promise((resolve, reject) => {
+        let a = new Promise((resolve) => {
             let sha = crypto.createHash('sha256');
             s.on('data', d => sha.update(d));
             s.on('end', () => resolve(sha.digest('hex')));
         });
-        let b = new Promise((resolve, reject) => {
+        let b = new Promise((resolve) => {
             jpg.toBuffer().then(data => resolve(crypto.createHash('sha256').update(data).digest('hex')));
         });
         Promise.all([a,b])

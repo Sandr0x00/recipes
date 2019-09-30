@@ -1,0 +1,50 @@
+{
+    "name": "Salmorejo",
+    "portions": "4 Portionen",
+    "tags": ["soup"],
+    "ingredients": [
+        {
+            "id": "tomate",
+            "amount": "500g",
+            "name": "Passierte Tomaten"
+        },
+        {
+            "id": "semmel",
+            "amount": "2",
+            "name": "Harte Semmeln"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "eier",
+            "amount": "2",
+            "name": "Eier"
+        },
+        {
+            "id": "oel",
+            "name": "Olivenöl"
+        },
+        {
+            "id": "essig",
+            "name": "Weinessig"
+        },
+        {
+            "id": "salz",
+            "name": "Salz"
+        },
+        {
+            "id": "schinken",
+            "name": "Seranoschinken"
+        }
+    ],
+    "preparation": [
+        "Die {eier} hart kochen. Die {semmel} in Wasser einweichen lassen.",
+        "Die Semmeln in einem Sieb audrücken und mit {tomate}, {knoblauch}, ein Ei und {oel} mixen.",
+        "Nun mit {salz} und {essig} abschmecken und nochmals mixen.",
+        "Danach mindestens 2 Stunden in den Kühlschrank stellen.",
+        "Die kalte Salmorejo mit {schinken} und 2. Ei garnieren."
+    ]
+}

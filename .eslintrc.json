@@ -3,6 +3,12 @@
         "ecmaVersion": 2017,
         "sourceType": "module"
     },
+    "env": {
+        "browser": true,
+        "jquery": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
     "rules": {
         "no-trailing-spaces": "warn",
         "spaced-comment": "warn",
@@ -12,6 +18,7 @@
         "semi": "warn",
         "quotes": ["warn", "single"],
         "no-var": "warn",
-        "no-undef": "error"
+        "no-undef": "warn",
+        "no-unused-vars": "warn"
     }
 }

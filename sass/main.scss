@@ -1,28 +1,27 @@
 @import 'helper';
 
-
 html {
     overflow-y:scroll;
 }
 
-.images{
+.images {
     padding-bottom: 10px;
 }
 
 .animate, #inglist {
   @include transition("all 1s ease, padding 0s");
 }
+
 .vert {
     writing-mode: vertical-rl;
     text-orientation: upright;
     padding: 0;
 }
-.col-0 {
-    width: 0;
-}
+
 .grow {
     flex-grow: 1;
 }
+
 .shrink {
     flex-shrink: 1;
 }
@@ -69,6 +68,11 @@ a {
     padding: 0;
     margin: 0;
 }
+
+figure {
+    margin: 0;
+}
+
 figcaption {
     padding-top: 20%;
     padding-bottom: 10px;
@@ -93,4 +97,48 @@ span.type {
     width: 60px;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.loading {
+    z-index: 10;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear;
+
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-ms-keyframes spin {
+    from { -ms-transform: rotate(0deg); }
+    to { -ms-transform: rotate(360deg); }
+}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

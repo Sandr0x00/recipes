@@ -1,0 +1,52 @@
+{
+    "name": "Kaspressknödel",
+    "portions": "2 Portionen",
+    "type": "pan",
+    "tags": ["austrian", "main"],
+    "ingredients": [
+        {
+            "id": "ei",
+            "amount": "2",
+            "name": "Eier"
+        },
+        {
+            "id": "milch",
+            "name": "Milch"
+        },
+        {
+            "id": "kaese",
+            "amount": "100g",
+            "name": "Käse"
+        },
+        {
+            "id": "mehl",
+            "name": "Mehl"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "semmel",
+            "amount": "1",
+            "name": "Semmel"
+        },
+        {
+            "id": "butter",
+            "name": "Butter"
+        },
+        {
+            "id": "schnittlauch",
+            "name": "Schnittlauch"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{semmel} würfeln und in {milch} anweichen. {ei}, {schnittlauch}, {kaese} und {gewuerze} hinzugeben. {mehl} bis zur gewünschten Konsistenz hinzugeben. {zwiebel} in {butter} glasig anrösten, zu den angeweichten Semmelwürfeln geben.",
+        "Mit einem Esslöffel Teighäufchen bei niedriger Hitze anbraten, umdrehen und dann platt drücken."
+    ]
+}

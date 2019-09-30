@@ -6,7 +6,7 @@
     "private": true,
     "repository": "github:Sandr0x00/recipes",
     "scripts": {
-        "compile:scss": "node-sass sass -o public/css",
+        "compile:scss": "node-sass sass -o public/css --output-style compressed",
         "compile": "npm run compile:scss && ./copy.py && npm run resize",
         "build": "",
         "zip": "tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
@@ -16,19 +16,21 @@
         "start": "node server.js"
     },
     "dependencies": {
+        "compression": "^1.7.4",
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "acorn": "^7.1.0",
         "bootstrap": "^4.3.1",
         "chai": "^4.2.0",
-        "compression": "^1.7.4",
-        "eslint": "^6.2.2",
-        "express": "^4.17.1",
+        "eslint": "^6.5.0",
         "jquery": "^3.4.1",
         "jquery-lazy": "^1.7.10",
         "jsonschema": "^1.2.4",
-        "mocha": "^6.2.0",
+        "mocha": "^6.2.1",
         "node-sass": "^4.12.0",
         "popper.js": "^1.15.0",
-        "pug": "^2.0.4",
-        "sharp": "^0.23.0"
+        "sharp": "^0.23.1"
     },
     "bugs": {
         "url": "https://github.com/Sandr0x00/recipes/issues"

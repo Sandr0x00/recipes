@@ -1,0 +1,41 @@
+{
+    "name": "Pizzasauce",
+    "portions": "1 Pizza",
+    "tags": ["part", "pizza"],
+    "ingredients": [
+        {
+            "id": "passiertetomaten",
+            "name": "Passierte Tomaten"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "tomaten",
+            "amount": "1",
+            "name": "Tomate"
+        },
+        {
+            "id": "oel",
+            "name": "Olivenöl"
+        },
+        {
+            "id": "oregano",
+            "name": "Oregano"
+        },
+        {
+            "id": "basilikum",
+            "name": "Basilikum"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Zucker"
+        }
+    ],
+    "preparation": [
+        "{knoblauch} und {tomaten} fein würfeln. {basilikum} kleinschneiden und mit {passiertetomaten}, {oel}, {oregano}, {gewuerze} vermischen.",
+        "Auf dem ausgerollten Pizzateig verteilen."
+    ]
+}

@@ -16,6 +16,4 @@ if __name__ == "__main__":
     shutil.copy('package.json', 'dist')
     shutil.copy('package-lock.json', 'dist')
     shutil.copytree('public', 'dist/public')
-    shutil.copytree('views', 'dist/views')
     shutil.copytree('recipes', 'dist/recipes')
-    
