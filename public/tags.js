@@ -53,6 +53,8 @@ const tagTranslator = {
     'cream': 'Sahnig',
     'pudding': 'Pudding',
     'sirup': 'Sirup',
+    'dressing': 'Dresssing',
+    'cheese': 'Käse'
 };
 // For test only -.-
 module.exports = {

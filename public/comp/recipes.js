@@ -23,40 +23,27 @@ class Recipes extends BaseComp {
     }
 
     render() {
-        let title = '<a href="/">Rezepte</a>';
+        let title = html``;
         if (this.load.startsWith('tag/')) {
             let translated = tagTranslator[this.load.split('/')[1]];
-            if (translated) {
-                title += ' - ' + translated;
-            } else {
-                title += ' ! ' + translated;
-            }
+            title = html`<a onclick="loadingComp.navigate('/')">Rezepte</a> - ${translated}`;
+        } else {
+            title = html`<a onclick="loadingComp.navigate('/');loadingComp.close();">Rezepte</a>`;
         }
         dialogComp.close();
         loadingComp.close();
+        console.log(this.data);
         return html`
-<div class="col-12"><h1>${unsafeHTML(title)}</h1></div>
+<div class="col-12"><h1>${title}</h1></div>
 <div class="col-12">${this.tags.map(t => this.singleTag(t))}</div>
-${Object.values(this.data).map(i => this.single(i))}`;
+${this.data.map(i => this.single(i))}`;
     }
 
     updated(changedProperties) {
-        console.log(changedProperties);
-        if (changedProperties.has('tags')) {
-            console.log(this.tags);
-            for (const elem of this.tags.values()) {
-                $('#tag_' + elem).click(function() {
-                    window.router.navigate('/tag/' + elem);
-                });
-            }
-        }
         if (changedProperties.has('data')) {
             this.lazyLoadImg();
-            for (const elem in this.data) {
-                $('#' + elem).click(() => {
-                    loadingComp.open();
-                    window.router.navigate('/' + elem);
-                });
+            for (const elem of this.data) {
+                $('#' + elem.id).fitText();
             }
         }
         if (changedProperties.has('load')) {
@@ -65,26 +52,26 @@ ${Object.values(this.data).map(i => this.single(i))}`;
     }
 
     async lazyLoadImg(){
-        for (const elem in this.data) {
+        for (const elem of this.data) {
             let bgImg = new Image();
             bgImg.onload = () => {
-                $('#' + elem).css('background-image', 'url("/images/thumbnail_' + this.data[elem].image[0] + '")');
+                $('#' + elem.id).css('background-image', 'url("images/thumbnail_' + elem.images[0] + '")');
             };
             bgImg.onerror = () => {
-                $('#' + elem).css('background-image', 'url("/icons/unknown.svg")');
+                $('#' + elem.id).css('background-image', 'url("icons/unknown.svg")');
             };
-            bgImg.src = '/images/thumbnail_' + this.data[elem].image[0];
+            bgImg.src = 'images/thumbnail_' + elem.images[0];
         }
     }
 
     single(r) {
         let type = '';
         if (r.type) {
-            type = html`<span class="type"></span><span class="type" style='background-image: url("/icons/${r.type}.svg"); background-size: 35px;'></span>`;
+            type = html`<span class="type"></span><span class="type" style='background-image: url("icons/${r.type}.svg"); background-size: 35px;'></span>`;
         }
         return html`
 <figure class="col-6 col-sm-4 col-md-3 col-lg-2 recipeLinkDiv">
-  <a id="${r.id}" class="lazy recipeLink">
+  <a id="${r.id}" onclick="loadingComp.navigate('/${r.id}');" class="lazy recipeLink">
     <figcaption class="text-center">${r.name}</figcaption>
   </a>
   ${type}
@@ -93,13 +80,12 @@ ${Object.values(this.data).map(i => this.single(i))}`;
 
     singleTag(tag) {
         let translated = tagTranslator[tag];
-        return html`<a class="tags" href="/#!/tag/${tag}" id="tag_${tag}">${translated}</div>`;
+        return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}">${translated}</div>`;
     }
 
     // TODO: merge promises
     loadStuff() {
-        fetch('/api/' + this.load).then(response => {
-            console.log(response);
+        fetch('api/' + this.load).then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Tag "${this.load}" does not exist, choose a tag from above.`);
             }
@@ -115,16 +101,14 @@ ${Object.values(this.data).map(i => this.single(i))}`;
     }
 
     loadTags() {
-        fetch('/api/tags').then(response => {
+        fetch('api/tags').then(response => {
             if (response.status === 404) {
                 return Promise.reject(null);
             }
             return response;
         }).then(response => response.json()
         ).then(data => {
-            console.log(data);
             this.tags = data;
-            console.log(this.tags);
         }).catch(err => {
             if (err) {
                 dialogComp.show(err);

@@ -19,7 +19,6 @@ export class DialogComp extends BaseComp {
 
     show(msg) {
         this.msg = msg;
-        console.log(this.msg);
         loadingComp.close();
     }
 

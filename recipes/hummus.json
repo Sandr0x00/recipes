@@ -1,6 +1,6 @@
 {
     "name": "Hummus",
-    "tags": ["side"],
+    "tags": ["side", "vegi"],
     "ingredients": [
         {
             "id": "kichererbsen",

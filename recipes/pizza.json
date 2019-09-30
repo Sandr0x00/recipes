@@ -17,25 +17,10 @@
             "id": "mozarella",
             "amount": "1",
             "name": "Mozarella"
-        },
-        {
-            "id": "schinken",
-            "name": "Schinken",
-            "optional": true
-        },
-        {
-            "id": "champignons",
-            "name": "Champignons",
-            "optional": true
-        },
-        {
-            "id": "salami",
-            "name": "Salami",
-            "optional": true
         }
     ],
     "preparation": [
         "{pizzateig} mit {pizzasauce} bestreichen und mit {mozarella} belegen.",
-        "Pizza belegen."
+        "Pizza mit Zutaten der Wahl belegen."
     ]
 }

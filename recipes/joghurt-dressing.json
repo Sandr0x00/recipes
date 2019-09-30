@@ -1,0 +1,26 @@
+{
+    "name": "Joghurt Dressing",
+    "tags": ["dressing"],
+    "ingredients": [
+        {
+            "id": "joghurt",
+            "amount": "3 TL",
+            "name": "Joghurt"
+        },
+        {
+            "id": "essig",
+            "name": "Essig"
+        },
+        {
+            "id": "oel",
+            "name": "Olivenöl"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{joghurt} mit {essig}, {oel}, {gewuerze} vermischen."
+    ]
+}

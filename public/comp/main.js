@@ -15,14 +15,13 @@ class Router extends BaseComp {
         window.router.on('/tag/:tag', (params) => {
             this.route = html`<recipes-comp class="row" id="recipesComp" load="tag/${params.tag}"></recipes-comp>`;
         }).on('/:recipe', (params) => {
-            this.route = html`<recipe-comp recipe="${params.recipe}"></recipe-comp>`;
+            this.route = html`<recipe-comp id="recipeComp" recipe="${params.recipe}"></recipe-comp>`;
         }).on('*', () => {
             this.route = html`<recipes-comp class="row" id="recipesComp" load="all"></recipes-comp>`;
         }).resolve();
     }
 
     render() {
-        console.log(this.route);
         return this.route;
     }
 }

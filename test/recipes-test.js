@@ -113,6 +113,7 @@ function getSchema() {
                 minItems: 1,
                 items: {
                     type: 'object',
+                    additionalProperties: false,
                     properties: {
                         id: {
                             type: 'string',
@@ -128,9 +129,6 @@ function getSchema() {
                             type: 'string',
                             required: true,
                             minLength: 2
-                        },
-                        optional: {
-                            type: 'boolean'
                         }
                     }
                 }

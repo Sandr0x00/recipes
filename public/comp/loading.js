@@ -21,6 +21,10 @@ export class DialogErrorComp extends BaseComp {
     close() {
         this.loading = false;
     }
+    navigate(route) {
+        this.loading = true;
+        window.router.navigate(route);
+    }
 
     render() {
         if (!this.loading) {

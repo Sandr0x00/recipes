@@ -1,18 +1,5 @@
-/* global loadRecipe */
+/* global loadRecipe, dialogComp */
 'use strict';
-
-
-$('.ingredient').hover(
-    function() {
-      $(getSecondClass(this)).addClass('highlight');
-    }, function() {
-        $(getSecondClass(this)).removeClass('highlight');
-    }
-);
-
-function getSecondClass(elem) {
-    return '.' + $(elem).attr('class').split(' ')[0];
-}
 
 function isMD() {
     // let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
@@ -120,7 +107,6 @@ $( document ).ready(function() {
     <p>Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p>\
     <p>Glass Icons made by <a href="http://www.jeffportaro.com/">http://www.jeffportaro.com/</a></div></p>';
     $('#credits').click(() => {
-        console.log(dialogComp);
         dialogComp.show(credits);
     });
 });

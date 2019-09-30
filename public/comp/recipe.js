@@ -32,7 +32,7 @@ class Recipe extends BaseComp {
 ${images}
 <div class="recipeImage col-12 col-sm-10 offset-sm-1 col-lg-6 offset-lg-3">
     <div class="placeholderWrapper">
-        <div class="placeholder blur" data-large='/images/${this.data.images[0]}' style="background-image: url('/images/placeholder_${this.data.images[0]}');">
+        <div class="placeholder blur" data-large='images/${this.data.images[0]}' style="background-image: url('images/placeholder_${this.data.images[0]}');">
         </div>
     </div>
 </div>`;
@@ -42,7 +42,7 @@ ${images}
 ${images}
 <div class="recipeImage col-6">
     <div class="placeholderWrapper">
-        <div class="placeholder blur" data-large='/images/${img}' style="background-image: url('/images/placeholder_${img}');">
+        <div class="placeholder blur" data-large='images/${img}' style="background-image: url('images/placeholder_${img}');">
         </div>
     </div>
 </div>`;
@@ -54,28 +54,25 @@ ${images}
         // Ingredients
         let ingredients = html``;
         this.data.ingredients.forEach(ingredient => {
+            let i = html``;
             if (ingredient.link) {
-                ingredients = html`
-${ingredients}
-<li class="${ingredient.id} ingredient min-w">
-    <a class="lnk" href="#" data-link="${ingredient.id}>${(ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name}"></a>
-    <span> </span>
-    <a href="${ingredient.link}"><i class="fas fa-external-link-alt"></i></a>
-    ${ingredient.optional ? '<span class="optional"> - optional</span>' : ''}
-</li>`;
-            } else {
-                ingredients = html`
-${ingredients}
-<li class="${ingredient.id} + " ingredient min-w">${(ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name}</li>
-    ${ingredient.optional ? '<span class="optional"> - optional</span>' : ''}
-</li>`;
+                i = html`
+<span> </span>
+<a onclick="loadingComp.navigate('${ingredient.link}')"><i class="fas fa-external-link-alt"></i></a>`;
             }
+            ingredients = html`
+${ingredients}
+<li class="${ingredient.id} ingredient min-w" onmouseover="window.recipeComp.highlightOn('${ingredient.id}')" onmouseout="window.recipeComp.highlightOff('${ingredient.id}')">
+    ${(ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name}
+    ${i}
+</li>`;
+
         });
 
         // Tags
         let tags = this.data.tags.map(tag => {
             let translated = tagTranslator[tag];
-            return html`<a class="tags" href="/#!/tag/${tag}" id="tag_${tag}">${translated}</div>`;
+            return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}">${translated}</div>`;
         });
         tags = html`<div class="col-12">${tags}</div>`;
 
@@ -103,8 +100,7 @@ ${ingredients}
         loadingComp.close();
         return html`
 <div class="col-12">
-
-<h1><a href="/">Recipe</a> - ${this.data.name}</h1>
+<h1><a onclick="loadingComp.navigate('/')">Recipe</a> - ${this.data.name}</h1>
 </div>
 ${images}
 <div class="row" id="recipe">
@@ -127,55 +123,48 @@ ${images}
 
     updated(changedProperties) {
         if (changedProperties.has('data') && this.data) {
-            console.log(this.data);
+            window.recipeComp = document.getElementById('recipeComp');
             this.lazyLoadImg();
-            this.data.tags.forEach(tag => {
-                $('#' + tag).click(() => {
-                    loadingComp.open();
-                    window.router.navigate('/tag/' + tag);
-                });
-            });
         }
         if (changedProperties.has('recipe') && this.recipe) {
-            console.log(this.recipe);
             this.loadStuff();
         }
     }
 
+    highlightOn(c) {
+        $('.' + c).addClass('highlight');
+    }
+
+    highlightOff(c) {
+        $('.' + c).removeClass('highlight');
+    }
+
+    getSecondClass(elem) {
+        return '.' + $(elem).attr('class').split(' ')[0];
+    }
+
     async lazyLoadImg(){
-        $('.placeholder').each( function() {
-            if (!$(this).data('large')) {
+        let list = document.getElementsByClassName('placeholder');
+        for (let i = 0; i < list.length; i++) {
+            let element = list[i];
+            let large = element.getAttribute('data-large');
+            if (!large) {
                 return;
             }
             let bgImg = new Image();
             bgImg.onload = () => {
-                $(this).css('background-image', 'url(' + bgImg.src + ')');
-                $(this).removeClass('blur');
+                element.style['background-image'] = 'url(' + bgImg.src + ')';
+                element.classList.remove('blur');
             };
-            bgImg.src = $(this).data('large');
-        });
-    }
-
-    single(r) {
-        let type = '';
-        if (r.type) {
-            type = html`
-<span class="type" style='background-image: url("/icons/${r.type}.svg"); background-size: 35px;'></span>`;
+            bgImg.src = large;
         }
-        return html`
-<figure class="col-6 col-sm-4 col-md-3 col-lg-2 recipeLinkDiv">
-  <a id="${r.id}" class="lazy recipeLink" href="/recipe/${r.id}">
-    <figcaption class="text-center">${r.name}</figcaption>
-  </a>
-  ${type}
-</figure>`;
     }
 
     loadStuff() {
         if (!this.recipe) {
             return;
         }
-        fetch('/api/recipe/' + this.recipe).then(response => {
+        fetch('api/recipe/' + this.recipe).then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
             }

@@ -11,8 +11,8 @@ $color-dark: #ddd;
 }
 
 .light-mode {
-    a {
-        color: $highlight-light;
+    a, a:hover {
+        color: $highlight-light !important;
     }
     span.type {
         background-image: radial-gradient(25px, #fff, #0000);
@@ -40,8 +40,8 @@ $color-dark: #ddd;
 }
 
 .dark-mode {
-    a {
-        color: $highlight-dark;
+    a, a:hover {
+        color: $highlight-dark !important;
     }
     span.type {
         background-image: radial-gradient(25px, #fff, #0000);

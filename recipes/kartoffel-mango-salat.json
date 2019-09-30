@@ -1,0 +1,32 @@
+{
+    "name": "Kartoffel Mango Salat",
+    "tags": ["salad", "potato", "fruity", "vegi"],
+    "ingredients": [
+        {
+            "id": "kartoffel",
+            "amount": "3",
+            "name": "Kartoffeln"
+        },
+        {
+            "id": "mango",
+            "amount": "1/2",
+            "name": "Mango"
+        },
+        {
+            "id": "salat",
+            "name": "Salat"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "joghurt-dressing",
+            "name": "Joghurt Dressing"
+        }
+    ],
+    "preparation": [
+        "{kartoffel} kochen und mit {salat}, {mango} und {zwiebel} mischen und mir {joghurt-dressing} anmachen."
+    ]
+}

@@ -44,29 +44,20 @@ exports.formatPreparation = function(recipe) {
 };
 
 exports.loadJSON = function() {
-    // let recipes = {};
-    // let categories = {};
     let dirPath = path.join(__dirname, 'recipes');
     let stuff = readFilesInFolder(dirPath);
-    // Object.assign(recipes, readFilesInFolder(dirPath));
-    // fs.readdirSync(dirPath).forEach(dirname => {
-    //     // // set categories
-    //     // let category = {};
-    //     // let metaPath = path.join(dirPath, dirname, '_meta.json');
-    //     // category[dirname] = JSON.parse(fs.readFileSync(metaPath, 'utf8'));
-    //     // category[dirname].id = dirname;
-    //     // Object.assign(categories, category);
-
-    //     // set recipes
-    //     let filePath = path.join(dirPath, dirname);
-    //     let stats = fs.statSync(filePath);
-    //     if (stats.isDirectory()) {
-    //     } else if (stats.isFile()) {
-    //         console.log('There should be no file here!');
-    //     }
-    // });
     linkIngredients(stuff.recipes);
-    return {recipes: stuff.recipes, tags: stuff.tags};// , categories: categories};
+
+    for (const key in stuff.recipes) {
+        let recipe = stuff.recipes[key];
+        let prep = this.formatPreparation(recipe);
+        Object.assign(recipe, {
+            preparation: prep[0],
+            preparationAmounts: prep[1],
+        });
+    }
+
+    return {recipes: stuff.recipes, tags: stuff.tags};
 };
 
 /**
@@ -80,19 +71,17 @@ exports.extractGeneralInfo = (recipes) => {
             id: recipes[key].id,
             name: recipes[key].name,
             type: recipes[key].type,
-            image: recipes[key].image
+            images: recipes[key].images,
+            tags: recipes[key].tags,
         };
     }
     return info;
-}
+};
 
 function linkIngredients(recipes) {
     let ids = Object.keys(recipes);
     for (let key in recipes) {
         let recipe = recipes[key];
-        // if (recipe.category == 'sandwich') {
-        //     continue;
-        // }
         recipe.ingredients.forEach(ingredient => {
             if (ids.includes(ingredient.id)) {
                 let linkedRecipe = recipes[ingredient.id];
@@ -105,7 +94,6 @@ function linkIngredients(recipes) {
 function readFilesInFolder(folder) {
     let recipes = {};
     let tags = [];
-    // let dirPath = path.join(__dirname, 'recipes', folder);
     fs.readdirSync(folder).forEach(fileName => {
         let filePath = path.join(folder, fileName);
         let stats = fs.statSync(filePath);
@@ -116,14 +104,19 @@ function readFilesInFolder(folder) {
             recipes[key] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
             recipes[key].id = key;
             recipes[key].category = folder;
-            recipes[key].image = addImages(key);
+            recipes[key].images = addImages(key);
             recipes[key].tags.forEach(tag => {
-                if (!tags.includes(tag)) {
-                    tags.push(tag);
+                if (!tags.some(e => e.tag === tag)) {
+                    tags.push({tag:tag, cnt:1});
+                } else {
+                    tags.find(e => e.tag === tag).cnt++;
                 }
             });
         }
     });
+    // sort based on occurence
+    tags = tags.sort((a, b) => (a.cnt < b.cnt) ? 1 : -1);
+    tags = tags.map(e => e.tag);
     return {recipes: recipes, tags: tags};
 }
 
