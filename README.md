@@ -4,19 +4,19 @@
 Just a small website based recipe collection for me.
 
 # How does it look?
-Check out the live version at [https://sandr0-recipes.herokuapp.com/](https://sandr0-recipes.herokuapp.com/)
+Check out the live version at [https://sandr0.tk/recipes/](https://sandr0.tk/recipes/)
 
-# How can I use it?
+<!--# How can I use it?
 Clone/fork this rep.
 
 ```bash
 npm install
 npm run build
-npm start
+npm run start
 ```
 
 Run `npm run zip` and copy `recipes.tar.gz` to your server and extract it there. Run `npm install` on your server.
-
+-->
 # How can I add recipes?
 Recipe
 - Add &lt;name&gt;.json to a subfolder in recipes.
@@ -24,10 +24,10 @@ Recipe
 ```json
 {
     "name": "<The name of your recipe>",
-    "portions": "<optional>", 
+    "portions": "<optional>",
     "ingredients": [
         {
-            "id": "<id, Used for preparation. If a recipe with that id exists, it will automatically get linked>", 
+            "id": "<id, Used for preparation. If a recipe with that id exists, it will automatically get linked>",
             "amount": "<optional>",
             "name": "<name which is displayed>"
         },
