@@ -1,10 +1,9 @@
 #!/usr/bin/env node
 
-/* global require, process, __dirname */
+/* global require, process */
 
 const express = require('express');
 const compression = require('compression');
-const path = require('path');
 const app = express();
 let port = process.env.PORT;
 if (port == null || port == '') {
@@ -20,17 +19,13 @@ let general = Object.values(helper.extractGeneralInfo(recipes));
 
 app.locals.compileDebug = true;
 app.locals.cache = false;
-app.use((req, res, next) => {
-    setHeaders(res);
-    next();
-});
 
 app.use(express.static('public', {
-    setHeaders: function(res, path) {
+    setHeaders: function(res) {
         setHeaders(res);
     }
 }));
-// app.use(compression());
+app.use(compression());
 
 app.get('/api/all', (req, res) => {
     setHeaders(res);

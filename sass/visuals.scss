@@ -1,36 +1,36 @@
-$highlight-dark: #db6;
 $highlight-light: #d72;
-$background-dark: #333;
 $background-light: #ddd;
 $color-light: #333;
+$highlight-bg-light: #ccc;
+
+$highlight-dark: #db6;
+$background-dark: #333;
 $color-dark: #ddd;
+$highlight-bg-dark: #444;
 
 .light-mode {
     color: $color-light;
     background-color: $background-light;
 }
 
+span.type {
+    background-image: radial-gradient(25px, #fff, #0000);
+}
+
 .light-mode {
     a, a:hover {
         color: $highlight-light !important;
     }
-    span.type {
-        background-image: radial-gradient(25px, #fff, #0000);
-    }
     .highlight{
-        background:$background-light;
-    }
-    .fa-sync-alt {
-        font-size:3em;
-        color:$background-light;
+        background: $highlight-bg-light;
     }
     .tags:hover {
         background: $background-light;
     }
     .tags {
-        background: #ccc;
+        background: $highlight-bg-light;
         color: $highlight-light;
-        border: 2px solid #bbb;
+        border-color: #bbb;
     }
 }
 
@@ -43,23 +43,16 @@ $color-dark: #ddd;
     a, a:hover {
         color: $highlight-dark !important;
     }
-    span.type {
-        background-image: radial-gradient(25px, #fff, #0000);
-    }
     .highlight{
-        background:#555;
-    }
-    .fa-sync-alt {
-        font-size:3em;
-        color:#555;
+        background:$highlight-bg-dark;
     }
     .tags:hover {
         background: $background-dark;
     }
     .tags {
-        background: #444;
+        background: $highlight-bg-dark;
         color: $highlight-dark;
-        border: 2px solid #555;
+        border-color: #555;
     }
 }
 
@@ -68,6 +61,7 @@ $color-dark: #ddd;
     padding: 2px 10px;
     margin: 2px;
     border-radius: 5px;
+    border: 2px solid;
 }
 .tags:hover {
     text-decoration: none;

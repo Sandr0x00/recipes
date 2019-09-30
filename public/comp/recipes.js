@@ -1,7 +1,6 @@
 /* global loadingComp, dialogComp, tagTranslator */
 
 import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
-import { unsafeHTML } from 'https://unpkg.com/lit-html/directives/unsafe-html.js?module';
 import {BaseComp} from './base.js';
 
 class Recipes extends BaseComp {
@@ -32,7 +31,6 @@ class Recipes extends BaseComp {
         }
         dialogComp.close();
         loadingComp.close();
-        console.log(this.data);
         return html`
 <div class="col-12"><h1>${title}</h1></div>
 <div class="col-12">${this.tags.map(t => this.singleTag(t))}</div>
@@ -56,9 +54,11 @@ ${this.data.map(i => this.single(i))}`;
             let bgImg = new Image();
             bgImg.onload = () => {
                 $('#' + elem.id).css('background-image', 'url("images/thumbnail_' + elem.images[0] + '")');
+                $('#' + elem.id).removeClass('blur');
             };
             bgImg.onerror = () => {
                 $('#' + elem.id).css('background-image', 'url("icons/unknown.svg")');
+                $('#' + elem.id).removeClass('blur');
             };
             bgImg.src = 'images/thumbnail_' + elem.images[0];
         }
@@ -71,7 +71,7 @@ ${this.data.map(i => this.single(i))}`;
         }
         return html`
 <figure class="col-6 col-sm-4 col-md-3 col-lg-2 recipeLinkDiv">
-  <a id="${r.id}" onclick="loadingComp.navigate('/${r.id}');" class="lazy recipeLink">
+  <a id="${r.id}" onclick="loadingComp.navigate('/${r.id}');" style="background-image: url('icons/unknown.svg')" class="recipeLink">
     <figcaption class="text-center">${r.name}</figcaption>
   </a>
   ${type}

@@ -25,7 +25,6 @@
         "chai": "^4.2.0",
         "eslint": "^6.5.0",
         "jquery": "^3.4.1",
-        "jquery-lazy": "^1.7.10",
         "jsonschema": "^1.2.4",
         "mocha": "^6.2.1",
         "node-sass": "^4.12.0",

@@ -11,6 +11,9 @@
   background-position-x: center;
   background-position-y: center;
   height: 350px;
+}
+
+.placeholder, .trans {
   @include transition(all .5s linear);
 }
 
