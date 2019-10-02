@@ -56,7 +56,9 @@ const tagTranslator = {
     'dressing': 'Dresssing',
     'cheese': 'Käse'
 };
-// For test only -.-
-module.exports = {
-    tagTranslator: tagTranslator
-};
+if (typeof module !== 'undefined' && module.exports) {
+    // For test only -.-
+    module.exports = {
+        tagTranslator: tagTranslator
+    };
+}
