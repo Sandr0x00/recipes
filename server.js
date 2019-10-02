@@ -78,15 +78,17 @@ app.listen(port, '0.0.0.0', (err) => {
 
 function setHeaders(res) {
     res.setHeader('X-XSS-ProtectionType', '"1; mode=block"');
-    res.setHeader('X-Frame-Options', 'SAMEORIGIN');
+    res.setHeader('X-Frame-Options', 'deny');
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Strict-Transport-Security', '"max-age=31536000; includeSubDomains; preload"');
     res.setHeader('Content-Security-Policy',
-        'default-src \'self\';'
+        'default-src \'none\';'
         + 'img-src \'self\';'
         + 'style-src \'self\' \'unsafe-inline\' use.fontawesome.com;'
-        + 'script-src \'self\' \'unsafe-inline\' \'unsafe-eval\' unpkg.com;'
-        + 'font-src use.fontawesome.com;');
+        + 'script-src \'self\' \'unsafe-inline\' unpkg.com;'
+        + 'font-src use.fontawesome.com;'
+        + 'connect-src \'self\';'
+        + 'frame-ancestors \'none\';');
     res.setHeader('X-Permitted-Cross-Domain-Policies', '"none"');
     res.setHeader('Referrer-Policy', 'no-referrer');
     res.setHeader('Feature-Policy', 'accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'; sync-xhr \'none\'');

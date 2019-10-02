@@ -75,7 +75,6 @@ function fadeInIngredients() {
     }
 }
 
-$('.lazy').Lazy();
 $('figcaption').fitText(0.9);
 
 $( document ).ready(function() {
