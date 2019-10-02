@@ -187,7 +187,7 @@ describe('Recipe images', () => {
 });
 
 describe('Tag translation', () => {
-    let translate = require('../public/tags.js').tagTranslator;
+    let translate = require('../js/tags.js');
     let h = require('../helper.js');
     let tags = h.loadJSON()['tags'];
 

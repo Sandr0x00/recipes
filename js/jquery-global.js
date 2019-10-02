@@ -1,5 +1,8 @@
 /* global loadRecipe, dialogComp */
-'use strict';
+
+import jquery from 'jquery';
+import $ from 'jquery';
+window.jQuery = jquery;
 
 function isMD() {
     // let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
@@ -27,6 +30,7 @@ function isMD() {
 isMD();
 
 function fadeOutIngredients() {
+    let $ = window.jQuery;
     if ($('#ingredients').hasClass('d-none')) {
         return;
     }
@@ -74,8 +78,6 @@ function fadeInIngredients() {
         }, 100);
     }
 }
-
-$('figcaption').fitText(0.9);
 
 $( document ).ready(function() {
     $('.fadeOut').on('click', fadeOutIngredients);

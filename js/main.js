@@ -1,5 +1,5 @@
-import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
-import Navigo from 'https://unpkg.com/navigo@7.1.2/lib/navigo.es.js';
+import {html} from 'lit-element';
+import Navigo from 'navigo';
 import {BaseComp} from './base.js';
 
 class Router extends BaseComp {

@@ -1,7 +1,6 @@
 /* global module */
 
-// eslint-disable-next-line
-const tagTranslator = {
+module.exports = {
     'dessert': 'Dessert',
     'egg': 'Ei',
     'chocolate': 'Schokolade',
@@ -56,9 +55,3 @@ const tagTranslator = {
     'dressing': 'Dresssing',
     'cheese': 'Käse'
 };
-if (typeof module !== 'undefined' && module.exports) {
-    // For test only -.-
-    module.exports = {
-        tagTranslator: tagTranslator
-    };
-}

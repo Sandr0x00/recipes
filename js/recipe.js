@@ -1,8 +1,10 @@
-/* global loadingComp, dialogComp, tagTranslator */
+/* global loadingComp, dialogComp */
 
-import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
-import { unsafeHTML } from 'https://unpkg.com/lit-html/directives/unsafe-html.js?module';
+import {html} from 'lit-element';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
+import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
+import $ from 'jquery';
 
 class Recipe extends BaseComp {
 
@@ -153,7 +155,7 @@ ${images}
             }
             let bgImg = new Image();
             bgImg.onload = () => {
-                element.style['background-image'] = 'url(' + bgImg.src + ')';
+                element.style['background-image'] = `url('${bgImg.src}')`;
                 element.classList.remove('blur');
             };
             bgImg.src = large;

@@ -1,6 +1,7 @@
-/* global loadingComp, dialogComp, tagTranslator */
+/* global loadingComp, dialogComp */
 
-import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
+import {html} from 'lit-element';
+import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
 
 class Recipes extends BaseComp {
@@ -41,7 +42,7 @@ ${this.data.map(i => this.single(i))}`;
         if (changedProperties.has('data')) {
             this.lazyLoadImg();
             for (const elem of this.data) {
-                $('#' + elem.id).fitText();
+                jQuery('#' + elem.id).fitText();
             }
         }
         if (changedProperties.has('load')) {
@@ -51,16 +52,21 @@ ${this.data.map(i => this.single(i))}`;
 
     async lazyLoadImg(){
         for (const elem of this.data) {
+            let element = document.getElementById(elem.id);
+            let img = 'icons/unknown.svg';
+            if (elem.images[0]) {
+                img = 'images/thumbnail_' + elem.images[0];
+            }
             let bgImg = new Image();
             bgImg.onload = () => {
-                $('#' + elem.id).css('background-image', 'url("images/thumbnail_' + elem.images[0] + '")');
-                $('#' + elem.id).removeClass('blur');
+                element.style['background-image'] = `url("${img}")`;
+                element.classList.remove('blur');
             };
             bgImg.onerror = () => {
-                $('#' + elem.id).css('background-image', 'url("icons/unknown.svg")');
-                $('#' + elem.id).removeClass('blur');
+                element.style['background-image'] = 'url("icons/unknown.svg")';
+                element.classList.remove('blur');
             };
-            bgImg.src = 'images/thumbnail_' + elem.images[0];
+            bgImg.src = img;
         }
     }
 

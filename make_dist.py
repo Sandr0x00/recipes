@@ -15,5 +15,5 @@ if __name__ == "__main__":
     shutil.copy('server.js', 'dist')
     shutil.copy('package.json', 'dist')
     shutil.copy('package-lock.json', 'dist')
-    shutil.copytree('public', 'dist/public')
+    shutil.copytree('public', 'dist/public', ignore=shutil.ignore_patterns('.gitignore'))
     shutil.copytree('recipes', 'dist/recipes')

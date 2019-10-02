@@ -1,7 +1,7 @@
 /* global loadingComp */
 
-import {html} from 'https://unpkg.com/lit-element/lit-element.js?module';
-import { unsafeHTML } from 'https://unpkg.com/lit-html/directives/unsafe-html.js?module';
+import {html} from 'lit-element';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import {BaseComp} from './base.js';
 
 export class DialogComp extends BaseComp {
