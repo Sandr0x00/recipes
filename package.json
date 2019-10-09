@@ -8,11 +8,10 @@
     "scripts": {
         "build:css": "node-sass sass -o public/css --output-style compressed",
         "build:js": "rollup -c",
-        "build": "npm run build:css && npm run build:js && ./copy.py && npm run resize",
-        "zip": "tar -czf recipes.tar.gz public recipes views package.json package-lock.json helper.js server.js LICENSE",
         "resize": "node resize.js",
+        "build": "npm run build:css && npm run build:js && ./copy.py && npm run resize",
         "test": "eslint . && mocha",
-        "dist": "./make_dist.py",
+        "dist": "npm run test && ./make_dist.py",
         "start": "node server.js"
     },
     "dependencies": {

@@ -1,11 +1,14 @@
 #!/usr/bin/env node
 
-/* global require, process */
+/* global require */
 
 const express = require('express');
 const compression = require('compression');
+const fs = require('fs');
 const app = express();
-let port = process.env.PORT;
+const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+
+let port = config.port;
 if (port == null || port == '') {
     port = 8082;
 }

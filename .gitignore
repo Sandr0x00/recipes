@@ -5,3 +5,4 @@ recipes.tar.gz
 public/lib/*
 !public/lib/integrity.json
 dist/
+config.json

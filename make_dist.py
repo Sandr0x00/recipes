@@ -11,9 +11,14 @@ if __name__ == "__main__":
         shutil.rmtree(folder)
         os.mkdir(folder)
 
+    print("[ ] Copying files.", end="\r")
+
     shutil.copy('helper.js', 'dist')
     shutil.copy('server.js', 'dist')
+    shutil.copy('config.json', 'dist')
     shutil.copy('package.json', 'dist')
     shutil.copy('package-lock.json', 'dist')
     shutil.copytree('public', 'dist/public', ignore=shutil.ignore_patterns('.gitignore'))
     shutil.copytree('recipes', 'dist/recipes')
+
+    print("[\x1B[32m✓\x1b[0m] Copy files finished.")

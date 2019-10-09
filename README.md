@@ -14,6 +14,16 @@ Check out the live version at [https://sandr0.tk/recipes/](https://sandr0.tk/rec
 
 Clone/fork this rep.
 
+Create `config.json` next to `server.js`:
+
+```json
+{
+  "port": 8082
+}
+```
+
+Run:
+
 ```bash
 npm install
 npm run build
