@@ -15,7 +15,7 @@ export default {
             namedExports: {
                 'node_modules/bootstrap/dist/js/bootstrap.min.js' : ['bootstrap']
             }
-        }),
+		}),
 		// minify
 		terser()
 	]

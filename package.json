@@ -19,6 +19,11 @@
         "express": "^4.17.1"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-svg-core": "^1.2.25",
+        "@fortawesome/free-brands-svg-icons": "^5.11.2",
+        "@fortawesome/free-regular-svg-icons": "^5.11.2",
+        "@fortawesome/free-solid-svg-icons": "^5.11.2",
+        "@webcomponents/webcomponentsjs": "^2.3.0",
         "acorn": "^7.1.0",
         "bootstrap": "^4.3.1",
         "chai": "^4.2.0",

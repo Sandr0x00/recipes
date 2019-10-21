@@ -5,6 +5,9 @@ import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
 import $ from 'jquery';
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faExternalLinkAlt, faBars } from '@fortawesome/free-solid-svg-icons';
+
 
 class Recipe extends BaseComp {
 
@@ -60,7 +63,7 @@ ${images}
             if (ingredient.link) {
                 i = html`
 <span> </span>
-<a onclick="loadingComp.navigate('${ingredient.link}')"><i class="fas fa-external-link-alt"></i></a>`;
+<a onclick="loadingComp.navigate('${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html)}</a>`;
             }
             ingredients = html`
 ${ingredients}
@@ -107,7 +110,7 @@ ${ingredients}
 ${images}
 <div class="row" id="recipe">
     <div class="col-md-4 justify-content-center grow animate" id="ingredients">
-        <a class="fadeOut"><h2 class="text-center"><i class="fas fa-bars"></i> Zutaten</h2></a>
+        <a class="fadeOut"><h2 class="text-center">${unsafeHTML(icon(faBars).html)} Zutaten</h2></a>
         <div class="h-100 o-hidden" id="inglist">
             <ul class="list-unstyled">
                 ${ingredients}

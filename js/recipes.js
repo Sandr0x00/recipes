@@ -3,6 +3,7 @@
 import {html} from 'lit-element';
 import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
+import $ from 'jquery';
 
 class Recipes extends BaseComp {
 
@@ -42,7 +43,7 @@ ${this.data.map(i => this.single(i))}`;
         if (changedProperties.has('data')) {
             this.lazyLoadImg();
             for (const elem of this.data) {
-                jQuery('#' + elem.id).fitText();
+                $('#' + elem.id).fitText();
             }
         }
         if (changedProperties.has('load')) {

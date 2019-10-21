@@ -4,6 +4,11 @@ import jquery from 'jquery';
 import $ from 'jquery';
 window.jQuery = jquery;
 
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faMoon as farMoon } from '@fortawesome/free-regular-svg-icons';
+import { faMoon as fasMoon } from '@fortawesome/free-solid-svg-icons';
+
+
 function isMD() {
     // let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
     // let sm = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-sm');
@@ -87,15 +92,14 @@ $( document ).ready(function() {
         $(this).off('click');
         $(this).removeAttr('href');
     } );
+    $('#moon').html(icon(farMoon).html);
     $('#moon').on('click', function() {
-        if ($(this).hasClass('far')) {
-            $(this).removeClass('far');
-            $(this).addClass('fas');
+        if ($('body').hasClass('dark-mode')) {
+            $(this).html(icon(fasMoon).html);
             $('body').removeClass('dark-mode');
             $('body').addClass('light-mode');
         } else {
-            $(this).removeClass('fas');
-            $(this).addClass('far');
+            $(this).html(icon(farMoon).html);
             $('body').removeClass('light-mode');
             $('body').addClass('dark-mode');
         }
