@@ -12,7 +12,9 @@
         "build": "npm run build:css && npm run build:js && ./copy.py && npm run resize",
         "test": "eslint . && mocha",
         "dist": "npm run test && ./make_dist.py",
-        "start": "node server.js"
+        "start": "node server.js",
+        "kill": "kill `cat pid`",
+        "nohup": "(nohup node server.js 2>&1 &) && echo $! > pid"
     },
     "dependencies": {
         "compression": "^1.7.4",

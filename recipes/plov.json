@@ -2,7 +2,7 @@
     "name": "Plov",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["meat", "rice", "stew", "russian"],
+    "tags": ["meat", "rice", "stew", "russian", "main"],
     "ingredients": [
         {
             "id": "fleisch",
@@ -11,7 +11,7 @@
         },
         {
             "id": "reis",
-            "amount": "250g",
+            "amount": "750g",
             "name": "Reis"
         },
         {
@@ -35,13 +35,13 @@
         },
         {
             "id": "gewuerze",
-            "name": "Salz und Pfeffer"
+            "name": "Kreuzkümmel, Salz und Pfeffer"
         }
     ],
     "preparation": [
-        "{fleisch} in Würfel schneiden. In einem Topf {oel} erhitzen und das {fleisch} anbraten. Mit {gewuerze} würzen.",
-        "{zwiebel} in Streifen schneiden, {knoblauch} klein hacken und mit andünsten. Mit Wasser ablöschen.",
-        "{moehre} in grobe Stifte schneiden. Auf das {fleisch} ohne umrühren schichten. Ungekochten {reis} auf die {moehre} schichten. Wasser auffüllen, so dass der Reis ca. 2 cm mit Wasser überdeckt ist. Deckel rauf und bei kleiner Hitze ca. 30-45 min köcheln lassen.",
-        "Endlich umrühren und anrichten."
+        "{fleisch} in Würfel schneiden. In einem Topf {oel} erhitzen und das {fleisch} anbraten. Mit viel {gewuerze} würzen.",
+        "{zwiebel} in Streifen schneiden, {knoblauch} klein hacken und beides mit andünsten.",
+        "{moehre} in grobe Stifte schneiden. Auf das {fleisch} ohne umrühren schichten. Ungekochten {reis} auf die {moehre} schichten. Wasser auffüllen, so dass der Reis ca. 2 cm mit Wasser überdeckt ist. Bei kleiner Hitze mit Deckel ca. 30-45 min köcheln lassen.",
+        "Nun umrühren und anrichten."
     ]
 }
