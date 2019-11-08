@@ -1,5 +1,24 @@
 @import 'helper';
 
+@mixin spin($duration, $iter, $timing) {
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: $duration;
+    -webkit-animation-iteration-count: $iter;
+    -webkit-animation-timing-function: $timing;
+    -moz-animation-name: spin;
+    -moz-animation-duration: $duration;
+    -moz-animation-iteration-count: $iter;
+    -moz-animation-timing-function: $timing;
+    -ms-animation-name: spin;
+    -ms-animation-duration: $duration;
+    -ms-animation-iteration-count: $iter;
+    -ms-animation-timing-function: $timing;
+    animation-name: spin;
+    animation-duration: $duration;
+    animation-iteration-count: $iter;
+    animation-timing-function: $timing;
+}
+
 html {
     overflow-y:scroll;
 }
@@ -83,6 +102,7 @@ figcaption {
     width: 100%;
     color: #fff;
 }
+
 .recipeLinkDiv::before {
     content: "";
     display: block;
@@ -105,22 +125,7 @@ span.type {
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: linear;
-    -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
-    -ms-animation-iteration-count: infinite;
-    -ms-animation-timing-function: linear;
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    @include spin(4000ms, infinite, linear);
 }
 @-ms-keyframes spin {
     from { -ms-transform: rotate(0deg); }
