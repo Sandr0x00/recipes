@@ -1,0 +1,51 @@
+{
+    "name": "Vegetarische Frikadelle",
+    "type": "pot",
+    "tags": ["main", "vegi"],
+    "ingredients": [
+        {
+            "id": "reis",
+            "amount": "75g",
+            "name": "Reis"
+        },
+        {
+            "id": "ei",
+            "amount": "1",
+            "name": "Ei"
+        },
+        {
+            "id": "moehre",
+            "amount": "1",
+            "name": "Möhre"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "semmel",
+            "amount": "1",
+            "name": "Semmel"
+        },
+        {
+            "id": "emmentaler",
+            "amount": "75g",
+            "name": "Emmentaler"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        },
+        {
+            "id": "bruehe",
+            "name": "Gemüsebrühe"
+        }
+    ],
+    "preparation": [
+        "{reis} mit doppelter Menge {bruehe} aufkochen.",
+        "{emmentaler}, {moehre}, {zwiebel} und {semmel} zerkleinern. Alles mit {ei} vermengen und mit {gewuerze} würzen.",
+        "15 Minuten ziehen lassen.",
+        "Frikadellen formen und in Butter goldbraun braten."
+    ]
+}
