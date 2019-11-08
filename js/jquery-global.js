@@ -8,6 +8,8 @@ import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faMoon as farMoon } from '@fortawesome/free-regular-svg-icons';
 import { faMoon as fasMoon } from '@fortawesome/free-solid-svg-icons';
 
+import { setCookie, dark, light } from './cookies.js';
+
 
 function isMD() {
     // let xs = window.getComputedStyle(document.documentElement).getPropertyValue('--breakpoint-xs');
@@ -92,16 +94,19 @@ $( document ).ready(function() {
         $(this).off('click');
         $(this).removeAttr('href');
     } );
-    $('#moon').html(icon(farMoon).html);
+    $('#moon').html(icon($('body').hasClass(dark()) ? farMoon : fasMoon).html);
+
     $('#moon').on('click', function() {
-        if ($('body').hasClass('dark-mode')) {
+        if ($('body').hasClass(dark())) {
+            setCookie('theme', light());
             $(this).html(icon(fasMoon).html);
-            $('body').removeClass('dark-mode');
-            $('body').addClass('light-mode');
+            $('body').removeClass(dark());
+            $('body').addClass(light());
         } else {
+            setCookie('theme', dark());
             $(this).html(icon(farMoon).html);
-            $('body').removeClass('light-mode');
-            $('body').addClass('dark-mode');
+            $('body').removeClass(light());
+            $('body').addClass(dark());
         }
     });
 

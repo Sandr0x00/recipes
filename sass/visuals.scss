@@ -8,7 +8,7 @@ $background-dark: #333;
 $color-dark: #ddd;
 $highlight-bg-dark: #444;
 
-.light-mode {
+.light {
     color: $color-light;
     background-color: $background-light;
 }
@@ -17,7 +17,7 @@ span.type {
     background-image: radial-gradient(25px, #fff, #0000);
 }
 
-.light-mode {
+.light {
     a, a:hover {
         color: $highlight-light !important;
     }
@@ -34,12 +34,12 @@ span.type {
     }
 }
 
-.dark-mode {
+.dark {
     color: $color-dark;
     background-color: $background-dark;
 }
 
-.dark-mode {
+.dark {
     a, a:hover {
         color: $highlight-dark !important;
     }
