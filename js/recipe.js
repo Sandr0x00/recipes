@@ -105,7 +105,7 @@ ${ingredients}
         loadingComp.close();
         return html`
 <div class="col-12">
-<h1><a onclick="loadingComp.navigate('/')">Recipe</a> - ${this.data.name}</h1>
+<h1><a id="mainLink" onclick="loadingComp.navigate('/')">Recipe</a> - ${this.data.name}</h1>
 </div>
 ${images}
 <div class="row" id="recipe">
@@ -130,6 +130,13 @@ ${images}
         if (changedProperties.has('data') && this.data) {
             window.recipeComp = document.getElementById('recipeComp');
             this.lazyLoadImg();
+            $('#mainLink').off();
+            document.getElementById('mainLink').addEventListener('auxclick', e => {
+                if (e.which == 2) {
+                    e.preventDefault();
+                    window.open('/', '_blank');
+                }
+            });
         }
         if (changedProperties.has('recipe') && this.recipe) {
             this.loadStuff();

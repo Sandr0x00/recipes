@@ -27,9 +27,9 @@ class Recipes extends BaseComp {
         let title = html``;
         if (this.load.startsWith('tag/')) {
             let translated = tagTranslator[this.load.split('/')[1]];
-            title = html`<a onclick="loadingComp.navigate('/')">Rezepte</a> - ${translated}`;
+            title = html`<a id="mainLink" onclick="loadingComp.navigate('/')">Rezepte</a> - ${translated}`;
         } else {
-            title = html`<a onclick="loadingComp.navigate('/');loadingComp.close();">Rezepte</a>`;
+            title = html`<a id="mainLink" onclick="loadingComp.navigate('/');loadingComp.close();">Rezepte</a>`;
         }
         dialogComp.close();
         loadingComp.close();
@@ -44,7 +44,24 @@ ${this.data.map(i => this.single(i))}`;
             this.lazyLoadImg();
             for (const elem of this.data) {
                 $('#' + elem.id).fitText();
+                let obj = document.getElementById(elem.id);
+                obj.addEventListener('click', () => {
+                    loadingComp.navigate(`/${elem.id}`);
+                });
+                obj.addEventListener('auxclick', e => {
+                    if (e.which == 2) {
+                        e.preventDefault();
+                        window.open(`/#!/${elem.id}`, '_blank');
+                    }
+                });
             }
+            $('#mainLink').off();
+            document.getElementById('mainLink').addEventListener('auxclick', e => {
+                if (e.which == 2) {
+                    e.preventDefault();
+                    window.open('/', '_blank');
+                }
+            });
         }
         if (changedProperties.has('load')) {
             this.loadStuff();
@@ -78,7 +95,7 @@ ${this.data.map(i => this.single(i))}`;
         }
         return html`
 <figure class="col-6 col-sm-4 col-md-3 col-lg-2 recipeLinkDiv">
-  <a id="${r.id}" onclick="loadingComp.navigate('/${r.id}');" style="background-image: url('icons/unknown.svg')" class="recipeLink">
+  <a id="${r.id}" style="background-image: url('icons/unknown.svg')" class="recipeLink">
     <figcaption class="text-center">${r.name}</figcaption>
   </a>
   ${type}
