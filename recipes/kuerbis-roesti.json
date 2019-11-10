@@ -1,0 +1,31 @@
+{
+    "name": "Kürbis Rösti",
+    "type": "pan",
+    "tags": ["vegi", "main", "potato"],
+    "ingredients": [
+        {
+            "id": "kuerbis",
+            "amount": "300g",
+            "name": "Kuerbis"
+        },
+        {
+            "id": "kartoffel",
+            "amount": "4",
+            "name": "Kartoffeln"
+        },
+        {
+            "id": "ei",
+            "amount": "2",
+            "name": "Eier"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Muskatnuss, Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{kartoffel} und {kuerbis} schälen und grob raspeln.",
+        "Mit {ei}, {gewuerze} verrühren.",
+        "Rösti in Öl von beiden Seiten goldbraun braten."
+    ]
+}
