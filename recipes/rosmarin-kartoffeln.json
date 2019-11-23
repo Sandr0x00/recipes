@@ -1,0 +1,31 @@
+{
+    "name": "Rosmarin Kartoffeln",
+    "portions": "2 Portions",
+    "type": "oven",
+    "tags": ["vegi", "side", "main"],
+    "ingredients": [
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "kartoffel",
+            "amount": "5",
+            "name": "Kartoffeln"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Rosmarin, Pfeffer, Salz und Tymian"
+        },
+        {
+            "id": "oel",
+            "name": "Öl"
+        }
+    ],
+    "preparation": [
+        "{kartoffel} achteln.",
+        "{knoblauch} klein hacken und mit {gewuerze} und {oel} vermischen. Kartoffeln damit bestreichen.",
+        "Bei mittlerer Hitze 20 Minuten backen."
+    ]
+}

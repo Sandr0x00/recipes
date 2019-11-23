@@ -1,0 +1,60 @@
+{
+    "name": "Currywurst",
+    "portions": "1 Portion",
+    "type": "pan",
+    "tags": ["main", "meat"],
+    "ingredients": [
+        {
+            "id": "bratwurst",
+            "amount": "2",
+            "name": "Bratwürste"
+        },
+        {
+            "id": "pommes",
+            "name": "Pommes"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "currypulver",
+            "amount": "2 TL",
+            "name": "Currypulver"
+        },
+        {
+            "id": "tomatenmark",
+            "amount": "1 EL",
+            "name": "Tomatenmark"
+        },
+        {
+            "id": "chili",
+            "name": "Chili"
+        },
+        {
+            "id": "tomaten",
+            "amount": "200ml",
+            "name": "passierte Tomaten"
+        },
+        {
+            "id": "apfelsaft",
+            "amount": "50ml",
+            "name": "Apfelsaft"
+        },
+        {
+            "id": "ketchup",
+            "amount": "2 EL",
+            "name": "Tomatenketchup"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{pommes} im Ofen zubereiten.",
+        "{zwiebel} würfeln und in Öl andünsten. {currypulver} und {tomatenmark} dazu geben und anschwitzen. Mit {tomaten}, {ketchup} und {apfelsaft} ablöschen. {chili} hinzufügen. Aufkochen und ca. 10 Minuten köcheln lassen. Mit Salz und Pfeffer würzen.",
+        "{bratwurst} in einer Pfanne anbraten."
+    ]
+}
