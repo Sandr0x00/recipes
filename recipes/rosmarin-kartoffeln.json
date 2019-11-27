@@ -2,7 +2,7 @@
     "name": "Rosmarin Kartoffeln",
     "portions": "2 Portions",
     "type": "oven",
-    "tags": ["vegi", "side", "main"],
+    "tags": ["vegi", "side", "main", "potato"],
     "ingredients": [
         {
             "id": "knoblauch",

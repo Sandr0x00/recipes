@@ -2,7 +2,7 @@
     "name": "Ofengemüse",
     "portions": "2",
     "type": "oven",
-    "tags": ["vegi", "main"],
+    "tags": ["vegi", "main", "potato"],
     "ingredients": [
         {
             "id": "kuerbis",

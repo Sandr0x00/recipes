@@ -17,7 +17,6 @@ module.exports = {
     'pizza': 'Pizza',
     'wrap': 'Wrap',
     'dough': 'Teig',
-    'cookie': 'Cookie',
     'pasta': 'Pasta',
     'rice': 'Reis',
     'stew': 'Eintopf',
@@ -25,7 +24,6 @@ module.exports = {
     'chicken': 'Hühnchen',
     'austrian': 'Österreichisch',
     'main': 'Hauptgericht',
-    'brownie': 'Brownie',
     'meat': 'Fleisch',
     'part': 'Teil',
     'bbq': 'Gegrilltes',
@@ -53,5 +51,6 @@ module.exports = {
     'pudding': 'Pudding',
     'sirup': 'Sirup',
     'dressing': 'Dresssing',
-    'cheese': 'Käse'
+    'cheese': 'Käse',
+    'spicy': 'Scharf'
 };

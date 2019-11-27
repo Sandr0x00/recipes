@@ -2,7 +2,7 @@
     "name": "Chili con carne",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["meat", "main"],
+    "tags": ["meat", "main", "spicy"],
     "ingredients": [
         {
             "id": "hackfleisch",

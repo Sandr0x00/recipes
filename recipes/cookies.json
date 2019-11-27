@@ -1,7 +1,7 @@
 {
     "name": "Cookies",
     "type": "oven",
-    "tags": ["cookie"],
+    "tags": ["cake", "chocolate"],
     "ingredients": [
         {
             "id": "butter",
