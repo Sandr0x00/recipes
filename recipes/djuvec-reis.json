@@ -1,0 +1,62 @@
+{
+    "name": "Djuvec-Reis",
+    "portions": "2 Portionen",
+    "type": "pot",
+    "tags": ["vegi", "main", "side", "rice"],
+    "ingredients": [
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "reis",
+            "amount": "250g",
+            "name": "Langkornreis"
+        },
+        {
+            "id": "wasser",
+            "amount": "350ml",
+            "name": "Wasser"
+        },
+        {
+            "id": "tomaten",
+            "amount": "500g",
+            "name": "Stückige Tomaten"
+        },
+        {
+            "id": "bruehe",
+            "amount": "2 EL",
+            "name": "Gemüsebrühe"
+        },
+        {
+            "id": "erbsen",
+            "amount": "1,5 Tassen",
+            "name": "Erbsen"
+        },
+        {
+            "id": "ajvar",
+            "amount": "3 EL",
+            "name": "Ajvar"
+        },
+        {
+            "id": "paprika",
+            "amount": "1/2",
+            "name": "Paprika"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Paprikapulver"
+        }
+    ],
+    "preparation": [
+        "{zwiebel} und {knoblauch} klein schneiden und in Butter andünsten.",
+        "{reis}, {tomaten}, {bruehe}, {ajvar} und {wasser} hinzufügen und mit {gewuerze} abschmecken.",
+        "{erbsen} und gewürfelte {paprika} hinzugeben und 20 Minuten köcheln lassen."
+    ]
+}

@@ -16,7 +16,7 @@
         },
         {
             "id": "sahne",
-            "amount": "200ml",
+            "amount": "250ml",
             "name": "Sahne"
         },
         {
@@ -35,7 +35,7 @@
     ],
     "preparation": [
         "{nudeln} mit 1 Becher {sahne} und {wasser} in Topf, würzen, {schinken} kleinschneiden und dazu.",
-        "Bei mittlerer Hitze ziehen lassen, manchmal umrühren.",
+        "{gewuerz} dazu und bei mittlerer Hitze ca. 25 Minuten ziehen lassen, manchmal umrühren.",
         "Wenn Nudeln weich sind {kaese} dazu und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
     ]
 }
