@@ -33,8 +33,8 @@ npm run start
 Deploy (still manually):
 
 ```bash
-npm run zip
-# copy recipes.tar.gz to your server and extract it there, everything now on server
+npm run dist
+# copy contents of dist directory to your server
 npm install --production
 ./server
 ```

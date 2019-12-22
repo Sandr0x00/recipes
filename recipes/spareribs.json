@@ -2,7 +2,7 @@
     "name": "Spareribs",
     "portions": "2 Spareribs",
     "type": "bbq",
-    "tags": ["bbq", "main"],
+    "tags": ["bbq", "main", "meat"],
     "ingredients": [
         {
             "id": "spareribs",

@@ -2,7 +2,7 @@
     "name": "Kartoffelgratin",
     "portions": "4 Portionen",
     "type": "oven",
-    "tags": ["potato", "auflauf"],
+    "tags": ["potato", "auflauf", "vegi"],
     "ingredients": [
         {
             "id": "milch",

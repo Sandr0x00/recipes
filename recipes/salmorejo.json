@@ -1,7 +1,7 @@
 {
     "name": "Salmorejo",
     "portions": "4 Portionen",
-    "tags": ["soup"],
+    "tags": ["soup", "vegi"],
     "ingredients": [
         {
             "id": "tomate",

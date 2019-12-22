@@ -1,7 +1,7 @@
 {
     "name": "Pizza",
     "type": "oven",
-    "tags": ["pizza", "main"],
+    "tags": ["pizza", "main", "vegi"],
     "ingredients": [
         {
             "id": "pizzateig",
