@@ -1,2 +1,4 @@
 index.js
 index.js.map
+lib/*
+!lib/.gitkeep

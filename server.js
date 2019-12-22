@@ -63,6 +63,13 @@ app.get('/api/tag/:tag', (req, res) => {
     }
 });
 
+app.get('/favicon.ico', (req, res) => {
+    setHeaders(res)
+    res.setHeader('Content-Type', 'image/png')
+    var s = fs.createReadStream(`public/favicon_${Math.floor(Math.random() * 6)}.png`);
+    s.pipe(res)
+})
+
 app.get('*', (req, res) => {
     setHeaders(res);
     console.log(req.params['0']);
