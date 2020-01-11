@@ -116,7 +116,6 @@ function readFilesInFolder(folder) {
     });
     // sort based on occurence
     tags = tags.sort((a, b) => (a.cnt < b.cnt) ? 1 : -1);
-    tags = tags.map(e => e.tag);
     return {recipes: recipes, tags: tags};
 }
 

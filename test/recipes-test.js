@@ -192,8 +192,9 @@ describe('Tag translation', () => {
     let tags = h.loadJSON()['tags'];
 
     tags.forEach((tag) => {
-        it('tag ' + tag + ' should be translated', () => {
-            assert(tag in translate);
+        let t = tag.tag;
+        it('tag ' + t + ' should be translated', () => {
+            assert(t in translate);
         });
     });
 });

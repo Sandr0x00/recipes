@@ -35,7 +35,7 @@ class Recipes extends BaseComp {
         loadingComp.close();
         return html`
 <div class="col-12"><h1>${title}</h1></div>
-<div class="col-12">${this.tags.map(t => this.singleTag(t))}</div>
+<div class="col-12 nowrap">${this.tags.map(t => this.singleTag(t))}</div>
 ${this.data.map(i => this.single(i))}`;
     }
 
@@ -103,8 +103,10 @@ ${this.data.map(i => this.single(i))}`;
     }
 
     singleTag(tag) {
-        let translated = tagTranslator[tag];
-        return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}">${translated}</div>`;
+        let t = tag.tag;
+        let c = tag.cnt;
+        let translated = tagTranslator[t];
+        return html`<a class="tags" onclick="loadingComp.navigate('/tag/${t}')" id="tag_${t}">${translated} (${c})</div>`;
     }
 
     // TODO: merge promises

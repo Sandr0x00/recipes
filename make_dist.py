@@ -14,6 +14,7 @@ if __name__ == "__main__":
     print("[ ] Copying files.", end="\r")
 
     shutil.copy('helper.js', 'dist')
+    shutil.copy('Makefile', 'dist')
     shutil.copy('server.js', 'dist')
     shutil.copy('config.json', 'dist')
     shutil.copy('package.json', 'dist')

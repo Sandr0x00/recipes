@@ -1,0 +1,44 @@
+{
+    "name": "Herzhafte Bananenpancakes",
+    "portions": "6 Pancakes",
+    "type": "pan",
+    "tags": ["american", "side"],
+    "ingredients": [
+        {
+            "id": "banana",
+            "amount": "1",
+            "name": "Banane"
+        },
+        {
+            "id": "milch",
+            "amount": "125ml",
+            "name": "Milch"
+        },
+        {
+            "id": "mehl",
+            "amount": "75g",
+            "name": "Mehl"
+        },
+        {
+            "id": "chili",
+            "name": "Chili"
+        },
+        {
+            "id": "backpulver",
+            "amount": "2g",
+            "name": "Backpulver"
+        },
+        {
+            "id": "salz",
+            "name": "Salz"
+        },
+        {
+            "id": "butter",
+            "name": "Butter"
+        }
+    ],
+    "preparation": [
+        "{banana}, {milch}, {mehl}, {backpulver} und {chili} vermengen und zu einem Pfannkuchenteig zerdrücken. Mit {salz} abschmecken.",
+        "{butter} bei mittlerer Hitze schmelzen. Kleine Pancakes machen."
+    ]
+}

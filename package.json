@@ -5,17 +5,6 @@
     "license": "MIT",
     "private": true,
     "repository": "github:Sandr0x00/recipes",
-    "scripts": {
-        "build:css": "node-sass sass -o public/css --output-style compressed",
-        "build:js": "rollup -c",
-        "resize": "node resize.js",
-        "build": "npm run build:css && npm run build:js && ./copy.py && npm run resize",
-        "test": "eslint . && mocha",
-        "dist": "npm run test && ./make_dist.py",
-        "start": "node server.js",
-        "kill": "kill `cat pid`",
-        "nohup": "(nohup node server.js 2>&1 &) && echo $! > pid"
-    },
     "dependencies": {
         "compression": "^1.7.4",
         "express": "^4.17.1"
