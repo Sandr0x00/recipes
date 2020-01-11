@@ -11,5 +11,5 @@ jobs:
   include:
     - stage: unit test
       script:
-        - npm run build
-        - npm run test
+        - make build
+        - make test

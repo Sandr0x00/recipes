@@ -170,7 +170,7 @@ describe('Recipe images', () => {
     let imagesPath = path.join(__dirname, '..', 'public', 'images');
     for (let key in recipes) {
         let recipe = recipes[key];
-        let images = recipe.image;
+        let images = recipe.images;
         it('images in ' + key + ' should exist', () => {
             if (images) { // checked in 'Recipe file contents'
                 if (images.length == 1) {

@@ -1,4 +1,4 @@
-.PHONY: build-css build-js build resize dist
+.PHONY: build-css build-js build resize dist test
 
 build-css:
 	sass sass:public/css -s compressed
@@ -14,7 +14,7 @@ build: build-css build-js resize
 
 test:
 	eslint .
-	mocha
+	npm test
 
 dist: build test
 	./make_dist.py
