@@ -1,0 +1,43 @@
+{
+    "name": "Gerösteter Auberginen Salat",
+    "portions": "1 Portion",
+    "type": "oven",
+    "tags": ["albanian", "main", "side", "vegi"],
+    "ingredients": [
+        {
+            "id": "paprika",
+            "name": "Spitze grüne Paprika"
+        },
+        {
+            "id": "aubergine",
+            "amount": "1/2",
+            "name": "Aubergine"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "3",
+            "name": "Knoblauchzehen"
+        },
+        {
+            "id": "oel",
+            "name": "Olivenöl"
+        },
+        {
+            "id": "salz",
+            "name": "Salz"
+        },
+        {
+            "id": "essig",
+            "name": "Weinessig"
+        },
+        {
+            "id": "petersilie",
+            "name": "Petersilie"
+        }
+    ],
+    "preparation": [
+        "{aubergine} und {paprika} in Scheiben schneiden. Mit {oel} und {salz} 15min bei 200°C backen.",
+        "{knoblauch} und {petersilie} klein schneiden, zur {aubergine} hinzufügen und 5 Minuten ziehen lassen.",
+        "{essig} hinzufügen."
+    ]
+}

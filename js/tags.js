@@ -52,5 +52,6 @@ module.exports = {
     'sirup': 'Sirup',
     'dressing': 'Dresssing',
     'cheese': 'Käse',
-    'spicy': 'Scharf'
+    'spicy': 'Scharf',
+    'albanian': 'Albanisch'
 };

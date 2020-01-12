@@ -19,8 +19,7 @@ dist: build test
 	./make_dist.py
 
 serve:
-	sass sass:public/css -s compressed --watch
-	node server.js
+	sass sass:public/css -s compressed --watch& node server.js
 
 start:
 	node server.js
