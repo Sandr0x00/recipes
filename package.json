@@ -10,6 +10,7 @@
         "express": "^4.17.1"
     },
     "scripts": {
+        "compile": "rollup -c",
         "test": "eslint . && mocha"
     },
     "devDependencies": {

@@ -4,7 +4,7 @@ build-css:
 	sass sass:public/css -s compressed
 
 build-js:
-	rollup -c
+	npm run compile
 
 resize:
 	node resize.js
