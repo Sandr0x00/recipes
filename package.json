@@ -10,7 +10,7 @@
         "express": "^4.17.1"
     },
     "scripts": {
-        "test": "mocha"
+        "test": "eslint . && mocha"
     },
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.26",

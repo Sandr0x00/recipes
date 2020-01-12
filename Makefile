@@ -13,7 +13,6 @@ build: build-css build-js resize
 	./copy.py
 
 test:
-	eslint .
 	npm test
 
 dist: build test
