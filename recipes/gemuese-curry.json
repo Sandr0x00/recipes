@@ -1,0 +1,73 @@
+{
+    "name": "Gemüse Curry",
+    "portions": "2 Portionen",
+    "type": "pot",
+    "tags": ["vegi", "main"],
+    "ingredients": [
+        {
+            "id": "quinoa",
+            "amount": "1/2 Tasse",
+            "name": "Quinoa"
+        },
+        {
+            "id": "tomate",
+            "amount": "1 Tasse",
+            "name": "Tomaten"
+        },
+        {
+            "id": "kuemmel",
+            "amount": "1 TL",
+            "name": "Kümmel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "chili",
+            "amount": "1/2 TL",
+            "name": "Chiliflocken"
+        },
+        {
+            "id": "kurkuma",
+            "amount": "1/2 TL",
+            "name": "Kurkuma"
+        },
+        {
+            "id": "kichererbsen",
+            "amount": "1 Tasse",
+            "name": "Kichererbsen"
+        },
+        {
+            "id": "champignons",
+            "amount": "1 Tasse",
+            "name": "Champignons"
+        },
+        {
+            "id": "blumenkohl",
+            "amount": "1 Tasse",
+            "name": "Blumenkohl"
+        },
+        {
+            "id": "cashew",
+            "amount": "1/4 Tasse",
+            "name": "Cashewnüsse"
+        },
+        {
+            "id": "rosinen",
+            "amount": "1/4 Tasse",
+            "name": "Rosinen"
+        },
+        {
+            "id": "spinat",
+            "amount": "1/2 Tasse",
+            "name": "Spinat"
+        }
+    ],
+    "preparation": [
+        "{quinoa} mit doppelter Menge Wasser 15min bei mittlerer Hitze köcheln lassen.",
+        "{tomate} mit restlichen Zutaten (außer {spinat}) in einen Topf geben und bei mittlerer Hitze kochen bis {champignons} und {blumenkohl} weich ist.",
+        "{spinat} unterrühren, 1-2 min warten, servieren."
+    ]
+}

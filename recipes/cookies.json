@@ -10,7 +10,7 @@
         },
         {
             "id": "zucker",
-            "amount": "100g",
+            "amount": "80g",
             "name": "brauner Zucker"
         },
         {
@@ -40,7 +40,7 @@
         },
         {
             "id": "schoki",
-            "amount": "200g",
+            "amount": "100g",
             "name": "Schokoladentropfen"
         },
         {
