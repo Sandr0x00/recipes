@@ -32,6 +32,12 @@ span.type {
         color: $highlight-light;
         border-color: #bbb;
     }
+    .recipeLink {
+        background-color: $background-light;
+    }
+    .selected {
+        background-color: $background-light;
+    }
 }
 
 .dark {
@@ -53,6 +59,12 @@ span.type {
         background: $highlight-bg-dark;
         color: $highlight-dark;
         border-color: #555;
+    }
+    .recipeLink {
+        background-color: $background-dark;
+    }
+    .selected {
+        background-color: $background-dark;
     }
 }
 

@@ -85,8 +85,6 @@ app.get('*', (req, res) => {
     console.log(req.params['0']);
     res.status(404);
     res.send();
-    // setHeaders(res);
-    // res.sendFile(path.join(__dirname + '/public/index.html'));
 });
 
 app.listen(port, '0.0.0.0', (err) => {
@@ -104,9 +102,9 @@ function setHeaders(res) {
     res.setHeader('Content-Security-Policy',
         'default-src \'none\';'
         + 'img-src \'self\';'
-        + 'style-src \'self\' \'unsafe-inline\' use.fontawesome.com;'
-        + 'script-src \'self\' \'unsafe-inline\' unpkg.com;'
-        + 'font-src use.fontawesome.com;'
+        + 'style-src \'self\' \'unsafe-inline\';'
+        + 'script-src \'self\' \'unsafe-inline\';'
+        + 'font-src \'none\';'
         + 'connect-src \'self\';'
         + 'frame-ancestors \'none\';');
     res.setHeader('X-Permitted-Cross-Domain-Policies', '"none"');

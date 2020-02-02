@@ -13,11 +13,11 @@ class Router extends BaseComp {
         super(); // Must call super in constructor
         window.router = new Navigo(null, true, '#!');
         window.router.on('/tag/:tag', (params) => {
-            this.route = html`<recipes-comp class="row" id="recipesComp" load="tag/${params.tag}"></recipes-comp>`;
+            this.route = html`<recipes-comp class="row" id="recipesComp" load="${params.tag}"></recipes-comp>`;
         }).on('/:recipe', (params) => {
             this.route = html`<recipe-comp id="recipeComp" recipe="${params.recipe}"></recipe-comp>`;
         }).on('*', () => {
-            this.route = html`<recipes-comp class="row" id="recipesComp" load="all"></recipes-comp>`;
+            this.route = html`<recipes-comp class="row" id="recipesComp" load=""></recipes-comp>`;
         }).resolve();
     }
 

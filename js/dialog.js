@@ -18,11 +18,13 @@ export class DialogComp extends BaseComp {
     }
 
     show(msg) {
+        dialogComp.style.display = 'grid';
         this.msg = msg;
         loadingComp.close();
     }
 
     close() {
+        dialogComp.style.display = 'none';
         this.msg = '';
     }
 
@@ -32,20 +34,9 @@ export class DialogComp extends BaseComp {
         } else {
             return html`
 <div class="bg" @click=${() => this.close()}></div>
-<div id="dialog" class="col-12 col-sm-12 offset-md-2 col-md-8 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
+<div id="dialog">
     ${unsafeHTML(this.msg)}
-</div>
-<style>
-#dialog {
-    z-index: 10;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #111;
-    border-radius: 10px;
-    padding: 10px 15px;
-}
-</style>`;
+</div>`;
         }
     }
 }

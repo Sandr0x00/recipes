@@ -1,17 +1,22 @@
 /* global loadingComp, dialogComp */
 
 import {html} from 'lit-element';
+import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
 import $ from 'jquery';
+import { icon } from '@fortawesome/fontawesome-svg-core';
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
 class Recipes extends BaseComp {
 
     static get properties() {
         return {
             load: String,
+            filter: Array,
             data: Array,
-            tags: Array
+            tags: Array,
+            filteredData: Array
         };
     }
 
@@ -20,29 +25,27 @@ class Recipes extends BaseComp {
         loadingComp.open();
         this.data = [];
         this.tags = [];
+        this.filter = [];
+        this.filteredData = [];
         this.loadTags();
     }
 
     render() {
-        let title = html``;
-        if (this.load.startsWith('tag/')) {
-            let translated = tagTranslator[this.load.split('/')[1]];
-            title = html`<a id="mainLink" onclick="loadingComp.navigate('/')">Rezepte</a> - ${translated}`;
-        } else {
-            title = html`<a id="mainLink" onclick="loadingComp.navigate('/');loadingComp.close();">Rezepte</a>`;
-        }
         dialogComp.close();
         loadingComp.close();
         return html`
-<div class="col-12"><h1>${title}</h1></div>
-<div class="col-12 nowrap">${this.tags.map(t => this.singleTag(t))}</div>
-${this.data.map(i => this.single(i))}`;
+<div class="grid-container">
+<div class="grid-title"><h1><a id="mainLink" onclick="loadingComp.navigate('/');loadingComp.close();">Rezepte</a></h1></div>
+<div class="grid-tags nowrap">${this.tags.map(t => this.singleTag(t))}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html)}</a></div>
+<div class="recipes-grid">
+${this.filteredData.map(i => this.single(i))}
+</div></div>`;
     }
 
     updated(changedProperties) {
-        if (changedProperties.has('data')) {
+        if (changedProperties.has('filteredData')) {
             this.lazyLoadImg();
-            for (const elem of this.data) {
+            for (const elem of this.filteredData) {
                 $('#' + elem.id).fitText();
                 let obj = document.getElementById(elem.id);
                 obj.addEventListener('click', () => {
@@ -64,12 +67,15 @@ ${this.data.map(i => this.single(i))}`;
             });
         }
         if (changedProperties.has('load')) {
+            if (this.load.length != 0) {
+                this.filter.push(this.load);
+            }
             this.loadStuff();
         }
     }
 
     async lazyLoadImg(){
-        for (const elem of this.data) {
+        for (const elem of this.filteredData) {
             let element = document.getElementById(elem.id);
             let img = 'icons/unknown.svg';
             if (elem.images[0]) {
@@ -94,7 +100,7 @@ ${this.data.map(i => this.single(i))}`;
             type = html`<span class="type"></span><span class="type" style='background-image: url("icons/${r.type}.svg"); background-size: 35px;'></span>`;
         }
         return html`
-<figure class="col-6 col-sm-4 col-md-3 col-lg-2 recipeLinkDiv">
+<figure class="recipeLinkDiv">
   <a id="${r.id}" style="background-image: url('icons/unknown.svg')" class="recipeLink">
     <figcaption class="text-center">${r.name}</figcaption>
   </a>
@@ -102,16 +108,37 @@ ${this.data.map(i => this.single(i))}`;
 </figure>`;
     }
 
+    setFilter(tag) {
+        let idx = this.filter.indexOf(tag);
+        if (idx >= 0) {
+            this.filter.splice(idx, 1);
+        } else {
+            this.filter.push(tag);
+        }
+        this.reloadFilters();
+    }
+
+    clearFilter() {
+        this.filter = [];
+        this.reloadFilters();
+    }
+
     singleTag(tag) {
         let t = tag.tag;
         let c = tag.cnt;
         let translated = tagTranslator[t];
-        return html`<a class="tags" onclick="loadingComp.navigate('/tag/${t}')" id="tag_${t}">${translated} (${c})</div>`;
+        let selected = false;
+        for (let f of this.filter) {
+            if (f == t) {
+                selected = true;
+            }
+        }
+        return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}">${translated} (${c})</div>`;
     }
 
     // TODO: merge promises
     loadStuff() {
-        fetch('api/' + this.load).then(response => {
+        fetch('api/all').then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Tag "${this.load}" does not exist, choose a tag from above.`);
             }
@@ -119,9 +146,29 @@ ${this.data.map(i => this.single(i))}`;
         }).then(response => response.json()
         ).then(data => {
             this.data = data;
+            this.reloadFilters();
         }).catch(err => {
             if (err) {
                 dialogComp.show(err);
+            }
+        });
+    }
+
+    reloadFilters() {
+        if (this.filter.length == 0) {
+            this.filteredData = this.data;
+            return;
+        }
+        this.filteredData = [];
+        this.data.forEach(d => {
+            let all = true;
+            this.filter.forEach(f => {
+                if (!d.tags.includes(f)) {
+                    all = false;
+                }
+            });
+            if (all) {
+                this.filteredData.push(d);
             }
         });
     }
