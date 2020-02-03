@@ -56,9 +56,6 @@
         'credits credits credits credits';
     width: 100%;
 }
-// .nowrap {
-//     grid-column: span 8;
-// }
 recipe-comp {
     display: block;
     max-width: 1200px;
@@ -123,9 +120,6 @@ recipe-comp {
             'preparation preparation preparation preparation'
             'tags tags tags credits';
     }
-    .grid-container {
-        margin: 0 10px;
-    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -140,14 +134,14 @@ recipe-comp {
             'ingredients preparation preparation preparation'
             'tags tags tags credits';
     }
-    .grid-container {
-        margin: 0 20px;
-    }
     #ingredients-vert {
         display: block;
     }
     #dialogComp {
         grid-template-columns: 10% 80% 10%;
+    }
+    .content {
+        padding: 0 20px;
     }
 }
 
@@ -156,18 +150,12 @@ recipe-comp {
     .recipes-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     }
-    .grid-container {
-        margin: 0 30px;
-    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .recipes-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    }
-    .grid-container {
-        margin: 0 40px;
     }
     #dialogComp {
         grid-template-columns: 20% 60% 20%;

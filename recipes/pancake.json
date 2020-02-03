@@ -2,7 +2,7 @@
     "name": "Pancake",
     "portions": "24 Pancakes",
     "type": "pan",
-    "tags": ["american", "dessert"],
+    "tags": ["american", "sweet"],
     "ingredients": [
         {
             "id": "milch",

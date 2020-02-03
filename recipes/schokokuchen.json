@@ -2,7 +2,7 @@
     "name": "Schokokuchen",
     "portions": "1 Kuchen",
     "type": "oven",
-    "tags": ["dessert", "chocolate", "cake"],
+    "tags": ["sweet", "chocolate"],
     "ingredients": [
         {
             "id": "milch",

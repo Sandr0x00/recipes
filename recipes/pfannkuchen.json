@@ -2,7 +2,7 @@
     "name": "Pfannkuchen",
     "portions": "9 Pfannkuchen",
     "type": "pan",
-    "tags": ["dessert", "main"],
+    "tags": ["sweet", "main"],
     "ingredients": [
         {
             "id": "milch",

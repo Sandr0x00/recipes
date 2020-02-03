@@ -92,7 +92,7 @@ function getSchema() {
             },
             type: {
                 type: 'string',
-                pattern: /^(wok|pan|pot|oven|bbq|hurricane|old-fashioned)$/
+                pattern: /^(wok|pan|pot|oven|bbq|hurricane|old-fashioned|longdrink)$/
             },
             tags: {
                 type: 'array',
@@ -143,6 +143,10 @@ function getSchema() {
                     required: true,
                     minLength: 2
                 }
+            },
+            garnish: {
+                type: 'string',
+                required: false,
             }
         }
     };

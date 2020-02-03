@@ -10,7 +10,6 @@ resize:
 	node resize.js
 
 build: build-css build-js resize
-	./copy.py
 
 test:
 	npm test

@@ -10,6 +10,7 @@ const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const process = require('process');
 
 if (process.pid) {
+    // safe PID for "make kill"
     fs.writeFile('pid', process.pid, (err) => {
         if (err) {
             throw err;

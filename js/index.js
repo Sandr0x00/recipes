@@ -1,5 +1,4 @@
 import './jquery-global.js';
-import 'bootstrap';
 import './jquery.fittext.js';
 import './dialog.js';
 import './loading.js';

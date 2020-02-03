@@ -1,8 +1,7 @@
 {
     "name": "Pina Colada",
-    "portions": "1 Glass",
     "type": "hurricane",
-    "tags": ["drink", "cream", "rum"],
+    "tags": ["drink"],
     "ingredients": [
         {
             "id": "rum",

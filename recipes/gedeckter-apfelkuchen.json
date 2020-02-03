@@ -1,7 +1,7 @@
 {
     "name": "Gedeckter Apfelkuchen",
     "type": "oven",
-    "tags": ["cake", "apple"],
+    "tags": ["sweet", "fruity"],
     "ingredients": [
         {
             "id": "mehl",

@@ -1,0 +1,51 @@
+{
+    "name": "Long Island Iced Tea",
+    "type": "longdrink",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "vodka",
+            "amount": "2cl",
+            "name": "Vodka"
+        },
+        {
+            "id": "gin",
+            "amount": "2cl",
+            "name": "Gin"
+        },
+        {
+            "id": "whiterum",
+            "amount": "2cl",
+            "name": "Weißer Rum"
+        },
+        {
+            "id": "tequila",
+            "amount": "2cl",
+            "name": "Tequila silber"
+        },
+        {
+            "id": "triplesec",
+            "amount": "2cl",
+            "name": "Triple Sec"
+        },
+        {
+            "id": "zitronensaft",
+            "amount": "1cl",
+            "name": "Zitronensaft"
+        },
+        {
+            "id": "sirup",
+            "amount": "1cl",
+            "name": "Sirup"
+        },
+        {
+            "id": "cola",
+            "name": "Cola"
+        }
+    ],
+    "preparation": [
+        "Alles außer {cola} mit Eis shaken und auf Eiswürfel abseihen.",
+        "Einen Spritzer Cola hinzufügen."
+    ],
+    "garnish": "Zitronenscheibe"
+}

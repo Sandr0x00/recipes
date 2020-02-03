@@ -23,8 +23,21 @@ function replace(regex, regexAmount, ingredient, preparation, preparationAmounts
     ];
 }
 
+const typeMapping = {
+    'huricane': 'Hurricaneglas',
+    'old-fashioned': 'Tumbler',
+    'longdrink': 'Longdrinkglas',
+};
+
 exports.formatPreparation = function(recipe) {
     // replace preparations
+    let type = typeMapping[recipe.type];
+    if (type) {
+        recipe.preparation.unshift(`Benötigte Utensilien: <i>${type}</i>`);
+    }
+    if (recipe.garnish) {
+        recipe.preparation.push(`Deko: <i>${recipe.garnish}</i>`);
+    }
     let preparation = JSON.stringify(recipe.preparation);
     let preparationAmounts = JSON.stringify(recipe.preparation);
     recipe.ingredients.forEach(ingredient => {

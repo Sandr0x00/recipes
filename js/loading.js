@@ -46,7 +46,7 @@ export class DialogErrorComp extends BaseComp {
             ];
             return html`
 <div class="bg"></div>
-<div class="text-center loading">
+<div class="loading">
 ${items[Math.floor(Math.random() * items.length)]}
 </div>`;
         }

@@ -1,6 +1,6 @@
 {
     "name": "Leberkäsburger",
-    "tags": ["burger", "sandwich", "main"],
+    "tags": ["burger", "main", "leberkas"],
     "ingredients": [
         {
             "id": "semmel",

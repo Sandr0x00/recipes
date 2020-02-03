@@ -112,10 +112,10 @@ ${ingredients}
             ingredientSwitch = html`<div class="justify-content-center ingredients" id="ingredients">
             <a @click=${() => { this.compact = !this.compact; }}><h2>Zutaten</h2></a>
             <div class="h-100 o-hidden" id="inglist">
-                <ul class="list-unstyled">
+                <ul>
                     ${ingredients}
                 </ul>
-                ${this.data.portions ? html`<h5>${this.data.portions}</h5>` : html``}
+                ${this.data.portions ? html`<h4>${this.data.portions}</h4>` : html``}
             </div>
         </div>`;
 

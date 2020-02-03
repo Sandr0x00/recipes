@@ -1,0 +1,24 @@
+{
+    "name": "Tequila Sunrise",
+    "type": "longdrink",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "tequila",
+            "amount": "4cl",
+            "name": "Tequila Silber"
+        },
+        {
+            "id": "grenadine",
+            "amount": "2cl",
+            "name": "Grenadine Sirup"
+        },
+        {
+            "id": "orangensaft",
+            "name": "Orangensaft"
+        }
+    ],
+    "preparation": [
+        "{tequila} ins Glas geben. Mit {orangensaft} auffüllen. {grenadine} hinzugeben. Mit Trinkhalm servieren."
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "name": "Sex on the Beach",
+    "type": "hurricane",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "orangensaft",
+            "amount": "3cl",
+            "name": "Orangensaft"
+        },
+        {
+            "id": "cranberry",
+            "amount": "3cl",
+            "name": "Cranberrysaft"
+        },
+        {
+            "id": "wodka",
+            "amount": "3cl",
+            "name": "Wodka"
+        },
+        {
+            "id": "pfirsichlikoer",
+            "amount": "1cl",
+            "name": "Pfirsichlikör"
+        }
+    ],
+    "preparation": [
+        "Eis ins Glas geben.",
+        "{wodka}, {pfirsichlikoer}, {orangensaft}, {cranberry} ins Glas geben."
+    ],
+    "garnish": "Cocktailkirsche und halbe Orangenscheibe auf einem Spieß."
+}
