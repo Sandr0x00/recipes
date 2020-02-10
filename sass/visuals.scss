@@ -1,12 +1,14 @@
-$highlight-light: #d72;
-$background-light: #ddd;
-$color-light: #333;
-$highlight-bg-light: #ccc;
+$highlight-light: #3D84A8;
+$background-light: #eeeeee;
+$color-light: #222222;
+$highlight-bg-light: #ABEDD8;
+$ligth-border: #46CDCF;
 
-$highlight-dark: #db6;
-$background-dark: #333;
-$color-dark: #ddd;
-$highlight-bg-dark: #444;
+$highlight-dark: #46CDCF;
+$background-dark: #222222;
+$color-dark: #dddddd;
+$highlight-bg-dark: #48466D;
+$dark-border: #3D84A8;
 
 .light {
     color: $color-light;
@@ -21,21 +23,15 @@ span.type {
     a, a:hover {
         color: $highlight-light !important;
     }
-    .highlight{
-        background: $highlight-bg-light;
-    }
-    .tags:hover {
-        background: $background-light;
+    .selected, .highlight {
+        background-color: $highlight-bg-light !important;
     }
     .tags {
-        background: $highlight-bg-light;
+        background-color: $background-light;
         color: $highlight-light;
-        border-color: #bbb;
+        border-color: $ligth-border;
     }
     .recipeLink {
-        background-color: $background-light;
-    }
-    .selected {
         background-color: $background-light;
     }
 }
@@ -49,21 +45,15 @@ span.type {
     a, a:hover {
         color: $highlight-dark !important;
     }
-    .highlight{
-        background:$highlight-bg-dark;
-    }
-    .tags:hover {
-        background: $background-dark;
+    .highlight, .selected{
+        background-color: $highlight-bg-dark !important;
     }
     .tags {
-        background: $highlight-bg-dark;
+        background-color: $background-dark;
         color: $highlight-dark;
-        border-color: #555;
+        border-color: $dark-border;
     }
     .recipeLink {
-        background-color: $background-dark;
-    }
-    .selected {
         background-color: $background-dark;
     }
 }

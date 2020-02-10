@@ -2,7 +2,7 @@
     "name": "Vegetarische Bolognese-Sauce",
     "portions": "4 Portionen",
     "type": "wok",
-    "tags": ["sauce", "main", "vegi"],
+    "tags": ["sauce", "main", "vegi", "vegan"],
     "ingredients": [
         {
             "id": "knoblauch",
@@ -10,14 +10,24 @@
             "name": "Knoblauchzehe"
         },
         {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
             "id": "haferflocken",
             "amount": "70g",
             "name": "Haferflocken"
         },
         {
-            "id": "tomaten",
+            "id": "ptomaten",
             "amount": "1 Pkg.",
             "name": "Passierte Tomaten"
+        },
+        {
+            "id": "tomate",
+            "amount": "2",
+            "name": "Tomaten"
         },
         {
             "id": "karotte",
@@ -47,7 +57,7 @@
         }
     ],
     "preparation": [
-        "{knoblauch} hacken und in Olivenöl anschwitzen (nur kurz). {tomaten} und {haferflocken} hinzugeben und kurz braten. {karotte} reiben und beimengen. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
+        "{zwiebel}, {karotte} und {knoblauch} hacken und in Olivenöl anschwitzen. {ptomaten}, {tomate} und {haferflocken} hinzugeben und kurz braten. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
         "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
     ]
 }

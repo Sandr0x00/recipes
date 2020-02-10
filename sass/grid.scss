@@ -148,16 +148,34 @@ recipe-comp {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .recipes-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(7, 1fr);
     }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .recipes-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(8, 1fr);
     }
     #dialogComp {
         grid-template-columns: 20% 60% 20%;
+    }
+}
+
+@media (min-width: 1930px) {
+    .recipes-grid {
+        grid-template-columns: repeat(10, 1fr);
+    }
+    #dialogComp {
+        grid-template-columns: 30% 40% 30%;
+    }
+}
+
+@media (min-width: 3840px) {
+    .recipes-grid {
+        grid-template-columns: repeat(18, 1fr);
+    }
+    #dialogComp {
+        grid-template-columns: 40% 20% 40%;
     }
 }

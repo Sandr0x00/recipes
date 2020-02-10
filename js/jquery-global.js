@@ -1,4 +1,4 @@
-/* global loadRecipe, dialogComp */
+/* global loadRecipe */
 
 import jquery from 'jquery';
 import $ from 'jquery';

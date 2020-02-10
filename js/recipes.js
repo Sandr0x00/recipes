@@ -35,11 +35,25 @@ class Recipes extends BaseComp {
         loadingComp.close();
         return html`
 <div class="grid-container">
-<div class="grid-title"><h1><a id="mainLink" onclick="loadingComp.navigate('/');loadingComp.close();">Rezepte</a></h1></div>
+<div class="grid-title"><h1><a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
 <div class="grid-tags nowrap">${this.tags.map(t => this.singleTag(t))}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html)}</a></div>
 <div class="recipes-grid">
 ${this.filteredData.map(i => this.single(i))}
 </div></div>`;
+    }
+
+    single(r) {
+        let type = '';
+        if (r.type) {
+            type = html`<span class="type"></span><span class="type" style='background-image: url("icons/${r.type}.svg"); background-size: 35px;'></span>`;
+        }
+        return html`
+<figure class="recipeLinkDiv">
+  <a id="${r.id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`/${r.id}`); }}>
+    <figcaption class="text-center">${r.name}</figcaption>
+  </a>
+  ${type}
+</figure>`;
     }
 
     updated(changedProperties) {
@@ -47,23 +61,16 @@ ${this.filteredData.map(i => this.single(i))}
             this.lazyLoadImg();
             for (const elem of this.filteredData) {
                 $('#' + elem.id).fitText();
-                let obj = document.getElementById(elem.id);
-                obj.addEventListener('click', () => {
-                    loadingComp.navigate(`/${elem.id}`);
-                });
-                obj.addEventListener('auxclick', e => {
-                    if (e.which == 2) {
-                        e.preventDefault();
-                        window.open(`/#!/${elem.id}`, '_blank');
-                    }
+                $('#' + elem.id).off();
+                $('#' + elem.id).on('auxclick', e => {
+                    e.preventDefault();
+                    window.open(`/#!/${elem.id}`, '_blank');
                 });
             }
             $('#mainLink').off();
-            document.getElementById('mainLink').addEventListener('auxclick', e => {
-                if (e.which == 2) {
-                    e.preventDefault();
-                    window.open('/', '_blank');
-                }
+            $('#mainLink').on('auxclick', e => {
+                e.preventDefault();
+                window.open('/', '_blank');
             });
         }
         if (changedProperties.has('load')) {
@@ -92,20 +99,6 @@ ${this.filteredData.map(i => this.single(i))}
             };
             bgImg.src = img;
         }
-    }
-
-    single(r) {
-        let type = '';
-        if (r.type) {
-            type = html`<span class="type"></span><span class="type" style='background-image: url("icons/${r.type}.svg"); background-size: 35px;'></span>`;
-        }
-        return html`
-<figure class="recipeLinkDiv">
-  <a id="${r.id}" style="background-image: url('icons/unknown.svg')" class="recipeLink">
-    <figcaption class="text-center">${r.name}</figcaption>
-  </a>
-  ${type}
-</figure>`;
     }
 
     setFilter(tag) {

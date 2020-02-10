@@ -13,7 +13,7 @@ fs.readdirSync(dirPath).forEach(fileName => {
         console.log('There should be no directory here!');
     } else if (stats.isFile()) {
         resizeOriginal(fileName, 1920, 1920, sharp.fit.inside);
-        resize('', fileName, 600, 600, sharp.fit.inside);
+        resize('', fileName, 600, 1920, sharp.fit.inside);
         resize('thumbnail_', fileName, 280, 430, sharp.fit.cover);
         resize('placeholder_', fileName, 32, 32, sharp.fit.inside);
     }

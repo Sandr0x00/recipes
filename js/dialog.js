@@ -1,4 +1,4 @@
-/* global loadingComp */
+/* global loadingComp, dialogComp */
 
 import {html} from 'lit-element';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';

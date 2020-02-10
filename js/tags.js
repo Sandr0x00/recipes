@@ -45,6 +45,7 @@ module.exports = {
     'spicy': 'Scharf',
     'sweet': 'Süß',
     'tuna': 'Thunfisch',
+    'vegan': 'Vegan',
     'vegi': 'Vegetarisch',
     'vodka': 'Wodka',
     'whisky': 'Whisky',

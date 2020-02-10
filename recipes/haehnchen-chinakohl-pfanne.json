@@ -1,0 +1,55 @@
+{
+    "name": "Hähnchen-Chinakohl-Pfanne",
+    "portions": "2 Portionen",
+    "type": "wok",
+    "tags": ["meat", "main", "asian"],
+    "ingredients": [
+        {
+            "id": "reis",
+            "amount": "150g",
+            "name": "Reis"
+        },
+        {
+            "id": "wasser",
+            "amount": "150ml",
+            "name": "Wasser"
+        },
+        {
+            "id": "kokosmilch",
+            "amount": "150ml",
+            "name": "Kokosmilch"
+        },
+        {
+            "id": "haehnchen",
+            "amount": "1",
+            "name": "Haehnchenbrustfilet"
+        },
+        {
+            "id": "chinakohl",
+            "amount": "1/2",
+            "name": "Chinakohl"
+        },
+        {
+            "id": "teriyaki-sosse",
+            "name": "Teriyakisoße"
+        },
+        {
+            "id": "cashew",
+            "name": "Cashewkerne"
+        },
+        {
+            "id": "fruehlingszwiebel",
+            "name": "Frühlingszwiebel"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{reis} in {wasser} und {kokosmilch} kochen.",
+        "{chinakohl}, {fruehlingszwiebel} und {cashew} kleinschneiden.",
+        "{haehnchen} in Streifen schneiden und braten. {teriyaki-sosse} hinzugeben und einkochen lassen. {chinakohl}, {cashew} und weiße {fruehlingszwiebel} hinzugeben und mit {gewuerze} abschmecken.",
+        "Mit {reis} anrichten und grüne {fruehlingszwiebel} darüber streuen."
+    ]
+}
