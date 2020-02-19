@@ -86,6 +86,9 @@ function getSchema() {
                 required: true,
                 minLength: 3
             },
+            headless: {
+                type: 'boolean'
+            },
             portions: {
                 type: 'string',
                 pattern: /^[0-9].*/
