@@ -14,16 +14,12 @@
         {
             "id": "pfeffer",
             "name": "Pfeffer"
-        },
-        {
-            "id": "butter",
-            "name": "Butter"
         }
     ],
     "preparation": [
         "{nudeln} fast fertig kochen.",
-        "Nudelwasser auf die hälfte einkochen.",
-        "{butter} und {parmesan} zum Nudelwasser geben und die {nudeln} wieder hinzufügen.",
+        "Nudelwasser reduzieren.",
+        "{parmesan} zum Nudelwasser geben und die {nudeln} wieder hinzufügen.",
         "Frischen {pfeffer} darüber streuen."
     ]
 }

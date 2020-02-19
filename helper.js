@@ -80,6 +80,9 @@ exports.loadJSON = function() {
 exports.extractGeneralInfo = (recipes) => {
     let info = {};
     for (const key in recipes) {
+        if (recipes[key].headless) {
+            continue;
+        }
         info[key] = {
             id: recipes[key].id,
             name: recipes[key].name,
@@ -99,6 +102,10 @@ function linkIngredients(recipes) {
             if (ids.includes(ingredient.id)) {
                 let linkedRecipe = recipes[ingredient.id];
                 ingredient['link'] = '/' + linkedRecipe.id;
+                if (!recipe['link']) {
+                    recipe['link'] = [];
+                }
+                recipe['link'].push(linkedRecipe.id);
             }
         });
     }

@@ -31,14 +31,16 @@ class Recipes extends BaseComp {
     }
 
     render() {
+        let tags = this.tags.map(t => this.singleTag(t));
+        let data = this.filteredData.map(i => this.single(i));
         dialogComp.close();
         loadingComp.close();
         return html`
 <div class="grid-container">
 <div class="grid-title"><h1><a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
-<div class="grid-tags nowrap">${this.tags.map(t => this.singleTag(t))}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html)}</a></div>
+<div class="grid-tags nowrap">${tags}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html)}</a></div>
 <div class="recipes-grid">
-${this.filteredData.map(i => this.single(i))}
+${data}
 </div></div>`;
     }
 

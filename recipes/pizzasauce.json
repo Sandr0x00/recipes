@@ -1,7 +1,7 @@
 {
     "name": "Pizzasauce",
-    "portions": "1 Pizza",
-    "tags": ["part", "pizza"],
+    "headless": true,
+    "tags": ["pizza"],
     "ingredients": [
         {
             "id": "passiertetomaten",

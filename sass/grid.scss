@@ -27,33 +27,35 @@
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
 }
-.ingredients {
-    grid-area: ingredients;
+
+.ingredients-hdr {
+    grid-area: ingredients-hdr;
+    grid-area: 2/1;
 }
 
-.preparation {
-    grid-area: preparation;
+
+.lol {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-area: lol;
 }
-.credits {
-    grid-area: credits;
-}
+
 .images {
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-area: images;
 }
 .recipe-tags {
-    grid-area: tags;
+    grid-area: 100/1;
+}
+.credits {
+    grid-area: 101/1;
 }
 .grid-recipe {
     display: grid;
     grid-template-areas:
         'images images images images'
-        'empty-1 one-image one-image empty-2'
-        'ingredients ingredients ingredients ingredients'
-        'preparation preparation preparation preparation'
-        'tags tags tags tags'
-        'credits credits credits credits';
+        '. one-image one-image .';
     width: 100%;
 }
 recipe-comp {
@@ -73,6 +75,20 @@ recipe-comp {
 
 #ingredients-vert {
     display: none;
+    width: 100%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 0;
+    letter-spacing: -4px;
+}
+#ingredients {
+    grid-area: 2/1;
+}
+.ingredients, .preparation {
+    padding: 5px 10px;
+}
+.preparation-hdr, #ingredients, #ingredients-vert, .hdr, .grid-title {
+    padding: 0px 10px;
 }
 
 #dialogComp {
@@ -112,13 +128,16 @@ recipe-comp {
     .grid-recipe .placeholder {
         height: 350px;
     }
+    .recipe-tags {
+        grid-area: 100/1/100/3;
+    }
+    .credits {
+        grid-area: 100/4;
+    }
     .grid-recipe {
         grid-template-areas:
             'images images images images'
-            'empty-1 one-image one-image empty-2'
-            'ingredients ingredients ingredients ingredients'
-            'preparation preparation preparation preparation'
-            'tags tags tags credits';
+            '. one-image one-image .';
     }
 }
 
@@ -130,12 +149,13 @@ recipe-comp {
     .grid-recipe {
         grid-template-areas:
             'images images images images'
-            'empty-1 one-image one-image empty-2'
-            'ingredients preparation preparation preparation'
-            'tags tags tags credits';
+            '. one-image one-image .';
     }
     #ingredients-vert {
         display: block;
+        width: 100%;
+        grid-area: 2/1/99/1;
+        padding-top: 6px;
     }
     #dialogComp {
         grid-template-columns: 10% 80% 10%;

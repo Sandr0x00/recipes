@@ -1,7 +1,7 @@
 {
     "name": "Flammkuchenteig",
-    "portions": "3 Flammkuchen",
-    "tags": ["part", "dough", "flammkuchen"],
+    "headless": true,
+    "tags": ["flammkuchen"],
     "ingredients": [
         {
             "id": "wasser",

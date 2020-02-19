@@ -15,7 +15,8 @@ class Recipe extends BaseComp {
         return {
             recipe: { type: String },
             data: { type: Object },
-            compact: Boolean
+            compact: Boolean,
+            all: Array
         };
     }
 
@@ -25,18 +26,22 @@ class Recipe extends BaseComp {
         this.recipe = null;
         this.data = null;
         this.compact = false;
+        this.all = [];
     }
 
     render() {
-        if (!this.data) {
+        if (!this.data || this.all.length == 0) {
             return html``;
         }
+
+        let preparation;
+        let tags;
+        let ingredients;
         // Images
         let images = html``;
         if (this.data.images) {
             if (this.data.images.length == 1) {
-                images = html`
-${images}
+                images = html`${images}
 <div class="recipeImage one-image">
     <div class="placeholderWrapper">
         <div class="placeholder blur" data-large='images/${this.data.images[0]}' style="background-image: url('images/placeholder_${this.data.images[0]}');">
@@ -45,8 +50,7 @@ ${images}
 </div>`;
             } else {
                 this.data.images.forEach(img => {
-                    images = html`
-${images}
+                    images = html`${images}
 <div class="recipeImage two-images">
     <div class="placeholderWrapper">
         <div class="placeholder blur" data-large='images/${img}' style="background-image: url('images/placeholder_${img}');">
@@ -58,78 +62,98 @@ ${images}
             images = html`<div class="images">${images}</div>`;
         }
 
-        // Ingredients
-        let ingredients = html``;
-        this.data.ingredients.forEach(ingredient => {
-            let i = html``;
-            if (ingredient.link) {
-                i = html`
-<span> </span>
-<a onclick="loadingComp.navigate('${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html)}</a>`;
-            }
-            ingredients = html`
-${ingredients}
-<li class="${ingredient.id} ingredient min-w" onmouseover="window.recipeComp.highlightOn('${ingredient.id}')" onmouseout="window.recipeComp.highlightOff('${ingredient.id}')">
-    ${(ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name}
-    ${i}
-</li>`;
+        for (let cnt = this.all.length - 1; cnt >= 0; cnt--) {
+            let y_pos = this.all.length - cnt;
+            let data = this.all[cnt];
 
-        });
+            // Ingredients
+            let new_ingredients = html``;
+            data.ingredients.forEach(ingredient => {
+                let i = html``;
+                if (ingredient.link) {
+                    i = html`<span> </span><a onclick="loadingComp.navigate('${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html)}</a>`;
+                }
+                new_ingredients = html`${new_ingredients}
+    <li class="${ingredient.id} ingredient min-w" onmouseover="window.recipeComp.highlightOn('${ingredient.id}')" onmouseout="window.recipeComp.highlightOff('${ingredient.id}')">
+        ${(ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name}
+        ${i}
+    </li>`;
 
-        // Tags
-        let tags = this.data.tags.map(tag => {
-            let translated = tagTranslator[tag];
-            return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}">${translated}</div>`;
-        });
-        tags = html`<div class="recipe-tags">${tags}</div>`;
-
-        // Preparation
-        let steps = html``;
-        if (this.compact) {
-            this.data.preparationAmounts.forEach(step => {
-                steps = html`${steps}<p>${unsafeHTML(step)}</p>`;
             });
-        } else {
-            this.data.preparation.forEach(step => {
-                steps = html`${steps}<p>${unsafeHTML(step)}</p>`;
-            });
-        }
-        let preparation = html`
-<div class="shrink animate preparation" id="preparation">
-    <h2><a @click=${() => { this.compact = !this.compact; }}>${unsafeHTML(icon(faBars).html)}</a> Zubereitung</h2>
-    ${steps}
+
+            ingredients = html`${ingredients}
+<div class="ingredients" style="grid-area: ${2 + y_pos}/1;">
+    <div class="h-100 o-hidden" id="inglist">
+        <ul>${new_ingredients}</ul>
+        ${data.portions ? html`<h4>${data.portions}</h4>` : html``}
+    </div>
 </div>`;
-/* <div class="shrink d-none animate preparation" id="preparation-amounts">
-    <h2>Zubereitung</h2>
-    ${stepsAmount}
-</div>`; */
-        let ingredientSwitch = html``;
-        if (this.compact) {
-            ingredientSwitch = html`<div class="ingredients text-center" id="ingredients-vert">
-            <a class="vert" @click=${() => { this.compact = !this.compact; }}><h2>Zutaten</h2></a>
-        </div>`;
-        } else {
-            ingredientSwitch = html`<div class="justify-content-center ingredients" id="ingredients">
-            <a @click=${() => { this.compact = !this.compact; }}><h2>Zutaten</h2></a>
-            <div class="h-100 o-hidden" id="inglist">
-                <ul>
-                    ${ingredients}
-                </ul>
-                ${this.data.portions ? html`<h4>${this.data.portions}</h4>` : html``}
-            </div>
-        </div>`;
 
+            // Tags
+            tags = this.data.tags.map(tag => {
+                let translated = tagTranslator[tag];
+                return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}">${translated}</div>`;
+            });
+            tags = html`<div class="recipe-tags">${tags}</div>`;
+
+            // Preparation
+            let steps = html``;
+            if (this.compact) {
+                data.preparationAmounts.forEach(step => {
+                    steps = html`${steps}<p>${unsafeHTML(step)}</p>`;
+                });
+            } else {
+                data.preparation.forEach(step => {
+                    steps = html`${steps}<p>${unsafeHTML(step)}</p>`;
+                });
+            }
+            let clazz = this.makeid(8);
+            preparation = html`${preparation}
+    <div class="${clazz} preparation">
+        ${steps}
+    </div>
+    <style>
+    .${clazz} {
+        grid-area: ${2 + y_pos + this.all.length + 1}/1;
+    }
+    @media (min-width: 768px) {
+        .${clazz} {
+            grid-area: ${2 + y_pos}/2;
+        }
+    }
+    </style>`;
+        }
+
+        let ingredientSwitch = html`<a @click=${() => { this.compact = !this.compact; }}><h2>Zutaten</h2></a>
+        `;
+        if (this.compact) {
+            ingredientSwitch = html`<div id="ingredients-vert">${ingredientSwitch}</div>`;
+        } else {
+            ingredientSwitch = html`<div id="ingredients">${ingredientSwitch}</div>${ingredients}`;
         }
 
         dialogComp.close();
         loadingComp.close();
         return html`
-<div>
+<div class="hdr">
 <h1><a id="mainLink" onclick="loadingComp.navigate('/')">Rezept</a> - ${this.data.name}</h1>
 </div>
 <div class="grid-recipe" id="recipe">
     ${images}
     ${ingredientSwitch}
+    <div class="preparation-hdr">
+        <h2><a @click=${() => { this.compact = !this.compact; }}>${unsafeHTML(icon(faBars).html)}</a> Zubereitung</h2>
+    </div>
+    <style>
+    .preparation-hdr {
+        grid-area: ${2 + this.all.length + 1}/1;
+    }
+    @media (min-width: 768px) {
+        .preparation-hdr {
+            grid-area: 2/2;
+        }
+    }
+    </style>
     ${preparation}
     ${tags}
     <div class="credits">
@@ -141,7 +165,7 @@ ${ingredients}
     }
 
     updated(changedProperties) {
-        if (changedProperties.has('data') && this.data) {
+        if (this.all && this.all.length != 0) {
             window.recipeComp = document.getElementById('recipeComp');
             this.lazyLoadImg();
             $('#mainLink').off();
@@ -156,6 +180,16 @@ ${ingredients}
             this.loadStuff();
         }
     }
+
+    makeid(length) {
+        let result           = '';
+        let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        let charactersLength = characters.length;
+        for ( let i = 0; i < length; i++ ) {
+           result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        }
+        return result;
+     }
 
     highlightOn(c) {
         $('.' + c).addClass('highlight');
@@ -186,6 +220,28 @@ ${ingredients}
         }
     }
 
+    loadAdditionalRecipes() {
+        if (!this.data || !this.data['link'] || this.data['link'].length == 0) {
+            return;
+        }
+        for (let l of this.data['link']) {
+            fetch('api/recipe/' + l).then(response => {
+                if (response.status === 404) {
+                    return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
+                }
+                return response;
+            }).then(response => response.json()
+            ).then(data => {
+                this.all.push(data);
+                this.requestUpdate();
+            }).catch(err => {
+                if (err) {
+                    dialogComp.show(err);
+                }
+            });
+        }
+    }
+
     loadStuff() {
         if (!this.recipe) {
             return;
@@ -197,7 +253,11 @@ ${ingredients}
             return response;
         }).then(response => response.json()
         ).then(data => {
+            this.all = [];
             this.data = data;
+            this.all.push(data);
+            this.requestUpdate();
+            this.loadAdditionalRecipes();
         }).catch(err => {
             if (err) {
                 dialogComp.show(err);

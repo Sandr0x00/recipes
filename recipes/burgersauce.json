@@ -1,7 +1,7 @@
 {
     "name": "Burgersauce",
-    "portions": "1 Burger",
-    "tags": ["part", "burger", "sauce"],
+    "headless": true,
+    "tags": ["burger", "sauce"],
     "ingredients": [
         {
             "id": "knoblauch",

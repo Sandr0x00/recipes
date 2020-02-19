@@ -1,7 +1,7 @@
 {
     "name": "Pizzateig",
-    "portions": "4 Pizzas",
-    "tags": ["dough", "part", "pizza"],
+    "headless": true,
+    "tags": ["pizza"],
     "ingredients": [
         {
             "id": "wasser",
@@ -35,10 +35,10 @@
         }
     ],
     "preparation": [
-        "{hefe} und {zucker} in {wasser} unter Rühren auflösen. {mehl} in eine Schüssel geben und in die Mitte eine Mulde drücken. Hefewasser in die Mulde gießen. Zu einem Vorteig verrühren. Diesen zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
-        "Danach {salz} und {oel} zum Teig geben und unterrühren. Den Pizzateig mit bemehlten Händen ca. 5 Minuten durchkneten bis er glatt und geschmeidig ist. Ist der Teig zu fest, etwas lauwarmes Wasser dazu geben. Ist der Pizzateig zu weich und klebrig, noch etwas Mehl unterkneten. Nach dem Kneten zu einer Kugel formen und zugedeckt an einem warmen Ort nochmal ca. 30 Minuten gehen lassen. Dabei sollte der Hefeteig sein Volumen in etwa verdoppeln.",
-        "Danach noch einmal ca. 10 Minuten kräftig durchkneten. Den Teig vierteln und auf einer mit Mehl bestäubten Arbeitsfläche ausrollen.",
+        "{hefe} und {zucker} in {wasser} unter Rühren auflösen. {mehl} hinzufügen und verrühren. Zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
+        "Danach {salz} und {oel} zum Teig geben und ca. 5 Minuten kneten. Zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen. Das Volumen sollte sich verdoppeln.",
+        "Danach noch einmal ca. 10 Minuten kräftig kneten teilen und ausrollen.",
         "Kann einen Tag im Kühlschrank aufbewahrt werden.",
-        "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben. Den Teig mit Tomatensoße für bestreichen und nach Belieben belegen. Die fertig belegte Pizza im vorgeheizten Backofen (Umluft: 250 °C / MAX) ca. 5-10 Minuten backen."
+        "Den ausgerollten Pizzateig auf ein mit Backpapier ausgelegtes Backblech geben."
     ]
 }
