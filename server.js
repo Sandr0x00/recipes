@@ -27,9 +27,9 @@ if (port == null || port == '') {
 let helper = require('./helper');
 
 let json = helper.loadJSON();
-let recipes = json.recipes;
 let tags = json.tags;
-let general = Object.values(helper.extractGeneralInfo(recipes));
+let general = Object.values(helper.extractGeneralInfo(json.recipes));
+json = null;
 
 app.locals.compileDebug = true;
 app.locals.cache = false;
@@ -49,29 +49,6 @@ app.get('/api/all', (req, res) => {
 app.get('/api/tags', (req, res) => {
     setHeaders(res);
     res.json(tags);
-});
-
-app.get('/api/recipe/:id', (req, res) => {
-    setHeaders(res);
-    let id = req.params.id;
-    if (id in recipes) {
-        res.json(recipes[id]);
-    } else {
-        res.status(404);
-        res.send();
-    }
-});
-
-app.get('/api/tag/:tag', (req, res) => {
-    setHeaders(res);
-    let r = general.filter((item) => item.tags.includes(req.params.tag));
-
-    if (r && r.length !== 0) {
-        res.json(r);
-    } else {
-        res.status(404);
-        res.send();
-    }
 });
 
 app.get('/favicon.ico', (req, res) => {

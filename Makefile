@@ -1,4 +1,4 @@
-.PHONY: build-css build-js build resize dist test
+.PHONY: build-css build-js build resize dist test recipes
 
 build-css:
 	sass sass:public/css -s compressed
@@ -7,15 +7,18 @@ build-js:
 	npm run compile
 
 resize:
-	node resize.js
+	node scripts/resize.js
 
-build: build-css build-js resize
+recipes:
+	node scripts/preprocess.js
+
+build: build-css build-js resize recipes
 
 test:
 	npm test
 
 dist: build test
-	./make_dist.py
+	scripts/make_dist.py
 
 serve:
 	sass sass:public/css -s compressed --watch& node server.js

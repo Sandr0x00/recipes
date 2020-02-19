@@ -1,6 +1,6 @@
 {
     "name": "Guacamole",
-    "tags": ["side", "avocado", "vegi"],
+    "tags": ["side", "vegi"],
     "ingredients": [
         {
             "id": "avocados",

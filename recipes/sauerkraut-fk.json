@@ -2,7 +2,7 @@
     "name": "Sauerkraut Flammkuchen",
     "portions": "3 Flammkuchen",
     "type": "oven",
-    "tags": ["flammkuchen", "sauerkraut", "main"],
+    "tags": ["flammkuchen", "main"],
     "ingredients": [
         {
             "id": "flammkuchenteig",

@@ -1,7 +1,7 @@
 {
     "name": "Pizzateig",
     "headless": true,
-    "tags": ["pizza"],
+    "tags": ["vegi"],
     "ingredients": [
         {
             "id": "wasser",

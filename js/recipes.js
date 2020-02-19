@@ -63,17 +63,17 @@ ${data}
             this.lazyLoadImg();
             for (const elem of this.filteredData) {
                 $('#' + elem.id).fitText();
-                $('#' + elem.id).off();
-                $('#' + elem.id).on('auxclick', e => {
-                    e.preventDefault();
-                    window.open(`/#!/${elem.id}`, '_blank');
-                });
+                // $('#' + elem.id).off();
+                // $('#' + elem.id).on('auxclick', e => {
+                //     e.preventDefault();
+                //     loadingComp.navigate(`/${elem.id}`, '_blank');
+                // });
             }
-            $('#mainLink').off();
-            $('#mainLink').on('auxclick', e => {
-                e.preventDefault();
-                window.open('/', '_blank');
-            });
+            // $('#mainLink').off();
+            // $('#mainLink').on('auxclick', e => {
+            //     e.preventDefault();
+            //     window.open('/', '_blank');
+            // });
         }
         if (changedProperties.has('load')) {
             if (this.load.length != 0) {

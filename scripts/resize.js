@@ -5,7 +5,7 @@ const path = require('path');
 const crypto = require('crypto');
 sharp.cache(false);
 
-const dirPath = path.join(__dirname, 'images');
+const dirPath = path.join(__dirname, '..', 'images');
 fs.readdirSync(dirPath).forEach(fileName => {
     let filePath = path.join(dirPath, fileName);
     let stats = fs.statSync(filePath);

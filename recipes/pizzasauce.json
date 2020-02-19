@@ -1,7 +1,7 @@
 {
     "name": "Pizzasauce",
     "headless": true,
-    "tags": ["pizza"],
+    "tags": ["vegi"],
     "ingredients": [
         {
             "id": "passiertetomaten",

@@ -2,7 +2,7 @@
     "name": "Spargel",
     "portions": "2 Portionen",
     "type": "oven",
-    "tags": ["main", "asparagus", "potato"],
+    "tags": ["main", "potato"],
     "ingredients": [
         {
             "id": "spargel",

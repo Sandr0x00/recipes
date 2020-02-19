@@ -225,7 +225,7 @@ class Recipe extends BaseComp {
             return;
         }
         for (let l of this.data['link']) {
-            fetch('api/recipe/' + l).then(response => {
+            fetch(`recipes/${l}.json`).then(response => {
                 if (response.status === 404) {
                     return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
                 }
@@ -246,7 +246,7 @@ class Recipe extends BaseComp {
         if (!this.recipe) {
             return;
         }
-        fetch('api/recipe/' + this.recipe).then(response => {
+        fetch(`recipes/${this.recipe}.json`).then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
             }
