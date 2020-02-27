@@ -2,7 +2,7 @@
     "name": "Hähnchen-Chinakohl-Pfanne",
     "portions": "2 Portionen",
     "type": "wok",
-    "tags": ["meat", "main", "asian"],
+    "tags": ["meat", "main", "asian", "chicken"],
     "ingredients": [
         {
             "id": "reis",

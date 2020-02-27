@@ -1,0 +1,41 @@
+{
+    "name": "Kidneybohnen Frikadelle",
+    "tags": ["vegi", "burger", "main"],
+    "portions": "4 Frikadellen",
+    "type": "pan",
+    "ingredients": [
+        {
+            "id": "kidneybohnen",
+            "amount": "1 Dose",
+            "name": "Kidneybohnen"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "cheddar",
+            "amount": "60g",
+            "name": "Cheddar"
+        },
+        {
+            "id": "mehl",
+            "amount": "60g",
+            "name": "Mehl"
+        },
+        {
+            "id": "ei",
+            "amount": "1",
+            "name": "Ei"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz & Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{kidneybohnen} in einem Sieb abtropfen lassen und abspülen. Zu Brei zerdrücken. {zwiebel} klein hacken und mit {cheddar}, {mehl} und {ei} hinzufügen. Mit {gewuerze} abschmecken.",
+        "Frikadelle formen und in Öl anbraten."
+    ]
+}

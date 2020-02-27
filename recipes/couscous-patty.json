@@ -1,0 +1,40 @@
+{
+    "name": "Couscous Frikadelle",
+    "tags": ["vegi", "burger", "main", "couscous"],
+    "portions": "4 Frikadellen",
+    "type": "pan",
+    "ingredients": [
+        {
+            "id": "couscous",
+            "amount": "100g",
+            "name": "Couscous"
+        },
+        {
+            "id": "bruehe",
+            "name": "Brühe"
+        },
+        {
+            "id": "petersilie",
+            "name": "Petersilie"
+        },
+        {
+            "id": "carrot",
+            "amount": "2",
+            "name": "Karotten"
+        },
+        {
+            "id": "ei",
+            "amount": "2",
+            "name": "Eier"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Kümmel (gemahlen), Salz & Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{couscous} 1:1 mit heißer {bruehe} ziehen lassen. {carrot} zerkleinern. {petersilie} waschen und fein hacken.",
+        "{couscous}, {carrot}, {petersilie}, {ei} mit {gewuerze} vermengen.",
+        "Frikadelle formen und in Öl anbraten."
+    ]
+}

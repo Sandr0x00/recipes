@@ -1,0 +1,52 @@
+{
+    "name": "Tomatensosse",
+    "portions": "2 Portionen",
+    "type": "pot",
+    "tags": ["main", "vegi"],
+    "ingredients": [
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauch"
+        },
+        {
+            "id": "tomaten",
+            "name": "Tomaten"
+        },
+        {
+            "id": "paprika",
+            "amount": "1/2",
+            "name": "Paprika"
+        },
+        {
+            "id": "spinat",
+            "name": "Spinat"
+        },
+        {
+            "id": "pass-tomaten",
+            "amount": "1/2 Pkg.",
+            "name": "Passierte Tomaten"
+        },
+        {
+            "id": "chili",
+            "name": "Chili"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz & Pfeffer"
+        },
+        {
+            "id": "bruehe",
+            "name": "Gemüsebrühe"
+        }
+    ],
+    "preparation": [
+        "{zwiebel} und {knoblauch} klein hacken und anschwitzen.",
+        "{tomaten}, {paprika}, {pass-tomaten}, {chili}, {bruehe} und {spinat} hinzugeben und mitkochen. Mit {gewuerze} abschmecken."
+    ]
+}
