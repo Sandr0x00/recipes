@@ -1,0 +1,47 @@
+{
+    "name": "Vegetarischer Wrap",
+    "portions": "1 Wrap",
+    "type": "pan",
+    "tags": ["main", "vegi", "wrap"],
+    "ingredients": [
+        {
+            "id": "tortilla",
+            "name": "Weizentortilla"
+        },
+        {
+            "id": "couscous-patty",
+            "amount": "3 kleine",
+            "name": "Couscous Patties"
+        },
+        {
+            "id": "champignons",
+            "name": "Champignons"
+        },
+        {
+            "id": "tomate",
+            "name": "Tomate"
+        },
+        {
+            "id": "zwiebel",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "salat",
+            "name": "Salat"
+        },
+        {
+            "id": "mozarella",
+            "amount": "1",
+            "name": "Mozarella"
+        },
+        {
+            "id": "sauce",
+            "name": "Soße"
+        }
+    ],
+    "preparation": [
+        "{couscous-patty} anbraten.",
+        "{salat}, {mozarella}, {tomate}, {zwiebel} schneiden.",
+        "Alles auf einem {tortilla} verteilen und zusammenrollen."
+    ]
+}

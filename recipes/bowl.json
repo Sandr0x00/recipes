@@ -1,0 +1,61 @@
+{
+    "name": "Bowl",
+    "portions": "1 Bowl",
+    "type": "pan",
+    "tags": ["main", "meat", "vegi"],
+    "ingredients": [
+        {
+            "id": "avocado",
+            "amount": "1/2",
+            "name": "Avocado"
+        },
+        {
+            "id": "couscous",
+            "name": "Couscous"
+        },
+        {
+            "id": "quinoa",
+            "name": "quinoa"
+        },
+        {
+            "id": "tomate",
+            "amount": "1",
+            "name": "Tomate"
+        },
+        {
+            "id": "haehnchen",
+            "amount": "1/2",
+            "name": "Hähnchenbrustfilet"
+        },
+        {
+            "id": "salat",
+            "name": "Salat"
+        },
+        {
+            "id": "gurke",
+            "name": "Gurke"
+        },
+        {
+            "id": "karotte",
+            "name": "Karotten"
+        },
+        {
+            "id": "hummus",
+            "name": "Hummus"
+        },
+        {
+            "id": "asia-sauce",
+            "name": "Süß-Sauer Soße"
+        },
+        {
+            "id": "bruehe",
+            "name": "Brühe"
+        }
+    ],
+    "preparation": [
+        "{karotte} in Streifen schneiden und mit {haehnchen} anbraten.",
+        "{couscous}, {quinoa} und {bruehe} mit 1.5 Facher Menge kochendem Wasser übergiesen und zugedeckt ziehen lassen.",
+        "{gurke}, {tomate}, {salat} in mundgerechte Stücke schneiden. Avocado halbieren.",
+        "Alles zusammen in eine Schüssel geben und {asia-sauce} dazu geben."
+    ]
+}
