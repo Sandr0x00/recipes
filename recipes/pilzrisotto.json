@@ -1,0 +1,55 @@
+{
+    "name": "Pilzrisotto",
+    "portions": "1 Portion",
+    "type": "wok",
+    "tags": ["vegi", "main", "rice"],
+    "ingredients": [
+        {
+            "id": "zwiebel",
+            "amount": "1/2",
+            "name": "Zwiebel"
+        },
+        {
+            "id": "knoblauch",
+            "amount": "1",
+            "name": "Knoblauchzehe"
+        },
+        {
+            "id": "reis",
+            "amount": "100g",
+            "name": "Risottoreis"
+        },
+        {
+            "id": "bruehe",
+            "amount": "300ml",
+            "name": "Brühe"
+        },
+        {
+            "id": "champignons",
+            "name": "Champignons"
+        },
+        {
+            "id": "birne",
+            "amount": "1",
+            "name": "Birne"
+        },
+        {
+            "id": "nuss",
+            "name": "Nüsse"
+        },
+        {
+            "id": "parmesan",
+            "name": "Parmesan"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{zwiebel} und {knoblauch} klein schneiden und anschwitzen.",
+        "{reis} hinzufügen und mit anschwitzen, {bruehe} hinzufügen und mit {gewuerze} abschmecken.",
+        "{champignons}, {birne} und {nuss} anbraten.",
+        "{parmesan} unter Risotto rühren und anrichten."
+    ]
+}

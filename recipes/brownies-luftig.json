@@ -1,0 +1,65 @@
+{
+    "name": "Luftige Brownies",
+    "portions": "9 Brownies (1g)",
+    "type": "oven",
+    "tags": ["sweet", "chocolate"],
+    "ingredients": [
+        {
+            "id": "butter",
+            "amount": "140g",
+            "name": "Butter"
+        },
+        {
+            "id": "schokiz",
+            "amount": "70g",
+            "name": "Zartbitter Schokolade"
+        },
+        {
+            "id": "mehl",
+            "amount": "100g",
+            "name": "Mehl"
+        },
+        {
+            "id": "kakao",
+            "amount": "2 EL",
+            "name": "Kakao"
+        },
+        {
+            "id": "schoki",
+            "amount": "100g",
+            "name": "Milchschokolade"
+        },
+        {
+            "id": "eier",
+            "amount": "3",
+            "name": "Eier"
+        },
+        {
+            "id": "zucker",
+            "amount": "100g",
+            "name": "Zucker"
+        },
+        {
+            "id": "milch",
+            "amount": "1 EL",
+            "name": "Milch"
+        },
+        {
+            "id": "vanillezucker",
+            "amount": "1 Pkg.",
+            "name": "Vanillezucker"
+        },
+        {
+            "id": "salz",
+            "name": "Salz"
+        }
+    ],
+    "preparation": [
+        "{schoki} und {schokiz} schmelzen.",
+        "{butter} hinzufügen.",
+        "{kakao}, {zucker}, {vanillezucker}, das {salz}, {milch} und {eier} in einer Schüssel verrühren.",
+        "{mehl} und Schokoladen-Butter Mischung hinzufügen.",
+        "Im Backofen auf mittlerer Schiene ca. 25 Minuten bei 180°C backen.",
+        "15 Minuten abkühlen lassen."
+    ]
+}

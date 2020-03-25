@@ -1,0 +1,30 @@
+{
+    "name": "Schweinefilet mit Karottensticks",
+    "portions": "1 Portion",
+    "type": "pan",
+    "tags": ["meat", "main"],
+    "ingredients": [
+        {
+            "id": "schweinefilet",
+            "amount": "1",
+            "name": "Schweinefilet"
+        },
+        {
+            "id": "quark",
+            "name": "Quark"
+        },
+        {
+            "id": "karotten",
+            "name": "Karotten"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer und Oregano"
+        }
+    ],
+    "preparation": [
+        "{karotten} in Sticks schneiden und anbraten.",
+        "{schweinefilet} mit anbraten.",
+        "Mit {quark} anrichten."
+    ]
+}
