@@ -1,0 +1,61 @@
+{
+    "name": "Bananenbrot",
+    "type": "pan",
+    "tags": ["chocolate", "sweet"],
+    "ingredients": [
+        {
+            "id": "banana",
+            "amount": "4",
+            "name": "Bananen"
+        },
+        {
+            "id": "oel",
+            "amount": "100g",
+            "name": "Sonnenblumenöl"
+        },
+        {
+            "id": "mehl",
+            "amount": "240g",
+            "name": "Mehl"
+        },
+        {
+            "id": "zucker",
+            "amount": "100g",
+            "name": "Zucker"
+        },
+        {
+            "id": "vanillezucker",
+            "amount": "2 Pkg",
+            "name": "Vanillezucker"
+        },
+        {
+            "id": "ei",
+            "amount": "2",
+            "name": "Eier"
+        },
+        {
+            "id": "backpulver",
+            "amount": "1 Pkg",
+            "name": "Backpulver"
+        },
+        {
+            "id": "salz",
+            "name": "Salz"
+        },
+        {
+            "id": "zimt",
+            "amount": "1 TL",
+            "name": "Zimt"
+        },
+        {
+            "id": "schoki",
+            "amount": "50g",
+            "name": "Schokolade oder Walnüsse"
+        }
+    ],
+    "preparation": [
+        "{banana}, {oel}, {zucker}, {vanillezucker}, {ei}, {mehl}, {backpulver}, {salz}, {zimt} und {schoki} mischen.",
+        "Den Teig in eine eingefettete Backform (12x24cm) geben und auf der mittleren Schiene für 60-75 Minuten bei 180°C backen.",
+        "15 Minuten in der Form abkühlen lassen, dann vollständig abkühlen zu lassen."
+    ]
+}

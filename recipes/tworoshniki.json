@@ -1,0 +1,45 @@
+{
+    "name": "Tworoshniki",
+    "portions": "10 Plinsen",
+    "type": "pan",
+    "tags": ["sweet", "main"],
+    "ingredients": [
+        {
+            "id": "quark",
+            "amount": "500g",
+            "name": "Quark"
+        },
+        {
+            "id": "eier",
+            "amount": "2",
+            "name": "Eier"
+        },
+        {
+            "id": "mehl",
+            "amount": "80g",
+            "name": "Mehl"
+        },
+        {
+            "id": "zucker",
+            "amount": "2 EL",
+            "name": "Zucker"
+        },
+        {
+            "id": "vanillezucker",
+            "amount": "1 Pkg.",
+            "name": "Vanillezucker"
+        },
+        {
+            "id": "salz",
+            "name": "Salz"
+        },
+        {
+            "id": "butter",
+            "name": "Butter"
+        }
+    ],
+    "preparation": [
+        "{quark} mit {mehl}, {zucker}, {vanillezucker}, {salz} und {eier} vermischen und Scheiben formen.",
+        "Butter in einer Pfanne erhitzen darin die Scheiben von beiden Seiten goldbraun anbraten."
+    ]
+}

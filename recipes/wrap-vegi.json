@@ -33,10 +33,6 @@
             "id": "mozarella",
             "amount": "1",
             "name": "Mozarella"
-        },
-        {
-            "id": "sauce",
-            "name": "Soße"
         }
     ],
     "preparation": [
