@@ -1,0 +1,41 @@
+{
+    "name": "Congee",
+    "type": "pot",
+    "tags": ["rice", "main"],
+    "ingredients": [
+        {
+            "id": "rice",
+            "amount": "170g",
+            "name": "Reis"
+        },
+        {
+            "id": "bruehe",
+            "amount": "1.5l",
+            "name": "Brühe"
+        },
+        {
+            "id": "sojasosse",
+            "name": "Sojasoße"
+        },
+        {
+            "id": "lauch",
+            "name": "Lauch"
+        },
+        {
+            "id": "chili",
+            "name": "Chili"
+        },
+        {
+            "id": "oel",
+            "name": "Olivenöl"
+        },
+        {
+            "id": "sesam",
+            "name": "Sesam"
+        }
+    ],
+    "preparation": [
+        "{rice} in {bruehe} 1.5h lang köcheln.",
+        "{sojasosse}, {lauch}, {chili}, {oel} und {sesam} nach belieben hinzugeben."
+    ]
+}
