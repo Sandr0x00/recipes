@@ -29,11 +29,11 @@
         "mocha": "^7.1.1",
         "navigo": "^7.1.2",
         "popper.js": "^1.16.1",
-        "rollup": "^1.32.1",
+        "rollup": "^2.3.2",
         "rollup-plugin-commonjs": "^10.1.0",
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-terser": "^5.3.0",
-        "sharp": "^0.24.1"
+        "sharp": "^0.25.2"
     },
     "bugs": {
         "url": "https://github.com/Sandr0x00/recipes/issues"

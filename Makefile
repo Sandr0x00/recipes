@@ -28,7 +28,7 @@ start:
 
 kill:
 	@kill `cat pid`
-	@ps -ef | grep "node server.js"
+	@ps -ef | grep "[n]ode server.js"
 
 nohup:
 	@nohup node server.js 2>&1 &
@@ -38,7 +38,7 @@ nohup:
 	@printf "\n"
 
 status:
-	ps -ef | grep "node server.js"
+	ps -ef | grep "[n]ode server.js"
 
 deploy: dist
 	scp -rp -P 9681 dist/* pi@sandr0.tk:~/recipes/
