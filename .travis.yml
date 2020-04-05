@@ -1,7 +1,7 @@
 language: python
-dist: xenial
-node_js: '11'
-python: '3.7'
+dist: bionic
+node_js: '13'
+python: '3.8'
 cache:
   directories:
     - node_modules
