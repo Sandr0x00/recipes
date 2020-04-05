@@ -6,23 +6,19 @@
     "ingredients": [
         {
             "id": "nudeln",
-            "amount": "500g",
-            "name": "Nudeln"
+            "amount": "500g"
         },
         {
             "id": "schinken",
-            "amount": "100g",
-            "name": "Schinken"
+            "amount": "100g"
         },
         {
             "id": "sahne",
-            "amount": "250ml",
-            "name": "Sahne"
+            "amount": "250ml"
         },
         {
             "id": "wasser",
-            "amount": "400ml",
-            "name": "Wasser"
+            "amount": "400ml"
         },
         {
             "id": "kaese",

@@ -5,18 +5,15 @@
     "ingredients": [
         {
             "id": "couscous",
-            "amount": "200g",
-            "name": "Couscous"
+            "amount": "200g"
         },
         {
             "id": "wasser",
-            "amount": "400ml",
-            "name": "Wasser"
+            "amount": "400ml"
         },
         {
-            "id": "tomaten",
-            "amount": "2",
-            "name": "Tomaten"
+            "id": "tomate",
+            "amount": "2"
         },
         {
             "id": "mozarella",
@@ -35,6 +32,6 @@
     ],
     "preparation": [
         "{wasser} zum Kochen bringen. {couscous} und {bruehe} in eine Schüssel geben, und mit Wasser übergießen, bedecken und 5 Minuten ziehen lassen.",
-        "Couscous mit {pesto} vermengen. {tomaten} und {mozarella} dazu geben."
+        "Couscous mit {pesto} vermengen. {tomate} und {mozarella} dazu geben."
     ]
 }

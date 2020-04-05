@@ -4,9 +4,8 @@
     "tags": ["drink"],
     "ingredients": [
         {
-            "id": "vodka",
-            "amount": "2cl",
-            "name": "Vodka"
+            "id": "wodka",
+            "amount": "2cl"
         },
         {
             "id": "gin",

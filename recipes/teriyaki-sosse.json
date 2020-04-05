@@ -9,21 +9,18 @@
         },
         {
             "id": "honig",
-            "amount": "1 TL",
-            "name": "Honig"
+            "amount": "1 TL"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
-            "id": "ingwer",
-            "name": "Ingwer"
+            "id": "ingwer"
         }
     ],
     "preparation": [
-        "{ingwer} und {knoblauch} schälen und fein hacken.",
+        "{ingwer} und {knoblauchzehe} schälen und fein hacken.",
         "{sojasosse}, {honig} und Wasser hinzugeben."
     ]
 }

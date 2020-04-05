@@ -5,27 +5,22 @@
     "ingredients": [
         {
             "id": "mehl",
-            "amount": "300g",
-            "name": "Mehl"
+            "amount": "300g"
         },
         {
             "id": "zucker",
-            "amount": "250g",
-            "name": "Zucker"
+            "amount": "250g"
         },
         {
             "id": "butter",
-            "amount": "150g",
-            "name": "Butter"
+            "amount": "150g"
         },
         {
             "id": "ei",
-            "amount": "1",
-            "name": "Ei"
+            "amount": "1"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
             "id": "apfel",

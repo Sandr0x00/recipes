@@ -6,38 +6,30 @@
     "ingredients": [
         {
             "id": "avocado",
-            "amount": "1/2",
-            "name": "Avocado"
+            "amount": "1/2"
         },
         {
-            "id": "couscous",
-            "name": "Couscous"
+            "id": "couscous"
         },
         {
-            "id": "quinoa",
-            "name": "quinoa"
+            "id": "quinoa"
         },
         {
             "id": "tomate",
-            "amount": "1",
-            "name": "Tomate"
+            "amount": "1"
         },
         {
             "id": "haehnchen",
-            "amount": "1/2",
-            "name": "Hähnchenbrustfilet"
+            "amount": "1/2"
         },
         {
-            "id": "salat",
-            "name": "Salat"
+            "id": "salat"
         },
         {
-            "id": "gurke",
-            "name": "Gurke"
+            "id": "gurke"
         },
         {
-            "id": "karotte",
-            "name": "Karotten"
+            "id": "karotte"
         },
         {
             "id": "hummus",
@@ -48,8 +40,7 @@
             "name": "Süß-Sauer Soße"
         },
         {
-            "id": "bruehe",
-            "name": "Brühe"
+            "id": "bruehe"
         }
     ],
     "preparation": [

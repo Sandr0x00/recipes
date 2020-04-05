@@ -6,13 +6,11 @@
     "ingredients": [
         {
             "id": "mehl",
-            "amount": "500g",
-            "name": "Mehl"
+            "amount": "500g"
         },
         {
             "id": "ei",
-            "amount": "3",
-            "name": "Eier"
+            "amount": "3"
         },
         {
             "id": "wasser",
@@ -25,16 +23,14 @@
         },
         {
             "id": "hackfleisch",
-            "amount": "400g",
-            "name": "Hackfleisch"
+            "amount": "400g"
         },
         {
             "id": "schnittlauch",
             "name": "Schnittlauch"
         },
         {
-            "id": "knoblauch",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe"
         },
         {
             "id": "gewuerze",
@@ -47,7 +43,7 @@
     ],
     "preparation": [
         "{mehl}, Salz, {ei} und {wasser} zu einem festen Teig verarbeiten.",
-        "{hackfleisch} mit {lauchzwiebel} und {knoblauch} mischen und mit {gewuerze} würzen.",
+        "{hackfleisch} mit {lauchzwiebel} und {knoblauchzehe} mischen und mit {gewuerze} würzen.",
         "Teig dünn ausrollen. Mit einer runden Ausstechform oder einem Trinkglas Kreise ausstechen.",
         "Je etwas Hackmasse auf die Kreise setzen, zu einem Halbkreis umklappen und die Nahtstellen fest mit einer Gabel zusammendrücken.",
         "Portionsweise in Salzwasser und bei mittlerer Hitze ca. 8 Minuten gar ziehen lassen.",

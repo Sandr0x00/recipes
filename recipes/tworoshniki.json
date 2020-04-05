@@ -6,40 +6,33 @@
     "ingredients": [
         {
             "id": "quark",
-            "amount": "500g",
-            "name": "Quark"
+            "amount": "500g"
         },
         {
-            "id": "eier",
-            "amount": "2",
-            "name": "Eier"
+            "id": "ei",
+            "amount": "2"
         },
         {
             "id": "mehl",
-            "amount": "80g",
-            "name": "Mehl"
+            "amount": "80g"
         },
         {
             "id": "zucker",
-            "amount": "2 EL",
-            "name": "Zucker"
+            "amount": "2 EL"
         },
         {
             "id": "vanillezucker",
-            "amount": "1 Pkg.",
-            "name": "Vanillezucker"
+            "amount": "1 Pkg."
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         }
     ],
     "preparation": [
-        "{quark} mit {mehl}, {zucker}, {vanillezucker}, {salz} und {eier} vermischen und Scheiben formen.",
+        "{quark} mit {mehl}, {zucker}, {vanillezucker}, {salz} und {ei} vermischen und Scheiben formen.",
         "Butter in einer Pfanne erhitzen darin die Scheiben von beiden Seiten goldbraun anbraten."
     ]
 }

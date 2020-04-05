@@ -5,59 +5,49 @@
     "tags": ["sauce", "main", "vegi", "vegan"],
     "ingredients": [
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
             "id": "haferflocken",
-            "amount": "70g",
-            "name": "Haferflocken"
+            "amount": "70g"
         },
         {
-            "id": "ptomaten",
+            "id": "tomaten",
             "amount": "1 Pkg.",
             "name": "Passierte Tomaten"
         },
         {
             "id": "tomate",
-            "amount": "2",
-            "name": "Tomaten"
+            "amount": "2"
         },
         {
             "id": "karotte",
-            "amount": "1",
-            "name": "Karotte"
+            "amount": "1"
         },
         {
             "id": "bruehe",
-            "amount": "2 TL",
-            "name": "Gemüsebrühpulver"
+            "amount": "2 TL"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
-            "id": "oregano",
-            "name": "Oregano"
+            "id": "oregano"
         },
         {
-            "id": "chili",
-            "name": "Chilipulver"
+            "id": "chili"
         },
         {
-            "id": "wasser",
-            "name": "Wasser"
+            "id": "wasser"
         }
     ],
     "preparation": [
-        "{zwiebel}, {karotte} und {knoblauch} hacken und in Olivenöl anschwitzen. {ptomaten}, {tomate} und {haferflocken} hinzugeben und kurz braten. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
+        "{zwiebel}, {karotte} und {knoblauchzehe} hacken und in Olivenöl anschwitzen. {tomaten}, {tomate} und {haferflocken} hinzugeben und kurz braten. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
         "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
     ]
 }

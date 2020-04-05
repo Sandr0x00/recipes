@@ -8,14 +8,12 @@
             "name": "Passierte Tomaten"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
-            "id": "tomaten",
-            "amount": "1",
-            "name": "Tomate"
+            "id": "tomate",
+            "amount": "1"
         },
         {
             "id": "oel",
@@ -35,7 +33,7 @@
         }
     ],
     "preparation": [
-        "{knoblauch} und {tomaten} fein würfeln. {basilikum} kleinschneiden und mit {passiertetomaten}, {oel}, {oregano}, {gewuerze} vermischen.",
+        "{knoblauchzehe} und {tomate} fein würfeln. {basilikum} kleinschneiden und mit {passiertetomaten}, {oel}, {oregano}, {gewuerze} vermischen.",
         "Auf dem ausgerollten Pizzateig verteilen."
     ]
 }

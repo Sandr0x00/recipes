@@ -6,23 +6,19 @@
     "ingredients": [
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "reis",
-            "amount": "250g",
-            "name": "Langkornreis"
+            "amount": "250g"
         },
         {
             "id": "wasser",
-            "amount": "350ml",
-            "name": "Wasser"
+            "amount": "350ml"
         },
         {
             "id": "tomaten",
@@ -31,8 +27,7 @@
         },
         {
             "id": "bruehe",
-            "amount": "2 EL",
-            "name": "Gemüsebrühe"
+            "amount": "2 EL"
         },
         {
             "id": "erbsen",
@@ -46,8 +41,7 @@
         },
         {
             "id": "paprika",
-            "amount": "1/2",
-            "name": "Paprika"
+            "amount": "1/2"
         },
         {
             "id": "gewuerze",
@@ -55,7 +49,7 @@
         }
     ],
     "preparation": [
-        "{zwiebel} und {knoblauch} klein schneiden und in Butter andünsten.",
+        "{zwiebel} und {knoblauchzehe} klein schneiden und in Butter andünsten.",
         "{reis}, {tomaten}, {bruehe}, {ajvar} und {wasser} hinzufügen und mit {gewuerze} abschmecken.",
         "{erbsen} und gewürfelte {paprika} hinzugeben und 20 Minuten köcheln lassen."
     ]

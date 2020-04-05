@@ -16,6 +16,7 @@ if __name__ == "__main__":
     shutil.copy('helper.js', 'dist')
     shutil.copy('Makefile', 'dist')
     shutil.copy('server.js', 'dist')
+    shutil.copy('mapping.json', 'dist')
     shutil.copy('config.json', 'dist')
     shutil.copy('package.json', 'dist')
     shutil.copy('package-lock.json', 'dist')

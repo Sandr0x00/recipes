@@ -6,23 +6,19 @@
     "ingredients": [
         {
             "id": "mehl",
-            "amount": "250g",
-            "name": "Mehl"
+            "amount": "250g"
         },
         {
             "id": "zucker",
-            "amount": "170g",
-            "name": "Zucker"
+            "amount": "170g"
         },
         {
             "id": "backpulver",
-            "amount": "10g",
-            "name": "Backpulver"
+            "amount": "10g"
         },
         {
-            "id": "kakaopulver",
-            "amount": "30",
-            "name": "Kakaopulver"
+            "id": "kakao",
+            "amount": "30"
         },
         {
             "id": "oel",
@@ -36,7 +32,7 @@
         }
     ],
     "preparation": [
-        "{mehl}, {zucker}, {kakaopulver}, {backpulver} mit {oel} und {sojamilch} mixen.",
+        "{mehl}, {zucker}, {kakao}, {backpulver} mit {oel} und {sojamilch} mixen.",
         "Den Teig auf 12 Muffinformen verteilen und 25 Minuten bei 180°C backen."
     ]
 }

@@ -6,8 +6,7 @@
     "ingredients": [
         {
             "id": "milch",
-            "amount": "150ml",
-            "name": "Milch"
+            "amount": "150ml"
         },
         {
             "id": "ei",
@@ -16,27 +15,22 @@
         },
         {
             "id": "mehl",
-            "amount": "100g",
-            "name": "Mehl"
+            "amount": "100g"
         },
         {
             "id": "zucker",
-            "amount": "1 EL",
-            "name": "Zucker"
+            "amount": "1 EL"
         },
         {
             "id": "backpulver",
-            "amount": "1 TL",
-            "name": "Backpulver"
+            "amount": "1 TL"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
             "id": "butter",
-            "amount": "25g",
-            "name": "Butter"
+            "amount": "25g"
         }
     ],
     "preparation": [

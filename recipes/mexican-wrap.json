@@ -11,37 +11,31 @@
         },
         {
             "id": "zwiebel",
-            "amount": "1",
-            "name": "Zwiebel"
+            "amount": "1"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
-            "id": "reis",
-            "name": "Reis"
+            "id": "reis"
         },
         {
             "id": "salsa",
             "name": "Salsa Soße"
         },
         {
-            "id": "sahne",
-            "name": "Sahne"
+            "id": "sahne"
         },
         {
-            "id": "cheddar",
-            "name": "Cheddar"
+            "id": "cheddar"
         },
         {
             "id": "salat",
             "name": "Salat"
         },
         {
-            "id": "chili",
-            "name": "Chili"
+            "id": "chili"
         },
         {
             "id": "gewuerze",
@@ -49,7 +43,7 @@
         }
     ],
     "preparation": [
-        "{haehnchen} mit {zwiebel} anbraten. {knoblauch} hinzufügen.",
+        "{haehnchen} mit {zwiebel} anbraten. {knoblauchzehe} hinzufügen.",
         "{reis} und Wasser hinzufügen und weiterkochen.",
         "{salsa}, {sahne}, {chili}, {gewuerze} hinzufügen.",
         "{salat} und {cheddar} schneiden.",

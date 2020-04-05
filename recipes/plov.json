@@ -11,23 +11,19 @@
         },
         {
             "id": "reis",
-            "amount": "750g",
-            "name": "Reis"
+            "amount": "750g"
         },
         {
-            "id": "moehre",
-            "amount": "3",
-            "name": "Möhren"
+            "id": "karotte",
+            "amount": "3"
         },
         {
-            "id": "knoblauch",
-            "amount": "3",
-            "name": "Knoblauchzehen"
+            "id": "knoblauchzehe",
+            "amount": "3"
         },
         {
             "id": "zwiebel",
-            "amount": "2",
-            "name": "Zwiebeln"
+            "amount": "2"
         },
         {
             "id": "oel",
@@ -40,8 +36,8 @@
     ],
     "preparation": [
         "{fleisch} in Würfel schneiden. In einem Topf {oel} erhitzen und das {fleisch} anbraten. Mit viel {gewuerze} würzen.",
-        "{zwiebel} in Streifen schneiden, {knoblauch} klein hacken und beides mit andünsten.",
-        "{moehre} in grobe Stifte schneiden. Auf das {fleisch} ohne umrühren schichten. Ungekochten {reis} auf die {moehre} schichten. Wasser auffüllen, so dass der Reis ca. 2 cm mit Wasser überdeckt ist. Bei kleiner Hitze mit Deckel ca. 30-45 min köcheln lassen.",
+        "{zwiebel} in Streifen schneiden, {knoblauchzehe} klein hacken und beides mit andünsten.",
+        "{karotte} in grobe Stifte schneiden. Auf das {fleisch} ohne umrühren schichten. Ungekochten {reis} auf die {karotte} schichten. Wasser auffüllen, so dass der Reis ca. 2 cm mit Wasser überdeckt ist. Bei kleiner Hitze mit Deckel ca. 30-45 min köcheln lassen.",
         "Nun umrühren und anrichten."
     ]
 }

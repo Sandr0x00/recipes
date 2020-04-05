@@ -3,24 +3,20 @@
     "tags": ["side", "vegi"],
     "ingredients": [
         {
-            "id": "avocados",
-            "amount": "2",
-            "name": "Avocados"
+            "id": "avocado",
+            "amount": "2"
         },
         {
             "id": "tomate",
-            "amount": "1",
-            "name": "Tomate"
+            "amount": "1"
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
             "id": "chili",
-            "amount": "1/2",
-            "name": "Chili"
+            "amount": "1/2"
         },
         {
             "id": "zitrone",
@@ -33,7 +29,7 @@
         }
     ],
     "preparation": [
-        "{tomate} und {zwiebel} klein schneiden. {avocados} zerdrücken und alles zusammenfügen.",
+        "{tomate} und {zwiebel} klein schneiden. {avocado} zerdrücken und alles zusammenfügen.",
         "Mit {chili}, {zitrone}, {salzpfeffer} würzen."
     ]
 }

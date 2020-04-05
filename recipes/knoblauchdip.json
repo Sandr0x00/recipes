@@ -9,17 +9,15 @@
         },
         {
             "id": "cremefraiche",
-            "amount": "100g",
-            "name": "Creme Fraiche"
+            "amount": "100g"
         },
         {
             "id": "oel",
             "name": "Olivenöl"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "gewuerze",
@@ -27,6 +25,6 @@
         }
     ],
     "preparation": [
-        "{knoblauch} pressen und alles vermengen."
+        "{knoblauchzehe} pressen und {all} vermengen."
     ]
 }

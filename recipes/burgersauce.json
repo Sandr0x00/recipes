@@ -4,17 +4,15 @@
     "tags": ["burger", "sauce"],
     "ingredients": [
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "mayo",
             "name": "Mayonese"
         },
         {
-            "id": "ketchup",
-            "name": "Ketchup"
+            "id": "ketchup"
         },
         {
             "id": "gewuerze",
@@ -22,7 +20,7 @@
         }
     ],
     "preparation": [
-        "{knoblauch} hacken und zerdrücken.",
-        "{knoblauch}, {mayo}, {ketchup} mit {gewuerze} vermischen."
+        "{knoblauchzehe} hacken und zerdrücken.",
+        "{knoblauchzehe}, {mayo}, {ketchup} mit {gewuerze} vermischen."
     ]
 }

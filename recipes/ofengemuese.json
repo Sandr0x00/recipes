@@ -11,18 +11,15 @@
         },
         {
             "id": "zwiebel",
-            "amount": "2",
-            "name": "Zwiebeln"
+            "amount": "2"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "kartoffel",
-            "amount": "2",
-            "name": "Kartoffeln"
+            "amount": "2"
         },
         {
             "id": "tymian",
@@ -35,7 +32,7 @@
     ],
     "preparation": [
         "{kuerbis}, {kartoffel} würfeln. {zwiebel} achteln.",
-        "{knoblauch} klein hacken und mit {tymian} und {oel} vermischen. Gemüse damit bestreichen.",
+        "{knoblauchzehe} klein hacken und mit {tymian} und {oel} vermischen. Gemüse damit bestreichen.",
         "Bei mittlerer Hitze 30 Minuten backen."
     ]
 }

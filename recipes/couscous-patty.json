@@ -6,8 +6,7 @@
     "ingredients": [
         {
             "id": "couscous",
-            "amount": "100g",
-            "name": "Couscous"
+            "amount": "100g"
         },
         {
             "id": "bruehe",
@@ -18,14 +17,12 @@
             "name": "Petersilie"
         },
         {
-            "id": "carrot",
-            "amount": "2",
-            "name": "Karotten"
+            "id": "karotte",
+            "amount": "2"
         },
         {
             "id": "ei",
-            "amount": "2",
-            "name": "Eier"
+            "amount": "2"
         },
         {
             "id": "gewuerze",
@@ -33,8 +30,8 @@
         }
     ],
     "preparation": [
-        "{couscous} 1:1 mit heißer {bruehe} ziehen lassen. {carrot} zerkleinern. {petersilie} waschen und fein hacken.",
-        "{couscous}, {carrot}, {petersilie}, {ei} mit {gewuerze} vermengen.",
+        "{couscous} 1:1 mit heißer {bruehe} ziehen lassen. {karotte} zerkleinern. {petersilie} waschen und fein hacken.",
+        "{couscous}, {karotte}, {petersilie}, {ei} mit {gewuerze} vermengen.",
         "Frikadelle formen und in Öl anbraten."
     ]
 }

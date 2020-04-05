@@ -6,39 +6,31 @@
     "ingredients": [
         {
             "id": "ei",
-            "amount": "2",
-            "name": "Eier"
+            "amount": "2"
         },
         {
-            "id": "milch",
-            "name": "Milch"
+            "id": "milch"
         },
         {
             "id": "kaese",
-            "amount": "100g",
-            "name": "Käse"
+            "amount": "100g"
         },
         {
-            "id": "mehl",
-            "name": "Mehl"
+            "id": "mehl"
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
             "id": "semmel",
-            "amount": "1",
-            "name": "Semmel"
+            "amount": "1"
         },
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         },
         {
-            "id": "schnittlauch",
-            "name": "Schnittlauch"
+            "id": "schnittlauch"
         },
         {
             "id": "gewuerze",

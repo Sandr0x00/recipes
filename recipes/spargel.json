@@ -11,13 +11,11 @@
         },
         {
             "id": "kartoffel",
-            "amount": "10",
-            "name": "Kartoffeln"
+            "amount": "10"
         },
         {
             "id": "schinken",
-            "amount": "6 Scheiben",
-            "name": "Schinken"
+            "amount": "6 Scheiben"
         },
         {
             "id": "eigelb",
@@ -31,8 +29,7 @@
         },
         {
             "id": "butter",
-            "amount": "200g",
-            "name": "Butter"
+            "amount": "200g"
         },
         {
             "id": "kaese",

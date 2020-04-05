@@ -6,13 +6,11 @@
     "ingredients": [
         {
             "id": "quinoa",
-            "amount": "1/2 Tasse",
-            "name": "Quinoa"
+            "amount": "1/2 Tasse"
         },
         {
-            "id": "tomate",
-            "amount": "1 Tasse",
-            "name": "Tomaten"
+            "id": "passiertetomaten",
+            "amount": "500g"
         },
         {
             "id": "kuemmel",
@@ -20,9 +18,8 @@
             "name": "Kümmel"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "chili",
@@ -41,8 +38,7 @@
         },
         {
             "id": "champignons",
-            "amount": "1 Tasse",
-            "name": "Champignons"
+            "amount": "1 Tasse"
         },
         {
             "id": "blumenkohl",
@@ -60,14 +56,12 @@
             "name": "Rosinen"
         },
         {
-            "id": "spinat",
-            "amount": "1/2 Tasse",
-            "name": "Spinat"
+            "id": "spinat"
         }
     ],
     "preparation": [
         "{quinoa} mit doppelter Menge Wasser 15min bei mittlerer Hitze köcheln lassen.",
-        "{tomate} mit restlichen Zutaten (außer {spinat}) in einen Topf geben und bei mittlerer Hitze kochen bis {champignons} und {blumenkohl} weich ist.",
+        "{passiertetomaten} mit restlichen Zutaten (außer {spinat}) in einen Topf geben und bei mittlerer Hitze kochen bis {champignons} und {blumenkohl} weich ist.",
         "{spinat} unterrühren, 1-2 min warten, servieren."
     ]
 }

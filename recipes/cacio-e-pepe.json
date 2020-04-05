@@ -4,8 +4,7 @@
     "tags": ["italian", "pasta", "main", "vegi"],
     "ingredients": [
         {
-            "id": "nudeln",
-            "name": "Nudeln"
+            "id": "nudeln"
         },
         {
             "id": "parmesan",

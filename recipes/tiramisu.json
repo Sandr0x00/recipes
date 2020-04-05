@@ -13,8 +13,7 @@
             "name": "Eigelb"
         },
         {
-            "id": "zucker",
-            "name": "Zucker"
+            "id": "zucker"
         },
         {
             "id": "mascarpone",
@@ -34,8 +33,7 @@
             "name": "Amaretto"
         },
         {
-            "id": "kakao",
-            "name": "Kakaopulver"
+            "id": "kakao"
         }
     ],
     "preparation": [

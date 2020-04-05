@@ -14,14 +14,12 @@
             "name": "Harte Semmeln"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
-            "id": "eier",
-            "amount": "2",
-            "name": "Eier"
+            "id": "ei",
+            "amount": "2"
         },
         {
             "id": "oel",
@@ -32,8 +30,7 @@
             "name": "Weinessig"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
             "id": "schinken",
@@ -41,8 +38,8 @@
         }
     ],
     "preparation": [
-        "Die {eier} hart kochen. Die {semmel} in Wasser einweichen lassen.",
-        "Die Semmeln in einem Sieb audrücken und mit {tomate}, {knoblauch}, ein Ei und {oel} mixen.",
+        "Die {ei} hart kochen. Die {semmel} in Wasser einweichen lassen.",
+        "Die Semmeln in einem Sieb audrücken und mit {tomate}, {knoblauchzehe}, ein Ei und {oel} mixen.",
         "Nun mit {salz} und {essig} abschmecken und nochmals mixen.",
         "Danach mindestens 2 Stunden in den Kühlschrank stellen.",
         "Die kalte Salmorejo mit {schinken} und 2. Ei garnieren."

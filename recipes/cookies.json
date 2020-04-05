@@ -5,38 +5,31 @@
     "ingredients": [
         {
             "id": "butter",
-            "amount": "150g",
-            "name": "Butter"
+            "amount": "150g"
         },
         {
             "id": "zucker",
-            "amount": "80g",
-            "name": "brauner Zucker"
+            "amount": "80g"
         },
         {
-            "id": "eier",
-            "amount": "2",
-            "name": "Eier"
+            "id": "ei",
+            "amount": "2"
         },
         {
             "id": "vanillezucker",
-            "amount": "1 Pkg.",
-            "name": "Vanillezucker"
+            "amount": "1 Pkg."
         },
         {
             "id": "mehl",
-            "amount": "180g",
-            "name": "Mehl"
+            "amount": "180g"
         },
         {
             "id": "haferflocken",
-            "amount": "50g",
-            "name": "Haferflocken"
+            "amount": "50g"
         },
         {
             "id": "backpulver",
-            "amount": "1 TL",
-            "name": "Backpulver"
+            "amount": "1 TL"
         },
         {
             "id": "schoki",
@@ -44,12 +37,11 @@
             "name": "Schokoladentropfen"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         }
     ],
     "preparation": [
-        "Zimmerwarme {butter}, {zucker} und {vanillezucker} schaumig schlagen. {eier} dazu geben und aufschlagen.",
+        "Zimmerwarme {butter}, {zucker} und {vanillezucker} schaumig schlagen. {ei} dazu geben und aufschlagen.",
         "{haferflocken}, {mehl}, {backpulver} und {salz} vermischen und nach und nach unterrühren.",
         "{schoki} hinzugeben und walnussgroße Häufchen machen.",
         "Bei 180°C goldgelb backen."

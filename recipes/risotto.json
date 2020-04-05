@@ -4,39 +4,32 @@
     "tags": ["rice", "vegi"],
     "ingredients": [
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
-            "id": "bruehe",
-            "name": "Gemüsebrühe"
+            "id": "bruehe"
         },
         {
             "id": "tomate",
-            "amount": "2",
-            "name": "Tomaten"
+            "amount": "2"
         },
         {
             "id": "risottoreis",
-            "amount": "125g",
-            "name": "Risottoreis"
+            "amount": "125g"
         },
         {
             "id": "erdnuesse",
             "name": "Erdnüsse"
         },
         {
-            "id": "cremefraiche",
-            "name": "Crème fraîche"
+            "id": "cremefraiche"
         },
         {
-            "id": "rucola",
-            "name": "Rucola"
+            "id": "rucola"
         },
         {
             "id": "parmesan",

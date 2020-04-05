@@ -19,8 +19,7 @@
         },
         {
             "id": "chili",
-            "amount": "1",
-            "name": "Chili"
+            "amount": "1"
         },
         {
             "id": "zitrone",
@@ -28,9 +27,8 @@
             "name": "Zitrone"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "kuemmel",
@@ -43,7 +41,7 @@
     ],
     "preparation": [
         "{kichererbsen} abtropfen lassen.",
-        "{tahini}, {oel}, {chili}, {zitrone} und {knoblauch} zugeben und alles fein pürieren.",
+        "{tahini}, {oel}, {chili}, {zitrone} und {knoblauchzehe} zugeben und alles fein pürieren.",
         "Mit {kuemmel}, {salzpfeffer} abschmecken."
     ]
 }

@@ -18,12 +18,10 @@
         },
         {
             "id": "paprika",
-            "amount": "1/2",
-            "name": "Paprika"
+            "amount": "1/2"
         },
         {
-            "id": "oregano",
-            "name": "Oregano"
+            "id": "oregano"
         },
         {
             "id": "chili",

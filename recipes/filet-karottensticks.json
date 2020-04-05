@@ -10,12 +10,11 @@
             "name": "Schweinefilet"
         },
         {
-            "id": "quark",
-            "name": "Quark"
+            "id": "quark"
         },
         {
-            "id": "karotten",
-            "name": "Karotten"
+            "id": "karotte",
+            "amount": "+"
         },
         {
             "id": "gewuerze",
@@ -23,7 +22,7 @@
         }
     ],
     "preparation": [
-        "{karotten} in Sticks schneiden und anbraten.",
+        "{karotte} in Sticks schneiden und anbraten.",
         "{schweinefilet} mit anbraten.",
         "Mit {quark} anrichten."
     ]

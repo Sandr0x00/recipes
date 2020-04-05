@@ -5,13 +5,11 @@
     "ingredients": [
         {
             "id": "zucker",
-            "amount": "500g",
-            "name": "Zucker"
+            "amount": "500g"
         },
         {
             "id": "wasser",
-            "amount": "400ml",
-            "name": "Wasser"
+            "amount": "400ml"
         }
     ],
     "preparation": [

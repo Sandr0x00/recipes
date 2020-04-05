@@ -6,13 +6,11 @@
     "ingredients": [
         {
             "id": "hackfleisch",
-            "amount": "600g",
-            "name": "Hackfleisch"
+            "amount": "600g"
         },
         {
             "id": "zwiebel",
-            "amount": "2",
-            "name": "Zwiebeln"
+            "amount": "2"
         },
         {
             "id": "tomate",
@@ -21,8 +19,7 @@
         },
         {
             "id": "chili",
-            "amount": "6",
-            "name": "Chilis"
+            "amount": "6"
         },
         {
             "id": "bohnen",
@@ -31,8 +28,7 @@
         },
         {
             "id": "mais",
-            "amount": "1 Dose",
-            "name": "Mais"
+            "amount": "1 Dose"
         },
         {
             "id": "gewuerze",
@@ -44,8 +40,7 @@
             "name": "Baguette"
         },
         {
-            "id": "cremefraiche",
-            "name": "Crème fraîche"
+            "id": "cremefraiche"
         }
     ],
     "preparation": [

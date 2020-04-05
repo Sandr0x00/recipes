@@ -15,18 +15,15 @@
         },
         {
             "id": "zucker",
-            "amount": "1 TL",
-            "name": "Zucker"
+            "amount": "1 TL"
         },
         {
             "id": "mehl",
-            "amount": "500g",
-            "name": "Weizenmehl (Type 00 oder 550)"
+            "amount": "500g"
         },
         {
             "id": "salz",
-            "amount": "1 TL",
-            "name": "Salz"
+            "amount": "1 TL"
         },
         {
             "id": "oel",

@@ -4,13 +4,11 @@
     "ingredients": [
         {
             "id": "chili",
-            "amount": "2",
-            "name": "Chilischoten"
+            "amount": "2"
         },
         {
             "id": "tomate",
-            "amount": "4",
-            "name": "Tomaten"
+            "amount": "4"
         },
         {
             "id": "oel",
@@ -18,9 +16,8 @@
             "name": "Olivenöl"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "limette",
@@ -33,7 +30,7 @@
         }
     ],
     "preparation": [
-        "{chili} mit {tomate}, {oel}, {knoblauch}, {limette} und {gewuerze} pürieren.",
+        "{chili} mit {tomate}, {oel}, {knoblauchzehe}, {limette} und {gewuerze} pürieren.",
         "Auf die hälfte einkochen."
     ]
 }

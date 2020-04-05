@@ -5,18 +5,15 @@
     "ingredients": [
         {
             "id": "kartoffel",
-            "amount": "400g",
-            "name": "Kartoffeln"
+            "amount": "400g"
         },
         {
             "id": "milch",
-            "amount": "125ml",
-            "name": "Milch"
+            "amount": "125ml"
         },
         {
             "id": "butter",
-            "amount": "50g",
-            "name": "Butter"
+            "amount": "50g"
         },
         {
             "id": "gewuerze",

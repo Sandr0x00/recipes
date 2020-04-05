@@ -15,8 +15,7 @@
         },
         {
             "id": "zwiebel",
-            "amount": "1",
-            "name": "Zwiebel"
+            "amount": "1"
         },
         {
             "id": "currypulver",
@@ -29,8 +28,7 @@
             "name": "Tomatenmark"
         },
         {
-            "id": "chili",
-            "name": "Chili"
+            "id": "chili"
         },
         {
             "id": "tomaten",
@@ -44,8 +42,7 @@
         },
         {
             "id": "ketchup",
-            "amount": "2 EL",
-            "name": "Tomatenketchup"
+            "amount": "2 EL"
         },
         {
             "id": "gewuerze",

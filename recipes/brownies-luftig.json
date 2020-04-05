@@ -6,8 +6,7 @@
     "ingredients": [
         {
             "id": "butter",
-            "amount": "140g",
-            "name": "Butter"
+            "amount": "140g"
         },
         {
             "id": "schokiz",
@@ -16,13 +15,11 @@
         },
         {
             "id": "mehl",
-            "amount": "100g",
-            "name": "Mehl"
+            "amount": "100g"
         },
         {
             "id": "kakao",
-            "amount": "2 EL",
-            "name": "Kakao"
+            "amount": "2 EL"
         },
         {
             "id": "schoki",
@@ -30,34 +27,29 @@
             "name": "Milchschokolade"
         },
         {
-            "id": "eier",
-            "amount": "3",
-            "name": "Eier"
+            "id": "ei",
+            "amount": "3"
         },
         {
             "id": "zucker",
-            "amount": "100g",
-            "name": "Zucker"
+            "amount": "100g"
         },
         {
             "id": "milch",
-            "amount": "1 EL",
-            "name": "Milch"
+            "amount": "1 EL"
         },
         {
             "id": "vanillezucker",
-            "amount": "1 Pkg.",
-            "name": "Vanillezucker"
+            "amount": "1 Pkg."
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         }
     ],
     "preparation": [
         "{schoki} und {schokiz} schmelzen.",
         "{butter} hinzufügen.",
-        "{kakao}, {zucker}, {vanillezucker}, das {salz}, {milch} und {eier} in einer Schüssel verrühren.",
+        "{kakao}, {zucker}, {vanillezucker}, das {salz}, {milch} und {ei} in einer Schüssel verrühren.",
         "{mehl} und Schokoladen-Butter Mischung hinzufügen.",
         "Im Backofen auf mittlerer Schiene ca. 25 Minuten bei 180°C backen.",
         "15 Minuten abkühlen lassen."

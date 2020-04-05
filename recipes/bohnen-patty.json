@@ -11,23 +11,19 @@
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
             "id": "cheddar",
-            "amount": "60g",
-            "name": "Cheddar"
+            "amount": "60g"
         },
         {
             "id": "mehl",
-            "amount": "60g",
-            "name": "Mehl"
+            "amount": "60g"
         },
         {
             "id": "ei",
-            "amount": "1",
-            "name": "Ei"
+            "amount": "1"
         },
         {
             "id": "gewuerze",

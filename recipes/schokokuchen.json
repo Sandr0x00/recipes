@@ -6,13 +6,11 @@
     "ingredients": [
         {
             "id": "milch",
-            "amount": "350ml",
-            "name": "Milch"
+            "amount": "350ml"
         },
         {
             "id": "butter",
-            "amount": "250g",
-            "name": "Butter"
+            "amount": "250g"
         },
         {
             "id": "schoki",
@@ -26,33 +24,28 @@
         },
         {
             "id": "vanillezucker",
-            "amount": "1 Pkg.",
-            "name": "Vanillezucker"
+            "amount": "1 Pkg."
         },
         {
-            "id": "eier",
-            "amount": "3",
-            "name": "Eier"
+            "id": "ei",
+            "amount": "3"
         },
         {
             "id": "mehl",
-            "amount": "280g",
-            "name": "Mehl"
+            "amount": "280g"
         },
         {
             "id": "kakao",
-            "amount": "30g",
-            "name": "Kakao"
+            "amount": "30g"
         },
         {
             "id": "backpulver",
-            "amount": "1/2 Pkg.",
-            "name": "Backpulver"
+            "amount": "1/2 Pkg."
         }
     ],
     "preparation": [
         "{milch} und {butter} aufkochen. {schoki} dazu geben und zu einer homogenen Masse verrühren.",
-        "{eier} mit {puderzucker} und {vanillezucker} verrühren. Mit der Schokoladenmasse verrühren.",
+        "{ei} mit {puderzucker} und {vanillezucker} verrühren. Mit der Schokoladenmasse verrühren.",
         "{mehl}, {kakao} und {backpulver} unterheben.",
         "Die Form mit {butter} einfetten, die Masse hineinfüllen und bei 170°C Ober- und Unterhitze ca. 60 Minuten backen."
     ]

@@ -6,28 +6,23 @@
     "ingredients": [
         {
             "id": "reis",
-            "amount": "75g",
-            "name": "Reis"
+            "amount": "75g"
         },
         {
             "id": "ei",
-            "amount": "1",
-            "name": "Ei"
+            "amount": "1"
         },
         {
-            "id": "moehre",
-            "amount": "1",
-            "name": "Möhre"
+            "id": "karotte",
+            "amount": "1"
         },
         {
             "id": "zwiebel",
-            "amount": "1",
-            "name": "Zwiebel"
+            "amount": "1"
         },
         {
             "id": "semmel",
-            "amount": "1",
-            "name": "Semmel"
+            "amount": "1"
         },
         {
             "id": "emmentaler",
@@ -45,7 +40,7 @@
     ],
     "preparation": [
         "{reis} mit doppelter Menge {bruehe} aufkochen.",
-        "{emmentaler}, {moehre}, {zwiebel} und {semmel} zerkleinern. Alles mit {ei} vermengen und mit {gewuerze} würzen.",
+        "{emmentaler}, {karotte}, {zwiebel} und {semmel} zerkleinern. Alles mit {ei} vermengen und mit {gewuerze} würzen.",
         "15 Minuten ziehen lassen.",
         "Frikadellen formen und in Butter goldbraun braten."
     ]

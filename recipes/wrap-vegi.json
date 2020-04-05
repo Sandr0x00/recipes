@@ -14,25 +14,20 @@
             "name": "Couscous Patties"
         },
         {
-            "id": "champignons",
-            "name": "Champignons"
+            "id": "champignons"
         },
         {
-            "id": "tomate",
-            "name": "Tomate"
+            "id": "tomate"
         },
         {
-            "id": "zwiebel",
-            "name": "Zwiebel"
+            "id": "zwiebel"
         },
         {
-            "id": "salat",
-            "name": "Salat"
+            "id": "salat"
         },
         {
             "id": "mozarella",
-            "amount": "1",
-            "name": "Mozarella"
+            "amount": "1"
         }
     ],
     "preparation": [

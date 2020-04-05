@@ -24,38 +24,32 @@
             "name": "Eiweiß"
         },
         {
-            "id": "vanille",
-            "amount": "1 Pkg.",
-            "name": "Vanillezucker"
+            "id": "vanillezucker",
+            "amount": "1 Pkg."
         },
         {
             "id": "zucker",
-            "amount": "1 gehäufter EL",
-            "name": "Zucker"
+            "amount": "1 gehäufter EL"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
             "id": "mehl",
-            "amount": "250g",
-            "name": "Mehl"
+            "amount": "250g"
         },
         {
             "id": "milch",
-            "amount": "500ml",
-            "name": "Milch"
+            "amount": "500ml"
         },
         {
             "id": "butter",
-            "amount": "50g zerlassene",
-            "name": "Butter"
+            "amount": "50g zerlassene"
         }
     ],
     "preparation": [
         "Die {rosine} mindestens eine halbe Stunde in {rum} einlegen.",
-        "{eigelb} mit {vanille}, {salz} und {zucker} mit dem Handrührgerät schaumig aufschlagen. Nach und nach abwechselnd jeweils {mehl} und {milch} einrühren.",
+        "{eigelb} mit {vanillezucker}, {salz} und {zucker} mit dem Handrührgerät schaumig aufschlagen. Nach und nach abwechselnd jeweils {mehl} und {milch} einrühren.",
         "Anschließend die {butter} einrühren. {eiweis} zu einem festen Eischnee aufschlagen und mit einem Löffel langsam aber gründlich unter die Teigmasse heben. Es sollten keine Eiweißflocken mehr zu sehen sein. Danach die Rosinen ohne den Rum unterrühren.",
         "In einer Pfanne Butter zerlassen und den Teig ca. 1 cm hoch eingießen. Hitze etwas reduzieren und goldgelb anbacken lassen. Immer mal wieder drunter schauen. Die Masse vierteln, umdrehen und wieder anbacken lassen. In mundgerechte Stücke teilen."
     ]

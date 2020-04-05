@@ -6,23 +6,19 @@
     "ingredients": [
         {
             "id": "milch",
-            "amount": "250ml",
-            "name": "Milch"
+            "amount": "250ml"
         },
         {
             "id": "sahne",
-            "amount": "250ml",
-            "name": "Sahne"
+            "amount": "250ml"
         },
         {
             "id": "kartoffel",
-            "amount": "800g",
-            "name": "Kartoffeln"
+            "amount": "800g"
         },
         {
-            "id": "knoblauch",
-            "amount": "1/2",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1/2"
         },
         {
             "id": "emmentaler",
@@ -30,8 +26,7 @@
             "name": "geriebener Emmentaler"
         },
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         },
         {
             "id": "gewuerze",
@@ -39,7 +34,7 @@
         }
     ],
     "preparation": [
-        "{milch}, {sahne} und {butter} aufkochen. Mit kleingehacktem {knoblauch}, {gewuerze} würzen.",
+        "{milch}, {sahne} und {butter} aufkochen. Mit kleingehacktem {knoblauchzehe}, {gewuerze} würzen.",
         "{kartoffel} schälen und in dünne Scheiben schneiden oder hobeln.",
         "Auflaufform mit {butter} fetten. Kartoffeln schuppenförmig einschichten und mit der Sahnemischung übergießen. Mit {emmentaler} und bestreuen.",
         "Bei 180 Grad Umluft auf der mittleren Schiene 30-35 Min. backen."

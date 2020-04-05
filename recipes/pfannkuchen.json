@@ -6,35 +6,29 @@
     "ingredients": [
         {
             "id": "milch",
-            "amount": "250ml",
-            "name": "Milch"
+            "amount": "250ml"
         },
         {
-            "id": "eier",
-            "amount": "2",
-            "name": "Eier"
+            "id": "ei",
+            "amount": "2"
         },
         {
             "id": "mehl",
-            "amount": "150g",
-            "name": "Mehl"
+            "amount": "150g"
         },
         {
             "id": "zucker",
-            "amount": "1 EL",
-            "name": "Zucker"
+            "amount": "1 EL"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         }
     ],
     "preparation": [
-        "{milch} mit {mehl} gut verrühren. {eier}, {salz} und {zucker} dazu geben und nochmal kräftig verrühren bis man einen glatten Teig ohne Klümpchen hat.",
+        "{milch} mit {mehl} gut verrühren. {ei}, {salz} und {zucker} dazu geben und nochmal kräftig verrühren bis man einen glatten Teig ohne Klümpchen hat.",
         "Die Pfanne von der Kochstelle nehmen und die {butter} durch geschicktes Schwenken gleichmäßig verteilen. Mit einem großen Schöpflöffel Teig in die heiße Pfanne geben und diesen ebenfalls durch Schwenken gleichmäßig verteilen. Wenn die Unterseite goldgelb ist den Pfannkuchen wenden."
     ]
 }

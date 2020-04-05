@@ -4,8 +4,7 @@
     "ingredients": [
         {
             "id": "kartoffel",
-            "amount": "3",
-            "name": "Kartoffeln"
+            "amount": "3"
         },
         {
             "id": "mango",
@@ -18,8 +17,7 @@
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
             "id": "joghurt-dressing",

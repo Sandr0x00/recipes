@@ -5,8 +5,7 @@
     "tags": ["pasta", "main"],
     "ingredients": [
         {
-            "id": "nudeln",
-            "name": "Nudeln"
+            "id": "nudeln"
         },
         {
             "id": "rucola",

@@ -10,12 +10,10 @@
         },
         {
             "id": "zucker",
-            "amount": "80g",
-            "name": "Zucker"
+            "amount": "80g"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         }
     ],
     "preparation": [

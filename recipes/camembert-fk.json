@@ -9,29 +9,25 @@
             "name": "Flammkuchenteig"
         },
         {
-            "id": "cremefraiche",
-            "name": "Crème fraîche"
+            "id": "cremefraiche"
         },
         {
-            "id": "knoblauch",
-            "amount": "1 Zehe",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "gewuerze",
             "name": "Salz, Pfeffer und Oregano"
         },
         {
-            "id": "camembert",
-            "name": "Camembert"
+            "id": "camembert"
         },
         {
             "id": "lauchzwiebel",
             "name": "Lauchzwiebel"
         },
         {
-            "id": "schinken",
-            "name": "Schinken"
+            "id": "schinken"
         },
         {
             "id": "preiselbeeren",
@@ -39,8 +35,8 @@
         }
     ],
     "preparation": [
-        "{knoblauch}, {lauchzwiebel} und {camembert} klein schneiden.",
-        "{cremefraiche}, {knoblauch} mit {gewuerze} mischen.",
+        "{knoblauchzehe}, {lauchzwiebel} und {camembert} klein schneiden.",
+        "{cremefraiche}, {knoblauchzehe} mit {gewuerze} mischen.",
         "{flammkuchenteig} dünn ausrollen und mit {camembert} und {lauchzwiebel} belegen.",
         "Bei maximaler Temperatur etwa 5 Minuten backen.",
         "Flammkuchen mit {preiselbeeren} garnieren."

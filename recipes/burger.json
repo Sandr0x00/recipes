@@ -6,8 +6,7 @@
     "ingredients": [
         {
             "id": "hackfleisch",
-            "amount": "100g",
-            "name": "Hackfleisch"
+            "amount": "100g"
         },
         {
             "id": "bun",
@@ -16,13 +15,11 @@
         },
         {
             "id": "tomate",
-            "amount": "1 Scheibe",
-            "name": "Tomate"
+            "amount": "1 Scheibe"
         },
         {
             "id": "zwiebel",
-            "amount": "1 Scheibe",
-            "name": "Zwiebel"
+            "amount": "1 Scheibe"
         },
         {
             "id": "salat",
@@ -34,8 +31,7 @@
         },
         {
             "id": "cheddar",
-            "amount": "1 Scheibe",
-            "name": "Cheddar"
+            "amount": "1 Scheibe"
         },
         {
             "id": "gewuerze",

@@ -11,8 +11,7 @@
         },
         {
             "id": "zwiebel",
-            "amount": "1",
-            "name": "Zwiebel"
+            "amount": "1"
         },
         {
             "id": "zitrone",
@@ -21,8 +20,7 @@
         },
         {
             "id": "oregano",
-            "amount": "2 EL",
-            "name": "Oregano"
+            "amount": "2 EL"
         },
         {
             "id": "paprikapulver",
@@ -30,18 +28,16 @@
             "name": "Paprikapulver"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "olivenoel",
-            "amount": "250ml",
-            "name": "Olivenöl"
+            "amount": "250ml"
         }
     ],
     "preparation": [
-        "{zwiebel}, {zitrone}, {oregano}, {paprikapulver} und {knoblauch} pürieren. {olivenoel} hinzufügen.",
+        "{zwiebel}, {zitrone}, {oregano}, {paprikapulver} und {knoblauchzehe} pürieren. {olivenoel} hinzufügen.",
         "{haehnchen} in einen wiederverschließbaren Plastikbeutel geben und die Marinade darüber gießen und 30 Minuten bei Zimmertemperatur ziehen lassen.",
         "Auf feuchte Holzspieße stecken und bei direkter mittlerer Hitze (175 - 230 °C) bei geschlossenem Deckel 8 - 10 Minuten grillen."
     ]

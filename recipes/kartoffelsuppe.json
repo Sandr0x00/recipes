@@ -6,13 +6,11 @@
     "ingredients": [
         {
             "id": "karotte",
-            "amount": "1",
-            "name": "Karotte"
+            "amount": "1"
         },
         {
             "id": "kartoffel",
-            "amount": "300g",
-            "name": "Kartoffeln"
+            "amount": "300g"
         },
         {
             "id": "sellerie",
@@ -21,8 +19,7 @@
         },
         {
             "id": "paprika",
-            "amount": "1/2",
-            "name": "Paprika"
+            "amount": "1/2"
         },
         {
             "id": "lauchzwiebel",
@@ -31,26 +28,21 @@
         },
         {
             "id": "wasser",
-            "amount": "500ml",
-            "name": "Wasser"
+            "amount": "500ml"
         },
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
-            "id": "bruehe",
-            "name": "Brühe"
+            "id": "bruehe"
         },
         {
             "id": "cremefraiche",
-            "amount": "75g",
-            "name": "Crème fraîche"
+            "amount": "75g"
         },
         {
             "id": "gewuerze",

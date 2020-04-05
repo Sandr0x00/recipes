@@ -6,27 +6,22 @@
     "ingredients": [
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
-            "id": "reis",
-            "amount": "100g",
-            "name": "Risottoreis"
+            "id": "risottoreis",
+            "amount": "100g"
         },
         {
             "id": "bruehe",
-            "amount": "300ml",
-            "name": "Brühe"
+            "amount": "300ml"
         },
         {
-            "id": "champignons",
-            "name": "Champignons"
+            "id": "champignons"
         },
         {
             "id": "birne",
@@ -47,8 +42,8 @@
         }
     ],
     "preparation": [
-        "{zwiebel} und {knoblauch} klein schneiden und anschwitzen.",
-        "{reis} hinzufügen und mit anschwitzen, {bruehe} hinzufügen und mit {gewuerze} abschmecken.",
+        "{zwiebel} und {knoblauchzehe} klein schneiden und anschwitzen.",
+        "{risottoreis} hinzufügen und mit anschwitzen, {bruehe} hinzufügen und mit {gewuerze} abschmecken.",
         "{champignons}, {birne} und {nuss} anbraten.",
         "{parmesan} unter Risotto rühren und anrichten."
     ]

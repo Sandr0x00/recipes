@@ -15,8 +15,7 @@
         },
         {
             "id": "mozarella",
-            "amount": "1",
-            "name": "Mozarella"
+            "amount": "1"
         }
     ],
     "preparation": [

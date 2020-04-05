@@ -11,13 +11,11 @@
         },
         {
             "id": "tomate",
-            "amount": "1",
-            "name": "Tomate"
+            "amount": "1"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "oel",
@@ -25,8 +23,7 @@
             "name": "Olivenöl"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
             "id": "kaese",
@@ -39,7 +36,7 @@
     ],
     "preparation": [
         "{tomate} reiben.",
-        "{brot} toasten. {knoblauch} auf das {brot} reiben.",
+        "{brot} toasten. {knoblauchzehe} auf das {brot} reiben.",
         "{tomate} auf dem Brot verteilen und mit {salz} und {oel} würzen.",
         "Mit {thunfisch} und {kaese} belegen und das Brot im Oven warmmachen."
     ]

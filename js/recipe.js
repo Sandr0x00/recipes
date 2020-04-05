@@ -193,10 +193,12 @@ class Recipe extends BaseComp {
 
     highlightOn(c) {
         $('.' + c).addClass('highlight');
+        $('.all').addClass('highlight');
     }
 
     highlightOff(c) {
         $('.' + c).removeClass('highlight');
+        $('.all').removeClass('highlight');
     }
 
     getSecondClass(elem) {

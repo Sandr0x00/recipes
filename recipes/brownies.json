@@ -5,8 +5,7 @@
     "ingredients": [
         {
             "id": "butter",
-            "amount": "185g",
-            "name": "Butter"
+            "amount": "185g"
         },
         {
             "id": "schokiz",
@@ -15,13 +14,11 @@
         },
         {
             "id": "mehl",
-            "amount": "85g",
-            "name": "Mehl"
+            "amount": "85g"
         },
         {
             "id": "kakao",
-            "amount": "40g",
-            "name": "Kakao"
+            "amount": "40g"
         },
         {
             "id": "schokiw",
@@ -34,19 +31,17 @@
             "name": "Milchschokolade"
         },
         {
-            "id": "eier",
-            "amount": "3",
-            "name": "Eier"
+            "id": "ei",
+            "amount": "3"
         },
         {
             "id": "zucker",
-            "amount": "275g",
-            "name": "Zucker"
+            "amount": "275g"
         }
     ],
     "preparation": [
         "{schokiz} in kleine Stücke brechen und mit {butter} in eine Schüssel geben. In Wasserbad schmelzen. Alternativ in der Mikrowelle 2 Minuten erhitzen. Auf Raumtemparatur abkühlen lassen.",
-        "{mehl} und {kakao} zusammmen sieben. {schokiw} und {schoki} klein hacken. {eier} mit {zucker} steif schlagen.",
+        "{mehl} und {kakao} zusammmen sieben. {schokiw} und {schoki} klein hacken. {ei} mit {zucker} steif schlagen.",
         "Gescholzene Schokolade unter Eischnee heben.",
         "Mehl-Kakao unter die Masse heben.",
         "Schokoladenstückchen unterheben.",

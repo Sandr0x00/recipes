@@ -11,13 +11,11 @@
         },
         {
             "id": "paprika",
-            "amount": "1",
-            "name": "Paprika"
+            "amount": "1"
         },
         {
             "id": "karotte",
-            "amount": "1",
-            "name": "Karotte"
+            "amount": "1"
         },
         {
             "id": "brokkoli",
@@ -28,8 +26,7 @@
             "name": "Erdnüsse"
         },
         {
-            "id": "knoblauch",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe"
         },
         {
             "id": "kokosmilch",
@@ -40,12 +37,10 @@
             "name": "Sojasoße"
         },
         {
-            "id": "nudeln",
-            "name": "Nudeln"
+            "id": "nudeln"
         },
         {
-            "id": "reis",
-            "name": "Reis"
+            "id": "reis"
         },
         {
             "id": "gewuerze",
@@ -54,7 +49,7 @@
     ],
     "preparation": [
         "{nudeln} oder {reis} kochen.",
-        "Das {haehnchen} in einer Pfanne goldbraun braten und {karotte}, {brokkoli}, {paprika} und {knoblauch} hinzufügen, mit {gewuerze} würzen.",
+        "Das {haehnchen} in einer Pfanne goldbraun braten und {karotte}, {brokkoli}, {paprika} und {knoblauchzehe} hinzufügen, mit {gewuerze} würzen.",
         "Anschließend {kokosmilch} und {erdnuss} hinzufügen {sojasosse} abschmecken. Zuletzt die Nudeln in die Pfanne geben und alles gut vermischen."
     ]
 }

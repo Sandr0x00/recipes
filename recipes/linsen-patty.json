@@ -1,0 +1,39 @@
+{
+    "name": "Linsen Frikadelle",
+    "tags": ["vegi", "burger", "main"],
+    "portions": "6 Frikadellen",
+    "type": "pan",
+    "ingredients": [
+        {
+            "id": "linsen",
+            "amount": "200g",
+            "name": "Linsen"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "1/2"
+        },
+        {
+            "id": "karotte",
+            "amount": "1"
+        },
+        {
+            "id": "mehl",
+            "amount": "2 EL"
+        },
+        {
+            "id": "haferflocken",
+            "amount": "2 EL"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Curry, Paprikapulver, Salz & Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{linsen} weichkochen.",
+        "{zwiebel} und {karotte} zerkleinern.",
+        "Nun {all} vermischen.",
+        "Patties formen und anbraten."
+    ]
+}

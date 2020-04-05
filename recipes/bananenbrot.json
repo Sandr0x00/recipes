@@ -4,9 +4,8 @@
     "tags": ["chocolate", "sweet"],
     "ingredients": [
         {
-            "id": "banana",
-            "amount": "4",
-            "name": "Bananen"
+            "id": "banane",
+            "amount": "4"
         },
         {
             "id": "oel",
@@ -15,32 +14,26 @@
         },
         {
             "id": "mehl",
-            "amount": "240g",
-            "name": "Mehl"
+            "amount": "240g"
         },
         {
             "id": "zucker",
-            "amount": "100g",
-            "name": "Zucker"
+            "amount": "100g"
         },
         {
             "id": "vanillezucker",
-            "amount": "2 Pkg",
-            "name": "Vanillezucker"
+            "amount": "2 Pkg"
         },
         {
             "id": "ei",
-            "amount": "2",
-            "name": "Eier"
+            "amount": "2"
         },
         {
             "id": "backpulver",
-            "amount": "1 Pkg",
-            "name": "Backpulver"
+            "amount": "1 Pkg"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
             "id": "zimt",
@@ -54,7 +47,7 @@
         }
     ],
     "preparation": [
-        "{banana}, {oel}, {zucker}, {vanillezucker}, {ei}, {mehl}, {backpulver}, {salz}, {zimt} und {schoki} mischen.",
+        "{banane}, {oel}, {zucker}, {vanillezucker}, {ei}, {mehl}, {backpulver}, {salz}, {zimt} und {schoki} mischen.",
         "Den Teig in eine eingefettete Backform (12x24cm) geben und auf der mittleren Schiene für 60-75 Minuten bei 180°C backen.",
         "15 Minuten in der Form abkühlen lassen, dann vollständig abkühlen zu lassen."
     ]

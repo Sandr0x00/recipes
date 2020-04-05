@@ -5,8 +5,7 @@
     "ingredients": [
         {
             "id": "wasser",
-            "amount": "75ml",
-            "name": "Wasser"
+            "amount": "75ml"
         },
         {
             "id": "hefe",
@@ -15,20 +14,17 @@
         },
         {
             "id": "mehl",
-            "amount": "150g",
-            "name": "Weizenmehl (Type 550)"
+            "amount": "150g"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
-            "id": "oel",
-            "amount": "1 EL",
-            "name": "Olivenöl"
+            "id": "olivenoel",
+            "amount": "1 EL"
         }
     ],
     "preparation": [
-        "{hefe}, {oel} und {salz} mit lauwarmem {wasser} verrühren. {mehl} hinzugeben und zu einem Teig kneten. Diesen zugedeckt an einem warmen Ort ca. 40 Minuten gehen lassen."
+        "{hefe}, {olivenoel} und {salz} mit lauwarmem {wasser} verrühren. {mehl} hinzugeben und zu einem Teig kneten. Diesen zugedeckt an einem warmen Ort ca. 40 Minuten gehen lassen."
     ]
 }

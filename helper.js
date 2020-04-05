@@ -50,6 +50,8 @@ exports.formatPreparation = function(recipe) {
             preparationAmounts = replaced[1];
         }
     });
+    preparation = preparation.replace('{all}', '<b class=\'all ingredient\'>alles</b>');
+
     return [
         JSON.parse(preparation),
         JSON.parse(preparationAmounts)
@@ -59,7 +61,7 @@ exports.formatPreparation = function(recipe) {
 exports.loadJSON = function() {
     let dirPath = path.join(__dirname, 'recipes');
     let stuff = readFilesInFolder(dirPath);
-    linkIngredients(stuff.recipes);
+    handleIngredients(stuff.recipes);
 
     for (const key in stuff.recipes) {
         let recipe = stuff.recipes[key];
@@ -94,11 +96,42 @@ exports.extractGeneralInfo = (recipes) => {
     return info;
 };
 
-function linkIngredients(recipes) {
+function handleIngredients(recipes) {
+    let translationMapping = JSON.parse(fs.readFileSync('mapping.json', 'utf8'));
+
     let ids = Object.keys(recipes);
     for (let key in recipes) {
         let recipe = recipes[key];
         recipe.ingredients.forEach(ingredient => {
+            // translate
+            if (!('name' in ingredient) && ingredient.id in translationMapping) {
+                let trans = translationMapping[ingredient.id];
+                let singular = '';
+                let plural = '';
+                if (trans instanceof Array) {
+                    singular = trans[0];
+                    plural = trans[1];
+                } else {
+                    singular = trans;
+                    plural = trans;
+                }
+                if ('amount' in ingredient) {
+                    if (/\d\/\d.*/.test(ingredient.amount)) {
+                        ingredient['name'] = singular;
+                    } else if (/1/.test(ingredient.amount)) {
+                        ingredient['name'] = singular;
+                    } else if (/\+/.test(ingredient.amount)) {
+                        delete ingredient.amount;
+                        ingredient['name'] = plural;
+                    } else {
+                        ingredient['name'] = plural;
+                    }
+                } else {
+                    ingredient['name'] = plural;
+                }
+            }
+
+            // link
             if (ids.includes(ingredient.id)) {
                 let linkedRecipe = recipes[ingredient.id];
                 ingredient['link'] = '/' + linkedRecipe.id;
@@ -123,7 +156,6 @@ function readFilesInFolder(folder) {
             let key = path.parse(fileName).name;
             recipes[key] = JSON.parse(fs.readFileSync(filePath, 'utf8'));
             recipes[key].id = key;
-            recipes[key].category = folder;
             recipes[key].images = addImages(key);
             recipes[key].tags.forEach(tag => {
                 if (!tags.some(e => e.tag === tag)) {

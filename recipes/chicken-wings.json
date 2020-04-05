@@ -34,9 +34,8 @@
             "name": "Fenchelsamen"
         },
         {
-            "id": "knoblauch",
-            "amount": "1 TL",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1 TL"
         },
         {
             "id": "basilikum",
@@ -57,7 +56,7 @@
     "preparation": [
         "Grill vorwärmen.",
         "{himbeerkonfituere}, {balsamico}, {zitrone} und {chili} verrühren.",
-        "{fenchel}, {knoblauch}, {basilikum}, {salz} und {pfeffer} mahlen und zusammenfügen. Die {chickenwings} in der Würzmischung wenden.",
+        "{fenchel}, {knoblauchzehe}, {basilikum}, {salz} und {pfeffer} mahlen und zusammenfügen. Die {chickenwings} in der Würzmischung wenden.",
         "Über direkter mittlerer (175°C - 230°C) Hitze bei geschlossenem Deckel 10 - 15 Minuten goldbraun braten. Danach über indirekte mittlere Hitze 10 Minuten weitergrillen. Wings mit Glasur bestreichen und 5 Minuten weitergrillen."
     ]
 }

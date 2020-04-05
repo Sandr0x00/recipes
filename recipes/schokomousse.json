@@ -9,18 +9,15 @@
         },
         {
             "id": "sahne",
-            "amount": "200g",
-            "name": "Sahne"
+            "amount": "200g"
         },
         {
             "id": "ei",
-            "amount": "2",
-            "name": "Eier"
+            "amount": "2"
         },
         {
             "id": "rum",
-            "amount": "1 TL",
-            "name": "Rum"
+            "amount": "1 TL"
         }
     ],
     "preparation": [

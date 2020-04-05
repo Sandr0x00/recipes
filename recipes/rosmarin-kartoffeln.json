@@ -5,14 +5,12 @@
     "tags": ["vegi", "side", "main", "potato"],
     "ingredients": [
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "kartoffel",
-            "amount": "5",
-            "name": "Kartoffeln"
+            "amount": "5"
         },
         {
             "id": "gewuerze",
@@ -25,7 +23,7 @@
     ],
     "preparation": [
         "{kartoffel} achteln.",
-        "{knoblauch} klein hacken und mit {gewuerze} und {oel} vermischen. Kartoffeln damit bestreichen.",
+        "{knoblauchzehe} klein hacken und mit {gewuerze} und {oel} vermischen. Kartoffeln damit bestreichen.",
         "Bei mittlerer Hitze 20 Minuten backen."
     ]
 }

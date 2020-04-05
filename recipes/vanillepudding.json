@@ -5,9 +5,8 @@
     "tags": ["sweet"],
     "ingredients": [
         {
-            "id": "vollmilch",
-            "amount": "500ml",
-            "name": "Vollmilch"
+            "id": "milch",
+            "amount": "500ml"
         },
         {
             "id": "eigelb",
@@ -21,13 +20,11 @@
         },
         {
             "id": "vanillezucker",
-            "amount": "1 Pkg.",
-            "name": "Vanillezucker"
+            "amount": "1 Pkg."
         },
         {
             "id": "zucker",
-            "amount": "30g",
-            "name": "Zucker"
+            "amount": "30g"
         },
         {
             "id": "staerke",
@@ -36,8 +33,8 @@
         }
     ],
     "preparation": [
-        "{vollmilch:400ml} langsam zum Kochen bringen, {vanille} auskratzen, das Mark und die Schote zur Milch geben.",
-        "{vollmilch:100ml} mit {vanillezucker}, {zucker}, {eigelb} und {staerke} glatt rühren.",
+        "{milch:400ml} langsam zum Kochen bringen, {vanille} auskratzen, das Mark und die Schote zur Milch geben.",
+        "{milch:100ml} mit {vanillezucker}, {zucker}, {eigelb} und {staerke} glatt rühren.",
         "Wenn die Milch kocht, die glattgerührte Milch langsam unter ständigem Rühren einfließen lassen, kurz aufkochen."
     ]
 }

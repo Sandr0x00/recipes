@@ -9,41 +9,34 @@
             "name": "Flammkuchenteig"
         },
         {
-            "id": "cremefraiche",
-            "name": "Crème fraîche"
+            "id": "cremefraiche"
         },
         {
-            "id": "knoblauch",
-            "amount": "1 Zehe",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "gewuerze",
             "name": "Salz, Pfeffer und Oregano"
         },
         {
-            "id": "gurke",
-            "name": "Gurke"
+            "id": "gurke"
         },
         {
-            "id": "paprika",
-            "name": "Paprika"
+            "id": "paprika"
         },
         {
-            "id": "tomate",
-            "name": "Tomate"
+            "id": "tomate"
         },
         {
             "id": "feta",
             "name": "Feta"
         },
         {
-            "id": "mozarella",
-            "name": "Mozarella"
+            "id": "mozarella"
         },
         {
-            "id": "zwiebel",
-            "name": "Zwiebel"
+            "id": "zwiebel"
         },
         {
             "id": "oregano",
@@ -51,8 +44,8 @@
         }
     ],
     "preparation": [
-        "{knoblauch}, {zwiebel}, {feta}, {gurke}, {mozarella} und {tomate} klein schneiden.",
-        "{cremefraiche}, {knoblauch} mit {gewuerze} mischen.",
+        "{knoblauchzehe}, {zwiebel}, {feta}, {gurke}, {mozarella} und {tomate} klein schneiden.",
+        "Mit {cremefraiche} und {gewuerze} mischen.",
         "{flammkuchenteig} dünn ausrollen und mit {feta}, {zwiebel}, {paprika} und {tomate} belegen.",
         "Bei maximaler Temperatur etwa 5 Minuten backen.",
         "Flammkuchen mit {gurke} und {mozarella} belegen und mit {oregano} bestreuen."

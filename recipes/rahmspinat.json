@@ -11,22 +11,18 @@
         },
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauchzehe"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
             "id": "sahne",
-            "amount": "100 ml",
-            "name": "Sahne"
+            "amount": "100 ml"
         },
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         },
         {
             "id": "gewuerze",
@@ -35,7 +31,7 @@
     ],
     "preparation": [
         "{spinat} waschen und blanchieren, abtropfen lassen und leicht ausdrücken.",
-        "{zwiebel} und {knoblauch} schälen und fein würfeln. In einem Topf {butter} zerlassen und Zwiebeln und Knoblauch darin andünsten.",
+        "{zwiebel} und {knoblauchzehe} schälen und fein würfeln. In einem Topf {butter} zerlassen und Zwiebeln und Knoblauch darin andünsten.",
         "{sahne} dazugeben und 5 Minuten köcheln lassen. Mit {gewuerze} abschmecken.",
         "Blanchierten Spinat zur Sahnemischung geben, 5 Minuten kochen lassen und servieren."
     ]

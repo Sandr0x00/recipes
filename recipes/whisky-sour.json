@@ -6,8 +6,7 @@
     "ingredients": [
         {
             "id": "whisky",
-            "amount": "6cl",
-            "name": "Whisky"
+            "amount": "6cl"
         },
         {
             "id": "zitrone",

@@ -6,26 +6,22 @@
     "ingredients": [
         {
             "id": "zwiebel",
-            "amount": "1/2",
-            "name": "Zwiebel"
+            "amount": "1/2"
         },
         {
-            "id": "knoblauch",
-            "amount": "1",
-            "name": "Knoblauch"
+            "id": "knoblauchzehe",
+            "amount": "1"
         },
         {
-            "id": "tomaten",
-            "name": "Tomaten"
+            "id": "tomate",
+            "amount": "+"
         },
         {
             "id": "paprika",
-            "amount": "1/2",
-            "name": "Paprika"
+            "amount": "1/2"
         },
         {
-            "id": "spinat",
-            "name": "Spinat"
+            "id": "spinat"
         },
         {
             "id": "pass-tomaten",
@@ -33,20 +29,18 @@
             "name": "Passierte Tomaten"
         },
         {
-            "id": "chili",
-            "name": "Chili"
+            "id": "chili"
         },
         {
             "id": "gewuerze",
             "name": "Salz & Pfeffer"
         },
         {
-            "id": "bruehe",
-            "name": "Gemüsebrühe"
+            "id": "bruehe"
         }
     ],
     "preparation": [
-        "{zwiebel} und {knoblauch} klein hacken und anschwitzen.",
-        "{tomaten}, {paprika}, {pass-tomaten}, {chili}, {bruehe} und {spinat} hinzugeben und mitkochen. Mit {gewuerze} abschmecken."
+        "{zwiebel} und {knoblauchzehe} klein hacken und anschwitzen.",
+        "{tomate}, {paprika}, {pass-tomaten}, {chili}, {bruehe} und {spinat} hinzugeben und mitkochen. Mit {gewuerze} abschmecken."
     ]
 }

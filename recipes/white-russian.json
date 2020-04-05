@@ -5,8 +5,7 @@
     "ingredients": [
         {
             "id": "wodka",
-            "amount": "4cl",
-            "name": "Wodka"
+            "amount": "4cl"
         },
         {
             "id": "kahlua",
@@ -15,8 +14,7 @@
         },
         {
             "id": "sahne",
-            "amount": "2cl",
-            "name": "Sahne"
+            "amount": "2cl"
         }
     ],
     "preparation": [

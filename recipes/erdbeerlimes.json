@@ -16,18 +16,15 @@
         },
         {
             "id": "zucker",
-            "amount": "200g",
-            "name": "Zucker"
+            "amount": "200g"
         },
         {
             "id": "wodka",
-            "amount": "500ml",
-            "name": "Wodka"
+            "amount": "500ml"
         },
         {
             "id": "wasser",
-            "amount": "200ml",
-            "name": "Wasser"
+            "amount": "200ml"
         }
     ],
     "preparation": [

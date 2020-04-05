@@ -5,33 +5,27 @@
     "ingredients": [
         {
             "id": "mehl",
-            "amount": "500g",
-            "name": "Mehl"
+            "amount": "500g"
         },
         {
             "id": "backpulver",
-            "amount": "1 Pkg.",
-            "name": "Backpulver"
+            "amount": "1 Pkg."
         },
         {
             "id": "zucker",
-            "amount": "250g",
-            "name": "Zucker"
+            "amount": "250g"
         },
         {
             "id": "butter",
-            "amount": "250g",
-            "name": "Butter"
+            "amount": "250g"
         },
         {
             "id": "ei",
-            "amount": "1",
-            "name": "Ei"
+            "amount": "1"
         },
         {
             "id": "kakao",
-            "amount": "2 EL",
-            "name": "Kakao"
+            "amount": "2 EL"
         },
         {
             "id": "zimt",

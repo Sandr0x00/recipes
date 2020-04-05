@@ -6,13 +6,11 @@
     "ingredients": [
         {
             "id": "reis",
-            "amount": "150g",
-            "name": "Reis"
+            "amount": "150g"
         },
         {
             "id": "wasser",
-            "amount": "150ml",
-            "name": "Wasser"
+            "amount": "150ml"
         },
         {
             "id": "kokosmilch",
@@ -21,8 +19,7 @@
         },
         {
             "id": "haehnchen",
-            "amount": "1",
-            "name": "Haehnchenbrustfilet"
+            "amount": "1"
         },
         {
             "id": "chinakohl",

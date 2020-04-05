@@ -5,40 +5,33 @@
     "tags": ["american", "side"],
     "ingredients": [
         {
-            "id": "banana",
-            "amount": "1",
-            "name": "Banane"
+            "id": "banane",
+            "amount": "1"
         },
         {
             "id": "milch",
-            "amount": "125ml",
-            "name": "Milch"
+            "amount": "125ml"
         },
         {
             "id": "mehl",
-            "amount": "75g",
-            "name": "Mehl"
+            "amount": "75g"
         },
         {
-            "id": "chili",
-            "name": "Chili"
+            "id": "chili"
         },
         {
             "id": "backpulver",
-            "amount": "2g",
-            "name": "Backpulver"
+            "amount": "2g"
         },
         {
-            "id": "salz",
-            "name": "Salz"
+            "id": "salz"
         },
         {
-            "id": "butter",
-            "name": "Butter"
+            "id": "butter"
         }
     ],
     "preparation": [
-        "{banana}, {milch}, {mehl}, {backpulver} und {chili} vermengen und zu einem Pfannkuchenteig zerdrücken. Mit {salz} abschmecken.",
+        "{banane}, {milch}, {mehl}, {backpulver} und {chili} vermengen und zu einem Pfannkuchenteig zerdrücken. Mit {salz} abschmecken.",
         "{butter} bei mittlerer Hitze schmelzen. Kleine Pancakes machen."
     ]
 }

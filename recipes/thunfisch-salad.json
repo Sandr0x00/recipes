@@ -9,28 +9,23 @@
         },
         {
             "id": "thunfisch",
-            "amount": "90g",
-            "name": "Thunfisch"
+            "amount": "90g"
         },
         {
             "id": "ei",
-            "amount": "1",
-            "name": "Ei"
+            "amount": "1"
         },
         {
             "id": "tomate",
-            "amount": "1",
-            "name": "Tomate"
+            "amount": "1"
         },
         {
             "id": "gurke",
-            "amount": "1/4",
-            "name": "Gurke"
+            "amount": "1/4"
         },
         {
             "id": "mozarella",
-            "amount": "1",
-            "name": "Mozarella"
+            "amount": "1"
         },
         {
             "id": "sahne",
