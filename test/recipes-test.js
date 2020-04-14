@@ -72,7 +72,7 @@ function getSchema() {
             },
             type: {
                 type: 'string',
-                pattern: /^(wok|pan|pot|oven|bbq|hurricane|old-fashioned|longdrink)$/
+                pattern: /^(wok|wine|pan|pot|oven|bbq|hurricane|old-fashioned|longdrink)$/
             },
             images: {
                 type: 'array',
@@ -102,7 +102,7 @@ function getSchema() {
                     properties: {
                         id: {
                             type: 'string',
-                            pattern: /^[a-z-]+$/,
+                            pattern: /^[a-z0-9-]+$/,
                             required: true,
                             minLength: 2
                         },

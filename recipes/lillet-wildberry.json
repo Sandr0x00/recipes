@@ -1,0 +1,19 @@
+{
+    "name": "Lillet Wildberry",
+    "type": "wine",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "lilletblanc",
+            "amount": "5cl"
+        },
+        {
+            "id": "russianwildberry",
+            "amount": "10cl"
+        }
+    ],
+    "preparation": [
+        "{all} in ein Weinglas mit Eis servieren."
+    ],
+    "garnish": "frischen Beeren"
+}

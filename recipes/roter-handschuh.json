@@ -1,0 +1,28 @@
+{
+    "name": "Roter Handschuh",
+    "type": "hurricane",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "grenadinesirup",
+            "amount": "1cl"
+        },
+        {
+            "id": "pfirsichlikoer",
+            "amount": "3cl",
+            "name": "Pfirsichlikör"
+        },
+        {
+            "id": "gin",
+            "amount": "3cl"
+        },
+        {
+            "id": "maracujasaft",
+            "amount": "8 - 12cl"
+        }
+    ],
+    "preparation": [
+        "Alles außer Maracujasaft mit eis shaken.",
+        "Ins Glas abseihen und mit {maracujasaft} auffüllen."
+    ]
+}

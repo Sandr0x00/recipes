@@ -1,0 +1,34 @@
+{
+    "name": "Green Mamba",
+    "type": "longdrink",
+    "tags": ["drink", "cream"],
+    "ingredients": [
+        {
+            "id": "zitrone",
+            "amount": "2cl",
+            "name": "Zitronensaft"
+        },
+        {
+            "id": "maracujasaft",
+            "amount": "10cl",
+            "name": "Maracujasaft"
+        },
+        {
+            "id": "licor43",
+            "amount": "4cl",
+            "name": "Licor 43"
+        },
+        {
+            "id": "bluecuracao",
+            "amount": "2cl",
+            "name": "Blue Curaçao"
+        },
+        {
+            "id": "sahne",
+            "amount": "2cl"
+        }
+    ],
+    "preparation": [
+        "{all} mit Eiswürfeln shaken und in ein Longdrinkglas abseihen."
+    ]
+}

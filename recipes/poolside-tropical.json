@@ -1,0 +1,32 @@
+{
+    "name": "Poolside Tropical",
+    "type": "longdrink",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "tequila",
+            "amount": "4cl"
+        },
+        {
+            "id": "zitronensaft",
+            "amount": "2cl"
+        },
+        {
+            "id": "curacao",
+            "amount": "2cl"
+        },
+        {
+            "id": "kokoslikoer",
+            "amount": "2cl"
+        },
+        {
+            "id": "orangensaft",
+            "amount": "12cl"
+        }
+    ],
+    "preparation": [
+        "{all} mit Eis shaken.",
+        "Ins Glas abseihen."
+    ],
+    "garnish": "Orangenscheibe und Figurenstab"
+}
