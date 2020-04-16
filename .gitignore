@@ -1,5 +1,4 @@
 node_modules/
-.vscode/
 __pycache__
 recipes.tar.gz
 dist/

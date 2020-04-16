@@ -1,0 +1,105 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "id": "/All",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "id": {
+            "type": "string",
+            "required": true,
+            "minLength": 3
+        },
+        "name": {
+            "type": "string",
+            "required": true,
+            "minLength": 3
+        },
+        "headless": {
+            "type": "boolean"
+        },
+        "portions": {
+            "type": "string",
+            "pattern": "^[0-9].*"
+        },
+        "type": {
+            "type": "string",
+            "pattern": "^(wok|wineglas|pan|pot|oven|bbq|hurricane|old-fashioned|longdrink)$"
+        },
+        "images": {
+            "type": "array",
+            "required": true,
+            "uniqueItems": true
+        },
+        "tags": {
+            "type": "array",
+            "required": true,
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "pattern": "^[a-z]+$",
+                "required": true,
+                "minLength": 2
+            }
+        },
+        "ingredients": {
+            "type": "array",
+            "required": true,
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "properties": {
+                    "id": {
+                        "type": "string",
+                        "pattern": "^[a-z0-9-]+$",
+                        "required": true,
+                        "minLength": 2
+                    },
+                    "amount": {
+                        "type": "string",
+                        "pattern": "^([0-9]+(g|ml| TL| EL| Pkg.)|\\+)?"
+                    },
+                    "name": {
+                        "type": "string",
+                        "required": true,
+                        "minLength": 2
+                    },
+                    "link": {
+                        "type": "string"
+                    }
+                }
+            }
+        },
+        "preparation": {
+            "type": "array",
+            "required": true,
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "required": true,
+                "minLength": 2
+            }
+        },
+        "preparationAmounts": {
+            "type": "array",
+            "required": true,
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "required": true,
+                "minLength": 2
+            }
+        },
+        "garnish": {
+            "type": "string",
+            "required": false
+        },
+        "link": {
+            "type": "array"
+        }
+    }
+}

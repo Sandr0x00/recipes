@@ -1,6 +1,6 @@
 {
     "name": "Bananenbrot",
-    "type": "pot",
+    "type": "oven",
     "tags": ["chocolate", "sweet"],
     "ingredients": [
         {
