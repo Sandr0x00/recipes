@@ -1,0 +1,22 @@
+{
+    "name": "Malibu Sunrise",
+    "type": "longdrink",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "kokoslikoer",
+            "amount": "6cl"
+        },
+        {
+            "id": "orangensaft"
+        },
+        {
+            "id": "grenadinesirup",
+            "amount": "1cl"
+        }
+    ],
+    "preparation": [
+        "{kokoslikoer} ins Glas geben. Mit Orangensaft auffüllen. {grenadinesirup} hinzufügen."
+    ],
+    "garnish": "Orangenscheibe"
+}

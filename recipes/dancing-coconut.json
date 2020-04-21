@@ -1,0 +1,36 @@
+{
+    "name": "Dancing Coconut",
+    "type": "longdrink",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "kokoslikoer",
+            "amount": "4cl"
+        },
+        {
+            "id": "zitronensaft",
+            "amount": "2cl"
+        },
+        {
+            "id": "maracujasaft",
+            "amount": "2cl"
+        },
+        {
+            "id": "rumbraun",
+            "amount": "4cl"
+        },
+        {
+            "id": "ananassaft",
+            "amount": "12cl"
+        },
+        {
+            "id": "rumweiss",
+            "amount": "2cl"
+        }
+    ],
+    "preparation": [
+        "{all} mit Eis shaken.",
+        "Ins Glas abseihen."
+    ],
+    "garnish": "Ananasscheibe"
+}

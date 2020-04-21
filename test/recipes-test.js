@@ -17,12 +17,12 @@ describe('Recipe file names', function() {
         if (stats.isFile()) {
             return;
         }
-        it('files in recipes/' + dirName + '/ should not contain any special characters', () => {
+        it(`files in recipes/${dirName}/ should not contain any special characters`, () => {
             fs.readdirSync(dirPath).forEach(fileName => {
                 assert.match(fileName, /^([a-z-]+|_meta)\.json$/gm);
             });
         });
-        it('files in recipes/' + dirName + '/ should only contain files', () => {
+        it(`files in recipes/${dirName}/ should only contain files`, () => {
             fs.readdirSync(dirPath).forEach(fileName => {
                 let filePath = path.join(dirPath, fileName);
                 let stats = fs.statSync(filePath);
@@ -40,11 +40,15 @@ describe('Recipe file contents', () => {
     for (const key in recipes) {
         let json = recipes[key];
         let result = validate(json, schema);
+        let errorMsg = [];
         if (!result.valid) {
-            console.log(`./recipes/${key}.json`);
-            console.log(result.errors);
+            for (const e in result.errors) {
+                errorMsg.push(result.errors[e].property);
+            }
         }
-        assert(result.valid);
+        it(`${key}.json should be valid`, () => {
+            assert.isTrue(result.valid, `[${errorMsg}] is not valid`);
+        });
     }
 });
 

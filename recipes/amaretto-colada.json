@@ -1,0 +1,28 @@
+{
+    "name": "Amaretto Colada",
+    "type": "old-fashioned",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "kokoslikoer",
+            "amount": "3cl"
+        },
+        {
+            "id": "amaretto",
+            "amount": "1cl"
+        },
+        {
+            "id": "ananassaft",
+            "amount": "8cl"
+        },
+        {
+            "id": "rumweiss",
+            "amount": "4cl"
+        }
+    ],
+    "preparation": [
+        "{all} mit Eis shaken. Ins Glas geben."
+    ],
+    "garnish": "Ananasspalte und Cocktailkirsche"
+
+}

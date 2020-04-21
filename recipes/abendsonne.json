@@ -1,0 +1,23 @@
+{
+    "name": "Abendsonne",
+    "type": "wineglas",
+    "tags": ["drink"],
+    "ingredients": [
+        {
+            "id": "sahne",
+            "amount": "10cl"
+        },
+        {
+            "id": "bananensaft",
+            "amount": "5cl"
+        },
+        {
+            "id": "grenadinesirup",
+            "amount": "2cl"
+        }
+    ],
+    "preparation": [
+        "{all} mit Eis shaken. Ins Glas abseihen."
+    ],
+    "garnish": "Erdbeere"
+}

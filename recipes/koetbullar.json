@@ -1,0 +1,31 @@
+{
+    "name": "Köttbullar",
+    "type": "pan",
+    "tags": ["meat", "main"],
+    "ingredients": [
+        {
+            "id": "hackfleisch",
+            "amount": "200g"
+        },
+        {
+            "id": "lauchzwiebel",
+            "amount": "1"
+        },
+        {
+            "id": "milch"
+        },
+        {
+            "id": "haferflocken",
+            "amount": "1"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz und Pfeffer"
+        }
+    ],
+    "preparation": [
+        "{lauchzwiebel} klein hacken.",
+        "{hackfleisch} mit {lauchzwiebel}, {milch}, {haferflocken}, {gewuerze} vermengen.",
+        "Bällchen formen und in Öl anbraten."
+    ]
+}
