@@ -1,0 +1,27 @@
+{
+    "name": "Griessbrei",
+    "portions": "3 Portionen",
+    "type": "pot",
+    "tags": ["side", "sweet"],
+    "ingredients": [
+        {
+            "id": "hartweizengriess",
+            "amount": "50g"
+        },
+        {
+            "id": "milch",
+            "amount": "500ml"
+        },
+        {
+            "id": "zucker",
+            "amount": "20g"
+        },
+        {
+            "id": "zimt"
+        }
+    ],
+    "preparation": [
+        "{milch} aufkochen. {hartweizengriess}, {zucker} hinzufügen und auf kleiner Stufe weiterköcheln lassen.",
+        "Mit {zimt} bestreuen."
+    ]
+}

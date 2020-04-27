@@ -1,0 +1,24 @@
+{
+    "name": "Tangzhong",
+    "portions": "6 Buns",
+    "type": "pot",
+    "headless": true,
+    "tags": ["side"],
+    "ingredients": [
+        {
+            "id": "mehl",
+            "amount": "20g"
+        },
+        {
+            "id": "wasser",
+            "amount": "30g"
+        },
+        {
+            "id": "milch",
+            "amount": "60g"
+        }
+    ],
+    "preparation": [
+        "{mehl}, {wasser} und {milch} in einem Topf erhitzen und durchgehend rühren bis die Konsistenz einem Vorteig entspricht."
+    ]
+}

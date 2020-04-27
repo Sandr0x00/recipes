@@ -1,0 +1,46 @@
+{
+    "name": "Burger Buns",
+    "portions": "6 Buns",
+    "type": "oven",
+    "tags": ["side"],
+    "ingredients": [
+        {
+            "id": "tangzhong",
+            "name": "Tangzhong"
+        },
+        {
+            "id": "milch",
+            "amount": "120g"
+        },
+        {
+            "id": "hefe",
+            "amount": "9g"
+        },
+        {
+            "id": "mehl",
+            "amount": "320g"
+        },
+        {
+            "id": "salz",
+            "amount": "7g"
+        },
+        {
+            "id": "zucker",
+            "amount": "35g"
+        },
+        {
+            "id": "ei",
+            "amount": "3"
+        },
+        {
+            "id": "butter",
+            "amount": "40g"
+        }
+    ],
+    "preparation": [
+        "{milch} erwärmen und mit {hefe} 10 Minuten auflösen lassen.",
+        "{mehl}, {salz} und {zucker} mit {milch} und {ei:2} zusammengeben und zu einem Teig kneten. 1.5h in einer eingefetteten Schüssel gehen lassen.",
+        "In 100g schwere Bällchen teilen. Den Teig auseinander ziehen und oben zusammenfalten. Dann umdrehen und die Öffnung schließen. Die Bällchen eine Stunde gehen lassen.",
+        "{ei:1} mit einem Schuss {milch} vermischen und damit die Bällchen bestreichen. Bei 180°C für 15min goldbraun backen."
+    ]
+}

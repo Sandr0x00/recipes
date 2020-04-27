@@ -1,0 +1,47 @@
+{
+    "name": "Blaubeer Muffins",
+    "portions": "12 Muffins",
+    "type": "oven",
+    "tags": ["american", "side", "sweet"],
+    "ingredients": [
+        {
+            "id": "mehl",
+            "amount": "240g"
+        },
+        {
+            "id": "backpulver",
+            "amount": "1/2 Pkg. (8g)"
+        },
+        {
+            "id": "butter",
+            "amount": "115g"
+        },
+        {
+            "id": "zucker",
+            "amount": "100g"
+        },
+        {
+            "id": "ei",
+            "amount": "2"
+        },
+        {
+            "id": "vanillezucker",
+            "amount": "2 Pkg."
+        },
+        {
+            "id": "milch",
+            "amount": "120ml"
+        },
+        {
+            "id": "blaubeeren",
+            "amount": "340g"
+        },
+        {
+            "id": "salz"
+        }
+    ],
+    "preparation": [
+        "{mehl}, {backpulver} und {salz} vermengen. {butter}, {zucker} und {ei} aufschlagen. {mehl}-Mischung und {milch} hinzufügen und weiter mixen. {blaubeeren} hinzufügen und vorsichtig vermischen.",
+        "Auf 12 Muffinformen (doppelte Förmchen) verteilen (wird recht voll). 30 Minuten bei 180°C backen."
+    ]
+}

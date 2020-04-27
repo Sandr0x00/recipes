@@ -1,0 +1,62 @@
+{
+    "name": "Chili con potato",
+    "portions": "4 Portionen",
+    "type": "pot",
+    "tags": ["potato", "main", "mexican"],
+    "ingredients": [
+        {
+            "id": "kartoffel",
+            "amount": "500g"
+        },
+        {
+            "id": "zwiebel",
+            "amount": "2"
+        },
+        {
+            "id": "knoblauchzehe",
+            "amount": "+"
+        },
+        {
+            "id": "passiertetomaten",
+            "amount": "1 Pkg."
+        },
+        {
+            "id": "bier",
+            "amount": "350ml"
+        },
+        {
+            "id": "chili"
+        },
+        {
+            "id": "kidneybohnen",
+            "amount": "1 Dose"
+        },
+        {
+            "id": "mais",
+            "amount": "1 Dose"
+        },
+        {
+            "id": "tomatenmark",
+            "amount": "2 EL"
+        },
+        {
+            "id": "gewuerze",
+            "name": "Salz, Pfeffer, Kümmel, Paprikapulver, Thymian, Zucker und Kakaopulver"
+        },
+        {
+            "id": "baguette",
+            "amount": "1",
+            "name": "Baguette"
+        },
+        {
+            "id": "cremefraiche"
+        }
+    ],
+    "preparation": [
+        "{zwiebel}, {knoblauchzehe} und {kartoffel} würfeln.",
+        "{zwiebel} und {knoblauchzehe} anschwitzen. {kartoffel}, {tomatenmark} hinzufügen und mit anschwitzen.",
+        "{bier}, {passiertetomaten}, {chili}, {mais} und {gewuerze} hinzufügen.",
+        "{kidneybohnen} hinzufügen und einkochen.",
+        "Mit {baguette} und {cremefraiche} servieren."
+    ]
+}

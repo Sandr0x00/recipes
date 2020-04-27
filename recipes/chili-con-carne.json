@@ -13,18 +13,15 @@
             "amount": "2"
         },
         {
-            "id": "tomate",
-            "amount": "1 Pkg.",
-            "name": "passierte Tomaten"
+            "id": "passiertetomaten",
+            "amount": "1 Pkg."
         },
         {
-            "id": "chili",
-            "amount": "6"
+            "id": "chili"
         },
         {
-            "id": "bohnen",
-            "amount": "1 Dose",
-            "name": "Kidney Bohnen"
+            "id": "kidneybohnen",
+            "amount": "1 Dose"
         },
         {
             "id": "mais",
@@ -45,7 +42,7 @@
     ],
     "preparation": [
         "{zwiebel} glasig braten. {hackfleisch} und {gewuerze} hinzufügen.",
-        "{chili}, {tomate}, {bohnen} und {mais} hinzufügen und einkochen.",
+        "{chili}, {passiertetomaten}, {kidneybohnen} und {mais} hinzufügen und einkochen.",
         "Mit {baguette} und {cremefraiche} servieren."
     ]
 }
