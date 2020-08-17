@@ -2,27 +2,24 @@
     "name": "Hackbraten",
     "portions": "3 Portionen",
     "type": "oven",
-    "tags": ["meat", "main"],
-    "ingredients": [
-        {
-            "id": "hackfleisch",
-            "amount": "400g",
-            "name": "Hackfleisch"
+    "tags": [
+        "meat",
+        "main"
+    ],
+    "ingredients": {
+        "hackfleisch": {
+            "amount": "400g"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1"
         },
-        {
-            "id": "semmel",
-            "amount": "1",
-            "name": "Semmel"
+        "semmel": {
+            "amount": "1"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Salz, Pfeffer und Paprikapulver"
         }
-    ],
+    },
     "preparation": [
         "{zwiebel} klein schneiden. {semmel} in Scheiben schneiden, in Wasser einlegen und aufquellen lassen.",
         "{semmel} ausdrücken und mit {hackfleisch}, {zwiebel}, {gewuerze} vermischen.",

@@ -1,0 +1,55 @@
+{
+    "name": "Käsekuchen mit Schokoboden",
+    "type": "oven",
+    "tags": [
+        "sweet",
+        "chocolate"
+    ],
+    "ingredients": {
+        "schokiz": {
+            "amount": "100g"
+        },
+        "oel-raps": {
+            "amount": "100g"
+        },
+        "milch": {
+            "amount": "200ml"
+        },
+        "ei": {
+            "amount": "2"
+        },
+        "mehl": {
+            "amount": "160g"
+        },
+        "zucker": {
+            "amount": "150g"
+        },
+        "kakao": {
+            "amount": "3 EL"
+        },
+        "backpulver": {
+            "amount": "15g"
+        },
+        "salz": {},
+        "kuvertuerez": {
+            "amount": "100g"
+        },
+        "quark": {
+            "amount": "400g"
+        },
+        "frischkaese": {
+            "amount": "400g"
+        },
+        "butter": {
+            "amount": "100g"
+        },
+        "vanillepuddingpulver": {
+            "amount": "1 Pkg."
+        }
+    },
+    "preparation": [
+        "{schokiz} und {kuvertuerez} in Wasserbad schmelzen. Mit {oel-raps}, {milch} und {ei:1} verrühren.",
+        "{mehl}, {zucker:80g}, {kakao}, {backpulver} und {salz} dazu geben. In eine gefettete Form geben und 15 Minuten im Ofen vorbacken.",
+        "{butter} schmelzen. {quark}, {frischkaese}, {ei:1}, {zucker:80g} und {vanillepuddingpulver} verrühren und auf die Schokomasse geben"
+    ]
+}

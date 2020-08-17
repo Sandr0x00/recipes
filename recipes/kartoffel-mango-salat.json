@@ -1,29 +1,26 @@
 {
     "name": "Kartoffel Mango Salat",
-    "tags": ["salad", "potato", "fruity", "vegi"],
-    "ingredients": [
-        {
-            "id": "kartoffel",
+    "tags": [
+        "salad",
+        "potato",
+        "fruity",
+        "vegi"
+    ],
+    "ingredients": {
+        "kartoffel": {
             "amount": "3"
         },
-        {
-            "id": "mango",
-            "amount": "1/2",
-            "name": "Mango"
-        },
-        {
-            "id": "salat",
-            "name": "Salat"
-        },
-        {
-            "id": "zwiebel",
+        "mango": {
             "amount": "1/2"
         },
-        {
-            "id": "joghurt-dressing",
-            "name": "Joghurt Dressing"
+        "salat": {},
+        "zwiebel": {
+            "amount": "1/2"
+        },
+        "joghurt-dressing": {
+            "link": "/joghurt-dressing"
         }
-    ],
+    },
     "preparation": [
         "{kartoffel} kochen und mit {salat}, {mango} und {zwiebel} mischen und mir {joghurt-dressing} anmachen."
     ]

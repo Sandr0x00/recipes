@@ -2,37 +2,32 @@
     "name": "Kartoffelgratin",
     "portions": "4 Portionen",
     "type": "oven",
-    "tags": ["potato", "auflauf", "vegi"],
-    "ingredients": [
-        {
-            "id": "milch",
+    "tags": [
+        "potato",
+        "auflauf",
+        "vegi"
+    ],
+    "ingredients": {
+        "milch": {
             "amount": "250ml"
         },
-        {
-            "id": "sahne",
+        "sahne": {
             "amount": "250ml"
         },
-        {
-            "id": "kartoffel",
+        "kartoffel": {
             "amount": "800g"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1/2"
         },
-        {
-            "id": "emmentaler",
-            "amount": "100g",
-            "name": "geriebener Emmentaler"
+        "emmentaler": {
+            "amount": "100g"
         },
-        {
-            "id": "butter"
-        },
-        {
-            "id": "gewuerze",
+        "butter": {},
+        "gewuerze": {
             "name": "Salz, Pfeffer, Muskat und Thymian"
         }
-    ],
+    },
     "preparation": [
         "{milch}, {sahne} und {butter} aufkochen. Mit kleingehacktem {knoblauchzehe}, {gewuerze} würzen.",
         "{kartoffel} schälen und in dünne Scheiben schneiden oder hobeln.",

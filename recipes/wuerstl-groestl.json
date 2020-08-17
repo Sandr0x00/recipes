@@ -1,28 +1,18 @@
 {
     "name": "Wurstgröstl",
     "type": "pan",
-    "tags": ["potato", "main"],
-    "ingredients": [
-        {
-            "id": "kartoffel",
-            "amount": "+"
-        },
-        {
-            "id": "chorizo"
-        },
-        {
-            "id": "paprika"
-        },
-        {
-            "id": "zwiebel"
-        },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "pfeffer"
-        }
+    "tags": [
+        "potato",
+        "main"
     ],
+    "ingredients": {
+        "kartoffel": {},
+        "chorizo": {},
+        "paprika": {},
+        "zwiebel": {},
+        "salz": {},
+        "pfeffer": {}
+    },
     "preparation": [
         "{kartoffel} klein schneiden und in Öl anbraten.",
         "{chorizo}, {zwiebel} und {paprika} klein scheiden und mit den {kartoffel} anbraten.",

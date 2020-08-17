@@ -2,36 +2,30 @@
     "name": "Sauerkraut Flammkuchen",
     "portions": "3 Flammkuchen",
     "type": "oven",
-    "tags": ["flammkuchen", "main"],
-    "ingredients": [
-        {
-            "id": "flammkuchenteig",
-            "name": "Flammkuchenteig"
+    "tags": [
+        "flammkuchen",
+        "main"
+    ],
+    "ingredients": {
+        "flammkuchenteig": {
+            "link": "/flammkuchenteig"
         },
-        {
-            "id": "sauerkraut",
-            "amount": "125g",
-            "name": "Sauerkraut"
+        "sauerkraut": {
+            "amount": "125g"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1"
         },
-        {
-            "id": "speck",
-            "amount": "50g",
-            "name": "Speck"
+        "speck": {
+            "amount": "50g"
         },
-        {
-            "id": "sauresahne",
-            "amount": "150g",
-            "name": "Saure Sahne"
+        "sauresahne": {
+            "amount": "150g"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Salz, Pfeffer, Zucker & Muskatnuss"
         }
-    ],
+    },
     "preparation": [
         "{speck} und {zwiebel} würfeln und kurz anbraten. {sauresahne}, {sauerkraut} mit der Zwiebel-Speck-Mischung vermischen und mit {gewuerze} abschmecken.",
         "{flammkuchenteig} dünn ausrollen und mit der Sauerkrautmischung belegen.",

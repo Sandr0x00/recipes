@@ -1,40 +1,33 @@
 {
     "name": "Waffeln",
     "portions": "8 Waffeln",
-    "tags": ["sweet"],
-    "ingredients": [
-        {
-            "id": "butter",
+    "tags": [
+        "sweet"
+    ],
+    "ingredients": {
+        "butter": {
             "amount": "125g"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "250g"
         },
-        {
-            "id": "vanillezucker",
+        "vanillezucker": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "50g"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "1 TL"
         },
-        {
-            "id": "milch",
+        "milch": {
             "amount": "200ml"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "3"
         },
-        {
-            "id": "salz"
-        }
-    ],
+        "salz": {}
+    },
     "preparation": [
         "{all} vermischen.",
         "1 Schöpflöffel Teig in die Mitte des Waffeleisens geben und die Waffeln auf Stufe 2.5 backen."

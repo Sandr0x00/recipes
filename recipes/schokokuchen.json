@@ -2,49 +2,41 @@
     "name": "Schokokuchen",
     "portions": "1 Kuchen",
     "type": "oven",
-    "tags": ["sweet", "chocolate"],
-    "ingredients": [
-        {
-            "id": "milch",
+    "tags": [
+        "sweet",
+        "chocolate"
+    ],
+    "ingredients": {
+        "milch": {
             "amount": "350ml"
         },
-        {
-            "id": "butter",
+        "butter": {
             "amount": "250g"
         },
-        {
-            "id": "schoki",
-            "amount": "200g",
-            "name": "Zartbitterschokolade"
+        "schokiz": {
+            "amount": "200g"
         },
-        {
-            "id": "puderzucker",
-            "amount": "250g",
-            "name": "Puderzucker"
+        "puderzucker": {
+            "amount": "250g"
         },
-        {
-            "id": "vanillezucker",
+        "vanillezucker": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "3"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "280g"
         },
-        {
-            "id": "kakao",
+        "kakao": {
             "amount": "30g"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "1/2 Pkg."
         }
-    ],
+    },
     "preparation": [
-        "{milch} und {butter} aufkochen. {schoki} dazu geben und zu einer homogenen Masse verrühren.",
+        "{milch} und {butter} aufkochen. {schokiz} dazu geben und zu einer homogenen Masse verrühren.",
         "{ei} mit {puderzucker} und {vanillezucker} verrühren. Mit der Schokoladenmasse verrühren.",
         "{mehl}, {kakao} und {backpulver} unterheben.",
         "Die Form mit {butter} einfetten, die Masse hineinfüllen und bei 170°C Ober- und Unterhitze ca. 60 Minuten backen."

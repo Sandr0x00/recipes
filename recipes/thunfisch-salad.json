@@ -1,48 +1,35 @@
 {
     "name": "Thunfisch Salat",
     "portions": "1 portion",
-    "tags": ["salad", "tuna", "main"],
-    "ingredients": [
-        {
-            "id": "salat",
-            "name": "Kopfsalat"
-        },
-        {
-            "id": "thunfisch",
+    "tags": [
+        "salad",
+        "tuna",
+        "main"
+    ],
+    "ingredients": {
+        "salat": {},
+        "thunfisch": {
             "amount": "90g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "1"
         },
-        {
-            "id": "tomate",
+        "tomate": {
             "amount": "1"
         },
-        {
-            "id": "gurke",
+        "gurke": {
             "amount": "1/4"
         },
-        {
-            "id": "mozarella",
+        "mozarella": {
             "amount": "1"
         },
-        {
-            "id": "sahne",
-            "name": "Sahne"
-        },
-        {
-            "id": "essig",
-            "name": "Essig"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
-    ],
+        "sahne": {},
+        "essig-wein": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{salat} waschen und kleinschneiden. {gurke}, {tomate}, {mozarella} und ein gekochtes {ei} kleinschneiden.",
-        "{sahne}, {essig} mit {gewuerze} vermischen.",
-        "Alles zusammenfügen und das Dressing darüber."
+        "{sahne}, {essig-wein} mit {salz-pfeffer} vermischen.",
+        "{all} und das Dressing darüber."
     ]
 }

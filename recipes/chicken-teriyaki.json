@@ -1,0 +1,39 @@
+{
+    "name": "Chicken Teriyaki",
+    "type": "pot",
+    "tags": [
+        "main",
+        "chicken",
+        "asian"
+    ],
+    "portions": "6 Portions",
+    "ingredients": {
+        "haehnchenbrustfilet": {},
+        "mehl": {},
+        "sauce-soja": {
+            "amount": "116ml"
+        },
+        "zucker": {
+            "amount": "55g"
+        },
+        "ingwer": {},
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "honig": {
+            "amount": "1 EL"
+        },
+        "sesamoel": {
+            "amount": "1 TL"
+        },
+        "wasser": {
+            "amount": "60g"
+        },
+        "staerke": {
+            "amount": "3 TL"
+        }
+    },
+    "preparation": [
+        "{haehnchenbrustfilet} in {mehl} panieren und frittieren. {all} mischen und einkochen lassen."
+    ]
+}

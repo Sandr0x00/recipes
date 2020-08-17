@@ -1,0 +1,35 @@
+{
+    "name": "One Pot Pasta",
+    "type": "pot",
+    "tags": [
+        "vegi",
+        "main"
+    ],
+    "ingredients": {
+        "champignons": {},
+        "zwiebel": {
+            "amount": "1/2"
+        },
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "tomatenmark": {
+            "amount": "1 EL"
+        },
+        "wasser": {
+            "amount": "500ml"
+        },
+        "sahne": {
+            "amount": "100ml"
+        },
+        "nudeln": {},
+        "parmesan": {},
+        "gewuerze": {
+            "name": "Salz, Pfeffer, Rosmarin, Thymian und Paprikapulver"
+        }
+    },
+    "preparation": [
+        "{champignons}, {zwiebel} und {knoblauchzehe} in einem Topf anschwitzen. {tomatenmark} hinzugeben. Mit {wasser} und {sahne} ablöschen. {nudeln} hinzufügen. {parmesan} und {gewuerze} hinzugeben.",
+        "Mit geschlossenem Deckel 20min köcheln lassen."
+    ]
+}

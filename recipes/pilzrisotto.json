@@ -2,49 +2,36 @@
     "name": "Pilzrisotto",
     "portions": "1 Portion",
     "type": "wok",
-    "tags": ["vegi", "main", "rice"],
-    "ingredients": [
-        {
-            "id": "zwiebel",
+    "tags": [
+        "vegi",
+        "main",
+        "rice"
+    ],
+    "ingredients": {
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "risottoreis",
+        "risottoreis": {
             "amount": "100g"
         },
-        {
-            "id": "bruehe",
+        "bruehe": {
             "amount": "300ml"
         },
-        {
-            "id": "champignons"
+        "champignons": {},
+        "birne": {
+            "amount": "1"
         },
-        {
-            "id": "birne",
-            "amount": "1",
-            "name": "Birne"
-        },
-        {
-            "id": "nuss",
-            "name": "Nüsse"
-        },
-        {
-            "id": "parmesan",
-            "name": "Parmesan"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
-    ],
+        "walnuss": {},
+        "parmesan": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{zwiebel} und {knoblauchzehe} klein schneiden und anschwitzen.",
-        "{risottoreis} hinzufügen und mit anschwitzen, {bruehe} hinzufügen und mit {gewuerze} abschmecken.",
-        "{champignons}, {birne} und {nuss} anbraten.",
+        "{risottoreis} hinzufügen und mit anschwitzen, {bruehe} hinzufügen und mit {salz-pfeffer} abschmecken.",
+        "{champignons}, {birne} und {walnuss} anbraten.",
         "{parmesan} unter Risotto rühren und anrichten."
     ]
 }

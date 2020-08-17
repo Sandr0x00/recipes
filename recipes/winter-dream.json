@@ -1,24 +1,22 @@
 {
     "name": "Winter Dream",
     "type": "longdrink",
-    "tags": ["drink", "cream"],
-    "ingredients": [
-        {
-            "id": "milch",
+    "tags": [
+        "drink",
+        "cream"
+    ],
+    "ingredients": {
+        "milch": {
             "amount": "12cl"
         },
-        {
-            "id": "kokoslikoer",
+        "kokoslikoer": {
             "amount": "4cl"
         },
-        {
-            "id": "amaretto",
+        "amaretto": {
             "amount": "1cl"
         },
-        {
-            "id": "zimt"
-        }
-    ],
+        "zimt": {}
+    },
     "preparation": [
         "{all} mit Eis shaken.",
         "Ins Glas abseihen."

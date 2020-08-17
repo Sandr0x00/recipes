@@ -1,0 +1,35 @@
+{
+    "name": "Hähnchen-Burger",
+    "portions": "1 Burger",
+    "type": "pan",
+    "tags": [
+        "burger",
+        "main",
+        "meat"
+    ],
+    "ingredients": {
+        "haehnchenbrustfilet": {
+            "amount": "1"
+        },
+        "burger-bun": {
+            "amount": "1",
+            "link": "/burger-bun"
+        },
+        "tomate": {
+            "amount": "1 Scheibe"
+        },
+        "zwiebel": {
+            "amount": "1 Scheibe"
+        },
+        "salat": {},
+        "mozarella": {},
+        "salz-pfeffer": {},
+        "sauresahne": {}
+    },
+    "preparation": [
+        "{sauresahne} mit {salz-pfeffer} vermischen.",
+        "{zwiebel} und {haehnchenbrustfilet} in der Pfanne anbraten.",
+        "{burger-bun} toasten und mit {sauresahne} bestreichen.",
+        "Burger mit {all} belegen."
+    ]
+}

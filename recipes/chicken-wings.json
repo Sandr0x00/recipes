@@ -2,60 +2,44 @@
     "name": "Chicken Wings",
     "portions": "12 Wings",
     "type": "bbq",
-    "tags": ["bbq", "chicken", "main"],
-    "ingredients": [
-        {
-            "id": "chickenwings",
-            "amount": "12",
-            "name": "Hähnchenflügel"
+    "tags": [
+        "bbq",
+        "chicken",
+        "main"
+    ],
+    "ingredients": {
+        "chickenwings": {
+            "amount": "12"
         },
-        {
-            "id": "himbeerkonfituere",
-            "amount": "350g",
-            "name": "Himbeerkonfitüre ohne Kerne"
+        "marmelade-himbeer": {
+            "amount": "350g"
         },
-        {
-            "id": "balsamico",
-            "amount": "4 EL",
-            "name": "Balsamico Essig"
+        "essig-balsamico": {
+            "amount": "4 EL"
         },
-        {
-            "id": "zitrone",
-            "amount": "2 TL",
-            "name": "Zitronensaft / Zitronenschale"
+        "zitronensaft": {
+            "amount": "2 TL"
         },
-        {
-            "id": "chili",
-            "name": "Chiliflocken"
-        },
-        {
-            "id": "fenchel",
-            "amount": "1 TL",
-            "name": "Fenchelsamen"
-        },
-        {
-            "id": "knoblauchzehe",
+        "chili": {},
+        "fenchel": {
             "amount": "1 TL"
         },
-        {
-            "id": "basilikum",
-            "amount": "1 TL",
-            "name": "Basilikum"
+        "knoblauchzehe": {
+            "amount": "1 TL"
         },
-        {
-            "id": "salz",
-            "amount": "1 TL",
-            "name": "grobes Meersalz"
+        "basilikum": {
+            "amount": "1 TL"
         },
-        {
-            "id": "pfeffer",
-            "amount": "1/2 TL",
-            "name": "gemahlener Pfeffer"
+        "salz": {
+            "amount": "1 TL"
+        },
+        "pfeffer": {
+            "amount": "1/2 TL"
         }
-    ],
+    },
     "preparation": [
         "Grill vorwärmen.",
-        "{himbeerkonfituere}, {balsamico}, {zitrone} und {chili} verrühren.",
+        "{marmelade-himbeer}, {essig-balsamico}, {zitronensaft} und {chili} verrühren.",
         "{fenchel}, {knoblauchzehe}, {basilikum}, {salz} und {pfeffer} mahlen und zusammenfügen. Die {chickenwings} in der Würzmischung wenden.",
         "Über direkter mittlerer (175°C - 230°C) Hitze bei geschlossenem Deckel 10 - 15 Minuten goldbraun braten. Danach über indirekte mittlere Hitze 10 Minuten weitergrillen. Wings mit Glasur bestreichen und 5 Minuten weitergrillen."
     ]

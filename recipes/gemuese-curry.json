@@ -2,66 +2,49 @@
     "name": "Gemüse Curry",
     "portions": "2 Portionen",
     "type": "pot",
-    "tags": ["vegi", "main"],
-    "ingredients": [
-        {
-            "id": "quinoa",
+    "tags": [
+        "vegi",
+        "main"
+    ],
+    "ingredients": {
+        "quinoa": {
             "amount": "1/2 Tasse"
         },
-        {
-            "id": "passiertetomaten",
+        "tomaten-passiert": {
             "amount": "500g"
         },
-        {
-            "id": "kuemmel",
-            "amount": "1 TL",
-            "name": "Kümmel"
+        "kuemmel": {
+            "amount": "1 TL"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "chili",
-            "amount": "1/2 TL",
-            "name": "Chiliflocken"
+        "chili": {
+            "amount": "1/2 TL"
         },
-        {
-            "id": "kurkuma",
-            "amount": "1/2 TL",
-            "name": "Kurkuma"
+        "kurkuma": {
+            "amount": "1/2 TL"
         },
-        {
-            "id": "kichererbsen",
-            "amount": "1 Tasse",
-            "name": "Kichererbsen"
-        },
-        {
-            "id": "champignons",
+        "kichererbsen": {
             "amount": "1 Tasse"
         },
-        {
-            "id": "blumenkohl",
-            "amount": "1 Tasse",
-            "name": "Blumenkohl"
+        "champignons": {
+            "amount": "1 Tasse"
         },
-        {
-            "id": "cashew",
-            "amount": "1/4 Tasse",
-            "name": "Cashewnüsse"
+        "blumenkohl": {
+            "amount": "1 Tasse"
         },
-        {
-            "id": "rosinen",
-            "amount": "1/4 Tasse",
-            "name": "Rosinen"
+        "cashew": {
+            "amount": "1/4 Tasse"
         },
-        {
-            "id": "spinat"
-        }
-    ],
+        "rosinen": {
+            "amount": "1/4 Tasse"
+        },
+        "spinat": {}
+    },
     "preparation": [
         "{quinoa} mit doppelter Menge Wasser 15min bei mittlerer Hitze köcheln lassen.",
-        "{passiertetomaten} mit restlichen Zutaten (außer {spinat}) in einen Topf geben und bei mittlerer Hitze kochen bis {champignons} und {blumenkohl} weich ist.",
+        "{all/spinat} in einen Topf geben und bei mittlerer Hitze kochen bis {champignons} und {blumenkohl} weich ist.",
         "{spinat} unterrühren, 1-2 min warten, servieren."
     ]
 }

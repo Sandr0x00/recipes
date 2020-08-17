@@ -2,46 +2,40 @@
     "name": "Blaubeer Muffins",
     "portions": "12 Muffins",
     "type": "oven",
-    "tags": ["american", "side", "sweet"],
-    "ingredients": [
-        {
-            "id": "mehl",
+    "tags": [
+        "american",
+        "side",
+        "sweet"
+    ],
+    "ingredients": {
+        "mehl": {
             "amount": "240g"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "1/2 Pkg. (8g)"
         },
-        {
-            "id": "butter",
+        "butter": {
             "amount": "115g"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "100g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "2"
         },
-        {
-            "id": "vanillezucker",
+        "vanillezucker": {
             "amount": "2 Pkg."
         },
-        {
-            "id": "milch",
+        "milch": {
             "amount": "120ml"
         },
-        {
-            "id": "blaubeeren",
+        "blaubeeren": {
             "amount": "340g"
         },
-        {
-            "id": "salz"
-        }
-    ],
+        "salz": {}
+    },
     "preparation": [
-        "{mehl}, {backpulver} und {salz} vermengen. {butter}, {zucker} und {ei} aufschlagen. {mehl}-Mischung und {milch} hinzufügen und weiter mixen. {blaubeeren} hinzufügen und vorsichtig vermischen.",
+        "{mehl}, {backpulver} und {salz} vermengen. {butter}, {zucker}, {vanillezucker} und {ei} aufschlagen. {mehl}-Mischung und {milch} hinzufügen und weiter mixen. {blaubeeren} hinzufügen und vorsichtig vermischen.",
         "Auf 12 Muffinformen (doppelte Förmchen) verteilen (wird recht voll). 30 Minuten bei 180°C backen."
     ]
 }

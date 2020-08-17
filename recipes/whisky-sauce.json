@@ -1,42 +1,35 @@
 {
     "name": "Whisky Soße",
     "type": "pot",
-    "tags": ["sauce", "whisky"],
-    "ingredients": [
-        {
-            "id": "butter"
-        },
-        {
-            "id": "zwiebel",
+    "tags": [
+        "sauce",
+        "whisky"
+    ],
+    "ingredients": {
+        "butter": {},
+        "zwiebel": {
             "amount": "1"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "ketchup",
+        "ketchup": {
             "amount": "5 EL"
         },
-        {
-            "id": "zuckersirup",
+        "sirup-zucker": {
             "amount": "5 EL",
-            "name": "Zuckersirup"
+            "link": "/sirup-zucker"
         },
-        {
-            "id": "whisky",
-            "amount": "4 EL",
-            "name": "Whisky"
+        "whisky": {
+            "amount": "4 EL"
         },
-        {
-            "id": "balsamico",
-            "amount": "1 EL",
-            "name": "Balsamico"
+        "essig-balsamico": {
+            "amount": "1 EL"
         }
-    ],
+    },
     "preparation": [
         "{butter} in einem Topf bei mittlerer Hitze zerlassen.",
         "{zwiebel} unter rühren goldbraun braten. {knoblauchzehe} hinzufügen und mitbraten.",
-        "{ketchup}, {zuckersirup}, {whisky}, {balsamico} hinzufügen. 10 - 15min köcheln lassen."
+        "{ketchup}, {sirup-zucker}, {whisky}, {essig-balsamico} hinzufügen. 10 - 15min köcheln lassen."
     ]
 }

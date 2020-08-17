@@ -1,46 +1,32 @@
 {
     "name": "Salmorejo",
     "portions": "4 Portionen",
-    "tags": ["soup", "vegi"],
-    "ingredients": [
-        {
-            "id": "tomate",
-            "amount": "500g",
-            "name": "Passierte Tomaten"
+    "tags": [
+        "soup",
+        "vegi"
+    ],
+    "ingredients": {
+        "tomate": {
+            "amount": "500g"
         },
-        {
-            "id": "semmel",
-            "amount": "2",
-            "name": "Harte Semmeln"
-        },
-        {
-            "id": "knoblauchzehe",
-            "amount": "1"
-        },
-        {
-            "id": "ei",
+        "semmel": {
             "amount": "2"
         },
-        {
-            "id": "oel",
-            "name": "Olivenöl"
+        "knoblauchzehe": {
+            "amount": "1"
         },
-        {
-            "id": "essig",
-            "name": "Weinessig"
+        "ei": {
+            "amount": "2"
         },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "schinken",
-            "name": "Seranoschinken"
-        }
-    ],
+        "oel": {},
+        "essig-wein": {},
+        "salz": {},
+        "schinken": {}
+    },
     "preparation": [
         "Die {ei} hart kochen. Die {semmel} in Wasser einweichen lassen.",
         "Die Semmeln in einem Sieb audrücken und mit {tomate}, {knoblauchzehe}, ein Ei und {oel} mixen.",
-        "Nun mit {salz} und {essig} abschmecken und nochmals mixen.",
+        "Nun mit {salz} und {essig-wein} abschmecken und nochmals mixen.",
         "Danach mindestens 2 Stunden in den Kühlschrank stellen.",
         "Die kalte Salmorejo mit {schinken} und 2. Ei garnieren."
     ]

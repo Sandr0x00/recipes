@@ -2,40 +2,28 @@
     "name": "Gerösteter Auberginen Salat",
     "portions": "1 Portion",
     "type": "oven",
-    "tags": ["balkan", "main", "side", "vegi"],
-    "ingredients": [
-        {
-            "id": "paprika",
-            "name": "Spitze grüne Paprika"
+    "tags": [
+        "balkan",
+        "main",
+        "side",
+        "vegi"
+    ],
+    "ingredients": {
+        "paprika": {},
+        "aubergine": {
+            "amount": "1/2"
         },
-        {
-            "id": "aubergine",
-            "amount": "1/2",
-            "name": "Aubergine"
-        },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "3"
         },
-        {
-            "id": "oel",
-            "name": "Olivenöl"
-        },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "essig",
-            "name": "Weinessig"
-        },
-        {
-            "id": "petersilie",
-            "name": "Petersilie"
-        }
-    ],
+        "oel": {},
+        "salz": {},
+        "essig-wein": {},
+        "petersilie": {}
+    },
     "preparation": [
         "{aubergine} und {paprika} in Scheiben schneiden. Mit {oel} und {salz} 15min bei 200°C backen.",
         "{knoblauchzehe} und {petersilie} klein schneiden, zur {aubergine} hinzufügen und 5 Minuten ziehen lassen.",
-        "{essig} hinzufügen."
+        "{essig-wein} hinzufügen."
     ]
 }

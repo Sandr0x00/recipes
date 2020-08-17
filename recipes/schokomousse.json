@@ -1,28 +1,26 @@
 {
     "name": "Schokomousse",
-    "tags": ["sweet", "chocolate"],
-    "ingredients": [
-        {
-            "id": "schoki",
-            "amount": "100g",
-            "name": "Kufertüre"
+    "tags": [
+        "sweet",
+        "chocolate"
+    ],
+    "ingredients": {
+        "schokiz": {
+            "amount": "100g"
         },
-        {
-            "id": "sahne",
+        "sahne": {
             "amount": "200g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "2"
         },
-        {
-            "id": "rum",
+        "rum-braun": {
             "amount": "1 TL"
         }
-    ],
+    },
     "preparation": [
-        "Die grob gehackte {schoki} im heißen Wasserbad schmelzen, beiseite stellen.",
-        "{ei} in einer Metallschüssel im heißen Wasserbad schaumig schlagen. Kuvertüre und {rum} unterrühren.",
+        "Die grob gehackte {schokiz} im heißen Wasserbad schmelzen, beiseite stellen.",
+        "{ei} in einer Metallschüssel im heißen Wasserbad schaumig schlagen. Kuvertüre und {rum-braun} unterrühren.",
         "Lauwarm abkühlen lassen. In der Zwischenzeit die {sahne} halb steif schlagen und unterheben. Die Mousse in eine Schüssel füllen und vor dem Servieren zugedeckt kühl stellen."
     ]
 }

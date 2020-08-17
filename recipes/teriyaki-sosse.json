@@ -1,26 +1,22 @@
 {
     "name": "Teriyakisoße",
-    "tags": ["sauce"],
-    "ingredients": [
-        {
-            "id": "sojasosse",
-            "amount": "40ml",
-            "name": "Sojasoße"
+    "tags": [
+        "sauce"
+    ],
+    "ingredients": {
+        "sauce-soja": {
+            "amount": "40ml"
         },
-        {
-            "id": "honig",
+        "honig": {
             "amount": "1 TL"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "ingwer"
-        }
-    ],
+        "ingwer": {}
+    },
     "preparation": [
         "{ingwer} und {knoblauchzehe} schälen und fein hacken.",
-        "{sojasosse}, {honig} und Wasser hinzugeben."
+        "{sauce-soja}, {honig} und Wasser hinzugeben."
     ]
 }

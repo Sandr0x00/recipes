@@ -1,45 +1,37 @@
 {
     "name": "Rotwein Plätzchen",
     "type": "oven",
-    "tags": ["sweet"],
-    "ingredients": [
-        {
-            "id": "mehl",
+    "tags": [
+        "sweet"
+    ],
+    "ingredients": {
+        "mehl": {
             "amount": "500g"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "250g"
         },
-        {
-            "id": "butter",
+        "butter": {
             "amount": "250g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "1"
         },
-        {
-            "id": "kakao",
+        "kakao": {
             "amount": "2 EL"
         },
-        {
-            "id": "zimt",
-            "amount": "2 TL",
-            "name": "Zimt"
+        "zimt": {
+            "amount": "2 TL"
         },
-        {
-            "id": "wein",
-            "amount": "6 EL",
-            "name": "Rotwein"
+        "wein-rot": {
+            "amount": "6 EL"
         }
-    ],
+    },
     "preparation": [
-        "{mehl} mit {backpulver}, {zucker}, {butter}, {ei}, {kakao}, {zimt} und {wein} vermengen und zu einem Teig kneten.",
+        "{mehl} mit {backpulver}, {zucker}, {butter}, {ei}, {kakao}, {zimt} und {wein-rot} vermengen und zu einem Teig kneten.",
         "Den Teig ausrollen und Plätzchen ausstechen.",
         "Die Plätzchen bei 150 Grad backen bis sie hart sind."
     ]

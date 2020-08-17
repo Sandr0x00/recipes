@@ -1,0 +1,21 @@
+{
+    "name": "JangJoRim",
+    "type": "pot",
+    "tags": [
+        "egg",
+        "side",
+        "asian"
+    ],
+    "ingredients": {
+        "ei": {},
+        "lauchzwiebel": {},
+        "knoblauchzehe": {},
+        "chili": {},
+        "zucker": {},
+        "wasser": {},
+        "sauce-soja": {}
+    },
+    "preparation": [
+        "{all} in einem Topf zum kochen bringen. Temperatur verringern."
+    ]
+}

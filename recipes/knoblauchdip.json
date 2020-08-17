@@ -1,29 +1,21 @@
 {
     "name": "Knoblauchdip",
-    "tags": ["dip"],
-    "ingredients": [
-        {
-            "id": "frischkaese",
-            "amount": "200g",
-            "name": "Frischkäse"
+    "tags": [
+        "dip"
+    ],
+    "ingredients": {
+        "frischkaese": {
+            "amount": "200g"
         },
-        {
-            "id": "cremefraiche",
+        "cremefraiche": {
             "amount": "100g"
         },
-        {
-            "id": "oel",
-            "name": "Olivenöl"
-        },
-        {
-            "id": "knoblauchzehe",
+        "oel": {},
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
-    ],
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{knoblauchzehe} pressen und {all} vermengen."
     ]

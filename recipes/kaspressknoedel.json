@@ -2,43 +2,32 @@
     "name": "Kaspressknödel",
     "portions": "2 Portionen",
     "type": "pan",
-    "tags": ["austrian", "main", "vegi"],
-    "ingredients": [
-        {
-            "id": "ei",
+    "tags": [
+        "austrian",
+        "main",
+        "vegi"
+    ],
+    "ingredients": {
+        "ei": {
             "amount": "2"
         },
-        {
-            "id": "milch"
-        },
-        {
-            "id": "kaese",
+        "milch": {},
+        "kaese": {
             "amount": "100g"
         },
-        {
-            "id": "mehl"
-        },
-        {
-            "id": "zwiebel",
+        "mehl": {},
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "semmel",
+        "semmel": {
             "amount": "1"
         },
-        {
-            "id": "butter"
-        },
-        {
-            "id": "schnittlauch"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
-    ],
+        "butter": {},
+        "schnittlauch": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
-        "{semmel} würfeln und in {milch} anweichen. {ei}, {schnittlauch}, {kaese} und {gewuerze} hinzugeben. {mehl} bis zur gewünschten Konsistenz hinzugeben. {zwiebel} in {butter} glasig anrösten, zu den angeweichten Semmelwürfeln geben.",
+        "{semmel} würfeln und in {milch} anweichen. {ei}, {schnittlauch}, {kaese} und {salz-pfeffer} hinzugeben. {mehl} bis zur gewünschten Konsistenz hinzugeben. {zwiebel} in {butter} glasig anrösten, zu den angeweichten Semmelwürfeln geben.",
         "Mit einem Esslöffel Teighäufchen bei niedriger Hitze anbraten, umdrehen und dann platt drücken."
     ]
 }

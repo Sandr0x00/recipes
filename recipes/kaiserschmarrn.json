@@ -2,55 +2,45 @@
     "name": "Kaiserschmarrn",
     "portions": "4 Pfannen",
     "type": "pan",
-    "tags": ["austrian", "sweet", "main", "egg", "vegi"],
-    "ingredients": [
-        {
-            "id": "rosine",
-            "amount": "100g",
-            "name": "Rosinen"
+    "tags": [
+        "austrian",
+        "sweet",
+        "main",
+        "egg",
+        "vegi"
+    ],
+    "ingredients": {
+        "rosinen": {
+            "amount": "100g"
         },
-        {
-            "id": "rum",
-            "name":"Rum"
+        "rum-braun": {},
+        "eigelb": {
+            "amount": "6"
         },
-        {
-            "id": "eigelb",
-            "amount": "6",
-            "name": "Eigelb"
+        "eiweiss": {
+            "amount": "6"
         },
-        {
-            "id": "eiweis",
-            "amount": "6",
-            "name": "Eiweiß"
-        },
-        {
-            "id": "vanillezucker",
+        "vanillezucker": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "1 gehäufter EL"
         },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "mehl",
+        "salz": {},
+        "mehl": {
             "amount": "250g"
         },
-        {
-            "id": "milch",
+        "milch": {
             "amount": "500ml"
         },
-        {
-            "id": "butter",
+        "butter": {
             "amount": "50g zerlassene"
         }
-    ],
+    },
     "preparation": [
-        "Die {rosine} mindestens eine halbe Stunde in {rum} einlegen.",
+        "Die {rosinen} mindestens eine halbe Stunde in {rum-braun} einlegen.",
         "{eigelb} mit {vanillezucker}, {salz} und {zucker} mit dem Handrührgerät schaumig aufschlagen. Nach und nach abwechselnd jeweils {mehl} und {milch} einrühren.",
-        "Anschließend die {butter} einrühren. {eiweis} zu einem festen Eischnee aufschlagen und mit einem Löffel langsam aber gründlich unter die Teigmasse heben. Es sollten keine Eiweißflocken mehr zu sehen sein. Danach die Rosinen ohne den Rum unterrühren.",
+        "Anschließend die {butter} einrühren. {eiweiss} zu einem festen Eischnee aufschlagen und mit einem Löffel langsam aber gründlich unter die Teigmasse heben. Es sollten keine Eiweißflocken mehr zu sehen sein. Danach die {rosinen} ohne den {rum-braun} unterrühren.",
         "In einer Pfanne Butter zerlassen und den Teig ca. 1 cm hoch eingießen. Hitze etwas reduzieren und goldgelb anbacken lassen. Immer mal wieder drunter schauen. Die Masse vierteln, umdrehen und wieder anbacken lassen. In mundgerechte Stücke teilen."
     ]
 }

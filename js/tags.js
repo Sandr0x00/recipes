@@ -17,6 +17,7 @@ module.exports = {
     'egg': 'Ei',
     'flammkuchen': 'Flammkuchen',
     'fruity': 'Fruchtig',
+    'indian': 'Indisch',
     'italian': 'Italienisch',
     'leberkas': 'Leberkäse',
     'mexican': 'Mexikanisch',

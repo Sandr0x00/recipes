@@ -1,39 +1,30 @@
 {
     "name": "Schinken Zucchini Strudel",
     "type": "oven",
-    "tags": ["meat", "main"],
-    "ingredients": [
-        {
-            "id": "schinken",
+    "tags": [
+        "meat",
+        "main"
+    ],
+    "ingredients": {
+        "schinken": {
             "amount": "75g"
         },
-        {
-            "id": "pinienkern",
-            "amount": "+"
-        },
-        {
-            "id": "zucchini",
+        "pinienkerne": {},
+        "zucchini": {
             "amount": "1/2"
         },
-        {
-            "id": "senf",
+        "senf-mittelscharf": {
             "amount": "1 EL"
         },
-        {
-            "id": "frischkaese",
+        "frischkaese": {
             "amount": "75g"
         },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        },
-        {
-            "id": "blaetterteig"
-        }
-    ],
+        "salz-pfeffer": {},
+        "blaetterteig": {}
+    },
     "preparation": [
-        "{pinienkern} ohne Öl anrösten. {schinken} in Streifen schneiden. {zucchini} raspeln.",
-        "{zucchini}, {schinken}, {frischkaese}, {senf} zu den {pinienkern}n geben. Mit {gewuerze} würzen.",
+        "{pinienkerne} ohne Öl anrösten. {schinken} in Streifen schneiden. {zucchini} raspeln.",
+        "{zucchini}, {schinken}, {frischkaese}, {senf-mittelscharf} zu den {pinienkerne}n geben. Mit {salz-pfeffer} würzen.",
         "Auf {blaetterteig} verteilen. Die kurzen Seiten einschlagen. Dann die langen darüber. Den Strudel umdrehen, auf der oberen Schiene einschneiden und auf der mittleren Schiene bei 180°C 20 Minuten goldbraun backen."
     ]
 }

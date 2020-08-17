@@ -130,6 +130,47 @@ figcaption {
     bottom: 0;
     width: 100%;
     color: #fff;
+    font-size: 1.5rem;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .figcaption {
+        font-size: 1.5rem;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .figcaption {
+        font-size: 1.3rem;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .figcaption {
+        font-size: 1.5rem;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .figcaption {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1930px) {
+    .figcaption {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 3840px) {
+    .figcaption {
+        font-size: 2rem;
+    }
 }
 
 .recipeLinkDiv::before {

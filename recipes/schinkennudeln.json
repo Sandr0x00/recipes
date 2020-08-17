@@ -2,36 +2,29 @@
     "name": "Schinkennudeln",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["pasta", "main"],
-    "ingredients": [
-        {
-            "id": "nudeln",
+    "tags": [
+        "pasta",
+        "main"
+    ],
+    "ingredients": {
+        "nudeln": {
             "amount": "500g"
         },
-        {
-            "id": "schinken",
+        "schinken": {
             "amount": "100g"
         },
-        {
-            "id": "sahne",
+        "sahne": {
             "amount": "250ml"
         },
-        {
-            "id": "wasser",
+        "wasser": {
             "amount": "400ml"
         },
-        {
-            "id": "kaese",
-            "name": "Käse"
-        },
-        {
-            "id": "gewuerz",
-            "name": "Salz & Pfeffer"
-        }
-    ],
+        "kaese": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{nudeln} mit 1 Becher {sahne} und {wasser} in Topf, würzen, {schinken} kleinschneiden und dazu.",
-        "{gewuerz} dazu und bei mittlerer Hitze ca. 25 Minuten ziehen lassen, manchmal umrühren.",
+        "{salz-pfeffer} dazu und bei mittlerer Hitze ca. 25 Minuten ziehen lassen, manchmal umrühren.",
         "Wenn Nudeln weich sind {kaese} dazu und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
     ]
 }

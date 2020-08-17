@@ -1,25 +1,17 @@
 {
     "name": "Petersilien Kartoffeln",
     "type": "pot",
-    "tags": ["potato", "side", "vegi"],
-    "ingredients": [
-        {
-            "id": "kartoffel",
-            "amount": "+"
-        },
-        {
-            "id": "schnittlauch"
-        },
-        {
-            "id": "petersilie"
-        },
-        {
-            "id": "butter"
-        },
-        {
-            "id": "salz"
-        }
+    "tags": [
+        "potato",
+        "side",
+        "vegi"
     ],
+    "ingredients": {
+        "kartoffel": {},
+        "schnittlauch": {},
+        "petersilie": {},
+        "butter": {}
+    },
     "preparation": [
         "{kartoffel} schälen und klein schneiden. {schnittlauch} und {petersilie} klein hacken.",
         "{kartoffel} in Salzwasser kochen. Abgießen und mit {butter}, {petersilie} und {schnittlauch} verühren."

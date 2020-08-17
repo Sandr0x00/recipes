@@ -2,38 +2,28 @@
     "name": "Tostada",
     "portions": "2 Tostadas",
     "type": "oven",
-    "tags": ["spanish", "main", "tuna"],
-    "ingredients": [
-        {
-            "id": "brot",
-            "amount": "2",
-            "name": "Brot"
-        },
-        {
-            "id": "tomate",
-            "amount": "1"
-        },
-        {
-            "id": "knoblauchzehe",
-            "amount": "1"
-        },
-        {
-            "id": "oel",
-            "amount": "1 EL",
-            "name": "Olivenöl"
-        },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "kaese",
-            "name": "Käse"
-        },
-        {
-            "id": "thunfisch",
-            "name": "Thunfisch"
-        }
+    "tags": [
+        "spanish",
+        "main",
+        "tuna"
     ],
+    "ingredients": {
+        "brot": {
+            "amount": "2"
+        },
+        "tomate": {
+            "amount": "1"
+        },
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "oel": {
+            "amount": "1 EL"
+        },
+        "salz": {},
+        "kaese": {},
+        "thunfisch": {}
+    },
     "preparation": [
         "{tomate} reiben.",
         "{brot} toasten. {knoblauchzehe} auf das {brot} reiben.",

@@ -1,29 +1,26 @@
 {
     "name": "Malibu Beach",
     "type": "wineglas",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "kokoslikoer",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "kokoslikoer": {
             "amount": "4cl"
         },
-        {
-            "id": "curacao",
+        "curacao": {
             "amount": "4cl"
         },
-        {
-            "id": "zitronensaft",
+        "zitronensaft": {
             "amount": "1cl"
         },
-        {
-            "id": "ananassaft",
+        "ananassaft": {
             "amount": "8cl"
         },
-        {
-            "id": "bananensaft",
+        "bananensaft": {
             "amount": "6cl"
         }
-    ],
+    },
     "preparation": [
         "{all} mit Eis shaken. Ins Glas abseihen."
     ]

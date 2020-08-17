@@ -1,23 +1,22 @@
 {
     "name": "Moscow Mule",
     "type": "old-fashioned",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "wodka",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "wodka": {
             "amount": "4cl"
         },
-        {
-            "id": "gingerbeer",
+        "gingerbeer": {
             "amount": "8cl"
         },
-        {
-            "id": "limejuice",
+        "limettensaft": {
             "amount": "2cl"
         }
-    ],
+    },
     "preparation": [
-        "{wodka}, {limejuice} und {gingerbeer} mit Eis in ein Glas (oder einen Kupferbecher) geben."
+        "{wodka}, {limettensaft} und {gingerbeer} mit Eis in ein Glas (oder einen Kupferbecher) geben."
     ],
     "garnish": "Limettenspalte"
 }

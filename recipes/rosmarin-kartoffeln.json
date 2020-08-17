@@ -2,25 +2,24 @@
     "name": "Rosmarin Kartoffeln",
     "portions": "2 Portions",
     "type": "oven",
-    "tags": ["vegi", "side", "main", "potato"],
-    "ingredients": [
-        {
-            "id": "knoblauchzehe",
+    "tags": [
+        "vegi",
+        "side",
+        "main",
+        "potato"
+    ],
+    "ingredients": {
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "kartoffel",
+        "kartoffel": {
             "amount": "5"
         },
-        {
-            "id": "gewuerze",
-            "name": "Rosmarin, Pfeffer, Salz und Tymian"
+        "gewuerze": {
+            "name": "Rosmarin, Pfeffer, Salz und Thymian"
         },
-        {
-            "id": "oel",
-            "name": "Öl"
-        }
-    ],
+        "oel": {}
+    },
     "preparation": [
         "{kartoffel} achteln.",
         "{knoblauchzehe} klein hacken und mit {gewuerze} und {oel} vermischen. Kartoffeln damit bestreichen.",

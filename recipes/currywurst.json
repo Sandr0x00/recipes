@@ -2,56 +2,39 @@
     "name": "Currywurst",
     "portions": "1 Portion",
     "type": "pan",
-    "tags": ["main", "meat"],
-    "ingredients": [
-        {
-            "id": "bratwurst",
-            "amount": "2",
-            "name": "Bratwürste"
+    "tags": [
+        "main",
+        "meat"
+    ],
+    "ingredients": {
+        "bratwurst": {
+            "amount": "2"
         },
-        {
-            "id": "pommes",
-            "name": "Pommes"
-        },
-        {
-            "id": "zwiebel",
+        "pommes": {},
+        "zwiebel": {
             "amount": "1"
         },
-        {
-            "id": "currypulver",
-            "amount": "2 TL",
-            "name": "Currypulver"
+        "currypulver": {
+            "amount": "2 TL"
         },
-        {
-            "id": "tomatenmark",
-            "amount": "1 EL",
-            "name": "Tomatenmark"
+        "tomatenmark": {
+            "amount": "1 EL"
         },
-        {
-            "id": "chili"
+        "chili": {},
+        "tomate": {
+            "amount": "200ml"
         },
-        {
-            "id": "tomaten",
-            "amount": "200ml",
-            "name": "passierte Tomaten"
+        "apfelsaft": {
+            "amount": "50ml"
         },
-        {
-            "id": "apfelsaft",
-            "amount": "50ml",
-            "name": "Apfelsaft"
-        },
-        {
-            "id": "ketchup",
+        "ketchup": {
             "amount": "2 EL"
         },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
-    ],
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{pommes} im Ofen zubereiten.",
-        "{zwiebel} würfeln und in Öl andünsten. {currypulver} und {tomatenmark} dazu geben und anschwitzen. Mit {tomaten}, {ketchup} und {apfelsaft} ablöschen. {chili} hinzufügen. Aufkochen und ca. 10 Minuten köcheln lassen. Mit Salz und Pfeffer würzen.",
+        "{zwiebel} würfeln und in Öl andünsten. {currypulver} und {tomatenmark} dazu geben und anschwitzen. Mit {tomate}, {ketchup} und {apfelsaft} ablöschen. {chili} hinzufügen. Aufkochen und ca. 10 Minuten köcheln lassen. Mit {salz-pfeffer} würzen.",
         "{bratwurst} in einer Pfanne anbraten."
     ]
 }

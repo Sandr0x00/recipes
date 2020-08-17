@@ -68,18 +68,17 @@ class Recipe extends BaseComp {
 
             // Ingredients
             let new_ingredients = html``;
-            data.ingredients.forEach(ingredient => {
+            for (const [id, ingredient] of Object.entries(data.ingredients)) {
                 let i = html``;
                 if (ingredient.link) {
                     i = html`<span> </span><a onclick="loadingComp.navigate('${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html)}</a>`;
                 }
                 new_ingredients = html`${new_ingredients}
-    <li class="${ingredient.id} ingredient min-w" onmouseover="window.recipeComp.highlightOn('${ingredient.id}')" onmouseout="window.recipeComp.highlightOff('${ingredient.id}')">
+    <li class="${id} ingredient min-w" onmouseover="window.recipeComp.highlightOn('${id}')" onmouseout="window.recipeComp.highlightOff('${id}')">
         ${(ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name}
         ${i}
     </li>`;
-
-            });
+            }
 
             ingredients = html`${ingredients}
 <div class="ingredients" style="grid-area: ${2 + y_pos}/1;">

@@ -1,0 +1,14 @@
+{
+    "name": "KiBa",
+    "type": "longdrink",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "bananensaft": {},
+        "kirschsaft": {}
+    },
+    "preparation": [
+        "{bananensaft} ins Glas geben. {kirschsaft} hinzufügen."
+    ]
+}

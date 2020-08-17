@@ -2,51 +2,39 @@
     "name": "Hähnchen-Chinakohl-Pfanne",
     "portions": "2 Portionen",
     "type": "wok",
-    "tags": ["meat", "main", "asian", "chicken"],
-    "ingredients": [
-        {
-            "id": "reis",
+    "tags": [
+        "meat",
+        "main",
+        "asian",
+        "chicken"
+    ],
+    "ingredients": {
+        "reis": {
             "amount": "150g"
         },
-        {
-            "id": "wasser",
+        "wasser": {
             "amount": "150ml"
         },
-        {
-            "id": "kokosmilch",
-            "amount": "150ml",
-            "name": "Kokosmilch"
+        "kokosmilch": {
+            "amount": "150ml"
         },
-        {
-            "id": "haehnchen",
+        "haehnchenbrustfilet": {
             "amount": "1"
         },
-        {
-            "id": "chinakohl",
-            "amount": "1/2",
-            "name": "Chinakohl"
+        "chinakohl": {
+            "amount": "1/2"
         },
-        {
-            "id": "teriyaki-sosse",
-            "name": "Teriyakisoße"
+        "teriyaki-sosse": {
+            "link": "/teriyaki-sosse"
         },
-        {
-            "id": "cashew",
-            "name": "Cashewkerne"
-        },
-        {
-            "id": "fruehlingszwiebel",
-            "name": "Frühlingszwiebel"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
-    ],
+        "cashew": {},
+        "lauchzwiebel": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{reis} in {wasser} und {kokosmilch} kochen.",
-        "{chinakohl}, {fruehlingszwiebel} und {cashew} kleinschneiden.",
-        "{haehnchen} in Streifen schneiden und braten. {teriyaki-sosse} hinzugeben und einkochen lassen. {chinakohl}, {cashew} und weiße {fruehlingszwiebel} hinzugeben und mit {gewuerze} abschmecken.",
-        "Mit {reis} anrichten und grüne {fruehlingszwiebel} darüber streuen."
+        "{chinakohl}, {lauchzwiebel} und {cashew} kleinschneiden.",
+        "{haehnchenbrustfilet} in Streifen schneiden und braten. {teriyaki-sosse} hinzugeben und einkochen lassen. {chinakohl}, {cashew} und weiße {lauchzwiebel} hinzugeben und mit {salz-pfeffer} abschmecken.",
+        "Mit {reis} anrichten und grüne {lauchzwiebel} darüber streuen."
     ]
 }

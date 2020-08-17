@@ -1,20 +1,17 @@
 {
     "name": "Cacio e Pepe",
     "type": "pot",
-    "tags": ["italian", "pasta", "main", "vegi"],
-    "ingredients": [
-        {
-            "id": "nudeln"
-        },
-        {
-            "id": "parmesan",
-            "name": "Parmesan"
-        },
-        {
-            "id": "pfeffer",
-            "name": "Pfeffer"
-        }
+    "tags": [
+        "italian",
+        "pasta",
+        "main",
+        "vegi"
     ],
+    "ingredients": {
+        "nudeln": {},
+        "parmesan": {},
+        "pfeffer": {}
+    },
     "preparation": [
         "{nudeln} fast fertig kochen.",
         "Nudelwasser reduzieren.",

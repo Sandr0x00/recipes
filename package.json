@@ -11,7 +11,7 @@
     },
     "scripts": {
         "compile": "rollup -c",
-        "test": "eslint . && mocha"
+        "test": "eslint test && mocha"
     },
     "devDependencies": {
         "@fortawesome/fontawesome-svg-core": "^1.2.28",

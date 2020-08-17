@@ -2,37 +2,35 @@
     "name": "Spanische Tortilla",
     "portions": "1 Tortilla",
     "type": "pan",
-    "tags": ["spanish", "potato", "egg", "main", "vegi", "spinach"],
-    "ingredients": [
-        {
-            "id": "kartoffel",
+    "tags": [
+        "spanish",
+        "potato",
+        "egg",
+        "main",
+        "vegi",
+        "spinach"
+    ],
+    "ingredients": {
+        "kartoffel": {
             "amount": "2"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "5"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "olivenoel"
-        },
-        {
-            "id": "spinat",
+        "olivenoel": {},
+        "spinat": {
             "amount": "100g"
         },
-        {
-            "id": "salz"
-        }
-    ],
+        "salz": {}
+    },
     "preparation": [
-        "{zwiebel}, {kartoffel} und {knoblauchzehe} schälen und in Würfel schneiden. {zwiebel} und {knoblauchzehe} in {olivenoel} und {salz} anbraten bis sie glasig sind. Anschließend {kartoffel} in die Pfanne geben und anbraten bis sie fast gar sind. Kurz bevor die Kartoffeln gar sind den frischen Spinat dazugeben und ca. 1 Minuten anbraten lassen. Nochmals etwas Salz hinein streuen.",
+        "{zwiebel}, {kartoffel} und {knoblauchzehe} schälen und in Würfel schneiden. {zwiebel} und {knoblauchzehe} in {olivenoel} und {salz} anbraten bis sie glasig sind. Anschließend {kartoffel} in die Pfanne geben und anbraten bis sie fast gar sind. Kurz bevor die Kartoffeln gar sind {spinat} dazugeben und ca. 1 Minuten anbraten lassen. Nochmals etwas Salz hinein streuen.",
         "{ei} verquirlen. Die angebratenen Kartoffeln zu den eiern geben und ca. 5 Minuten ziehen lassen.",
         "In die Pfanne nochmals {olivenoel} geben, und auf kleiner Flamme die Eier - Kartoffelmasse, abgedeckt braten lassen. Nach ca. 5 Minuten an den Seiten etwas eindrücken um zu sehen, ob die Unterseite schon braun ist. Wenn ja, einen großen flachen Teller auf die Tortilla legen und mit der Pfanne vorsichtig drehen. Die Tortilla dann vorsichtig vom Teller wieder in die Pfanne gleiten lassen und weiter braten lassen bis auch diese Seite braun ist."
     ]

@@ -2,36 +2,33 @@
     "name": "Himbeer Cupcakes",
     "type": "oven",
     "portions": "12 Cupcakes",
-    "tags": ["vegi", "sweet", "vegan", "fruity"],
-    "ingredients": [
-        {
-            "id": "schoko-muffin",
+    "tags": [
+        "vegi",
+        "sweet",
+        "vegan",
+        "fruity"
+    ],
+    "ingredients": {
+        "schoko-muffin": {
             "amount": "12",
-            "name": "Schoko Muffins"
+            "link": "/schoko-muffin"
         },
-        {
-            "id": "himbeeren",
-            "amount": "120g",
-            "name": "TK Himbeeren"
+        "himbeeren": {
+            "amount": "120g"
         },
-        {
-            "id": "creme",
-            "amount": "100g",
-            "name": "vegane Schlagcreme"
+        "schlagcreme-vegan": {
+            "amount": "100g"
         },
-        {
-            "id": "vanillezucker",
+        "vanillezucker": {
             "amount": "1/2 Pkg."
         },
-        {
-            "id": "himbeermarmelade",
-            "amount": "80g",
-            "name": "Himbeermarmelade"
+        "marmelade-himbeer": {
+            "amount": "80g"
         }
-    ],
+    },
     "preparation": [
         "{himbeeren} sanft in einem Topf erhitzen, bis sie weich sind. Mit einem Löffel durch ein Sieb drücken um kernloses Himbeerpüree zu erhalten.",
-        "{creme} mit {vanillezucker} steif schlagen. Das abgekühlte Himbeerpüree und die {himbeermarmelade} dazu mixen.",
+        "{schlagcreme-vegan} mit {vanillezucker} steif schlagen. Das abgekühlte Himbeerpüree und die {marmelade-himbeer} dazu mixen.",
         "Die Himbeercreme mithilfe einer Lochtülle auf die {schoko-muffin} dressieren. Kaltstellen, damit das Topping fester werden kann."
     ]
 }

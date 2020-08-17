@@ -1,39 +1,26 @@
 {
     "name": "Pizzasoße",
     "headless": true,
-    "tags": ["vegi"],
-    "ingredients": [
-        {
-            "id": "passiertetomaten",
-            "name": "Passierte Tomaten"
-        },
-        {
-            "id": "knoblauchzehe",
+    "tags": [
+        "vegi"
+    ],
+    "ingredients": {
+        "tomaten-passiert": {},
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "tomate",
+        "tomate": {
             "amount": "1"
         },
-        {
-            "id": "oel",
-            "name": "Olivenöl"
-        },
-        {
-            "id": "oregano",
-            "name": "Oregano"
-        },
-        {
-            "id": "basilikum",
-            "name": "Basilikum"
-        },
-        {
-            "id": "gewuerze",
+        "oel": {},
+        "oregano": {},
+        "basilikum": {},
+        "gewuerze": {
             "name": "Salz, Pfeffer und Zucker"
         }
-    ],
+    },
     "preparation": [
-        "{knoblauchzehe} und {tomate} fein würfeln. {basilikum} kleinschneiden und mit {passiertetomaten}, {oel}, {oregano}, {gewuerze} vermischen.",
+        "{knoblauchzehe} und {tomate} fein würfeln. {basilikum} kleinschneiden und mit {tomaten-passiert}, {oel}, {oregano}, {gewuerze} vermischen.",
         "Auf dem ausgerollten Pizzateig verteilen."
     ]
 }

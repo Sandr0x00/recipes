@@ -1,53 +1,42 @@
 {
     "name": "Bananenbrot",
     "type": "oven",
-    "tags": ["chocolate", "sweet"],
-    "ingredients": [
-        {
-            "id": "banane",
+    "tags": [
+        "chocolate",
+        "sweet"
+    ],
+    "ingredients": {
+        "banane": {
             "amount": "4"
         },
-        {
-            "id": "oel",
-            "amount": "100g",
-            "name": "Sonnenblumenöl"
-        },
-        {
-            "id": "mehl",
-            "amount": "240g"
-        },
-        {
-            "id": "zucker",
+        "oel": {
             "amount": "100g"
         },
-        {
-            "id": "vanillezucker",
+        "mehl": {
+            "amount": "240g"
+        },
+        "zucker": {
+            "amount": "100g"
+        },
+        "vanillezucker": {
             "amount": "2 Pkg"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "2"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "1 Pkg"
         },
-        {
-            "id": "salz"
+        "salz": {},
+        "zimt": {
+            "amount": "1 TL"
         },
-        {
-            "id": "zimt",
-            "amount": "1 TL",
-            "name": "Zimt"
-        },
-        {
-            "id": "schoki",
-            "amount": "50g",
-            "name": "Schokolade oder Walnüsse"
+        "schokiz": {
+            "amount": "50g"
         }
-    ],
+    },
     "preparation": [
-        "{banane}, {oel}, {zucker}, {vanillezucker}, {ei}, {mehl}, {backpulver}, {salz}, {zimt} und {schoki} mischen.",
+        "{banane}, {oel}, {zucker}, {vanillezucker}, {ei}, {mehl}, {backpulver}, {salz}, {zimt} und {schokiz} mischen.",
         "Den Teig in eine eingefettete Backform (12x24cm) geben und auf der mittleren Schiene für 60-75 Minuten bei 180°C backen.",
         "15 Minuten in der Form abkühlen lassen, dann vollständig abkühlen zu lassen."
     ]

@@ -1,47 +1,32 @@
 {
     "name": "Hummus",
-    "tags": ["side", "vegi"],
-    "ingredients": [
-        {
-            "id": "kichererbsen",
-            "amount": "400g",
-            "name": "Kichererbsen"
-        },
-        {
-            "id": "tahini",
-            "amount": "2 EL",
-            "name": "Tahini"
-        },
-        {
-            "id": "oel",
-            "amount": "3 EL",
-            "name": "Olivenöl"
-        },
-        {
-            "id": "chili",
-            "amount": "1"
-        },
-        {
-            "id": "zitrone",
-            "amount": "1/2",
-            "name": "Zitrone"
-        },
-        {
-            "id": "knoblauchzehe",
-            "amount": "1"
-        },
-        {
-            "id": "kuemmel",
-            "name": "Kreuzkümmel"
-        },
-        {
-            "id": "salzpfeffer",
-            "name": "Salz & Pfeffer"
-        }
+    "tags": [
+        "side",
+        "vegi"
     ],
+    "ingredients": {
+        "kichererbsen": {
+            "amount": "400g"
+        },
+        "tahini": {
+            "amount": "2 EL"
+        },
+        "oel": {
+            "amount": "3 EL"
+        },
+        "chili": {
+            "amount": "1"
+        },
+        "zitronensaft": {},
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "kuemmel": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{kichererbsen} abtropfen lassen.",
-        "{tahini}, {oel}, {chili}, {zitrone} und {knoblauchzehe} zugeben und alles fein pürieren.",
-        "Mit {kuemmel}, {salzpfeffer} abschmecken."
+        "{tahini}, {oel}, {chili}, {zitronensaft} und {knoblauchzehe} zugeben und alles fein pürieren.",
+        "Mit {kuemmel}, {salz-pfeffer} abschmecken."
     ]
 }

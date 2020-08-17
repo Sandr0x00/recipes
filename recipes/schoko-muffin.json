@@ -2,37 +2,34 @@
     "name": "Schoko Muffin",
     "type": "oven",
     "portions": "12 Muffins",
-    "tags": ["vegi", "chocolate", "sweet", "vegan"],
-    "ingredients": [
-        {
-            "id": "mehl",
+    "tags": [
+        "vegi",
+        "chocolate",
+        "sweet",
+        "vegan"
+    ],
+    "ingredients": {
+        "mehl": {
             "amount": "250g"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "170g"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "10g"
         },
-        {
-            "id": "kakao",
+        "kakao": {
             "amount": "30"
         },
-        {
-            "id": "oel",
-            "amount": "100g",
-            "name": "Sonnenblumenöl"
+        "oel": {
+            "amount": "100g"
         },
-        {
-            "id": "sojamilch",
-            "amount": "250g",
-            "name": "Sojamilch"
+        "milch-soja": {
+            "amount": "250g"
         }
-    ],
+    },
     "preparation": [
-        "{mehl}, {zucker}, {kakao}, {backpulver} mit {oel} und {sojamilch} mixen.",
+        "{mehl}, {zucker}, {kakao}, {backpulver} mit {oel} und {milch-soja} mixen.",
         "Den Teig auf 12 Muffinformen verteilen und 25 Minuten bei 180°C backen."
     ]
 }

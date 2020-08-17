@@ -1,33 +1,28 @@
 {
     "name": "Bacon Beans Wrap",
-    "tags": ["main", "meat"],
-    "ingredients": [
-        {
-            "id": "bacon",
+    "tags": [
+        "main",
+        "meat"
+    ],
+    "ingredients": {
+        "bacon": {
             "amount": "100g"
         },
-        {
-            "id": "paprika",
+        "paprika": {
             "amount": "1"
         },
-        {
-            "id": "whitebeans",
-            "amount": "1/2 Dose",
-            "name": "Weiße Bohnen"
+        "bohnen-weiss": {
+            "amount": "1/2 Dose"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "2"
         },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
-    ],
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{bacon} ohne Öl anbraten. {knoblauchzehe} in Scheiben schneiden.",
         "{paprika} und {knoblauchzehe} hinzufügen und mitkochen.",
-        "{whitebeans} hinzufügen und mit {gewuerze} abschmecken.",
+        "{bohnen-weiss} hinzufügen und mit {salz-pfeffer} abschmecken.",
         "Als Wrap servieren."
     ]
 }

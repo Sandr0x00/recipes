@@ -1,0 +1,21 @@
+{
+    "name": "Advokatentrost",
+    "type": "hurricane",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "eierlikoer": {
+            "amount": "3cl"
+        },
+        "kaffee": {
+            "amount": "10cl"
+        },
+        "sahne": {
+            "amount": "4cl"
+        }
+    },
+    "preparation": [
+        "{kaffee} ins Glas geben, {eierlikoer} hinzufügen. {sahne} halbsteif aufschlagen und darauf setzen."
+    ]
+}

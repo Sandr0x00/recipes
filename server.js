@@ -9,15 +9,15 @@ const app = express();
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const process = require('process');
 
-if (process.pid) {
-    // safe PID for "make kill"
-    fs.writeFile('pid', process.pid, (err) => {
-        if (err) {
-            throw err;
-        }
-        console.log(`PID: ${process.pid}`);
-    });
-}
+// if (process.pid) {
+//     // safe PID for "make kill"
+//     fs.writeFile('pid', process.pid, (err) => {
+//         if (err) {
+//             throw err;
+//         }
+//         console.log(`PID: ${process.pid}`);
+//     });
+// }
 
 let port = config.port;
 if (port == null || port == '') {

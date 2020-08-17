@@ -1,25 +1,20 @@
 {
     "name": "Greenhorn",
     "type": "longdrink",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "zitronensaft",
-            "amount": "6cl",
-            "name": "Zitronensaft"
-        },
-        {
-            "id": "rumbraun",
-            "amount": "4cl",
-            "name": "Rum braun"
-        },
-        {
-            "id": "tonic",
-            "name": "Tonic Water"
-        }
+    "tags": [
+        "drink"
     ],
+    "ingredients": {
+        "zitronensaft": {
+            "amount": "6cl"
+        },
+        "rum-braun": {
+            "amount": "4cl"
+        },
+        "tonic": {}
+    },
     "preparation": [
-        "{zitronensaft} und {rumbraun} mit Eis shaken und in ein Longdrinkglas abseihen.",
+        "{zitronensaft} und {rum-braun} mit Eis shaken und in ein Longdrinkglas abseihen.",
         "Mit {tonic} auffüllen.",
         "Mit Trinkhalm servieren."
     ],

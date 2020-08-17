@@ -1,35 +1,29 @@
 {
     "name": "Guacamole",
-    "tags": ["side", "vegi"],
-    "ingredients": [
-        {
-            "id": "avocado",
+    "tags": [
+        "side",
+        "vegi"
+    ],
+    "ingredients": {
+        "avocado": {
             "amount": "2"
         },
-        {
-            "id": "tomate",
+        "tomate": {
             "amount": "1"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "chili",
+        "chili": {
             "amount": "1/2"
         },
-        {
-            "id": "zitrone",
-            "amount": "2 TL",
-            "name": "Zitronensaft"
+        "zitronensaft": {
+            "amount": "2 TL"
         },
-        {
-            "id": "salzpfeffer",
-            "name": "Salz & Pfeffer"
-        }
-    ],
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{tomate} und {zwiebel} klein schneiden. {avocado} zerdrücken und alles zusammenfügen.",
-        "Mit {chili}, {zitrone}, {salzpfeffer} würzen."
+        "Mit {chili}, {zitronensaft}, {salz-pfeffer} würzen."
     ]
 }

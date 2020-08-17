@@ -1,47 +1,39 @@
 {
     "name": "Brownies",
     "type": "oven",
-    "tags": ["sweet", "chocolate"],
-    "ingredients": [
-        {
-            "id": "butter",
+    "tags": [
+        "sweet",
+        "chocolate"
+    ],
+    "ingredients": {
+        "butter": {
             "amount": "185g"
         },
-        {
-            "id": "schokiz",
-            "amount": "200g",
-            "name": "Zartbitter Schokolade"
+        "schokiz": {
+            "amount": "200g"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "85g"
         },
-        {
-            "id": "kakao",
+        "kakao": {
             "amount": "40g"
         },
-        {
-            "id": "schokiw",
-            "amount": "50g",
-            "name": "Weiße Schokolade"
+        "schokiw": {
+            "amount": "50g"
         },
-        {
-            "id": "schoki",
-            "amount": "50g",
-            "name": "Milchschokolade"
+        "schokim": {
+            "amount": "50g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "3"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "275g"
         }
-    ],
+    },
     "preparation": [
         "{schokiz} in kleine Stücke brechen und mit {butter} in eine Schüssel geben. In Wasserbad schmelzen. Alternativ in der Mikrowelle 2 Minuten erhitzen. Auf Raumtemparatur abkühlen lassen.",
-        "{mehl} und {kakao} zusammmen sieben. {schokiw} und {schoki} klein hacken. {ei} mit {zucker} steif schlagen.",
+        "{mehl} und {kakao} zusammmen sieben. {schokiw} und {schokim} klein hacken. {ei} mit {zucker} steif schlagen.",
         "Gescholzene Schokolade unter Eischnee heben.",
         "Mehl-Kakao unter die Masse heben.",
         "Schokoladenstückchen unterheben.",

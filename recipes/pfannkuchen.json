@@ -2,31 +2,26 @@
     "name": "Pfannkuchen",
     "portions": "9 Pfannkuchen",
     "type": "pan",
-    "tags": ["sweet", "main"],
-    "ingredients": [
-        {
-            "id": "milch",
+    "tags": [
+        "sweet",
+        "main"
+    ],
+    "ingredients": {
+        "milch": {
             "amount": "250ml"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "2"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "150g"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "1 EL"
         },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "butter"
-        }
-    ],
+        "salz": {},
+        "butter": {}
+    },
     "preparation": [
         "{milch} mit {mehl} gut verrühren. {ei}, {salz} und {zucker} dazu geben und nochmal kräftig verrühren bis man einen glatten Teig ohne Klümpchen hat.",
         "Die Pfanne von der Kochstelle nehmen und die {butter} durch geschicktes Schwenken gleichmäßig verteilen. Mit einem großen Schöpflöffel Teig in die heiße Pfanne geben und diesen ebenfalls durch Schwenken gleichmäßig verteilen. Wenn die Unterseite goldgelb ist den Pfannkuchen wenden."

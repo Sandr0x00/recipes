@@ -12,7 +12,10 @@ resize:
 recipes:
 	node scripts/preprocess.js
 
-build: build-css build-js resize recipes
+icons:
+	./scripts/pixelparser.py
+
+build: build-css build-js icons resize recipes
 
 test:
 	npm test

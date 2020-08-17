@@ -1,0 +1,23 @@
+{
+    "name": "Cosmopolitan",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "citrus-wodka": {
+            "amount": "4cl"
+        },
+        "cointreau": {
+            "amount": "1.5cl"
+        },
+        "cranberrysaft": {
+            "amount": "4cl"
+        },
+        "limettensaft": {
+            "amount": "1.5cl"
+        }
+    },
+    "preparation": [
+        "{citrus-wodka}, {cointreau}, {cranberrysaft}, {limettensaft} mit Eis shaken. In Glas abseihen."
+    ]
+}

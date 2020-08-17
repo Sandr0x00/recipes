@@ -1,6 +1,8 @@
+#!/usr/bin/env python3
+
 from PIL import Image
 
-im = Image.open("../pixelart.png")
+im = Image.open("pixelart.png")
 pix = im.load()
 width, height = im.size
 
@@ -26,7 +28,16 @@ image_names = [
     "russia",
     "potato",
     "chicken",
-    "meat"
+    "meat",
+    "cheese",
+    "egg",
+    "corn",
+    "radish",
+    "blank",
+    "austrian",
+    "mexican",
+    "american",
+    "italian"
 ]
 images = []
 import numpy as np
@@ -154,7 +165,7 @@ if len(image_names) != len(images):
 
 for i in range(len(images)):
     svg = create_svg(images[i])
-    with open(f"../public/icons/{image_names[i]}.svg", "w+") as f:
+    with open(f"public/icons/{image_names[i]}.svg", "w+") as f:
         f.write(svg)
 
 

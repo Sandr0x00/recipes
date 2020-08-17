@@ -2,47 +2,39 @@
     "name": "Chili con carne",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["meat", "main", "mexican"],
-    "ingredients": [
-        {
-            "id": "hackfleisch",
+    "tags": [
+        "meat",
+        "main",
+        "mexican"
+    ],
+    "ingredients": {
+        "hackfleisch": {
             "amount": "600g"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "2"
         },
-        {
-            "id": "passiertetomaten",
+        "tomaten-passiert": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "chili"
-        },
-        {
-            "id": "kidneybohnen",
+        "chili": {},
+        "kidneybohnen": {
             "amount": "1 Dose"
         },
-        {
-            "id": "mais",
+        "mais": {
             "amount": "1 Dose"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Salz, Pfeffer und Kümmel"
         },
-        {
-            "id": "baguette",
-            "amount": "1",
-            "name": "Baguette"
+        "baguette": {
+            "amount": "1"
         },
-        {
-            "id": "cremefraiche"
-        }
-    ],
+        "cremefraiche": {}
+    },
     "preparation": [
         "{zwiebel} glasig braten. {hackfleisch} und {gewuerze} hinzufügen.",
-        "{chili}, {passiertetomaten}, {kidneybohnen} und {mais} hinzufügen und einkochen.",
+        "{chili}, {tomaten-passiert}, {kidneybohnen} und {mais} hinzufügen und einkochen.",
         "Mit {baguette} und {cremefraiche} servieren."
     ]
 }

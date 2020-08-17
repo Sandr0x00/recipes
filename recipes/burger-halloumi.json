@@ -1,0 +1,32 @@
+{
+    "name": "Halloumi-Burger",
+    "portions": "1 Burger",
+    "type": "pan",
+    "tags": [
+        "burger",
+        "main",
+        "meat"
+    ],
+    "ingredients": {
+        "halloumi": {},
+        "burger-bun": {
+            "amount": "1",
+            "link": "/burger-bun"
+        },
+        "tomate": {
+            "amount": "1 Scheibe"
+        },
+        "zwiebel": {
+            "amount": "1 Scheibe"
+        },
+        "salat": {},
+        "salz-pfeffer": {},
+        "senf-mittelscharf": {},
+        "honig": {}
+    },
+    "preparation": [
+        "{honig} mit {senf-mittelscharf} vermischen.",
+        "{zwiebel} und {halloumi} in der Pfanne anbraten.",
+        "{burger-bun} toasten und mit Honig-Senf-Soße bestreichen. Burger mit {all} belegen."
+    ]
+}

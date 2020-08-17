@@ -1,0 +1,24 @@
+{
+    "name": "Apfel-Limonade",
+    "type": "longdrink",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "mineralwasser": {
+            "amount": "1l"
+        },
+        "apfelsaft": {
+            "amount": "0.5l"
+        },
+        "zitronensaft": {
+            "amount": "100ml"
+        },
+        "limettensaft": {
+            "amount": "50ml"
+        }
+    },
+    "preparation": [
+        "{mineralwasser}, {apfelsaft}, {zitronensaft}, {limettensaft} mischen."
+    ]
+}

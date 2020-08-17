@@ -2,54 +2,35 @@
     "name": "Hähnchen-Gemüse-Pfanne",
     "portions": "2 Portionen",
     "type": "wok",
-    "tags": ["chicken", "asian", "main"],
-    "ingredients": [
-        {
-            "id": "haehnchen",
-            "amount": "1",
-            "name": "Hähnchenbrustfilet"
-        },
-        {
-            "id": "paprika",
+    "tags": [
+        "chicken",
+        "asian",
+        "main"
+    ],
+    "ingredients": {
+        "haehnchenbrustfilet": {
             "amount": "1"
         },
-        {
-            "id": "karotte",
+        "paprika": {
             "amount": "1"
         },
-        {
-            "id": "brokkoli",
-            "name": "Brokkoli"
+        "karotte": {
+            "amount": "1"
         },
-        {
-            "id": "erdnuss",
-            "name": "Erdnüsse"
-        },
-        {
-            "id": "knoblauchzehe"
-        },
-        {
-            "id": "kokosmilch",
-            "name": "Kokosmilch"
-        },
-        {
-            "id": "sojasosse",
-            "name": "Sojasoße"
-        },
-        {
-            "id": "nudeln"
-        },
-        {
-            "id": "reis"
-        },
-        {
-            "id": "gewuerze",
+        "brokkoli": {},
+        "erdnuesse": {},
+        "knoblauchzehe": {},
+        "kokosmilch": {},
+        "sauce-soja": {},
+        "nudeln": {},
+        "reis": {},
+        "gewuerze": {
             "name": "Salz, Pfeffer und Gemüsebrühe"
         }
-    ],
+    },
     "preparation": [
         "{nudeln} oder {reis} kochen.",
-        "Das {haehnchen} in einer Pfanne goldbraun braten und {karotte}, {brokkoli}, {paprika} und {knoblauchzehe} hinzufügen, mit {gewuerze} würzen.",
-        "Anschließend {kokosmilch} und {erdnuss} hinzufügen {sojasosse} abschmecken. Zuletzt die Nudeln in die Pfanne geben und alles gut vermischen."
+        "Das {haehnchenbrustfilet} in einer Pfanne goldbraun braten und {karotte}, {brokkoli}, {paprika} und {knoblauchzehe} hinzufügen, mit {gewuerze} würzen.",
+        "Anschließend {kokosmilch} und {erdnuesse} hinzufügen {sauce-soja} abschmecken. Zuletzt die Nudeln in die Pfanne geben und alles gut vermischen."
     ]
 }

@@ -1,17 +1,17 @@
 {
     "name": "Zuckersirup",
     "type": "pot",
-    "tags": ["sirup"],
-    "ingredients": [
-        {
-            "id": "zucker",
+    "tags": [
+        "sirup"
+    ],
+    "ingredients": {
+        "zucker": {
             "amount": "500g"
         },
-        {
-            "id": "wasser",
+        "wasser": {
             "amount": "400ml"
         }
-    ],
+    },
     "preparation": [
         "{wasser} und {zucker} unter ständigem Rühren solange erhitzen, bis sich der Zucker aufgelöst hat und der Sirup klar ist. Darf nicht kochen.",
         "In eine Flasche füllen. Der Sirup ist lange haltbar."

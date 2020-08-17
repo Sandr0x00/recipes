@@ -2,45 +2,31 @@
     "name": "Tomatensosse",
     "portions": "2 Portionen",
     "type": "pot",
-    "tags": ["main", "vegi"],
-    "ingredients": [
-        {
-            "id": "zwiebel",
+    "tags": [
+        "main",
+        "vegi"
+    ],
+    "ingredients": {
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "tomate",
-            "amount": "+"
-        },
-        {
-            "id": "paprika",
+        "tomate": {},
+        "paprika": {
             "amount": "1/2"
         },
-        {
-            "id": "spinat"
+        "spinat": {},
+        "tomaten-passiert": {
+            "amount": "1/2 Pkg."
         },
-        {
-            "id": "pass-tomaten",
-            "amount": "1/2 Pkg.",
-            "name": "Passierte Tomaten"
-        },
-        {
-            "id": "chili"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz & Pfeffer"
-        },
-        {
-            "id": "bruehe"
-        }
-    ],
+        "chili": {},
+        "salz-pfeffer": {},
+        "bruehe": {}
+    },
     "preparation": [
         "{zwiebel} und {knoblauchzehe} klein hacken und anschwitzen.",
-        "{tomate}, {paprika}, {pass-tomaten}, {chili}, {bruehe} und {spinat} hinzugeben und mitkochen. Mit {gewuerze} abschmecken."
+        "{tomate}, {paprika}, {tomaten-passiert}, {chili}, {bruehe} und {spinat} hinzugeben und mitkochen. Mit {salz-pfeffer} abschmecken."
     ]
 }

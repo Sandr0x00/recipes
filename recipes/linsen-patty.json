@@ -1,35 +1,32 @@
 {
     "name": "Linsen Frikadelle",
-    "tags": ["vegi", "burger", "main"],
+    "tags": [
+        "vegi",
+        "burger",
+        "main"
+    ],
     "portions": "6 Frikadellen",
     "type": "pan",
-    "ingredients": [
-        {
-            "id": "linsen",
-            "amount": "200g",
-            "name": "Linsen"
+    "ingredients": {
+        "linsen": {
+            "amount": "200g"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "karotte",
+        "karotte": {
             "amount": "1"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "2 EL"
         },
-        {
-            "id": "haferflocken",
+        "haferflocken": {
             "amount": "2 EL"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Curry, Paprikapulver, Salz & Pfeffer"
         }
-    ],
+    },
     "preparation": [
         "{linsen} weichkochen.",
         "{zwiebel} und {karotte} zerkleinern.",

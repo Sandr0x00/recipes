@@ -2,61 +2,47 @@
     "name": "Spareribs",
     "portions": "2 Spareribs",
     "type": "bbq",
-    "tags": ["bbq", "main", "meat"],
-    "ingredients": [
-        {
-            "id": "spareribs",
+    "tags": [
+        "bbq",
+        "main",
+        "meat"
+    ],
+    "ingredients": {
+        "spareribs": {
             "amount": "2",
-            "name": "Spareribs"
+            "link": "/spareribs"
         },
-        {
-            "id": "holz",
-            "amount": "1 handvoll",
-            "name": "Holzchips"
+        "holz": {
+            "amount": "1 handvoll"
         },
-        {
-            "id": "orangensaft",
-            "amount": "1/4 l",
-            "name": "Orangensaft"
+        "orangensaft": {
+            "amount": "1/4 l"
         },
-        {
-            "id": "honig",
-            "amount": "150g",
-            "name": "Honig"
+        "honig": {
+            "amount": "150g"
         },
-        {
-            "id": "balsamico",
-            "amount": "1 EL",
-            "name": "Balsamico"
+        "essig-balsamico": {
+            "amount": "1 EL"
         },
-        {
-            "id": "salz",
-            "amount": "1 EL",
-            "name": "grobes Meersalz"
+        "salz": {
+            "amount": "1 EL"
         },
-        {
-            "id": "chili",
+        "chili": {
             "amount": "2 TL"
         },
-        {
-            "id": "kuemmel",
-            "amount": "2 TL",
-            "name": "Kümmel"
+        "kuemmel": {
+            "amount": "2 TL"
         },
-        {
-            "id": "oregano",
-            "amount": "2 TL",
-            "name": "Oregano"
+        "oregano": {
+            "amount": "2 TL"
         },
-        {
-            "id": "pfeffer",
-            "amount": "1 TL",
-            "name": "Pfeffer"
+        "pfeffer": {
+            "amount": "1 TL"
         }
-    ],
+    },
     "preparation": [
         "{holz} mind. 30 Minuten in Wasser einlegen.",
-        "{orangensaft} dickflüssig einkochen und mit {honig} und {balsamico} verrühren.",
+        "{orangensaft} dickflüssig einkochen und mit {honig} und {essig-balsamico} verrühren.",
         "{salz}, {chili}, {kuemmel}, {oregano} und {pfeffer} verrühren. Die {spareribs} halbieren und mit der Würzmischung einreiben. In Alufolie wickeln.",
         "Bei direkter mittlerer (175 - 230°C) Hitze 75 Minuten grillen. 10 Minuten ruhen lassen. Die Rippchen aus der Folie nehmen.",
         "{holz} abtropfen lassen und auf den Grill geben. Sobald Rauch entsteht, die Rippchen 5 Minuten grillen. Mit Glasur bestreichen und nochmal 5 Minuten grillen."

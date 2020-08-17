@@ -2,42 +2,31 @@
     "name": "Camembert Flammkuchen",
     "portions": "3 Flammkuchen",
     "type": "oven",
-    "tags": ["flammkuchen", "main", "vegi"],
-    "ingredients": [
-        {
-            "id": "flammkuchenteig",
-            "name": "Flammkuchenteig"
+    "tags": [
+        "flammkuchen",
+        "main",
+        "vegi"
+    ],
+    "ingredients": {
+        "flammkuchenteig": {
+            "link": "/flammkuchenteig"
         },
-        {
-            "id": "cremefraiche"
-        },
-        {
-            "id": "knoblauchzehe",
+        "cremefraiche": {},
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Salz, Pfeffer und Oregano"
         },
-        {
-            "id": "camembert"
-        },
-        {
-            "id": "lauchzwiebel",
-            "name": "Lauchzwiebel"
-        },
-        {
-            "id": "schinken"
-        },
-        {
-            "id": "preiselbeeren",
-            "name": "Preiselbeeren"
-        }
-    ],
+        "camembert": {},
+        "lauchzwiebel": {},
+        "schinken": {},
+        "preiselbeeren": {}
+    },
     "preparation": [
         "{knoblauchzehe}, {lauchzwiebel} und {camembert} klein schneiden.",
         "{cremefraiche}, {knoblauchzehe} mit {gewuerze} mischen.",
-        "{flammkuchenteig} dünn ausrollen und mit {camembert} und {lauchzwiebel} belegen.",
+        "{flammkuchenteig} dünn ausrollen und mit {camembert}, {schinken} und {lauchzwiebel} belegen.",
         "Bei maximaler Temperatur etwa 5 Minuten backen.",
         "Flammkuchen mit {preiselbeeren} garnieren."
     ]

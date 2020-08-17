@@ -1,28 +1,28 @@
 {
     "name": "Kartoffelpüree",
     "type": "pot",
-    "tags": ["side", "potato", "vegi"],
-    "ingredients": [
-        {
-            "id": "kartoffel",
+    "tags": [
+        "side",
+        "potato",
+        "vegi"
+    ],
+    "ingredients": {
+        "kartoffel": {
             "amount": "400g"
         },
-        {
-            "id": "milch",
+        "milch": {
             "amount": "125ml"
         },
-        {
-            "id": "butter",
+        "butter": {
             "amount": "50g"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Salz, Pfeffer und Muskatnuss"
         }
-    ],
+    },
     "preparation": [
         "Mehlig kochende {kartoffel} 25 Minuten lang in Salzwasser kochen.",
         "{milch} und {butter} erwärmen.",
-        "Alles zusammenfügen und Kartoffeln zerdrücken."
+        "Alles mit {gewuerze} zusammenfügen und Kartoffeln zerdrücken."
     ]
 }

@@ -2,42 +2,37 @@
     "name": "Plov",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["meat", "rice", "stew", "russian", "main"],
-    "ingredients": [
-        {
-            "id": "fleisch",
-            "amount": "500g",
-            "name": "Fleisch"
+    "tags": [
+        "meat",
+        "rice",
+        "stew",
+        "russian",
+        "main"
+    ],
+    "ingredients": {
+        "rindfleisch": {
+            "amount": "500g"
         },
-        {
-            "id": "reis",
+        "reis": {
             "amount": "750g"
         },
-        {
-            "id": "karotte",
+        "karotte": {
             "amount": "3"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "3"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "2"
         },
-        {
-            "id": "oel",
-            "name": "Öl"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Kreuzkümmel, Salz und Pfeffer"
-        }
-    ],
+        "oel": {},
+        "kuemmel": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
-        "{fleisch} in Würfel schneiden. In einem Topf {oel} erhitzen und das {fleisch} anbraten. Mit viel {gewuerze} würzen.",
+        "{rindfleisch} in Würfel schneiden. In einem Topf {oel} erhitzen und das {rindfleisch} anbraten. Mit viel {kuemmel}, {salz-pfeffer} würzen.",
         "{zwiebel} in Streifen schneiden, {knoblauchzehe} klein hacken und beides mit andünsten.",
-        "{karotte} in grobe Stifte schneiden. Auf das {fleisch} ohne umrühren schichten. Ungekochten {reis} auf die {karotte} schichten. Wasser auffüllen, so dass der Reis ca. 2 cm mit Wasser überdeckt ist. Bei kleiner Hitze mit Deckel ca. 30-45 min köcheln lassen.",
+        "{karotte} in grobe Stifte schneiden. Auf das {rindfleisch} ohne umrühren schichten. Ungekochten {reis} auf die {karotte} schichten. Wasser auffüllen, so dass der Reis ca. 2 cm mit Wasser überdeckt ist. Bei kleiner Hitze mit Deckel ca. 30-45 min köcheln lassen.",
         "Nun umrühren und anrichten."
     ]
 }

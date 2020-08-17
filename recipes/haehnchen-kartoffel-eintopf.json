@@ -1,0 +1,40 @@
+{
+    "name": "Hähnchen Kartoffel Eintopf",
+    "portions": "2 Portionen",
+    "type": "wok",
+    "tags": [
+        "chicken",
+        "main",
+        "potato"
+    ],
+    "ingredients": {
+        "kartoffel": {
+            "amount": "500g"
+        },
+        "haehnchenbrustfilet": {
+            "amount": "2"
+        },
+        "zucchini": {
+            "amount": "1"
+        },
+        "porree": {
+            "amount": "1"
+        },
+        "cremefraiche": {
+            "amount": "1"
+        },
+        "senf-mittelscharf": {
+            "amount": "1"
+        },
+        "bruehe": {
+            "amount": "500ml"
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{haehnchenbrustfilet} im Wok anbraten. {kartoffel} in Scheiben schneiden und zugeben.",
+        "Mit {bruehe} ablöschen und ca. 15 Minuten mit geschlossenem Deckel weichkochen.",
+        "{zucchini} und {porree} in Scheiben schneiden. Noch 10 Minuten mitkochen lassen.",
+        "{senf-mittelscharf}, {cremefraiche} und {salz-pfeffer} hinzufügen."
+    ]
+}

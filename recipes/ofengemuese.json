@@ -2,37 +2,30 @@
     "name": "Ofengemüse",
     "portions": "2",
     "type": "oven",
-    "tags": ["vegi", "main", "potato"],
-    "ingredients": [
-        {
-            "id": "kuerbis",
-            "amount": "300g",
-            "name": "Kürbis"
+    "tags": [
+        "vegi",
+        "main",
+        "potato"
+    ],
+    "ingredients": {
+        "kuerbis": {
+            "amount": "300g"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "2"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "kartoffel",
+        "kartoffel": {
             "amount": "2"
         },
-        {
-            "id": "tymian",
-            "name": "Tymian"
-        },
-        {
-            "id": "oel",
-            "name": "Öl"
-        }
-    ],
+        "thymian": {},
+        "oel": {}
+    },
     "preparation": [
         "{kuerbis}, {kartoffel} würfeln. {zwiebel} achteln.",
-        "{knoblauchzehe} klein hacken und mit {tymian} und {oel} vermischen. Gemüse damit bestreichen.",
+        "{knoblauchzehe} klein hacken und mit {thymian} und {oel} vermischen. Gemüse damit bestreichen.",
         "Bei mittlerer Hitze 30 Minuten backen."
     ]
 }

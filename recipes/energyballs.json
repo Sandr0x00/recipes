@@ -1,0 +1,26 @@
+{
+    "name": "Energyballs",
+    "tags": [
+        "sweet"
+    ],
+    "ingredients": {
+        "banane": {
+            "amount": "2"
+        },
+        "kokosraspeln": {
+            "amount": "100g"
+        },
+        "haselnuss": {
+            "amount": "50g"
+        },
+        "kakao": {
+            "amount": "20g"
+        },
+        "zucker": {
+            "amount": "30g"
+        }
+    },
+    "preparation": [
+        "{banane} zerdrücken und mit {kokosraspeln}, gemahlener {haselnuss}, {kakao} und {zucker} vermengen."
+    ]
+}

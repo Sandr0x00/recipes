@@ -1,26 +1,22 @@
 {
     "name": "Burgersoße",
     "headless": true,
-    "tags": ["burger", "sauce"],
-    "ingredients": [
-        {
-            "id": "knoblauchzehe",
+    "tags": [
+        "burger",
+        "sauce"
+    ],
+    "ingredients": {
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "mayo",
-            "name": "Mayonese"
-        },
-        {
-            "id": "ketchup"
-        },
-        {
-            "id": "gewuerze",
+        "mayonnaise": {},
+        "ketchup": {},
+        "gewuerze": {
             "name": "Paprikapulver, Salz und Pfeffer"
         }
-    ],
+    },
     "preparation": [
         "{knoblauchzehe} hacken und zerdrücken.",
-        "{knoblauchzehe}, {mayo}, {ketchup} mit {gewuerze} vermischen."
+        "{knoblauchzehe}, {mayonnaise}, {ketchup} mit {gewuerze} vermischen."
     ]
 }

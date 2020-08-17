@@ -2,53 +2,44 @@
     "name": "Kartoffelsuppe",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["soup", "vegi", "potato", "side", "main"],
-    "ingredients": [
-        {
-            "id": "karotte",
+    "tags": [
+        "soup",
+        "vegi",
+        "potato",
+        "side",
+        "main"
+    ],
+    "ingredients": {
+        "karotte": {
             "amount": "1"
         },
-        {
-            "id": "kartoffel",
+        "kartoffel": {
             "amount": "300g"
         },
-        {
-            "id": "sellerie",
-            "amount": "150g",
-            "name": "Sellerie"
+        "sellerie": {
+            "amount": "150g"
         },
-        {
-            "id": "paprika",
+        "paprika": {
             "amount": "1/2"
         },
-        {
-            "id": "lauchzwiebel",
-            "amount": "1 Bund",
-            "name": "Lauchzwiebel"
+        "lauchzwiebel": {
+            "amount": "1 Bund"
         },
-        {
-            "id": "wasser",
+        "wasser": {
             "amount": "500ml"
         },
-        {
-            "id": "butter"
-        },
-        {
-            "id": "zwiebel",
+        "butter": {},
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "bruehe"
-        },
-        {
-            "id": "cremefraiche",
+        "bruehe": {},
+        "cremefraiche": {
             "amount": "75g"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Pfeffer und Muskatnuss"
         }
-    ],
+    },
     "preparation": [
         "{kartoffel:100g}, {sellerie} schälen und wie {paprika} und {karotte} würfeln. Die grüne Seite der {lauchzwiebel} in Ringe schneiden.",
         "In {wasser} mit Salz garen. Das Gemüse abgießen und dabei das Kochwasser auffangen. Die Zwiebel und den weißen Teil der Lauchzwiebel fein schneiden.",

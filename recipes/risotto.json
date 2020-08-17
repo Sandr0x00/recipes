@@ -1,48 +1,31 @@
 {
     "name": "Risotto",
     "type": "pot",
-    "tags": ["rice", "vegi"],
-    "ingredients": [
-        {
-            "id": "butter"
-        },
-        {
-            "id": "zwiebel",
+    "tags": [
+        "rice",
+        "vegi"
+    ],
+    "ingredients": {
+        "butter": {},
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "bruehe"
-        },
-        {
-            "id": "tomate",
+        "bruehe": {},
+        "tomate": {
             "amount": "2"
         },
-        {
-            "id": "risottoreis",
+        "risottoreis": {
             "amount": "125g"
         },
-        {
-            "id": "erdnuesse",
-            "name": "Erdnüsse"
-        },
-        {
-            "id": "cremefraiche"
-        },
-        {
-            "id": "rucola"
-        },
-        {
-            "id": "parmesan",
-            "name": "Parmesan"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz & Pfeffer"
-        }
-    ],
+        "erdnuesse": {},
+        "cremefraiche": {},
+        "rucola": {},
+        "parmesan": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{zwiebel} in {butter} anbraten. {risottoreis} und {erdnuesse} hinzufügen.",
         "{tomate} kleinschneiden und mit {bruehe} und Wasser hinzufügen.",
-        "{parmesan}, {cremefraiche}, {rucola} unter das Risotto rühren und mit {gewuerze} abschmecken."
+        "{parmesan}, {cremefraiche}, {rucola} unter das Risotto rühren und mit {salz-pfeffer} abschmecken."
     ]
 }

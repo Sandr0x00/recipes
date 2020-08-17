@@ -1,0 +1,65 @@
+{
+    "name": "Chicken Tikka Masala",
+    "type": "wok",
+    "tags": [
+        "chicken",
+        "indian"
+    ],
+    "ingredients": {
+        "haehnchenbrustfilet": {
+            "amount": "2"
+        },
+        "zitronensaft": {
+            "amount": "2 EL"
+        },
+        "joghurt": {
+            "amount": "100g"
+        },
+        "knoblauchzehe": {
+            "amount": "6"
+        },
+        "ingwer": {
+            "amount": "3 EL"
+        },
+        "salz": {
+            "amount": "2 EL"
+        },
+        "kuemmel": {
+            "amount": "1 EL"
+        },
+        "garam-masala": {
+            "amount": "2 EL"
+        },
+        "paprika": {
+            "amount": "2 EL"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "chili": {
+            "amount": "1 EL"
+        },
+        "tomaten-passiert": {
+            "amount": "500g"
+        },
+        "wasser": {
+            "amount": "200ml"
+        },
+        "sahne": {
+            "amount": "200ml"
+        },
+        "petersilie": {
+            "amount": "15g"
+        },
+        "oel": {}
+    },
+    "preparation": [
+        "{haehnchenbrustfilet} in Stücke schneiden und mit {zitronensaft}, {joghurt}, {knoblauchzehe:3}, {ingwer:1 EL}, {salz:1 EL}, {kuemmel}, {garam-masala:1 EL} und {paprika:1 EL} vermischen. Für eine Stunde marinieren lassen.",
+        "Stücke in {oel} anbraten.",
+        "{zwiebel}, {ingwer:3 EL}, {knoblauchzehe:3} klein schneiden.",
+        "Wenn die Stücke fertig gebraten sind, herausnehmen und zuvor Geschnittenes glasig anbraten.",
+        "{salz:1 EL}, {chili}, {garam-masala:1 EL} und {paprika:1 EL} unter Rühren mit anbraten. {tomaten-passiert}, {sahne} und {wasser} hinzufügen. Einkochen lassen.",
+        "Die Hähnchenstücke hinzufügen und nochmal aufkochen lassen. {petersilie} kleinschneiden und hinzufügen.",
+        "Mit Reis oder Naan servieren."
+    ]
+}

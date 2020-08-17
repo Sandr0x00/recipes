@@ -1,23 +1,21 @@
 {
     "name": "Baiser",
     "type": "oven",
-    "tags": ["sweet", "egg"],
-    "ingredients": [
-        {
-            "id": "eiweis",
-            "amount": "2",
-            "name": "Eiweiß"
+    "tags": [
+        "sweet",
+        "egg"
+    ],
+    "ingredients": {
+        "eiweiss": {
+            "amount": "2"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "80g"
         },
-        {
-            "id": "salz"
-        }
-    ],
+        "salz": {}
+    },
     "preparation": [
-        "{eiweis} mit {zucker} und {salz} mit zu einem festen Eischnee aufschlagen.",
+        "{eiweiss} mit {zucker} und {salz} mit zu einem festen Eischnee aufschlagen.",
         "Häufchen auf Backpapier machen und bei 100°C 2h trocknen lassen."
     ]
 }

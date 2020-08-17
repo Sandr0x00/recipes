@@ -1,36 +1,29 @@
 {
     "name": "Pizzateig",
     "headless": true,
-    "tags": ["vegi"],
-    "ingredients": [
-        {
-            "id": "wasser",
-            "amount": "300ml",
-            "name": "lauwarmes Wasser"
+    "tags": [
+        "vegi"
+    ],
+    "ingredients": {
+        "wasser": {
+            "amount": "300ml"
         },
-        {
-            "id": "hefe",
-            "amount": "1 Würfel",
-            "name": "frische Hefe"
+        "hefe": {
+            "amount": "1 Würfel"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "1 TL"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "500g"
         },
-        {
-            "id": "salz",
+        "salz": {
             "amount": "1 TL"
         },
-        {
-            "id": "oel",
-            "amount": "4 EL",
-            "name": "Olivenöl"
+        "oel": {
+            "amount": "4 EL"
         }
-    ],
+    },
     "preparation": [
         "{hefe} und {zucker} in {wasser} unter Rühren auflösen. {mehl} hinzufügen und verrühren. Zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen.",
         "Danach {salz} und {oel} zum Teig geben und ca. 5 Minuten kneten. Zugedeckt an einem warmen Ort ca. 30 Minuten gehen lassen. Das Volumen sollte sich verdoppeln.",

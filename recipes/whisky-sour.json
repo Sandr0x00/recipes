@@ -2,25 +2,24 @@
     "name": "Whisky Sour",
     "portions": "1 Glass",
     "type": "old-fashioned",
-    "tags": ["whisky", "drink"],
-    "ingredients": [
-        {
-            "id": "whisky",
+    "tags": [
+        "whisky",
+        "drink"
+    ],
+    "ingredients": {
+        "whisky": {
             "amount": "6cl"
         },
-        {
-            "id": "zitrone",
-            "amount": "2cl",
-            "name": "Zitronensaft"
+        "zitronensaft": {
+            "amount": "2cl"
         },
-        {
-            "id": "zuckersirup",
+        "sirup-zucker": {
             "amount": "2cl",
-            "name": "Zuckersirup"
+            "link": "/sirup-zucker"
         }
-    ],
+    },
     "preparation": [
-        "{whisky}, {zuckersirup} und {zitrone} mit 4 bis 5 Eiswürfeln shaken.",
+        "{whisky}, {sirup-zucker} und {zitronensaft} mit 4 bis 5 Eiswürfeln shaken.",
         "Auf Eiswürfel abseihen und mit einer Orangenzeste garnieren."
     ]
 }

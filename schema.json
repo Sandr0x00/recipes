@@ -43,20 +43,13 @@
             }
         },
         "ingredients": {
-            "type": "array",
+            "type": "object",
             "required": true,
-            "uniqueItems": true,
-            "minItems": 1,
-            "items": {
+            "minProperties": 1,
+            "additionalProperties": {
                 "type": "object",
                 "additionalProperties": false,
                 "properties": {
-                    "id": {
-                        "type": "string",
-                        "pattern": "^[a-z0-9-]+$",
-                        "required": true,
-                        "minLength": 2
-                    },
                     "amount": {
                         "type": "string",
                         "pattern": "^([0-9]+(g|ml| TL| EL| Pkg.)|\\+)?"

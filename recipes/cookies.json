@@ -1,49 +1,41 @@
 {
     "name": "Cookies",
     "type": "oven",
-    "tags": ["sweet", "chocolate"],
-    "ingredients": [
-        {
-            "id": "butter",
+    "tags": [
+        "sweet",
+        "chocolate"
+    ],
+    "ingredients": {
+        "butter": {
             "amount": "150g"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "80g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "2"
         },
-        {
-            "id": "vanillezucker",
+        "vanillezucker": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "180g"
         },
-        {
-            "id": "haferflocken",
+        "haferflocken": {
             "amount": "50g"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "1 TL"
         },
-        {
-            "id": "schoki",
-            "amount": "100g",
-            "name": "Schokoladentropfen"
+        "schokit": {
+            "amount": "100g"
         },
-        {
-            "id": "salz"
-        }
-    ],
+        "salz": {}
+    },
     "preparation": [
         "Zimmerwarme {butter}, {zucker} und {vanillezucker} schaumig schlagen. {ei} dazu geben und aufschlagen.",
         "{haferflocken}, {mehl}, {backpulver} und {salz} vermischen und nach und nach unterrühren.",
-        "{schoki} hinzugeben und walnussgroße Häufchen machen.",
+        "{schokit} hinzugeben und walnussgroße Häufchen machen.",
         "Bei 180°C goldgelb backen."
     ]
 }

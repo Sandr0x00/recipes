@@ -1,35 +1,31 @@
 {
     "name": "Couscous Salat",
     "portions": "4 Portionen",
-    "tags": ["couscous", "salad", "main", "side", "vegi"],
-    "ingredients": [
-        {
-            "id": "couscous",
+    "tags": [
+        "couscous",
+        "salad",
+        "main",
+        "side",
+        "vegi"
+    ],
+    "ingredients": {
+        "couscous": {
             "amount": "200g"
         },
-        {
-            "id": "wasser",
+        "wasser": {
             "amount": "400ml"
         },
-        {
-            "id": "tomate",
+        "tomate": {
             "amount": "2"
         },
-        {
-            "id": "mozarella",
-            "amount": "2 Pkg.",
-            "name": "Mozarella"
+        "mozarella": {
+            "amount": "2 Pkg."
         },
-        {
-            "id": "pesto",
-            "amount": "200g",
-            "name": "Pesto"
+        "pesto": {
+            "amount": "200g"
         },
-        {
-            "id": "bruehe",
-            "name": "Gemüsebrühpulver"
-        }
-    ],
+        "bruehe": {}
+    },
     "preparation": [
         "{wasser} zum Kochen bringen. {couscous} und {bruehe} in eine Schüssel geben, und mit Wasser übergießen, bedecken und 5 Minuten ziehen lassen.",
         "Couscous mit {pesto} vermengen. {tomate} und {mozarella} dazu geben."

@@ -2,51 +2,36 @@
     "name": "Bowl",
     "portions": "1 Bowl",
     "type": "pan",
-    "tags": ["main", "meat", "vegi"],
-    "ingredients": [
-        {
-            "id": "avocado",
+    "tags": [
+        "main",
+        "meat",
+        "vegi"
+    ],
+    "ingredients": {
+        "avocado": {
             "amount": "1/2"
         },
-        {
-            "id": "couscous"
-        },
-        {
-            "id": "quinoa"
-        },
-        {
-            "id": "tomate",
+        "couscous": {},
+        "quinoa": {},
+        "tomate": {
             "amount": "1"
         },
-        {
-            "id": "haehnchen",
+        "haehnchenbrustfilet": {
             "amount": "1/2"
         },
-        {
-            "id": "salat"
+        "salat": {},
+        "gurke": {},
+        "karotte": {},
+        "hummus": {
+            "link": "/hummus"
         },
-        {
-            "id": "gurke"
-        },
-        {
-            "id": "karotte"
-        },
-        {
-            "id": "hummus",
-            "name": "Hummus"
-        },
-        {
-            "id": "asia-sauce",
-            "name": "Süß-Sauer Soße"
-        },
-        {
-            "id": "bruehe"
-        }
-    ],
+        "asia-sauce": {},
+        "bruehe": {}
+    },
     "preparation": [
-        "{karotte} in Streifen schneiden und mit {haehnchen} anbraten.",
+        "{karotte} in Streifen schneiden und mit {haehnchenbrustfilet} anbraten.",
         "{couscous}, {quinoa} und {bruehe} mit 1.5 Facher Menge kochendem Wasser übergiesen und zugedeckt ziehen lassen.",
-        "{gurke}, {tomate}, {salat} in mundgerechte Stücke schneiden. Avocado halbieren.",
-        "Alles zusammen in eine Schüssel geben und {asia-sauce} dazu geben."
+        "{gurke}, {tomate}, {salat} in mundgerechte Stücke schneiden. {avocado} halbieren.",
+        "{all} in eine Schüssel geben."
     ]
 }

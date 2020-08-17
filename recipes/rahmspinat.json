@@ -2,33 +2,29 @@
     "name": "Rahmspinat",
     "type": "pot",
     "portions": "2 Portionen",
-    "tags": ["spinach", "side", "vegi"],
-    "ingredients": [
-        {
-            "id": "spinat",
-            "amount": "500g",
-            "name": "Blattspinat"
+    "tags": [
+        "spinach",
+        "side",
+        "vegi"
+    ],
+    "ingredients": {
+        "spinat": {
+            "amount": "500g"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "sahne",
+        "sahne": {
             "amount": "100 ml"
         },
-        {
-            "id": "butter"
-        },
-        {
-            "id": "gewuerze",
+        "butter": {},
+        "gewuerze": {
             "name": "Salz, Pfeffer und Muskatnuss"
         }
-    ],
+    },
     "preparation": [
         "{spinat} waschen und blanchieren, abtropfen lassen und leicht ausdrücken.",
         "{zwiebel} und {knoblauchzehe} schälen und fein würfeln. In einem Topf {butter} zerlassen und Zwiebeln und Knoblauch darin andünsten.",

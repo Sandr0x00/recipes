@@ -1,29 +1,26 @@
 {
     "name": "Poolside Tropical",
     "type": "longdrink",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "tequila",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "tequila": {
             "amount": "4cl"
         },
-        {
-            "id": "zitronensaft",
+        "zitronensaft": {
             "amount": "2cl"
         },
-        {
-            "id": "curacao",
+        "curacao": {
             "amount": "2cl"
         },
-        {
-            "id": "kokoslikoer",
+        "kokoslikoer": {
             "amount": "2cl"
         },
-        {
-            "id": "orangensaft",
+        "orangensaft": {
             "amount": "12cl"
         }
-    ],
+    },
     "preparation": [
         "{all} mit Eis shaken.",
         "Ins Glas abseihen."

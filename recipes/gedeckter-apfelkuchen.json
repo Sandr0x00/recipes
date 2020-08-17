@@ -1,47 +1,35 @@
 {
     "name": "Gedeckter Apfelkuchen",
     "type": "oven",
-    "tags": ["sweet", "fruity"],
-    "ingredients": [
-        {
-            "id": "mehl",
+    "tags": [
+        "sweet",
+        "fruity"
+    ],
+    "ingredients": {
+        "mehl": {
             "amount": "300g"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "250g"
         },
-        {
-            "id": "butter",
+        "butter": {
             "amount": "150g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "1"
         },
-        {
-            "id": "salz"
+        "salz": {},
+        "apfel": {
+            "amount": "750g"
         },
-        {
-            "id": "apfel",
-            "amount": "750g",
-            "name": "Apfelstücke"
+        "zimt": {
+            "amount": "1 TL"
         },
-        {
-            "id": "zimt",
-            "amount": "1 TL",
-            "name": "Zimt"
+        "haselnuss": {
+            "amount": "50g"
         },
-        {
-            "id": "haselnuss",
-            "amount": "50g",
-            "name": "gemahlene Haselnüsse"
-        },
-        {
-            "id": "zitronensaft",
-            "name": "Saft einer Zitrone"
-        }
-    ],
+        "zitronensaft": {}
+    },
     "preparation": [
         "{mehl} mit {zucker:150g}, {butter}, {ei} und {salz} verkneten.",
         "2/3 des Teiges dünn ausrollen, Boden und Rand einer Springform auslegen. Den Teig einstechen.",

@@ -1,0 +1,52 @@
+{
+    "name": "Sarma",
+    "type": "pot",
+    "tags": [
+        "meat",
+        "main"
+    ],
+    "ingredients": {
+        "paprika-spitz": {
+            "amount": "2"
+        },
+        "zwiebel": {
+            "amount": "3"
+        },
+        "knoblauchzehe": {
+            "amount": "4"
+        },
+        "tomaten-passiert": {
+            "amount": "1 EL"
+        },
+        "tomatenmark": {
+            "amount": "2 EL"
+        },
+        "hackfleisch": {
+            "amount": "500g"
+        },
+        "dill": {
+            "amount": "1 Bündel"
+        },
+        "minze": {
+            "amount": "7g"
+        },
+        "basilikum": {
+            "amount": "15g"
+        },
+        "salz-pfeffer": {},
+        "oel": {},
+        "reis": {
+            "amount": "200g?"
+        },
+        "weinblatt": {
+            "amount": "+"
+        }
+    },
+    "preparation": [
+        "{weinblatt} 2 Tage in Salzwasser, 2 Tage in normalem Wasser einweichen lassen. {reis} halb kochen.",
+        "{paprika-spitz}, {zwiebel}, {knoblauchzehe}, {tomaten-passiert}, {tomatenmark}, {hackfleisch}, {dill}, {minze}, {basilikum}, {salz-pfeffer} in {oel} kochen.",
+        "{reis} hinzugeben und in {weinblatt} einwickeln.",
+        "{weinblatt} auf den Boden des Topfes legen und Sarma darüber legen. Mit Wasser auffüllen. Kochen.",
+        "Können vorm Kochen eingefroren werden."
+    ]
+}

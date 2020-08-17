@@ -1,23 +1,24 @@
 {
     "name": "Pizza",
     "type": "oven",
-    "tags": ["main", "vegi", "italian"],
-    "ingredients": [
-        {
-            "id": "pizzateig",
+    "tags": [
+        "main",
+        "vegi",
+        "italian"
+    ],
+    "ingredients": {
+        "pizzateig": {
             "amount": "1",
-            "name": "Pizzateig"
+            "link": "/pizzateig"
         },
-        {
-            "id": "pizzasauce",
+        "pizzasauce": {
             "amount": "1",
-            "name": "Pizzasoße"
+            "link": "/pizzasauce"
         },
-        {
-            "id": "mozarella",
+        "mozarella": {
             "amount": "1"
         }
-    ],
+    },
     "preparation": [
         "{pizzateig} mit {pizzasauce} bestreichen und mit {mozarella} belegen.",
         "Pizza mit Zutaten der Wahl belegen.",

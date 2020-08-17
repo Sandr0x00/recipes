@@ -1,37 +1,20 @@
 {
     "name": "Leberkäsburger",
-    "tags": ["burger", "main", "leberkas"],
-    "ingredients": [
-        {
-            "id": "semmel",
-            "name": "Laugensemmel"
-        },
-        {
-            "id": "rettich",
-            "name": "Rettich"
-        },
-        {
-            "id": "ei",
-            "name": "Spiegelei"
-        },
-        {
-            "id": "leberkas",
-            "name": "Leberkäs"
-        },
-        {
-            "id": "salad",
-            "name": "Salat"
-        },
-        {
-            "id": "schmand",
-            "name": "Schmand"
-        },
-        {
-            "id": "senf",
-            "name": "Süßer Senf"
-        }
+    "tags": [
+        "burger",
+        "main",
+        "leberkas"
     ],
+    "ingredients": {
+        "semmel": {},
+        "rettich": {},
+        "ei": {},
+        "leberkaese": {},
+        "salat": {},
+        "schmand": {},
+        "senf-suess": {}
+    },
     "preparation": [
-        "{semmel} mit {senf}, {schmand}, {salad}, {leberkas}, {ei} und {rettich} belegen. In dieser Reihenfolge."
+        "{semmel} mit {senf-suess}, {schmand}, {salat}, {leberkaese}, {ei} und {rettich} belegen. In dieser Reihenfolge."
     ]
 }

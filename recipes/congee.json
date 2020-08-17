@@ -1,38 +1,25 @@
 {
     "name": "Congee",
     "type": "pot",
-    "tags": ["rice", "main"],
-    "ingredients": [
-        {
-            "id": "reis",
+    "tags": [
+        "rice",
+        "main"
+    ],
+    "ingredients": {
+        "basmatireis": {
             "amount": "170g"
         },
-        {
-            "id": "bruehe",
+        "bruehe": {
             "amount": "1.5l"
         },
-        {
-            "id": "sojasosse",
-            "name": "Sojasoße"
-        },
-        {
-            "id": "lauch",
-            "name": "Lauch"
-        },
-        {
-            "id": "chili"
-        },
-        {
-            "id": "oel",
-            "name": "Olivenöl"
-        },
-        {
-            "id": "sesam",
-            "name": "Sesam"
-        }
-    ],
+        "sauce-soja": {},
+        "lauchzwiebel": {},
+        "chili": {},
+        "oel": {},
+        "sesam": {}
+    },
     "preparation": [
-        "{reis} in {bruehe} 1.5h lang köcheln.",
-        "{sojasosse}, {lauch}, {chili}, {oel} und {sesam} nach belieben hinzugeben."
+        "{basmatireis} in {bruehe} 1.5h lang köcheln.",
+        "{sauce-soja}, {lauchzwiebel}, {chili}, {oel} und {sesam} nach belieben hinzugeben."
     ]
 }

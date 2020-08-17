@@ -1,31 +1,26 @@
 {
     "name": "Sex on the Beach",
     "type": "hurricane",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "orangensaft",
-            "amount": "3cl",
-            "name": "Orangensaft"
-        },
-        {
-            "id": "cranberry",
-            "amount": "3cl",
-            "name": "Cranberrysaft"
-        },
-        {
-            "id": "wodka",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "orangensaft": {
             "amount": "3cl"
         },
-        {
-            "id": "pfirsichlikoer",
-            "amount": "1cl",
-            "name": "Pfirsichlikör"
+        "cranberrysaft": {
+            "amount": "3cl"
+        },
+        "wodka": {
+            "amount": "3cl"
+        },
+        "pfirsichlikoer": {
+            "amount": "1cl"
         }
-    ],
+    },
     "preparation": [
         "Eis ins Glas geben.",
-        "{wodka}, {pfirsichlikoer}, {orangensaft}, {cranberry} ins Glas geben."
+        "{wodka}, {pfirsichlikoer}, {orangensaft}, {cranberrysaft} ins Glas geben."
     ],
     "garnish": "Cocktailkirsche und halbe Orangenscheibe auf einem Spieß."
 }

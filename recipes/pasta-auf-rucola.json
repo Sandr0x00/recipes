@@ -2,31 +2,20 @@
     "name": "Pasta mit Rucola",
     "portions": "2 Portionen",
     "type": "pan",
-    "tags": ["pasta", "main"],
-    "ingredients": [
-        {
-            "id": "nudeln"
-        },
-        {
-            "id": "rucola",
-            "name": "Rucola"
-        },
-        {
-            "id": "chorizo",
-            "name": "Chorizo Salami"
-        },
-        {
-            "id": "schafskaese",
-            "name": "Schafskäse"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
+    "tags": [
+        "pasta",
+        "main"
     ],
+    "ingredients": {
+        "nudeln": {},
+        "rucola": {},
+        "chorizo": {},
+        "feta": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
         "{nudeln} kochen.",
-        "{chorizo} in der Pfanne andünsten. {nudeln} und {schafskaese} hinzugeben und mit {gewuerze} würzen.",
+        "{chorizo} in der Pfanne andünsten. {nudeln} und {feta} hinzugeben und mit {salz-pfeffer} würzen.",
         "Mit {rucola} vermengen."
     ]
 }

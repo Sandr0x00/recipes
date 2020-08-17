@@ -1,17 +1,17 @@
 {
     "name": "Lillet Wildberry",
     "type": "wineglas",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "lilletblanc",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "lilletblanc": {
             "amount": "5cl"
         },
-        {
-            "id": "russianwildberry",
+        "russianwildberry": {
             "amount": "10cl"
         }
-    ],
+    },
     "preparation": [
         "{all} in ein Weinglas mit Eis servieren."
     ],

@@ -2,35 +2,24 @@
     "name": "Focaccia",
     "portions": "2 Portionen",
     "type": "oven",
-    "tags": ["main", "side"],
-    "ingredients": [
-        {
-            "id": "hefe",
+    "tags": [
+        "main",
+        "side"
+    ],
+    "ingredients": {
+        "hefe": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "wasser",
+        "wasser": {
             "amount": "200ml"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "300g"
         },
-        {
-            "id": "salz",
-            "amount": "8g"
-        },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "olivenoel"
-        },
-        {
-            "id" :"tomate",
-            "amount": "+"
-        }
-    ],
+        "salz": {},
+        "olivenoel": {},
+        "tomate": {}
+    },
     "preparation": [
         "{hefe} in lauwarmes {wasser} geben und 5 Minuten auflösen lassen.",
         "{mehl}, {salz:8g} mit der Hefemischung verkneten. {olivenoel} in eine Schüssel geben und den Teig 1.5 bis 2h gehen lassen.",

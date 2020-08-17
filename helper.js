@@ -3,17 +3,21 @@
 let fs = require('fs');
 let path = require('path');
 
-function replace(regex, regexAmount, ingredient, preparation, preparationAmounts) {
+function replace(regex, regexAmount, id, ingredient, preparation, preparationAmounts) {
     let replace;
     let replaceAmounts;
+    if (!ingredient.name) {
+        throw `Translation for ${id} missing.`;
+    }
+    let name = ingredient.name;
     if (preparation.match(regexAmount)) {
         let amount = preparation.match(regexAmount)[1];
-        regex = `{${ingredient.id}:${amount}}`;
-        replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + amount + ' ' + ingredient.name + '</b>';
+        regex = `{${id}:${amount}}`;
+        replace = `<b class='${id} ingredient'>${amount} ${name}</b>`;
         replaceAmounts = replace;
     } else {
-        replace = '<b class=\'' + ingredient.id + ' ingredient\'>' + ingredient.name + '</b>';
-        replaceAmounts = '<b class=\'' + ingredient.id + ' ingredient\'>' + (ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name + '</b>';
+        replace = `<b class='${id} ingredient'>${name}</b>`;
+        replaceAmounts = `<b class='${id} ingredient'>${(ingredient.amount ? ingredient.amount + ' ' : '')} ${name}</b>`;
     }
     preparation = preparation.replace(new RegExp(regex, 'g'), replace);
     preparationAmounts = preparationAmounts.replace(new RegExp(regex, 'g'), replaceAmounts);
@@ -40,17 +44,28 @@ exports.formatPreparation = function(recipe) {
     }
     let preparation = JSON.stringify(recipe.preparation);
     let preparationAmounts = JSON.stringify(recipe.preparation);
-    recipe.ingredients.forEach(ingredient => {
-        while (preparation.match(`{${ingredient.id}(:.+?)*}`)) {
+    for (const [id, ingredient] of Object.entries(recipe.ingredients)) {
+        while (preparation.match(`{${id}(:.+?)?}`)) {
             // first, replace ingredients with specific amounts, if there are any
-            let regex = `{${ingredient.id}}`;
-            let regex_amount = `{${ingredient.id}:(.+?)}`;
-            let replaced = replace(regex, regex_amount, ingredient, preparation, preparationAmounts);
+            let regex = `{${id}}`;
+            let regex_amount = `{${id}:(.+?)}`;
+            let replaced = replace(regex, regex_amount, id, ingredient, preparation, preparationAmounts);
             preparation = replaced[0];
             preparationAmounts = replaced[1];
         }
-    });
-    preparation = preparation.replace('{all}', '<b class=\'all ingredient\'>alles</b>');
+    }
+    preparation = preparation.replace('{all}', '<b class=\'all ingredient\'>Alles</b>');
+    // preparation = preparation.replace('{all/}', '<b class=\'all ingredient\'>alles</b>');
+    while (preparation.match(/{all\/(.*)}/)) {
+        let allExcept = preparation.match(/{all\/(.*)}/);
+        if (allExcept) {
+            let except = allExcept[1];
+            if (!recipe.ingredients[except]) {
+                throw `Translation for ${except} missing`;
+            }
+            preparation = preparation.replace(new RegExp(`{all/(${except})}`, 'g'), `<b class='all ingredient'>Alles</b> außer <b class='${except} ingredient'>${recipe.ingredients[except].name}</b>`);
+        }
+    }
 
     return [
         JSON.parse(preparation),
@@ -58,18 +73,20 @@ exports.formatPreparation = function(recipe) {
     ];
 };
 
-exports.loadJSON = function() {
+exports.loadJSON = function(format=true) {
     let dirPath = path.join(__dirname, 'recipes');
     let stuff = readFilesInFolder(dirPath);
     handleIngredients(stuff.recipes);
 
     for (const key in stuff.recipes) {
         let recipe = stuff.recipes[key];
-        let prep = this.formatPreparation(recipe);
-        Object.assign(recipe, {
-            preparation: prep[0],
-            preparationAmounts: prep[1],
-        });
+        if (format) {
+            let prep = this.formatPreparation(recipe);
+            Object.assign(recipe, {
+                preparation: prep[0],
+                preparationAmounts: prep[1],
+            });
+        }
     }
 
     return {recipes: stuff.recipes, tags: stuff.tags};
@@ -98,14 +115,18 @@ exports.extractGeneralInfo = (recipes) => {
 
 function handleIngredients(recipes) {
     let translationMapping = JSON.parse(fs.readFileSync('mapping.json', 'utf8'));
+    for (let key in recipes) {
+        translationMapping[key] = recipes[key].name;
+    }
 
     let ids = Object.keys(recipes);
+    let failure = false;
     for (let key in recipes) {
         let recipe = recipes[key];
-        recipe.ingredients.forEach(ingredient => {
+        for (const [id, ingredient] of Object.entries(recipe.ingredients)) {
             // translate
-            if (!('name' in ingredient) && ingredient.id in translationMapping) {
-                let trans = translationMapping[ingredient.id];
+            if (!('name' in ingredient) && id in translationMapping) {
+                let trans = translationMapping[id];
                 let singular = '';
                 let plural = '';
                 if (trans instanceof Array) {
@@ -132,15 +153,23 @@ function handleIngredients(recipes) {
             }
 
             // link
-            if (ids.includes(ingredient.id)) {
-                let linkedRecipe = recipes[ingredient.id];
+            if (ids.includes(id)) {
+                let linkedRecipe = recipes[id];
                 ingredient['link'] = '/' + linkedRecipe.id;
                 if (!recipe['link']) {
                     recipe['link'] = [];
                 }
                 recipe['link'].push(linkedRecipe.id);
             }
-        });
+
+            if (!('name' in ingredient)) {
+                failure = true;
+                console.log(`recipes/${key}.json: Ingredient ${id} not translated.`);
+            }
+        }
+    }
+    if (failure) {
+        throw 'Some ingredients are not translated.';
     }
 }
 

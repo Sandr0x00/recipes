@@ -2,37 +2,31 @@
     "name": "Pancake",
     "portions": "24 Pancakes",
     "type": "pan",
-    "tags": ["american", "sweet"],
-    "ingredients": [
-        {
-            "id": "milch",
+    "tags": [
+        "american",
+        "sweet"
+    ],
+    "ingredients": {
+        "milch": {
             "amount": "150ml"
         },
-        {
-            "id": "ei",
-            "amount": "1",
-            "name": "Ei"
+        "ei": {
+            "amount": "1"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "100g"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "1 EL"
         },
-        {
-            "id": "backpulver",
+        "backpulver": {
             "amount": "1 TL"
         },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "butter",
+        "salz": {},
+        "butter": {
             "amount": "25g"
         }
-    ],
+    },
     "preparation": [
         "{milch} mit {butter} erwärmen. Mit {mehl}, {ei}, {salz}, {backpulver} und {zucker} dazu geben und verrühren.",
         "{butter} bei mittlerer Hitze schmelzen und grob abwischen. 5cm breite Pancakes machen."

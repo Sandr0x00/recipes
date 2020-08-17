@@ -2,43 +2,37 @@
     "name": "Persische Hähnchenspieße",
     "portions": "10 Spieße",
     "type": "bbq",
-    "tags": ["bbq", "chicken", "main"],
-    "ingredients": [
-        {
-            "id": "haehnchen",
-            "amount": "5",
-            "name": "Hähnchenbrustfilets"
+    "tags": [
+        "bbq",
+        "chicken",
+        "main"
+    ],
+    "ingredients": {
+        "haehnchenbrustfilet": {
+            "amount": "5"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1"
         },
-        {
-            "id": "zitrone",
-            "amount": "125 ml",
-            "name": "Zitronensaft"
+        "zitronensaft": {
+            "amount": "125 ml"
         },
-        {
-            "id": "oregano",
+        "oregano": {
             "amount": "2 EL"
         },
-        {
-            "id": "paprikapulver",
-            "amount": "2 TL",
-            "name": "Paprikapulver"
+        "paprikapulver": {
+            "amount": "2 TL"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "olivenoel",
+        "olivenoel": {
             "amount": "250ml"
         }
-    ],
+    },
     "preparation": [
-        "{zwiebel}, {zitrone}, {oregano}, {paprikapulver} und {knoblauchzehe} pürieren. {olivenoel} hinzufügen.",
-        "{haehnchen} in einen wiederverschließbaren Plastikbeutel geben und die Marinade darüber gießen und 30 Minuten bei Zimmertemperatur ziehen lassen.",
+        "{zwiebel}, {zitronensaft}, {oregano}, {paprikapulver} und {knoblauchzehe} pürieren. {olivenoel} hinzufügen.",
+        "{haehnchenbrustfilet} in einen wiederverschließbaren Plastikbeutel geben und die Marinade darüber gießen und 30 Minuten bei Zimmertemperatur ziehen lassen.",
         "Auf feuchte Holzspieße stecken und bei direkter mittlerer Hitze (175 - 230 °C) bei geschlossenem Deckel 8 - 10 Minuten grillen."
     ]
 }

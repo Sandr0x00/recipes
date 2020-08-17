@@ -2,33 +2,22 @@
     "name": "Schweinelachs im Speckmantel",
     "portions": "8 Steaks",
     "type": "bbq",
-    "tags": ["bbq", "meat", "main"],
-    "ingredients": [
-        {
-            "id": "schweinelachs",
-            "amount": "1.2 kg",
-            "name": "Schweinelachs"
-        },
-        {
-            "id": "speck",
-            "amount": "8",
-            "name": "Speck"
-        },
-        {
-            "id": "chili"
-        },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "pfeffer",
-            "name": "Pfeffer"
-        },
-        {
-            "id": "whisky-sauce",
-            "name": "Whisky Soße"
-        }
+    "tags": [
+        "bbq",
+        "meat",
+        "main"
     ],
+    "ingredients": {
+        "schweinelachs": {
+            "amount": "1.2 kg"
+        },
+        "speck": {
+            "amount": "8"
+        },
+        "chili": {},
+        "salz": {},
+        "pfeffer": {}
+    },
     "preparation": [
         "{chili}, {salz} und {pfeffer} vermengen. {schweinelachs} mit der Würzmischung einreiben. 15 - 30 Minuten bei Raumtemperatur ruhen lassen.",
         "Den {speck} um den {schweinelachs} legen und mit Zahnstochern fixieren.",

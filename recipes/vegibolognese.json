@@ -2,52 +2,41 @@
     "name": "Vegetarische Bolognese-Soße",
     "portions": "4 Portionen",
     "type": "wok",
-    "tags": ["sauce", "main", "vegi", "vegan"],
-    "ingredients": [
-        {
-            "id": "knoblauchzehe",
+    "tags": [
+        "sauce",
+        "main",
+        "vegi",
+        "vegan"
+    ],
+    "ingredients": {
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "1/2"
         },
-        {
-            "id": "haferflocken",
+        "haferflocken": {
             "amount": "70g"
         },
-        {
-            "id": "tomaten",
-            "amount": "1 Pkg.",
-            "name": "Passierte Tomaten"
+        "tomaten-passiert": {
+            "amount": "500g"
         },
-        {
-            "id": "tomate",
+        "tomate": {
             "amount": "2"
         },
-        {
-            "id": "karotte",
+        "karotte": {
             "amount": "1"
         },
-        {
-            "id": "bruehe",
+        "bruehe": {
             "amount": "2 TL"
         },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "oregano"
-        },
-        {
-            "id": "chili"
-        },
-        {
-            "id": "wasser"
-        }
-    ],
+        "salz": {},
+        "oregano": {},
+        "chili": {},
+        "wasser": {}
+    },
     "preparation": [
-        "{zwiebel}, {karotte} und {knoblauchzehe} hacken und in Olivenöl anschwitzen. {tomaten}, {tomate} und {haferflocken} hinzugeben und kurz braten. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
+        "{zwiebel}, {karotte} und {knoblauchzehe} hacken und in Olivenöl anschwitzen. {tomaten-passiert}, {tomate} und {haferflocken} hinzugeben und kurz braten. Mit etwas {wasser} auffüllen und das {bruehe} unterrühren.",
         "So lange köcheln lassen, bis die Haferflocken das Wasser aufgesogen haben und eine schöne dickflüssige Konsistenz erreicht ist. Eventuell muss noch etwas Wasser nachgeschüttet werden. Mit {salz}, {oregano} und {chili} abschmecken."
     ]
 }

@@ -2,36 +2,32 @@
     "name": "Carribean Cream",
     "portions": "2 Longdrinks",
     "type": "longdrink",
-    "tags": ["drink", "cream"],
-    "ingredients": [
-        {
-            "id": "sahne",
-            "amount": "3cl"
+    "tags": [
+        "drink",
+        "cream"
+    ],
+    "ingredients": {
+        "kokosmilch": {
+            "amount": "5cl"
         },
-        {
-            "id": "orangensaft",
+        "orangensaft": {
             "amount": "10cl"
         },
-        {
-            "id": "kokoslikoer",
-            "amount": "4cl"
+        "kokoslikoer": {
+            "amount": "5cl"
         },
-        {
-            "id": "rumbraun",
-            "amount": "7cl"
+        "rum-braun": {
+            "amount": "7.5cl"
         },
-        {
-            "id": "maracujasaft",
+        "maracujasaft": {
             "amount": "10cl"
         },
-        {
-            "id": "banane",
+        "banane": {
             "amount": "1"
         }
-    ],
+    },
     "preparation": [
         "{all} pürieren. Mit Eis shaken. In die Gläser abseihen."
     ],
     "garnish": "Zitronen und Orangenscheibe"
-
 }

@@ -1,49 +1,35 @@
 {
     "name": "Long Island Iced Tea",
     "type": "longdrink",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "wodka",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "wodka": {
             "amount": "2cl"
         },
-        {
-            "id": "gin",
-            "amount": "2cl",
-            "name": "Gin"
+        "gin": {
+            "amount": "2cl"
         },
-        {
-            "id": "whiterum",
-            "amount": "2cl",
-            "name": "Weißer Rum"
+        "rum-weiss": {
+            "amount": "2cl"
         },
-        {
-            "id": "tequila",
-            "amount": "2cl",
-            "name": "Tequila silber"
+        "tequila": {
+            "amount": "2cl"
         },
-        {
-            "id": "triplesec",
-            "amount": "2cl",
-            "name": "Triple Sec"
+        "triple-sec": {
+            "amount": "2cl"
         },
-        {
-            "id": "zitronensaft",
-            "amount": "1cl",
-            "name": "Zitronensaft"
+        "zitronensaft": {
+            "amount": "1cl"
         },
-        {
-            "id": "sirup",
-            "amount": "1cl",
-            "name": "Sirup"
+        "sirup-zucker": {
+            "amount": "1cl"
         },
-        {
-            "id": "cola",
-            "name": "Cola"
-        }
-    ],
+        "cola": {}
+    },
     "preparation": [
-        "Alles außer {cola} mit Eis shaken und auf Eiswürfel abseihen.",
+        "{all/cola} mit Eis shaken und auf Eiswürfel abseihen.",
         "Einen Spritzer Cola hinzufügen."
     ],
     "garnish": "Zitronenscheibe"

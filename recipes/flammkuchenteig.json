@@ -1,29 +1,24 @@
 {
     "name": "Flammkuchenteig",
     "headless": true,
-    "tags": ["flammkuchen"],
-    "ingredients": [
-        {
-            "id": "wasser",
+    "tags": [
+        "flammkuchen"
+    ],
+    "ingredients": {
+        "wasser": {
             "amount": "75ml"
         },
-        {
-            "id": "hefe",
-            "amount": "10g",
-            "name": "frische Hefe"
+        "hefe": {
+            "amount": "10g"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "150g"
         },
-        {
-            "id": "salz"
-        },
-        {
-            "id": "olivenoel",
+        "salz": {},
+        "olivenoel": {
             "amount": "1 EL"
         }
-    ],
+    },
     "preparation": [
         "{hefe}, {olivenoel} und {salz} mit lauwarmem {wasser} verrühren. {mehl} hinzugeben und zu einem Teig kneten. Diesen zugedeckt an einem warmen Ort ca. 40 Minuten gehen lassen."
     ]

@@ -2,50 +2,34 @@
     "name": "Mexican Wrap",
     "portions": "3 Wraps",
     "type": "pot",
-    "tags": ["chicken", "mexican", "main", "wrap"],
-    "ingredients": [
-        {
-            "id": "haehnchen",
-            "amount": "1",
-            "name": "Haehnchenbrustfilet"
-        },
-        {
-            "id": "zwiebel",
-            "amount": "1"
-        },
-        {
-            "id": "knoblauchzehe",
-            "amount": "1"
-        },
-        {
-            "id": "reis"
-        },
-        {
-            "id": "salsa",
-            "name": "Salsa Soße"
-        },
-        {
-            "id": "sahne"
-        },
-        {
-            "id": "cheddar"
-        },
-        {
-            "id": "salat",
-            "name": "Salat"
-        },
-        {
-            "id": "chili"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
+    "tags": [
+        "chicken",
+        "mexican",
+        "main",
+        "wrap"
     ],
+    "ingredients": {
+        "haehnchenbrustfilet": {
+            "amount": "1"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "reis": {},
+        "sauce-salsa": {},
+        "sahne": {},
+        "cheddar": {},
+        "salat": {},
+        "chili": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
-        "{haehnchen} mit {zwiebel} anbraten. {knoblauchzehe} hinzufügen.",
+        "{haehnchenbrustfilet} mit {zwiebel} anbraten. {knoblauchzehe} hinzufügen.",
         "{reis} und Wasser hinzufügen und weiterkochen.",
-        "{salsa}, {sahne}, {chili}, {gewuerze} hinzufügen.",
+        "{sauce-salsa}, {sahne}, {chili}, {salz-pfeffer} hinzufügen.",
         "{salat} und {cheddar} schneiden.",
         "Alles in einer Tortilla zusammenfügen."
     ]

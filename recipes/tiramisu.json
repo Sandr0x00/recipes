@@ -1,45 +1,29 @@
 {
     "name": "Tiramisu",
-    "tags": ["sweet", "italian"],
-    "ingredients": [
-        {
-            "id": "eiweis",
-            "amount": "3",
-            "name": "Eiweiß"
-        },
-        {
-            "id": "eigelb",
-            "amount": "3",
-            "name": "Eigelb"
-        },
-        {
-            "id": "zucker"
-        },
-        {
-            "id": "mascarpone",
-            "amount": "500g",
-            "name": "Mascarpone"
-        },
-        {
-            "id": "biskuit",
-            "name": "Löffelbiscuits"
-        },
-        {
-            "id": "kaffee",
-            "name": "Kaffee"
-        },
-        {
-            "id": "amaretto",
-            "name": "Amaretto"
-        },
-        {
-            "id": "kakao"
-        }
+    "tags": [
+        "sweet",
+        "italian"
     ],
+    "ingredients": {
+        "eiweiss": {
+            "amount": "3"
+        },
+        "eigelb": {
+            "amount": "3"
+        },
+        "zucker": {},
+        "mascarpone": {
+            "amount": "500g"
+        },
+        "loeffelbiskuit": {},
+        "kaffee": {},
+        "amaretto": {},
+        "kakao": {}
+    },
     "preparation": [
-        "{eigelb} und {zucker} cremig schlagen. {mascarpone} unterrühren. {eiweis} steif schlagen und zur Mascarponecreme hinzufügen.",
+        "{eigelb} und {zucker} cremig schlagen. {mascarpone} unterrühren. {eiweiss} steif schlagen und zur Mascarponecreme hinzufügen.",
         "{kaffee} kochen und {amaretto} hinzufügen.",
-        "{biskuit} in die Form legen und mit Kaffee Gemisch tränken. Mascarponecreme darauf streichen. Wiederholen bis alles leer ist.",
+        "{loeffelbiskuit} in die Form legen und mit Kaffee Gemisch tränken. Mascarponecreme darauf streichen. Wiederholen bis alles leer ist.",
         "Vor dem Verzehr mit {kakao} bestreuen."
     ]
 }

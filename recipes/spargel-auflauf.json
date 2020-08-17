@@ -1,0 +1,36 @@
+{
+    "name": "Spargel-Kartoffel Auflauf",
+    "portions": "2 Portionen",
+    "type": "oven",
+    "tags": [
+        "main",
+        "potato"
+    ],
+    "ingredients": {
+        "spargel": {
+            "amount": "6"
+        },
+        "kartoffel": {
+            "amount": "10"
+        },
+        "schinken": {
+            "amount": "6 Scheiben"
+        },
+        "eigelb": {
+            "amount": "3"
+        },
+        "wein-weiss": {
+            "amount": "3 EL"
+        },
+        "butter": {
+            "amount": "200g"
+        },
+        "kaese": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{spargel} schälen. Enden abschneiden. {kartoffel} schälen und mit {spargel} in Salzwasser kochen. Ein bisschen Butter hinzufügen.",
+        "{eigelb} mit {wein-weiss} in einer Schüssel im Wasserbad cremig aufschlagen. {butter} hinzugeben. Mit {salz-pfeffer} würzen.",
+        "{spargel} in {schinken} wickeln und mit Soße und Kartoffeln in eine Auflaufform geben und mit {kaese} überbacken."
+    ]
+}

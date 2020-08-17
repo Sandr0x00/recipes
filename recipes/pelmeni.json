@@ -2,48 +2,33 @@
     "name": "Pelmeni",
     "portions": "6 Portionen",
     "type": "pot",
-    "tags": ["russian", "meat", "main"],
-    "ingredients": [
-        {
-            "id": "mehl",
+    "tags": [
+        "russian",
+        "meat",
+        "main"
+    ],
+    "ingredients": {
+        "mehl": {
             "amount": "500g"
         },
-        {
-            "id": "ei",
+        "ei": {
             "amount": "3"
         },
-        {
-            "id": "wasser",
-            "amount": "100ml",
-            "name": "warmes Wasser"
+        "wasser": {
+            "amount": "100ml"
         },
-        {
-            "id": "lauchzwiebel",
-            "name": "Lauchzwiebeln"
-        },
-        {
-            "id": "hackfleisch",
+        "lauchzwiebel": {},
+        "hackfleisch": {
             "amount": "400g"
         },
-        {
-            "id": "schnittlauch",
-            "name": "Schnittlauch"
-        },
-        {
-            "id": "knoblauchzehe"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        },
-        {
-            "id": "schmand",
-            "name": "Schmand"
-        }
-    ],
+        "schnittlauch": {},
+        "knoblauchzehe": {},
+        "salz-pfeffer": {},
+        "schmand": {}
+    },
     "preparation": [
         "{mehl}, Salz, {ei} und {wasser} zu einem festen Teig verarbeiten.",
-        "{hackfleisch} mit {lauchzwiebel} und {knoblauchzehe} mischen und mit {gewuerze} würzen.",
+        "{hackfleisch} mit {lauchzwiebel} und {knoblauchzehe} mischen und mit {salz-pfeffer} würzen.",
         "Teig dünn ausrollen. Mit einer runden Ausstechform oder einem Trinkglas Kreise ausstechen.",
         "Je etwas Hackmasse auf die Kreise setzen, zu einem Halbkreis umklappen und die Nahtstellen fest mit einer Gabel zusammendrücken.",
         "Portionsweise in Salzwasser und bei mittlerer Hitze ca. 8 Minuten gar ziehen lassen.",

@@ -1,35 +1,25 @@
 {
     "name": "Pizzaleberkäse",
     "type": "oven",
-    "tags": ["main", "leberkas", "meat"],
-    "ingredients": [
-        {
-            "id": "braet",
-            "amount": "500g",
-            "name": "Leberkäsbrät"
+    "tags": [
+        "main",
+        "leberkas",
+        "meat"
+    ],
+    "ingredients": {
+        "leberkaesebraet": {
+            "amount": "500g"
         },
-        {
-            "id": "salami",
-            "name": "Salami"
-        },
-        {
-            "id": "kaese",
-            "name": "Käse"
-        },
-        {
-            "id": "paprika",
+        "salami": {},
+        "kaese": {},
+        "paprika": {
             "amount": "1/2"
         },
-        {
-            "id": "oregano"
-        },
-        {
-            "id": "chili",
-            "name": "Chilipulver"
-        }
-    ],
+        "oregano": {},
+        "chili": {}
+    },
     "preparation": [
-        "{salami}, {kaese} und {paprika} würfeln und mit dem {braet} vermengen. Mit {oregano} und {chili} mischen.",
+        "{salami}, {kaese} und {paprika} würfeln und mit dem {leberkaesebraet} vermengen. Mit {oregano} und {chili} mischen.",
         "80min bei 180°C backen."
     ]
 }

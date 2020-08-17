@@ -61,14 +61,13 @@ ${data}
     updated(changedProperties) {
         if (changedProperties.has('filteredData')) {
             this.lazyLoadImg();
-            for (const elem of this.filteredData) {
-                $('#' + elem.id).fitText();
-                // $('#' + elem.id).off();
-                // $('#' + elem.id).on('auxclick', e => {
-                //     e.preventDefault();
-                //     loadingComp.navigate(`/${elem.id}`, '_blank');
-                // });
-            }
+            // for (const elem of this.filteredData) {
+            //     // $('#' + elem.id).off();
+            //     // $('#' + elem.id).on('auxclick', e => {
+            //     //     e.preventDefault();
+            //     //     loadingComp.navigate(`/${elem.id}`, '_blank');
+            //     // });
+            // }
             // $('#mainLink').off();
             // $('#mainLink').on('auxclick', e => {
             //     e.preventDefault();

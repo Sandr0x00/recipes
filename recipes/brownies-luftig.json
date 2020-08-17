@@ -2,52 +2,42 @@
     "name": "Luftige Brownies",
     "portions": "9 Brownies (1g)",
     "type": "oven",
-    "tags": ["sweet", "chocolate"],
-    "ingredients": [
-        {
-            "id": "butter",
+    "tags": [
+        "sweet",
+        "chocolate"
+    ],
+    "ingredients": {
+        "butter": {
             "amount": "140g"
         },
-        {
-            "id": "schokiz",
-            "amount": "70g",
-            "name": "Zartbitter Schokolade"
+        "schokiz": {
+            "amount": "70g"
         },
-        {
-            "id": "mehl",
+        "mehl": {
             "amount": "100g"
         },
-        {
-            "id": "kakao",
+        "kakao": {
             "amount": "2 EL"
         },
-        {
-            "id": "schoki",
-            "amount": "100g",
-            "name": "Milchschokolade"
-        },
-        {
-            "id": "ei",
-            "amount": "3"
-        },
-        {
-            "id": "zucker",
+        "schokim": {
             "amount": "100g"
         },
-        {
-            "id": "milch",
+        "ei": {
+            "amount": "3"
+        },
+        "zucker": {
+            "amount": "100g"
+        },
+        "milch": {
             "amount": "1 EL"
         },
-        {
-            "id": "vanillezucker",
+        "vanillezucker": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "salz"
-        }
-    ],
+        "salz": {}
+    },
     "preparation": [
-        "{schoki} und {schokiz} schmelzen.",
+        "{schokim} und {schokiz} schmelzen.",
         "{butter} hinzufügen.",
         "{kakao}, {zucker}, {vanillezucker}, das {salz}, {milch} und {ei} in einer Schüssel verrühren.",
         "{mehl} und Schokoladen-Butter Mischung hinzufügen.",

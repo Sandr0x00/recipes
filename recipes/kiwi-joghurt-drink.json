@@ -1,25 +1,23 @@
 {
     "name": "Kiwi Joghurt Drink",
     "type": "longdrink",
-    "tags": ["drink"],
-    "ingredients": [
-        {
-            "id": "joghurt",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "joghurt": {
             "amount": "200g"
         },
-        {
-            "id": "zucker",
+        "zucker": {
             "amount": "1 EL"
         },
-        {
-            "id": "kiwi",
+        "kiwi": {
             "amount": "1"
         },
-        {
-            "id": "vanilleeis",
+        "vanilleeis": {
             "amount": "1 Kugel"
         }
-    ],
+    },
     "preparation": [
         "{joghurt}, {zucker} und {kiwi} pürieren/mixen. Mit {vanilleeis} ins Glas geben."
     ],

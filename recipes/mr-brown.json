@@ -1,22 +1,21 @@
 {
     "name": "Mr. Brown",
     "type": "longdrink",
-    "tags": ["drink", "cream"],
-    "ingredients": [
-        {
-            "id": "banane",
+    "tags": [
+        "drink",
+        "cream"
+    ],
+    "ingredients": {
+        "banane": {
             "amount": "1"
         },
-        {
-            "id": "milch",
-            "amount": "350ml",
-            "name": "Milch"
+        "milch": {
+            "amount": "350ml"
         },
-        {
-            "id": "kakao",
+        "kakao": {
             "amount": "2 EL"
         }
-    ],
+    },
     "preparation": [
         "{banane} und {milch} mixen. Mit {kakao} mit Eis shaken.",
         "Ins Glas abseihen."

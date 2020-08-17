@@ -1,36 +1,29 @@
 {
     "name": "Chili Salsa",
-    "tags": ["sauce"],
-    "ingredients": [
-        {
-            "id": "chili",
+    "tags": [
+        "sauce"
+    ],
+    "ingredients": {
+        "chili": {
             "amount": "2"
         },
-        {
-            "id": "tomate",
+        "tomate": {
             "amount": "4"
         },
-        {
-            "id": "oel",
-            "amount": "1 EL",
-            "name": "Olivenöl"
+        "oel": {
+            "amount": "1 EL"
         },
-        {
-            "id": "knoblauchzehe",
+        "knoblauchzehe": {
             "amount": "1"
         },
-        {
-            "id": "limette",
-            "amount": "1 TL",
-            "name": "Limettensaft"
+        "limettensaft": {
+            "amount": "1 TL"
         },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Oregano"
-        }
-    ],
+        "salz": {},
+        "oregano": {}
+    },
     "preparation": [
-        "{chili} mit {tomate}, {oel}, {knoblauchzehe}, {limette} und {gewuerze} pürieren.",
+        "{chili} mit {tomate}, {oel}, {knoblauchzehe}, {limettensaft}, {oregano} und {salz} pürieren.",
         "Auf die hälfte einkochen."
     ]
 }

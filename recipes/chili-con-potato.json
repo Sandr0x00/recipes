@@ -2,60 +2,47 @@
     "name": "Chili con potato",
     "portions": "4 Portionen",
     "type": "pot",
-    "tags": ["potato", "main", "mexican"],
-    "ingredients": [
-        {
-            "id": "kartoffel",
+    "tags": [
+        "potato",
+        "main",
+        "mexican"
+    ],
+    "ingredients": {
+        "kartoffel": {
             "amount": "500g"
         },
-        {
-            "id": "zwiebel",
+        "zwiebel": {
             "amount": "2"
         },
-        {
-            "id": "knoblauchzehe",
-            "amount": "+"
-        },
-        {
-            "id": "passiertetomaten",
+        "knoblauchzehe": {},
+        "tomaten-passiert": {
             "amount": "1 Pkg."
         },
-        {
-            "id": "bier",
+        "bier": {
             "amount": "350ml"
         },
-        {
-            "id": "chili"
-        },
-        {
-            "id": "kidneybohnen",
+        "chili": {},
+        "kidneybohnen": {
             "amount": "1 Dose"
         },
-        {
-            "id": "mais",
+        "mais": {
             "amount": "1 Dose"
         },
-        {
-            "id": "tomatenmark",
+        "tomatenmark": {
             "amount": "2 EL"
         },
-        {
-            "id": "gewuerze",
+        "gewuerze": {
             "name": "Salz, Pfeffer, Kümmel, Paprikapulver, Thymian, Zucker und Kakaopulver"
         },
-        {
-            "id": "baguette",
-            "amount": "1",
-            "name": "Baguette"
+        "baguette": {
+            "amount": "1"
         },
-        {
-            "id": "cremefraiche"
-        }
-    ],
+        "cremefraiche": {}
+    },
     "preparation": [
         "{zwiebel}, {knoblauchzehe} und {kartoffel} würfeln.",
         "{zwiebel} und {knoblauchzehe} anschwitzen. {kartoffel}, {tomatenmark} hinzufügen und mit anschwitzen.",
-        "{bier}, {passiertetomaten}, {chili}, {mais} und {gewuerze} hinzufügen.",
+        "{bier}, {tomaten-passiert}, {chili}, {mais} und {gewuerze} hinzufügen.",
         "{kidneybohnen} hinzufügen und einkochen.",
         "Mit {baguette} und {cremefraiche} servieren."
     ]

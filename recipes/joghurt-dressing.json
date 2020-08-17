@@ -1,26 +1,17 @@
 {
     "name": "Joghurt Dressing",
-    "tags": ["sauce"],
-    "ingredients": [
-        {
-            "id": "joghurt",
-            "amount": "3 TL",
-            "name": "Joghurt"
-        },
-        {
-            "id": "essig",
-            "name": "Essig"
-        },
-        {
-            "id": "oel",
-            "name": "Olivenöl"
-        },
-        {
-            "id": "gewuerze",
-            "name": "Salz und Pfeffer"
-        }
+    "tags": [
+        "sauce"
     ],
+    "ingredients": {
+        "joghurt": {
+            "amount": "3 TL"
+        },
+        "essig-wein": {},
+        "oel": {},
+        "salz-pfeffer": {}
+    },
     "preparation": [
-        "{joghurt} mit {essig}, {oel}, {gewuerze} vermischen."
+        "{joghurt} mit {essig-wein}, {oel}, {salz-pfeffer} vermischen."
     ]
 }
