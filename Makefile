@@ -15,7 +15,7 @@ recipes:
 icons:
 	./scripts/pixelparser.py
 
-build: build-css build-js icons resize recipes
+build: build-css build-js resize recipes
 
 test:
 	npm test
@@ -42,6 +42,3 @@ nohup:
 
 status:
 	ps -ef | grep "[n]ode server.js"
-
-deploy: dist
-	scp -rp -P 9681 dist/* pi@sandr0.tk:~/recipes/
