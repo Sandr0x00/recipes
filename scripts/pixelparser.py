@@ -25,7 +25,7 @@ image_names = [
     "chocolate",
     "avocado",
     "onion",
-    "russia",
+    "russian",
     "potato",
     "chicken",
     "meat",
@@ -37,7 +37,18 @@ image_names = [
     "austrian",
     "mexican",
     "american",
-    "italian"
+    "sweet",
+    "drink",
+    "italian",
+    "burger",
+    "vegi",
+    "main",
+    "side",
+    "vodka",
+    "indian",
+    "spanish",
+    "fish",
+    "blank",
 ]
 images = []
 import numpy as np
@@ -160,7 +171,7 @@ for y in range(height):
 # print(images)
 
 if len(image_names) != len(images):
-    print("Length should be equal")
+    print(f"Length should be equal: {len(image_names)} - {len(images)}")
     exit()
 
 for i in range(len(images)):

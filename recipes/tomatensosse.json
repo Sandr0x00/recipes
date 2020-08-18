@@ -1,10 +1,10 @@
 {
     "name": "Tomatensosse",
     "portions": "2 Portionen",
-    "type": "pot",
     "tags": [
         "main",
-        "vegi"
+        "vegi",
+        "pot"
     ],
     "ingredients": {
         "zwiebel": {

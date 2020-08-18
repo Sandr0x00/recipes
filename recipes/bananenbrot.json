@@ -1,9 +1,9 @@
 {
     "name": "Bananenbrot",
-    "type": "oven",
     "tags": [
         "chocolate",
-        "sweet"
+        "sweet",
+        "oven"
     ],
     "ingredients": {
         "banane": {

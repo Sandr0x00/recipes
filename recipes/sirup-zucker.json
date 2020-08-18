@@ -1,8 +1,8 @@
 {
     "name": "Zuckersirup",
-    "type": "pot",
     "tags": [
-        "sirup"
+        "sirup",
+        "pot"
     ],
     "ingredients": {
         "zucker": {

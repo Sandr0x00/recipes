@@ -1,10 +1,10 @@
 {
     "name": "White Russian",
-    "type": "old-fashioned",
     "tags": [
         "drink",
         "vodka",
-        "cream"
+        "cream",
+        "old-fashioned"
     ],
     "ingredients": {
         "wodka": {

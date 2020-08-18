@@ -1,8 +1,8 @@
 {
     "name": "Advokatentrost",
-    "type": "hurricane",
     "tags": [
-        "drink"
+        "drink",
+        "hurricane"
     ],
     "ingredients": {
         "eierlikoer": {

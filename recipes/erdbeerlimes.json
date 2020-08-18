@@ -1,11 +1,11 @@
 {
     "name": "Erdbeerlimes",
     "portions": "4 Liter",
-    "type": "pot",
     "tags": [
         "drink",
         "fruity",
-        "vodka"
+        "vodka",
+        "pot"
     ],
     "ingredients": {
         "erdbeeren": {

@@ -1,11 +1,10 @@
 {
     "name": "Persische Hähnchenspieße",
     "portions": "10 Spieße",
-    "type": "bbq",
     "tags": [
-        "bbq",
         "chicken",
-        "main"
+        "main",
+        "bbq"
     ],
     "ingredients": {
         "haehnchenbrustfilet": {

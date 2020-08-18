@@ -1,9 +1,9 @@
 {
     "name": "Baiser",
-    "type": "oven",
     "tags": [
         "sweet",
-        "egg"
+        "egg",
+        "oven"
     ],
     "ingredients": {
         "eiweiss": {

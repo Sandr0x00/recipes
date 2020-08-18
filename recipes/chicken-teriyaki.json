@@ -1,10 +1,10 @@
 {
     "name": "Chicken Teriyaki",
-    "type": "pot",
     "tags": [
         "main",
         "chicken",
-        "asian"
+        "asian",
+        "pot"
     ],
     "portions": "6 Portions",
     "ingredients": {

@@ -1,10 +1,10 @@
 {
     "name": "Tangzhong",
     "portions": "6 Buns",
-    "type": "pot",
     "headless": true,
     "tags": [
-        "side"
+        "side",
+        "pot"
     ],
     "ingredients": {
         "mehl": {

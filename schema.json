@@ -21,10 +21,6 @@
             "type": "string",
             "pattern": "^[0-9].*"
         },
-        "type": {
-            "type": "string",
-            "pattern": "^(wok|wineglas|pan|pot|oven|bbq|hurricane|old-fashioned|longdrink)$"
-        },
         "images": {
             "type": "array",
             "required": true,
@@ -37,7 +33,7 @@
             "minItems": 1,
             "items": {
                 "type": "string",
-                "pattern": "^[a-z]+$",
+                "pattern": "^[a-z-]+$",
                 "required": true,
                 "minLength": 2
             }

@@ -1,9 +1,9 @@
 {
     "name": "Vanillepudding",
     "portions": "2 Gläser",
-    "type": "pot",
     "tags": [
-        "sweet"
+        "sweet",
+        "pot"
     ],
     "ingredients": {
         "milch": {

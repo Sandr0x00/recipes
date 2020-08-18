@@ -1,13 +1,13 @@
 {
     "name": "Kaiserschmarrn",
     "portions": "4 Pfannen",
-    "type": "pan",
     "tags": [
         "austrian",
         "sweet",
         "main",
         "egg",
-        "vegi"
+        "vegi",
+        "pan"
     ],
     "ingredients": {
         "rosinen": {

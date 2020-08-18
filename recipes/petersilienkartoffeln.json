@@ -1,10 +1,10 @@
 {
     "name": "Petersilien Kartoffeln",
-    "type": "pot",
     "tags": [
         "potato",
         "side",
-        "vegi"
+        "vegi",
+        "pot"
     ],
     "ingredients": {
         "kartoffel": {},

@@ -1,10 +1,10 @@
 {
     "name": "Schokokuchen",
     "portions": "1 Kuchen",
-    "type": "oven",
     "tags": [
         "sweet",
-        "chocolate"
+        "chocolate",
+        "oven"
     ],
     "ingredients": {
         "milch": {

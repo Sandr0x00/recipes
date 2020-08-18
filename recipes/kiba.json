@@ -1,8 +1,8 @@
 {
     "name": "KiBa",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "bananensaft": {},

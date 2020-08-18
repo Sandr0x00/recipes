@@ -1,10 +1,10 @@
 {
     "name": "Pizza",
-    "type": "oven",
     "tags": [
         "main",
         "vegi",
-        "italian"
+        "italian",
+        "oven"
     ],
     "ingredients": {
         "pizzateig": {

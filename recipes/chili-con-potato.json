@@ -1,11 +1,11 @@
 {
     "name": "Chili con potato",
     "portions": "4 Portionen",
-    "type": "pot",
     "tags": [
         "potato",
         "main",
-        "mexican"
+        "mexican",
+        "pot"
     ],
     "ingredients": {
         "kartoffel": {

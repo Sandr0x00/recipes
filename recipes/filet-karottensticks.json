@@ -1,10 +1,10 @@
 {
     "name": "Schweinefilet mit Karottensticks",
     "portions": "1 Portion",
-    "type": "pan",
     "tags": [
         "meat",
-        "main"
+        "main",
+        "pan"
     ],
     "ingredients": {
         "schweinefilet": {

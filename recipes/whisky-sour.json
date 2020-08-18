@@ -1,10 +1,10 @@
 {
     "name": "Whisky Sour",
     "portions": "1 Glass",
-    "type": "old-fashioned",
     "tags": [
         "whisky",
-        "drink"
+        "drink",
+        "old-fashioned"
     ],
     "ingredients": {
         "whisky": {

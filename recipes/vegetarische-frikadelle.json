@@ -1,10 +1,10 @@
 {
     "name": "Vegetarische Frikadelle",
     "portions": "4 Portionen",
-    "type": "pot",
     "tags": [
         "main",
-        "vegi"
+        "vegi",
+        "pot"
     ],
     "ingredients": {
         "reis": {

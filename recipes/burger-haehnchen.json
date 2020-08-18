@@ -1,11 +1,11 @@
 {
     "name": "Hähnchen-Burger",
     "portions": "1 Burger",
-    "type": "pan",
     "tags": [
         "burger",
         "main",
-        "meat"
+        "meat",
+        "pan"
     ],
     "ingredients": {
         "haehnchenbrustfilet": {

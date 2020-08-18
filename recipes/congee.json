@@ -1,9 +1,9 @@
 {
     "name": "Congee",
-    "type": "pot",
     "tags": [
         "rice",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "basmatireis": {

@@ -1,11 +1,11 @@
 {
     "name": "Bowl",
     "portions": "1 Bowl",
-    "type": "pan",
     "tags": [
         "main",
         "meat",
-        "vegi"
+        "vegi",
+        "pan"
     ],
     "ingredients": {
         "avocado": {

@@ -1,11 +1,11 @@
 {
     "name": "Blaubeer Muffins",
     "portions": "12 Muffins",
-    "type": "oven",
     "tags": [
         "american",
         "side",
-        "sweet"
+        "sweet",
+        "oven"
     ],
     "ingredients": {
         "mehl": {

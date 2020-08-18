@@ -27,17 +27,28 @@ function replace(regex, regexAmount, id, ingredient, preparation, preparationAmo
     ];
 }
 
-const typeMapping = {
-    'huricane': 'Hurricaneglas',
-    'old-fashioned': 'Tumbler',
-    'longdrink': 'Longdrinkglas',
-};
+const utensils = [
+    'pan', 'longdrink', 'bbq', 'pot', 'wineglas', 'wok', 'old-fashioned', 'oven',
+];
 
 exports.formatPreparation = function(recipe) {
     // replace preparations
-    let type = typeMapping[recipe.type];
-    if (type) {
-        recipe.preparation.unshift(`Benötigte Utensilien: <i>${type}</i>`);
+    let first = true;
+    let prep = null;
+    let tagTranslations = require('./js/tags.js');
+    for (let tag of recipe.tags) {
+        if (utensils.includes(tag)) {
+            let r = tagTranslations[tag];
+            if (first) {
+                prep = `Benötigte Utensilien: <i>${r}</i>`;
+                first = false;
+            } else {
+                prep += `, <i>${r}</i>`;
+            }
+        }
+    }
+    if (prep) {
+        recipe.preparation.unshift(prep);
     }
     if (recipe.garnish) {
         recipe.preparation.push(`Deko: <i>${recipe.garnish}</i>`);
@@ -93,7 +104,7 @@ exports.loadJSON = function(format=true) {
 };
 
 /**
- * Extracts id, type, name, images
+ * Extracts name, tags and an image
  * @param {Object} recipes
  */
 exports.extractGeneralInfo = (recipes) => {
@@ -108,7 +119,6 @@ exports.extractGeneralInfo = (recipes) => {
         }
         info[id] = {
             name: recipes[id].name,
-            type: recipes[id].type,
             image: image,
             tags: recipes[id].tags,
         };

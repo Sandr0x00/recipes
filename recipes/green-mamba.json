@@ -1,9 +1,9 @@
 {
     "name": "Green Mamba",
-    "type": "longdrink",
     "tags": [
         "drink",
-        "cream"
+        "cream",
+        "longdrink"
     ],
     "ingredients": {
         "zitronensaft": {

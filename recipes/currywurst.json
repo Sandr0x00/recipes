@@ -1,10 +1,10 @@
 {
     "name": "Currywurst",
     "portions": "1 Portion",
-    "type": "pan",
     "tags": [
         "main",
-        "meat"
+        "meat",
+        "pan"
     ],
     "ingredients": {
         "bratwurst": {

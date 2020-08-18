@@ -1,11 +1,11 @@
 {
     "name": "Pelmeni",
     "portions": "6 Portionen",
-    "type": "pot",
     "tags": [
         "russian",
         "meat",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "mehl": {

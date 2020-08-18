@@ -1,9 +1,9 @@
 {
     "name": "Schinken Zucchini Strudel",
-    "type": "oven",
     "tags": [
         "meat",
-        "main"
+        "main",
+        "oven"
     ],
     "ingredients": {
         "schinken": {

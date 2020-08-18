@@ -1,10 +1,10 @@
 {
     "name": "Luftige Brownies",
     "portions": "9 Brownies (1g)",
-    "type": "oven",
     "tags": [
         "sweet",
-        "chocolate"
+        "chocolate",
+        "oven"
     ],
     "ingredients": {
         "butter": {

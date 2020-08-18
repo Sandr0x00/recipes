@@ -1,11 +1,11 @@
 {
     "name": "Hähnchen-Gemüse-Pfanne",
     "portions": "2 Portionen",
-    "type": "wok",
     "tags": [
         "chicken",
         "asian",
-        "main"
+        "main",
+        "wok"
     ],
     "ingredients": {
         "haehnchenbrustfilet": {

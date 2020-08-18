@@ -1,10 +1,10 @@
 {
     "name": "Tworoshniki",
     "portions": "10 Plinsen",
-    "type": "pan",
     "tags": [
         "sweet",
-        "main"
+        "main",
+        "pan"
     ],
     "ingredients": {
         "quark": {

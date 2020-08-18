@@ -1,13 +1,13 @@
 {
     "name": "Plov",
     "portions": "4 Portionen",
-    "type": "pot",
     "tags": [
         "meat",
         "rice",
         "stew",
         "russian",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "rindfleisch": {

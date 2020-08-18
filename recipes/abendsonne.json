@@ -1,8 +1,8 @@
 {
     "name": "Abendsonne",
-    "type": "wineglas",
     "tags": [
-        "drink"
+        "drink",
+        "wineglas"
     ],
     "ingredients": {
         "sahne": {

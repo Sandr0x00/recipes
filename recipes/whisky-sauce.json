@@ -1,9 +1,9 @@
 {
     "name": "Whisky Soße",
-    "type": "pot",
     "tags": [
         "sauce",
-        "whisky"
+        "whisky",
+        "pot"
     ],
     "ingredients": {
         "butter": {},

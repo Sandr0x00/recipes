@@ -1,14 +1,14 @@
 {
     "name": "Spanische Tortilla",
     "portions": "1 Tortilla",
-    "type": "pan",
     "tags": [
         "spanish",
         "potato",
         "egg",
         "main",
         "vegi",
-        "spinach"
+        "spinach",
+        "pan"
     ],
     "ingredients": {
         "kartoffel": {

@@ -1,10 +1,10 @@
 {
     "name": "Griessbrei",
     "portions": "3 Portionen",
-    "type": "pot",
     "tags": [
         "side",
-        "sweet"
+        "sweet",
+        "pot"
     ],
     "ingredients": {
         "hartweizengriess": {

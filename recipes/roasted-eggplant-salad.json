@@ -1,12 +1,12 @@
 {
     "name": "Gerösteter Auberginen Salat",
     "portions": "1 Portion",
-    "type": "oven",
     "tags": [
         "balkan",
         "main",
         "side",
-        "vegi"
+        "vegi",
+        "oven"
     ],
     "ingredients": {
         "paprika": {},

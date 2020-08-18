@@ -1,8 +1,8 @@
 {
     "name": "Greenhorn",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "zitronensaft": {

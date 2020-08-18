@@ -90,8 +90,7 @@ class Recipe extends BaseComp {
 
             // Tags
             tags = this.data.tags.map(tag => {
-                let translated = tagTranslator[tag];
-                return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}">${translated}</div>`;
+                return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}" title="${tagTranslator[tag]}"><img src="icons/${tag}.svg" /></a>`;
             });
             tags = html`<div class="recipe-tags">${tags}</div>`;
 

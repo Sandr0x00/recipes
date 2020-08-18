@@ -1,8 +1,8 @@
 {
     "name": "Malibu Sunrise",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "kokoslikoer": {

@@ -1,11 +1,11 @@
 {
     "name": "Hähnchen Kartoffel Eintopf",
     "portions": "2 Portionen",
-    "type": "wok",
     "tags": [
         "chicken",
         "main",
-        "potato"
+        "potato",
+        "wok"
     ],
     "ingredients": {
         "kartoffel": {

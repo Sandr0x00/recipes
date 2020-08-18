@@ -1,11 +1,11 @@
 {
     "name": "Cacio e Pepe",
-    "type": "pot",
     "tags": [
         "italian",
         "pasta",
         "main",
-        "vegi"
+        "vegi",
+        "pot"
     ],
     "ingredients": {
         "nudeln": {},

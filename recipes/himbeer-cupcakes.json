@@ -1,12 +1,12 @@
 {
     "name": "Himbeer Cupcakes",
-    "type": "oven",
     "portions": "12 Cupcakes",
     "tags": [
         "vegi",
         "sweet",
         "vegan",
-        "fruity"
+        "fruity",
+        "oven"
     ],
     "ingredients": {
         "schoko-muffin": {

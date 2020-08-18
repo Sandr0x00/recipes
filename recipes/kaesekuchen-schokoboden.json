@@ -1,9 +1,9 @@
 {
     "name": "Käsekuchen mit Schokoboden",
-    "type": "oven",
     "tags": [
         "sweet",
-        "chocolate"
+        "chocolate",
+        "oven"
     ],
     "ingredients": {
         "schokiz": {

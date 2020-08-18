@@ -1,8 +1,8 @@
 {
     "name": "Pina Colada",
-    "type": "hurricane",
     "tags": [
-        "drink"
+        "drink",
+        "hurricane"
     ],
     "ingredients": {
         "rum-weiss": {

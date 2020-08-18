@@ -1,11 +1,10 @@
 {
     "name": "Chicken Wings",
     "portions": "12 Wings",
-    "type": "bbq",
     "tags": [
-        "bbq",
         "chicken",
-        "main"
+        "main",
+        "bbq"
     ],
     "ingredients": {
         "chickenwings": {

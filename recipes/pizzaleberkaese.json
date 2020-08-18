@@ -1,10 +1,10 @@
 {
     "name": "Pizzaleberkäse",
-    "type": "oven",
     "tags": [
         "main",
         "leberkas",
-        "meat"
+        "meat",
+        "oven"
     ],
     "ingredients": {
         "leberkaesebraet": {

@@ -1,12 +1,12 @@
 {
     "name": "Schoko Muffin",
-    "type": "oven",
     "portions": "12 Muffins",
     "tags": [
         "vegi",
         "chocolate",
         "sweet",
-        "vegan"
+        "vegan",
+        "oven"
     ],
     "ingredients": {
         "mehl": {

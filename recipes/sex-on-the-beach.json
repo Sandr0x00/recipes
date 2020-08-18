@@ -1,8 +1,8 @@
 {
     "name": "Sex on the Beach",
-    "type": "hurricane",
     "tags": [
-        "drink"
+        "drink",
+        "hurricane"
     ],
     "ingredients": {
         "orangensaft": {

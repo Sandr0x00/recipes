@@ -1,10 +1,10 @@
 {
     "name": "Kartoffelpüree",
-    "type": "pot",
     "tags": [
         "side",
         "potato",
-        "vegi"
+        "vegi",
+        "pot"
     ],
     "ingredients": {
         "kartoffel": {

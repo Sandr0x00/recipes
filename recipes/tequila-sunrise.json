@@ -1,8 +1,8 @@
 {
     "name": "Tequila Sunrise",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "tequila": {

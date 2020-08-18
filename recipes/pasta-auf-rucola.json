@@ -1,10 +1,10 @@
 {
     "name": "Pasta mit Rucola",
     "portions": "2 Portionen",
-    "type": "pan",
     "tags": [
         "pasta",
-        "main"
+        "main",
+        "pan"
     ],
     "ingredients": {
         "nudeln": {},

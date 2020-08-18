@@ -1,8 +1,8 @@
 {
     "name": "Long Island Iced Tea",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "wodka": {

@@ -1,8 +1,8 @@
 {
     "name": "Pita",
-    "type": "pan",
     "tags": [
-        "side"
+        "side",
+        "pan"
     ],
     "ingredients": {
         "mehl": {

@@ -1,10 +1,10 @@
 {
     "name": "Focaccia",
     "portions": "2 Portionen",
-    "type": "oven",
     "tags": [
         "main",
-        "side"
+        "side",
+        "oven"
     ],
     "ingredients": {
         "hefe": {

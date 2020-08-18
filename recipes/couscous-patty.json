@@ -4,10 +4,10 @@
         "vegi",
         "burger",
         "main",
-        "couscous"
+        "couscous",
+        "pan"
     ],
     "portions": "4 Frikadellen",
-    "type": "pan",
     "ingredients": {
         "couscous": {
             "amount": "100g"

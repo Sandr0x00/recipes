@@ -1,8 +1,8 @@
 {
     "name": "Moscow Mule",
-    "type": "old-fashioned",
     "tags": [
-        "drink"
+        "drink",
+        "old-fashioned"
     ],
     "ingredients": {
         "wodka": {

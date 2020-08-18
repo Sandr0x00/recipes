@@ -1,9 +1,9 @@
 {
     "name": "Köttbullar",
-    "type": "pan",
     "tags": [
         "meat",
-        "main"
+        "main",
+        "pan"
     ],
     "ingredients": {
         "hackfleisch": {

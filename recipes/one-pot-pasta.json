@@ -1,9 +1,9 @@
 {
     "name": "One Pot Pasta",
-    "type": "pot",
     "tags": [
         "vegi",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "champignons": {},

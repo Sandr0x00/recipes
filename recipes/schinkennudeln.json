@@ -1,10 +1,10 @@
 {
     "name": "Schinkennudeln",
     "portions": "4 Portionen",
-    "type": "pot",
     "tags": [
         "pasta",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "nudeln": {

@@ -1,13 +1,13 @@
 {
     "name": "Kartoffelsuppe",
     "portions": "4 Portionen",
-    "type": "pot",
     "tags": [
         "soup",
         "vegi",
         "potato",
         "side",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "karotte": {

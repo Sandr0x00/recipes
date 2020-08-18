@@ -1,12 +1,12 @@
 {
     "name": "Rosmarin Kartoffeln",
     "portions": "2 Portions",
-    "type": "oven",
     "tags": [
         "vegi",
         "side",
         "main",
-        "potato"
+        "potato",
+        "oven"
     ],
     "ingredients": {
         "knoblauchzehe": {

@@ -1,10 +1,10 @@
 {
     "name": "Spargel-Kartoffel Auflauf",
     "portions": "2 Portionen",
-    "type": "oven",
     "tags": [
         "main",
-        "potato"
+        "potato",
+        "oven"
     ],
     "ingredients": {
         "spargel": {

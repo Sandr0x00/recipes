@@ -1,11 +1,11 @@
 {
     "name": "Mediterraner Flammkuchen",
     "portions": "3 Flammkuchen",
-    "type": "oven",
     "tags": [
         "flammkuchen",
         "main",
-        "vegi"
+        "vegi",
+        "oven"
     ],
     "ingredients": {
         "flammkuchenteig": {

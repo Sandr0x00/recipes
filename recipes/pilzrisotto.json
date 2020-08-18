@@ -1,11 +1,11 @@
 {
     "name": "Pilzrisotto",
     "portions": "1 Portion",
-    "type": "wok",
     "tags": [
         "vegi",
         "main",
-        "rice"
+        "rice",
+        "wok"
     ],
     "ingredients": {
         "zwiebel": {

@@ -1,8 +1,8 @@
 {
     "name": "Malibu Beach",
-    "type": "wineglas",
     "tags": [
-        "drink"
+        "drink",
+        "wineglas"
     ],
     "ingredients": {
         "kokoslikoer": {

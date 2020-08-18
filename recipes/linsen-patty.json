@@ -3,10 +3,10 @@
     "tags": [
         "vegi",
         "burger",
-        "main"
+        "main",
+        "pan"
     ],
     "portions": "6 Frikadellen",
-    "type": "pan",
     "ingredients": {
         "linsen": {
             "amount": "200g"

@@ -1,12 +1,12 @@
 {
     "name": "Mexican Wrap",
     "portions": "3 Wraps",
-    "type": "pot",
     "tags": [
         "chicken",
         "mexican",
         "main",
-        "wrap"
+        "wrap",
+        "pot"
     ],
     "ingredients": {
         "haehnchenbrustfilet": {

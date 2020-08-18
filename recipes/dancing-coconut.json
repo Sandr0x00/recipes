@@ -1,8 +1,8 @@
 {
     "name": "Dancing Coconut",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "kokoslikoer": {

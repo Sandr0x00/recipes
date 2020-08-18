@@ -1,11 +1,11 @@
 {
     "name": "Kaspressknödel",
     "portions": "2 Portionen",
-    "type": "pan",
     "tags": [
         "austrian",
         "main",
-        "vegi"
+        "vegi",
+        "pan"
     ],
     "ingredients": {
         "ei": {

@@ -1,10 +1,10 @@
 {
     "name": "Gemüse Curry",
     "portions": "2 Portionen",
-    "type": "pot",
     "tags": [
         "vegi",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "quinoa": {

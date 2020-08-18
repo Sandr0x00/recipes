@@ -1,8 +1,8 @@
 {
     "name": "Roter Handschuh",
-    "type": "hurricane",
     "tags": [
-        "drink"
+        "drink",
+        "hurricane"
     ],
     "ingredients": {
         "sirup-grenadine": {

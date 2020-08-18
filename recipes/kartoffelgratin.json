@@ -1,11 +1,11 @@
 {
     "name": "Kartoffelgratin",
     "portions": "4 Portionen",
-    "type": "oven",
     "tags": [
         "potato",
         "auflauf",
-        "vegi"
+        "vegi",
+        "oven"
     ],
     "ingredients": {
         "milch": {

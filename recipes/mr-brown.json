@@ -1,9 +1,9 @@
 {
     "name": "Mr. Brown",
-    "type": "longdrink",
     "tags": [
         "drink",
-        "cream"
+        "cream",
+        "longdrink"
     ],
     "ingredients": {
         "banane": {

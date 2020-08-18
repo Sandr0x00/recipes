@@ -1,8 +1,8 @@
 {
     "name": "Poolside Tropical",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "tequila": {

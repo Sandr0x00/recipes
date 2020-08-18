@@ -48,16 +48,11 @@ ${data}
     }
 
     single(id, recipe) {
-        let type = '';
-        if (recipe.type) {
-            type = html`<span class="type"></span><span class="type" style='background-image: url("icons/${recipe.type}.svg"); background-size: 35px;'></span>`;
-        }
         return html`
 <figure class="recipeLinkDiv">
   <a id="${id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`/${id}`); }}>
     <figcaption class="text-center">${recipe.name}</figcaption>
   </a>
-  ${type}
 </figure>`;
     }
 
@@ -123,14 +118,13 @@ ${data}
     singleTag(tag) {
         let t = tag.tag;
         let c = tag.cnt;
-        let translated = tagTranslator[t];
         let selected = false;
         for (let f of this.filter) {
             if (f == t) {
                 selected = true;
             }
         }
-        return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}">${translated} (${c})</div>`;
+        return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}" title="${tagTranslator[t]}"><img src="icons/${t}.svg" /> (${c})</a>`;
     }
 
     // TODO: merge all and tags

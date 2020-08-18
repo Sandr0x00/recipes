@@ -1,8 +1,8 @@
 {
     "name": "Apfel-Limonade",
-    "type": "longdrink",
     "tags": [
-        "drink"
+        "drink",
+        "longdrink"
     ],
     "ingredients": {
         "mineralwasser": {

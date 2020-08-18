@@ -1,11 +1,11 @@
 {
     "name": "Vegetarischer Wrap",
     "portions": "1 Wrap",
-    "type": "pan",
     "tags": [
         "main",
         "vegi",
-        "wrap"
+        "wrap",
+        "pan"
     ],
     "ingredients": {
         "tortilla-chips": {},

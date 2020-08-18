@@ -1,10 +1,10 @@
 {
     "name": "Kürbis Rösti",
-    "type": "pan",
     "tags": [
         "vegi",
         "main",
-        "potato"
+        "potato",
+        "pan"
     ],
     "ingredients": {
         "kuerbis": {

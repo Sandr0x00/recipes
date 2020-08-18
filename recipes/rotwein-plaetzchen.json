@@ -1,8 +1,8 @@
 {
     "name": "Rotwein Plätzchen",
-    "type": "oven",
     "tags": [
-        "sweet"
+        "sweet",
+        "oven"
     ],
     "ingredients": {
         "mehl": {

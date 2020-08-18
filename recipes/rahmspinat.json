@@ -1,11 +1,11 @@
 {
     "name": "Rahmspinat",
-    "type": "pot",
     "portions": "2 Portionen",
     "tags": [
         "spinach",
         "side",
-        "vegi"
+        "vegi",
+        "pot"
     ],
     "ingredients": {
         "spinat": {

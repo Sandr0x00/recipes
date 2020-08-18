@@ -1,10 +1,10 @@
 {
     "name": "JangJoRim",
-    "type": "pot",
     "tags": [
         "egg",
         "side",
-        "asian"
+        "asian",
+        "pot"
     ],
     "ingredients": {
         "ei": {},

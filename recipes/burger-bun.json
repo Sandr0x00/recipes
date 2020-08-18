@@ -1,9 +1,9 @@
 {
     "name": "Brioche Brötchen",
     "portions": "6 Buns",
-    "type": "oven",
     "tags": [
-        "side"
+        "side",
+        "oven"
     ],
     "ingredients": {
         "tangzhong": {

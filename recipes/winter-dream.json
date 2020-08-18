@@ -1,9 +1,9 @@
 {
     "name": "Winter Dream",
-    "type": "longdrink",
     "tags": [
         "drink",
-        "cream"
+        "cream",
+        "longdrink"
     ],
     "ingredients": {
         "milch": {

@@ -1,11 +1,11 @@
 {
     "name": "Tostada",
     "portions": "2 Tostadas",
-    "type": "oven",
     "tags": [
         "spanish",
         "main",
-        "tuna"
+        "fish",
+        "oven"
     ],
     "ingredients": {
         "brot": {

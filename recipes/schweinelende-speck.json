@@ -1,11 +1,10 @@
 {
     "name": "Schweinelachs im Speckmantel",
     "portions": "8 Steaks",
-    "type": "bbq",
     "tags": [
-        "bbq",
         "meat",
-        "main"
+        "main",
+        "bbq"
     ],
     "ingredients": {
         "schweinelachs": {

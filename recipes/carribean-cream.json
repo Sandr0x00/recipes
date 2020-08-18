@@ -1,10 +1,10 @@
 {
     "name": "Carribean Cream",
     "portions": "2 Longdrinks",
-    "type": "longdrink",
     "tags": [
         "drink",
-        "cream"
+        "cream",
+        "longdrink"
     ],
     "ingredients": {
         "kokosmilch": {

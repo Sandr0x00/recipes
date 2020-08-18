@@ -1,9 +1,9 @@
 {
     "name": "Chicken Tikka Masala",
-    "type": "wok",
     "tags": [
         "chicken",
-        "indian"
+        "indian",
+        "wok"
     ],
     "ingredients": {
         "haehnchenbrustfilet": {

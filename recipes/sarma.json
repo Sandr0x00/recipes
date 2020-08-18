@@ -1,9 +1,9 @@
 {
     "name": "Sarma",
-    "type": "pot",
     "tags": [
         "meat",
-        "main"
+        "main",
+        "pot"
     ],
     "ingredients": {
         "paprika-spitz": {
