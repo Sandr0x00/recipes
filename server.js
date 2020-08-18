@@ -28,7 +28,7 @@ let helper = require('./helper');
 
 let json = helper.loadJSON();
 let tags = json.tags;
-let general = Object.values(helper.extractGeneralInfo(json.recipes));
+let general = helper.extractGeneralInfo(json.recipes);
 json = null;
 
 app.locals.compileDebug = true;

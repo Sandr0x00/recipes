@@ -32,7 +32,10 @@ class Recipes extends BaseComp {
 
     render() {
         let tags = this.tags.map(t => this.singleTag(t));
-        let data = this.filteredData.map(i => this.single(i));
+        let data = [];
+        for (const [id, recipe] of Object.entries(this.filteredData)) {
+            data.push(this.single(id, recipe));
+        }
         dialogComp.close();
         loadingComp.close();
         return html`
@@ -44,15 +47,15 @@ ${data}
 </div></div>`;
     }
 
-    single(r) {
+    single(id, recipe) {
         let type = '';
-        if (r.type) {
-            type = html`<span class="type"></span><span class="type" style='background-image: url("icons/${r.type}.svg"); background-size: 35px;'></span>`;
+        if (recipe.type) {
+            type = html`<span class="type"></span><span class="type" style='background-image: url("icons/${recipe.type}.svg"); background-size: 35px;'></span>`;
         }
         return html`
 <figure class="recipeLinkDiv">
-  <a id="${r.id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`/${r.id}`); }}>
-    <figcaption class="text-center">${r.name}</figcaption>
+  <a id="${id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`/${id}`); }}>
+    <figcaption class="text-center">${recipe.name}</figcaption>
   </a>
   ${type}
 </figure>`;
@@ -83,11 +86,11 @@ ${data}
     }
 
     async lazyLoadImg(){
-        for (const elem of this.filteredData) {
-            let element = document.getElementById(elem.id);
+        for (const [id, recipe] of Object.entries(this.filteredData)) {
+            let element = document.getElementById(id);
             let img = 'icons/unknown.svg';
-            if (elem.images[0]) {
-                img = 'images/thumbnail_' + elem.images[0];
+            if (recipe.image) {
+                img = 'images/thumbnail_' + recipe.image;
             }
             let bgImg = new Image();
             bgImg.onload = () => {
@@ -130,7 +133,7 @@ ${data}
         return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}">${translated} (${c})</div>`;
     }
 
-    // TODO: merge promises
+    // TODO: merge all and tags
     loadStuff() {
         fetch('api/all').then(response => {
             if (response.status === 404) {
@@ -153,20 +156,22 @@ ${data}
             this.filteredData = this.data;
             return;
         }
-        this.filteredData = [];
-        this.data.forEach(d => {
-            let all = true;
+        this.filteredData = {};
+        for (const [id, recipe] of Object.entries(this.data)) {
+            let matches = true;
             this.filter.forEach(f => {
-                if (!d.tags.includes(f)) {
-                    all = false;
+                if (!recipe.tags.includes(f)) {
+                    matches = false;
+                    return;
                 }
             });
-            if (all) {
-                this.filteredData.push(d);
+            if (matches) {
+                this.filteredData[id] = recipe;
             }
-        });
+        }
     }
 
+    // TODO: merge all and tags
     loadTags() {
         fetch('api/tags').then(response => {
             if (response.status === 404) {

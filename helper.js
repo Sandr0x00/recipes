@@ -98,16 +98,19 @@ exports.loadJSON = function(format=true) {
  */
 exports.extractGeneralInfo = (recipes) => {
     let info = {};
-    for (const key in recipes) {
-        if (recipes[key].headless) {
+    for (const [id, recipe] of Object.entries(recipes)) {
+        if (recipes[id].headless) {
             continue;
         }
-        info[key] = {
-            id: recipes[key].id,
-            name: recipes[key].name,
-            type: recipes[key].type,
-            images: recipes[key].images,
-            tags: recipes[key].tags,
+        let image = null;
+        if (recipe.images.length > 0) {
+            image = recipe.images[0];
+        }
+        info[id] = {
+            name: recipes[id].name,
+            type: recipes[id].type,
+            image: image,
+            tags: recipes[id].tags,
         };
     }
     return info;
