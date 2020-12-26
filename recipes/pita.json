@@ -12,12 +12,12 @@
             "amount": "10g"
         },
         "salz": {},
-        "olivenoel": {},
+        "oel-olive": {},
         "wasser": {}
     },
     "preparation": [
-        "{mehl}, {hefe}, {salz}, {olivenoel} mit {wasser} mischen bis der Teig sticky ist.",
-        "{olivenoel} hinzugeben und weiterkneten, bis sich der teig von den Händen löst.",
+        "{mehl}, {hefe}, {salz}, {oel-olive} mit {wasser} mischen bis der Teig sticky ist.",
+        "{oel-olive} hinzugeben und weiterkneten, bis sich der teig von den Händen löst.",
         "Teig eine Stunde gehen lassen. Bällchen formen, ausrollen und in einer Pfanne backen."
     ]
 }

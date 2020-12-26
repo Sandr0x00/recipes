@@ -4,7 +4,6 @@ import {html} from 'lit-element';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
-import $ from 'jquery';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -51,7 +50,7 @@ ${data}
         return html`
 <figure class="recipeLinkDiv">
   <a id="${id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`/${id}`); }}>
-    <figcaption class="text-center">${recipe.name}</figcaption>
+    <figcaption class="text-center">${unsafeHTML(recipe.name)}</figcaption>
   </a>
 </figure>`;
     }
@@ -118,6 +117,9 @@ ${data}
     singleTag(tag) {
         let t = tag.tag;
         let c = tag.cnt;
+        if (c < 5) {
+            return html``;
+        }
         let selected = false;
         for (let f of this.filter) {
             if (f == t) {

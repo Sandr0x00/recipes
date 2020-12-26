@@ -25,6 +25,8 @@ html {
 
 body {
     margin: 0;
+    font-family: sans-serif;
+    word-wrap: break-word;
 }
 
 h2 {
@@ -57,10 +59,6 @@ ul {
 
 .animate, #inglist {
   @include transition("all 1s ease, padding 0s");
-}
-
-.vert {
-
 }
 
 .grow {

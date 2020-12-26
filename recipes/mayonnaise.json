@@ -1,0 +1,28 @@
+{
+    "name": "Mayonnaise",
+    "tags": [
+        "side",
+        "egg"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "1"
+        },
+        "senf-dijon": {
+            "amount": "1 EL"
+        },
+        "essig-wein": {
+            "amount": "1 EL"
+        },
+        "salz": {},
+        "oel-sonnenblume": {
+            "amount": "240ml"
+        }
+    },
+    "preparation": [
+        "{senf-dijon} mit {ei} mixen.",
+        "{salz}, {essig-wein} hinzufügen.",
+        "{oel-sonnenblume} langsam hinzufügen und weitermixen.",
+        "Wenn die Mayonnaise die richtige Konsistenz erreicht hat, mit zusätzlich {salz} oder {essig-wein} anschmecken."
+    ]
+}

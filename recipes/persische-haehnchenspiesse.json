@@ -1,5 +1,5 @@
 {
-    "name": "Persische Hähnchenspieße",
+    "name": "Persische Hähnchen&shy;spieße",
     "portions": "10 Spieße",
     "tags": [
         "chicken",
@@ -25,12 +25,12 @@
         "knoblauchzehe": {
             "amount": "1"
         },
-        "olivenoel": {
+        "oel-olive": {
             "amount": "250ml"
         }
     },
     "preparation": [
-        "{zwiebel}, {zitronensaft}, {oregano}, {paprikapulver} und {knoblauchzehe} pürieren. {olivenoel} hinzufügen.",
+        "{zwiebel}, {zitronensaft}, {oregano}, {paprikapulver} und {knoblauchzehe} pürieren. {oel-olive} hinzufügen.",
         "{haehnchenbrustfilet} in einen wiederverschließbaren Plastikbeutel geben und die Marinade darüber gießen und 30 Minuten bei Zimmertemperatur ziehen lassen.",
         "Auf feuchte Holzspieße stecken und bei direkter mittlerer Hitze (175 - 230 °C) bei geschlossenem Deckel 8 - 10 Minuten grillen."
     ]

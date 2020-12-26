@@ -1,0 +1,22 @@
+{
+    "name": "Sauce Hollandaise",
+    "tags": [
+        "sauce",
+        "egg"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "100g"
+        },
+        "eigelb": {
+            "amount": "2"
+        },
+        "zitronensaft": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{butter} schmelzen.",
+        "{eigelb} mit {zitronensaft}, {salz-pfeffer} pürieren.",
+        "Bei laufendem Pürierstab langsam die geschmolzene {butter} hinzufügen."
+    ]
+}

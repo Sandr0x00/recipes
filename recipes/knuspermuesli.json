@@ -1,0 +1,35 @@
+{
+    "name": "Knusper&shy;müsli",
+    "tags": [
+        "brunch",
+        "pan",
+        "sweet"
+    ],
+    "portions": "6",
+    "ingredients": {
+        "haferflocken": {
+            "amount": "200g"
+        },
+        "mandel": {
+            "amount": "100g"
+        },
+        "oel-sonnenblume": {
+            "amount": "2 EL"
+        },
+        "honig": {
+            "amount": "1 EL"
+        },
+        "rosinen": {
+            "amount": "100g"
+        },
+        "haselnuss": {
+            "amount": "50g"
+        }
+    },
+    "preparation": [
+        "Erhitze {oel-sonnenblume} und {honig} bei mittlerer Hitze.",
+        "{haferflocken}, {mandel} und {haselnuss} dazu geben und gut vermischen.",
+        "Etwa fünf Minuten rösten. Die Hitze verringern, {rosinen} dazu geben weitere fünf Minuten rühren.",
+        "Die Pfanne vom Herd nehmen und abkühlen lassen. In einem verschließbaren Gefäß hält sich das Knuspermüsli dann einige Wochen."
+    ]
+}

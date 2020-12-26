@@ -1,0 +1,31 @@
+{
+    "name": "Schoko&shy;küchlein",
+    "tags": [
+        "sweet",
+        "chocolate"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "3"
+        },
+        "zucker": {
+            "amount": "60g"
+        },
+        "kuvertuerez": {
+            "amount": "100g"
+        },
+        "butter": {
+            "amount": "100g"
+        },
+        "mehl": {
+            "amount": "80g"
+        },
+        "vanilleeis": {}
+    },
+    "preparation": [
+        "{ei} mit {zucker} schaumig schlagen. {kuvertuerez} mit {butter} schmelzen.",
+        "Die Formen mit {butter} bestreichen. {all} zusammenfügen und in die Formen aufteilen. Für 12h in den Gefrierschrank stellen.",
+        "Gefrorene Küchlein für 12 Minuten bei 180°C backen."
+    ],
+    "garnish": "Vanilleeis"
+}

@@ -22,11 +22,14 @@
             "amount": "1"
         },
         "kuemmel": {},
-        "salz-pfeffer": {}
+        "salz-pfeffer": {},
+        "wasser": {
+            "amount": "4 EL"
+        }
     },
     "preparation": [
         "{kichererbsen} abtropfen lassen.",
-        "{tahini}, {oel}, {chili}, {zitronensaft} und {knoblauchzehe} zugeben und alles fein pürieren.",
+        "{tahini}, {oel}, {chili}, {zitronensaft}, eiskaltes {wasser} und {knoblauchzehe} zugeben und alles fein pürieren.",
         "Mit {kuemmel}, {salz-pfeffer} abschmecken."
     ]
 }

@@ -1,0 +1,25 @@
+{
+    "name": "Käse Sauce",
+    "tags": [
+        "vegi",
+        "pot"
+    ],
+    "ingredients": {
+        "milch": {
+            "amount": "500ml"
+        },
+        "mehl": {
+            "amount": "2 EL"
+        },
+        "butter": {
+            "amount": "50g"
+        },
+        "cheddar": {
+            "amount": "100g"
+        }
+    },
+    "preparation": [
+        "{milch} mit {butter} und {mehl} aufkochen.",
+        "{cheddar} hinzufügen und ständig rühren bis er geschmolzen ist."
+    ]
+}

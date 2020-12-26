@@ -1,0 +1,42 @@
+{
+    "name": "Fleischpflanzl",
+    "tags": [
+        "meat",
+        "main",
+        "pan"
+    ],
+    "portions": "3",
+    "ingredients": {
+        "hackfleisch": {
+            "amount": "500g"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "ei": {
+            "amount": "1"
+        },
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "petersilie": {
+            "amount": "1 Bund"
+        },
+        "toast": {
+            "amount": "2 Scheiben"
+        },
+        "milch": {},
+        "senf-mittelscharf": {
+            "amount": "1 EL"
+        },
+        "muskat": {},
+        "thymian": {},
+        "butter": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{zwiebel} in kleine Würfel schneiden und in {butter} anschwitzen. {knoblauchzehe} zerkleinern und hinzufügen. {petersilie} fein hacken und hinzufügen. {toast} in {milch} einweichen, nur dass er feucht wird.",
+        "{all} in einer Schüssel vermengen und Fleischpflanzln formen.",
+        "In {butter} anbraten."
+    ]
+}

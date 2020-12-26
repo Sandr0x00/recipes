@@ -1,0 +1,29 @@
+{
+    "name": "Schnittlauch&shy;pesto",
+    "tags": [
+        "sauce",
+        "vegi"
+    ],
+    "ingredients": {
+        "schnittlauch": {
+            "amount": "40g"
+        },
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "oel-olive": {
+            "amount": "50ml"
+        },
+        "walnuss": {
+            "amount": "40g"
+        },
+        "parmesan": {
+            "amount": "50g"
+        },
+        "salz": {}
+    },
+    "preparation": [
+        "{schnittlauch} waschen, grob schneiden und mit {knoblauchzehe}, {salz} und {oel-olive} in den Mixer geben.",
+        "{walnuss}, {parmesan} hinzugeben und kurz mitpürieren."
+    ]
+}

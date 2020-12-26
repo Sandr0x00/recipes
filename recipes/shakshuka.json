@@ -1,0 +1,40 @@
+{
+    "name": "Shakshuka",
+    "portions": "2 Portionen",
+    "tags": [
+        "main",
+        "wok"
+    ],
+    "ingredients": {
+        "tomaten-fruchtfleisch": {
+            "amount": "500g"
+        },
+        "butter": {
+            "amount": "40g"
+        },
+        "paprika": {
+            "amount": "1"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "knoblauchzehe": {
+            "amount": "4"
+        },
+        "ei": {
+            "amount": "6"
+        },
+        "kuemmel": {
+            "amount": "1 TL"
+        },
+        "paprikapulver": {
+            "amount": "1 TL"
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{paprika}, {zwiebel}, {knoblauchzehe} in {butter} weich kochen.",
+        "{paprikapulver}, {kuemmel}, {salz-pfeffer} hinzufügen und kurz vermischen.",
+        "{tomaten-fruchtfleisch} hinzufügen. {ei} hinzugeben und im Ofen bei 190°C backen bis die Eier fertig sind."
+    ]
+}

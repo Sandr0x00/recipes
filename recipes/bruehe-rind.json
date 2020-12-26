@@ -1,0 +1,27 @@
+{
+    "name": "Rinderbrühe",
+    "tags": [
+        "ingredient",
+        "side"
+    ],
+    "ingredients": {
+        "knochen-rind": {
+            "amount": "1kg"
+        },
+        "karotte": {
+            "amount": "2"
+        },
+        "sellerie": {},
+        "knoblauchzehe": {
+            "amount": "+"
+        },
+        "zwiebel": {},
+        "salz-pfeffer": {},
+        "wasser": {}
+    },
+    "preparation": [
+        "{knochen-rind} mit gewürfelter {karotte}, {sellerie}, {zwiebel} und ganzen {knoblauchzehe} im Ofen anrösten.",
+        "In einem Topf mit {wasser} 3 Stunden aufkochen.",
+        "Mit {salz-pfeffer} abschmecken."
+    ]
+}

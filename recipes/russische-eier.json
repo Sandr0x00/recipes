@@ -1,0 +1,25 @@
+{
+    "name": "Russische Eier",
+    "portions": "7 Eier",
+    "tags": [
+        "brunch"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "7"
+        },
+        "mayonnaise": {
+            "amount": "3 EL"
+        },
+        "senf-dijon": {
+            "amount": "2 TL"
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{ei} hart kochen. Halbieren und das Eigelb heraus nehmen.",
+        "Eigelb durch ein feines Sieb streichen und mit {mayonnaise} und {senf-dijon} verrühren. Mit {salz-pfeffer} abschmecken.",
+        "Creme wieder in die Eierhälften füllen."
+    ],
+    "garnish": "Paprikapulver, Petersilie und/oder Schnittlauch"
+}

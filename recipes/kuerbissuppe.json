@@ -1,0 +1,39 @@
+{
+    "name": "Kürbissuppe",
+    "tags": [
+        "soup",
+        "main",
+        "pot"
+    ],
+    "portions": "6",
+    "ingredients": {
+        "kuerbis": {
+            "amount": "1"
+        },
+        "kartoffel": {
+            "amount": "200g"
+        },
+        "zwiebel": {
+            "amount": "2"
+        },
+        "bruehe": {
+            "amount": "800ml"
+        },
+        "sahne": {
+            "amount": "200g"
+        },
+        "butter": {},
+        "mehl": {
+            "amount": "2 EL"
+        },
+        "muskat": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{kartoffel} schälen und würfeln. {kuerbis} entkernen und in Stücke schneiden. {zwiebel} schälen und würfeln.",
+        "{butter} in einem großen Topf erhitzen. {zwiebel} glasig dünsten. {kuerbis} und {kartoffel} kurz mitdünsten. {mehl} darüberstäuben und anschwitzen.",
+        "{bruehe} und {sahne} hinzu gießen und zugedeckt bei schwacher Hitze ca. 25 Minuten köcheln lassen.",
+        "Pürieren und mit {muskat}, {salz-pfeffer} abschmecken."
+    ],
+    "garnish": "Ein Klecks Crème fraîche, Kürbiskernöl, frische Kräuter oder geröstete Kürbiskerne"
+}

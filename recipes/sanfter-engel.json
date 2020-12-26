@@ -1,0 +1,21 @@
+{
+    "name": "Sanfter Engel",
+    "tags": [
+        "drink",
+        "longdrink"
+    ],
+    "ingredients": {
+        "wodka": {
+            "amount": "2cl"
+        },
+        "vanilleeis": {
+            "amount": "2 Kugeln"
+        },
+        "orangensaft": {
+        }
+    },
+    "preparation": [
+        "{vanilleeis} ins Glas geben. {wodka} hinzufügen und mit {orangensaft} auffüllen."
+    ],
+    "garnish": "Schlagsahne"
+}

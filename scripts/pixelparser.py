@@ -49,6 +49,10 @@ image_names = [
     "spanish",
     "fish",
     "blank",
+    "rice",
+    "asian",
+    "balkan",
+    "sauce"
 ]
 images = []
 import numpy as np

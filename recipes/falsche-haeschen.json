@@ -1,0 +1,39 @@
+{
+    "name": "Falsche Häschen",
+    "portions": "4 Portionen",
+    "tags": [
+        "main",
+        "meat",
+        "egg"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "4"
+        },
+        "senf-mittelscharf": {
+            "amount": "1 EL"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "semmel": {
+            "amount": "1"
+        },
+        "milch": {
+            "amount": "100 ml"
+        },
+        "hackfleisch": {
+            "amount": "100 ml"
+        },
+        "speck": {
+            "amount": "12 Scheiben"
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{ei} hart kochen und pellen.",
+        "{zwiebel} fein hacken. {semmel} klein schneiden und in {milch} einweichen. Mit {hackfleisch}, {zwiebel}, {senf-mittelscharf} mischen und mit {salz-pfeffer} würzen.",
+        "Hackmasse auf 4 Portionen aufteilen, und Eier mit der Hackmasse ummanteln. Mit {speck} ummanteln und bei 180°C 20-25 Minuten backen."
+    ],
+    "garnish": "Paprikapulver, Petersilie und/oder Schnittlauch"
+}

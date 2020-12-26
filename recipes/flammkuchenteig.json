@@ -15,11 +15,11 @@
             "amount": "150g"
         },
         "salz": {},
-        "olivenoel": {
+        "oel-olive": {
             "amount": "1 EL"
         }
     },
     "preparation": [
-        "{hefe}, {olivenoel} und {salz} mit lauwarmem {wasser} verrühren. {mehl} hinzugeben und zu einem Teig kneten. Diesen zugedeckt an einem warmen Ort ca. 40 Minuten gehen lassen."
+        "{hefe}, {oel-olive} und {salz} mit lauwarmem {wasser} verrühren. {mehl} hinzugeben und zu einem Teig kneten. Diesen zugedeckt an einem warmen Ort ca. 40 Minuten gehen lassen."
     ]
 }

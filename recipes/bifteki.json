@@ -1,0 +1,32 @@
+{
+    "name": "Bifteki",
+    "tags": [
+        "meat",
+        "main",
+        "oven"
+    ],
+    "portions": "3",
+    "ingredients": {
+        "hackfleisch": {
+            "amount": "300g"
+        },
+        "zwiebel": {
+            "amount": "1/2"
+        },
+        "schafskaese": {
+            "amount": "150g"
+        },
+        "petersilie": {},
+        "semmel": {
+            "amount": "1"
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{zwiebel} in kleine Würfel schneiden und anschwitzen. {petersilie} fein hacken. {semmel} in Wasser einweichen, auspressen und in kleine Stücke zerreißen.",
+        "{all/schafskaese} in einer Schüssel miteinander verrühren.",
+        "Hackfleisch vierteln, {schafskaese} in die Mitte legen und zusammenfalten.",
+        "Biftecki in etwas Olivenöl pro Seite 2 - 3 Minuten braten.",
+        "Mit Djuvec-Reis und Tzatziki servieren."
+    ]
+}

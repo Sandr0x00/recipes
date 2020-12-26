@@ -1,0 +1,20 @@
+{
+    "name": "Leber mit Zwiebeln",
+    "tags": [
+        "meat",
+        "pan"
+    ],
+    "ingredients": {
+        "leber": {},
+        "zwiebel": {},
+        "milch": {},
+        "butter": {},
+        "mehl": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{leber} abwaschen und mindestens eine Stunde in {milch} einlegen.",
+        "{zwiebel} in {butter} weich kochen.",
+        "{leber} in {mehl}, {salz-pfeffer} marinieren und in butter bei hoher Hitze anbraten. Wenn möglich nur einmal wenden."
+    ]
+}

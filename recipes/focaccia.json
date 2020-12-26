@@ -17,14 +17,14 @@
             "amount": "300g"
         },
         "salz": {},
-        "olivenoel": {},
+        "oel-olive": {},
         "tomate": {}
     },
     "preparation": [
         "{hefe} in lauwarmes {wasser} geben und 5 Minuten auflösen lassen.",
-        "{mehl}, {salz:8g} mit der Hefemischung verkneten. {olivenoel} in eine Schüssel geben und den Teig 1.5 bis 2h gehen lassen.",
-        "Ein Backblech mit {olivenoel} einreiben und {salz} darauf streuen. Den Teig auf dem Backblech verteilen und 45min gehen lassen.",
-        "Mit {olivenoel} und {salz} bestreuen und mit {tomate}, oder anderen Zutaten belegen.",
+        "{mehl}, {salz:8g} mit der Hefemischung verkneten. {oel-olive} in eine Schüssel geben und den Teig 1.5 bis 2h gehen lassen.",
+        "Ein Backblech mit {oel-olive} einreiben und {salz} darauf streuen. Den Teig auf dem Backblech verteilen und 45min gehen lassen.",
+        "Mit {oel-olive} und {salz} bestreuen und mit {tomate}, oder anderen Zutaten belegen.",
         "Bei 230°C 30 Minuten lang backen."
     ]
 }

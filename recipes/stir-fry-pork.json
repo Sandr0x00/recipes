@@ -1,0 +1,36 @@
+{
+    "name": "Stir Fry Pork",
+    "portions": "2 Portionen",
+    "tags": [
+        "main",
+        "wok",
+        "asian"
+    ],
+    "ingredients": {
+        "sauce-soja": {
+            "amount": "30ml"
+        },
+        "essig-reis": {
+            "amount": "15ml"
+        },
+        "knoblauchzehe": {
+            "amount": "2"
+        },
+        "staerke": {
+            "amount": "7g"
+        },
+        "ingwer": {},
+        "sellerie": {
+            "amount": "2 Stangen"
+        },
+        "lauchzwiebel": {},
+        "chili": {},
+        "reis": {},
+        "schweinefleisch": {}
+    },
+    "preparation": [
+        "{knoblauchzehe} und {ingwer} klein schneiden. Mit {sauce-soja}, {essig-reis} und {staerke} mischen.",
+        "{schweinefleisch} kleinschneiden und in Öl anbraten. Raus nehmen. {sellerie}, {lauchzwiebel}, {chili} anbraten. {schweinefleisch} und Soße hinzufügen und kurz vermischen.",
+        "Mit {reis} servieren."
+    ]
+}
