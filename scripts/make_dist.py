@@ -22,5 +22,6 @@ if __name__ == "__main__":
     shutil.copy('package-lock.json', 'dist')
     shutil.copytree('public', 'dist/public', ignore=shutil.ignore_patterns('.gitignore'))
     shutil.copytree('recipes', 'dist/recipes')
+    shutil.copy('js/tags.js', 'dist/js')
 
     print("[\x1B[32m✓\x1b[0m] Copy files finished.")

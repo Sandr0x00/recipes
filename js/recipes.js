@@ -126,7 +126,7 @@ ${data}
                 selected = true;
             }
         }
-        return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}" title="${tagTranslator[t]}"><img src="icons/${t}.svg" /> (${c})</a>`;
+        return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}" title="${tagTranslator[t]}"><img src="icons/${t}.svg" /> ${c}</a>`;
     }
 
     // TODO: merge all and tags
