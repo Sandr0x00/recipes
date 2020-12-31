@@ -134,7 +134,7 @@ class Recipe extends BaseComp {
         loadingComp.close();
         return html`
 <div class="hdr">
-<h1><a id="mainLink" onclick="loadingComp.navigate('/')">Rezept</a> - ${this.data.name}</h1>
+<h1><a id="mainLink" onclick="loadingComp.navigate('/')">Rezept</a> - ${unsafeHTML(this.data.name)}</h1>
 </div>
 <div class="grid-recipe" id="recipe">
     ${images}

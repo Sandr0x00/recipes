@@ -4,3 +4,5 @@ recipes.tar.gz
 dist/
 config.json
 pid
+tmp/
+scripts/deploy.sh

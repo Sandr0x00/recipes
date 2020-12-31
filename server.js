@@ -82,7 +82,7 @@ function setHeaders(res) {
         + 'img-src \'self\';'
         + 'style-src \'self\' \'unsafe-inline\';'
         + 'script-src \'self\' \'unsafe-inline\';'
-        + 'font-src \'none\';'
+        + 'font-src \'self\';'
         + 'connect-src \'self\';'
         + 'frame-ancestors \'none\';');
     res.setHeader('X-Permitted-Cross-Domain-Policies', '"none"');

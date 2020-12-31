@@ -1,7 +1,10 @@
 {
     "name": "Ramen",
     "tags": [
-        "main"
+        "main",
+        "pasta",
+        "asian",
+        "vegi"
     ],
     "ingredients": {
         "bruehe": {},

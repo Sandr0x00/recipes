@@ -87,7 +87,7 @@ exports.formatPreparation = function(recipe) {
 exports.loadJSON = function(format=true) {
     let dirPath = path.join(__dirname, 'recipes');
     let stuff = readFilesInFolder(dirPath);
-    handleIngredients(stuff.recipes);
+    handleIngredients(stuff.recipes, stuff.tags);
 
     for (const key in stuff.recipes) {
         let recipe = stuff.recipes[key];
@@ -99,7 +99,8 @@ exports.loadJSON = function(format=true) {
             });
         }
     }
-
+    // sort based on occurence
+    stuff.tags = stuff.tags.sort((a, b) => (a.cnt < b.cnt) ? 1 : -1);
     return {recipes: stuff.recipes, tags: stuff.tags};
 };
 
@@ -126,7 +127,7 @@ exports.extractGeneralInfo = (recipes) => {
     return info;
 };
 
-function handleIngredients(recipes) {
+function handleIngredients(recipes, tags) {
     let translationMapping = JSON.parse(fs.readFileSync('mapping.json', 'utf8'));
     for (let key in recipes) {
         translationMapping[key] = recipes[key].name;
@@ -162,6 +163,20 @@ function handleIngredients(recipes) {
                     }
                 } else {
                     ingredient['name'] = plural;
+                }
+            }
+
+            // tag based on ingredient
+            if (['couscous','kartoffel'].includes(id)) {
+                let val = id;
+                if (id == 'kartoffel') {
+                    val = 'potato';
+                }
+                recipe.tags.push(val);
+                if (!tags.some(e => e.tag === val)) {
+                    tags.push({tag:val, cnt:1});
+                } else {
+                    tags.find(e => e.tag === val).cnt++;
                 }
             }
 
@@ -208,8 +223,6 @@ function readFilesInFolder(folder) {
             });
         }
     });
-    // sort based on occurence
-    tags = tags.sort((a, b) => (a.cnt < b.cnt) ? 1 : -1);
     return {recipes: recipes, tags: tags};
 }
 

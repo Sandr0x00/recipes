@@ -2,7 +2,10 @@
     "name": "Flammkuchenteig",
     "headless": true,
     "tags": [
-        "flammkuchen"
+        "pizza",
+        "ingredient",
+        "vegi",
+        "vegan"
     ],
     "ingredients": {
         "wasser": {

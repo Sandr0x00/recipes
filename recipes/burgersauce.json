@@ -3,7 +3,8 @@
     "headless": true,
     "tags": [
         "burger",
-        "sauce"
+        "sauce",
+        "ingredient"
     ],
     "ingredients": {
         "knoblauchzehe": {

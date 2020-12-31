@@ -116,3 +116,14 @@ describe('Unused ingredients', () => {
         });
     }
 });
+
+describe('Tag without icon', () => {
+    let tags = helper.loadJSON().tags;
+    tags.forEach((tag) => {
+        let t = tag.tag;
+        console.log(tag);
+        it(`icon for ${t} should exist`, () => {
+            assert(fs.existsSync(`public/icons/${t}.svg`));
+        });
+    });
+});

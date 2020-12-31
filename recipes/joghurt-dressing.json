@@ -1,7 +1,10 @@
 {
     "name": "Joghurt Dressing",
     "tags": [
-        "sauce"
+        "sauce",
+        "salad",
+        "ingredient",
+        "vegi"
     ],
     "ingredients": {
         "joghurt": {

@@ -4,7 +4,9 @@
         "vegi",
         "burger",
         "main",
-        "pan"
+        "pan",
+        "ingredient",
+        "vegan"
     ],
     "portions": "6 Frikadellen",
     "ingredients": {

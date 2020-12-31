@@ -117,9 +117,9 @@ ${data}
     singleTag(tag) {
         let t = tag.tag;
         let c = tag.cnt;
-        if (c < 5) {
-            return html``;
-        }
+        // if (c < 5) {
+        //     return html``;
+        // }
         let selected = false;
         for (let f of this.filter) {
             if (f == t) {

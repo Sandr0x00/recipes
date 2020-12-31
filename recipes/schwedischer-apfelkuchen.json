@@ -1,0 +1,44 @@
+{
+    "name": "Schwedischer Apfelkuchen",
+    "tags": [
+        "sweet",
+        "oven",
+        "vegi",
+        "nordic"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "6"
+        },
+        "zucker": {
+            "amount": "250g"
+        },
+        "vanillezucker": {
+            "amount": "1 Pkg."
+        },
+        "butter": {
+            "amount": "150g"
+        },
+        "mehl": {
+            "amount": "450g"
+        },
+        "milch": {
+            "amount": "200ml"
+        },
+        "backpulver": {
+            "amount": "4 TL"
+        },
+        "apfel": {
+            "amount": "6-8"
+        },
+        "mandel": {},
+        "zimt": {}
+    },
+    "preparation": [
+        "{apfel} schälen und zerkleinern.",
+        "{ei}, {zucker} und {vanillezucker} schaumig rühren. {butter} mit {milch} zum kochen bringen. {mehl} und {backpulver} hinzufügen.",
+        "{milch} hinzufügen und vermischen.",
+        "{apfel} hinzufügen. Auf dem Backblech verteilen.",
+        "Mit gehackten {mandel} und {zimt}-Zucker bestreuen und bei 175°C 20 Minuten lang backen."
+    ]
+}

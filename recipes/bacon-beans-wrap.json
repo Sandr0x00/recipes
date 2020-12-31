@@ -2,7 +2,8 @@
     "name": "Bacon Beans Wrap",
     "tags": [
         "main",
-        "meat"
+        "meat",
+        "wrap"
     ],
     "ingredients": {
         "bacon": {

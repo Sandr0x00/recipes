@@ -2,9 +2,9 @@
     "name": "Kartoffel Mango Salat",
     "tags": [
         "salad",
-        "potato",
         "fruity",
-        "vegi"
+        "vegi",
+        "main"
     ],
     "ingredients": {
         "kartoffel": {

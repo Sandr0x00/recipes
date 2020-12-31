@@ -2,7 +2,8 @@
     "name": "Rinderbrühe",
     "tags": [
         "ingredient",
-        "side"
+        "side",
+        "meat"
     ],
     "ingredients": {
         "knochen-rind": {

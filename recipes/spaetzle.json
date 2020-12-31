@@ -1,0 +1,25 @@
+{
+    "name": "Spätzle",
+    "portions": "2 Portionen",
+    "tags": [
+        "egg",
+        "side",
+        "pot"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "2"
+        },
+        "mehl": {
+            "amount": "200g"
+        },
+        "wasser": {
+            "amount": "100ml"
+        },
+        "salz": {}
+    },
+    "preparation": [
+        "{all} gut vermischen.",
+        "Teig in kochendes Salzwasser pressen/schaben."
+    ]
+}
