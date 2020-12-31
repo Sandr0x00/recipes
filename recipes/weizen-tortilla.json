@@ -1,0 +1,32 @@
+{
+    "name": "Weizen Tortilla",
+    "portions": "3 Portionen",
+    "tags": [
+        "pan",
+        "vegi",
+        "ingredient",
+        "side",
+        "wrap"
+    ],
+    "ingredients": {
+        "mehl": {
+            "amount": "200g"
+        },
+        "wasser": {
+            "amount": "100ml"
+        },
+        "backpulver": {
+            "amount": "1/2 TL"
+        },
+        "oel-olive": {
+            "amount": "2 EL"
+        },
+        "salz": {}
+    },
+    "preparation": [
+        "{all} vermischen.",
+        "Den Teig 30 Minuten ruhen lassen.",
+        "Aufteilen und dünn ausrollen.",
+        "Pfanne auf hoher Temperatur erhitzen. Fladen backen."
+    ]
+}
