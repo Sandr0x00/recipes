@@ -37,6 +37,14 @@ class Recipes extends BaseComp {
         }
         dialogComp.close();
         loadingComp.close();
+
+        let title = this.filter.map(t => ' ' + tagTranslator[t]);
+        if (title.length > 0) {
+            document.title = `${title} | Sandr0s Rezepte`;
+        } else {
+            document.title = 'Sandr0s Rezepte';
+        }
+
         return html`
 <div class="grid-container">
 <div class="grid-title"><h1><a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
@@ -73,7 +81,10 @@ ${data}
         }
         if (changedProperties.has('load')) {
             if (this.load.length != 0) {
-                this.filter.push(this.load);
+                let filters = this.load.split(',');
+                // remove empty strings
+                filters = filters.filter(Boolean);
+                this.filter = filters;
             }
             this.loadStuff();
         }
@@ -106,11 +117,13 @@ ${data}
         } else {
             this.filter.push(tag);
         }
+        window.history.pushState('','',`#!/tags?${this.filter}`);
         this.reloadFilters();
     }
 
     clearFilter() {
         this.filter = [];
+        window.history.pushState('','','#!/');
         this.reloadFilters();
     }
 

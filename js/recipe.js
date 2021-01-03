@@ -90,7 +90,7 @@ class Recipe extends BaseComp {
 
             // Tags
             tags = this.data.tags.map(tag => {
-                return html`<a class="tags" onclick="loadingComp.navigate('/tag/${tag}')" id="tag_${tag}" title="${tagTranslator[tag]}"><img src="icons/${tag}.svg" /></a>`;
+                return html`<a class="tags" onclick="loadingComp.navigate('/tags?${tag}')" id="tag_${tag}" title="${tagTranslator[tag]}"><img src="icons/${tag}.svg" /></a>`;
             });
             tags = html`<div class="recipe-tags">${tags}</div>`;
 
@@ -132,6 +132,9 @@ class Recipe extends BaseComp {
 
         dialogComp.close();
         loadingComp.close();
+
+        document.title = `${this.data.name.replaceAll('&shy;', '')} | Sandr0s Rezepte`;
+
         return html`
 <div class="hdr">
 <h1><a id="mainLink" onclick="loadingComp.navigate('/')">Rezept</a> - ${unsafeHTML(this.data.name)}</h1>

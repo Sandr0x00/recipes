@@ -12,8 +12,9 @@ class Router extends BaseComp {
     constructor() {
         super(); // Must call super in constructor
         window.router = new Navigo(null, true, '#!');
-        window.router.on('/tag/:tag', (params) => {
-            this.route = html`<recipes-comp class="row" id="recipesComp" load="${params.tag}"></recipes-comp>`;
+        window.router.on('/tags', (params, query) => {
+            console.log(query);
+            this.route = html`<recipes-comp class="row" id="recipesComp" load="${query}"></recipes-comp>`;
         }).on('/:recipe', (params) => {
             this.route = html`<recipe-comp id="recipeComp" recipe="${params.recipe}"></recipe-comp>`;
         }).on('*', () => {
