@@ -17,14 +17,14 @@
             "amount": "250ml"
         },
         "wasser": {
-            "amount": "400ml"
+            "amount": "500ml"
         },
         "kaese": {},
         "salz-pfeffer": {}
     },
     "preparation": [
-        "{nudeln} mit 1 Becher {sahne} und {wasser} in Topf, würzen, {schinken} kleinschneiden und dazu.",
-        "{salz-pfeffer} dazu und bei mittlerer Hitze ca. 25 Minuten ziehen lassen, manchmal umrühren.",
-        "Wenn Nudeln weich sind {kaese} dazu und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
+        "{nudeln} mit {sahne} und {wasser} in einen Topf geben und mit {salz-pfeffer} würzen.",
+        "Bei mittlerer Hitze ca. 25 Minuten ziehen lassen und manchmal umrühren.",
+        "Wenn Nudeln weich sind, kleingeschnittenen {schinken} und {kaese} dazu geben und nochmal kurz ziehen lassen bis Käse geschmolzen ist."
     ]
 }

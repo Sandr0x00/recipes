@@ -1,0 +1,43 @@
+{
+    "name": "Rosinen&shy;brot",
+    "portions": "1 Brot",
+    "tags": [
+        "sweet",
+        "side",
+        "oven",
+        "fruity"
+    ],
+    "ingredients": {
+        "milch": {
+            "amount": "200ml"
+        },
+        "butter": {
+            "amount": "75g"
+        },
+        "hefe": {},
+        "zucker": {
+            "amount": "70g"
+        },
+        "ei": {
+            "amount": "1"
+        },
+        "mehl": {
+            "amount": "500g"
+        },
+        "zimt": {
+            "amount": "1 Prise"
+        },
+        "salz": {
+            "amount": "6g"
+        },
+        "rosinen": {
+            "amount": "150g"
+        }
+    },
+    "preparation": [
+        "{milch} mit {butter} im Topf erwärmen, danach abkühlen lassen. {hefe} und {zucker} in die lauwarme Mischung dazu geben.",
+        "{ei}, {mehl}, {zimt} und {salz} hinzugeben und zu einem Teig verkneten. Die {rosinen} in den Teig einarbeiten.",
+        "Teig abdecken und an einem warmen Ort ca. 45 Min gehen lassen. Teig nochmal gut durchkneten, dann länglich formen und in eine gefettete Kastenform (Länge 30cm) geben. Nochmal abgedeckt 40 Min. gehen lassen.",
+        "Rosinenbrot mit Milch bestreichen und bei 160°C Umluft auf unterster Schiene etwa 40 Min. backen."
+    ]
+}

@@ -2,7 +2,9 @@
     "name": "Schoko&shy;küchlein",
     "tags": [
         "sweet",
-        "chocolate"
+        "chocolate",
+        "oven",
+        "vegi"
     ],
     "ingredients": {
         "ei": {
@@ -11,7 +13,7 @@
         "zucker": {
             "amount": "60g"
         },
-        "kuvertuerez": {
+        "schokiz": {
             "amount": "100g"
         },
         "butter": {
@@ -23,7 +25,7 @@
         "vanilleeis": {}
     },
     "preparation": [
-        "{ei} mit {zucker} schaumig schlagen. {kuvertuerez} mit {butter} schmelzen.",
+        "{ei} mit {zucker} schaumig schlagen. {schokiz} mit {butter} schmelzen.",
         "Die Formen mit {butter} bestreichen. {all} zusammenfügen und in die Formen aufteilen. Für 12h in den Gefrierschrank stellen.",
         "Gefrorene Küchlein für 12 Minuten bei 180°C backen."
     ],

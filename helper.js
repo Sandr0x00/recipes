@@ -167,10 +167,12 @@ function handleIngredients(recipes, tags) {
             }
 
             // tag based on ingredient
-            if (['couscous','kartoffel'].includes(id)) {
+            if (['couscous','kartoffel','ei'].includes(id)) {
                 let val = id;
                 if (id == 'kartoffel') {
                     val = 'potato';
+                } else if (id == 'ei') {
+                    val = 'egg';
                 }
                 recipe.tags.push(val);
                 if (!tags.some(e => e.tag === val)) {
