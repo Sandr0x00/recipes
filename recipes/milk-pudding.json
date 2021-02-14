@@ -1,0 +1,28 @@
+{
+    "name": "Milchpudding",
+    "tags": [
+        "sweet",
+        "pan"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "100g"
+        },
+        "mehl": {
+            "amount": "120g"
+        },
+        "milch": {
+            "amount": "1l"
+        },
+        "zucker": {
+            "amount": "80g"
+        },
+        "vanilleschote": {}
+    },
+    "preparation": [
+        "{butter} im Topf schmelzen. {mehl} hinzufügen und verrühren.",
+        "{milch} langsam hinzufügen und immer wieder verrühren.",
+        "{zucker} und {vanilleschote} hinzufügen, weiterkochen und eindicken lassen. In eine Form geben und abkühlen lassen."
+    ],
+    "garnish": "Karamell oder Helgas Kirschen"
+}

@@ -75,7 +75,7 @@ class Recipe extends BaseComp {
                 }
                 new_ingredients = html`${new_ingredients}
     <li class="${id} ingredient min-w" onmouseover="window.recipeComp.highlightOn('${id}')" onmouseout="window.recipeComp.highlightOff('${id}')">
-        ${(ingredient.amount ? ingredient.amount + ' ' : '') + ingredient.name}
+        ${(ingredient.amount ? ingredient.amount + ' ' : '')}${unsafeHTML(ingredient.name)}
         ${i}
     </li>`;
             }

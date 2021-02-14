@@ -1,0 +1,24 @@
+{
+    "name": "Salep",
+    "tags": [
+        "sweet",
+        "drink",
+        "pot"
+    ],
+    "ingredients": {
+        "salep-pulver": {
+            "amount": "1 EL"
+        },
+        "zucker": {
+            "amount": "1 EL"
+        },
+        "milch": {
+            "amount": "1l"
+        }
+    },
+    "preparation": [
+        "{milch} im Topf aufkochen, Temperatur verringern. {salep-pulver} und {zucker} mit {milch} in einem extra Glas verrühren.",
+        "Den Inhalt des Glases in den Topf hinzufügen und weiterrühren bis es eindickt."
+    ],
+    "garnish": "Zimt"
+}

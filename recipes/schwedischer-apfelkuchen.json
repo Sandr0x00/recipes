@@ -31,7 +31,7 @@
         "apfel": {
             "amount": "6-8"
         },
-        "mandel": {},
+        "mandeln": {},
         "zimt": {}
     },
     "preparation": [
@@ -39,6 +39,6 @@
         "{ei}, {zucker} und {vanillezucker} schaumig rühren. {butter} mit {milch} zum kochen bringen. {mehl} und {backpulver} hinzufügen.",
         "{milch} hinzufügen und vermischen.",
         "{apfel} hinzufügen. Auf dem Backblech verteilen.",
-        "Mit gehackten {mandel} und {zimt}-Zucker bestreuen und bei 175°C 20 Minuten lang backen."
+        "Mit gehackten {mandeln} und {zimt}-Zucker bestreuen und bei 175°C 20 Minuten lang backen."
     ]
 }

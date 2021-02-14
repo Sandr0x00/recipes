@@ -1,0 +1,33 @@
+{
+    "name": "Couscous mit Preserved Lemons",
+    "tags": [
+        "main",
+        "side",
+        "vegi",
+        "vegan",
+        "pot"
+    ],
+    "ingredients": {
+        "bruehe": {
+            "amount": "400ml"
+        },
+        "kichererbsen": {
+            "amount": "200g"
+        },
+        "couscous": {
+            "amount": "300g"
+        },
+        "lemon-preserved": {
+            "amount": "2"
+        },
+        "pinienkerne": {},
+        "petersilie": {},
+        "oel-olive": {}
+    },
+    "preparation": [
+        "{kichererbsen} 8h vorher in Wasser einlegen und aufquellen lassen.",
+        "{kichererbsen} in {bruehe} kurz aufkochen, {couscous} damit übergießen und aufgehen lassen.",
+        "{pinienkerne} anrösten.",
+        "Schale der {lemon-preserved} klein schneiden und mit {oel-olive}, {pinienkerne}, {petersilie} zum Rest geben."
+    ]
+}

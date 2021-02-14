@@ -1,0 +1,33 @@
+{
+    "name": "Brokkoli Käse Nuggets",
+    "portions": "2 Portionen",
+    "tags": [
+        "vegi",
+        "main",
+        "side",
+        "oven"
+    ],
+    "ingredients": {
+        "zwiebel": {
+            "amount": "1"
+        },
+        "brokkoli": {
+            "amount": "1"
+        },
+        "mozarella": {
+            "amount": "2"
+        },
+        "ei": {
+            "amount": "2"
+        },
+        "mandeln-gemahlen": {
+            "amount": "60g"
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{brokkoli} in kochendem Salzwasser 8-10 Minuten weich garen.",
+        "{brokkoli} trocken tupfen. {brokkoli}, {mozarella} und {zwiebel} klein hacken und mit {ei} und {mandeln-gemahlen} vermengen. Mit {salz-pfeffer} würzen.",
+        "Nuggets formen und bei 160°C Ober-/Unterhitze für 10-15 Minuten goldbraun backen."
+    ]
+}

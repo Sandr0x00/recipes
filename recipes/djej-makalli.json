@@ -1,0 +1,50 @@
+{
+    "name": "Djej Makalli",
+    "tags": [
+        "chicken",
+        "main",
+        "african"
+    ],
+    "ingredients": {
+        "haehnchenbrustfilet": {
+            "amount": "2"
+        },
+        "oel-olive": {
+            "amount": "4 EL"
+        },
+        "knoblauchzehe": {
+            "amount": "3"
+        },
+        "ingwer": {
+            "amount": "2 TL"
+        },
+        "kurkuma": {
+            "amount": "1/2 TL"
+        },
+        "kuemmel": {
+            "amount": "3/4 TL"
+        },
+        "salz": {
+            "amount": "1/2 TL"
+        },
+        "pfeffer": {
+            "amount": "1/2 TL"
+        },
+        "bruehe": {},
+        "zwiebel": {
+            "amount": "1"
+        },
+        "lemon-preserved": {
+            "amount": "1"
+        },
+        "oliven": {},
+        "petersilie": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{knoblauchzehe}, {ingwer} klein hacken. Mit {oel-olive:2 EL}, {kurkuma}, {kuemmel}, {salz} und {pfeffer} vermischen. {haehnchenbrustfilet} in einen Gefrierbeutel mitsamt der Marinade geben. Für mindestens 4h oder über Nacht marinieren lassen.",
+        "{zwiebel} klein hacken und in {oel-olive:2 EL} glasig braten. {haehnchenbrustfilet} und die restliche Marinade hinzufügen und kurz anbraten. {bruehe} hinzufügen und für ca. 20min bei geringer hitze garen lassen.",
+        "Schale der {lemon-preserved} und {petersilie} klein hacken und mit {oliven} hinzufügen und ca. 15 Minuten weiter köcheln lassen. Mit {salz-pfeffer} abschmecken."
+    ],
+    "garnish": "Zimt"
+}

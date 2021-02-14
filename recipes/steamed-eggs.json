@@ -1,0 +1,31 @@
+{
+    "name": "Steamed Eggs (Zheng Shui Dan)",
+    "tags": [
+        "vegi",
+        "main",
+        "side",
+        "asian",
+        "pot"
+    ],
+    "ingredients": {
+        "shiitake-mushroom": {
+            "amount": "2"
+        },
+        "ei": {
+            "amount": "3"
+        },
+        "bruehe": {
+            "amount": "150ml"
+        },
+        "salz": {},
+        "lauchzwiebel": {},
+        "oel": {},
+        "sauce-soja": {}
+    },
+    "preparation": [
+        "Wasser zum kochen bringen. {shiitake-mushroom} übergießen und 30 Minuten einweichen lassen.",
+        "{ei} gut vermischen. {bruehe}, {salz} und {shiitake-mushroom} hinzufügen und gut vermischen.",
+        "In einer hitzebeständigen Schüssel 10 Minuten lang im Steamer garen lassen.",
+        "{oel} zum kochen bringen. {lauchzwiebel} klein schneiden und über die Eier geben. {oel} darüber gießen. {sauce-soja} hinzufügen."
+    ]
+}

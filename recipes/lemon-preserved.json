@@ -1,0 +1,21 @@
+{
+    "name": "Preserved Lemon",
+    "tags": [
+        "ingredient",
+        "vegi",
+        "vegan",
+        "african",
+        "ferment"
+    ],
+    "ingredients": {
+        "zitrone": {
+            "amount": "+"
+        },
+        "salz": {}
+    },
+    "preparation": [
+        "{zitrone} gründlich waschen und die Enden abschneiden. Von einer Seite aus fast vierteln und mit {salz} füllen.",
+        "Die gesalzenen {zitrone} in ein ausgewaschenes Glas drücken und den Saft heraus pressen.",
+        "Für ca. 3 Wochen bei Raumtemparatur fermentieren lassen."
+    ]
+}

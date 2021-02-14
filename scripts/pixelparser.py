@@ -31,6 +31,7 @@ image_names = [
     "meat",
     "dip",
     "soup",
+    "african",
     "cheese",
     "egg",
     "corn",
@@ -65,7 +66,8 @@ image_names = [
     "nordic",
     "vegi",
     "sirup",
-    "auflauf"
+    "auflauf",
+    "ferment"
 ]
 images = []
 import numpy as np

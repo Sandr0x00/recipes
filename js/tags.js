@@ -1,6 +1,7 @@
 /* global module */
 
 module.exports = {
+    'african': 'Afrikanisch',
     'american': 'Amerikanisch',
     'alcohol': 'Alkohol',
     'asian': 'Asiatisch',
@@ -10,6 +11,7 @@ module.exports = {
     'brunch': 'Brunch',
     'burger': 'Sandwich & Burger',
     'cream': 'Sahnig',
+    'cheese': 'Käse',
     'chocolate': 'Schokolade',
     'christmas': 'Weihnachtlich',
     'chicken': 'Hühnchen',
@@ -18,6 +20,7 @@ module.exports = {
     'dip': 'Dips',
     'drink': 'Getränk',
     'egg': 'Ei',
+    'ferment': 'Fermentiert',
     'fish': 'Fisch',
     'fruity': 'Fruchtig',
     'hurricane': 'Hurricane Glas',
