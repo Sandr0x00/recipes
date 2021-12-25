@@ -1,0 +1,28 @@
+{
+    "name": "Bananen-Erdnuss&shy;butter-Smoothie",
+    "portions": "2 Portionen",
+    "tags": [
+        "sweet",
+        "drink",
+        "vegi",
+        "american",
+        "fruity"
+    ],
+    "ingredients": {
+        "banane": {
+            "amount": "2"
+        },
+        "erdnussbutter": {
+            "amount": "2 EL"
+        },
+        "milch": {
+            "amount": "250ml"
+        },
+        "joghurt": {
+            "amount": "125g"
+        }
+    },
+    "preparation": [
+        "Geschälte gefrorene {banane} mit {erdnussbutter}, {milch} und {joghurt} mixen."
+    ]
+}

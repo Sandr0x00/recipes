@@ -1,23 +1,12 @@
 #!/usr/bin/env node
 
-/* global require */
+/* global require, __dirname */
 
 const express = require('express');
 const compression = require('compression');
 const fs = require('fs');
 const app = express();
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
-const process = require('process');
-
-// if (process.pid) {
-//     // safe PID for "make kill"
-//     fs.writeFile('pid', process.pid, (err) => {
-//         if (err) {
-//             throw err;
-//         }
-//         console.log(`PID: ${process.pid}`);
-//     });
-// }
 
 let port = config.port;
 if (port == null || port == '') {
@@ -41,6 +30,11 @@ app.use(express.static('public', {
 }));
 app.use(compression());
 
+app.post('/api/comment', (req, res) => {
+    let san = req.body.replace(/[\w\s.]*/, '');
+
+});
+
 app.get('/api/all', (req, res) => {
     setHeaders(res);
     res.json(general);
@@ -59,10 +53,8 @@ app.get('/favicon.ico', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-    setHeaders(res);
-    console.log(req.params['0']);
-    res.status(404);
-    res.send();
+    // use nagivo routing => always serve index.html
+    res.sendFile(__dirname + '/public/index.html');
 });
 
 app.listen(port, '0.0.0.0', (err) => {

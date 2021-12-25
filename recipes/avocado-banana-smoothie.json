@@ -1,0 +1,29 @@
+{
+    "name": "Avocado Bananen Smoothie",
+    "tags": [
+        "fruity",
+        "drink",
+        "sweet"
+    ],
+    "portions": "2 Gläser",
+    "ingredients": {
+        "avocado": {
+            "amount": "1/2"
+        },
+        "banane": {
+            "amount": "1"
+        },
+        "honig": {
+            "amount": "1 TL"
+        },
+        "eiswuerfel": {
+            "amount": "5"
+        },
+        "milch": {
+            "amount": "250ml"
+        }
+    },
+    "preparation": [
+        "Gefrorene {banane} mit {avocado}, {honig}, {eiswuerfel} und {milch} in mixen."
+    ]
+}

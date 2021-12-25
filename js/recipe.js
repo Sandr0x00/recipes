@@ -1,13 +1,12 @@
 /* global loadingComp, dialogComp */
 
-import {html} from 'lit-element';
+import { html } from 'lit';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
 import $ from 'jquery';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faExternalLinkAlt, faBars } from '@fortawesome/free-solid-svg-icons';
-import credits from './credits.js';
 
 class Recipe extends BaseComp {
 
@@ -71,7 +70,7 @@ class Recipe extends BaseComp {
             for (const [id, ingredient] of Object.entries(data.ingredients)) {
                 let i = html``;
                 if (ingredient.link) {
-                    i = html`<span> </span><a onclick="loadingComp.navigate('${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html)}</a>`;
+                    i = html`<span> </span><a onclick="loadingComp.navigate('${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html[0])}</a>`;
                 }
                 new_ingredients = html`${new_ingredients}
     <li class="${id} ingredient min-w" onmouseover="window.recipeComp.highlightOn('${id}')" onmouseout="window.recipeComp.highlightOff('${id}')">
@@ -143,7 +142,7 @@ class Recipe extends BaseComp {
     ${images}
     ${ingredientSwitch}
     <div class="preparation-hdr">
-        <h2><a @click=${() => { this.compact = !this.compact; }}>${unsafeHTML(icon(faBars).html)}</a> Zubereitung</h2>
+        <h2><a @click=${() => { this.compact = !this.compact; }}>${unsafeHTML(icon(faBars).html[0])}</a> Zubereitung</h2>
     </div>
     <style>
     .preparation-hdr {
@@ -157,11 +156,6 @@ class Recipe extends BaseComp {
     </style>
     ${preparation}
     ${tags}
-    <div class="credits">
-        <a class="float-right" id="credits" @click=${() => {
-            dialogComp.show(credits);
-        }}>Credits</a>
-    </div>
 </div>`;
     }
 
@@ -224,6 +218,7 @@ class Recipe extends BaseComp {
     }
 
     loadAdditionalRecipes() {
+        return;
         if (!this.data || !this.data['link'] || this.data['link'].length == 0) {
             return;
         }

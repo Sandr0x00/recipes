@@ -1,0 +1,34 @@
+{
+    "name": "Haselnusskuchen",
+    "tags": [
+        "sweet",
+        "vegi"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "5"
+        },
+        "zucker": {
+            "amount": "1/2 Tasse"
+        },
+        "oel": {
+            "amount": "1 Tasse"
+        },
+        "mehl": {
+            "amount": "1 Tasse"
+        },
+        "haselnuss": {
+            "amount": "200g"
+        },
+        "schokiz": {
+            "amount": "150g"
+        }
+    },
+    "preparation": [
+        "Tassenangabe: Es ist ein normaler Kaffeepott mit ca. 250 ml Fassungsvermögen gemeint.",
+        "Die {ei} schaumig schlagen. Nacheinander {zucker}, {oel}, {mehl} und gemahlene {haselnuss} dazugeben.",
+        "Die {schokiz} grob in kleine Stückchen zerhacken und dem Teig unterrühren.",
+        "Den Teig in eine Form füllen.",
+        "Auf der mittleren Schiene bei 180°C ca. 45 - 55 Minuten backen."
+    ]
+}

@@ -52,10 +52,10 @@ describe('Recipe file contents', () => {
 });
 
 describe('Recipe preparation format', () => {
-    let recipes = helper.loadJSON().recipes;
+    let recipes = helper.loadJSON(false).recipes;
     for (const [key, recipe] of Object.entries(recipes)) {
         it(`recipe/${key}.json - preparation should be valid`, () => {
-            let prep = helper.formatPreparation(recipe)[0];
+            let prep = helper.formatPreparation(recipe);
             prep.forEach(step => {
                 assert.notMatch(step, /\{|\}/);
                 assert.notMatch(step, /missing-translation/);

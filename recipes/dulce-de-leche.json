@@ -1,0 +1,19 @@
+{
+    "name": "Dulce De Leche",
+    "tags": [
+        "sweet",
+        "pot"
+    ],
+    "ingredients": {
+        "milch": {
+            "amount": "330ml"
+        },
+        "zucker": {
+            "amount": "90g"
+        }
+    },
+    "preparation": [
+        "{milch} mit {zucker} im Topf erwärmen.",
+        "Köcheln lassen, bis eine Karamel-Masse entsteht."
+    ]
+}

@@ -1,7 +1,7 @@
 /* global */
 
-import {html} from 'lit-element';
-import {BaseComp} from './base.js';
+import { html } from 'lit';
+import { BaseComp } from './base.js';
 
 export class DialogErrorComp extends BaseComp {
 

@@ -22,6 +22,7 @@ module.exports = {
     'egg': 'Ei',
     'ferment': 'Fermentiert',
     'fish': 'Fisch',
+    'flour': 'Mehl',
     'fruity': 'Fruchtig',
     'hurricane': 'Hurricane Glas',
     'indian': 'Indisch',

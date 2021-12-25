@@ -1,0 +1,22 @@
+{
+    "name": "Bloody Mary",
+    "tags": [
+        "drink"
+    ],
+    "ingredients": {
+        "wodka": {
+            "amount": "100ml"
+        },
+        "tomatensaft": {
+            "amount": "500ml"
+        },
+        "tabasco": {},
+        "pfeffer": {},
+        "salz": {}
+    },
+    "preparation": [
+        "Eis in das Glas geben. {wodka} und {tomatensaft} darübergeben.",
+        "Worcestershire sauce und {tabasco}, {salz}, {pfeffer} hinzufügen und verrühren.",
+        "Auf 2 Gläser aufteilen."
+    ]
+}

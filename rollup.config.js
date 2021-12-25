@@ -17,6 +17,10 @@ export default {
             }
 		}),
 		// minify
-		terser()
+		terser({
+			ecma: 2020,
+			module: true,
+			warnings: true
+		})
 	]
 };

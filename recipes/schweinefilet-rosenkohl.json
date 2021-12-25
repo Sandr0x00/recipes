@@ -1,0 +1,37 @@
+{
+    "name": "Schweinefilet auf Rosenkohl",
+    "tags": [
+        "meat",
+        "main",
+        "oven",
+        "pan",
+        "dach"
+    ],
+    "ingredients": {
+        "rosenkohl": {
+            "amount": "1"
+        },
+        "kartoffel": {
+            "amount": "500g"
+        },
+        "knoblauchzehe": {
+            "amount": "2"
+        },
+        "rosmarin": {},
+        "kuemmel": {},
+        "salz": {},
+        "oel": {},
+        "schweinefilet": {
+            "amount": "500g"
+        },
+        "pfeffer": {},
+        "quark-kraeuter": {}
+    },
+    "preparation": [
+        "{kartoffel} in Spalten schneiden. {knoblauchzehe} zerdrücken. {knoblauchzehe}, {kartoffel}, {rosenkohl}, {rosmarin}, {kuemmel}, {salz}, {pfeffer} mit {oel} mischen.",
+        "Im Ofen bei 180°C für ca. 30 Minuten backen.",
+        "{schweinefilet} trocken tupfen und in {oel} scharf anbraten. Mit in den Ofen geben und 10 Minuten mitgaren. 5 Minuten abkühlen lassen.",
+        "Mit {quark-kraeuter} servieren."
+    ],
+    "garnish": "Erdbeere"
+}

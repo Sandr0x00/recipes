@@ -1,0 +1,38 @@
+{
+    "name": "Scheuten&shy;küchlein",
+    "portions": "2 Portionen",
+    "tags": [
+        "sweet",
+        "pot",
+        "vegi",
+        "dach"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "25g"
+        },
+        "zucker": {
+            "amount": "15g"
+        },
+        "salz": {},
+        "ei": {
+            "amount": "1"
+        },
+        "mehl": {
+            "amount": "100g"
+        },
+        "backpulver": {
+            "amount": "1 Messerspitze"
+        },
+        "vanillezucker": {
+            "amount": "1 Pkg."
+        },
+        "rum-braun": {}
+    },
+    "preparation": [
+        "Zimmerwarme {butter} mit {zucker}, {vanillezucker}, {salz} und {ei} schaumig schlagen.",
+        "{mehl} mit {backpulver} vermischen, zum Rest geben und zu einen glatten festen Teigballen verkneten. Zuletzt die kleine Menge {rum-braun} unterkneten.",
+        "Den Teig auf einer bemehlten Arbeitsfläche ausrollen. In 2cm breite Streifen schneiden mit einer Länge von ca. 10cm. Kurz vor einem Ende einschneiden und das andere Ende hindurchziehen.",
+        "In heißem Öl oder Butterschmalz goldbraun backen."
+    ]
+}

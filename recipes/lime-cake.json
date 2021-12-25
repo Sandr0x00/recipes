@@ -1,0 +1,50 @@
+{
+    "name": "Lime Cake",
+    "tags": [
+        "sweet",
+        "oven",
+        "vegi",
+        "american"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "285g"
+        },
+        "zucker": {
+            "amount": "70g"
+        },
+        "ei": {
+            "amount": "3"
+        },
+        "milch": {
+            "amount": "200g"
+        },
+        "vanilleextrakt": {},
+        "limette": {
+            "amount": "4 Limetten"
+        },
+        "mehl": {
+            "amount": "300g"
+        },
+        "backpulver": {
+            "amount": "2 TL"
+        },
+        "salz": {
+        },
+        "frischkaese": {
+            "amount": "115g"
+        },
+        "puderzucker": {
+            "amount": "50g"
+        }
+    },
+    "preparation": [
+        "20 x 30cm Form mit Butter einfetten.",
+        "{butter:185g} mit {zucker} aufschlagen. Die {ei} einzeln dazu geben. {milch}, {vanilleextrakt}, Saft und Schale von {limette:2}, {mehl}, {backpulver} und {salz} hinzufügen und gut mixen.",
+        "Teig in die Form geben und 25 - 30 Minuten bei mittlerer Hitze backen.",
+        "{butter:100g}, {frischkaese}, Saft und Schale von {limette:2} mit {puderzucker} mixen bis die Masse cremig ist.",
+        "Auf den abgekühlten Kuchen streichen und garnieren."
+    ],
+    "garnish": "Limettenschale",
+    "original": "https://laughingspatula.com/fresh-key-lime-cake/"
+}

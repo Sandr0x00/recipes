@@ -1,0 +1,52 @@
+{
+    "name": "Erdbeerkuchen",
+    "tags": [
+        "sweet"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "115g"
+        },
+        "zucker": {
+            "amount": "80g"
+        },
+        "ei": {
+            "amount": "3"
+        },
+        "mandeln-gemahlen": {
+            "amount": "150g"
+        },
+        "mehl": {
+            "amount": "40g"
+        },
+        "backpulver": {
+            "amount": "8g"
+        },
+        "erdbeeren": {
+            "amount": "500g"
+        },
+        "mascarpone": {
+            "amount": "125g"
+        },
+        "sahne": {
+            "amount": "100g"
+        },
+        "puderzucker": {
+            "amount": "20g"
+        },
+        "zitronensaft": {
+            "amount": "4EL"
+        },
+        "vanilleschote": {}
+    },
+    "preparation": [
+        "Zimmerwarme {butter} und {zucker} verquirlen.",
+        "{ei} einzeln nacheinander unterrühren. Macht den Teig fluffig.",
+        "{mehl} mit {backpulver} vermengen und mit {mandeln-gemahlen} unter die Eimasse rühren.",
+        "Den Teig in eine gut eingefettete 28 cm Obstboden-Backform füllen, glatt streichen und ca. 30 Minuten auf der zweiten Schiene von unten bei 180°C Ober-/Unterhitze backen, abkühlen lassen und aus der Form stürzen.",
+        "{mascarpone}, {puderzucker}, {zitronensaft} und Mark einer {vanilleschote} verrühren.",
+        "{sahne} steif schlagen und unter die Mascarpone-Creme heben.",
+        "Die Mascarpone-Creme gleichmäßig auf dem ausgekühlten Boden verstreichen.",
+        "{erdbeeren} klein schneiden und auf dem Kuchen verteilen. Optional Tortenguss hinzufügen."
+    ]
+}

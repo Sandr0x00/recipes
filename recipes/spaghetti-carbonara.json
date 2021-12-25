@@ -1,0 +1,25 @@
+{
+    "name": "Spaghetti Carbonara",
+    "tags": [
+        "pasta",
+        "main",
+        "pot",
+        "pan"
+    ],
+    "ingredients": {
+        "nudeln": {},
+        "ei": {
+            "amount": "2"
+        },
+        "parmesan": {},
+        "pancetta": {
+            "name": "Pancetta (Schinken)"
+        },
+        "pfeffer": {}
+    },
+    "preparation": [
+        "{nudeln} kochen. {pancetta} in der Pfanne anbraten.",
+        "{ei} mit {parmesan} und {pfeffer} verrühren.",
+        "{nudeln} zu {pancetta} geben. Von der Hitze nehmen und Ei-Gemisch hinzufügen und verrühren bis die Konsistenz passt."
+    ]
+}

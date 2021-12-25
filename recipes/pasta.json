@@ -1,0 +1,24 @@
+{
+    "name": "Pasta",
+    "tags": [
+        "pasta",
+        "italian",
+        "ingredient"
+    ],
+    "ingredients": {
+        "mehl": {
+            "amount": "200g"
+        },
+        "ei": {
+            "amount": "2"
+        },
+        "salz": {}
+    },
+    "preparation": [
+        "{salz} und {mehl} vermischen. Eine Mulde in {mehl} machen und die {ei} hinein geben.",
+        "Den Teig kneten bis er glatt wird (dauert ein bisschen).",
+        "Den Teig für 30 Minuten in Frischhaltefolie einwickeln und bei Zimmertemparatur ruhen lassen.",
+        "Ein paar mal durch die gröbste Stufe der Pastamaschine rollen. Dabei immer wieder zusammenfalten bis der Teig nicht mehr reißt.",
+        "Mit der Pastamaschine bis zur gewünschten Dicke ausrollen."
+    ]
+}

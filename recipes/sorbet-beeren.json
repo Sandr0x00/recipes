@@ -1,0 +1,25 @@
+{
+    "name": "Beeren Sorbet",
+    "tags": [
+        "sweet",
+        "fruity"
+    ],
+    "ingredients": {
+        "himbeeren": {
+            "amount": "150g"
+        },
+        "heidelbeeren": {
+            "amount": "150g"
+        },
+        "zitrone": {
+            "amount": "1/2"
+        },
+        "kokosmilch": {
+            "amount": "100ml"
+        }
+    },
+    "preparation": [
+        "Gefrorene {himbeeren} mit {heidelbeeren}, {zitrone} und {kokosmilch} pürieren.",
+        "In eine Auflaufform in den Gefrierschrank stellen."
+    ]
+}

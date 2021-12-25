@@ -9,9 +9,9 @@
     ],
     "ingredients": {
         "halloumi": {},
-        "burger-bun": {
+        "brioche-bun": {
             "amount": "1",
-            "link": "/burger-bun"
+            "link": "/brioche-bun"
         },
         "tomate": {
             "amount": "1 Scheibe"
@@ -27,6 +27,6 @@
     "preparation": [
         "{honig} mit {senf-mittelscharf} vermischen.",
         "{zwiebel} und {halloumi} in der Pfanne anbraten.",
-        "{burger-bun} toasten und mit Honig-Senf-Soße bestreichen. Burger mit {all} belegen."
+        "{brioche-bun} toasten und mit Honig-Senf-Soße bestreichen. Burger mit {all} belegen."
     ]
 }

@@ -1,0 +1,47 @@
+{
+    "name": "Trileche",
+    "portions": "2 Portionen",
+    "tags": [
+        "sweet",
+        "vegi"
+    ],
+    "ingredients": {
+        "ei": {
+            "amount": "6"
+        },
+        "zucker": {
+            "amount": "200g"
+        },
+        "salz": {
+            "amount": "3g"
+        },
+        "backpulver": {
+            "amount": "7g"
+        },
+        "mehl": {
+            "amount": "225g"
+        },
+        "milch": {
+            "amount": "120ml"
+        },
+        "sahne": {
+            "amount": "240ml"
+        },
+        "kondensmilch": {
+            "amount": "340g",
+            "name": "Kondensmilch 10% (gesüßt)"
+        },
+        "kaffeesahne": {
+            "amount": "400ml",
+            "name": "Kaffeesahne 10%"
+        },
+        "dulce-de-leche": {}
+    },
+    "preparation": [
+        "{ei} teilen. Eigelb mit {zucker:150g} schaumig schlagen. {milch} hinzufügen. Eiweiß mit {zucker:50g} steif schlagen und die andere Eimasse unterheben.",
+        "{mehl} mit {backpulver} und {salz} vermischen, ebenfalls unterheben. Form einfetten und Teig hinein geben. Bei 180°C ca. 30 Minuten backen.",
+        "{sahne:120ml}, {kondensmilch} und {kaffeesahne} vermischen. Den Kuchen einstechen und die \"Leches\" darüber schütten. Über Nacht zugedeckt einziehen lassen.",
+        "Mit {dulce-de-leche} und Sahne ({sahne:120ml} mit einem TL Zucker aufschlagen) bestreichen."
+    ],
+    "garnish": "Erdbeeren"
+}

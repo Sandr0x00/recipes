@@ -11,9 +11,9 @@
         "haehnchenbrustfilet": {
             "amount": "1"
         },
-        "burger-bun": {
+        "brioche-bun": {
             "amount": "1",
-            "link": "/burger-bun"
+            "link": "/brioche-bun"
         },
         "tomate": {
             "amount": "1 Scheibe"
@@ -29,7 +29,7 @@
     "preparation": [
         "{sauresahne} mit {salz-pfeffer} vermischen.",
         "{zwiebel} und {haehnchenbrustfilet} in der Pfanne anbraten.",
-        "{burger-bun} toasten und mit {sauresahne} bestreichen.",
+        "{brioche-bun} toasten und mit {sauresahne} bestreichen.",
         "Burger mit {all} belegen."
     ]
 }

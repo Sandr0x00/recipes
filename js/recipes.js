@@ -1,6 +1,6 @@
 /* global loadingComp, dialogComp */
 
-import {html} from 'lit-element';
+import { html } from 'lit';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
@@ -48,7 +48,7 @@ class Recipes extends BaseComp {
         return html`
 <div class="grid-container">
 <div class="grid-title"><h1><a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
-<div class="grid-tags nowrap">${tags}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html)}</a></div>
+<div class="grid-tags nowrap">${tags}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html[0])}</a></div>
 <div class="recipes-grid">
 ${data}
 </div></div>`;
@@ -57,7 +57,7 @@ ${data}
     single(id, recipe) {
         return html`
 <figure class="recipeLinkDiv">
-  <a id="${id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`/${id}`); }}>
+  <a id="${id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`${id}`); }}>
     <figcaption class="text-center">${unsafeHTML(recipe.name)}</figcaption>
   </a>
 </figure>`;
@@ -191,6 +191,7 @@ ${data}
         ).then(data => {
             this.tags = data;
         }).catch(err => {
+            console.log(err);
             if (err) {
                 dialogComp.show(err);
             }

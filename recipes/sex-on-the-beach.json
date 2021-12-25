@@ -7,16 +7,16 @@
     ],
     "ingredients": {
         "orangensaft": {
-            "amount": "3cl"
+            "amount": "5cl"
         },
         "cranberrysaft": {
-            "amount": "3cl"
+            "amount": "5cl"
         },
         "wodka": {
-            "amount": "3cl"
+            "amount": "5cl"
         },
         "pfirsichlikoer": {
-            "amount": "1cl"
+            "amount": "2.5cl"
         }
     },
     "preparation": [

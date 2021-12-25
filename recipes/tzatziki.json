@@ -1,0 +1,29 @@
+{
+    "name": "Tzatziki",
+    "tags": [
+        "side",
+        "ingredient",
+        "pan",
+        "balkan"
+    ],
+    "ingredients": {
+        "joghurt-greek": {
+            "amount": "500g"
+        },
+        "gurke": {
+            "amount": "1/2"
+        },
+        "knoblauchzehe": {
+            "amount": "4"
+        },
+        "lemon-preserved": {
+            "amount": "1/4"
+        },
+        "petersilie": {
+        }
+    },
+    "preparation": [
+        "{gurke} klein schneiden. {knoblauchzehe}, {lemon-preserved} und {petersilie} klein hacken.",
+        "{joghurt-greek} mit den anderen Zutaten mischen."
+    ]
+}

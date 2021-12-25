@@ -11,9 +11,9 @@
         "hackfleisch": {
             "amount": "100g"
         },
-        "burger-bun": {
+        "brioche-bun": {
             "amount": "1",
-            "link": "/burger-bun"
+            "link": "/brioche-bun"
         },
         "tomate": {
             "amount": "1 Scheibe"
@@ -34,7 +34,7 @@
     "preparation": [
         "{hackfleisch} mit {salz-pfeffer} vermischen und ein Patty formen.",
         "{hackfleisch} in der Pfanne anbraten.",
-        "{burger-bun} toasten und mit {burgersauce} bestreichen. Mit {salat} und {zwiebel} oder {chili} belegen.",
+        "{brioche-bun} toasten und mit {burgersauce} bestreichen. Mit {salat} und {zwiebel} oder {chili} belegen.",
         "{cheddar} auf Patty legen und kurz mitbraten.",
         "Patty und {tomate} auf Brötchen legen."
     ]

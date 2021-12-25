@@ -1,0 +1,38 @@
+{
+    "name": "Ananas Frischkäse Dessert",
+    "tags": [
+        "fruity",
+        "pot",
+        "sweet"
+    ],
+    "portions": "4 Gläser",
+    "ingredients": {
+        "ananas": {
+            "amount": "1/2"
+        },
+        "zucker": {
+            "amount": "2 EL"
+        },
+        "sahne": {
+            "amount": "30ml"
+        },
+        "puderzucker": {
+            "amount": "20g"
+        },
+        "frischkaese": {
+            "amount": "250g"
+        },
+        "rum-braun": {
+            "amount": "4cl"
+        },
+        "butterkekse": {
+            "amount": "12"
+        }
+    },
+    "preparation": [
+        "{ananas} würfeln und mit {rum-braun} und {zucker} auf mittlerer Hitze aufkochen lassen. 10 Minuten köcheln lassen und danach pürieren. Püree abkühlen lassen.",
+        "{butterkekse} zerbröseln. {frischkaese}, {sahne} und {puderzucker}verühren.",
+        "Das Fruchtpüree auf 4 Gläser verteilen und mit Frischkäsecreme, Keksbrösel und Frischkäsecreme aufschichten und kaltstellen."
+    ],
+    "garnish": "Keksbrösel"
+}
