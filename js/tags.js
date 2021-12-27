@@ -33,6 +33,7 @@ module.exports = {
     'mexican': 'Mexikanisch',
     'main': 'Hauptgericht',
     'meat': 'Fleisch',
+    'mixer': 'Mixer',
     'nordic': 'Nordisch',
     'old-fashioned': 'Tumbler',
     'oven': 'Ofen',

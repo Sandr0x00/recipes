@@ -8,6 +8,7 @@ let fs = require('fs');
 let path = require('path');
 let assert = require('chai').assert;
 let helper = require('../helper');
+let formatPreparation = require('../shared').formatPreparation;
 
 describe('Recipe file names', function() {
     let recipePath = path.join(__dirname, '../recipes');
@@ -52,10 +53,10 @@ describe('Recipe file contents', () => {
 });
 
 describe('Recipe preparation format', () => {
-    let recipes = helper.loadJSON(false).recipes;
+    let recipes = helper.loadJSON().recipes;
     for (const [key, recipe] of Object.entries(recipes)) {
         it(`recipe/${key}.json - preparation should be valid`, () => {
-            let prep = helper.formatPreparation(recipe);
+            let prep = formatPreparation(recipe);
             prep.forEach(step => {
                 assert.notMatch(step, /\{|\}/);
                 assert.notMatch(step, /missing-translation/);
@@ -96,7 +97,7 @@ describe('Tag translation', () => {
 });
 
 describe('Unused ingredients', () => {
-    let recipes = helper.loadJSON(false).recipes;
+    let recipes = helper.loadJSON().recipes;
     for (const [key, recipe] of Object.entries(recipes)) {
         it(`recipes/${key}.json - should not have unused ingredients`, () => {
             let preparation = JSON.stringify(recipe.preparation);

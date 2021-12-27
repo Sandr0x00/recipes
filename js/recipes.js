@@ -3,7 +3,7 @@
 import { html } from 'lit';
 import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
 import tagTranslator from './tags.js';
-import {BaseComp} from './base.js';
+import { BaseComp } from './base.js';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -40,14 +40,14 @@ class Recipes extends BaseComp {
 
         let title = this.filter.map(t => ' ' + tagTranslator[t]);
         if (title.length > 0) {
-            document.title = `${title} | Sandr0s Rezepte`;
+            document.title = `${title} | sandr0s Rezepte`;
         } else {
-            document.title = 'Sandr0s Rezepte';
+            document.title = 'sandr0s Rezepte';
         }
 
         return html`
 <div class="grid-container">
-<div class="grid-title"><h1><a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
+<div class="grid-title"><h1><a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">sandr0s Rezepte</a></h1></div>
 <div class="grid-tags nowrap">${tags}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html[0])}</a></div>
 <div class="recipes-grid">
 ${data}
@@ -117,13 +117,13 @@ ${data}
         } else {
             this.filter.push(tag);
         }
-        window.history.pushState('','',`#!/tags?${this.filter}`);
+        window.history.pushState('','',`/tags?${this.filter}`);
         this.reloadFilters();
     }
 
     clearFilter() {
         this.filter = [];
-        window.history.pushState('','','#!/');
+        window.history.pushState('','','/');
         this.reloadFilters();
     }
 

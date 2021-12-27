@@ -49,6 +49,10 @@ h2 {
     // font-size: 2rem;
 }
 
+h2 .edit {
+    float: right;
+}
+
 p {
     margin-top: 0;
     margin-bottom: 0.3em;
@@ -234,9 +238,27 @@ span.type {
     overflow: auto;
     white-space: nowrap;
 }
-#moon {
+#settings {
     cursor: pointer;
     position: absolute;
     right: 5px;
     top: 5px;
+}
+#dialog {
+    display:grid;
+}
+.setting-icon {
+    text-align: center;
+    height: 4rem;
+    line-height: 4rem;
+    font-size: 2rem;
+}
+#theme {
+    grid-area: 1/1;
+}
+#admin {
+    grid-area: 1/2;
+}
+.hide-admin {
+    display: none;
 }

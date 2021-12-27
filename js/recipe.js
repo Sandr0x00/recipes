@@ -7,6 +7,9 @@ import {BaseComp} from './base.js';
 import $ from 'jquery';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faExternalLinkAlt, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faEdit } from '@fortawesome/free-regular-svg-icons';
+import { formatPreparation, formatPreparationStep } from '../shared.js';
+import { getCookie } from './cookies.js';
 
 class Recipe extends BaseComp {
 
@@ -43,7 +46,7 @@ class Recipe extends BaseComp {
                 images = html`${images}
 <div class="recipeImage one-image">
     <div class="placeholderWrapper">
-        <div class="placeholder blur" data-large='images/${this.data.images[0]}' style="background-image: url('images/placeholder_${this.data.images[0]}');">
+        <div class="placeholder blur" data-large='/images/${this.data.images[0]}' style="background-image: url('/images/placeholder_${this.data.images[0]}');">
         </div>
     </div>
 </div>`;
@@ -52,7 +55,7 @@ class Recipe extends BaseComp {
                     images = html`${images}
 <div class="recipeImage two-images">
     <div class="placeholderWrapper">
-        <div class="placeholder blur" data-large='images/${img}' style="background-image: url('images/placeholder_${img}');">
+        <div class="placeholder blur" data-large='/images/${img}' style="background-image: url('/images/placeholder_${img}');">
         </div>
     </div>
 </div>`;
@@ -89,21 +92,17 @@ class Recipe extends BaseComp {
 
             // Tags
             tags = this.data.tags.map(tag => {
-                return html`<a class="tags" onclick="loadingComp.navigate('/tags?${tag}')" id="tag_${tag}" title="${tagTranslator[tag]}"><img src="icons/${tag}.svg" /></a>`;
+                return html`<a class="tags" onclick="loadingComp.navigate('/tags?${tag}')" id="tag_${tag}" title="${tagTranslator[tag]}"><img alt="${tagTranslator[tag]}" src="icons/${tag}.svg" /></a>`;
             });
-            tags = html`<div class="recipe-tags">${tags}</div>`;
+            tags = html`<div class="recipe-tags"><h2>Tags</h2>${tags}</div>`;
 
             // Preparation
             let steps = html``;
-            if (this.compact) {
-                data.preparationAmounts.forEach(step => {
-                    steps = html`${steps}<p>${unsafeHTML(step)}</p>`;
-                });
-            } else {
-                data.preparation.forEach(step => {
-                    steps = html`${steps}<p>${unsafeHTML(step)}</p>`;
-                });
-            }
+            data.preparation.forEach(step => {
+                step = formatPreparationStep(this.data.name, step, this.data.ingredients, this.compact);
+                console.log(step);
+                steps = html`${steps}<p>${unsafeHTML(step)}</p>`;
+            });
             let clazz = this.makeid(8);
             preparation = html`${preparation}
     <div class="${clazz} preparation">
@@ -121,13 +120,24 @@ class Recipe extends BaseComp {
     </style>`;
         }
 
-        let ingredientSwitch = html`<a @click=${() => { this.compact = !this.compact; }}><h2>Zutaten</h2></a>
-        `;
-        if (this.compact) {
-            ingredientSwitch = html`<div id="ingredients-vert">${ingredientSwitch}</div>`;
-        } else {
+        let ingredientSwitch = html``;
+        if (!this.compact) {
+            ingredientSwitch = html`<a @click=${() => { this.compact = !this.compact; }}><h2>Zutaten</h2></a>
+            `;
             ingredientSwitch = html`<div id="ingredients">${ingredientSwitch}</div>${ingredients}`;
         }
+
+        let equipment = html``;
+        let eq = false;
+        for (let tag of this.data.equipment) {
+            equipment = html`${equipment}<a class="tags" onclick="loadingComp.navigate('/tags?${tag}')" id="tag_${tag}" title="${tagTranslator[tag]}"><img alt="${tagTranslator[tag]}" src="icons/${tag}.svg" /></a>`;
+            eq = true;
+        }
+        if (eq) {
+            equipment = html`<div class="recipe-equipment"><h2>Benötigt</h2>${equipment}</div>`;
+        }
+
+        console.log(equipment);
 
         dialogComp.close();
         loadingComp.close();
@@ -142,7 +152,9 @@ class Recipe extends BaseComp {
     ${images}
     ${ingredientSwitch}
     <div class="preparation-hdr">
-        <h2><a @click=${() => { this.compact = !this.compact; }}>${unsafeHTML(icon(faBars).html[0])}</a> Zubereitung</h2>
+        <h2><a @click=${() => { this.compact = !this.compact; }}>${ this.compact ? unsafeHTML(icon(faBars).html[0]) : ''} Zubereitung</a>
+        <a class="edit ${getCookie('admin') == 'true' ? '' : 'hide-admin'}" href="https://github.com/Sandr0x00/recipes/edit/master/recipes/${this.data.id}.json">${unsafeHTML(icon(faEdit).html[0])}</a>
+        </h2>
     </div>
     <style>
     .preparation-hdr {
@@ -155,6 +167,7 @@ class Recipe extends BaseComp {
     }
     </style>
     ${preparation}
+    ${equipment}
     ${tags}
 </div>`;
     }
@@ -176,15 +189,15 @@ class Recipe extends BaseComp {
         }
     }
 
+    // make unique id for grid-stuff. in theory collision happens in 1/length**52 cases, good enough
     makeid(length) {
-        let result           = '';
-        let characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
-        let charactersLength = characters.length;
-        for ( let i = 0; i < length; i++ ) {
-           result += characters.charAt(Math.floor(Math.random() * charactersLength));
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
+        let result = '';
+        for (let i = 0; i < length; i++) {
+           result += characters.charAt(Math.floor(Math.random() * characters.length));
         }
         return result;
-     }
+    }
 
     highlightOn(c) {
         $('.' + c).addClass('highlight');

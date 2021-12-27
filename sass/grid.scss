@@ -46,7 +46,10 @@
     grid-area: images;
 }
 .recipe-tags {
-    grid-area: 100/1;
+    grid-area: 99/1;
+}
+.recipe-equipment {
+    grid-area: 101/1;
 }
 .credits {
     grid-area: 101/1;
@@ -106,7 +109,6 @@ recipe-comp {
     position: absolute;
     // top: 50%;
     // transform: translateY(-50%);
-    background:#111;
     border-radius: 10px;
     padding: 10px 15px;
     grid-column: 2 / 2;
@@ -130,6 +132,9 @@ recipe-comp {
     }
     .recipe-tags {
         grid-area: 100/1/100/3;
+    }
+    .recipe-equipment {
+        grid-area: 99/1/99/3;
     }
     .credits {
         grid-area: 100/4;

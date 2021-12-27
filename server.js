@@ -30,11 +30,6 @@ app.use(express.static('public', {
 }));
 app.use(compression());
 
-app.post('/api/comment', (req, res) => {
-    let san = req.body.replace(/[\w\s.]*/, '');
-
-});
-
 app.get('/api/all', (req, res) => {
     setHeaders(res);
     res.json(general);

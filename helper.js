@@ -3,71 +3,13 @@
 let fs = require('fs');
 let path = require('path');
 
-function replace(id, ingredient, preparation, replaceAmounts=false) {
-    let regex = `{${id}}`;
-    let regex_amount = `{${id}:(.+?)}`;
+// let formatPreparation = require('./shared').formatPreparation;
 
-    let replace;
-    if (!ingredient.name) {
-        throw `Translation for ${id} missing.`;
-    }
-    let name = ingredient.name;
-    if (preparation.match(regex_amount)) {
-        let amount = preparation.match(regex_amount)[1];
-        regex = `{${id}:${amount}}`;
-        replace = `<b class='${id} ingredient'>${amount} ${name}</b>`;
-    } else {
-        if (replaceAmounts) {
-            replace = `<b class='${id} ingredient'>${(ingredient.amount ? ingredient.amount + ' ' : '')} ${name}</b>`;
-        } else {
-            replace = `<b class='${id} ingredient'>${name}</b>`;
-        }
-    }
-    preparation = preparation.replace(new RegExp(regex, 'g'), replace);
-    return preparation;
-}
-
-exports.formatPreparation = function(recipe, format_amounts=false) {
-    // if (Array.isArray(recipe.preparation)) {
-    //     recipe.preparation = [ 'Zubereitung': recipe.preparation ];
-    // }
-    let preparation = JSON.stringify(recipe.preparation);
-    for (const [id, ingredient] of Object.entries(recipe.ingredients)) {
-        while (preparation.match(`{${id}(:.+?)?}`)) {
-            // first, replace ingredients with specific amounts, if there are any
-            let replaced = replace(id, ingredient, preparation, format_amounts);
-            preparation = replaced;
-        }
-    }
-    preparation = preparation.replace('{all}', '<b class=\'all ingredient\'>Alles</b>');
-    while (preparation.match(/{all\/([\w-]*)}/)) {
-        let allExcept = preparation.match(/{all\/([\w-]*)}/);
-        if (allExcept) {
-            let except = allExcept[1];
-            if (!recipe.ingredients[except]) {
-                throw `${recipe.name} - Translation for ${except} missing`;
-            }
-            preparation = preparation.replace(new RegExp(`{all/(${except})}`, 'g'), `<b class='all ingredient'>Alles</b> außer <b class='${except} ingredient'>${recipe.ingredients[except].name}</b>`);
-        }
-    }
-
-    return JSON.parse(preparation);
-};
-
-exports.loadJSON = function(format=true) {
+exports.loadJSON = function() {
     let dirPath = path.join(__dirname, 'recipes');
     let stuff = readFilesInFolder(dirPath);
     handleIngredients(stuff.recipes, stuff.tags);
 
-    for (const key in stuff.recipes) {
-        let recipe = stuff.recipes[key];
-        if (format) {
-            let prep = this.formatPreparation(recipe);
-            Object.assign(recipe, {
-                preparation: prep,
-            });
-        }
-    }
     // sort based on occurence
     stuff.tags = stuff.tags.sort((a, b) => (a.cnt < b.cnt) ? 1 : -1);
     return {recipes: stuff.recipes, tags: stuff.tags};
@@ -176,7 +118,7 @@ function handleIngredients(recipes, tags) {
     }
 }
 
-const utensils = [
+const equipment = [
     'pan', 'longdrink', 'bbq', 'pot', 'wineglas', 'wok', 'old-fashioned', 'oven'
 ];
 
@@ -208,24 +150,16 @@ function readFilesInFolder(folder) {
                 }
             });
 
-            // add utensils
-            let first = true;
-            let prep = null;
-            let tagTranslations = require('./js/tags.js');
+            // add equipment
+            let eq = [];
             for (let tag of recipes[key].tags) {
-                if (utensils.includes(tag)) {
-                    let r = tagTranslations[tag];
-                    if (first) {
-                        prep = `Benötigte Utensilien: <i>${r}</i>`;
-                        first = false;
-                    } else {
-                        prep += `, <i>${r}</i>`;
-                    }
+                if (equipment.includes(tag)) {
+                    eq.push(tag);
+                    // remove equipment from tags since it's displayed differently
+                    recipes[key].tags.splice(recipes[key].tags.indexOf(tag), 1);
                 }
             }
-            if (prep) {
-                recipes[key]['utensils'] = prep;
-            }
+            recipes[key]['equipment'] = eq;
         }
     });
     return {recipes: recipes, tags: tags};
