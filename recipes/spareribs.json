@@ -9,7 +9,7 @@
     "ingredients": {
         "spareribs": {
             "amount": "2",
-            "link": "/spareribs"
+            "link": "spareribs"
         },
         "holz": {
             "amount": "1 handvoll"

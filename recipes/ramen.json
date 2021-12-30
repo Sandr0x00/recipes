@@ -16,7 +16,7 @@
     },
     "preparation": [
         "{nudeln-mie} in {bruehe} kochen.",
-        "Mit {chili}, {salz-pfeffer} abschmecken.",
-        "Mit halb gekochtem {ei}, {lauchzwiebel}, oder Sonstigem garnieren."
-    ]
+        "Mit {chili}, {salz-pfeffer} abschmecken."
+    ],
+    "garnish": "halb gekochtem {ei} oder {lauchzwiebel}"
 }

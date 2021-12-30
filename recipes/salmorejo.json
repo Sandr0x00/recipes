@@ -28,7 +28,7 @@
         "Die {ei} hart kochen. Die {semmel} in Wasser einweichen lassen.",
         "Die Semmeln in einem Sieb audrücken und mit {tomate}, {knoblauchzehe}, ein Ei und {oel} mixen.",
         "Nun mit {salz} und {essig-wein} abschmecken und nochmals mixen.",
-        "Danach mindestens 2 Stunden in den Kühlschrank stellen.",
-        "Die kalte Salmorejo mit {schinken} und 2. Ei garnieren."
-    ]
+        "Danach mindestens 2 Stunden in den Kühlschrank stellen."
+    ],
+    "garnish": "{schinken} und 2. Ei"
 }

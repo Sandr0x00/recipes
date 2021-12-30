@@ -15,11 +15,12 @@
         },
         "sirup-zucker": {
             "amount": "2cl",
-            "link": "/sirup-zucker"
+            "link": "sirup-zucker"
         }
     },
     "preparation": [
         "{whisky}, {sirup-zucker} und {zitronensaft} mit 4 bis 5 Eiswürfeln shaken.",
-        "Auf Eiswürfel abseihen und mit einer Orangenzeste garnieren."
-    ]
+        "Auf Eiswürfel abseihen."
+    ],
+    "garnish": "Orangenzeste"
 }

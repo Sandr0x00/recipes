@@ -9,7 +9,7 @@
     ],
     "ingredients": {
         "flammkuchenteig": {
-            "link": "/flammkuchenteig"
+            "link": "flammkuchenteig"
         },
         "cremefraiche": {},
         "knoblauchzehe": {
@@ -27,7 +27,7 @@
         "{knoblauchzehe}, {lauchzwiebel} und {camembert} klein schneiden.",
         "{cremefraiche} und {knoblauchzehe} mit {gewuerze} mischen.",
         "{flammkuchenteig} dünn ausrollen und mit {camembert}, {schinken} und {lauchzwiebel} belegen.",
-        "Bei maximaler Temperatur etwa 5 Minuten backen.",
-        "Flammkuchen mit {preiselbeeren} garnieren."
-    ]
+        "Bei maximaler Temperatur etwa 5 Minuten backen."
+    ],
+    "garnish": "{preiselbeeren}"
 }

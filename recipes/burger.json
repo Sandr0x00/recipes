@@ -13,7 +13,7 @@
         },
         "brioche-bun": {
             "amount": "1",
-            "link": "/brioche-bun"
+            "link": "brioche-bun"
         },
         "tomate": {
             "amount": "1 Scheibe"
@@ -28,7 +28,7 @@
         },
         "salz-pfeffer": {},
         "burgersauce": {
-            "link": "/burgersauce"
+            "link": "burgersauce"
         }
     },
     "preparation": [

@@ -11,7 +11,7 @@
     "ingredients": {
         "schoko-muffin": {
             "amount": "12",
-            "link": "/schoko-muffin"
+            "link": "schoko-muffin"
         },
         "himbeeren": {
             "amount": "120g"

@@ -10,7 +10,7 @@
     ],
     "ingredients": {
         "tangzhong": {
-            "link": "/tangzhong"
+            "link": "tangzhong"
         },
         "milch": {
             "amount": "120g"

@@ -10,11 +10,11 @@
     "ingredients": {
         "pizzateig": {
             "amount": "1",
-            "link": "/pizzateig"
+            "link": "pizzateig"
         },
         "pizzasauce": {
             "amount": "1",
-            "link": "/pizzasauce"
+            "link": "pizzasauce"
         },
         "mozarella": {
             "amount": "1"

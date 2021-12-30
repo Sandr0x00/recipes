@@ -18,7 +18,7 @@
             "amount": "1/2"
         },
         "joghurt-dressing": {
-            "link": "/joghurt-dressing"
+            "link": "joghurt-dressing"
         }
     },
     "preparation": [
