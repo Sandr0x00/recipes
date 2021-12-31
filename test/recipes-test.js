@@ -10,6 +10,9 @@ let assert = require('chai').assert;
 let helper = require('../helper');
 let formatPreparationStep = require('../shared').formatPreparationStep;
 
+const images_path = path.join(__dirname, '..', 'public', 'images');
+
+
 describe('Recipe file names', function() {
     let recipePath = path.join(__dirname, '../recipes');
     fs.readdirSync(recipePath).forEach(dirName => {
@@ -67,7 +70,6 @@ describe('Recipe preparation format', () => {
 
 describe('Recipe images', () => {
     let recipes = helper.loadJSON().recipes;
-    let imagesPath = path.join(__dirname, '..', 'public', 'images');
     for (const [key, recipe] of Object.entries(recipes)) {
         let images = recipe.images;
         it(`recipes/${key}.json - images in should exist`, () => {
@@ -78,7 +80,7 @@ describe('Recipe images', () => {
                     console.log(`    \x1B[33m${key} has no images.\x1B[0m`);
                 }
                 images.forEach(image => {
-                    assert(fs.existsSync(path.join(imagesPath, image)));
+                    assert(fs.existsSync(path.join(images_path, image)));
                 });
             }
         });
@@ -142,4 +144,26 @@ describe('Tag without icon', () => {
             assert(fs.existsSync(`public/icons/${t}.svg`));
         });
     });
+});
+
+describe('Image without recipe', () => {
+    let recipes = helper.loadJSON().recipes;
+
+    const dir = fs.opendirSync(images_path);
+    let images = new Set();
+    let entry;
+    while ((entry = dir.readSync()) !== null) {
+        let m = /^(?:placeholder_)?(?<name>[a-zA-Z-]+)(?:[^-][^2])?.jpg$/g.exec(entry.name);
+        if (!m) {
+            continue;
+        }
+        let name = m.groups['name'];
+        if (!(name in recipes) && !images.has(name)) {
+            images.add(name);
+            it(`image ${name} should have a recipe`, () => {
+                assert.fail(`images/${name}.jpg`);
+            });
+        }
+    }
+    dir.closeSync();
 });
