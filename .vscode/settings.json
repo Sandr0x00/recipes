@@ -1,10 +1,22 @@
 {
     "json.schemas": [
         {
+            "name": "recipes",
             "fileMatch": [
-                "/recipes/*.json"
+                "*.json",
+                "!package.json",
+                "!settings.json",
+                "!.eslintrc.json",
+                "!mapping.json"
             ],
-            "url": "/schema.json"
-        }
+            "url": "./recipes.schema.json"
+        },
+        {
+            "name": "package.json",
+            "fileMatch": [
+                "/package.json"
+            ],
+            "url": "https://json.schemastore.org/package.json"
+        },
     ]
 }

@@ -40,7 +40,7 @@ describe('Recipe file contents', () => {
     let validate = require('jsonschema').validate;
     // let dirPath = path.join(__dirname, '../recipes');
     let recipes = helper.loadJSON().recipes;
-    let schema = JSON.parse(fs.readFileSync('schema.json', 'utf8'));
+    let schema = JSON.parse(fs.readFileSync('recipes.schema.json', 'utf8'));
     for (const [key, recipe] of Object.entries(recipes)) {
         let result = validate(recipe, schema);
         let errorMsg = [];
