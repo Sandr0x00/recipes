@@ -3,7 +3,9 @@
     "tags": [
         "pasta",
         "italian",
-        "ingredient"
+        "ingredient",
+        "vegi",
+        "side"
     ],
     "ingredients": {
         "mehl": {
@@ -20,5 +22,6 @@
         "Den Teig für 30 Minuten in Frischhaltefolie einwickeln und bei Zimmertemparatur ruhen lassen.",
         "Ein paar mal durch die gröbste Stufe der Pastamaschine rollen. Dabei immer wieder zusammenfalten bis der Teig nicht mehr reißt.",
         "Mit der Pastamaschine bis zur gewünschten Dicke ausrollen."
-    ]
+    ],
+    "original": "https://www.springlane.de/magazin/rezeptideen/lasagne-selber-machen/"
 }

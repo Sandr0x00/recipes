@@ -1,0 +1,21 @@
+{
+    "name": "Lasagne",
+    "tags": [
+        "italian",
+        "meat",
+        "pasta",
+        "main",
+        "oven"
+    ],
+    "ingredients": {
+        "bolognese": {},
+        "pasta": {},
+        "sauce-bechamel": {},
+        "parmesan": {}
+    },
+    "preparation": [
+        "Die Auflaufform mit {sauce-bechamel} bestreichen und mit {pasta} Platten auslegen. Darauf eine Schicht {bolognese} geben. Wiederholen und mit einer dicken Schicht {sauce-bechamel} beenden.",
+        "Mit {parmesan} bestreuen und bei 200°C ca. 25 Minuten backen bis die Oberfläche goldbraun ist."
+    ],
+    "original": "https://www.springlane.de/magazin/rezeptideen/lasagne-selber-machen/"
+}

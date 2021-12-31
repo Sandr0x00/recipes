@@ -100,7 +100,7 @@ function handleIngredients(recipes, tags) {
             // link
             if (ids.includes(id)) {
                 let linkedRecipe = recipes[id];
-                ingredient['link'] = '/' + linkedRecipe.id;
+                ingredient['link'] = linkedRecipe.id;
                 if (!recipe['link']) {
                     recipe['link'] = [];
                 }

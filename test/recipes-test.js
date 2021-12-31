@@ -8,7 +8,7 @@ let fs = require('fs');
 let path = require('path');
 let assert = require('chai').assert;
 let helper = require('../helper');
-let formatPreparation = require('../shared').formatPreparation;
+let formatPreparationStep = require('../shared').formatPreparationStep;
 
 describe('Recipe file names', function() {
     let recipePath = path.join(__dirname, '../recipes');
@@ -56,8 +56,8 @@ describe('Recipe preparation format', () => {
     let recipes = helper.loadJSON().recipes;
     for (const [key, recipe] of Object.entries(recipes)) {
         it(`recipe/${key}.json - preparation should be valid`, () => {
-            let prep = formatPreparation(recipe);
-            prep.forEach(step => {
+            recipe.preparation.forEach(step => {
+                step = formatPreparationStep(step, recipe.ingredients, false);
                 assert.notMatch(step, /\{|\}/);
                 assert.notMatch(step, /missing-translation/);
             });
@@ -87,11 +87,21 @@ describe('Recipe images', () => {
 
 describe('Tag translation', () => {
     let translate = require('../js/tags.js');
-    let tags = helper.loadJSON().tags;
+    let json = helper.loadJSON();
+    let recipes = json.recipes;
+    let tags = json.tags;
     tags.forEach((tag) => {
         let t = tag.tag;
+        let failed = [];
+        if (!(t in translate)) {
+            for (const [key, recipe] of Object.entries(recipes)) {
+                if (recipe.tags && recipe.tags.includes(t)) {
+                    failed.push(`recipes/${key}.json`);
+                }
+            }
+        }
         it('tag ' + t + ' should be translated', () => {
-            assert(t in translate);
+            assert(t in translate, `tag used in ${failed}`);
         });
     });
 });
@@ -111,8 +121,14 @@ describe('Unused ingredients', () => {
             }
             for (const id of Object.keys(recipe.ingredients)) {
                 // first, replace ingredients with specific amounts, if there are any
-                let regex = `{${id}(:.*)*}`;
-                assert.match(preparation, new RegExp(regex, 'g'), `"${id}" is unused.`);
+                let regex = new RegExp(`{${id}(:.*)*}`, 'g');
+                if (preparation.match(regex)) {
+                    continue;
+                }
+                if (recipe.garnish.match(regex)) {
+                    continue;
+                }
+                assert.ok(false, `"${id}" is unused.`);
             }
         });
     }
@@ -122,7 +138,6 @@ describe('Tag without icon', () => {
     let tags = helper.loadJSON().tags;
     tags.forEach((tag) => {
         let t = tag.tag;
-        console.log(tag);
         it(`icon for ${t} should exist`, () => {
             assert(fs.existsSync(`public/icons/${t}.svg`));
         });

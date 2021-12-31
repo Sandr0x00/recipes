@@ -63,22 +63,26 @@
         },
         "preparation": {
             "required": true,
-                "type": "array",
-                "uniqueItems": true,
-                "minItems": 1,
-                "items": {
-                    "type": "string",
-                    "required": true,
-                    "minLength": 2
-                }
+            "type": "array",
+            "uniqueItems": true,
+            "minItems": 1,
+            "items": {
+                "type": "string",
+                "required": true,
+                "minLength": 2
+            }
         },
         "garnish": {
             "type": "string",
             "required": false
         },
-        "utensils": {
-            "type": "string",
-            "required": false
+        "equipment": {
+            "type": "array",
+            "required": false,
+            "uniqueItems": true,
+            "items": {
+                "type": "string"
+            }
         },
         "link": {
             "type": "array"

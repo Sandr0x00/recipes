@@ -1,3 +1,5 @@
+/* global dialogComp */
+
 import { html } from 'lit';
 import Navigo from 'navigo';
 import { BaseComp } from './base.js';

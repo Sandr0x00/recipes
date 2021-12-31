@@ -1,0 +1,42 @@
+{
+    "name": "Ricotta Kuchen",
+    "tags": [
+        "sweet",
+        "cheese",
+        "vegi",
+        "italian"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "200g"
+        },
+        "zucker": {
+            "amount": "300g"
+        },
+        "mehl": {
+            "amount": "450g"
+        },
+        "ei": {
+            "amount": "5"
+        },
+        "backpulver": {
+            "amount": "1 TL"
+        },
+        "ricotta": {
+            "amount": "700g"
+        },
+        "frischkaese": {
+            "amount": "500g"
+        },
+        "vanilleextrakt": {},
+        "salz": {}
+    },
+    "preparation": [
+        "{butter} und {zucker:120g} glatt mixen. {ei:1}, {mehl}, {backpulver} und {salz} einkneten. Den Teig dritteln, in Plastikfolie wickeln und für zwei Stunden kühlen.",
+        "Den Teig ca. 5mm dick ausrollen und 2/3 in eine 20cm x 30cm x 5cm Backform geben. Mit einer Gabel Löcher in den Teig machen und bei 180°C für 20 - 25 Minuten backen. Danach abkühlen lassen.",
+        "{ei:4} leicht aufschlagen und mit {ricotta}, {frischkaese}, {vanilleextrakt}, {zucker:180g} mixen bis die Füllung eine glatte Masse ergibt.",
+        "Das letzte Teig-Drittel seitlich in die Backform drücken. Form füllen und bei 160°C für ca. 1 Stunde 20 Minuten backen",
+        "Den Kuchen im Ofen bei offener Tür abkühlen lassen und danach für 6 Stunden kühlen."
+    ],
+    "original": "https://www.delicious.com.au/recipes/baked-ricotta-cake-recipe/25886v1k?r=recipes/collections/77cijfrr"
+}

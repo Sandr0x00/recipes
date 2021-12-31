@@ -38,7 +38,13 @@ body {
 }
 
 h1 {
-    font-family:"Modern DOS 8x8";
+    // font-family:"Modern DOS 8x8";
+    font-family: sans-serif;
+}
+.logo {
+    height: 3rem;
+    line-height: 3rem;
+    vertical-align: middle;
 }
 h1 {
     font-size: 3rem;

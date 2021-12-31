@@ -1,0 +1,34 @@
+{
+    "name": "Blueberry Pancakes",
+    "tags": [
+        "side",
+        "vegi",
+        "vegan",
+        "sweet"
+    ],
+    "ingredients": {
+        "mehl": {
+            "amount": "200g"
+        },
+        "backpulver": {
+            "amount": "1 TL"
+        },
+        "ei": {
+            "amount": "1"
+        },
+        "milch": {
+            "amount": "300ml"
+        },
+        "butter": {},
+        "blaubeeren": {
+            "amount": "150g"
+        },
+        "salz": {}
+    },
+    "preparation": [
+        "{mehl}, {backpulver} und {salz} vermischen.",
+        "{ei} mit {milch} mixen und zu den trockenen Zutaten, geschmolzener {butter} und {blaubeeren:75g} geben.",
+        "Pancakes in {butter} anbraten"
+    ],
+    "garnish": "Sirup und {blaubeeren:75g}"
+}

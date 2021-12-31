@@ -1,0 +1,23 @@
+{
+    "name": "Gnocchi auf Erbsen",
+    "tags": [
+        "italian",
+        "main",
+        "vegi",
+        "vegan"
+    ],
+    "ingredients": {
+        "gnocchi": {},
+        "erbsen": {},
+        "knoblauchzehe": {},
+        "parmesan": {},
+        "salz-pfeffer": {},
+        "zitronensaft": {},
+        "oel-olive": {}
+    },
+    "preparation": [
+        "Gekochte {gnocchi} in {oel-olive} anbraten.",
+        "{erbsen} und {knoblauchzehe} zerkleinern und mit {zitronensaft}, {salz-pfeffer} zu den Gnocchi geben."
+    ],
+    "garnish": "{parmesan}"
+}

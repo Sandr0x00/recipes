@@ -87,7 +87,7 @@ recipe-comp {
 #ingredients {
     grid-area: 2/1;
 }
-.ingredients, .preparation {
+.ingredients, .preparation, .recipe-equipment, .recipe-tags {
     padding: 5px 10px;
 }
 .preparation-hdr, #ingredients, #ingredients-vert, .hdr, .grid-title {
@@ -189,7 +189,7 @@ recipe-comp {
 
 @media (min-width: 1930px) {
     .recipes-grid {
-        grid-template-columns: repeat(10, 1fr);
+        grid-template-columns: repeat(14, 1fr);
     }
     #dialogComp {
         grid-template-columns: 30% 40% 30%;

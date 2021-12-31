@@ -8,7 +8,7 @@ import $ from 'jquery';
 
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faLock, faLockOpen, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-import { setCookie, getCookie, dark, light } from './cookies.js';
+import { setCookie, getCookie, dark, light, isDark, isAdmin } from './cookies.js';
 
 
 export class DialogComp extends BaseComp {
@@ -31,7 +31,7 @@ export class DialogComp extends BaseComp {
     }
 
     switchTheme() {
-        if (getCookie('theme') == dark()) {
+        if (isDark()) {
             setCookie('theme', light());
             $('#theme').html(icon(faSun).html);
             $('body').removeClass(dark());
@@ -45,7 +45,7 @@ export class DialogComp extends BaseComp {
     }
 
     switchAdmin() {
-        if (getCookie('admin') == 'true') {
+        if (isAdmin()) {
             setCookie('admin', 'false');
             $('#admin').html(icon(faLock).html);
             $('.edit').addClass('hide-admin');

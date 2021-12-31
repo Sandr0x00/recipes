@@ -1,0 +1,49 @@
+{
+    "name": "Bolognese-Ragout",
+    "tags": [
+        "meat",
+        "side",
+        "ingredient",
+        "pot",
+        "italian"
+    ],
+    "ingredients": {
+        "hackfleisch-rind": {
+            "amount": "500g"
+        },
+        "oel": {
+            "amount": "100g"
+        },
+        "karotte": {
+            "amount": "2"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "knoblauchzehe": {
+            "amount": "2"
+        },
+        "tomatenmark": {
+            "amount": "2 EL"
+        },
+        "wein-rot": {
+            "amount": "200ml"
+        },
+        "tomaten-fruchtfleisch": {
+            "amount": "800g"
+        },
+        "bruehe": {
+            "amount": "200ml"
+        },
+        "zucker": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{hackfleisch-rind} in {oel} scharf anbraten.",
+        "{karotte}, {zwiebel} und {knoblauchzehe} schälen und fein würfeln und in {oel} 5-10 Minuten anschwitzen und mit {salz-pfeffer} würzen.",
+        "{tomatenmark} dazu geben 1 weitere Minute anbraten.",
+        "Mit {wein-rot} ablöschen und aufkochen, bis die Flüssigkeit verdampft ist.",
+        "{all} zusammenfügen 30 Minuten bei geschlossenem Deckel köcheln lassen."
+    ],
+    "original": "https://www.springlane.de/magazin/rezeptideen/lasagne-selber-machen/"
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Gnocchi",
+    "tags": [
+        "italian",
+        "ingredient",
+        "side",
+        "vegi",
+        "vegan"
+    ],
+    "ingredients": {
+        "mehl": {
+            "amount": "270g"
+        },
+        "kartoffel": {
+            "amount": "2"
+        },
+        "ei": {
+            "amount": "1"
+        }
+    },
+    "preparation": [
+        "{kartoffel} schälen und ca. 15 Minuten lang in Salzwasser kochen.",
+        "Stampfen und mit {mehl} und {ei} vermischen und zu einem Teig kneten.",
+        "Den Teig in würfel schneiden und in Salzwasser kochen bis die Gnocchi oben schwimmen."
+    ]
+}

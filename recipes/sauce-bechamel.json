@@ -1,0 +1,29 @@
+{
+    "name": "Béchamelsauce",
+    "tags": [
+        "vegi",
+        "ingredient",
+        "side",
+        "sauce",
+        "pot"
+    ],
+    "ingredients": {
+        "mehl": {
+            "amount": "50g"
+        },
+        "milch": {
+            "amount": "800ml"
+        },
+        "butter": {
+            "amount": "50g"
+        },
+        "muskat": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{butter} schmelzen. {mehl} bei geringer Hitze dazugeben.",
+        "Stetig mit einem Schneebesen rühren und 1-2 Minuten anschwitzen, bis eine glatte Masse entstanden ist.",
+        "{milch} unter stegigem rühren nach und nach dazu geben. Jeweils, wenn die Masse glatt und klumpenfrei gerührt ist. Sauce ca. 15 Minuten köcheln und andicken lassen. Mit {muskat}, {salz-pfeffer} abschmecken."
+    ],
+    "original": "https://www.springlane.de/magazin/rezeptideen/lasagne-selber-machen/"
+}

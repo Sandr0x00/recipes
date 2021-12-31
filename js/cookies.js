@@ -8,7 +8,7 @@ export function light() {
     return 'light';
 }
 
-$(document).ready(function () {
+$(function () {
     handleCookie();
 });
 
@@ -50,4 +50,12 @@ export function getCookie(cname) {
         }
     }
     return '';
+}
+
+export function isAdmin() {
+    return getCookie('admin') === 'true';
+}
+
+export function isDark() {
+    return getCookie('theme') === dark();
 }
