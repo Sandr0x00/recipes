@@ -33,7 +33,7 @@
         "rollup-plugin-commonjs": "^10.1.0",
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-terser": "^7.0.2",
-        "sharp": "^0.29.3"
+        "sharp": "^0.30.5"
     },
     "bugs": {
         "url": "https://github.com/Sandr0x00/recipes/issues"
