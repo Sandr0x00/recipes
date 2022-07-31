@@ -48,7 +48,7 @@ class Recipes extends BaseComp {
 
         return html`
 <div class="grid-container">
-<div class="grid-title"><h1><a href="https://sandr0.xyz"><img class="logo" src="/logo.svg"/></a> <a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
+<div class="grid-title"><h1><a href="https://sandr0.xyz"><img class="logo" src="/recipes/logo.svg"/></a> <a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
 <div class="grid-tags nowrap">${tags}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html[0])}</a></div>
 <div class="recipes-grid">
 ${data}
@@ -57,10 +57,10 @@ ${data}
 
     single(id, recipe) {
         return html`
-<a class="preview-container" @click=${() => { loadingComp.navigate(`${id}`); }}>
+<a class="preview-container" @click=${() => { loadingComp.navigate(`/${id}`); }}>
     <div class="preview-dummy"></div>
     <div class="preview-image-parent">
-        <div id="${id}" class="preview-image-child" style="background-image: url('icons/unknown.svg')" ></div>
+        <div id="${id}" class="preview-image-child" style="background-image: url('/recipes/icons/unknown.svg')" ></div>
     </div>
     <div class="preview-name">${unsafeHTML(recipe.name)}</div>
 </a>`;
@@ -96,9 +96,9 @@ ${data}
     async lazyLoadImg(){
         for (const [id, recipe] of Object.entries(this.filteredData)) {
             let element = document.getElementById(id);
-            let img = 'icons/unknown.svg';
+            let img = '/recipes/icons/unknown.svg';
             if (recipe.image) {
-                img = 'images/thumbnail_' + recipe.image;
+                img = '/recipes/images/thumbnail_' + recipe.image;
             }
             let bgImg = new Image();
             bgImg.onload = () => {
@@ -106,7 +106,7 @@ ${data}
                 element.classList.remove('blur');
             };
             bgImg.onerror = () => {
-                element.style['background-image'] = 'url("icons/unknown.svg")';
+                element.style['background-image'] = 'url("/recipes/icons/unknown.svg")';
                 element.classList.remove('blur');
             };
             bgImg.src = img;
@@ -120,13 +120,13 @@ ${data}
         } else {
             this.filter.push(tag);
         }
-        window.history.pushState('','',`/tags?${this.filter}`);
+        window.history.pushState('','',`/recipes/tags?${this.filter}`);
         this.reloadFilters();
     }
 
     clearFilter() {
         this.filter = [];
-        window.history.pushState('','','/');
+        window.history.pushState('','','/recipes/');
         this.reloadFilters();
     }
 
@@ -145,11 +145,11 @@ ${data}
                 selected = true;
             }
         }
-        return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}" title="${tagTranslator[t]}"><img src="icons/${t}.svg" /></a>`;
+        return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}" title="${tagTranslator[t]}"><img src="/recipes/icons/${t}.svg" /></a>`;
     }
 
     loadStuff() {
-        fetch('/api/all').then(response => {
+        fetch('/recipes/api/all').then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Server does not exist: ${response.status}`);
             }
@@ -206,7 +206,7 @@ ${data}
     }
 
     loadTags() {
-        fetch('/api/tags').then(response => {
+        fetch('/recipes/api/tags').then(response => {
             if (response.status === 404) {
                 return Promise.reject('Tags do not exist.');
             }

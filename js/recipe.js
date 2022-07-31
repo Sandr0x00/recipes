@@ -49,7 +49,7 @@ class Recipe extends BaseComp {
                 images = html`${images}
                     <div class="recipeImage one-image">
                         <div class="placeholderWrapper">
-                            <div class="placeholder blur" data-large='/images/${this.data.images[0]}' style="background-image: url('/images/placeholder_${this.data.images[0]}');">
+                            <div class="placeholder blur" data-large='/recipes/images/${this.data.images[0]}' style="background-image: url('/recipes/images/placeholder_${this.data.images[0]}');">
                             </div>
                         </div>
                     </div>`;
@@ -58,7 +58,7 @@ class Recipe extends BaseComp {
                     images = html`${images}
                         <div class="recipeImage two-images">
                             <div class="placeholderWrapper">
-                                <div class="placeholder blur" data-large='/images/${img}' style="background-image: url('/images/placeholder_${img}');">
+                                <div class="placeholder blur" data-large='/recipes/images/${img}' style="background-image: url('/recipes/images/placeholder_${img}');">
                                 </div>
                             </div>
                         </div>`;
@@ -94,7 +94,7 @@ class Recipe extends BaseComp {
                         // we don't display after showing the details
                         continue;
                     } else {
-                        i = html`<a @click=${() => this.loadSpecificRecipe(ingredient.link)}>${unsafeHTML(icon(faExpandAlt).html[0])}</a> <a onclick="loadingComp.navigate('${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html[0])}</a>`;
+                        i = html`<a @click=${() => this.loadSpecificRecipe(ingredient.link)}>${unsafeHTML(icon(faExpandAlt).html[0])}</a> <a onclick="loadingComp.navigate('/${ingredient.link}')">${unsafeHTML(icon(faExternalLinkAlt).html[0])}</a>`;
                     }
                 }
                 new_ingredients = html`${new_ingredients}
@@ -135,7 +135,7 @@ class Recipe extends BaseComp {
             if (this.all.length > 1) {
                 let link = html``;
                 if (this.data.id !== data.id) {
-                    link = html`<a onclick="loadingComp.navigate('${data.id}')">${unsafeHTML(icon(faExternalLinkAlt).html[0])}</a>`;
+                    link = html`<a onclick="loadingComp.navigate('/${data.id}')">${unsafeHTML(icon(faExternalLinkAlt).html[0])}</a>`;
                 }
                 preparation = html`${preparation}<div class="${clazz} ingredients"><h3 class="${data.id}" onmouseover="window.recipeComp.highlightOn('${data.id}')" onmouseout="window.recipeComp.highlightOff('${data.id}')">${unsafeHTML(data.name)} ${link}</h3><div>
                     <style>
@@ -297,7 +297,7 @@ class Recipe extends BaseComp {
             return;
         }
         for (let l of this.data['link']) {
-            fetch(`recipes/${l}.json`).then(response => {
+            fetch(`/recipes/recipes/${l}.json`).then(response => {
                 if (response.status === 404) {
                     return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
                 }
@@ -315,7 +315,7 @@ class Recipe extends BaseComp {
     }
 
     loadSpecificRecipe(recipe) {
-        fetch(`recipes/${recipe}.json`).then(response => {
+        fetch(`/recipes/recipes/${recipe}.json`).then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
             }
@@ -335,7 +335,7 @@ class Recipe extends BaseComp {
         if (!this.recipe) {
             return;
         }
-        fetch(`recipes/${this.recipe}.json`).then(response => {
+        fetch(`/recipes/recipes/${this.recipe}.json`).then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
             }

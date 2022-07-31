@@ -23,7 +23,7 @@ export class DialogErrorComp extends BaseComp {
     }
     navigate(route) {
         this.loading = true;
-        window.router.navigate(route);
+        window.router.navigate(`/recipes${route}`);
     }
 
     render() {

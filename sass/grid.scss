@@ -180,7 +180,7 @@ recipe-comp {
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .recipes-grid {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(7, 1fr);
     }
     #dialogComp {
         grid-template-columns: 20% 60% 20%;
