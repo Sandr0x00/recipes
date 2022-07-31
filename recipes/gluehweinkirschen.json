@@ -1,0 +1,36 @@
+{
+    "name": "Glühweinkirschen",
+    "portions": "5 Portionen",
+    "tags": [
+        "christmas",
+        "sweet",
+        "pot"
+    ],
+    "ingredients": {
+        "kirschen": {
+            "amount": "1 Glas (720ml)"
+        },
+        "wein-rot": {
+            "amount": "350ml"
+        },
+        "zimtstange": {
+            "amount": "1"
+        },
+        "zitrone": {
+            "amount": "Abrieb einer"
+        },
+        "orange": {
+            "amount": "Abrieb einer"
+        },
+        "staerke": {
+            "amount": "1 TL"
+        }
+    },
+    "preparation": [
+        "{kirschen} abseihen.",
+        "{wein-rot} mit {zitrone} und {orange} sowie {zimtstange} 5 Minuten köcheln lassen.",
+        "{staerke} mit den zwei Esslöffeln Rotwein glatt rühren und unter Rühren zur Weinmischung geben. Die Mischung aufkochen lassen und so lange kochen lassen, bis sie leicht angedickt ist.",
+        "Die Kirschen hinzugeben und erwärmen."
+    ],
+    "original": "https://www.kleineskulinarium.de/2018/12/zimt-panna-cotta-mit-gluehweinkirschen/"
+}

@@ -33,7 +33,7 @@
             "amount": "1/2"
         },
         "bruehe": {},
-        "cremefraiche": {
+        "creme-fraiche": {
             "amount": "75g"
         },
         "gewuerze": {
@@ -44,7 +44,7 @@
         "{kartoffel:100g}, {sellerie} schälen und wie {paprika} und {karotte} würfeln. Die grüne Seite der {lauchzwiebel} in Ringe schneiden.",
         "In {wasser} mit Salz garen. Das Gemüse abgießen und dabei das Kochwasser auffangen. Die Zwiebel und den weißen Teil der Lauchzwiebel fein schneiden.",
         "In dem Topf {butter} schmelzen und die {zwiebel} glasig dünsten. Die restlichen {kartoffel:200g} schälen und in Stücke schneiden. Zusammen mit dem aufgefangenen Kochwasser und der {bruehe} in den Topf geben. Bei geschlossenem Deckel die Kartoffeln gar kochen.",
-        "{cremefraiche}, {gewuerze} hinzugeben und pürieren.",
-        "Mit den gegarten Gemüsewürfeln und Kräutern servieren. "
-    ]
+        "{creme-fraiche}, {gewuerze} hinzugeben und pürieren."
+    ],
+    "garnish": "gegarten Gemüsewürfeln und Kräutern"
 }

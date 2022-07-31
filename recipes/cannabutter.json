@@ -1,0 +1,22 @@
+{
+    "name": "Cannabutter",
+    "tags": [
+        "weed",
+        "side",
+        "ingredient",
+        "pot"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "60g"
+        },
+        "weed": {
+            "amount": "2g"
+        }
+    },
+    "preparation": [
+        "{weed} grinden und bei 100°C 40 Minuten lang backen.",
+        "{butter} schmelzen und Gras hinzugeben. 2 Stunden lang bei niedriger Hitze köcheln lassen.",
+        "Abseihen und kühl stellen."
+    ]
+}

@@ -5,13 +5,15 @@
     ],
     "ingredients": {
         "ei": {},
-        "bacon": {},
+        "speck": {
+            "amount": "Scheiben"
+        },
         "english-muffin": {},
         "sauce-hollandaise": {}
     },
     "preparation": [
         "{ei} pochieren. Dazu in einem großen Topf Wasser zum kochen bringen. Ein Esslöffel Essig hinzufügen. Mit einem Löffel einen Strudel erzeugen. Das {ei} in ein Sieb aufschlagen und dann in die Mitte des Strudels geben. Bis zur gewünschten Festigkeit kochen lassen.",
-        "{bacon} braten. {english-muffin} toasten.",
-        "{english-muffin} mit {bacon} und dem pochierten {ei} belegen und mit {sauce-hollandaise} übergießen."
+        "{speck} braten. {english-muffin} toasten.",
+        "{english-muffin} mit {speck} und dem pochierten {ei} belegen und mit {sauce-hollandaise} übergießen."
     ]
 }

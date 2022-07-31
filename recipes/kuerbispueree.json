@@ -1,0 +1,30 @@
+{
+    "name": "Kürbis&shy;püree",
+    "tags": [
+        "main",
+        "pot",
+        "side",
+        "vegi"
+    ],
+    "ingredients": {
+        "kuerbis": {
+            "amount": "1"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "knoblauchzehe": {
+            "amount": "2"
+        },
+        "creme-fraiche": {},
+        "oel": {},
+        "wein-weiss": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{kuerbis} schälen und das Fruchtfleisch in Würfel schneiden. {zwiebel} und {knoblauchzehe} schälen, hacken und in {oel} anschwitzen.",
+        "Kürbis dazu, kurz mit angeschwitzen und mit {wein-weiss} ablöschen und ca. 15 Minuten zudecken und weiterkochen.",
+        "Sieben und die Flüssigkeit auffangen.",
+        "Das Feste mit dem Stabmixer zusammen mit {creme-fraiche}, {salz-pfeffer} pürieren und die Konsistenz mit der Kochflüssigkeit regulieren."
+    ]
+}

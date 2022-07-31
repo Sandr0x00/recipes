@@ -6,7 +6,7 @@
         "wrap"
     ],
     "ingredients": {
-        "bacon": {
+        "speck": {
             "amount": "100g"
         },
         "paprika": {
@@ -22,7 +22,7 @@
         "salz-pfeffer": {}
     },
     "preparation": [
-        "{bacon} ohne Öl anbraten. {knoblauchzehe} in Scheiben schneiden.",
+        "{speck} ohne Öl anbraten. {knoblauchzehe} in Scheiben schneiden.",
         "{paprika} und {knoblauchzehe} hinzufügen und mitkochen.",
         "{bohnen-weiss} hinzufügen und mit {salz-pfeffer} abschmecken.",
         "In {weizen-tortilla} gewickelt als Wrap servieren."

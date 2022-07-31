@@ -1,5 +1,6 @@
 {
     "name": "Dulce De Leche",
+    "headless": true,
     "tags": [
         "sweet",
         "pot"

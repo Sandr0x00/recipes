@@ -1,0 +1,33 @@
+{
+    "name": "Zimt Panna Cotta",
+    "portions": "5 Portionen",
+    "tags": [
+        "christmas",
+        "sweet",
+        "pot"
+    ],
+    "ingredients": {
+        "sahne": {
+            "amount": "550g"
+        },
+        "zucker": {
+            "amount": "50g"
+        },
+        "zimtstange": {
+            "amount": "1"
+        },
+        "zimt": {
+            "amount": "1/2 TL"
+        },
+        "gelatine": {
+            "amount": "4 Blatt"
+        }
+    },
+    "preparation": [
+        "{gelatine} in kaltem Wasser einweichen.",
+        "{sahne} mit {zucker}, {zimtstange} und {zimt} in einen Topf geben und unter Rühren erhitzen. Ein Mal aufkochen lassen und dann einige Minuten bei mittlerer Stufe ziehen lassen. Dann durch ein feines Sieb in eine Schüssel abseihen.",
+        "Gelatine ausdrücken und unter Rühren zur heißen Sahnemischung geben.",
+        "Die Panna Cotta in Förmchen geben und im Kühlschrank einige Stunden fest werden lassen."
+    ],
+    "original": "https://www.kleineskulinarium.de/2018/12/zimt-panna-cotta-mit-gluehweinkirschen/"
+}

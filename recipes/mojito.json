@@ -1,0 +1,29 @@
+{
+    "name": "Mojito",
+    "tags": [
+        "drink",
+        "longdrink"
+    ],
+    "ingredients": {
+        "rum-weiss": {
+            "amount": "5cl"
+        },
+        "wasser-sprudel": {
+            "amount": "6cl"
+        },
+        "limette": {
+            "amount": "1"
+        },
+        "zucker-braun": {
+            "amount": "2 TL"
+        },
+        "minze": {
+        }
+    },
+    "preparation": [
+        "{limette} waschen, achteln und zusammen mit {zucker-braun} und {minze} in ein Longdrinkglas geben.",
+        "Mit einem Stößel zerdrücken.",
+        "Das Glas mit Crushed Ice füllen, {rum-weiss} dazu geben und mit {wasser-sprudel} auffüllen."
+    ],
+    "garnish": "Limettenscheiben und Minzblätter"
+}

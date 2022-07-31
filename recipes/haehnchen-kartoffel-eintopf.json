@@ -20,7 +20,7 @@
         "porree": {
             "amount": "1"
         },
-        "cremefraiche": {
+        "creme-fraiche": {
             "amount": "1"
         },
         "senf-mittelscharf": {
@@ -35,6 +35,6 @@
         "{haehnchenbrustfilet} im Wok anbraten. {kartoffel} in Scheiben schneiden und zugeben.",
         "Mit {bruehe} ablöschen und ca. 15 Minuten mit geschlossenem Deckel weichkochen.",
         "{zucchini} und {porree} in Scheiben schneiden. Noch 10 Minuten mitkochen lassen.",
-        "{senf-mittelscharf}, {cremefraiche} und {salz-pfeffer} hinzufügen."
+        "{senf-mittelscharf}, {creme-fraiche} und {salz-pfeffer} hinzufügen."
     ]
 }

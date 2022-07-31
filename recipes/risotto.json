@@ -19,7 +19,7 @@
             "amount": "125g"
         },
         "erdnuesse": {},
-        "cremefraiche": {},
+        "creme-fraiche": {},
         "rucola": {},
         "parmesan": {},
         "salz-pfeffer": {}
@@ -27,6 +27,6 @@
     "preparation": [
         "{zwiebel} in {butter} anbraten. {risottoreis} und {erdnuesse} hinzufügen.",
         "{tomate} kleinschneiden und mit {bruehe} und Wasser hinzufügen.",
-        "{parmesan}, {cremefraiche}, {rucola} unter das Risotto rühren und mit {salz-pfeffer} abschmecken."
+        "{parmesan}, {creme-fraiche}, {rucola} unter das Risotto rühren und mit {salz-pfeffer} abschmecken."
     ]
 }

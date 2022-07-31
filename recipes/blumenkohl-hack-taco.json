@@ -1,0 +1,39 @@
+{
+    "name": "Blumenkohl-Hack-Taco",
+    "portions": "4 Tacos",
+    "tags": [
+        "main",
+        "meat",
+        "oven",
+        "pan"
+    ],
+    "ingredients": {
+        "blumenkohl": {
+            "amount": "1"
+        },
+        "kartoffel": {
+            "amount": "2"
+        },
+        "oel-olive": {
+        },
+        "currypulver": {
+        },
+        "hackfleisch-rind": {
+            "amount": "500g"
+        },
+        "tomaten-kirsch": {
+        },
+        "petersilie": {
+        },
+        "taco": {
+        },
+        "joghurt": {
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{blumenkohl} in klein schneiden. {kartoffel} würfeln. Mit {oel-olive}, {currypulver}, {salz-pfeffer} vermengen. Bei 200°C für 15 Minuten rösten.",
+        "{hackfleisch-rind} anbraten und mit {salz-pfeffer} würzen.",
+        "{taco} mit {all} füllen."
+    ]
+}

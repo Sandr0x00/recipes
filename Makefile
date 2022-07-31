@@ -19,6 +19,7 @@ build: build-css build-js resize recipes
 
 test:
 	npm test
+	npm outdated
 
 dist: build test
 	scripts/make_dist.py

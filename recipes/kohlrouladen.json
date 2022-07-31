@@ -1,0 +1,49 @@
+{
+    "name": "Kohlrouladen",
+    "tags": [
+        "meat",
+        "main",
+        "oven",
+        "lowcarb"
+    ],
+    "ingredients": {
+        "hackfleisch": {
+            "amount": "500g"
+        },
+        "ei": {
+            "amount": "1"
+        },
+        "semmel": {
+            "amount": "1"
+        },
+        "senf-dijon": {
+            "amount": "1 EL"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "weisskohl": {
+            "amount": "1/2"
+        },
+        "speck": {
+            "amount": "100g Würfel"
+        },
+        "bruehe": {
+            "amount": "500ml"
+        },
+        "sahne": {
+            "amount": "200ml"
+        },
+        "paprikapulver": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "Acht {weisskohl} Blätter blanchieren. In Eiswasser abschrecken und trocknen.",
+        "{semmel} schredderbn, einweichen und ausdrücken. {zwiebel} fein würfeln.",
+        "{hackfleisch}, {ei}, Semmel, {senf-dijon}, die Zwiebel, {paprikapulver}, {salz-pfeffer} in eine Schüssel geben und vermengen.",
+        "Hackfleischteig in Kohlblätter geben, zusammenrollen und mit einem Küchengarn zusammenbinden.",
+        "Die Kohlrouladen in einer hohen Pfanne mit {speck} anbraten, sodass sie Farbe bekommen. Haben die Kohlrouladen etwas Farbe angenommen, mit {bruehe} aufgießen. Zugedeckt ca. 30 Minuten schmoren lassen.",
+        "Die Rouladen herausnehmen. {sahne} zur Soße geben, etwas einkochen lassen. Mit {salz-pfeffer} abschmecken."
+    ],
+    "original": "https://www.chefkoch.de/rezepte/426431133556910/Omas-Kohlrouladen.html"
+}

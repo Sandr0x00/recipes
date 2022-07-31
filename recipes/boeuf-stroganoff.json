@@ -3,7 +3,8 @@
     "tags": [
         "meat",
         "main",
-        "russian"
+        "russian",
+        "pasta"
     ],
     "ingredients": {
         "rindfilet": {
@@ -25,6 +26,7 @@
         "{rindfilet} abwaschen und trocken tupfen. Anschließend zu Geschnetzelten schneiden. {champignons} putzen und in Scheiben schneiden. {zwiebel} würfeln.",
         "{butterschmalz} zerlassen und darin zunächst {champignons} und {zwiebel} anbraten. {champignons} und {zwiebel} aus der Pfanne nehmen.",
         "{rindfilet} in {butterschmalz} anbraten. {senf-dijon} einrühren und mit {salz-pfeffer} abschmecken und die Pilz-Zwiebelmischung wieder dazu geben.",
-        "Erhitzen, {bruehe-rind} und {sahne-sauer} unterrühren. Abschmecken und servieren. Als Beilage passen Salzkartoffeln, Püree oder Reis."
+        "Erhitzen, {bruehe-rind} und {sahne-sauer} unterrühren. Abschmecken und servieren.",
+        "Als Beilage passen Salzkartoffeln, Pasta oder Reis."
     ]
 }

@@ -6,7 +6,7 @@ im = Image.open("pixelart.png")
 pix = im.load()
 width, height = im.size
 
-sz = 18
+SZ = 18
 
 minx = 2
 miny = 1
@@ -67,15 +67,23 @@ image_names = [
     "vegi",
     "sirup",
     "auflauf",
-    "ferment"
+    "ferment",
+    "wheat",
+    "blender",
+    "pasta-machine",
+    "lowcarb",
+    "salad",
+    "weed"
+
 ]
+
 images = []
 import numpy as np
 
 def check_x_dir(pix, x, y):
     p = pix[x, y]
     xi = 1
-    for xi in range(1, sz - x):
+    for xi in range(1, SZ - x):
         pi = pix[x + xi, y]
         if pi != p:
             break
@@ -84,7 +92,7 @@ def check_x_dir(pix, x, y):
 def check_y_dir(pix, x, y):
     p = pix[x, y]
     yi = 1
-    for yi in range(1, sz - y):
+    for yi in range(1, SZ - y):
         pi = pix[x, y + yi]
         if pi != p:
             break
@@ -93,13 +101,13 @@ def check_y_dir(pix, x, y):
 
 def create_svg(im):
     pix = im.load()
-    matrix = np.zeros((sz, sz), dtype=int)
+    matrix = np.zeros((SZ, SZ), dtype=int)
 
     svg = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" shape-rendering="crispEdges">'
 
     colors = {}
-    for y in range(sz):
-        for x in range(sz):
+    for y in range(SZ):
+        for x in range(SZ):
             # skip already visited
             if matrix[x, y] == 1:
                 continue
@@ -163,6 +171,10 @@ def create_svg(im):
     return svg
 
 def find_image(startx, starty):
+    if startx + 17 >= width:
+        return False
+    if starty + 17 >= height:
+        return False
     for x in range(16):
         if pix[startx + x, starty] != (0,0,0,255):
             return False
@@ -189,11 +201,11 @@ for y in range(height):
 
 # print(images)
 
-if len(image_names) != len(images):
-    print(f"Length should be equal: Names {len(image_names)} - {len(images)} Image")
+if len(image_names) > len(images):
+    print(f"There should be more images ({len(images)}) than names ({len(image_names)})")
     exit()
 
-for i in range(len(images)):
+for i in range(len(image_names)):
     svg = create_svg(images[i])
     with open(f"public/icons/{image_names[i]}.svg", "w+") as f:
         f.write(svg)

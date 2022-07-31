@@ -6,6 +6,7 @@ import tagTranslator from './tags.js';
 import { BaseComp } from './base.js';
 import { icon } from '@fortawesome/fontawesome-svg-core';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
+import { isAdmin } from './cookies.js';
 
 class Recipes extends BaseComp {
 
@@ -56,11 +57,13 @@ ${data}
 
     single(id, recipe) {
         return html`
-<figure class="recipeLinkDiv">
-  <a id="${id}" style="background-image: url('icons/unknown.svg')" class="recipeLink" @click=${() => { loadingComp.navigate(`${id}`); }}>
-    <figcaption class="text-center">${unsafeHTML(recipe.name)}</figcaption>
-  </a>
-</figure>`;
+<a class="preview-container" @click=${() => { loadingComp.navigate(`${id}`); }}>
+    <div class="preview-dummy"></div>
+    <div class="preview-image-parent">
+        <div id="${id}" class="preview-image-child" style="background-image: url('icons/unknown.svg')" ></div>
+    </div>
+    <div class="preview-name">${unsafeHTML(recipe.name)}</div>
+</a>`;
     }
 
     updated(changedProperties) {
@@ -129,6 +132,9 @@ ${data}
 
     singleTag(tag) {
         let t = tag.tag;
+        if (!isAdmin() && t == 'weed') {
+            return html``;
+        }
         // let c = tag.cnt;
         // if (c < 5) {
         //     return html``;
@@ -142,11 +148,10 @@ ${data}
         return html`<a class="tags ${selected ? 'selected' : ''}" @click=${() => this.setFilter(t)} id="tag_${t}" title="${tagTranslator[t]}"><img src="icons/${t}.svg" /></a>`;
     }
 
-    // TODO: merge all and tags
     loadStuff() {
         fetch('/api/all').then(response => {
             if (response.status === 404) {
-                return Promise.reject(`Tag "${this.load}" does not exist, choose a tag from above.`);
+                return Promise.reject(`Server does not exist: ${response.status}`);
             }
             return response;
         }).then(response => response.json()
@@ -161,12 +166,32 @@ ${data}
     }
 
     reloadFilters() {
+        this.filteredData = {};
         if (this.filter.length == 0) {
-            this.filteredData = this.data;
+            if (!isAdmin()) {
+                for (const [id, recipe] of Object.entries(this.data)) {
+                    if (recipe.tags.includes('weed')) {
+                        continue;
+                    }
+                    if (!recipe.image) {
+                        continue;
+                    }
+                    this.filteredData[id] = recipe;
+                }
+            } else {
+                this.filteredData = this.data;
+            }
             return;
         }
-        this.filteredData = {};
         for (const [id, recipe] of Object.entries(this.data)) {
+            if (!isAdmin()) {
+                if (recipe.tags.includes('weed')) {
+                    continue;
+                }
+                if (!recipe.image) {
+                    continue;
+                }
+            }
             let matches = true;
             this.filter.forEach(f => {
                 if (!recipe.tags.includes(f)) {
@@ -180,18 +205,16 @@ ${data}
         }
     }
 
-    // TODO: merge all and tags
     loadTags() {
         fetch('/api/tags').then(response => {
             if (response.status === 404) {
-                return Promise.reject(null);
+                return Promise.reject('Tags do not exist.');
             }
             return response;
         }).then(response => response.json()
         ).then(data => {
             this.tags = data;
         }).catch(err => {
-            console.log(err);
             if (err) {
                 dialogComp.show(err);
             }

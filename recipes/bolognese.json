@@ -11,9 +11,7 @@
         "hackfleisch-rind": {
             "amount": "500g"
         },
-        "oel": {
-            "amount": "100g"
-        },
+        "oel": {},
         "karotte": {
             "amount": "2"
         },

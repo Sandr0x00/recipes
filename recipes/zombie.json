@@ -1,0 +1,31 @@
+{
+    "name": "Zombie",
+    "tags": [
+        "drink",
+        "alcohol",
+        "hurricane",
+        "vegan",
+        "vegi"
+    ],
+    "ingredients": {
+        "rum-braun": {
+            "amount": "3cl"
+        },
+        "rum-weiss": {
+            "amount": "3cl"
+        },
+        "limettensaft": {
+            "amount": "6cl"
+        },
+        "ananassaft": {
+            "amount": "15cl"
+        },
+        "sirup-grenadine": {
+            "amount": "1 TL"
+        }
+    },
+    "preparation": [
+        "{rum-braun}, {rum-weiss}, {limettensaft}, {ananassaft} mit Eis shaken. Ins Glas abseihen. {sirup-grenadine} langsam hinzufügen."
+    ],
+    "garnish": "Orangenspalte, Cocktailkirsche und/oder Minzblättern"
+}

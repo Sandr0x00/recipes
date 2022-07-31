@@ -7,7 +7,7 @@
         "pan"
     ],
     "ingredients": {
-        "nudeln": {},
+        "pasta": {},
         "ei": {
             "amount": "2"
         },
@@ -18,8 +18,8 @@
         "pfeffer": {}
     },
     "preparation": [
-        "{nudeln} kochen. {pancetta} in der Pfanne anbraten.",
+        "{pasta} kochen. {pancetta} in der Pfanne anbraten.",
         "{ei} mit {parmesan} und {pfeffer} verrühren.",
-        "{nudeln} zu {pancetta} geben. Von der Hitze nehmen und Ei-Gemisch hinzufügen und verrühren bis die Konsistenz passt."
+        "{pasta} zu {pancetta} geben. Von der Hitze nehmen und Ei-Gemisch hinzufügen und verrühren bis die Konsistenz passt."
     ]
 }

@@ -2,7 +2,8 @@
     "name": "Mr. Brown",
     "tags": [
         "drink",
-        "longdrink"
+        "longdrink",
+        "blender"
     ],
     "ingredients": {
         "banane": {

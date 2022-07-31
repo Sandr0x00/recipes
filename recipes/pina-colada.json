@@ -3,7 +3,8 @@
     "tags": [
         "drink",
         "alcohol",
-        "hurricane"
+        "hurricane",
+        "blender"
     ],
     "ingredients": {
         "rum-weiss": {
@@ -20,7 +21,7 @@
         }
     },
     "preparation": [
-        "{rum-weiss}, {ananassaft}, {kokosmilch} und {ananas} mit 3 bis 4 Eiswürfeln mixen.",
+        "{ananassaft}, {rum-weiss}, {kokosmilch} und {ananas} mit 3 bis 4 Eiswürfeln mixen.",
         "Ins Glas geben."
     ],
     "garnish": "Ananasscheibe"

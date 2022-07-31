@@ -1,0 +1,47 @@
+{
+    "name": "Kohl Lasagne",
+    "tags": [
+        "meat",
+        "main",
+        "oven",
+        "lowcarb"
+    ],
+    "ingredients": {
+        "hackfleisch-rind": {
+            "amount": "500g"
+        },
+        "weisskohl": {
+            "amount": "1/2"
+        },
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "zwiebel": {
+            "amount": "1"
+        },
+        "tomaten-passiert": {
+            "amount": "250g"
+        },
+        "ei": {
+            "amount": "1"
+        },
+        "mandelmehl": {
+            "amount": "2 EL"
+        },
+        "senf-dijon": {
+            "amount": "2 TL"
+        },
+        "speck": {
+            "amount": "6 Scheiben"
+        },
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "Blätter vom {weisskohl} in Salzwasser 4-5 Minuten blanchieren, dann abtropfen lassen.",
+        "{zwiebel} und {knoblauchzehe} fein würfeln und mit {hackfleisch-rind}, {mandelmehl}, {senf-dijon} und {ei} verkneten. Mit {salz-pfeffer} würzen.",
+        "{tomaten-passiert} mit {salz-pfeffer} abschmecken.",
+        "Abwechselnd Kohl, Tomaten und Hack in eine Auflaufform schichten. Mit Kohl abschließen und mit {speck} belegen.",
+        "Mit Alufolie abgedecken und für ca. 75 Minuten bei 150°C backen."
+    ],
+    "original": "https://paleolifestyle.de/rezept/weisskohl-hack-auflauf/"
+}

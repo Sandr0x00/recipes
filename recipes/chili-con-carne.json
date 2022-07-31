@@ -30,11 +30,11 @@
         "baguette": {
             "amount": "1"
         },
-        "cremefraiche": {}
+        "creme-fraiche": {}
     },
     "preparation": [
         "{zwiebel} glasig braten. {hackfleisch} und {gewuerze} hinzufügen.",
         "{chili}, {tomaten-passiert}, {kidneybohnen} und {mais} hinzufügen und einkochen.",
-        "Mit {baguette} und {cremefraiche} servieren."
+        "Mit {baguette} und {creme-fraiche} servieren."
     ]
 }

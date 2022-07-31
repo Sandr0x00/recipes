@@ -2,7 +2,8 @@
     "name": "Kiwi Joghurt Drink",
     "tags": [
         "drink",
-        "longdrink"
+        "longdrink",
+        "blender"
     ],
     "ingredients": {
         "joghurt": {

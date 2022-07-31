@@ -127,7 +127,7 @@ describe('Unused ingredients', () => {
                 if (preparation.match(regex)) {
                     continue;
                 }
-                if (recipe.garnish.match(regex)) {
+                if (recipe.garnish && recipe.garnish.match(regex)) {
                     continue;
                 }
                 assert.ok(false, `"${id}" is unused.`);

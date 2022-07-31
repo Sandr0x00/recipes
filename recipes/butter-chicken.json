@@ -1,0 +1,19 @@
+{
+    "name": "Butter Chicken",
+    "tags": [
+        "main",
+        "meat",
+        "pot"
+    ],
+    "ingredients": {
+        "butter": {
+            "amount": "250g"
+        }
+    },
+    "preparation": [
+        "{butter} würfeln und auf kleinster Stufe langsam schmelzen und köcheln lassen (die Butter darf nicht zu hoch erhitzt werden).",
+        "Mit der Zeit setzt sich das Eiweis unten ab und das Wasser verdampft.",
+        "Den Schaum, der sich oben bildet abschöpfen. Sobald das komplette Wasser verdampft ist und sich das komplette Eiweis am Topfboden abgesetzt hat, die geklärte Butter durch ein Tuch sieben.",
+        "Im Kühlschrank bis zu einem Jahr haltbar."
+    ]
+}

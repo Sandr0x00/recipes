@@ -14,6 +14,7 @@
 .grid-tags {
     grid-area: tags;
     position: relative;
+    margin-bottom: 10px;
 }
 
 .recipes-grid {
@@ -21,11 +22,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 100%;
-}
-
-.recipes-grid > figure {
-    background-color: rgba(255, 255, 255, 0.8);
-    text-align: center;
+    grid-gap: 10px;
 }
 
 .ingredients-hdr {
@@ -44,13 +41,17 @@
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-area: images;
+    grid-gap: 10px;
 }
-.recipe-tags {
-    grid-area: 99/1;
+.recipe-footer {
+    grid-area: 100/1;
 }
-.recipe-equipment {
-    grid-area: 101/1;
+.recipe-equipment, .recipe-tags {
+    display: inline-block;
 }
+// .recipe-equipment {
+//     grid-area: 101/1;
+// }
 .credits {
     grid-area: 101/1;
 }
@@ -70,6 +71,8 @@ recipe-comp {
 
 .two-images, .one-image {
     grid-column: span 4;
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .grid-recipe .placeholder {
@@ -119,7 +122,7 @@ recipe-comp {
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .recipes-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
     }
     .two-images {
         grid-column: span 2;
@@ -130,11 +133,8 @@ recipe-comp {
     .grid-recipe .placeholder {
         height: 350px;
     }
-    .recipe-tags {
+    .recipe-footer {
         grid-area: 100/1/100/3;
-    }
-    .recipe-equipment {
-        grid-area: 99/1/99/3;
     }
     .credits {
         grid-area: 100/4;
@@ -149,7 +149,7 @@ recipe-comp {
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .recipes-grid {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: repeat(4, 1fr);
     }
     .grid-recipe {
         grid-template-areas:
@@ -173,14 +173,14 @@ recipe-comp {
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .recipes-grid {
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .recipes-grid {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(6, 1fr);
     }
     #dialogComp {
         grid-template-columns: 20% 60% 20%;
@@ -189,7 +189,16 @@ recipe-comp {
 
 @media (min-width: 1930px) {
     .recipes-grid {
-        grid-template-columns: repeat(14, 1fr);
+        grid-template-columns: repeat(8, 1fr);
+    }
+    #dialogComp {
+        grid-template-columns: 30% 40% 30%;
+    }
+}
+
+@media (min-width: 2170px) {
+    .recipes-grid {
+        grid-template-columns: repeat(12, 1fr);
     }
     #dialogComp {
         grid-template-columns: 30% 40% 30%;
@@ -198,7 +207,7 @@ recipe-comp {
 
 @media (min-width: 3840px) {
     .recipes-grid {
-        grid-template-columns: repeat(18, 1fr);
+        grid-template-columns: repeat(16, 1fr);
     }
     #dialogComp {
         grid-template-columns: 40% 20% 40%;

@@ -1,14 +1,14 @@
-$highlight-light: #841d22;
+$highlight-light: #222222;
 $background-light: #eeeeee;
-$color-light: #222222;
+$color-light: $highlight-light;
 $highlight-bg-light: #ffd562;
-$ligth-border: #841d22;
+$ligth-border: $highlight-light;
 
-$highlight-dark: #fff2a9;
+$highlight-dark: #dddddd;
 $background-dark: #222222;
-$color-dark: #dddddd;
+$color-dark: $highlight-dark;
 $highlight-bg-dark: #841d22;
-$dark-border: #fff2a9;
+$dark-border: $highlight-dark;
 
 .light {
     color: $color-light;
@@ -58,12 +58,17 @@ span.type {
     }
 }
 
+// .preview-container {
+//     background-color: rgba(255, 255, 255, 0.8);
+// }
+// .preview-container, .tags {
+// }
 .tags {
+    border-radius: 5px;
+    border: 2px solid;
     display: inline-block;
     padding: 2px 4px;
     margin: 2px;
-    border-radius: 5px;
-    border: 2px solid;
 }
 .tags:hover {
     text-decoration: none;

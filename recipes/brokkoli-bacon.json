@@ -1,0 +1,34 @@
+{
+    "name": "Brokkoli & Speck Pfanne",
+    "tags": [
+        "meat",
+        "main",
+        "pan",
+        "pasta"
+    ],
+    "portions": "3",
+    "ingredients": {
+        "speck": {
+            "amount": "300g"
+        },
+        "brokkoli": {
+            "amount": "1"
+        },
+        "knoblauchzehe": {
+        },
+        "zwiebel": {
+        },
+        "sahne": {
+        },
+        "kaese": {
+        },
+        "salz-pfeffer": {
+        }
+    },
+    "preparation": [
+        "{speck} würfeln und anbraten.",
+        "Speck abtropfen lassen. {zwiebel} würfeln, {knoblauchzehe} klein schneiden und in restlichem Fett anbraten. {brokkoli} klein schneiden und mit anbraten.",
+        "{sahne} hinzugeben, mit {salz-pfeffer} abschmecken und mit {kaese} überbacken.",
+        "Passend als Soße zu Nudeln."
+    ]
+}

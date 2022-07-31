@@ -7,7 +7,7 @@
         "side",
         "vegi"
     ],
-    "portions": "6",
+    "portions": "6 Schüssel",
     "ingredients": {
         "kuerbis": {
             "amount": "1"
@@ -37,5 +37,5 @@
         "{bruehe} und {sahne} hinzu gießen und zugedeckt bei schwacher Hitze ca. 25 Minuten köcheln lassen.",
         "Pürieren und mit {muskat}, {salz-pfeffer} abschmecken."
     ],
-    "garnish": "Ein Klecks Crème fraîche, Kürbiskernöl, frische Kräuter oder geröstete Kürbiskerne"
+    "garnish": "Crème fraîche, Kürbiskernöl oder Kürbiskernen"
 }

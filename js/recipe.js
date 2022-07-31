@@ -6,7 +6,7 @@ import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
 import $ from 'jquery';
 import { icon } from '@fortawesome/fontawesome-svg-core';
-import { faExternalLinkAlt, faBars, faExpandAlt } from '@fortawesome/free-solid-svg-icons';
+import { faExternalLinkAlt, faBars, faExpandAlt, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { faEdit } from '@fortawesome/free-regular-svg-icons';
 import { formatPreparationStep } from '../shared.js';
 import { isAdmin } from './cookies.js';
@@ -199,15 +199,14 @@ class Recipe extends BaseComp {
             tags = html`<div class="recipe-tags"><h2>Tags</h2>${tags}</div>`;
         }
 
-
         dialogComp.close();
         loadingComp.close();
 
-        document.title = `${unsafeHTML(this.data.name)} | sandr0s Rezepte`;
+        document.title = `${this.data.name.replace('&shy;', '')} | sandr0s Rezepte`;
 
         return html`
             <div class="hdr">
-            <h1><a id="mainLink" onclick="loadingComp.navigate('/')">${unsafeHTML(this.data.name)}</a></h1>
+            <h1><a id="mainLink" onclick="loadingComp.navigate('/')">${unsafeHTML(icon(faArrowLeft).html[0])} ${unsafeHTML(this.data.name)}</a></h1>
             </div>
             <div class="grid-recipe" id="recipe">
                 ${images}
@@ -228,8 +227,10 @@ class Recipe extends BaseComp {
                 }
                 </style>
                 ${preparation}
+                <div class="recipe-footer">
                 ${equipment}
                 ${tags}
+                </div>
             </div>`;
     }
 

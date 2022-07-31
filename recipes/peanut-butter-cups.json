@@ -1,0 +1,30 @@
+{
+    "name": "Peanut Budder Cups",
+    "tags": [
+        "weed",
+        "sweet",
+        "pot"
+    ],
+    "ingredients": {
+        "cannabutter": {
+            "amount": "60g"
+        },
+        "puderzucker": {
+            "amount": "25g"
+        },
+        "schokiz": {
+            "amount": "100g"
+        },
+        "schokim": {
+            "amount": "100g"
+        },
+        "erdnussbutter": {
+            "amount": "375g"
+        }
+    },
+    "preparation": [
+        "{erdnussbutter} mit {puderzucker} vermischen.",
+        "{schokiz:50g}, {schokim:50g} im Wasserbad schmelzen. {cannabutter:30g} hinzufügen. Canna-Schokolade in Cupcake-Formen geben. Kühlstellen.",
+        "Mit Erdnussbutter füllen. Die zweite Hälfte der {schokiz:50g}, {schokim:50g} im Wasserbad schmelzen. {cannabutter:30g} hinzufügen. Über die Erdnussbutter geben."
+    ]
+}

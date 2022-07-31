@@ -119,7 +119,7 @@ function handleIngredients(recipes, tags) {
 }
 
 const equipment = [
-    'pan', 'longdrink', 'bbq', 'pot', 'wineglas', 'wok', 'old-fashioned', 'oven'
+    'pan', 'longdrink', 'bbq', 'pot', 'wineglas', 'wok', 'old-fashioned', 'oven', 'blender'
 ];
 
 function readFilesInFolder(folder) {

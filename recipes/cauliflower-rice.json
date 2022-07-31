@@ -1,0 +1,42 @@
+{
+    "name": "Blumenkohl Reis",
+    "tags": [
+        "main",
+        "vegi",
+        "lowcarb",
+        "vegan"
+    ],
+    "ingredients": {
+        "blumenkohl": {
+            "amount": "1/2"
+        },
+        "ei": {
+            "amount": "2"
+        },
+        "sesamoel": {},
+        "sauce-soja": {},
+        "ingwer": {},
+        "knoblauchzehe": {},
+        "brokkoli": {
+            "amount": "1/2"
+        },
+        "sesam": {},
+        "lauchzwiebel": {},
+        "karotte": {
+            "amount": "2"
+        },
+        "erbsen": {},
+        "oel": {},
+        "zwiebel": {},
+        "salz-pfeffer": {}
+    },
+    "preparation": [
+        "{blumenkohl} bis zur Reis-Konsistenz klein mixen.",
+        "{sauce-soja}, {sesamoel}, {ingwer} in einer Schüssel zusammenfügen.",
+        "{ei} in {oel} anbraten. Zur Seite stellen.",
+        "{knoblauchzehe} und {zwiebel} in {oel} anbraten. {brokkoli}, {karotte}, und {erbsen} hinzufügen und unter ständigem Rühren anbraten.",
+        "Blumenkohl, Eier, {lauchzwiebel} und die Saucen hinzufügen. Unter ständigem Rühren anbraten und mit {salz-pfeffer} abschmecken."
+    ],
+    "garnish": "{sesam}",
+    "original": "https://damndelicious.net/2016/03/30/10-minute-healthy-cauliflower-rice/"
+}
