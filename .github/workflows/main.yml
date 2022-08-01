@@ -38,4 +38,14 @@ jobs:
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install
-      - run: make dist
+      - run: make outdated
+      - run: make clean
+      - run: make setup
+      - run: make icons
+      - run: make build-css
+      - run: make build-js
+      - run: make resize
+      - run: make recipes
+      - run: make test
+      - run: scripts/make_dist.py
+
