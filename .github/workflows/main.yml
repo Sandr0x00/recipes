@@ -34,7 +34,7 @@ jobs:
       # install
       - uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: install -g sass
+          cmd: global add sass
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install
