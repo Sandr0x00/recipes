@@ -46,7 +46,7 @@ kill:
 	@ps -ef | grep "[n]ode server.js"
 
 nohup:
-	@nohup node server.js 2>&1 &
+	@nohup yarn node server.js 2>&1 &
 	@printf ""
 	@tail -n 1 nohup.out
 	@printf "\n"
