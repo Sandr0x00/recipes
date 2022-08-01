@@ -34,11 +34,11 @@ jobs:
 
       # install
       - run: pip install -r requirements.txt
+      - run: npm cache clean --force
       - run: npm install -g sass
       - uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: install
-      - run: npm install --platform=linux --arch=x64 sharp
+          cmd: install --verbose
       - run: make outdated
       - run: make clean
       - run: make setup
