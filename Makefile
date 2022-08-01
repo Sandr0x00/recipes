@@ -10,7 +10,7 @@ build-css:
 	sass sass:public/css -s compressed
 
 build-js:
-	npm run compile
+	yarn rollup -c
 
 resize:
 	node scripts/resize.js
@@ -26,10 +26,13 @@ build: outdated clean setup icons build-css build-js resize recipes
 outdated:
 	yarn npm audit
 
-test:
-	yarn test
+lint:
+	yarn eslint js
 
-dist: build test
+test:
+	yarn mocha
+
+dist: lint build test
 	scripts/make_dist.py
 
 serve:
