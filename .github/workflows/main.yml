@@ -48,4 +48,8 @@ jobs:
       - run: make recipes
       # - run: make test
       - run: scripts/make_dist.py
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist/
 
