@@ -34,9 +34,7 @@ jobs:
 
       # install
       - run: pip install -r requirements.txt
-      - uses: borales/actions-yarn@v3.0.0
-        with:
-          cmd: global add sass
+      - run: npm install -g sass
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install
