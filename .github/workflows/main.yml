@@ -37,7 +37,7 @@ jobs:
       - run: npm cache clean --force
       - run: npm install -g sass
       - run: yarn install
-      - run: yarn rebuild --verbose --platform=linux --arch=x64 --libc=glibc sharp
+      - run: YARN_ENABLE_INLINE_BUILDS=true yarn rebuild sharp
       - run: make outdated
       - run: make clean
       - run: make setup
