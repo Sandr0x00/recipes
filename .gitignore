@@ -12,4 +12,6 @@ public/images/
 public/recipes/
 public/css/
 public/index.js*
-.yarn/
+.yarn/*
+!.yarn/releases/
+!.yarn/plugins/
