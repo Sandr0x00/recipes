@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from PIL import Image
+import numpy as np
 
 im = Image.open("pixelart.png")
 pix = im.load()
@@ -78,7 +79,6 @@ image_names = [
 ]
 
 images = []
-import numpy as np
 
 def check_x_dir(pix, x, y):
     p = pix[x, y]
