@@ -36,10 +36,10 @@ jobs:
       - run: pip install -r requirements.txt
       - run: npm cache clean --force
       - run: npm install -g sass
+      - run: npm install --platform=linux --arch=x64 --libc=glibc sharp
       - uses: borales/actions-yarn@v3.0.0
         with:
           cmd: install --verbose
-      - run: npm rebuild --platform=linux --arch=x64 --libc=glibc sharp
       - run: make outdated
       - run: make clean
       - run: make setup
