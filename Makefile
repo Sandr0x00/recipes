@@ -24,7 +24,7 @@ icons:
 build: outdated clean setup icons build-css build-js resize recipes
 
 outdated:
-	yarn outdated
+	yarn npm audit
 
 test:
 	yarn test

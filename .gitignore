@@ -12,3 +12,4 @@ public/images/
 public/recipes/
 public/css/
 public/index.js*
+.yarn/
