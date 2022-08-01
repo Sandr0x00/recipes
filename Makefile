@@ -21,11 +21,13 @@ recipes:
 icons:
 	./scripts/pixelparser.py
 
-build: clean setup icons build-css build-js resize recipes
+build: outdated clean setup icons build-css build-js resize recipes
+
+outdated:
+	yarn outdated
 
 test:
-	npm test
-	npm outdated
+	yarn test
 
 dist: build test
 	scripts/make_dist.py
