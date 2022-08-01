@@ -27,7 +27,7 @@ app.locals.cache = false;
 const DEV = process.env.DEV != null;
 const router = express.Router();
 
-app.use('/recipes', express.static('public', {
+app.use((DEV ? '/recipes' : '/'), express.static('public', {
     setHeaders: (res) => setHeaders(res)
 }));
 if (DEV) {
