@@ -13,10 +13,10 @@ build-js:
 	yarn rollup -c
 
 resize:
-	node scripts/resize.js
+	yarn node scripts/resize.js
 
 recipes:
-	node scripts/preprocess.js
+	yarn node scripts/preprocess.js
 
 icons:
 	./scripts/pixelparser.py
@@ -36,10 +36,10 @@ dist: lint build test
 	scripts/make_dist.py
 
 serve:
-	sass sass:public/css -s compressed --watch& node server.js
+	sass sass:public/css -s compressed --watch& yarn node server.js
 
 start:
-	node server.js
+	yarn node server.js
 
 kill:
 	@kill $(ps -ef | grep "[n]ode server.js" | awk '{print $2}')
