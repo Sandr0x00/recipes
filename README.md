@@ -1,43 +1,26 @@
 # Recipes
 
-[![Build Status](https://travis-ci.com/Sandr0x00/recipes.svg?branch=master)](https://travis-ci.com/Sandr0x00/recipes)
-
 ## What is this
 
 Just a small website based recipe collection for me.
 
 ## How does it look
 
-Check out the live version at [https://sandr0.tk/recipes/](https://sandr0.tk/recipes/)
+Check out the live version at [https://sandr0.xyz/recipes/](https://sandr0.xyz/recipes/)
 
 ## How can I use it
 
 Clone/fork this rep.
 
-Create `config.json` next to `server.js`:
-
-```json
-{
-  "port": 8082
-}
-```
-
 Run:
 
 ```bash
-npm install
-npm run build
-npm run start
+yarn install
+make build
+make start
 ```
 
-Deploy (still manually):
-
-```bash
-npm run dist
-# copy contents of dist directory to your server
-npm install --production
-./server
-```
+Or download the artifact from [GitHub](https://github.com/Sandr0x00/recipes/actions).
 
 ## How can I add recipes
 
