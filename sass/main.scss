@@ -19,14 +19,6 @@
     animation-timing-function: $timing;
 }
 
-/* @font-face kit by Fonts2u (https://fonts2u.com) */
-@font-face {
-    font-family:"Modern DOS 8x8";
-    src:url("../font/ModernDOS8x8.eot?") format("eot"),url("../font/ModernDOS8x8.woff") format("woff"),url("../font/ModernDOS8x8.ttf") format("truetype"),url("../font/ModernDOS8x8.svg#ModernDOS8x8") format("svg");
-    font-weight:normal;
-    font-style:normal;
-}
-
 html {
     overflow-y:scroll;
 }
@@ -38,7 +30,6 @@ body {
 }
 
 h1 {
-    // font-family:"Modern DOS 8x8";
     font-family: sans-serif;
 }
 .logo {

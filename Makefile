@@ -1,5 +1,11 @@
 .PHONY: build-css build-js build resize dist test recipes
 
+setup:
+	mkdir -p public/css
+	mkdir -p public/icons
+	mkdir -p public/images
+	mkdir -p public/recipes
+
 build-css:
 	sass sass:public/css -s compressed
 
@@ -15,7 +21,7 @@ recipes:
 icons:
 	./scripts/pixelparser.py
 
-build: build-css build-js resize recipes
+build: clean setup icons build-css build-js resize recipes
 
 test:
 	npm test
@@ -31,15 +37,22 @@ start:
 	node server.js
 
 kill:
-	@kill `cat pid`
+	@kill $(ps -ef | grep "[n]ode server.js" | awk '{print $2}')
 	@ps -ef | grep "[n]ode server.js"
 
 nohup:
 	@nohup node server.js 2>&1 &
 	@printf ""
-	@tail -n 2 nohup.out
-	@cat pid
+	@tail -n 1 nohup.out
 	@printf "\n"
+	@ps -ef | grep "[n]ode server.js"
 
 status:
 	ps -ef | grep "[n]ode server.js"
+
+clean:
+	rm -rf public/css
+	rm -rf public/images
+	rm -rf public/icons
+	rm -rf public/recipes
+	rm -f public/index.js*

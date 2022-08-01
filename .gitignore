@@ -6,3 +6,9 @@ config.json
 pid
 tmp/
 scripts/deploy.sh
+public/css/
+public/icons/
+public/images/
+public/recipes/
+public/css/
+public/index.js*
