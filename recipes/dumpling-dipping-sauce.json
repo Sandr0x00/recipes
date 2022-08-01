@@ -1,0 +1,25 @@
+{
+    "name": "Dumpling Dipping Sauce",
+    "headless": true,
+    "tags": [
+        "side",
+        "asian",
+        "vegi",
+        "sauce"
+    ],
+    "ingredients": {
+        "essig-reis": {
+            "amount": "60g"
+        },
+        "sauce-soja": {
+            "amount": "60g"
+        },
+        "sesamoel": {
+        },
+        "chili": {
+        }
+    },
+    "preparation": [
+        "{all} kombinieren."
+    ]
+}

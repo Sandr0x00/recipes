@@ -1,0 +1,40 @@
+{
+    "name": "Leberknödelsuppe",
+    "tags": [
+        "soup",
+        "meat",
+        "main"
+    ],
+    "ingredients": {
+        "leber": {
+            "amount": "120g"
+        },
+        "wasser": {},
+        "knoblauchzehe": {
+            "amount": "1"
+        },
+        "semmel": {
+            "amount": "2"
+        },
+        "semmelbroesel": {
+            "amount": "50g"
+        },
+        "ei": {
+            "amount": "1"
+        },
+        "zwiebel": {
+            "amount": "1/2"
+        },
+        "salz-pfeffer": {},
+        "petersilie": {},
+        "majoran": {},
+        "butter": {}
+    },
+    "preparation": [
+        "{leber} durch einen Fleischwolf drehen.",
+        "{semmel} in {wasser} einweichen und anschließend gut ausdrücken. {zwiebel} in sehr feine Würfel schneiden. {knoblauchzehe} pressen und {petersilie} fein hacken.",
+        "{zwiebel}, {knoblauchzehe}, {petersilie} und {majoran} in {butter} anschwitzen. Anschließend alles erkalten lassen.",
+        "Semmel, Leber, Zwiebelgemisch, {ei}, {semmelbroesel}, {salz-pfeffer} gut verrühren und für 5 Minuten rasten lassen.",
+        "Mit feuchten Händen Leberknödel formen und in die kochende Suppe geben und für 20-25 Minuten bei kleiner Flamme darin ziehen lassen."
+    ]
+}

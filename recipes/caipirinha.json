@@ -1,0 +1,27 @@
+{
+    "name": "Caipirinha",
+    "tags": [
+        "drink",
+        "sweet",
+        "vegi",
+        "longdrink"
+    ],
+    "ingredients": {
+        "cachaca": {
+            "amount": "6cl"
+        },
+        "limette": {
+            "amount": "1"
+        },
+        "wasser-sprudel": {
+        },
+        "zucker-braun": {
+            "amount": "2 EL"
+        }
+    },
+    "preparation": [
+        "{limette} achteln, ins Glas geben. {zucker-braun} drüber verteilen und mit einem Stößel ausdrücken.",
+        "{cachaca} dazugeben. Das Glas mit Crushed Ice auffüllen und alles gut durchrühren. Eventuell noch einen Schuss {wasser-sprudel} hinzufügen."
+    ],
+    "garnish": "Limettenscheibe"
+}

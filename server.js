@@ -7,6 +7,7 @@ const compression = require('compression');
 const fs = require('fs');
 const app = express();
 const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+const process = require('process');
 
 let port = config.port;
 if (port == null || port == '') {
@@ -23,31 +24,35 @@ json = null;
 app.locals.compileDebug = true;
 app.locals.cache = false;
 
-app.use(express.static('public', {
-    setHeaders: function(res) {
-        setHeaders(res);
-    }
+const DEV = process.env.DEV != null;
+const router = express.Router();
+
+app.use('/recipes', express.static('public', {
+    setHeaders: (res) => setHeaders(res)
 }));
+if (DEV) {
+    app.use('/recipes', router);
+}
 app.use(compression());
 
-app.get('/api/all', (req, res) => {
+(DEV ? router : app).get('/api/all', (req, res) => {
     setHeaders(res);
     res.json(general);
 });
 
-app.get('/api/tags', (req, res) => {
+(DEV ? router : app).get('/api/tags', (req, res) => {
     setHeaders(res);
     res.json(tags);
 });
 
-app.get('/favicon.ico', (req, res) => {
+(DEV ? router : app).get('/favicon.ico', (req, res) => {
     setHeaders(res);
     res.setHeader('Content-Type', 'image/png');
     let s = fs.createReadStream(`public/favicon_${Math.floor(Math.random() * 6)}.png`);
     s.pipe(res);
 });
 
-app.get('*', (req, res) => {
+(DEV ? router : app).get('*', (req, res) => {
     // use nagivo routing => always serve index.html
     res.sendFile(__dirname + '/public/index.html');
 });

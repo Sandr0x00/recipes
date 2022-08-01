@@ -1,0 +1,24 @@
+{
+    "name": "Dumpling Teig",
+    "headless": true,
+    "tags": [
+        "ingredient",
+        "pasta",
+        "asian"
+    ],
+    "ingredients": {
+        "mehl": {
+            "amount": "300g"
+        },
+        "wasser": {
+            "amount": "150g"
+        },
+        "salz": {
+        }
+    },
+    "preparation": [
+        "{salz} in kochendem {wasser} auflösen. Mit {mehl} vermischen.",
+        "Mit einer Pastamschine dünn ausrollen.",
+        "Kreise ausstechen."
+    ]
+}

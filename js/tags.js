@@ -51,6 +51,7 @@ module.exports = {
     'salad': 'Salat',
     'sauce': 'Soße',
     'soup': 'Suppe',
+    'steamer': 'Steamer',
     'stew': 'Eintopf',
     'spanish': 'Spanisch',
     'spinach': 'Spinat',

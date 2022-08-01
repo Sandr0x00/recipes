@@ -1,0 +1,30 @@
+{
+    "name": "Beeren Smoothie",
+    "tags": [
+        "drink",
+        "cream",
+        "fruity",
+        "blender"
+    ],
+    "ingredients": {
+        "banane": {
+            "amount": "1"
+        },
+        "ananassaft": {
+            "amount": "170g"
+        },
+        "heidelbeeren": {
+            "amount": "170g"
+        },
+        "himbeeren": {
+            "amount": "170g"
+        },
+        "honig": {
+            "amount": "2 TL"
+        },
+        "eiswuerfel": {}
+    },
+    "preparation": [
+        "{banane}, {ananassaft}, {heidelbeeren}, {himbeeren}, {honig} mit {eiswuerfel} mixen."
+    ]
+}

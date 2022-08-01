@@ -1,0 +1,51 @@
+{
+    "name": "Dumplings",
+    "tags": [
+        "main",
+        "side",
+        "meat",
+        "pot",
+        "asian",
+        "steamer"
+    ],
+    "ingredients": {
+        "dumpling-dough": {
+            "link": "dumpling-dough"
+        },
+        "hackfleisch": {
+            "amount": "500g"
+        },
+        "weisskohl": {
+            "amount": "3 Blätter"
+        },
+        "lauchzwiebel": {
+            "amount": "3"
+        },
+        "knoblauchzehe": {
+            "amount": "3"
+        },
+        "ingwer": {
+        },
+        "sauce-soja": {
+            "amount": "1 EL"
+        },
+        "sesamoel": {
+            "amount": "1 TL"
+        },
+        "zucker": {
+        },
+        "salz": {
+        },
+        "dumpling-dipping-sauce": {
+            "link": "dumpling-dipping-sauce"
+        }
+    },
+    "preparation": [
+        "{weisskohl} und {lauchzwiebel} klein schneiden.",
+        "{knoblauchzehe} und {ingwer} fein reiben.",
+        "{hackfleisch}, {sauce-soja}, {sesamoel}, {zucker}, {salz}, {weisskohl}, {lauchzwiebel}, {knoblauchzehe} und {ingwer} zusammenfügen.",
+        "Die Füllung auf den {dumpling-dough} geben, die Kanten mit Wasser bestreichen und zusammenfalten.",
+        "Die Dumplings steamen. Alternative: Anbraten, und sobald sie gold-braun sind wasser hinzugeben und bedecken.",
+        "In {dumpling-dipping-sauce} dippen."
+    ]
+}

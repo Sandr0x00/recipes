@@ -5,7 +5,8 @@
         "drink",
         "alcohol",
         "fruity",
-        "pot"
+        "pot",
+        "blender"
     ],
     "ingredients": {
         "erdbeeren": {
@@ -25,6 +26,6 @@
         }
     },
     "preparation": [
-        "{wasser} mit {zucker} kurz aufkochen. {erdbeeren} zermusen und zusammen mit {limettensaft} und {wodka} zum Zuckerwasser geben."
+        "{wasser} mit {zucker} kurz aufkochen. {erdbeeren} mixen und zusammen mit {limettensaft} und {wodka} zum Zuckerwasser geben."
     ]
 }

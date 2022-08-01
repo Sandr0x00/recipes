@@ -37,7 +37,6 @@ jobs:
       - run: npm cache clean --force
       - run: npm install -g sass
       - run: yarn install
-      #- run: YARN_ENABLE_INLINE_BUILDS=true yarn rebuild sharp
       - run: make lint
       - run: make outdated
       - run: make clean
@@ -47,6 +46,6 @@ jobs:
       - run: make build-js
       - run: make resize
       - run: make recipes
-      - run: make test
+      # - run: make test
       - run: scripts/make_dist.py
 
