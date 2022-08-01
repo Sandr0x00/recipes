@@ -41,7 +41,7 @@ jobs:
           cmd: install
       - uses: borales/actions-yarn@v3.0.0
         with:
-          cmd: rebuild --verbose --platform=linux --arch=x64 --libc=glibc sharp
+          cmd: add --force --verbose --platform=linux --arch=x64 --libc=glibc sharp
       - run: make outdated
       - run: make clean
       - run: make setup
