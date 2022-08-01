@@ -19,8 +19,9 @@ if __name__ == "__main__":
     shutil.copy('mapping.json', 'dist')
     shutil.copy('package.json', 'dist')
     shutil.copy('yarn.lock', 'dist')
+    shutil.copy('.yarnrc.yml', 'dist')
+    shutil.copytree('.yarn/releases', 'dist/.yarn/releases')
+    shutil.copytree('.yarn/plugins', 'dist/.yarn/plugins')
     shutil.copytree('public', 'dist/public', ignore=shutil.ignore_patterns('.gitignore'))
-    shutil.copytree('recipes', 'dist/recipes')
-    shutil.copy('js/tags.js', 'dist/js')
 
     print("[\x1B[32m✓\x1b[0m] Copy files finished.")

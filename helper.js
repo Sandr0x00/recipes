@@ -5,8 +5,7 @@ let path = require('path');
 
 // let formatPreparation = require('./shared').formatPreparation;
 
-exports.loadJSON = function() {
-    let dirPath = path.join(__dirname, 'recipes');
+exports.loadJSON = function(dirPath) {
     let stuff = readFilesInFolder(dirPath);
     handleIngredients(stuff.recipes, stuff.tags);
 

@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-/* global require */
+/* global require, __dirname */
 
 const fs = require('fs');
 let helper = require('../helper');
+const path = require('path');
 
-let json = helper.loadJSON();
+let json = helper.loadJSON(path.join(__dirname, '..', 'recipes'));
 let recipes = json.recipes;
 
 let failed = 0;

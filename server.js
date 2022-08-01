@@ -7,6 +7,7 @@ const compression = require('compression');
 const fs = require('fs');
 const app = express();
 const process = require('process');
+const path = require('path');
 
 let port = process.env.PORT;
 if (port == null || port == '') {
@@ -15,7 +16,7 @@ if (port == null || port == '') {
 
 let helper = require('./helper');
 
-let json = helper.loadJSON();
+let json = helper.loadJSON(path.join(__dirname, 'public', 'recipes'));
 let tags = json.tags;
 let general = helper.extractGeneralInfo(json.recipes);
 json = null;
