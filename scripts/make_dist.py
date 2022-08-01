@@ -17,7 +17,6 @@ if __name__ == "__main__":
     shutil.copy('Makefile', 'dist')
     shutil.copy('server.js', 'dist')
     shutil.copy('mapping.json', 'dist')
-    shutil.copy('config.json', 'dist')
     shutil.copy('package.json', 'dist')
     shutil.copy('yarn.lock', 'dist')
     shutil.copytree('public', 'dist/public', ignore=shutil.ignore_patterns('.gitignore'))

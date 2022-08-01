@@ -6,10 +6,9 @@ const express = require('express');
 const compression = require('compression');
 const fs = require('fs');
 const app = express();
-const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 const process = require('process');
 
-let port = config.port;
+let port = process.env.PORT;
 if (port == null || port == '') {
     port = 8082;
 }
