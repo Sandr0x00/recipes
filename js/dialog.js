@@ -1,7 +1,7 @@
 /* global loadingComp, dialogComp */
 
 import { html } from 'lit';
-import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import { BaseComp } from './base.js';
 
 import $ from 'jquery';

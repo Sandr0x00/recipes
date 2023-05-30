@@ -11,11 +11,7 @@ export default {
 	},
 	plugins: [
 		nodeResolve(),
-		commonjs({
-            namedExports: {
-                'node_modules/bootstrap/dist/js/bootstrap.min.js' : ['bootstrap']
-            }
-		}),
+		commonjs(),
 		// minify
 		terser({
 			ecma: 2020,

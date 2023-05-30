@@ -24,35 +24,29 @@ json = null;
 app.locals.compileDebug = true;
 app.locals.cache = false;
 
-const DEV = process.env.DEV != null;
-const router = express.Router();
-
-app.use((DEV ? '/recipes' : '/'), express.static('public', {
+app.use('/', express.static('public', {
     setHeaders: (res) => setHeaders(res)
 }));
-if (DEV) {
-    app.use('/recipes', router);
-}
 app.use(compression());
 
-(DEV ? router : app).get('/api/all', (req, res) => {
+app.get('/api/all', (req, res) => {
     setHeaders(res);
     res.json(general);
 });
 
-(DEV ? router : app).get('/api/tags', (req, res) => {
+app.get('/api/tags', (req, res) => {
     setHeaders(res);
     res.json(tags);
 });
 
-(DEV ? router : app).get('/favicon.ico', (req, res) => {
+app.get('/favicon.ico', (req, res) => {
     setHeaders(res);
     res.setHeader('Content-Type', 'image/png');
     let s = fs.createReadStream(`public/favicon_${Math.floor(Math.random() * 6)}.png`);
     s.pipe(res);
 });
 
-(DEV ? router : app).get('*', (req, res) => {
+app.get('*', (req, res) => {
     // use nagivo routing => always serve index.html
     res.sendFile(__dirname + '/public/index.html');
 });
@@ -65,10 +59,10 @@ app.listen(port, '0.0.0.0', (err) => {
 });
 
 function setHeaders(res) {
-    res.setHeader('X-XSS-ProtectionType', '"1; mode=block"');
+    res.setHeader('X-XSS-ProtectionType', '1; mode=block');
     res.setHeader('X-Frame-Options', 'deny');
     res.setHeader('X-Content-Type-Options', 'nosniff');
-    res.setHeader('Strict-Transport-Security', '"max-age=31536000; includeSubDomains; preload"');
+    res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
     res.setHeader('Content-Security-Policy',
         'default-src \'none\';'
         + 'img-src \'self\';'
@@ -77,7 +71,7 @@ function setHeaders(res) {
         + 'font-src \'self\';'
         + 'connect-src \'self\';'
         + 'frame-ancestors \'none\';');
-    res.setHeader('X-Permitted-Cross-Domain-Policies', '"none"');
-    res.setHeader('Referrer-Policy', 'no-referrer');
-    res.setHeader('Feature-Policy', 'accelerometer \'none\'; camera \'none\'; geolocation \'none\'; gyroscope \'none\'; magnetometer \'none\'; microphone \'none\'; payment \'none\'; usb \'none\'; sync-xhr \'none\'');
+    res.setHeader('X-Permitted-Cross-Domain-Policies', 'none');
+    res.setHeader('Referrer-Policy', 'strict-origin');
+    res.setHeader('Permissions-Policy', 'camera=(), display-capture=(), fullscreen=(), geolocation=(), microphone=(), web-share=()');
 }

@@ -1,7 +1,7 @@
 /* global loadingComp, dialogComp */
 
 import { html } from 'lit';
-import { unsafeHTML } from 'lit-html/directives/unsafe-html.js';
+import { unsafeHTML } from 'lit/directives/unsafe-html.js';
 import tagTranslator from './tags.js';
 import {BaseComp} from './base.js';
 import $ from 'jquery';
@@ -49,7 +49,7 @@ class Recipe extends BaseComp {
                 images = html`${images}
                     <div class="recipeImage one-image">
                         <div class="placeholderWrapper">
-                            <div class="placeholder blur" data-large='/recipes/images/${this.data.images[0]}' style="background-image: url('/recipes/images/placeholder_${this.data.images[0]}');">
+                            <div class="placeholder blur" data-large='/images/${this.data.images[0]}' style="background-image: url('/images/placeholder_${this.data.images[0]}');">
                             </div>
                         </div>
                     </div>`;
@@ -58,7 +58,7 @@ class Recipe extends BaseComp {
                     images = html`${images}
                         <div class="recipeImage two-images">
                             <div class="placeholderWrapper">
-                                <div class="placeholder blur" data-large='/recipes/images/${img}' style="background-image: url('/recipes/images/placeholder_${img}');">
+                                <div class="placeholder blur" data-large='/images/${img}' style="background-image: url('/images/placeholder_${img}');">
                                 </div>
                             </div>
                         </div>`;
@@ -297,7 +297,7 @@ class Recipe extends BaseComp {
             return;
         }
         for (let l of this.data['link']) {
-            fetch(`/recipes/recipes/${l}.json`).then(response => {
+            fetch(`/recipes/${l}.json`).then(response => {
                 if (response.status === 404) {
                     return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
                 }
@@ -315,7 +315,7 @@ class Recipe extends BaseComp {
     }
 
     loadSpecificRecipe(recipe) {
-        fetch(`/recipes/recipes/${recipe}.json`).then(response => {
+        fetch(`/recipes/${recipe}.json`).then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
             }
@@ -335,7 +335,7 @@ class Recipe extends BaseComp {
         if (!this.recipe) {
             return;
         }
-        fetch(`/recipes/recipes/${this.recipe}.json`).then(response => {
+        fetch(`/recipes/${this.recipe}.json`).then(response => {
             if (response.status === 404) {
                 return Promise.reject(`Recipe for "${this.recipe}" does not exist.`);
             }

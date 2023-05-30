@@ -11,12 +11,11 @@ let helper = require('../helper');
 let formatPreparationStep = require('../shared').formatPreparationStep;
 
 const images_path = path.join(__dirname, '..', 'public', 'images');
-
+const recipesPath = path.join(__dirname, '../recipes');
 
 describe('Recipe file names', function() {
-    let recipePath = path.join(__dirname, '../recipes');
-    fs.readdirSync(recipePath).forEach(dirName => {
-        let dirPath = path.join(recipePath, dirName);
+    fs.readdirSync(recipesPath).forEach(dirName => {
+        let dirPath = path.join(recipesPath, dirName);
         let stats = fs.statSync(dirPath);
         if (stats.isFile()) {
             return;
@@ -38,8 +37,7 @@ describe('Recipe file names', function() {
 
 describe('Recipe file contents', () => {
     let validate = require('jsonschema').validate;
-    // let dirPath = path.join(__dirname, '../recipes');
-    let recipes = helper.loadJSON().recipes;
+    let recipes = helper.loadJSON(recipesPath).recipes;
     let schema = JSON.parse(fs.readFileSync('recipes.schema.json', 'utf8'));
     for (const [key, recipe] of Object.entries(recipes)) {
         let result = validate(recipe, schema);
@@ -56,7 +54,7 @@ describe('Recipe file contents', () => {
 });
 
 describe('Recipe preparation format', () => {
-    let recipes = helper.loadJSON().recipes;
+    let recipes = helper.loadJSON(recipesPath).recipes;
     for (const [key, recipe] of Object.entries(recipes)) {
         it(`recipe/${key}.json - preparation should be valid`, () => {
             recipe.preparation.forEach(step => {
@@ -69,7 +67,7 @@ describe('Recipe preparation format', () => {
 });
 
 describe('Recipe images', () => {
-    let recipes = helper.loadJSON().recipes;
+    let recipes = helper.loadJSON(recipesPath).recipes;
     for (const [key, recipe] of Object.entries(recipes)) {
         let images = recipe.images;
         it(`recipes/${key}.json - images in should exist`, () => {
@@ -89,7 +87,7 @@ describe('Recipe images', () => {
 
 describe('Tag translation', () => {
     let translate = require('../js/tags.js');
-    let json = helper.loadJSON();
+    let json = helper.loadJSON(recipesPath);
     let recipes = json.recipes;
     let tags = json.tags;
     tags.forEach((tag) => {
@@ -109,7 +107,7 @@ describe('Tag translation', () => {
 });
 
 describe('Unused ingredients', () => {
-    let recipes = helper.loadJSON().recipes;
+    let recipes = helper.loadJSON(recipesPath).recipes;
     for (const [key, recipe] of Object.entries(recipes)) {
         it(`recipes/${key}.json - should not have unused ingredients`, () => {
             let preparation = JSON.stringify(recipe.preparation);
@@ -137,7 +135,7 @@ describe('Unused ingredients', () => {
 });
 
 describe('Tag without icon', () => {
-    let tags = helper.loadJSON().tags;
+    let tags = helper.loadJSON(recipesPath).tags;
     tags.forEach((tag) => {
         let t = tag.tag;
         it(`icon for ${t} should exist`, () => {
@@ -147,7 +145,7 @@ describe('Tag without icon', () => {
 });
 
 describe('Image without recipe', () => {
-    let recipes = helper.loadJSON().recipes;
+    let recipes = helper.loadJSON(recipesPath).recipes;
 
     const dir = fs.opendirSync(images_path);
     let images = new Set();
