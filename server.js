@@ -60,7 +60,7 @@ app.listen(port, '0.0.0.0', (err) => {
 });
 
 function setHeaders(res) {
-    res.setHeader('X-XSS-ProtectionType', '1; mode=block');
+    res.setHeader('X-XSS-Protection', '1; mode=block');
     res.setHeader('X-Frame-Options', 'deny');
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
