@@ -23,6 +23,7 @@ json = null;
 
 app.locals.compileDebug = true;
 app.locals.cache = false;
+app.disable('x-powered-by');
 
 app.use('/', express.static('public', {
     setHeaders: (res) => setHeaders(res)
