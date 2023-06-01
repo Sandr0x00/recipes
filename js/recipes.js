@@ -48,8 +48,8 @@ class Recipes extends BaseComp {
 
         return html`
 <div class="grid-container">
-<div class="grid-title"><h1><a href="https://sandr0.xyz"><img class="logo" src="/logo.svg"/></a> <a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
-<div class="grid-tags nowrap">${tags}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html[0])}</a></div>
+ <div class="grid-title"><h1><a href="https://sandr0.xyz"><img class="logo" src="/logo.svg"/></a> <a id="mainLink" @click=${() => { this.clearFilter();loadingComp.navigate('/');loadingComp.close();}}">Rezepte</a></h1></div>
+ <div class="grid-tags nowrap">${tags}<a @click=${this.clearFilter} class="removeTags tags">${unsafeHTML(icon(faTimesCircle).html[0])}</a></div>
 <div class="recipes-grid">
 ${data}
 </div></div>`;
@@ -58,11 +58,11 @@ ${data}
     single(id, recipe) {
         return html`
 <a class="preview-container" @click=${() => { loadingComp.navigate(`/${id}`); }}>
-    <div class="preview-dummy"></div>
-    <div class="preview-image-parent">
-        <div id="${id}" class="preview-image-child" style="background-image: url('/icons/unknown.svg')" ></div>
-    </div>
-    <div class="preview-name">${unsafeHTML(recipe.name)}</div>
+ <div class="preview-dummy"></div>
+ <div class="preview-image-parent">
+  <div id="${id}" class="preview-image-child" style="background-image: url('/icons/unknown.svg')" ></div>
+ </div>
+ <div class="preview-name">${unsafeHTML(recipe.name)}</div>
 </a>`;
     }
 

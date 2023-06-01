@@ -151,7 +151,7 @@ describe('Image without recipe', () => {
     let images = new Set();
     let entry;
     while ((entry = dir.readSync()) !== null) {
-        let m = /^(?:placeholder_)?(?<name>[a-zA-Z-]+)(?:[^-][^2])?.jpg$/g.exec(entry.name);
+        let m = /^(?:placeholder_)?(?<name>[a-zA-Z-]+)(?:[^-][^2])?.webp$/g.exec(entry.name);
         if (!m) {
             continue;
         }
@@ -159,7 +159,7 @@ describe('Image without recipe', () => {
         if (!(name in recipes) && !images.has(name)) {
             images.add(name);
             it(`image ${name} should have a recipe`, () => {
-                assert.fail(`images/${name}.jpg`);
+                assert.fail(`images/${name}.webp`);
             });
         }
     }

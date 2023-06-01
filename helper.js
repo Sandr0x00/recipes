@@ -166,13 +166,13 @@ function readFilesInFolder(folder) {
 
 function addImages(key) {
     let images = [];
-    let image1 = path.join(__dirname, 'public', 'images', `${key}.jpg`);
-    let image2 = path.join(__dirname, 'public', 'images', `${key}-2.jpg`);
+    let image1 = path.join(__dirname, 'public', 'images', `${key}.webp`);
+    let image2 = path.join(__dirname, 'public', 'images', `${key}-2.webp`);
     if (fs.existsSync(image1)) {
-        images.push(`${key}.jpg`);
+        images.push(`${key}.webp`);
     }
     if (fs.existsSync(image2)) {
-        images.push(`${key}-2.jpg`);
+        images.push(`${key}-2.webp`);
     }
     return images;
 }

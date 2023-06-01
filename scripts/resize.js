@@ -42,7 +42,7 @@ function resize(prefix, file, width, height, fit) {
     let fileName = path.parse(file);
     let name = fileName.name;
 
-    let to = `public/images/${prefix}${name}.jpg`;
+    let to = `public/images/${prefix}${name}.webp`;
     let jpg = sharp(`images/${file}`)
         .resize({
             width: width,
@@ -50,13 +50,13 @@ function resize(prefix, file, width, height, fit) {
             fit: fit,
             withoutEnlargement: true
         })
-        .jpeg({
+        .webp({
             quality: 90,
         });
     saveFile(to, jpg);
 }
 
-function saveFile(to, jpg) {
+function saveFile(to, img) {
     if (fs.existsSync(to)) {
         let s = fs.ReadStream(to);
         let a = new Promise((resolve) => {
@@ -65,14 +65,14 @@ function saveFile(to, jpg) {
             s.on('end', () => resolve(sha.digest('hex')));
         });
         let b = new Promise((resolve) => {
-            jpg.toBuffer().then(data => resolve(crypto.createHash('sha256').update(data).digest('hex')));
+            img.toBuffer().then(data => resolve(crypto.createHash('sha256').update(data).digest('hex')));
         });
         Promise.all([a,b])
             .then(values => {
                 // only write, if file has changed
                 if (values[0] !== values[1]) {
                     console.log(`Write ${to}`);
-                    jpg.toBuffer().then(data => {
+                    img.toBuffer().then(data => {
                         fs.writeFile(to, data, (err) => {
                             if (err) throw err;
                         });
@@ -85,6 +85,6 @@ function saveFile(to, jpg) {
             });
     } else {
         console.log(`Write ${to}`);
-        jpg.toFile(to);
+        img.toFile(to);
     }
 }
