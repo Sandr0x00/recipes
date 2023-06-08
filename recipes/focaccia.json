@@ -13,10 +13,10 @@
             "amount": "1 Pkg."
         },
         "wasser": {
-            "amount": "200ml"
+            "amount": "400ml"
         },
         "mehl": {
-            "amount": "300g"
+            "amount": "600g"
         },
         "salz": {},
         "oel-olive": {},
@@ -24,9 +24,9 @@
     },
     "preparation": [
         "{hefe} in lauwarmes {wasser} geben und 5 Minuten auflösen lassen.",
-        "{mehl}, {salz:8g} mit der Hefemischung verkneten. {oel-olive} in eine Schüssel geben und den Teig 1.5 bis 2h gehen lassen.",
-        "Ein Backblech mit {oel-olive} einreiben und {salz} darauf streuen. Den Teig auf dem Backblech verteilen und 45min gehen lassen.",
-        "Mit {oel-olive} und {salz} bestreuen und mit {tomate}, oder anderen Zutaten belegen.",
-        "Bei 230°C 30 Minuten lang backen."
+        "{mehl}, {salz:10g} mit der Hefemischung verkneten. {oel-olive} in eine Schüssel geben und den Teig 1.5 bis 2h gehen lassen.",
+        "Ein Backblech mit {oel-olive} einreiben und grobes {salz} darauf streuen. Den Teig auf dem Backblech verteilen und 45min gehen lassen.",
+        "Mit {oel-olive} und {salz} bestreuen und mit halbierten {tomate} oder anderen Zutaten belegen.",
+        "Bei 250°C Ober-/Unterhitze 30 Minuten lang backen."
     ]
 }
